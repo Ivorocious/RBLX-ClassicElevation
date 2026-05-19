@@ -1,0 +1,14 @@
+# Roblox place/editor files
+*.rbxl
+*.rbxlx
+*.autosave
+
+# Generated files
+sourcemap.json
+out/
+build/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/settings.json
