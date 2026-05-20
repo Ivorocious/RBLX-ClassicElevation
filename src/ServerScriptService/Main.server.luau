@@ -12,11 +12,11 @@ type StartupContext = {
 }
 
 local SERVICE_NAMES = {
-	"RaceService",
 	"PlayerRaceService",
+	"ResultsService",
+	"RaceService",
 	"CheckpointService",
 	"RespawnService",
-	"ResultsService",
 	"GhostService",
 }
 
@@ -87,4 +87,4 @@ for _, serviceName in ipairs(SERVICE_NAMES) do
 	end
 end
 
-print("[Server] Project Classic Elevation Phase 1 services bootstrapped.")
+print("[Server] Project Classic Elevation Phase 2 services bootstrapped.")

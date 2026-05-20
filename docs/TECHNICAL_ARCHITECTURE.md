@@ -80,6 +80,24 @@ Phase 1 does not implement the round loop, checkpoint touch handling, finish pla
 ghost collision, course selection, DataStore, economy, monetization, ranked systems, seasons,
 global leaderboards, or practice mode.
 
+## MVP Round State Machine
+
+Phase 2 implements the server-authoritative round loop in `RaceService`:
+
+- `WaitingForPlayers`: waits until `RaceConfig.MinPlayers` eligible players are present.
+- `Intermission`: queues eligible players for the next official race.
+- `Countdown`: keeps queued players eligible before the race starts.
+- `Racing`: starts queued players as official racers and ends by timer only for Phase 2.
+- `RaceEnding`: marks unfinished official racers as DNF after the race timer expires.
+- `Results`: broadcasts the minimal current race result payload.
+- `Resetting`: returns players to `Lobby` for the next round.
+
+`RaceService` owns race state, race id, state deadlines, and timer broadcasts. It uses
+`Workspace:GetServerTimeNow()` and never accepts client timing. `PlayerRaceService` owns per-player
+statuses and broadcasts status changes. `ResultsService` owns the minimal in-memory race result
+record and records DNFs only. Placement, checkpoint splits, personal bests, fall respawns, late
+join choices, ghost collision, and UI remain later phases.
+
 ## Current Tooling Baseline
 
 - Rojo: verified with version 7.6.1.
