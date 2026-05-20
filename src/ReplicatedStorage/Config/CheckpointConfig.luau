@@ -6,6 +6,7 @@ export type CheckpointConfig = {
 	CheckpointsFolderName: string,
 	FinishPartName: string,
 	CheckpointNamePrefix: string,
+	CheckpointNumberPadding: number,
 	CheckpointNamingConvention: string,
 	StartingCheckpointIndex: number,
 	DefaultLapNumber: number,
@@ -17,7 +18,8 @@ local CheckpointConfig: CheckpointConfig = {
 	CheckpointsFolderName = "Checkpoints",
 	FinishPartName = "Finish",
 	CheckpointNamePrefix = "Checkpoint",
-	CheckpointNamingConvention = "Checkpoint<number>, for example Checkpoint1, Checkpoint2",
+	CheckpointNumberPadding = 3,
+	CheckpointNamingConvention = "Checkpoint_###, for example Checkpoint_001, Checkpoint_002",
 	StartingCheckpointIndex = 0,
 	DefaultLapNumber = 1,
 }

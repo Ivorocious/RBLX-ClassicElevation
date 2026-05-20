@@ -141,6 +141,10 @@ function PlayerRaceService.GetPlayerStatus(player: Player): PlayerRaceStatus?
 	return playerStatuses[player]
 end
 
+function PlayerRaceService.IsOfficialRacer(player: Player): boolean
+	return officialRaceEligible[player] == true
+end
+
 function PlayerRaceService.SetPlayerStatus(player: Player, status: PlayerRaceStatus, reason: string?)
 	local previousStatus = playerStatuses[player]
 

@@ -98,6 +98,21 @@ statuses and broadcasts status changes. `ResultsService` owns the minimal in-mem
 record and records DNFs only. Placement, checkpoint splits, personal bests, fall respawns, late
 join choices, ghost collision, and UI remain later phases.
 
+## MVP Checkpoint and Finish Validation
+
+Phase 3B uses the Studio course at `Workspace/RaceCourse`. The official MVP checkpoint naming
+convention is `Checkpoint_###`, for example `Checkpoint_001`, under `RaceCourse/Checkpoints`.
+
+`CheckpointService` discovers checkpoint parts by that naming convention, sorts them by numeric
+index, and connects server-side `Touched` handlers to checkpoint parts and `RaceCourse/Finish`.
+Only official players whose `PlayerRaceService` status is `Racing` can progress. Lobby, Queued,
+Spectating, Finished, GhostRacing, LateRacing, and DNF players do not advance official results.
+
+Checkpoint order is enforced on the server. A racer cannot skip checkpoints, overwrite a completed
+split, finish before all checkpoints are complete, or overwrite a locked finish. `RaceService`
+remains the only owner of race timing, and `ResultsService` records splits, finish time, placement
+order, and timer-ended DNFs in memory only.
+
 ## Current Tooling Baseline
 
 - Rojo: verified with version 7.6.1.

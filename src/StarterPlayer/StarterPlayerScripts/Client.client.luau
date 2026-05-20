@@ -21,6 +21,7 @@ end
 local raceStateChangedRemote = getRemoteEvent(RaceConstants.RemoteNames.RaceStateChanged)
 local raceTimerUpdatedRemote = getRemoteEvent(RaceConstants.RemoteNames.RaceTimerUpdated)
 local playerRaceStatusChangedRemote = getRemoteEvent(RaceConstants.RemoteNames.PlayerRaceStatusChanged)
+local raceResultsUpdatedRemote = getRemoteEvent(RaceConstants.RemoteNames.RaceResultsUpdated)
 
 if raceStateChangedRemote ~= nil then
 	raceStateChangedRemote.OnClientEvent:Connect(function(payload)
@@ -82,4 +83,44 @@ if playerRaceStatusChangedRemote ~= nil then
 	end)
 end
 
-print("[ClientRaceDebug] Phase 2 race remote debug listeners connected.")
+if raceResultsUpdatedRemote ~= nil then
+	raceResultsUpdatedRemote.OnClientEvent:Connect(function(payload)
+		if typeof(payload) ~= "table" then
+			warn("[ClientRaceDebug] RaceResultsUpdated payload was not a table.")
+			return
+		end
+
+		local placements = payload.placements
+		local dnfs = payload.dnfs
+		local placementCount = if typeof(placements) == "table" then #placements else 0
+		local dnfCount = if typeof(dnfs) == "table" then #dnfs else 0
+		local leaderText = "none"
+
+		if placementCount > 0 then
+			local leader = placements[1]
+
+			if typeof(leader) == "table" then
+				local finishTime = leader.finishTime
+				local finishTimeText = "unknown"
+
+				if typeof(finishTime) == "number" then
+					finishTimeText = FormatTime.fromSeconds(finishTime)
+				end
+
+				leaderText = string.format("%s at %s", tostring(leader.displayName), finishTimeText)
+			end
+		end
+
+		print(
+			string.format(
+				"[ClientRaceDebug] Results: race=%s placements=%d dnfs=%d leader=%s",
+				tostring(payload.raceId),
+				placementCount,
+				dnfCount,
+				leaderText
+			)
+		)
+	end)
+end
+
+print("[ClientRaceDebug] Phase 3B race remote debug listeners connected.")

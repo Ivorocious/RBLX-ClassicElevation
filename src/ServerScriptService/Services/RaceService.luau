@@ -28,6 +28,7 @@ local raceTimerUpdatedRemote = remotesFolder:WaitForChild(RaceConstants.RemoteNa
 
 local currentRaceState: RaceState = RaceConstants.RaceState.WaitingForPlayers
 local currentRaceId = ""
+local currentRaceStartedAt: number? = nil
 local stateStartedAt = 0
 local stateEndsAt: number? = nil
 local raceCounter = 0
@@ -150,6 +151,7 @@ end
 
 local function waitForMinimumPlayers()
 	currentRaceId = ""
+	currentRaceStartedAt = nil
 	setRaceState(RaceConstants.RaceState.WaitingForPlayers, nil)
 
 	while getEligiblePlayerCount() < RaceConfig.MinPlayers do
@@ -193,6 +195,7 @@ local function runRoundLoop()
 		end
 
 		local raceStartedAt = getServerTime()
+		currentRaceStartedAt = raceStartedAt
 
 		if resultsService ~= nil and resultsService.StartRace ~= nil then
 			resultsService.StartRace(currentRaceId, RaceConfig.DefaultCourseId, RaceConfig.RaceFormat, raceStartedAt)
@@ -281,6 +284,26 @@ end
 
 function RaceService.GetRaceId(): string
 	return currentRaceId
+end
+
+function RaceService.GetCurrentRaceId(): string
+	return currentRaceId
+end
+
+function RaceService.IsRaceActive(): boolean
+	return currentRaceState == RaceConstants.RaceState.Racing and currentRaceStartedAt ~= nil
+end
+
+function RaceService.GetRaceStartTime(): number?
+	return currentRaceStartedAt
+end
+
+function RaceService.GetElapsedRaceTime(): number?
+	if currentRaceStartedAt == nil then
+		return nil
+	end
+
+	return getServerTime() - currentRaceStartedAt
 end
 
 return RaceService

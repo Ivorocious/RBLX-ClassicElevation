@@ -5,7 +5,6 @@ Track scoped implementation work for ProjectClassicElevation here.
 ## Backlog
 
 - Confirm Rojo sync from filesystem into the open Roblox Studio place.
-- Implement checkpoint and finish validation.
 - Implement fall detection and latest-checkpoint respawn.
 - Implement late join and finished-player options.
 - Implement MVP race HUD, results UI, and personal summary UI.
@@ -21,3 +20,4 @@ Track scoped implementation work for ProjectClassicElevation here.
 - 2026-05-20: Added Phase 1 MVP race architecture foundation.
 - 2026-05-21: Implemented Phase 2 server-authoritative round state machine and basic player race statuses.
 - 2026-05-21: Built the first MVP point-to-point graybox Studio course.
+- 2026-05-21: Implemented server-side checkpoint and finish validation.
