@@ -32,6 +32,21 @@ Record important project decisions here.
 
 **Alternatives Considered:** One large server script. Rejected because it becomes hard to review and maintain.
 
+### 2026-05-20 - MVP Race Foundation Is Server-Authoritative and Point-to-Point First
+
+**Decision:** The MVP race architecture starts with `RaceFormat = "PointToPoint"` while keeping
+`LapBased` as a future type/config option only.
+
+**Reasoning:** The first playable milestone should prove one excellent live race loop before adding
+course selection or lap/circuit complexity.
+
+**Impact:** Race state, player status, checkpoint progress, finish validation, placement, and result
+data are owned by the server. Personal bests are in-memory only until DataStore use is explicitly
+approved.
+
+**Alternatives Considered:** Building multiple formats, persistent PBs, ranked points, or course
+selection immediately. Rejected for MVP scope control.
+
 ## Template
 
 ### YYYY-MM-DD - Decision Title

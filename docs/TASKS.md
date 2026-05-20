@@ -5,8 +5,12 @@ Track scoped implementation work for ProjectClassicElevation here.
 ## Backlog
 
 - Confirm Rojo sync from filesystem into the open Roblox Studio place.
-- Define the initial game concept in `docs/GAME_DESIGN.md`.
-- Add technical notes as core systems are chosen.
+- Implement Phase 2 round state machine.
+- Build or assemble the first MVP point-to-point Studio course.
+- Implement checkpoint and finish validation.
+- Implement fall detection and latest-checkpoint respawn.
+- Implement late join and finished-player options.
+- Implement MVP race HUD, results UI, and personal summary UI.
 - Add test tooling when the first pure logic modules exist.
 
 ## In Progress
@@ -16,3 +20,4 @@ Track scoped implementation work for ProjectClassicElevation here.
 ## Done
 
 - 2026-05-20: Initialized ProjectClassicElevation from the Roblox baseline template.
+- 2026-05-20: Added Phase 1 MVP race architecture foundation.

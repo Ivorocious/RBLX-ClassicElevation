@@ -19,6 +19,15 @@ Rojo syncs filesystem source into Roblox Studio. Durable script changes should b
 
 Gameplay-critical systems must be validated and owned by the server, including:
 
+- race state
+- race start time
+- player race status
+- checkpoint progress
+- fall respawn position
+- finish validation
+- finish time
+- placement
+- race result data
 - currency
 - inventory
 - rewards
@@ -37,11 +46,39 @@ All client-to-server remote payloads are untrusted. New remotes should document:
 - server validation
 - server response or side effect
 
+MVP race remotes live under `ReplicatedStorage/Remotes`. Server-to-client remotes broadcast
+race state, player status, timers, results, and personal summaries. Client request remotes
+(`RequestSpectate`, `RequestRaceLate`, and `RequestGhostRace`) are only requests; future server
+code must validate the player, current race state, current player status, and eligibility before
+changing authoritative state.
+
 ## Data Persistence
 
-TBD.
+DataStore is intentionally excluded from the MVP. Personal bests may be tracked in memory for the
+current server session only. Persistent PBs, historical race results, global leaderboards, ranked
+points, seasons, rewards, economy, and monetization require explicit approval before implementation.
 
 DataStore-related systems require explicit approval before implementation.
+
+## MVP Race Architecture
+
+Phase 1 establishes the filesystem/Rojo foundation only:
+
+- `ReplicatedStorage/Shared/RaceTypes`: typed race states, player statuses, formats, and result
+  payload shapes.
+- `ReplicatedStorage/Shared/RaceConstants`: shared state/status/format/remote names and defaults.
+- `ReplicatedStorage/Shared/FormatTime`: display formatting for elapsed race times.
+- `ReplicatedStorage/Config/RaceConfig`: MVP point-to-point race tuning.
+- `ReplicatedStorage/Config/CheckpointConfig`: expected Workspace course naming conventions.
+- `ServerScriptService/Services`: service skeletons for race, player status, checkpoint, respawn,
+  results, and ghost-race responsibilities.
+
+MVP uses `RaceFormat = "PointToPoint"`. `LapBased` exists only as a type/config possibility so the
+checkpoint model can later add lap-aware validation without rewriting the result payloads.
+
+Phase 1 does not implement the round loop, checkpoint touch handling, finish placement, UI,
+ghost collision, course selection, DataStore, economy, monetization, ranked systems, seasons,
+global leaderboards, or practice mode.
 
 ## Current Tooling Baseline
 
