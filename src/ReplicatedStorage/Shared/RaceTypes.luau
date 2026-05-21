@@ -49,6 +49,7 @@ export type RaceResult = {
 	format: RaceFormat,
 	startedAt: number?,
 	duration: number?,
+	activeRacers: { PlayerRaceResult },
 	placements: { PlayerRaceResult },
 	dnfs: { PlayerRaceResult },
 	unofficialRuns: { PlayerRaceResult },

@@ -25,7 +25,7 @@ local RaceConfig: RaceConfig = {
 	RaceEndingDuration = RaceConstants.DefaultDurations.RaceEnding,
 	ResultsDuration = RaceConstants.DefaultDurations.Results,
 	ResettingDuration = RaceConstants.DefaultDurations.Resetting,
-	FallYThreshold = -25,
+	FallYThreshold = 4,
 	DefaultCourseId = "MVP_PointToPoint_01",
 }
 

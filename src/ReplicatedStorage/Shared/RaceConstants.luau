@@ -43,6 +43,7 @@ RaceConstants.RemoteNames = {
 	RequestSpectate = "RequestSpectate",
 	RequestRaceLate = "RequestRaceLate",
 	RequestGhostRace = "RequestGhostRace",
+	RequestDevRaceState = "RequestDevRaceState",
 }
 
 RaceConstants.CollisionGroups = {

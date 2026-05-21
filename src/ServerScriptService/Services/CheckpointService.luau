@@ -36,8 +36,10 @@ local playerRaceService: any = nil
 local resultsService: any = nil
 local checkpointDefinitions: { CheckpointDefinition } = {}
 local finishPart: BasePart? = nil
+local startPart: BasePart? = nil
 local playerProgressByUserId: { [number]: PlayerCheckpointProgress } = {}
 local touchConnections: { RBXScriptConnection } = {}
+local RESPAWN_VERTICAL_OFFSET = 5
 
 local function parseCheckpointIndex(checkpointName: string): number?
 	local prefix = CheckpointConfig.CheckpointNamePrefix
@@ -119,6 +121,16 @@ end
 
 local function hasCompletedAllCheckpoints(playerProgress: PlayerCheckpointProgress): boolean
 	return playerProgress.nextCheckpointIndex > #checkpointDefinitions
+end
+
+local function getCheckpointDefinitionByIndex(checkpointIndex: number): CheckpointDefinition?
+	for _, checkpointDefinition in ipairs(checkpointDefinitions) do
+		if checkpointDefinition.index == checkpointIndex then
+			return checkpointDefinition
+		end
+	end
+
+	return nil
 end
 
 local function bindCheckpointPart(checkpointDefinition: CheckpointDefinition)
@@ -275,6 +287,7 @@ local function bindCourse()
 	touchConnections = {}
 	checkpointDefinitions = {}
 	finishPart = nil
+	startPart = nil
 
 	local raceCourse = Workspace:FindFirstChild(CheckpointConfig.CourseModelName)
 
@@ -284,6 +297,7 @@ local function bindCourse()
 	end
 
 	local checkpointsFolder = raceCourse:FindFirstChild(CheckpointConfig.CheckpointsFolderName)
+	local startInstance = raceCourse:FindFirstChild(CheckpointConfig.StartPartName)
 
 	if checkpointsFolder == nil then
 		warn(
@@ -291,6 +305,17 @@ local function bindCourse()
 				"[CheckpointService] %s.%s was not found.",
 				CheckpointConfig.CourseModelName,
 				CheckpointConfig.CheckpointsFolderName
+			)
+		)
+		return
+	end
+
+	if startInstance == nil or not startInstance:IsA("BasePart") then
+		warn(
+			string.format(
+				"[CheckpointService] %s.%s must be a BasePart.",
+				CheckpointConfig.CourseModelName,
+				CheckpointConfig.StartPartName
 			)
 		)
 		return
@@ -310,6 +335,7 @@ local function bindCourse()
 	end
 
 	checkpointDefinitions = discoverCheckpointDefinitions(checkpointsFolder)
+	startPart = startInstance
 	finishPart = finishInstance
 
 	if #checkpointDefinitions == 0 then
@@ -333,6 +359,36 @@ local function bindCourse()
 
 	bindFinishPart(finishInstance)
 	print(string.format("[CheckpointService] Bound %d checkpoints and finish part.", #checkpointDefinitions))
+end
+
+function CheckpointService.GetLatestCheckpointIndex(player: Player): number
+	local raceId = getCurrentRaceId()
+	local playerProgress = playerProgressByUserId[player.UserId]
+
+	if raceId == "" or playerProgress == nil or playerProgress.raceId ~= raceId then
+		return CheckpointConfig.StartingCheckpointIndex
+	end
+
+	return math.max(CheckpointConfig.StartingCheckpointIndex, playerProgress.nextCheckpointIndex - 1)
+end
+
+function CheckpointService.GetCheckpointRespawnCFrame(player: Player): CFrame?
+	local latestCheckpointIndex = CheckpointService.GetLatestCheckpointIndex(player)
+	local respawnPart = startPart
+
+	if latestCheckpointIndex > CheckpointConfig.StartingCheckpointIndex then
+		local checkpointDefinition = getCheckpointDefinitionByIndex(latestCheckpointIndex)
+
+		if checkpointDefinition ~= nil then
+			respawnPart = checkpointDefinition.part
+		end
+	end
+
+	if respawnPart == nil then
+		return nil
+	end
+
+	return CFrame.new(respawnPart.Position + Vector3.new(0, RESPAWN_VERTICAL_OFFSET, 0))
 end
 
 function CheckpointService.Init(context: ServiceContext?)

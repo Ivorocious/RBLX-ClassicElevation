@@ -1,6 +1,7 @@
 --!strict
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
 
 local FormatTime = require(ReplicatedStorage.Shared.FormatTime)
 local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
@@ -22,6 +23,7 @@ local raceStateChangedRemote = getRemoteEvent(RaceConstants.RemoteNames.RaceStat
 local raceTimerUpdatedRemote = getRemoteEvent(RaceConstants.RemoteNames.RaceTimerUpdated)
 local playerRaceStatusChangedRemote = getRemoteEvent(RaceConstants.RemoteNames.PlayerRaceStatusChanged)
 local raceResultsUpdatedRemote = getRemoteEvent(RaceConstants.RemoteNames.RaceResultsUpdated)
+local requestDevRaceStateRemote = getRemoteEvent(RaceConstants.RemoteNames.RequestDevRaceState)
 
 if raceStateChangedRemote ~= nil then
 	raceStateChangedRemote.OnClientEvent:Connect(function(payload)
@@ -92,9 +94,27 @@ if raceResultsUpdatedRemote ~= nil then
 
 		local placements = payload.placements
 		local dnfs = payload.dnfs
+		local activeRacers = payload.activeRacers
 		local placementCount = if typeof(placements) == "table" then #placements else 0
 		local dnfCount = if typeof(dnfs) == "table" then #dnfs else 0
+		local fallCount = 0
 		local leaderText = "none"
+
+		local function addFallsFromResults(results)
+			if typeof(results) ~= "table" then
+				return
+			end
+
+			for _, playerResult in ipairs(results) do
+				if typeof(playerResult) == "table" and typeof(playerResult.falls) == "number" then
+					fallCount += playerResult.falls
+				end
+			end
+		end
+
+		addFallsFromResults(activeRacers)
+		addFallsFromResults(placements)
+		addFallsFromResults(dnfs)
 
 		if placementCount > 0 then
 			local leader = placements[1]
@@ -120,7 +140,74 @@ if raceResultsUpdatedRemote ~= nil then
 				leaderText
 			)
 		)
+		print(string.format("[ClientRaceDebug] Result falls: total=%d", fallCount))
 	end)
 end
 
-print("[ClientRaceDebug] Phase 3B race remote debug listeners connected.")
+local function createDevRaceControls()
+	if not RunService:IsStudio() or requestDevRaceStateRemote == nil then
+		return
+	end
+
+	local playerGui = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+	local existingGui = playerGui:FindFirstChild("DevRaceControls")
+
+	if existingGui ~= nil then
+		existingGui:Destroy()
+	end
+
+	local screenGui = Instance.new("ScreenGui")
+	screenGui.Name = "DevRaceControls"
+	screenGui.ResetOnSpawn = false
+	screenGui.Parent = playerGui
+
+	local frame = Instance.new("Frame")
+	frame.Name = "Panel"
+	frame.AnchorPoint = Vector2.new(1, 0)
+	frame.Position = UDim2.fromScale(0.985, 0.12)
+	frame.Size = UDim2.fromOffset(150, 132)
+	frame.BackgroundColor3 = Color3.fromRGB(25, 28, 34)
+	frame.BackgroundTransparency = 0.1
+	frame.BorderSizePixel = 0
+	frame.Parent = screenGui
+
+	local title = Instance.new("TextLabel")
+	title.Name = "Title"
+	title.Size = UDim2.new(1, 0, 0, 30)
+	title.BackgroundTransparency = 1
+	title.Font = Enum.Font.GothamBold
+	title.Text = "DEV RACE"
+	title.TextColor3 = Color3.fromRGB(235, 235, 235)
+	title.TextSize = 14
+	title.Parent = frame
+
+	local buttons = {
+		{ label = "Start Race", action = "StartRaceNow" },
+		{ label = "Skip State", action = "SkipState" },
+		{ label = "End Race", action = "EndRace" },
+	}
+
+	for index, buttonConfig in ipairs(buttons) do
+		local button = Instance.new("TextButton")
+		button.Name = buttonConfig.action
+		button.Position = UDim2.fromOffset(10, 28 + (index - 1) * 32)
+		button.Size = UDim2.new(1, -20, 0, 28)
+		button.BackgroundColor3 = Color3.fromRGB(55, 68, 86)
+		button.BorderSizePixel = 0
+		button.Font = Enum.Font.Gotham
+		button.Text = buttonConfig.label
+		button.TextColor3 = Color3.fromRGB(255, 255, 255)
+		button.TextSize = 13
+		button.Parent = frame
+
+		button.Activated:Connect(function()
+			requestDevRaceStateRemote:FireServer({
+				action = buttonConfig.action,
+			})
+		end)
+	end
+end
+
+createDevRaceControls()
+
+print("[ClientRaceDebug] Phase 4 race remote debug listeners connected.")

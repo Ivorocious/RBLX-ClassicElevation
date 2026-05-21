@@ -113,6 +113,30 @@ split, finish before all checkpoints are complete, or overwrite a locked finish.
 remains the only owner of race timing, and `ResultsService` records splits, finish time, placement
 order, and timer-ended DNFs in memory only.
 
+## MVP Fall Detection and Respawn
+
+Phase 4 implements server-authoritative fall handling in `RespawnService`. It binds
+`Workspace/RaceCourse/FallZones/FallZone_Main` and also checks `RaceConfig.FallYThreshold` on a
+small server heartbeat interval so falling onto the retained Baseplate still counts as a fall during
+development tests.
+
+Only official racers with `PlayerRaceService` status `Racing` can trigger official fall respawns.
+Lobby, Queued, Spectating, Finished, GhostRacing, LateRacing, and DNF players are ignored. The
+client cannot report falls, respawn position, or fall counts.
+
+`CheckpointService` owns checkpoint progress and exposes the latest checkpoint respawn CFrame. If a
+racer has not reached any checkpoint, respawn falls back to `RaceCourse/Start`. Characters are
+repositioned with a vertical offset using server-side pivot logic instead of being killed/reset.
+`ResultsService` owns fall counts in the current in-memory race result payload and preserves those
+counts when players finish or DNF.
+
+## Studio-Only Development Controls
+
+For faster local iteration, the client creates a `DevRaceControls` ScreenGui only when
+`RunService:IsStudio()` is true. The buttons send requests to `RequestDevRaceState`, and
+`RaceService` only honors those requests in Studio. Current actions are `Start Race`, `Skip State`,
+and `End Race`; they are development shortcuts and are not part of live gameplay.
+
 ## Current Tooling Baseline
 
 - Rojo: verified with version 7.6.1.

@@ -1,6 +1,7 @@
 --!strict
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 
 local RaceConfig = require(ReplicatedStorage.Config.RaceConfig)
@@ -25,6 +26,7 @@ local resultsService: any = nil
 local remotesFolder = ReplicatedStorage:WaitForChild("Remotes")
 local raceStateChangedRemote = remotesFolder:WaitForChild(RaceConstants.RemoteNames.RaceStateChanged) :: RemoteEvent
 local raceTimerUpdatedRemote = remotesFolder:WaitForChild(RaceConstants.RemoteNames.RaceTimerUpdated) :: RemoteEvent
+local requestDevRaceStateRemote = remotesFolder:WaitForChild(RaceConstants.RemoteNames.RequestDevRaceState) :: RemoteEvent
 
 local currentRaceState: RaceState = RaceConstants.RaceState.WaitingForPlayers
 local currentRaceId = ""
@@ -32,6 +34,8 @@ local currentRaceStartedAt: number? = nil
 local stateStartedAt = 0
 local stateEndsAt: number? = nil
 local raceCounter = 0
+local devStartRaceNowRequested = false
+local devRemoteConnection: RBXScriptConnection? = nil
 
 local function getServerTime(): number
 	return Workspace:GetServerTimeNow()
@@ -135,6 +139,17 @@ local function runTimedState(nextRaceState: RaceState, duration: number, onEnter
 	broadcastTimerUpdate()
 end
 
+local function endCurrentTimedStateNow(reason: string)
+	if stateEndsAt == nil then
+		print(string.format("[RaceService] Dev control ignored %s; %s has no timer.", reason, currentRaceState))
+		return
+	end
+
+	stateEndsAt = getServerTime()
+	broadcastTimerUpdate()
+	print(string.format("[RaceService] Dev control ended %s: %s.", currentRaceState, reason))
+end
+
 local function getEligiblePlayerCount(): number
 	if playerRaceService == nil or playerRaceService.GetEligiblePlayerCount == nil then
 		return 0
@@ -170,13 +185,20 @@ local function runRoundLoop()
 			playerRaceService.QueueEligiblePlayers()
 		end
 
-		runTimedState(RaceConstants.RaceState.Intermission, RaceConfig.IntermissionDuration, nil)
+		local intermissionDuration = RaceConfig.IntermissionDuration
+
+		if devStartRaceNowRequested then
+			intermissionDuration = 0
+		end
+
+		runTimedState(RaceConstants.RaceState.Intermission, intermissionDuration, nil)
 
 		if getEligiblePlayerCount() < RaceConfig.MinPlayers then
 			print("[RaceService] Not enough players after Intermission; resetting to wait for players.")
 			runTimedState(RaceConstants.RaceState.Resetting, RaceConfig.ResettingDuration, function()
 				resetPlayersForNextRound("Not enough players")
 			end)
+			devStartRaceNowRequested = false
 			continue
 		end
 
@@ -184,15 +206,23 @@ local function runRoundLoop()
 			playerRaceService.QueueEligiblePlayers()
 		end
 
-		runTimedState(RaceConstants.RaceState.Countdown, RaceConfig.CountdownDuration, nil)
+		local shouldSkipCountdown = devStartRaceNowRequested
+		devStartRaceNowRequested = false
+
+		if not shouldSkipCountdown then
+			runTimedState(RaceConstants.RaceState.Countdown, RaceConfig.CountdownDuration, nil)
+		end
 
 		if getEligiblePlayerCount() < RaceConfig.MinPlayers then
 			print("[RaceService] Not enough players after Countdown; resetting to wait for players.")
 			runTimedState(RaceConstants.RaceState.Resetting, RaceConfig.ResettingDuration, function()
 				resetPlayersForNextRound("Not enough players")
 			end)
+			devStartRaceNowRequested = false
 			continue
 		end
+
+		devStartRaceNowRequested = false
 
 		local raceStartedAt = getServerTime()
 		currentRaceStartedAt = raceStartedAt
@@ -236,6 +266,46 @@ local function runRoundLoop()
 	end
 end
 
+local function handleDevRaceStateRequest(player: Player, payload)
+	if not RunService:IsStudio() then
+		return
+	end
+
+	if typeof(payload) ~= "table" then
+		warn(string.format("[RaceService] Ignored dev request from %s; payload was not a table.", player.Name))
+		return
+	end
+
+	local action = payload.action
+
+	if typeof(action) ~= "string" then
+		warn(string.format("[RaceService] Ignored dev request from %s; action was missing.", player.Name))
+		return
+	end
+
+	if action == "StartRaceNow" then
+		if currentRaceState == RaceConstants.RaceState.WaitingForPlayers
+			or currentRaceState == RaceConstants.RaceState.Intermission
+			or currentRaceState == RaceConstants.RaceState.Countdown
+		then
+			devStartRaceNowRequested = true
+			endCurrentTimedStateNow("StartRaceNow")
+		else
+			print(string.format("[RaceService] Dev StartRaceNow ignored in state %s.", currentRaceState))
+		end
+	elseif action == "SkipState" then
+		endCurrentTimedStateNow("SkipState")
+	elseif action == "EndRace" then
+		if currentRaceState == RaceConstants.RaceState.Racing then
+			endCurrentTimedStateNow("EndRace")
+		else
+			print(string.format("[RaceService] Dev EndRace ignored in state %s.", currentRaceState))
+		end
+	else
+		warn(string.format("[RaceService] Ignored unknown dev action %s from %s.", action, player.Name))
+	end
+end
+
 function RaceService.Init(context: ServiceContext?)
 	if isInitialized then
 		return
@@ -269,6 +339,11 @@ function RaceService.Start(_context: ServiceContext?)
 	end
 
 	isStarted = true
+
+	if RunService:IsStudio() and devRemoteConnection == nil then
+		devRemoteConnection = requestDevRaceStateRemote.OnServerEvent:Connect(handleDevRaceStateRequest)
+		print("[RaceService] Studio-only dev race controls enabled.")
+	end
 
 	if roundLoopStarted then
 		return

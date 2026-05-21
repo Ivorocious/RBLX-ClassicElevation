@@ -27,6 +27,24 @@ local remotesFolder = ReplicatedStorage:WaitForChild("Remotes")
 local raceResultsUpdatedRemote =
 	remotesFolder:WaitForChild(RaceConstants.RemoteNames.RaceResultsUpdated) :: RemoteEvent
 
+local function syncActiveRacers()
+	if currentRaceResult == nil then
+		return
+	end
+
+	local activeRacers = {}
+
+	for _, playerResult in pairs(playerResultsByUserId) do
+		if playerResult.status ~= RaceConstants.PlayerRaceStatus.Finished
+			and playerResult.status ~= RaceConstants.PlayerRaceStatus.DNF
+		then
+			table.insert(activeRacers, playerResult)
+		end
+	end
+
+	currentRaceResult.activeRacers = activeRacers
+end
+
 local function createPlayerRaceResult(player: Player): PlayerRaceResult
 	return {
 		userId = player.UserId,
@@ -96,6 +114,7 @@ function ResultsService.StartRace(raceId: string, courseId: string, format: Race
 		format = format,
 		startedAt = startedAt,
 		duration = nil,
+		activeRacers = {},
 		placements = {},
 		dnfs = {},
 		unofficialRuns = {},
@@ -143,7 +162,34 @@ function ResultsService.RecordCheckpointSplit(
 		)
 	)
 
+	syncActiveRacers()
 	return true
+end
+
+function ResultsService.RecordFall(player: Player): number?
+	if currentRaceResult == nil then
+		warn("[ResultsService] RecordFall called before StartRace.")
+		return nil
+	end
+
+	if finishedUserIds[player.UserId] == true then
+		return nil
+	end
+
+	local playerResult = getOrCreatePlayerResult(player)
+
+	if playerResult.status == RaceConstants.PlayerRaceStatus.Finished
+		or playerResult.status == RaceConstants.PlayerRaceStatus.DNF
+	then
+		return nil
+	end
+
+	playerResult.falls += 1
+	syncActiveRacers()
+	ResultsService.BroadcastCurrentRaceResults()
+	print(string.format("[ResultsService] %s fall count -> %d.", player.Name, playerResult.falls))
+
+	return playerResult.falls
 end
 
 function ResultsService.RecordFinish(player: Player, elapsedTime: number): PlayerRaceResult?
@@ -171,6 +217,7 @@ function ResultsService.RecordFinish(player: Player, elapsedTime: number): Playe
 	playerResult.dnfReason = nil
 	finishedUserIds[player.UserId] = true
 
+	syncActiveRacers()
 	table.insert(currentRaceResult.placements, playerResult)
 	ResultsService.BroadcastCurrentRaceResults()
 
@@ -208,6 +255,8 @@ function ResultsService.RecordDNFs(dnfResults: { PlayerRaceResult })
 			dnfUserIds[dnfResult.userId] = true
 		end
 	end
+
+	syncActiveRacers()
 end
 
 function ResultsService.SetRaceDuration(duration: number)
