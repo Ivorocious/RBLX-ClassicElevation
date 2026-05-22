@@ -231,8 +231,14 @@ local function runRoundLoop()
 			resultsService.StartRace(currentRaceId, RaceConfig.DefaultCourseId, RaceConfig.RaceFormat, raceStartedAt)
 		end
 
+		local startedPlayers: { Player } = {}
+
 		if playerRaceService ~= nil and playerRaceService.StartQueuedPlayers ~= nil then
-			playerRaceService.StartQueuedPlayers()
+			startedPlayers = playerRaceService.StartQueuedPlayers()
+		end
+
+		if resultsService ~= nil and resultsService.RegisterActiveRacers ~= nil then
+			resultsService.RegisterActiveRacers(startedPlayers)
 		end
 
 		runTimedState(RaceConstants.RaceState.Racing, RaceConfig.RaceDuration, nil)
@@ -245,12 +251,12 @@ local function runRoundLoop()
 		end
 
 		if resultsService ~= nil then
-			if resultsService.RecordDNFs ~= nil then
-				resultsService.RecordDNFs(dnfResults)
-			end
-
 			if resultsService.SetRaceDuration ~= nil then
 				resultsService.SetRaceDuration(raceDuration)
+			end
+
+			if resultsService.RecordDNFs ~= nil then
+				resultsService.RecordDNFs(dnfResults)
 			end
 		end
 

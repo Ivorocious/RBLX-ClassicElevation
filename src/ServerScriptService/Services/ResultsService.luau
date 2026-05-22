@@ -48,6 +48,7 @@ end
 local function createPlayerRaceResult(player: Player): PlayerRaceResult
 	return {
 		userId = player.UserId,
+		name = player.Name,
 		displayName = player.DisplayName,
 		status = RaceConstants.PlayerRaceStatus.Racing,
 		official = true,
@@ -123,6 +124,22 @@ function ResultsService.StartRace(raceId: string, courseId: string, format: Race
 	print(string.format("[ResultsService] Started result record for %s.", raceId))
 end
 
+function ResultsService.RegisterActiveRacers(players: { Player })
+	if currentRaceResult == nil then
+		warn("[ResultsService] RegisterActiveRacers called before StartRace.")
+		return
+	end
+
+	for _, player in ipairs(players) do
+		local playerResult = getOrCreatePlayerResult(player)
+		playerResult.status = RaceConstants.PlayerRaceStatus.Racing
+		playerResult.official = true
+	end
+
+	syncActiveRacers()
+	ResultsService.BroadcastCurrentRaceResults()
+end
+
 function ResultsService.RecordCheckpointSplit(
 	player: Player,
 	checkpointIndex: number,
@@ -163,6 +180,7 @@ function ResultsService.RecordCheckpointSplit(
 	)
 
 	syncActiveRacers()
+	ResultsService.BroadcastCurrentRaceResults()
 	return true
 end
 
@@ -257,6 +275,7 @@ function ResultsService.RecordDNFs(dnfResults: { PlayerRaceResult })
 	end
 
 	syncActiveRacers()
+	ResultsService.BroadcastCurrentRaceResults()
 end
 
 function ResultsService.SetRaceDuration(duration: number)

@@ -31,6 +31,7 @@ export type CheckpointSplit = {
 
 export type PlayerRaceResult = {
 	userId: number,
+	name: string?,
 	displayName: string,
 	status: PlayerRaceStatus,
 	official: boolean,
@@ -59,6 +60,7 @@ export type PersonalRaceSummary = {
 	raceId: string,
 	courseId: string,
 	userId: number,
+	name: string?,
 	displayName: string,
 	status: PlayerRaceStatus,
 	official: boolean,

@@ -60,6 +60,7 @@ end
 local function buildResultRecord(player: Player, status: PlayerRaceStatus, reason: string?): PlayerRaceResult
 	return {
 		userId = player.UserId,
+		name = player.Name,
 		displayName = player.DisplayName,
 		status = status,
 		official = officialRaceEligible[player] == true,

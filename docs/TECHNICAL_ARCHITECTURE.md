@@ -156,6 +156,29 @@ Known Phase 5 limitations:
 - LateRacing and GhostRacing do not yet use latest-checkpoint respawn; official fall counts remain
   limited to official `Racing` players.
 
+## MVP Race UI
+
+Phase 6 adds client display UI under `StarterPlayer/StarterPlayerScripts`. `Client.client.luau`
+keeps the remote listeners and debug output, while `Controllers/RaceUiController` owns the runtime
+player-facing UI:
+
+- `RaceHUD`: visible during Intermission, Countdown, Racing, RaceEnding, and Results. It displays
+  race state, local player status, timer, checkpoint split count when available, fall count when
+  available, and placement when the authoritative result payload includes it.
+- `RaceResultsUI`: visible around RaceEnding and Results. It displays official placements, finish
+  times, fall counts, and DNF rows from `RaceResultsUpdated`.
+- `PersonalSummaryUI`: appears after the local player has a result or during Results. It displays
+  the local player status, official placement and finish time when available, falls, checkpoint
+  splits, DNF reason when available through the result row, and a simple note such as `Clean Run`,
+  `Finished with Falls`, `DNF`, or `Unofficial Run`.
+
+The client UI is display-only. It does not decide official finish time, placement, falls,
+checkpoint completion, or result validity. `ResultsService` remains the authoritative source for
+official race result data. For UI freshness, `ResultsService` now registers official active racers
+at race start and broadcasts `RaceResultsUpdated` after active racer registration, checkpoint
+splits, falls, finishes, DNFs, and the Results state broadcast. This does not add persistence,
+personal bests, economy, ranked systems, course selection, rewards, or DataStore usage.
+
 ## Studio-Only Development Controls
 
 For faster local iteration, the client creates a `DevRaceControls` ScreenGui only when
