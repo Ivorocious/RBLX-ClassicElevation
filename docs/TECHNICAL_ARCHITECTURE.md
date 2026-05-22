@@ -48,9 +48,9 @@ All client-to-server remote payloads are untrusted. New remotes should document:
 
 MVP race remotes live under `ReplicatedStorage/Remotes`. Server-to-client remotes broadcast
 race state, player status, timers, results, and personal summaries. Client request remotes
-(`RequestSpectate`, `RequestRaceLate`, and `RequestGhostRace`) are only requests; future server
-code must validate the player, current race state, current player status, and eligibility before
-changing authoritative state.
+(`RequestSpectate`, `RequestRaceLate`, and `RequestGhostRace`) are only requests. The server
+validates the player, current race state, current player status, and eligibility before changing
+authoritative state.
 
 ## Data Persistence
 
@@ -129,6 +129,32 @@ racer has not reached any checkpoint, respawn falls back to `RaceCourse/Start`. 
 repositioned with a vertical offset using server-side pivot logic instead of being killed/reset.
 `ResultsService` owns fall counts in the current in-memory race result payload and preserves those
 counts when players finish or DNF.
+
+## Late Join and Finished-Player Options
+
+Phase 5 implements server-authoritative handling for `RequestSpectate`, `RequestRaceLate`, and
+`RequestGhostRace` in `PlayerRaceService`. The client creates minimal `LateJoinUI` and
+`FinishedOptionsUI` request panels, but those panels never set authoritative status locally.
+
+Players who join while the race is already in `Racing` are left in `Lobby` and are not official
+racers for that race. During the active race, a `Lobby` player may request `Spectating` or
+`LateRacing`. `Spectating` players cannot trigger official checkpoints, finish, placement, fall
+counts, or result data. `LateRacing` players can physically run the course, but they remain
+unofficial and cannot place, win, overwrite results, or become official DNFs.
+
+When an official racer finishes, `CheckpointService` locks their official result through
+`ResultsService` and sets their player status to `Finished`. During the active race, a `Finished`
+player may request `GhostRacing`; they can run again physically, but checkpoint, finish, placement,
+fall count, personal best, and result overwrite logic remains blocked because official validation
+only accepts official `Racing` players. A `Finished` player may also request `Spectating` without
+changing the locked race result.
+
+Known Phase 5 limitations:
+
+- Ghost racers do not yet have non-collision behavior.
+- LateRacing and GhostRacing do not yet maintain separate unofficial checkpoint progress.
+- LateRacing and GhostRacing do not yet use latest-checkpoint respawn; official fall counts remain
+  limited to official `Racing` players.
 
 ## Studio-Only Development Controls
 

@@ -28,6 +28,12 @@ local officialRaceEligible: { [Player]: boolean } = {}
 local remotesFolder = ReplicatedStorage:WaitForChild("Remotes")
 local playerRaceStatusChangedRemote =
 	remotesFolder:WaitForChild(RaceConstants.RemoteNames.PlayerRaceStatusChanged) :: RemoteEvent
+local requestSpectateRemote =
+	remotesFolder:WaitForChild(RaceConstants.RemoteNames.RequestSpectate) :: RemoteEvent
+local requestRaceLateRemote =
+	remotesFolder:WaitForChild(RaceConstants.RemoteNames.RequestRaceLate) :: RemoteEvent
+local requestGhostRaceRemote =
+	remotesFolder:WaitForChild(RaceConstants.RemoteNames.RequestGhostRace) :: RemoteEvent
 
 local function getServerTime(): number
 	return Workspace:GetServerTimeNow()
@@ -72,6 +78,22 @@ local function shouldQueuePlayerForCurrentState(): boolean
 		or currentRaceState == RaceConstants.RaceState.Countdown
 end
 
+local function isAcceptingLateRaceChoices(): boolean
+	return currentRaceState == RaceConstants.RaceState.Racing
+end
+
+local function warnRejectedRequest(player: Player, requestName: string)
+	warn(
+		string.format(
+			"[PlayerRaceService] Rejected %s from %s in state %s with status %s.",
+			requestName,
+			player.Name,
+			currentRaceState,
+			tostring(playerStatuses[player])
+		)
+	)
+end
+
 local function handlePlayerAdded(player: Player)
 	if shouldQueuePlayerForCurrentState() then
 		PlayerRaceService.SetPlayerStatus(player, RaceConstants.PlayerRaceStatus.Queued, "Joined before race start")
@@ -113,6 +135,18 @@ function PlayerRaceService.Start(_context: ServiceContext?)
 	for _, player in ipairs(Players:GetPlayers()) do
 		handlePlayerAdded(player)
 	end
+
+	requestSpectateRemote.OnServerEvent:Connect(function(player)
+		PlayerRaceService.RequestSpectate(player)
+	end)
+
+	requestRaceLateRemote.OnServerEvent:Connect(function(player)
+		PlayerRaceService.RequestRaceLate(player)
+	end)
+
+	requestGhostRaceRemote.OnServerEvent:Connect(function(player)
+		PlayerRaceService.RequestGhostRace(player)
+	end)
 end
 
 function PlayerRaceService.OnRaceStateChanged(nextRaceState: RaceState, raceId: string?)
@@ -155,6 +189,67 @@ function PlayerRaceService.SetPlayerStatus(player: Player, status: PlayerRaceSta
 	playerStatuses[player] = status
 	broadcastStatusChanged(player, previousStatus, status, reason)
 	print(string.format("[PlayerRaceService] %s status -> %s", player.Name, status))
+end
+
+function PlayerRaceService.CanSpectate(player: Player): boolean
+	local status = playerStatuses[player]
+
+	return isAcceptingLateRaceChoices()
+		and (
+			status == RaceConstants.PlayerRaceStatus.Lobby
+			or status == RaceConstants.PlayerRaceStatus.Finished
+			or status == RaceConstants.PlayerRaceStatus.Spectating
+			or status == RaceConstants.PlayerRaceStatus.LateRacing
+		)
+end
+
+function PlayerRaceService.CanRaceLate(player: Player): boolean
+	local status = playerStatuses[player]
+
+	return isAcceptingLateRaceChoices()
+		and (
+			status == RaceConstants.PlayerRaceStatus.Lobby
+			or status == RaceConstants.PlayerRaceStatus.Spectating
+			or status == RaceConstants.PlayerRaceStatus.LateRacing
+		)
+end
+
+function PlayerRaceService.CanGhostRace(player: Player): boolean
+	return isAcceptingLateRaceChoices()
+		and playerStatuses[player] == RaceConstants.PlayerRaceStatus.Finished
+end
+
+function PlayerRaceService.RequestSpectate(player: Player): boolean
+	if not PlayerRaceService.CanSpectate(player) then
+		warnRejectedRequest(player, RaceConstants.RemoteNames.RequestSpectate)
+		return false
+	end
+
+	officialRaceEligible[player] = false
+	PlayerRaceService.SetPlayerStatus(player, RaceConstants.PlayerRaceStatus.Spectating, "Requested spectate")
+	return true
+end
+
+function PlayerRaceService.RequestRaceLate(player: Player): boolean
+	if not PlayerRaceService.CanRaceLate(player) then
+		warnRejectedRequest(player, RaceConstants.RemoteNames.RequestRaceLate)
+		return false
+	end
+
+	officialRaceEligible[player] = false
+	PlayerRaceService.SetPlayerStatus(player, RaceConstants.PlayerRaceStatus.LateRacing, "Requested late race")
+	return true
+end
+
+function PlayerRaceService.RequestGhostRace(player: Player): boolean
+	if not PlayerRaceService.CanGhostRace(player) then
+		warnRejectedRequest(player, RaceConstants.RemoteNames.RequestGhostRace)
+		return false
+	end
+
+	officialRaceEligible[player] = false
+	PlayerRaceService.SetPlayerStatus(player, RaceConstants.PlayerRaceStatus.GhostRacing, "Requested ghost race")
+	return true
 end
 
 function PlayerRaceService.QueueEligiblePlayers()
