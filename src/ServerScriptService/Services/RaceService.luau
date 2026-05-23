@@ -22,6 +22,7 @@ local roundLoopStarted = false
 
 local playerRaceService: any = nil
 local resultsService: any = nil
+local stagingService: any = nil
 
 local remotesFolder = ReplicatedStorage:WaitForChild("Remotes")
 local raceStateChangedRemote = remotesFolder:WaitForChild(RaceConstants.RemoteNames.RaceStateChanged) :: RemoteEvent
@@ -159,8 +160,32 @@ local function getEligiblePlayerCount(): number
 end
 
 local function resetPlayersForNextRound(reason: string)
+	if stagingService ~= nil and stagingService.ReturnAllPlayersToLobby ~= nil then
+		stagingService.ReturnAllPlayersToLobby(reason)
+	end
+
 	if playerRaceService ~= nil and playerRaceService.ResetPlayersForNextRound ~= nil then
 		playerRaceService.ResetPlayersForNextRound(reason)
+	end
+end
+
+local function getQueuedPlayers(): { Player }
+	if playerRaceService == nil or playerRaceService.GetQueuedPlayers == nil then
+		return {}
+	end
+
+	return playerRaceService.GetQueuedPlayers()
+end
+
+local function stageQueuedPlayersAtStart(reason: string)
+	if stagingService ~= nil and stagingService.MovePlayersToRaceStart ~= nil then
+		stagingService.MovePlayersToRaceStart(getQueuedPlayers(), reason)
+	end
+end
+
+local function returnAllPlayersToLobby(reason: string)
+	if stagingService ~= nil and stagingService.ReturnAllPlayersToLobby ~= nil then
+		stagingService.ReturnAllPlayersToLobby(reason)
 	end
 end
 
@@ -168,6 +193,7 @@ local function waitForMinimumPlayers()
 	currentRaceId = ""
 	currentRaceStartedAt = nil
 	setRaceState(RaceConstants.RaceState.WaitingForPlayers, nil)
+	returnAllPlayersToLobby("Waiting for players")
 
 	while getEligiblePlayerCount() < RaceConfig.MinPlayers do
 		broadcastTimerUpdate()
@@ -210,7 +236,11 @@ local function runRoundLoop()
 		devStartRaceNowRequested = false
 
 		if not shouldSkipCountdown then
-			runTimedState(RaceConstants.RaceState.Countdown, RaceConfig.CountdownDuration, nil)
+			runTimedState(RaceConstants.RaceState.Countdown, RaceConfig.CountdownDuration, function()
+				stageQueuedPlayersAtStart("countdown staging")
+			end)
+		else
+			stageQueuedPlayersAtStart("countdown skipped staging")
 		end
 
 		if getEligiblePlayerCount() < RaceConfig.MinPlayers then
@@ -223,6 +253,7 @@ local function runRoundLoop()
 		end
 
 		devStartRaceNowRequested = false
+		stageQueuedPlayersAtStart("race start staging")
 
 		local raceStartedAt = getServerTime()
 		currentRaceStartedAt = raceStartedAt
@@ -320,6 +351,7 @@ function RaceService.Init(context: ServiceContext?)
 	if context ~= nil then
 		playerRaceService = context.Services.PlayerRaceService
 		resultsService = context.Services.ResultsService
+		stagingService = context.Services.StagingService
 	end
 
 	if playerRaceService == nil then
@@ -328,6 +360,10 @@ function RaceService.Init(context: ServiceContext?)
 
 	if resultsService == nil then
 		warn("[RaceService] ResultsService dependency is missing.")
+	end
+
+	if stagingService == nil then
+		warn("[RaceService] StagingService dependency is missing.")
 	end
 
 	stateStartedAt = getServerTime()

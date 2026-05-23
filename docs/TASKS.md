@@ -23,3 +23,4 @@ Track scoped implementation work for ProjectClassicElevation here.
 - 2026-05-22: Implemented server-side fall detection and latest-checkpoint respawn.
 - 2026-05-23: Implemented late join and finished-player options.
 - 2026-05-23: Implemented MVP race HUD, results UI, and personal summary UI.
+- 2026-05-24: Implemented round staging and lobby/start positioning.

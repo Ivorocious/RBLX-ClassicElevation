@@ -179,6 +179,31 @@ at race start and broadcasts `RaceResultsUpdated` after active racer registratio
 splits, falls, finishes, DNFs, and the Results state broadcast. This does not add persistence,
 personal bests, economy, ranked systems, course selection, rewards, or DataStore usage.
 
+## MVP Round Staging and Player Positioning
+
+Phase 7A adds server-authoritative physical staging through `StagingService`. Staging configuration
+lives in `RaceConfig` and points at the Studio-authored `Workspace/Lobby` and
+`Workspace/RaceCourse` objects. The MVP lobby target is `LobbySpawnPadMarker`, with `LobbyPlatform`
+as a safe fallback. The race start target is `RaceCourse/Start`.
+
+`StagingService` only moves characters on the server. It finds each player's character, humanoid,
+and `HumanoidRootPart`, clears linear/angular velocity, and uses `Model:PivotTo()` with a small
+vertical offset. Multiple players receive small formation offsets around the target part to reduce
+spawn overlap. Clients cannot request or choose authoritative teleport locations.
+
+`RaceService` uses staging at round boundaries:
+
+- `WaitingForPlayers`: returns current players to the lobby target when the round loop enters the
+  waiting state.
+- `Countdown`: moves queued official racers to `RaceCourse/Start` when Countdown begins.
+- Race start: stages queued racers again immediately before official `Racing` status starts, so
+  players who joined during Countdown are also at the start.
+- `Resetting`: returns all players to the lobby target before resetting statuses to `Lobby`.
+
+Staging is separate from fall respawn. During `Racing`, players are not repeatedly teleported by
+staging; official fall recovery remains owned by `RespawnService`, which still respawns racers at
+`RaceCourse/Start` before their first checkpoint or at their latest official checkpoint afterward.
+
 ## Studio-Only Development Controls
 
 For faster local iteration, the client creates a `DevRaceControls` ScreenGui only when

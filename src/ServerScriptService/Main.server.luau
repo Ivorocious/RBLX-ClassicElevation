@@ -14,6 +14,7 @@ type StartupContext = {
 local SERVICE_NAMES = {
 	"PlayerRaceService",
 	"ResultsService",
+	"StagingService",
 	"RaceService",
 	"CheckpointService",
 	"RespawnService",

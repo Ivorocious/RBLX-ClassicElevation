@@ -14,6 +14,14 @@ export type RaceConfig = {
 	ResettingDuration: number,
 	FallYThreshold: number,
 	DefaultCourseId: string,
+	LobbyModelName: string,
+	LobbySpawnMarkerName: string,
+	LobbyFallbackPartName: string,
+	RaceCourseModelName: string,
+	RaceStartPartName: string,
+	RacerStartVerticalOffset: number,
+	LobbyResetVerticalOffset: number,
+	StagingTeleportEnabled: boolean,
 }
 
 local RaceConfig: RaceConfig = {
@@ -27,6 +35,14 @@ local RaceConfig: RaceConfig = {
 	ResettingDuration = RaceConstants.DefaultDurations.Resetting,
 	FallYThreshold = 4,
 	DefaultCourseId = "MVP_PointToPoint_01",
+	LobbyModelName = "Lobby",
+	LobbySpawnMarkerName = "LobbySpawnPadMarker",
+	LobbyFallbackPartName = "LobbyPlatform",
+	RaceCourseModelName = "RaceCourse",
+	RaceStartPartName = "Start",
+	RacerStartVerticalOffset = 5,
+	LobbyResetVerticalOffset = 5,
+	StagingTeleportEnabled = true,
 }
 
 return RaceConfig

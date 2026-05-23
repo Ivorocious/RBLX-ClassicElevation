@@ -176,6 +176,18 @@ function PlayerRaceService.GetPlayerStatus(player: Player): PlayerRaceStatus?
 	return playerStatuses[player]
 end
 
+function PlayerRaceService.GetQueuedPlayers(): { Player }
+	local queuedPlayers = {}
+
+	for _, player in ipairs(Players:GetPlayers()) do
+		if playerStatuses[player] == RaceConstants.PlayerRaceStatus.Queued then
+			table.insert(queuedPlayers, player)
+		end
+	end
+
+	return queuedPlayers
+end
+
 function PlayerRaceService.IsOfficialRacer(player: Player): boolean
 	return officialRaceEligible[player] == true
 end
