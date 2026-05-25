@@ -26,7 +26,46 @@ Use this checklist for the current MVP race loop before moving into larger featu
 - [X] Player leaving mid-race: active official racer who leaves is marked DNF with reason `Left race`.
 - [X] Player joining mid-race: new player remains unofficial unless they choose Race Late, and still cannot affect official results.
 
+## Phase 8B Course Expansion Checklist
+
+Use this checklist to tune the expanded six-checkpoint MVP graybox course.
+
+- [X] New player completion time: target 2:30-3:00; does not matter right now.
+- [X] Practiced player completion time: target 1:00-1:30; 57 seconds (I am highly experienced).
+- [X] Average falls per run: 1
+- [X] Checkpoint_001 spacing and warm-up section feedback: Was impossible, Manually Adjusted
+- [X] Checkpoint_002 staggered platform section feedback: Was impossible, Manually Adjusted
+- [X] Checkpoint_003 narrow bridge / precision section feedback: Was impossible, Manually Adjusted
+- [X] Checkpoint_004 elevation climb section feedback: Was impossible, Manually Adjusted
+- [X] Checkpoint_005 rhythm/gap section feedback: Was impossible, Manually Adjusted
+- [X] Checkpoint_006 final mixed challenge feedback: Was impossible, Manually Adjusted
+- [X] Confusing sections: None
+- [X] Too easy sections: Everything is too easy but it does not matter since the purpose is to visualize a 1 minute map
+- [X] Too hard sections: It was literally impossible before I manually adjusted the course
+- [X] Checkpoint spacing feedback: Excellent, honestly.
+- [X] 2-6 player crowding feedback: Not done yet, but it does not matter yet (I will only do this once I create a shippable course)
+- [X] FallZone_Main coverage after expansion: Great
+- [X] Finish readability and final approach feedback: Fine, could be better
+
 ## Sessions
+
+### 2026-05-25 Phase 8B Smoke Test
+
+**Build/Commit:** TBD.
+
+**What Was Tested:** Studio Play single-player smoke test after the course expansion. Used MCP
+character pivoting through `Checkpoint_001` through `Checkpoint_006` and `Finish` to verify server
+checkpoint order, finish recording, RaceHUD, and PersonalSummaryUI payload display.
+
+**Findings:** RaceHUD showed the 5:00 timer and all six checkpoints completed. Finish recorded
+placement `#1` and PersonalSummaryUI displayed six checkpoint splits. This was not a human timing
+pass, so actual new-player/practiced-player completion time still needs manual playtesting.
+
+**Bugs Found:** None in this smoke test. Studio output still shows unrelated Roblox style warnings
+for `RoundedCorner8 ::UICorner`.
+
+**Follow-up Tasks:** Run full human playtests for course timing, falls, two-player crowding, and
+ghost racer non-collision on the expanded course.
 
 ### 2026-5-25
 

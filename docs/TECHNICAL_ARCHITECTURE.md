@@ -247,6 +247,22 @@ updated result payload. Finished results remain locked and are not overwritten b
 handling. LateRacing, GhostRacing, and Spectating players remain unofficial and cannot create or
 modify official results.
 
+## MVP Course Expansion
+
+Phase 8B expands the Studio-authored `Workspace/RaceCourse` point-to-point graybox course into a
+longer six-checkpoint route. The course still uses the `Checkpoint_###` naming convention under
+`Workspace/RaceCourse/Checkpoints`, so `CheckpointService` discovers `Checkpoint_001` through
+`Checkpoint_006` without code changes.
+
+`RaceConfig.RaceDuration` is now 300 seconds for the MVP course target. The route is intended to
+give new players enough time for a roughly 2:30-3:00 completion and practiced players enough room
+for roughly 1:00-1:30 runs. The Studio course remains a static graybox: no moving platforms, kill
+bricks, course selection, persistence, rewards, or DataStore behavior are introduced.
+
+`FallZone_Main` remains the single fall detection volume for the MVP course and has been resized in
+Studio to cover the expanded route bounds. Fall respawn behavior is unchanged: official racers
+respawn at Start before their first checkpoint or at their latest completed official checkpoint.
+
 ## Studio-Only Development Controls
 
 For faster local iteration, the client creates a `DevRaceControls` ScreenGui only when
