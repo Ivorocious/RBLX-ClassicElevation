@@ -151,7 +151,6 @@ changing the locked race result.
 
 Known Phase 5 limitations:
 
-- Ghost racers do not yet have non-collision behavior.
 - LateRacing and GhostRacing do not yet maintain separate unofficial checkpoint progress.
 - LateRacing and GhostRacing do not yet use latest-checkpoint respawn; official fall counts remain
   limited to official `Racing` players.
@@ -203,6 +202,32 @@ spawn overlap. Clients cannot request or choose authoritative teleport locations
 Staging is separate from fall respawn. During `Racing`, players are not repeatedly teleported by
 staging; official fall recovery remains owned by `RespawnService`, which still respawns racers at
 `RaceCourse/Start` before their first checkpoint or at their latest official checkpoint afterward.
+
+## GhostRacing Non-Collision
+
+Phase 7B implements server-authoritative non-collision for `GhostRacing` through `GhostService`.
+`GhostService` creates or ensures two character collision groups:
+
+- `RaceCharacter`: normal player character parts for Lobby, Queued, Racing, Finished, Spectating,
+  LateRacing, and DNF players.
+- `GhostCharacter`: character parts for players whose authoritative status is `GhostRacing`.
+
+`GhostCharacter` does not collide with `RaceCharacter` or other `GhostCharacter` parts, so ghost
+racers cannot physically block official racers or each other. `GhostCharacter` still collides with
+`Default`, so ghost racers can run on the course and lobby parts normally. `RaceCharacter` keeps
+normal collision against the world and other non-ghost characters.
+
+`PlayerRaceService` remains the owner of status authority. When it changes a player into
+`GhostRacing`, it asks `GhostService` to apply ghost collision and a small reversible transparency
+change to that player's character parts. When the player leaves `GhostRacing`, including during
+round reset, `GhostService` restores the character to `RaceCharacter` collision and restores stored
+part transparency. `GhostService` also handles character respawns and newly added character parts,
+including accessories, while avoiding anchored course or lobby objects.
+
+Ghost racers remain unofficial. They still cannot trigger official checkpoints, finish officially,
+overwrite placement, change finish time, change fall count, or affect race result data. LateRacing
+and GhostRacing still do not yet have separate unofficial checkpoint progress or checkpoint respawn
+tracking.
 
 ## Studio-Only Development Controls
 

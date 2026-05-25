@@ -48,6 +48,8 @@ RaceConstants.RemoteNames = {
 
 RaceConstants.CollisionGroups = {
 	Default = "Default",
+	RaceCharacter = "RaceCharacter",
+	GhostCharacter = "GhostCharacter",
 	Racers = "Racers",
 	GhostRacers = "GhostRacers",
 }

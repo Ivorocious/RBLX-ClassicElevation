@@ -19,6 +19,7 @@ local PlayerRaceService = {}
 
 local isInitialized = false
 local isStarted = false
+local ghostService: any = nil
 local currentRaceState: RaceState = RaceConstants.RaceState.WaitingForPlayers
 local currentRaceId = ""
 
@@ -110,9 +111,42 @@ local function handlePlayerRemoving(player: Player)
 	officialRaceEligible[player] = nil
 end
 
-function PlayerRaceService.Init(_context: ServiceContext?)
+local function updateGhostMode(player: Player, previousStatus: PlayerRaceStatus?, nextStatus: PlayerRaceStatus)
+	if ghostService == nil or ghostService.SetPlayerGhostMode == nil then
+		return
+	end
+
+	local shouldGhost = nextStatus == RaceConstants.PlayerRaceStatus.GhostRacing
+	local wasGhost = previousStatus == RaceConstants.PlayerRaceStatus.GhostRacing
+
+	if not shouldGhost and not wasGhost then
+		return
+	end
+
+	local didUpdate, errorMessage = pcall(ghostService.SetPlayerGhostMode, player, shouldGhost)
+
+	if not didUpdate then
+		warn(
+			string.format(
+				"[PlayerRaceService] Ghost mode update failed for %s: %s",
+				player.Name,
+				tostring(errorMessage)
+			)
+		)
+	end
+end
+
+function PlayerRaceService.Init(context: ServiceContext?)
 	if isInitialized then
 		return
+	end
+
+	if context ~= nil then
+		ghostService = context.Services.GhostService
+	end
+
+	if ghostService == nil then
+		warn("[PlayerRaceService] GhostService dependency is missing.")
 	end
 
 	isInitialized = true
@@ -200,6 +234,7 @@ function PlayerRaceService.SetPlayerStatus(player: Player, status: PlayerRaceSta
 	end
 
 	playerStatuses[player] = status
+	updateGhostMode(player, previousStatus, status)
 	broadcastStatusChanged(player, previousStatus, status, reason)
 	print(string.format("[PlayerRaceService] %s status -> %s", player.Name, status))
 end
