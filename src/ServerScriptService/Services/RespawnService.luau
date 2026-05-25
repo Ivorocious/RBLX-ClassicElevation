@@ -207,6 +207,10 @@ local function bindFallYThreshold()
 	end)
 end
 
+local function handlePlayerRemoving(player: Player)
+	lastRespawnAtByUserId[player.UserId] = nil
+end
+
 function RespawnService.Init(context: ServiceContext?)
 	if isInitialized then
 		return
@@ -249,6 +253,7 @@ function RespawnService.Start(_context: ServiceContext?)
 	end
 
 	isStarted = true
+	Players.PlayerRemoving:Connect(handlePlayerRemoving)
 	bindFallZone()
 	bindFallYThreshold()
 end

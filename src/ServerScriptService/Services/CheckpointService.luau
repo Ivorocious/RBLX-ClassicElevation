@@ -361,6 +361,10 @@ local function bindCourse()
 	print(string.format("[CheckpointService] Bound %d checkpoints and finish part.", #checkpointDefinitions))
 end
 
+local function handlePlayerRemoving(player: Player)
+	playerProgressByUserId[player.UserId] = nil
+end
+
 function CheckpointService.GetLatestCheckpointIndex(player: Player): number
 	local raceId = getCurrentRaceId()
 	local playerProgress = playerProgressByUserId[player.UserId]
@@ -428,6 +432,7 @@ function CheckpointService.Start(_context: ServiceContext?)
 	end
 
 	isStarted = true
+	Players.PlayerRemoving:Connect(handlePlayerRemoving)
 	bindCourse()
 end
 

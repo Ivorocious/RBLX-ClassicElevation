@@ -111,17 +111,12 @@ local function handlePlayerRemoving(player: Player)
 	officialRaceEligible[player] = nil
 end
 
-local function updateGhostMode(player: Player, previousStatus: PlayerRaceStatus?, nextStatus: PlayerRaceStatus)
+local function updateGhostMode(player: Player, _previousStatus: PlayerRaceStatus?, nextStatus: PlayerRaceStatus)
 	if ghostService == nil or ghostService.SetPlayerGhostMode == nil then
 		return
 	end
 
 	local shouldGhost = nextStatus == RaceConstants.PlayerRaceStatus.GhostRacing
-	local wasGhost = previousStatus == RaceConstants.PlayerRaceStatus.GhostRacing
-
-	if not shouldGhost and not wasGhost then
-		return
-	end
 
 	local didUpdate, errorMessage = pcall(ghostService.SetPlayerGhostMode, player, shouldGhost)
 
@@ -230,6 +225,7 @@ function PlayerRaceService.SetPlayerStatus(player: Player, status: PlayerRaceSta
 	local previousStatus = playerStatuses[player]
 
 	if previousStatus == status then
+		updateGhostMode(player, previousStatus, status)
 		return
 	end
 

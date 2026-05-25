@@ -7,6 +7,8 @@ Track scoped implementation work for ProjectClassicElevation here.
 - Confirm Rojo sync from filesystem into the open Roblox Studio place.
 - Add separate unofficial checkpoint and respawn tracking for LateRacing and GhostRacing.
 - Add test tooling when the first pure logic modules exist.
+- Optional: improve course difficulty after playtesting.
+- Optional: polish MVP UI after playtesting.
 
 ## In Progress
 
@@ -24,3 +26,4 @@ Track scoped implementation work for ProjectClassicElevation here.
 - 2026-05-23: Implemented MVP race HUD, results UI, and personal summary UI.
 - 2026-05-24: Implemented round staging and lobby/start positioning.
 - 2026-05-25: Implemented ghost racer non-collision behavior.
+- 2026-05-25: Performed MVP hardening pass.

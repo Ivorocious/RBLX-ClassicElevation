@@ -221,13 +221,31 @@ normal collision against the world and other non-ghost characters.
 `GhostRacing`, it asks `GhostService` to apply ghost collision and a small reversible transparency
 change to that player's character parts. When the player leaves `GhostRacing`, including during
 round reset, `GhostService` restores the character to `RaceCharacter` collision and restores stored
-part transparency. `GhostService` also handles character respawns and newly added character parts,
-including accessories, while avoiding anchored course or lobby objects.
+part transparency. `PlayerRaceService` also re-syncs ghost mode on status assignments so Lobby,
+Queued, and Racing transitions restore normal character collision if a prior reset missed a
+character. `GhostService` also handles character respawns and newly added character parts, including
+accessories, while avoiding anchored course or lobby objects.
 
 Ghost racers remain unofficial. They still cannot trigger official checkpoints, finish officially,
 overwrite placement, change finish time, change fall count, or affect race result data. LateRacing
 and GhostRacing still do not yet have separate unofficial checkpoint progress or checkpoint respawn
 tracking.
+
+## MVP Hardening Pass
+
+Phase 8A keeps the existing playable loop intact and focuses on cleanup around edge cases. Official
+race results remain in memory only and continue to be server-authoritative.
+
+Runtime-only per-player state is cleaned when players leave: checkpoint progress is removed from
+`CheckpointService`, fall respawn cooldown state is removed from `RespawnService`, and ghost visual
+transparency bookkeeping uses weak part keys so destroyed character parts do not keep stale
+references alive.
+
+If an official active racer leaves during the current race before finishing, `ResultsService` marks
+that racer as DNF with the reason `Left race`, removes them from active racers, and broadcasts the
+updated result payload. Finished results remain locked and are not overwritten by disconnect or DNF
+handling. LateRacing, GhostRacing, and Spectating players remain unofficial and cannot create or
+modify official results.
 
 ## Studio-Only Development Controls
 

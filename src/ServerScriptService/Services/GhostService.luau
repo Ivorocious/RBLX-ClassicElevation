@@ -18,7 +18,7 @@ local collisionGroupsInitialized = false
 local ghostPlayers: { [Player]: boolean } = {}
 local playerConnections: { [Player]: RBXScriptConnection } = {}
 local characterConnections: { [Player]: RBXScriptConnection } = {}
-local originalTransparencyByPart: { [BasePart]: number } = {}
+local originalTransparencyByPart = setmetatable({}, { __mode = "k" }) :: { [BasePart]: number }
 
 local RACE_CHARACTER_GROUP = RaceConstants.CollisionGroups.RaceCharacter
 local GHOST_CHARACTER_GROUP = RaceConstants.CollisionGroups.GhostCharacter

@@ -1,5 +1,6 @@
 --!strict
 
+local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
@@ -83,6 +84,70 @@ local function findCheckpointSplit(playerResult: PlayerRaceResult, checkpointInd
 	return nil
 end
 
+local function applyDnfResult(dnfResult: PlayerRaceResult): boolean
+	if currentRaceResult == nil then
+		return false
+	end
+
+	if finishedUserIds[dnfResult.userId] == true or dnfUserIds[dnfResult.userId] == true then
+		return false
+	end
+
+	local playerResult = playerResultsByUserId[dnfResult.userId]
+
+	if playerResult ~= nil then
+		if playerResult.status == RaceConstants.PlayerRaceStatus.Finished then
+			finishedUserIds[dnfResult.userId] = true
+			return false
+		end
+
+		playerResult.status = RaceConstants.PlayerRaceStatus.DNF
+		playerResult.dnfReason = dnfResult.dnfReason
+		table.insert(currentRaceResult.dnfs, playerResult)
+	else
+		playerResultsByUserId[dnfResult.userId] = dnfResult
+		table.insert(currentRaceResult.dnfs, dnfResult)
+	end
+
+	dnfUserIds[dnfResult.userId] = true
+	return true
+end
+
+local function handlePlayerRemoving(player: Player)
+	if currentRaceResult == nil then
+		return
+	end
+
+	local playerResult = playerResultsByUserId[player.UserId]
+
+	if playerResult == nil or playerResult.official ~= true then
+		return
+	end
+
+	local didDnf = applyDnfResult({
+		userId = playerResult.userId,
+		name = playerResult.name,
+		displayName = playerResult.displayName,
+		status = RaceConstants.PlayerRaceStatus.DNF,
+		official = true,
+		placement = nil,
+		finishTime = nil,
+		falls = playerResult.falls,
+		checkpointSplits = playerResult.checkpointSplits,
+		dnfReason = "Left race",
+		isPersonalBest = false,
+		summaryNotes = {},
+	})
+
+	if not didDnf then
+		return
+	end
+
+	syncActiveRacers()
+	ResultsService.BroadcastCurrentRaceResults()
+	print(string.format("[ResultsService] %s marked DNF after leaving.", player.Name))
+end
+
 function ResultsService.Init(_context: ServiceContext?)
 	if isInitialized then
 		return
@@ -102,6 +167,7 @@ function ResultsService.Start(_context: ServiceContext?)
 	end
 
 	isStarted = true
+	Players.PlayerRemoving:Connect(handlePlayerRemoving)
 end
 
 function ResultsService.StartRace(raceId: string, courseId: string, format: RaceFormat, startedAt: number)
@@ -258,20 +324,7 @@ function ResultsService.RecordDNFs(dnfResults: { PlayerRaceResult })
 	end
 
 	for _, dnfResult in ipairs(dnfResults) do
-		if finishedUserIds[dnfResult.userId] ~= true and dnfUserIds[dnfResult.userId] ~= true then
-			local playerResult = playerResultsByUserId[dnfResult.userId]
-
-			if playerResult ~= nil then
-				playerResult.status = RaceConstants.PlayerRaceStatus.DNF
-				playerResult.dnfReason = dnfResult.dnfReason
-				table.insert(currentRaceResult.dnfs, playerResult)
-			else
-				playerResultsByUserId[dnfResult.userId] = dnfResult
-				table.insert(currentRaceResult.dnfs, dnfResult)
-			end
-
-			dnfUserIds[dnfResult.userId] = true
-		end
+		applyDnfResult(dnfResult)
 	end
 
 	syncActiveRacers()
