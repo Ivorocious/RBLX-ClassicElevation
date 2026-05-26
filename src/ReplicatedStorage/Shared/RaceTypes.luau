@@ -21,6 +21,18 @@ export type PlayerRaceStatus =
 
 export type RaceFormat = "PointToPoint" | "LapBased"
 
+export type CourseInfo = {
+	courseId: string,
+	displayName: string,
+	raceFormat: RaceFormat,
+	lapCount: number,
+	enabled: boolean,
+	difficulty: string,
+	targetNewPlayerTime: number?,
+	targetPracticedTime: number?,
+	checkpointCount: number?,
+}
+
 export type CheckpointSplit = {
 	checkpointIndex: number,
 	checkpointName: string,

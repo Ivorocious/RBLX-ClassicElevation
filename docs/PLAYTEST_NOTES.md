@@ -49,6 +49,23 @@ Use this checklist to tune the expanded six-checkpoint MVP graybox course.
 
 ## Sessions
 
+### 2026-05-27 Course Template Foundation
+
+**Build/Commit:** TBD.
+
+**What Was Tested:** Studio inspection for `ServerStorage.CourseLibrary.CourseTemplate`, repo
+source-map verification for the CourseService foundation, and a short Studio Play startup smoke
+test.
+
+**Findings:** Course template exists with the required hierarchy and `CourseInfo` attributes.
+Existing `Workspace.RaceCourse` and `Workspace.Lobby` remain present. Studio Play started with
+`RaceHUD` present, confirming the service bootstrap still loads.
+
+**Bugs Found:** None in inspection.
+
+**Follow-up Tasks:** Implement active-course reference migration before adding course rotation or
+lap-based gameplay.
+
 ### 2026-05-27 Fall Respawn Regression
 
 **Build/Commit:** TBD.

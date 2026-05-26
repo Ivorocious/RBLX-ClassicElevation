@@ -268,6 +268,24 @@ bricks, course selection, persistence, rewards, or DataStore behavior are introd
 Studio to cover the expanded route bounds. Fall respawn behavior is unchanged: official racers
 respawn at Start before their first checkpoint or at their latest completed official checkpoint.
 
+## Course Template and CourseService Foundation
+
+Phase 8C adds `CourseService` as the foundation for future multi-course support. It discovers
+`ServerStorage/CourseLibrary` when present, reads `CourseInfo` attributes, validates course
+hierarchy, and exposes helper methods for the active course model, Start, Finish, Checkpoints, and
+`FallZone_Main`.
+
+For compatibility, the active runtime course remains `Workspace/RaceCourse`. Phase 8C does not
+spawn, rotate, or replace courses and does not change checkpoint, fall, staging, result, or lap
+gameplay. If `ServerStorage/CourseLibrary` is missing, `CourseService` falls back to the existing
+`Workspace/RaceCourse` so the current point-to-point flow continues to work.
+
+Studio now contains `ServerStorage/CourseLibrary/CourseTemplate`, a reusable authoring model with
+`CourseInfo`, Start, Checkpoints, Finish, Obstacles, FallZones, RouteMarkers, Decoration, and Bounds.
+`CourseInfo` attributes define CourseId, DisplayName, RaceFormat, LapCount, Enabled, Difficulty,
+target completion times, and CheckpointCount. The template uses the graybox color convention for
+manual course creation.
+
 ## Studio-Only Development Controls
 
 For faster local iteration, the client creates a `DevRaceControls` ScreenGui only when

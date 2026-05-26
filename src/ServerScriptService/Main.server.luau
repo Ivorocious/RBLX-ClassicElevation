@@ -12,13 +12,14 @@ type StartupContext = {
 }
 
 local SERVICE_NAMES = {
+	"CourseService",
 	"PlayerRaceService",
 	"ResultsService",
 	"StagingService",
-	"RaceService",
 	"CheckpointService",
 	"RespawnService",
 	"GhostService",
+	"RaceService",
 }
 
 local servicesFolder = ServerScriptService:WaitForChild("Services")

@@ -27,3 +27,4 @@ Track scoped implementation work for ProjectClassicElevation here.
 - 2026-05-25: Implemented ghost racer non-collision behavior.
 - 2026-05-25: Performed MVP hardening pass.
 - 2026-05-25: Expanded the MVP graybox course and improved course difficulty after playtesting.
+- 2026-05-27: Added CourseService foundation and reusable course template.
