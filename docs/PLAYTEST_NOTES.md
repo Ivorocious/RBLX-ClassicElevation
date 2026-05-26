@@ -49,6 +49,24 @@ Use this checklist to tune the expanded six-checkpoint MVP graybox course.
 
 ## Sessions
 
+### 2026-05-27 Fall Respawn Regression
+
+**Build/Commit:** TBD.
+
+**What Was Tested:** Falling through `FallZone_Main` during `Racing`. Post-fix MCP smoke also
+moved an official racer below the fall threshold during `Racing`.
+
+**Findings:** An official racer could pass through the red fall zone, die, and respawn at the lobby
+spawn instead of returning to the latest checkpoint or Start. After the fix, moving the official
+racer to `Y=1` during `Racing` returned them to Start and updated the HUD to `Falls: 1`.
+
+**Bugs Found:**
+- Fall recovery did not have a character-death fallback when Roblox killed the character before the
+  normal fall-zone or Y-threshold pivot completed. FIXED
+
+**Follow-up Tasks:** Manually retest a full red-box/void death before Checkpoint_001 and after a
+later checkpoint during an active race.
+
 ### 2026-05-25 Phase 8B Smoke Test
 
 **Build/Commit:** TBD.

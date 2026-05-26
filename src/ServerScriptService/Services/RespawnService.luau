@@ -27,6 +27,9 @@ local resultsService: any = nil
 local fallZoneConnection: RBXScriptConnection? = nil
 local heartbeatConnection: RBXScriptConnection? = nil
 local lastRespawnAtByUserId: { [number]: number } = {}
+local pendingDeathRespawnRaceIdByUserId: { [number]: string } = {}
+local characterAddedConnections: { [Player]: RBXScriptConnection } = {}
+local humanoidDiedConnections: { [Player]: RBXScriptConnection } = {}
 
 local RESPAWN_COOLDOWN = 1.5
 local HEARTBEAT_CHECK_INTERVAL = 0.25
@@ -48,6 +51,14 @@ end
 
 local function isRaceActive(): boolean
 	return raceService ~= nil and raceService.IsRaceActive ~= nil and raceService.IsRaceActive() == true
+end
+
+local function getCurrentRaceId(): string
+	if raceService == nil or raceService.GetCurrentRaceId == nil then
+		return ""
+	end
+
+	return raceService.GetCurrentRaceId()
 end
 
 local function getPlayerStatus(player: Player): PlayerRaceStatus?
@@ -95,12 +106,15 @@ local function canRespawnNow(player: Player): boolean
 		return false
 	end
 
-	lastRespawnAtByUserId[player.UserId] = now
 	return true
 end
 
-local function respawnPlayer(player: Player, source: string)
-	if not isValidFallRespawnPlayer(player) or not canRespawnNow(player) then
+local function markRespawnNow(player: Player)
+	lastRespawnAtByUserId[player.UserId] = getServerTime()
+end
+
+local function respawnPlayer(player: Player, source: string, ignoreCooldown: boolean?)
+	if not isValidFallRespawnPlayer(player) then
 		return
 	end
 
@@ -126,6 +140,11 @@ local function respawnPlayer(player: Player, source: string)
 		return
 	end
 
+	if ignoreCooldown ~= true and not canRespawnNow(player) then
+		return
+	end
+
+	markRespawnNow(player)
 	humanoidRootPart.AssemblyLinearVelocity = Vector3.zero
 	humanoidRootPart.AssemblyAngularVelocity = Vector3.zero
 	character:PivotTo(respawnCFrame)
@@ -207,8 +226,88 @@ local function bindFallYThreshold()
 	end)
 end
 
+local function disconnectHumanoidDied(player: Player)
+	local connection = humanoidDiedConnections[player]
+
+	if connection ~= nil then
+		connection:Disconnect()
+		humanoidDiedConnections[player] = nil
+	end
+end
+
+local function bindHumanoidDied(player: Player, character: Model)
+	disconnectHumanoidDied(player)
+
+	local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+	if humanoid == nil then
+		task.delay(0.2, function()
+			if player.Character ~= character then
+				return
+			end
+
+			bindHumanoidDied(player, character)
+		end)
+		return
+	end
+
+	humanoidDiedConnections[player] = humanoid.Died:Connect(function()
+		if not isValidFallRespawnPlayer(player) then
+			return
+		end
+
+		local raceId = getCurrentRaceId()
+
+		if raceId == "" then
+			return
+		end
+
+		pendingDeathRespawnRaceIdByUserId[player.UserId] = raceId
+		print(string.format("[RespawnService] Queued checkpoint respawn for %s after character death.", player.Name))
+	end)
+end
+
+local function handleCharacterAdded(player: Player, character: Model)
+	bindHumanoidDied(player, character)
+
+	local pendingRaceId = pendingDeathRespawnRaceIdByUserId[player.UserId]
+
+	if pendingRaceId == nil then
+		return
+	end
+
+	pendingDeathRespawnRaceIdByUserId[player.UserId] = nil
+
+	task.delay(0.25, function()
+		if getCurrentRaceId() ~= pendingRaceId then
+			return
+		end
+
+		respawnPlayer(player, "CharacterRespawn", true)
+	end)
+end
+
+local function handlePlayerAdded(player: Player)
+	characterAddedConnections[player] = player.CharacterAdded:Connect(function(character)
+		handleCharacterAdded(player, character)
+	end)
+
+	if player.Character ~= nil then
+		bindHumanoidDied(player, player.Character)
+	end
+end
+
 local function handlePlayerRemoving(player: Player)
 	lastRespawnAtByUserId[player.UserId] = nil
+	pendingDeathRespawnRaceIdByUserId[player.UserId] = nil
+	disconnectHumanoidDied(player)
+
+	local connection = characterAddedConnections[player]
+
+	if connection ~= nil then
+		connection:Disconnect()
+		characterAddedConnections[player] = nil
+	end
 end
 
 function RespawnService.Init(context: ServiceContext?)
@@ -253,7 +352,13 @@ function RespawnService.Start(_context: ServiceContext?)
 	end
 
 	isStarted = true
+	Players.PlayerAdded:Connect(handlePlayerAdded)
 	Players.PlayerRemoving:Connect(handlePlayerRemoving)
+
+	for _, player in ipairs(Players:GetPlayers()) do
+		handlePlayerAdded(player)
+	end
+
 	bindFallZone()
 	bindFallYThreshold()
 end

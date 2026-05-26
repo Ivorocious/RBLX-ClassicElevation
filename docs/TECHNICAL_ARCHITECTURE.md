@@ -117,8 +117,8 @@ order, and timer-ended DNFs in memory only.
 
 Phase 4 implements server-authoritative fall handling in `RespawnService`. It binds
 `Workspace/RaceCourse/FallZones/FallZone_Main` and also checks `RaceConfig.FallYThreshold` on a
-small server heartbeat interval so falling onto the retained Baseplate still counts as a fall during
-development tests.
+small server heartbeat interval so falls can be detected even when a fall-zone touch does not fire
+cleanly.
 
 Only official racers with `PlayerRaceService` status `Racing` can trigger official fall respawns.
 Lobby, Queued, Spectating, Finished, GhostRacing, LateRacing, and DNF players are ignored. The
@@ -129,6 +129,11 @@ racer has not reached any checkpoint, respawn falls back to `RaceCourse/Start`. 
 repositioned with a vertical offset using server-side pivot logic instead of being killed/reset.
 `ResultsService` owns fall counts in the current in-memory race result payload and preserves those
 counts when players finish or DNF.
+
+If Roblox kills an official racer before `RespawnService` can pivot their current character, the
+service records the active race id on `Humanoid.Died` and moves the next loaded character back to
+the latest checkpoint or Start. This prevents active racers from staying at the lobby spawn after a
+void death during `Racing`.
 
 ## Late Join and Finished-Player Options
 
