@@ -9,9 +9,17 @@ local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
 local RaceTypes = require(ReplicatedStorage.Shared.RaceTypes)
 
 type RaceState = RaceTypes.RaceState
+type RaceFormat = RaceTypes.RaceFormat
 
 type ServiceContext = {
 	Services: { [string]: any },
+}
+
+type CoursePayload = {
+	courseId: string,
+	courseDisplayName: string,
+	raceFormat: RaceFormat,
+	lapCount: number,
 }
 
 local RaceService = {}
@@ -23,6 +31,9 @@ local roundLoopStarted = false
 local playerRaceService: any = nil
 local resultsService: any = nil
 local stagingService: any = nil
+local courseService: any = nil
+local checkpointService: any = nil
+local respawnService: any = nil
 
 local remotesFolder = ReplicatedStorage:WaitForChild("Remotes")
 local raceStateChangedRemote = remotesFolder:WaitForChild(RaceConstants.RemoteNames.RaceStateChanged) :: RemoteEvent
@@ -64,8 +75,62 @@ local function getRemainingTime(): number?
 	return math.max(0, stateEndsAt - getServerTime())
 end
 
+local function getActiveCoursePayload(): CoursePayload
+	if courseService ~= nil and courseService.GetActiveCourseInfo ~= nil then
+		local courseInfo = courseService.GetActiveCourseInfo()
+
+		if typeof(courseInfo) == "table" then
+			local courseId = RaceConfig.DefaultCourseId
+			local displayName = courseId
+			local raceFormat = RaceConstants.RaceFormat.PointToPoint
+			local lapCount = 1
+
+			if typeof(courseInfo.courseId) == "string" then
+				courseId = courseInfo.courseId
+			end
+
+			if typeof(courseInfo.displayName) == "string" then
+				displayName = courseInfo.displayName
+			else
+				displayName = courseId
+			end
+
+			if courseInfo.raceFormat == RaceConstants.RaceFormat.LapBased then
+				raceFormat = RaceConstants.RaceFormat.LapBased
+			end
+
+			if typeof(courseInfo.lapCount) == "number" then
+				lapCount = math.max(1, courseInfo.lapCount)
+			end
+
+			return {
+				courseId = courseId,
+				courseDisplayName = displayName,
+				raceFormat = raceFormat,
+				lapCount = lapCount,
+			}
+		end
+	end
+
+	return {
+		courseId = RaceConfig.DefaultCourseId,
+		courseDisplayName = RaceConfig.DefaultCourseId,
+		raceFormat = RaceConfig.RaceFormat,
+		lapCount = 1,
+	}
+end
+
+local function addCoursePayload(payload: { [string]: any })
+	local activeCourse = getActiveCoursePayload()
+
+	payload.courseId = activeCourse.courseId
+	payload.courseDisplayName = activeCourse.courseDisplayName
+	payload.raceFormat = activeCourse.raceFormat
+	payload.lapCount = activeCourse.lapCount
+end
+
 local function broadcastTimerUpdate()
-	raceTimerUpdatedRemote:FireAllClients({
+	local payload = {
 		raceId = currentRaceId,
 		state = currentRaceState,
 		serverTime = getServerTime(),
@@ -73,7 +138,10 @@ local function broadcastTimerUpdate()
 		endsAt = stateEndsAt,
 		duration = getStateDuration(),
 		remainingTime = getRemainingTime(),
-	})
+	}
+
+	addCoursePayload(payload)
+	raceTimerUpdatedRemote:FireAllClients(payload)
 end
 
 local function notifyPlayerRaceServiceStateChanged()
@@ -101,7 +169,7 @@ local function setRaceState(nextRaceState: RaceState, duration: number?)
 
 	print(string.format("[RaceService] State %s -> %s", previousRaceState, currentRaceState))
 
-	raceStateChangedRemote:FireAllClients({
+	local payload = {
 		raceId = currentRaceId,
 		previousState = previousRaceState,
 		state = currentRaceState,
@@ -109,7 +177,10 @@ local function setRaceState(nextRaceState: RaceState, duration: number?)
 		startedAt = stateStartedAt,
 		endsAt = stateEndsAt,
 		duration = duration,
-	})
+	}
+
+	addCoursePayload(payload)
+	raceStateChangedRemote:FireAllClients(payload)
 
 	notifyPlayerRaceServiceStateChanged()
 	broadcastTimerUpdate()
@@ -183,6 +254,25 @@ local function stageQueuedPlayersAtStart(reason: string)
 	end
 end
 
+local function bindActiveCourseReferences(reason: string)
+	if checkpointService ~= nil and checkpointService.BindActiveCourse ~= nil then
+		checkpointService.BindActiveCourse()
+	end
+
+	if respawnService ~= nil and respawnService.BindActiveCourse ~= nil then
+		respawnService.BindActiveCourse()
+	end
+
+	local activeCourse = getActiveCoursePayload()
+	print(
+		string.format(
+			"[RaceService] Bound active course references for %s: %s.",
+			reason,
+			activeCourse.courseDisplayName
+		)
+	)
+end
+
 local function returnAllPlayersToLobby(reason: string)
 	if stagingService ~= nil and stagingService.ReturnAllPlayersToLobby ~= nil then
 		stagingService.ReturnAllPlayersToLobby(reason)
@@ -206,6 +296,7 @@ local function runRoundLoop()
 		waitForMinimumPlayers()
 
 		currentRaceId = buildRaceId()
+		bindActiveCourseReferences("round start")
 
 		if playerRaceService ~= nil and playerRaceService.QueueEligiblePlayers ~= nil then
 			playerRaceService.QueueEligiblePlayers()
@@ -257,9 +348,17 @@ local function runRoundLoop()
 
 		local raceStartedAt = getServerTime()
 		currentRaceStartedAt = raceStartedAt
+		local activeCourse = getActiveCoursePayload()
 
 		if resultsService ~= nil and resultsService.StartRace ~= nil then
-			resultsService.StartRace(currentRaceId, RaceConfig.DefaultCourseId, RaceConfig.RaceFormat, raceStartedAt)
+			resultsService.StartRace(
+				currentRaceId,
+				activeCourse.courseId,
+				activeCourse.raceFormat,
+				raceStartedAt,
+				activeCourse.courseDisplayName,
+				activeCourse.lapCount
+			)
 		end
 
 		local startedPlayers: { Player } = {}
@@ -352,6 +451,9 @@ function RaceService.Init(context: ServiceContext?)
 		playerRaceService = context.Services.PlayerRaceService
 		resultsService = context.Services.ResultsService
 		stagingService = context.Services.StagingService
+		courseService = context.Services.CourseService
+		checkpointService = context.Services.CheckpointService
+		respawnService = context.Services.RespawnService
 	end
 
 	if playerRaceService == nil then
@@ -364,6 +466,18 @@ function RaceService.Init(context: ServiceContext?)
 
 	if stagingService == nil then
 		warn("[RaceService] StagingService dependency is missing.")
+	end
+
+	if courseService == nil then
+		warn("[RaceService] CourseService dependency is missing.")
+	end
+
+	if checkpointService == nil then
+		warn("[RaceService] CheckpointService dependency is missing.")
+	end
+
+	if respawnService == nil then
+		warn("[RaceService] RespawnService dependency is missing.")
 	end
 
 	stateStartedAt = getServerTime()

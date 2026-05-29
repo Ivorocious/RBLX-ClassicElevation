@@ -100,11 +100,15 @@ join choices, ghost collision, and UI remain later phases.
 
 ## MVP Checkpoint and Finish Validation
 
-Phase 3B uses the Studio course at `Workspace/RaceCourse`. The official MVP checkpoint naming
-convention is `Checkpoint_###`, for example `Checkpoint_001`, under `RaceCourse/Checkpoints`.
+Phase 3B started with the Studio course at `Workspace/RaceCourse`. Phase 8D keeps
+`Workspace/RaceCourse` as the current active/fallback course, but `CheckpointService` now reads the
+active Start, ordered checkpoints, and Finish through `CourseService`.
 
-`CheckpointService` discovers checkpoint parts by that naming convention, sorts them by numeric
-index, and connects server-side `Touched` handlers to checkpoint parts and `RaceCourse/Finish`.
+The official MVP checkpoint naming convention is `Checkpoint_###`, for example `Checkpoint_001`,
+under the active course's `Checkpoints` folder.
+
+`CheckpointService` asks `CourseService` for ordered checkpoint parts, preserves numeric ordering,
+and connects server-side `Touched` handlers to checkpoint parts and the active course Finish.
 Only official players whose `PlayerRaceService` status is `Racing` can progress. Lobby, Queued,
 Spectating, Finished, GhostRacing, LateRacing, and DNF players do not advance official results.
 
@@ -115,18 +119,19 @@ order, and timer-ended DNFs in memory only.
 
 ## MVP Fall Detection and Respawn
 
-Phase 4 implements server-authoritative fall handling in `RespawnService`. It binds
-`Workspace/RaceCourse/FallZones/FallZone_Main` and also checks `RaceConfig.FallYThreshold` on a
-small server heartbeat interval so falls can be detected even when a fall-zone touch does not fire
-cleanly.
+Phase 4 implements server-authoritative fall handling in `RespawnService`. Phase 8D migrates its
+fall-zone lookup through `CourseService`, so it binds the active course's `FallZone_Main` and also
+checks `RaceConfig.FallYThreshold` on a small server heartbeat interval so falls can be detected
+even when a fall-zone touch does not fire cleanly.
 
 Only official racers with `PlayerRaceService` status `Racing` can trigger official fall respawns.
 Lobby, Queued, Spectating, Finished, GhostRacing, LateRacing, and DNF players are ignored. The
 client cannot report falls, respawn position, or fall counts.
 
-`CheckpointService` owns checkpoint progress and exposes the latest checkpoint respawn CFrame. If a
-racer has not reached any checkpoint, respawn falls back to `RaceCourse/Start`. Characters are
-repositioned with a vertical offset using server-side pivot logic instead of being killed/reset.
+`CheckpointService` owns checkpoint progress and exposes the latest checkpoint respawn CFrame using
+the active course parts from `CourseService`. If a racer has not reached any checkpoint, respawn
+falls back to the active course Start. Characters are repositioned with a vertical offset using
+server-side pivot logic instead of being killed/reset.
 `ResultsService` owns fall counts in the current in-memory race result payload and preserves those
 counts when players finish or DNF.
 
@@ -167,8 +172,9 @@ keeps the remote listeners and debug output, while `Controllers/RaceUiController
 player-facing UI:
 
 - `RaceHUD`: visible during Intermission, Countdown, Racing, RaceEnding, and Results. It displays
-  race state, local player status, timer, checkpoint split count when available, fall count when
-  available, and placement when the authoritative result payload includes it.
+  active course metadata, race state, local player status, timer, checkpoint split count when
+  available, fall count when available, and placement when the authoritative result payload includes
+  it.
 - `RaceResultsUI`: visible around RaceEnding and Results. It displays official placements, finish
   times, fall counts, and DNF rows from `RaceResultsUpdated`.
 - `PersonalSummaryUI`: appears after the local player has a result or during Results. It displays
@@ -185,10 +191,11 @@ personal bests, economy, ranked systems, course selection, rewards, or DataStore
 
 ## MVP Round Staging and Player Positioning
 
-Phase 7A adds server-authoritative physical staging through `StagingService`. Staging configuration
-lives in `RaceConfig` and points at the Studio-authored `Workspace/Lobby` and
-`Workspace/RaceCourse` objects. The MVP lobby target is `LobbySpawnPadMarker`, with `LobbyPlatform`
-as a safe fallback. The race start target is `RaceCourse/Start`.
+Phase 7A adds server-authoritative physical staging through `StagingService`. Lobby staging
+configuration lives in `RaceConfig` and points at the Studio-authored `Workspace/Lobby` object. The
+MVP lobby target is `LobbySpawnPadMarker`, with `LobbyPlatform` as a safe fallback. Phase 8D
+migrates race start lookup through `CourseService`; the current fallback start target remains
+`Workspace/RaceCourse/Start`.
 
 `StagingService` only moves characters on the server. It finds each player's character, humanoid,
 and `HumanoidRootPart`, clears linear/angular velocity, and uses `Model:PivotTo()` with a small
@@ -199,14 +206,15 @@ spawn overlap. Clients cannot request or choose authoritative teleport locations
 
 - `WaitingForPlayers`: returns current players to the lobby target when the round loop enters the
   waiting state.
-- `Countdown`: moves queued official racers to `RaceCourse/Start` when Countdown begins.
+- `Countdown`: moves queued official racers to the active course Start when Countdown begins.
 - Race start: stages queued racers again immediately before official `Racing` status starts, so
   players who joined during Countdown are also at the start.
 - `Resetting`: returns all players to the lobby target before resetting statuses to `Lobby`.
 
 Staging is separate from fall respawn. During `Racing`, players are not repeatedly teleported by
 staging; official fall recovery remains owned by `RespawnService`, which still respawns racers at
-`RaceCourse/Start` before their first checkpoint or at their latest official checkpoint afterward.
+the active course Start before their first checkpoint or at their latest official checkpoint
+afterward.
 
 ## GhostRacing Non-Collision
 
@@ -279,6 +287,16 @@ For compatibility, the active runtime course remains `Workspace/RaceCourse`. Pha
 spawn, rotate, or replace courses and does not change checkpoint, fall, staging, result, or lap
 gameplay. If `ServerStorage/CourseLibrary` is missing, `CourseService` falls back to the existing
 `Workspace/RaceCourse` so the current point-to-point flow continues to work.
+
+Phase 8D makes `CourseService` the active course reference provider for gameplay services.
+`CheckpointService`, `RespawnService`, and `StagingService` no longer own direct course model lookup;
+they ask `CourseService` for ordered checkpoints, Finish, Start, and `FallZone_Main`. `RaceService`
+can rebind checkpoint and fall-zone touch handlers for the current active course at round start and
+broadcasts course id, display name, race format, and lap count in race state/timer payloads.
+`ResultsService` stores the same course metadata in the in-memory result payload.
+
+LapBased gameplay is still not implemented. The active course abstraction is only a compatibility
+step for future course spawning, course rotation, and lap-aware validation.
 
 Studio now contains `ServerStorage/CourseLibrary/CourseTemplate`, a reusable authoring model with
 `CourseInfo`, Start, Checkpoints, Finish, Obstacles, FallZones, RouteMarkers, Decoration, and Bounds.

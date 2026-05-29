@@ -170,7 +170,14 @@ function ResultsService.Start(_context: ServiceContext?)
 	Players.PlayerRemoving:Connect(handlePlayerRemoving)
 end
 
-function ResultsService.StartRace(raceId: string, courseId: string, format: RaceFormat, startedAt: number)
+function ResultsService.StartRace(
+	raceId: string,
+	courseId: string,
+	format: RaceFormat,
+	startedAt: number,
+	courseDisplayName: string?,
+	lapCount: number?
+)
 	playerResultsByUserId = {}
 	finishedUserIds = {}
 	dnfUserIds = {}
@@ -178,7 +185,10 @@ function ResultsService.StartRace(raceId: string, courseId: string, format: Race
 	currentRaceResult = {
 		raceId = raceId,
 		courseId = courseId,
+		courseDisplayName = courseDisplayName,
 		format = format,
+		raceFormat = format,
+		lapCount = lapCount,
 		startedAt = startedAt,
 		duration = nil,
 		activeRacers = {},

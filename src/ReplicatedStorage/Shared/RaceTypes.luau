@@ -59,7 +59,10 @@ export type PlayerRaceResult = {
 export type RaceResult = {
 	raceId: string,
 	courseId: string,
+	courseDisplayName: string?,
 	format: RaceFormat,
+	raceFormat: RaceFormat?,
+	lapCount: number?,
 	startedAt: number?,
 	duration: number?,
 	activeRacers: { PlayerRaceResult },

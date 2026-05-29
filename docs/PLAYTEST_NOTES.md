@@ -49,6 +49,23 @@ Use this checklist to tune the expanded six-checkpoint MVP graybox course.
 
 ## Sessions
 
+### 2026-05-29 CourseService Reference Migration
+
+**Build/Commit:** TBD.
+
+**What Was Tested:** Repository verification for the CourseService reference migration. Studio MCP
+inspection was attempted, but the connected Studio target was unreachable during this pass.
+
+**Findings:** Source maps include the migrated services. `CheckpointService`, `RespawnService`, and
+`StagingService` now use `CourseService` for active course references while keeping
+`Workspace.RaceCourse` as the active fallback/current course.
+
+**Bugs Found:** None in repository verification.
+
+**Follow-up Tasks:** Run manual Studio Play/Test once Studio reconnects: staging to Start,
+checkpoint order, fall respawn before and after checkpoints, finish/results, ghost race, and reset
+to Lobby.
+
 ### 2026-05-27 Course Template Foundation
 
 **Build/Commit:** TBD.

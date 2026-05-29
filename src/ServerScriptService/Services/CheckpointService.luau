@@ -2,7 +2,6 @@
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Workspace = game:GetService("Workspace")
 
 local CheckpointConfig = require(ReplicatedStorage.Config.CheckpointConfig)
 local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
@@ -32,6 +31,7 @@ local CheckpointService = {}
 local isInitialized = false
 local isStarted = false
 local raceService: any = nil
+local courseService: any = nil
 local playerRaceService: any = nil
 local resultsService: any = nil
 local checkpointDefinitions: { CheckpointDefinition } = {}
@@ -40,18 +40,6 @@ local startPart: BasePart? = nil
 local playerProgressByUserId: { [number]: PlayerCheckpointProgress } = {}
 local touchConnections: { RBXScriptConnection } = {}
 local RESPAWN_VERTICAL_OFFSET = 5
-
-local function parseCheckpointIndex(checkpointName: string): number?
-	local prefix = CheckpointConfig.CheckpointNamePrefix
-	local padding = CheckpointConfig.CheckpointNumberPadding
-	local digits = string.match(checkpointName, "^" .. prefix .. "_(%d+)$")
-
-	if digits == nil or #digits ~= padding then
-		return nil
-	end
-
-	return tonumber(digits)
-end
 
 local function getPlayerFromTouchedPart(touchedPart: BasePart): Player?
 	local character = touchedPart:FindFirstAncestorWhichIsA("Model")
@@ -247,38 +235,6 @@ local function bindFinishPart(part: BasePart)
 	table.insert(touchConnections, connection)
 end
 
-local function discoverCheckpointDefinitions(checkpointsFolder: Instance): { CheckpointDefinition }
-	local discoveredCheckpoints = {}
-
-	for _, child in ipairs(checkpointsFolder:GetChildren()) do
-		if child:IsA("BasePart") then
-			local checkpointIndex = parseCheckpointIndex(child.Name)
-
-			if checkpointIndex ~= nil then
-				table.insert(discoveredCheckpoints, {
-					index = checkpointIndex,
-					name = child.Name,
-					part = child,
-				})
-			else
-				warn(
-					string.format(
-						"[CheckpointService] Ignoring checkpoint with invalid name %s. Expected %s.",
-						child.Name,
-						CheckpointConfig.CheckpointNamingConvention
-					)
-				)
-			end
-		end
-	end
-
-	table.sort(discoveredCheckpoints, function(left, right)
-		return left.index < right.index
-	end)
-
-	return discoveredCheckpoints
-end
-
 local function bindCourse()
 	for _, connection in ipairs(touchConnections) do
 		connection:Disconnect()
@@ -289,52 +245,33 @@ local function bindCourse()
 	finishPart = nil
 	startPart = nil
 
-	local raceCourse = Workspace:FindFirstChild(CheckpointConfig.CourseModelName)
-
-	if raceCourse == nil then
-		warn(string.format("[CheckpointService] Workspace.%s was not found.", CheckpointConfig.CourseModelName))
+	if courseService == nil then
+		warn("[CheckpointService] CourseService dependency is missing.")
 		return
 	end
 
-	local checkpointsFolder = raceCourse:FindFirstChild(CheckpointConfig.CheckpointsFolderName)
-	local startInstance = raceCourse:FindFirstChild(CheckpointConfig.StartPartName)
+	local activeCourse = if courseService.GetActiveCourseModel ~= nil then courseService.GetActiveCourseModel() else nil
+	local activeCourseName = if activeCourse ~= nil then activeCourse.Name else "active course"
+	local startInstance = if courseService.GetStartPart ~= nil then courseService.GetStartPart() else nil
+	local finishInstance = if courseService.GetFinishPart ~= nil then courseService.GetFinishPart() else nil
+	local orderedCheckpoints = if courseService.GetOrderedCheckpoints ~= nil then courseService.GetOrderedCheckpoints() else {}
 
-	if checkpointsFolder == nil then
-		warn(
-			string.format(
-				"[CheckpointService] %s.%s was not found.",
-				CheckpointConfig.CourseModelName,
-				CheckpointConfig.CheckpointsFolderName
-			)
-		)
+	if activeCourse == nil then
+		warn("[CheckpointService] CourseService did not provide an active course.")
 		return
 	end
 
-	if startInstance == nil or not startInstance:IsA("BasePart") then
-		warn(
-			string.format(
-				"[CheckpointService] %s.%s must be a BasePart.",
-				CheckpointConfig.CourseModelName,
-				CheckpointConfig.StartPartName
-			)
-		)
+	if startInstance == nil then
+		warn(string.format("[CheckpointService] %s start part is unavailable.", activeCourseName))
 		return
 	end
 
-	local finishInstance = raceCourse:FindFirstChild(CheckpointConfig.FinishPartName)
-
-	if finishInstance == nil or not finishInstance:IsA("BasePart") then
-		warn(
-			string.format(
-				"[CheckpointService] %s.%s must be a BasePart.",
-				CheckpointConfig.CourseModelName,
-				CheckpointConfig.FinishPartName
-			)
-		)
+	if finishInstance == nil then
+		warn(string.format("[CheckpointService] %s finish part is unavailable.", activeCourseName))
 		return
 	end
 
-	checkpointDefinitions = discoverCheckpointDefinitions(checkpointsFolder)
+	checkpointDefinitions = orderedCheckpoints
 	startPart = startInstance
 	finishPart = finishInstance
 
@@ -402,12 +339,17 @@ function CheckpointService.Init(context: ServiceContext?)
 
 	if context ~= nil then
 		raceService = context.Services.RaceService
+		courseService = context.Services.CourseService
 		playerRaceService = context.Services.PlayerRaceService
 		resultsService = context.Services.ResultsService
 	end
 
 	if raceService == nil then
 		warn("[CheckpointService] RaceService dependency is missing.")
+	end
+
+	if courseService == nil then
+		warn("[CheckpointService] CourseService dependency is missing.")
 	end
 
 	if playerRaceService == nil then
@@ -419,6 +361,10 @@ function CheckpointService.Init(context: ServiceContext?)
 	end
 
 	isInitialized = true
+end
+
+function CheckpointService.BindActiveCourse()
+	bindCourse()
 end
 
 function CheckpointService.Start(_context: ServiceContext?)
@@ -433,7 +379,7 @@ function CheckpointService.Start(_context: ServiceContext?)
 
 	isStarted = true
 	Players.PlayerRemoving:Connect(handlePlayerRemoving)
-	bindCourse()
+	CheckpointService.BindActiveCourse()
 end
 
 return CheckpointService

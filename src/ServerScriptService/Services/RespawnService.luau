@@ -5,7 +5,6 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 
-local CheckpointConfig = require(ReplicatedStorage.Config.CheckpointConfig)
 local RaceConfig = require(ReplicatedStorage.Config.RaceConfig)
 local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
 local RaceTypes = require(ReplicatedStorage.Shared.RaceTypes)
@@ -21,6 +20,7 @@ local RespawnService = {}
 local isInitialized = false
 local isStarted = false
 local raceService: any = nil
+local courseService: any = nil
 local playerRaceService: any = nil
 local checkpointService: any = nil
 local resultsService: any = nil
@@ -113,6 +113,32 @@ local function markRespawnNow(player: Player)
 	lastRespawnAtByUserId[player.UserId] = getServerTime()
 end
 
+local function getFallbackStartRespawnCFrame(): CFrame?
+	if courseService == nil or courseService.GetStartPart == nil then
+		return nil
+	end
+
+	local startPart = courseService.GetStartPart()
+
+	if startPart == nil then
+		return nil
+	end
+
+	return CFrame.new(startPart.Position + Vector3.new(0, RaceConfig.RacerStartVerticalOffset, 0))
+end
+
+local function getCheckpointRespawnCFrame(player: Player): CFrame?
+	if checkpointService ~= nil and checkpointService.GetCheckpointRespawnCFrame ~= nil then
+		local checkpointRespawnCFrame = checkpointService.GetCheckpointRespawnCFrame(player)
+
+		if checkpointRespawnCFrame ~= nil then
+			return checkpointRespawnCFrame
+		end
+	end
+
+	return getFallbackStartRespawnCFrame()
+end
+
 local function respawnPlayer(player: Player, source: string, ignoreCooldown: boolean?)
 	if not isValidFallRespawnPlayer(player) then
 		return
@@ -128,12 +154,7 @@ local function respawnPlayer(player: Player, source: string, ignoreCooldown: boo
 		return
 	end
 
-	if checkpointService == nil or checkpointService.GetCheckpointRespawnCFrame == nil then
-		warn("[RespawnService] CheckpointService.GetCheckpointRespawnCFrame is unavailable.")
-		return
-	end
-
-	local respawnCFrame = checkpointService.GetCheckpointRespawnCFrame(player)
+	local respawnCFrame = getCheckpointRespawnCFrame(player)
 
 	if respawnCFrame == nil then
 		warn(string.format("[RespawnService] No respawn CFrame available for %s.", player.Name))
@@ -162,24 +183,21 @@ local function bindFallZone()
 		fallZoneConnection = nil
 	end
 
-	local raceCourse = Workspace:FindFirstChild(CheckpointConfig.CourseModelName)
-
-	if raceCourse == nil then
-		warn(string.format("[RespawnService] Workspace.%s was not found.", CheckpointConfig.CourseModelName))
+	if courseService == nil then
+		warn("[RespawnService] CourseService dependency is missing.")
 		return
 	end
 
-	local fallZonesFolder = raceCourse:FindFirstChild("FallZones")
+	local fallZoneInstance = nil
 
-	if fallZonesFolder == nil then
-		warn("[RespawnService] RaceCourse.FallZones was not found.")
-		return
+	if courseService.GetMainFallZone ~= nil then
+		fallZoneInstance = courseService.GetMainFallZone()
+	elseif courseService.GetFallZoneMain ~= nil then
+		fallZoneInstance = courseService.GetFallZoneMain()
 	end
-
-	local fallZoneInstance = fallZonesFolder:FindFirstChild("FallZone_Main")
 
 	if fallZoneInstance == nil or not fallZoneInstance:IsA("BasePart") then
-		warn("[RespawnService] RaceCourse.FallZones.FallZone_Main must be a BasePart.")
+		warn("[RespawnService] Active course main fall zone is unavailable.")
 		return
 	end
 
@@ -191,7 +209,7 @@ local function bindFallZone()
 		end
 	end)
 
-	print("[RespawnService] Bound FallZone_Main.")
+	print(string.format("[RespawnService] Bound %s.", fallZoneInstance:GetFullName()))
 end
 
 local function checkFallYThreshold()
@@ -317,6 +335,7 @@ function RespawnService.Init(context: ServiceContext?)
 
 	if context ~= nil then
 		raceService = context.Services.RaceService
+		courseService = context.Services.CourseService
 		playerRaceService = context.Services.PlayerRaceService
 		checkpointService = context.Services.CheckpointService
 		resultsService = context.Services.ResultsService
@@ -324,6 +343,10 @@ function RespawnService.Init(context: ServiceContext?)
 
 	if raceService == nil then
 		warn("[RespawnService] RaceService dependency is missing.")
+	end
+
+	if courseService == nil then
+		warn("[RespawnService] CourseService dependency is missing.")
 	end
 
 	if playerRaceService == nil then
@@ -339,6 +362,10 @@ function RespawnService.Init(context: ServiceContext?)
 	end
 
 	isInitialized = true
+end
+
+function RespawnService.BindActiveCourse()
+	bindFallZone()
 end
 
 function RespawnService.Start(_context: ServiceContext?)
@@ -359,7 +386,7 @@ function RespawnService.Start(_context: ServiceContext?)
 		handlePlayerAdded(player)
 	end
 
-	bindFallZone()
+	RespawnService.BindActiveCourse()
 	bindFallYThreshold()
 end
 

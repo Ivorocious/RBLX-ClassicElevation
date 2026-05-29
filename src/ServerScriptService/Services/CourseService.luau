@@ -4,6 +4,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerStorage = game:GetService("ServerStorage")
 local Workspace = game:GetService("Workspace")
 
+local CheckpointConfig = require(ReplicatedStorage.Config.CheckpointConfig)
 local CourseConfig = require(ReplicatedStorage.Config.CourseConfig)
 local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
 local RaceTypes = require(ReplicatedStorage.Shared.RaceTypes)
@@ -19,6 +20,12 @@ type CourseRecord = {
 	model: Model,
 	info: CourseInfo,
 	validationWarnings: { string },
+}
+
+type OrderedCheckpoint = {
+	index: number,
+	name: string,
+	part: BasePart,
 }
 
 local CourseService = {}
@@ -144,6 +151,46 @@ local function getFolder(parent: Instance?, childName: string): Folder?
 	return nil
 end
 
+local function parseCheckpointIndex(checkpointName: string): number?
+	local prefix = CheckpointConfig.CheckpointNamePrefix
+	local padding = CheckpointConfig.CheckpointNumberPadding
+	local digits = string.match(checkpointName, "^" .. prefix .. "_(%d+)$")
+
+	if digits == nil or #digits ~= padding then
+		return nil
+	end
+
+	return tonumber(digits)
+end
+
+local function discoverOrderedCheckpoints(checkpointsFolder: Folder?): { OrderedCheckpoint }
+	local discoveredCheckpoints = {}
+
+	if checkpointsFolder == nil then
+		return discoveredCheckpoints
+	end
+
+	for _, child in ipairs(checkpointsFolder:GetChildren()) do
+		if child:IsA("BasePart") then
+			local checkpointIndex = parseCheckpointIndex(child.Name)
+
+			if checkpointIndex ~= nil then
+				table.insert(discoveredCheckpoints, {
+					index = checkpointIndex,
+					name = child.Name,
+					part = child,
+				})
+			end
+		end
+	end
+
+	table.sort(discoveredCheckpoints, function(left, right)
+		return left.index < right.index
+	end)
+
+	return discoveredCheckpoints
+end
+
 local function addWarning(warnings: { string }, message: string)
 	table.insert(warnings, message)
 end
@@ -156,7 +203,7 @@ local function validateCheckpointNames(checkpointsFolder: Folder?, warnings: { s
 	local validCheckpointCount = 0
 
 	for _, child in ipairs(checkpointsFolder:GetChildren()) do
-		if child:IsA("BasePart") and string.match(child.Name, "^Checkpoint_%d%d%d$") ~= nil then
+		if child:IsA("BasePart") and parseCheckpointIndex(child.Name) ~= nil then
 			validCheckpointCount += 1
 		end
 	end
@@ -348,8 +395,20 @@ function CourseService.GetActiveCourse(): Model?
 	return getFallbackActiveCourse()
 end
 
+function CourseService.GetActiveCourseModel(): Model?
+	return CourseService.GetActiveCourse()
+end
+
 function CourseService.GetActiveCourseInfo(): CourseInfo
 	return getActiveCourseInfo()
+end
+
+function CourseService.GetActiveCourseId(): string
+	return CourseService.GetActiveCourseInfo().courseId
+end
+
+function CourseService.GetActiveCourseDisplayName(): string
+	return CourseService.GetActiveCourseInfo().displayName
 end
 
 function CourseService.GetStartPart(): BasePart?
@@ -364,10 +423,22 @@ function CourseService.GetCheckpointsFolder(): Folder?
 	return getFolder(CourseService.GetActiveCourse(), CourseConfig.RequiredChildNames.Checkpoints)
 end
 
+function CourseService.GetOrderedCheckpoints(): { OrderedCheckpoint }
+	return discoverOrderedCheckpoints(CourseService.GetCheckpointsFolder())
+end
+
+function CourseService.GetFallZonesFolder(): Folder?
+	return getFolder(CourseService.GetActiveCourse(), CourseConfig.RequiredChildNames.FallZones)
+end
+
 function CourseService.GetFallZoneMain(): BasePart?
-	local fallZonesFolder = getFolder(CourseService.GetActiveCourse(), CourseConfig.RequiredChildNames.FallZones)
+	local fallZonesFolder = CourseService.GetFallZonesFolder()
 
 	return getBasePart(fallZonesFolder, CourseConfig.RequiredChildNames.FallZoneMain)
+end
+
+function CourseService.GetMainFallZone(): BasePart?
+	return CourseService.GetFallZoneMain()
 end
 
 function CourseService.GetRaceFormat(): RaceFormat

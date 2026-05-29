@@ -25,6 +25,8 @@ local requestGhostRaceRemote: RemoteEvent? = nil
 local currentRaceId = ""
 local currentRaceState: string? = nil
 local currentRemainingTime: number? = nil
+local currentCourseDisplayName = "-"
+local currentRaceFormat: string? = nil
 local localPlayerStatus: string = RaceConstants.PlayerRaceStatus.Lobby
 local currentRaceResult: any = nil
 local lateChoiceSubmittedRaceId: string? = nil
@@ -211,9 +213,29 @@ local function rememberRaceId(raceId: any)
 
 	currentRaceId = raceId
 	currentRaceResult = nil
+	currentCourseDisplayName = "-"
+	currentRaceFormat = nil
 	lateChoiceSubmittedRaceId = nil
 	finishedChoiceSubmittedRaceId = nil
 	renderedSummarySplitKey = ""
+end
+
+local function applyCourseMetadata(payload: any)
+	if typeof(payload) ~= "table" then
+		return
+	end
+
+	if typeof(payload.courseDisplayName) == "string" and payload.courseDisplayName ~= "" then
+		currentCourseDisplayName = payload.courseDisplayName
+	elseif typeof(payload.courseId) == "string" and payload.courseId ~= "" then
+		currentCourseDisplayName = payload.courseId
+	end
+
+	if typeof(payload.raceFormat) == "string" then
+		currentRaceFormat = payload.raceFormat
+	elseif typeof(payload.format) == "string" then
+		currentRaceFormat = payload.format
+	end
 end
 
 local function getSummaryNote(playerResult: any): string
@@ -285,6 +307,13 @@ local function updateRaceHud()
 		placement = localResult.placement
 	end
 
+	local courseText = currentCourseDisplayName
+
+	if currentRaceFormat ~= nil and currentRaceFormat ~= "" then
+		courseText = string.format("%s (%s)", courseText, currentRaceFormat)
+	end
+
+	raceHudLabels.Course.Text = "Course: " .. courseText
 	raceHudLabels.State.Text = "State: " .. tostring(currentRaceState or "Waiting")
 	raceHudLabels.Status.Text = "Status: " .. tostring(localPlayerStatus)
 	raceHudLabels.Timer.Text = "Timer: " .. formatMaybeTime(currentRemainingTime)
@@ -569,7 +598,7 @@ local function createRaceHud()
 	raceHudGui = screenGui
 	raceHudLabels = {}
 
-	local frame = createPanel(screenGui, "Panel", UDim2.fromScale(0.015, 0.11), UDim2.fromOffset(290, 184), Vector2.zero)
+	local frame = createPanel(screenGui, "Panel", UDim2.fromScale(0.015, 0.11), UDim2.fromOffset(310, 214), Vector2.zero)
 	frame.ClipsDescendants = true
 
 	local padding = Instance.new("UIPadding")
@@ -586,6 +615,7 @@ local function createRaceHud()
 	title.Size = UDim2.new(1, 0, 0, 22)
 
 	local fields = {
+		{ key = "Course", text = "Course: -" },
 		{ key = "State", text = "State: -" },
 		{ key = "Status", text = "Status: -" },
 		{ key = "Timer", text = "Timer: -" },
@@ -710,6 +740,7 @@ function RaceUiController.HandleRaceStateChanged(payload: any)
 	end
 
 	rememberRaceId(payload.raceId)
+	applyCourseMetadata(payload)
 
 	if typeof(payload.state) == "string" then
 		currentRaceState = payload.state
@@ -732,6 +763,7 @@ function RaceUiController.HandleRaceTimerUpdated(payload: any)
 	end
 
 	rememberRaceId(payload.raceId)
+	applyCourseMetadata(payload)
 
 	if typeof(payload.state) == "string" then
 		currentRaceState = payload.state
@@ -771,6 +803,7 @@ function RaceUiController.HandleRaceResultsUpdated(payload: any)
 
 	rememberRaceId(payload.raceId)
 	currentRaceResult = payload
+	applyCourseMetadata(payload)
 	updateAll()
 end
 

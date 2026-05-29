@@ -14,6 +14,7 @@ local StagingService = {}
 
 local isInitialized = false
 local isStarted = false
+local courseService: any = nil
 
 local FORMATION_COLUMNS = 3
 local FORMATION_SPACING = 4
@@ -70,17 +71,15 @@ local function findLobbyPart(): BasePart?
 end
 
 local function findRaceStartPart(): BasePart?
-	local raceCourse = Workspace:FindFirstChild(RaceConfig.RaceCourseModelName)
-
-	if raceCourse == nil then
-		warn(string.format("[StagingService] Workspace.%s was not found.", RaceConfig.RaceCourseModelName))
+	if courseService == nil or courseService.GetStartPart == nil then
+		warn("[StagingService] CourseService.GetStartPart is unavailable.")
 		return nil
 	end
 
-	local startPart = getBasePart(raceCourse:FindFirstChild(RaceConfig.RaceStartPartName))
+	local startPart = getBasePart(courseService.GetStartPart())
 
 	if startPart == nil then
-		warnMissing(string.format("Workspace.%s.%s", RaceConfig.RaceCourseModelName, RaceConfig.RaceStartPartName))
+		warnMissing("active course Start")
 	end
 
 	return startPart
@@ -143,9 +142,17 @@ local function movePlayerToPart(player: Player, targetPart: BasePart, verticalOf
 	print(string.format("[StagingService] Moved %s to %s.", player.Name, reason))
 end
 
-function StagingService.Init(_context: ServiceContext?)
+function StagingService.Init(context: ServiceContext?)
 	if isInitialized then
 		return
+	end
+
+	if context ~= nil then
+		courseService = context.Services.CourseService
+	end
+
+	if courseService == nil then
+		warn("[StagingService] CourseService dependency is missing.")
 	end
 
 	isInitialized = true

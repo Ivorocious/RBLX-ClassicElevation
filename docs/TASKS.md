@@ -5,6 +5,9 @@ Track scoped implementation work for ProjectClassicElevation here.
 ## Backlog
 
 - Confirm Rojo sync from filesystem into the open Roblox Studio place.
+- Implement active course spawning/selection.
+- Implement LapBased race validation and lap result data.
+- Create two shippable graybox courses.
 - Add separate unofficial checkpoint and respawn tracking for LateRacing and GhostRacing.
 - Add test tooling when the first pure logic modules exist.
 - Optional: polish MVP UI after playtesting.
@@ -28,3 +31,4 @@ Track scoped implementation work for ProjectClassicElevation here.
 - 2026-05-25: Performed MVP hardening pass.
 - 2026-05-25: Expanded the MVP graybox course and improved course difficulty after playtesting.
 - 2026-05-27: Added CourseService foundation and reusable course template.
+- 2026-05-29: Migrated active course references to CourseService.
