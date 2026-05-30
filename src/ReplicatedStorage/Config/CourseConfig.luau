@@ -3,9 +3,15 @@
 local CourseConfig = {}
 
 CourseConfig.CourseLibraryName = "CourseLibrary"
+CourseConfig.CourseArchiveName = "CourseArchive"
 CourseConfig.ActiveCourseModelName = "RaceCourse"
+CourseConfig.ActiveCourseId = "classic_point_to_point"
+CourseConfig.SelectionMode = "Fixed"
+CourseConfig.RuntimeActiveCourseAttribute = "RuntimeActiveCourse"
+CourseConfig.SourceCourseIdAttribute = "SourceCourseId"
 CourseConfig.CourseInfoName = "CourseInfo"
 CourseConfig.TemplateCourseName = "CourseTemplate"
+CourseConfig.ClassicPointToPointCourseName = "Course_ClassicPointToPoint"
 
 CourseConfig.RequiredChildNames = {
 	CourseInfo = "CourseInfo",
@@ -33,7 +39,7 @@ CourseConfig.CourseInfoAttributes = {
 }
 
 CourseConfig.DefaultCourseInfo = {
-	CourseId = "MVP_PointToPoint_01",
+	CourseId = "classic_point_to_point",
 	DisplayName = "Classic Point-to-Point",
 	RaceFormat = "PointToPoint",
 	LapCount = 1,

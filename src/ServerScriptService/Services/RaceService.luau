@@ -255,6 +255,10 @@ local function stageQueuedPlayersAtStart(reason: string)
 end
 
 local function bindActiveCourseReferences(reason: string)
+	if courseService ~= nil and courseService.EnsureActiveCourse ~= nil then
+		courseService.EnsureActiveCourse()
+	end
+
 	if checkpointService ~= nil and checkpointService.BindActiveCourse ~= nil then
 		checkpointService.BindActiveCourse()
 	end

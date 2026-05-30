@@ -49,6 +49,26 @@ Use this checklist to tune the expanded six-checkpoint MVP graybox course.
 
 ## Sessions
 
+### 2026-05-30 Active Course Spawning
+
+**Build/Commit:** TBD.
+
+**What Was Tested:** Studio MCP inspection and repository verification for fixed CourseService
+selection/spawning. A persistent `Course_ClassicPointToPoint` library model was created from the
+current `Workspace.RaceCourse`.
+
+**Findings:** `ServerStorage.CourseLibrary` contains `CourseTemplate` and
+`Course_ClassicPointToPoint`. The playable course has CourseId `classic_point_to_point`, display
+name `Classic Point-to-Point`, PointToPoint format, LapCount `1`, Enabled `true`, and six
+checkpoints. Existing `Workspace.RaceCourse` and `Workspace.Lobby` remained present after the
+library copy was created.
+
+**Bugs Found:** None in repository verification or Studio hierarchy inspection.
+
+**Follow-up Tasks:** Run manual Studio Play/Test for CourseService startup spawn, round-start
+rebinds, checkpoint order, fall respawn, finish/results, Ghost Race, reset to Lobby, and duplicate
+touch-trigger checks across rounds.
+
 ### 2026-05-29 CourseService Reference Migration
 
 **Build/Commit:** TBD.

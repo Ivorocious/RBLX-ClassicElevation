@@ -46,8 +46,54 @@ local function getCourseLibrary(): Folder?
 	return nil
 end
 
+local function ensureCourseLibrary(): Folder
+	local library = getCourseLibrary()
+
+	if library ~= nil then
+		return library
+	end
+
+	library = Instance.new("Folder")
+	library.Name = CourseConfig.CourseLibraryName
+	library.Parent = ServerStorage
+
+	return library
+end
+
+local function ensureCourseArchive(): Folder
+	local archive = ServerStorage:FindFirstChild(CourseConfig.CourseArchiveName)
+
+	if archive ~= nil and archive:IsA("Folder") then
+		return archive
+	end
+
+	archive = Instance.new("Folder")
+	archive.Name = CourseConfig.CourseArchiveName
+	archive.Parent = ServerStorage
+
+	return archive
+end
+
 local function getCourseInfoInstance(courseModel: Model): Instance?
 	return courseModel:FindFirstChild(CourseConfig.RequiredChildNames.CourseInfo)
+end
+
+local function ensureFolder(parent: Instance, folderName: string): Folder
+	local existingFolder = parent:FindFirstChild(folderName)
+
+	if existingFolder ~= nil and existingFolder:IsA("Folder") then
+		return existingFolder
+	end
+
+	local folder = Instance.new("Folder")
+	folder.Name = folderName
+	folder.Parent = parent
+
+	return folder
+end
+
+local function ensureCourseInfoInstance(courseModel: Model): Instance
+	return ensureFolder(courseModel, CourseConfig.RequiredChildNames.CourseInfo)
 end
 
 local function getStringAttribute(instance: Instance?, attributeName: string, fallback: string): string
@@ -191,6 +237,43 @@ local function discoverOrderedCheckpoints(checkpointsFolder: Folder?): { Ordered
 	return discoveredCheckpoints
 end
 
+local function countOrderedCheckpoints(courseModel: Model): number
+	local checkpointsFolder = getFolder(courseModel, CourseConfig.RequiredChildNames.Checkpoints)
+
+	return #discoverOrderedCheckpoints(checkpointsFolder)
+end
+
+local function writeCourseInfoAttributes(courseModel: Model, courseInfo: CourseInfo)
+	local attributes = CourseConfig.CourseInfoAttributes
+	local courseInfoInstance = ensureCourseInfoInstance(courseModel)
+
+	courseInfoInstance:SetAttribute(attributes.CourseId, courseInfo.courseId)
+	courseInfoInstance:SetAttribute(attributes.DisplayName, courseInfo.displayName)
+	courseInfoInstance:SetAttribute(attributes.RaceFormat, courseInfo.raceFormat)
+	courseInfoInstance:SetAttribute(attributes.LapCount, courseInfo.lapCount)
+	courseInfoInstance:SetAttribute(attributes.Enabled, courseInfo.enabled)
+	courseInfoInstance:SetAttribute(attributes.Difficulty, courseInfo.difficulty)
+	courseInfoInstance:SetAttribute(attributes.TargetNewPlayerTime, courseInfo.targetNewPlayerTime)
+	courseInfoInstance:SetAttribute(attributes.TargetPracticedTime, courseInfo.targetPracticedTime)
+	courseInfoInstance:SetAttribute(attributes.CheckpointCount, courseInfo.checkpointCount)
+end
+
+local function getClassicPointToPointCourseInfo(courseModel: Model): CourseInfo
+	local defaults = CourseConfig.DefaultCourseInfo
+
+	return {
+		courseId = CourseConfig.ActiveCourseId,
+		displayName = "Classic Point-to-Point",
+		raceFormat = RaceConstants.RaceFormat.PointToPoint,
+		lapCount = 1,
+		enabled = true,
+		difficulty = defaults.Difficulty,
+		targetNewPlayerTime = defaults.TargetNewPlayerTime,
+		targetPracticedTime = defaults.TargetPracticedTime,
+		checkpointCount = countOrderedCheckpoints(courseModel),
+	}
+end
+
 local function addWarning(warnings: { string }, message: string)
 	table.insert(warnings, message)
 end
@@ -307,6 +390,183 @@ local function getFallbackActiveCourse(): Model?
 	return nil
 end
 
+local function ensureClassicPointToPointCourseFromFallback()
+	local library = ensureCourseLibrary()
+	local existingCourse = library:FindFirstChild(CourseConfig.ClassicPointToPointCourseName)
+
+	if existingCourse ~= nil then
+		if existingCourse:IsA("Model") then
+			ensureFolder(existingCourse, CourseConfig.RequiredChildNames.Obstacles)
+			ensureFolder(existingCourse, CourseConfig.RequiredChildNames.RouteMarkers)
+			ensureFolder(existingCourse, CourseConfig.RequiredChildNames.Decoration)
+			ensureFolder(existingCourse, CourseConfig.RequiredChildNames.Bounds)
+			writeCourseInfoAttributes(existingCourse, getClassicPointToPointCourseInfo(existingCourse))
+		else
+			warn(
+				string.format(
+					"[CourseService] %s exists but is not a Model.",
+					CourseConfig.ClassicPointToPointCourseName
+				)
+			)
+		end
+
+		return
+	end
+
+	local fallbackCourse = getFallbackActiveCourse()
+
+	if fallbackCourse == nil then
+		return
+	end
+
+	local courseClone = fallbackCourse:Clone()
+	courseClone.Name = CourseConfig.ClassicPointToPointCourseName
+	courseClone:SetAttribute(CourseConfig.RuntimeActiveCourseAttribute, nil)
+	courseClone:SetAttribute(CourseConfig.SourceCourseIdAttribute, nil)
+
+	ensureFolder(courseClone, CourseConfig.RequiredChildNames.Obstacles)
+	ensureFolder(courseClone, CourseConfig.RequiredChildNames.RouteMarkers)
+	ensureFolder(courseClone, CourseConfig.RequiredChildNames.Decoration)
+	ensureFolder(courseClone, CourseConfig.RequiredChildNames.Bounds)
+	writeCourseInfoAttributes(courseClone, getClassicPointToPointCourseInfo(courseClone))
+
+	courseClone.Parent = library
+	print("[CourseService] Created Course_ClassicPointToPoint from Workspace.RaceCourse fallback.")
+end
+
+local function isPlayableCourseRecord(record: CourseRecord): boolean
+	if record.info.enabled ~= true then
+		return false
+	end
+
+	local warnings = validateCourseModel(record.model, false)
+
+	for _, warningMessage in ipairs(warnings) do
+		warn(string.format("[CourseService] %s cannot be selected: %s", record.model.Name, warningMessage))
+	end
+
+	return #warnings == 0
+end
+
+local function selectActiveCourseRecord(): CourseRecord?
+	if CourseConfig.SelectionMode ~= "Fixed" then
+		warn(string.format("[CourseService] Unsupported selection mode %s; using Fixed.", tostring(CourseConfig.SelectionMode)))
+	end
+
+	local configuredRecord = discoveredCoursesById[CourseConfig.ActiveCourseId]
+
+	if configuredRecord ~= nil and isPlayableCourseRecord(configuredRecord) then
+		return configuredRecord
+	end
+
+	if configuredRecord == nil then
+		warn(string.format("[CourseService] Configured course id %s was not found.", CourseConfig.ActiveCourseId))
+	else
+		warn(string.format("[CourseService] Configured course id %s is not playable.", CourseConfig.ActiveCourseId))
+	end
+
+	for _, courseId in ipairs(discoveredCourseOrder) do
+		local record = discoveredCoursesById[courseId]
+
+		if record ~= nil and isPlayableCourseRecord(record) then
+			warn(string.format("[CourseService] Falling back to enabled course %s.", courseId))
+			return record
+		end
+	end
+
+	return nil
+end
+
+local function getUniqueArchiveName(baseName: string): string
+	local archive = ensureCourseArchive()
+	local archiveName = baseName
+	local index = 1
+
+	while archive:FindFirstChild(archiveName) ~= nil do
+		index += 1
+		archiveName = string.format("%s_%03d", baseName, index)
+	end
+
+	return archiveName
+end
+
+local function archiveExistingActiveCourse(activeCourse: Model)
+	local archive = ensureCourseArchive()
+	local archivedName = getUniqueArchiveName(activeCourse.Name .. "_Legacy")
+
+	activeCourse.Name = archivedName
+	activeCourse.Parent = archive
+	print(string.format("[CourseService] Archived existing active course as ServerStorage.CourseArchive.%s.", archivedName))
+end
+
+local function spawnCourseRecord(record: CourseRecord): boolean
+	local courseClone = record.model:Clone()
+	courseClone.Name = CourseConfig.ActiveCourseModelName
+	courseClone:SetAttribute(CourseConfig.RuntimeActiveCourseAttribute, true)
+	courseClone:SetAttribute(CourseConfig.SourceCourseIdAttribute, record.info.courseId)
+
+	local warnings = validateCourseModel(courseClone, false)
+
+	if #warnings > 0 then
+		for _, warningMessage in ipairs(warnings) do
+			warn(string.format("[CourseService] Could not spawn %s: %s", record.model.Name, warningMessage))
+		end
+
+		courseClone:Destroy()
+		return false
+	end
+
+	local existingActiveCourse = getFallbackActiveCourse()
+
+	if existingActiveCourse ~= nil then
+		if existingActiveCourse:GetAttribute(CourseConfig.RuntimeActiveCourseAttribute) == true then
+			existingActiveCourse:Destroy()
+		else
+			archiveExistingActiveCourse(existingActiveCourse)
+		end
+	end
+
+	courseClone.Parent = Workspace
+	activeCourseInfo = readCourseInfo(courseClone)
+
+	print(
+		string.format(
+			"[CourseService] Spawned active course %s from %s.",
+			activeCourseInfo.displayName,
+			record.model.Name
+		)
+	)
+
+	return true
+end
+
+local function ensureActiveCourse()
+	ensureClassicPointToPointCourseFromFallback()
+	discoverCourseLibrary()
+
+	local selectedRecord = selectActiveCourseRecord()
+
+	if selectedRecord ~= nil and spawnCourseRecord(selectedRecord) then
+		return
+	end
+
+	local fallbackCourse = getFallbackActiveCourse()
+
+	if fallbackCourse == nil then
+		warn("[CourseService] No active course could be spawned and no Workspace.RaceCourse fallback exists.")
+		return
+	end
+
+	local warnings = validateCourseModel(fallbackCourse, false)
+
+	for _, warningMessage in ipairs(warnings) do
+		warn(string.format("[CourseService] Active fallback %s: %s", fallbackCourse.Name, warningMessage))
+	end
+
+	activeCourseInfo = readCourseInfo(fallbackCourse)
+	print(string.format("[CourseService] Using active course fallback: %s.", activeCourseInfo.displayName))
+end
+
 local function getActiveCourseInfo(): CourseInfo
 	local activeCourse = getFallbackActiveCourse()
 
@@ -348,27 +608,15 @@ function CourseService.Start(_context: ServiceContext?)
 	end
 
 	isStarted = true
-	discoverCourseLibrary()
-
-	local activeCourse = getFallbackActiveCourse()
-
-	if activeCourse == nil then
-		warn("[CourseService] Workspace.RaceCourse fallback was not found.")
-		return
-	end
-
-	local warnings = validateCourseModel(activeCourse, false)
-
-	for _, warningMessage in ipairs(warnings) do
-		warn(string.format("[CourseService] Active fallback %s: %s", activeCourse.Name, warningMessage))
-	end
-
-	activeCourseInfo = readCourseInfo(activeCourse)
-	print(string.format("[CourseService] Active course fallback: %s.", activeCourseInfo.displayName))
+	ensureActiveCourse()
 end
 
 function CourseService.DiscoverCourses()
 	discoverCourseLibrary()
+end
+
+function CourseService.EnsureActiveCourse()
+	ensureActiveCourse()
 end
 
 function CourseService.GetDiscoveredCourseIds(): { string }

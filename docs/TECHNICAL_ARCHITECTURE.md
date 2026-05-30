@@ -295,14 +295,33 @@ can rebind checkpoint and fall-zone touch handlers for the current active course
 broadcasts course id, display name, race format, and lap count in race state/timer payloads.
 `ResultsService` stores the same course metadata in the in-memory result payload.
 
-LapBased gameplay is still not implemented. The active course abstraction is only a compatibility
-step for future course spawning, course rotation, and lap-aware validation.
+Phase 8E adds fixed, config-driven active course spawning. Playable course models live in
+`ServerStorage/CourseLibrary`; `CourseTemplate` is a manual-building template and is not selected
+for gameplay because it is disabled. The MVP selected course id is
+`classic_point_to_point` through `CourseConfig.ActiveCourseId`, and selection mode is `Fixed`.
+
+At startup and round start, `CourseService` discovers enabled library courses, selects the
+configured course when available, clones it into Workspace as `Workspace/RaceCourse`, and marks the
+clone with a runtime active-course attribute. If a previous active course was a runtime clone, it is
+destroyed before replacement. If the previous `Workspace/RaceCourse` was an unmarked authored
+course, it is archived under `ServerStorage/CourseArchive` instead of being deleted. If the library
+or configured course is missing, `CourseService` can create `Course_ClassicPointToPoint` from the
+existing fallback course and still falls back to any valid `Workspace/RaceCourse` if spawning fails.
+
+LapBased gameplay is still not implemented. The active course abstraction now supports future
+course rotation and lap-aware validation, but Phase 8E only spawns PointToPoint courses through
+server-owned configuration.
 
 Studio now contains `ServerStorage/CourseLibrary/CourseTemplate`, a reusable authoring model with
 `CourseInfo`, Start, Checkpoints, Finish, Obstacles, FallZones, RouteMarkers, Decoration, and Bounds.
 `CourseInfo` attributes define CourseId, DisplayName, RaceFormat, LapCount, Enabled, Difficulty,
 target completion times, and CheckpointCount. The template uses the graybox color convention for
 manual course creation.
+
+Studio also contains `ServerStorage/CourseLibrary/Course_ClassicPointToPoint`, cloned from the
+current expanded MVP course and configured with CourseId `classic_point_to_point`, DisplayName
+`Classic Point-to-Point`, RaceFormat `PointToPoint`, LapCount `1`, Enabled `true`, and six
+checkpoints.
 
 ## Studio-Only Development Controls
 
