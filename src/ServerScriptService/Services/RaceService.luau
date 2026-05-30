@@ -20,6 +20,7 @@ type CoursePayload = {
 	courseDisplayName: string,
 	raceFormat: RaceFormat,
 	lapCount: number,
+	checkpointCount: number?,
 }
 
 local RaceService = {}
@@ -84,6 +85,7 @@ local function getActiveCoursePayload(): CoursePayload
 			local displayName = courseId
 			local raceFormat = RaceConstants.RaceFormat.PointToPoint
 			local lapCount = 1
+			local checkpointCount: number? = nil
 
 			if typeof(courseInfo.courseId) == "string" then
 				courseId = courseInfo.courseId
@@ -103,11 +105,16 @@ local function getActiveCoursePayload(): CoursePayload
 				lapCount = math.max(1, courseInfo.lapCount)
 			end
 
+			if courseService.GetOrderedCheckpoints ~= nil then
+				checkpointCount = #courseService.GetOrderedCheckpoints()
+			end
+
 			return {
 				courseId = courseId,
 				courseDisplayName = displayName,
 				raceFormat = raceFormat,
 				lapCount = lapCount,
+				checkpointCount = checkpointCount,
 			}
 		end
 	end
@@ -117,6 +124,7 @@ local function getActiveCoursePayload(): CoursePayload
 		courseDisplayName = RaceConfig.DefaultCourseId,
 		raceFormat = RaceConfig.RaceFormat,
 		lapCount = 1,
+		checkpointCount = nil,
 	}
 end
 
@@ -127,6 +135,7 @@ local function addCoursePayload(payload: { [string]: any })
 	payload.courseDisplayName = activeCourse.courseDisplayName
 	payload.raceFormat = activeCourse.raceFormat
 	payload.lapCount = activeCourse.lapCount
+	payload.checkpointCount = activeCourse.checkpointCount
 end
 
 local function broadcastTimerUpdate()
@@ -361,7 +370,8 @@ local function runRoundLoop()
 				activeCourse.raceFormat,
 				raceStartedAt,
 				activeCourse.courseDisplayName,
-				activeCourse.lapCount
+				activeCourse.lapCount,
+				activeCourse.checkpointCount
 			)
 		end
 

@@ -47,6 +47,12 @@ local function syncActiveRacers()
 end
 
 local function createPlayerRaceResult(player: Player): PlayerRaceResult
+	local requiredLaps = 1
+
+	if currentRaceResult ~= nil and currentRaceResult.requiredLaps ~= nil then
+		requiredLaps = currentRaceResult.requiredLaps
+	end
+
 	return {
 		userId = player.UserId,
 		name = player.Name,
@@ -57,6 +63,11 @@ local function createPlayerRaceResult(player: Player): PlayerRaceResult
 		finishTime = nil,
 		falls = 0,
 		checkpointSplits = {},
+		currentLap = 1,
+		requiredLaps = requiredLaps,
+		nextCheckpointIndex = 1,
+		checkpointCount = nil,
+		lapTimes = {},
 		dnfReason = nil,
 		isPersonalBest = false,
 		summaryNotes = {},
@@ -74,9 +85,9 @@ local function getOrCreatePlayerResult(player: Player): PlayerRaceResult
 	return playerResult
 end
 
-local function findCheckpointSplit(playerResult: PlayerRaceResult, checkpointIndex: number): CheckpointSplit?
+local function findCheckpointSplit(playerResult: PlayerRaceResult, checkpointIndex: number, lap: number): CheckpointSplit?
 	for _, checkpointSplit in ipairs(playerResult.checkpointSplits) do
-		if checkpointSplit.checkpointIndex == checkpointIndex then
+		if checkpointSplit.checkpointIndex == checkpointIndex and checkpointSplit.lap == lap then
 			return checkpointSplit
 		end
 	end
@@ -134,6 +145,11 @@ local function handlePlayerRemoving(player: Player)
 		finishTime = nil,
 		falls = playerResult.falls,
 		checkpointSplits = playerResult.checkpointSplits,
+		currentLap = playerResult.currentLap,
+		requiredLaps = playerResult.requiredLaps,
+		nextCheckpointIndex = playerResult.nextCheckpointIndex,
+		checkpointCount = playerResult.checkpointCount,
+		lapTimes = playerResult.lapTimes,
 		dnfReason = "Left race",
 		isPersonalBest = false,
 		summaryNotes = {},
@@ -176,11 +192,13 @@ function ResultsService.StartRace(
 	format: RaceFormat,
 	startedAt: number,
 	courseDisplayName: string?,
-	lapCount: number?
+	lapCount: number?,
+	checkpointCount: number?
 )
 	playerResultsByUserId = {}
 	finishedUserIds = {}
 	dnfUserIds = {}
+	local requiredLaps = math.max(1, lapCount or 1)
 
 	currentRaceResult = {
 		raceId = raceId,
@@ -188,7 +206,9 @@ function ResultsService.StartRace(
 		courseDisplayName = courseDisplayName,
 		format = format,
 		raceFormat = format,
-		lapCount = lapCount,
+		lapCount = requiredLaps,
+		requiredLaps = requiredLaps,
+		checkpointCount = checkpointCount,
 		startedAt = startedAt,
 		duration = nil,
 		activeRacers = {},
@@ -210,10 +230,42 @@ function ResultsService.RegisterActiveRacers(players: { Player })
 		local playerResult = getOrCreatePlayerResult(player)
 		playerResult.status = RaceConstants.PlayerRaceStatus.Racing
 		playerResult.official = true
+		playerResult.currentLap = 1
+		playerResult.requiredLaps = currentRaceResult.requiredLaps
+		playerResult.nextCheckpointIndex = 1
+		playerResult.checkpointCount = currentRaceResult.checkpointCount
+		playerResult.lapTimes = playerResult.lapTimes or {}
 	end
 
 	syncActiveRacers()
 	ResultsService.BroadcastCurrentRaceResults()
+end
+
+function ResultsService.UpdateCheckpointProgress(
+	player: Player,
+	currentLap: number,
+	requiredLaps: number,
+	nextCheckpointIndex: number,
+	checkpointCount: number
+): boolean
+	if currentRaceResult == nil then
+		return false
+	end
+
+	if finishedUserIds[player.UserId] == true then
+		return false
+	end
+
+	local playerResult = getOrCreatePlayerResult(player)
+
+	playerResult.currentLap = currentLap
+	playerResult.requiredLaps = requiredLaps
+	playerResult.nextCheckpointIndex = nextCheckpointIndex
+	playerResult.checkpointCount = checkpointCount
+
+	syncActiveRacers()
+	ResultsService.BroadcastCurrentRaceResults()
+	return true
 end
 
 function ResultsService.RecordCheckpointSplit(
@@ -234,7 +286,7 @@ function ResultsService.RecordCheckpointSplit(
 
 	local playerResult = getOrCreatePlayerResult(player)
 
-	if findCheckpointSplit(playerResult, checkpointIndex) ~= nil then
+	if findCheckpointSplit(playerResult, checkpointIndex, lap) ~= nil then
 		return false
 	end
 
@@ -257,6 +309,52 @@ function ResultsService.RecordCheckpointSplit(
 
 	syncActiveRacers()
 	ResultsService.BroadcastCurrentRaceResults()
+	return true
+end
+
+function ResultsService.RecordLapComplete(
+	player: Player,
+	lap: number,
+	lapTime: number,
+	nextLap: number,
+	requiredLaps: number
+): boolean
+	if currentRaceResult == nil then
+		warn("[ResultsService] RecordLapComplete called before StartRace.")
+		return false
+	end
+
+	if finishedUserIds[player.UserId] == true then
+		return false
+	end
+
+	local playerResult = getOrCreatePlayerResult(player)
+	local lapTimes = playerResult.lapTimes
+
+	if lapTimes == nil then
+		lapTimes = {}
+		playerResult.lapTimes = lapTimes
+	end
+
+	lapTimes[lap] = lapTime
+	playerResult.currentLap = math.min(nextLap, requiredLaps)
+	playerResult.requiredLaps = requiredLaps
+
+	if lap >= requiredLaps then
+		local checkpointCount = playerResult.checkpointCount
+
+		if checkpointCount == nil and currentRaceResult ~= nil then
+			checkpointCount = currentRaceResult.checkpointCount
+		end
+
+		playerResult.nextCheckpointIndex = (checkpointCount or 0) + 1
+	else
+		playerResult.nextCheckpointIndex = 1
+	end
+
+	syncActiveRacers()
+	ResultsService.BroadcastCurrentRaceResults()
+	print(string.format("[ResultsService] %s completed lap %d at %.3fs.", player.Name, lap, lapTime))
 	return true
 end
 
@@ -309,6 +407,7 @@ function ResultsService.RecordFinish(player: Player, elapsedTime: number): Playe
 	playerResult.placement = placement
 	playerResult.finishTime = elapsedTime
 	playerResult.dnfReason = nil
+	playerResult.currentLap = playerResult.requiredLaps or playerResult.currentLap
 	finishedUserIds[player.UserId] = true
 
 	syncActiveRacers()

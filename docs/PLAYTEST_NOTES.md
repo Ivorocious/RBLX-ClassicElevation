@@ -49,6 +49,43 @@ Use this checklist to tune the expanded six-checkpoint MVP graybox course.
 
 ## Sessions
 
+### 2026-05-30 LapBased Race Validation
+
+**Build/Commit:** TBD.
+
+**What Was Tested:** Repository implementation and Studio hierarchy inspection for the first
+LapBased validation pass. A simple technical `Course_ClassicCircuit` model was created in
+`ServerStorage.CourseLibrary` for smoke testing.
+
+**Findings:** LapBased races now track current lap, required laps, current-lap checkpoint progress,
+lap times, and lap-aware checkpoint splits in server-owned result data. PointToPoint behavior is
+intended to remain unchanged. The default configured active course is still
+`classic_point_to_point`; switch `CourseConfig.ActiveCourseId` to `classic_circuit` manually when
+testing the circuit.
+
+**Phase 8F Smoke Checklist:**
+
+- [X] PointToPoint course still stages, checkpoints, finishes, shows results, and resets.
+- [X] `Course_ClassicCircuit` spawns when `CourseConfig.ActiveCourseId` is set to
+  `classic_circuit`.
+- [X] LapBased Finish touch before current-lap checkpoints are complete does not finish or advance
+  the lap.
+- [X] Completing all checkpoints then touching Finish increments lap until the final lap.
+- [X] Final lap Finish locks placement and total finish time.
+- [X] RaceHUD shows course, format, lap progress, current-lap checkpoint progress, falls, and
+  placement.
+- [X] PersonalSummaryUI shows lap times and lap-labeled checkpoint splits.
+- [X] Fall before any current-lap checkpoint returns to Start.
+- [X] Fall after a current-lap checkpoint returns to that latest checkpoint.
+- [X] Ghost Race after a LapBased finish remains non-colliding and unofficial.
+- [X] Reset returns Finished, DNF, Spectating, LateRacing, GhostRacing, and Lobby players to Lobby.
+- [X] Repeated touches and multiple rounds do not create duplicate checkpoint/fall connections.
+
+**Bugs Found:** None in repository or Studio hierarchy inspection.
+
+**Follow-up Tasks:** Manual Studio Play/Test of both course formats, then build better shippable
+graybox courses on top of the template.
+
 ### 2026-05-30 Active Course Spawning
 
 **Build/Commit:** TBD.

@@ -12,6 +12,8 @@ CourseConfig.SourceCourseIdAttribute = "SourceCourseId"
 CourseConfig.CourseInfoName = "CourseInfo"
 CourseConfig.TemplateCourseName = "CourseTemplate"
 CourseConfig.ClassicPointToPointCourseName = "Course_ClassicPointToPoint"
+CourseConfig.ClassicCircuitCourseName = "Course_ClassicCircuit"
+CourseConfig.ClassicCircuitCourseId = "classic_circuit"
 
 CourseConfig.RequiredChildNames = {
 	CourseInfo = "CourseInfo",

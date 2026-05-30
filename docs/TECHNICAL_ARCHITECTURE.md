@@ -73,8 +73,9 @@ Phase 1 establishes the filesystem/Rojo foundation only:
 - `ServerScriptService/Services`: service skeletons for race, player status, checkpoint, respawn,
   results, and ghost-race responsibilities.
 
-MVP uses `RaceFormat = "PointToPoint"`. `LapBased` exists only as a type/config possibility so the
-checkpoint model can later add lap-aware validation without rewriting the result payloads.
+Phase 1 started with `RaceFormat = "PointToPoint"` as the only implemented gameplay format.
+`LapBased` was reserved in the shared type/config model so later lap validation could be added
+without replacing the race result payloads.
 
 Phase 1 does not implement the round loop, checkpoint touch handling, finish placement, UI,
 ghost collision, course selection, DataStore, economy, monetization, ranked systems, seasons,
@@ -173,14 +174,15 @@ player-facing UI:
 
 - `RaceHUD`: visible during Intermission, Countdown, Racing, RaceEnding, and Results. It displays
   active course metadata, race state, local player status, timer, checkpoint split count when
-  available, fall count when available, and placement when the authoritative result payload includes
-  it.
+  available, current-lap progress for lap races, lap count when applicable, fall count when
+  available, and placement when the authoritative result payload includes it.
 - `RaceResultsUI`: visible around RaceEnding and Results. It displays official placements, finish
   times, fall counts, and DNF rows from `RaceResultsUpdated`.
 - `PersonalSummaryUI`: appears after the local player has a result or during Results. It displays
   the local player status, official placement and finish time when available, falls, checkpoint
-  splits, DNF reason when available through the result row, and a simple note such as `Clean Run`,
-  `Finished with Falls`, `DNF`, or `Unofficial Run`.
+  splits with lap context when applicable, lap times when available, DNF reason when available
+  through the result row, and a simple note such as `Clean Run`, `Finished with Falls`, `DNF`, or
+  `Unofficial Run`.
 
 The client UI is display-only. It does not decide official finish time, placement, falls,
 checkpoint completion, or result validity. `ResultsService` remains the authoritative source for
@@ -308,9 +310,33 @@ course, it is archived under `ServerStorage/CourseArchive` instead of being dele
 or configured course is missing, `CourseService` can create `Course_ClassicPointToPoint` from the
 existing fallback course and still falls back to any valid `Workspace/RaceCourse` if spawning fails.
 
-LapBased gameplay is still not implemented. The active course abstraction now supports future
-course rotation and lap-aware validation, but Phase 8E only spawns PointToPoint courses through
-server-owned configuration.
+Phase 8F implements MVP `LapBased` race validation while preserving PointToPoint behavior.
+`CheckpointService` owns per-racer lap progress for official `Racing` players: current lap,
+required laps, current-lap checkpoint progress, and lap start elapsed time. For PointToPoint
+courses, racers still complete ordered checkpoints once and then touch Finish to lock placement and
+finish time.
+
+For LapBased courses, checkpoints must be completed in order on the current lap. Touching Finish
+before all current-lap checkpoints are complete does nothing. Touching Finish after all current-lap
+checkpoints records that lap time through `ResultsService`. If more laps remain, checkpoint
+progress resets to `Checkpoint_001`, the player's status stays `Racing`, and official timing
+continues. On the final required lap, the same Finish touch records the final official finish,
+placement, and total race time.
+
+`ResultsService` stores lap-aware in-memory result data only: `currentLap`, `requiredLaps`,
+`nextCheckpointIndex`, `checkpointCount`, and `lapTimes`. Checkpoint split dedupe now includes both
+`lap` and `checkpointIndex`, so the same checkpoint can be recorded once per lap. Result locking,
+DNF handling, fall counts, and placement remain server-authoritative and unchanged for
+PointToPoint races.
+
+Studio now also contains `ServerStorage/CourseLibrary/Course_ClassicCircuit`, a simple technical
+graybox course for validating the LapBased framework. It uses CourseId `classic_circuit`, DisplayName
+`Classic Circuit`, RaceFormat `LapBased`, LapCount `3`, Enabled `true`, and four checkpoints.
+`CourseConfig.ActiveCourseId` remains fixed to `classic_point_to_point`; testing the circuit is a
+manual config switch until course rotation/selection is implemented.
+
+Phase 8F does not add DataStore persistence, public course selection, course voting, final creative
+course design, or separate unofficial checkpoint/respawn tracking for LateRacing and GhostRacing.
 
 Studio now contains `ServerStorage/CourseLibrary/CourseTemplate`, a reusable authoring model with
 `CourseInfo`, Start, Checkpoints, Finish, Obstacles, FallZones, RouteMarkers, Decoration, and Bounds.

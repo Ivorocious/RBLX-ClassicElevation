@@ -27,6 +27,7 @@ local currentRaceState: string? = nil
 local currentRemainingTime: number? = nil
 local currentCourseDisplayName = "-"
 local currentRaceFormat: string? = nil
+local currentLapCount: number? = nil
 local localPlayerStatus: string = RaceConstants.PlayerRaceStatus.Lobby
 local currentRaceResult: any = nil
 local lateChoiceSubmittedRaceId: string? = nil
@@ -181,6 +182,81 @@ local function getResultSplits(playerResult: any): any
 	return nil
 end
 
+local function getResultLapTimes(playerResult: any): any
+	if typeof(playerResult) == "table" and typeof(playerResult.lapTimes) == "table" then
+		return playerResult.lapTimes
+	end
+
+	return nil
+end
+
+local function getRequiredLaps(playerResult: any): number
+	if typeof(playerResult) == "table" and typeof(playerResult.requiredLaps) == "number" then
+		return math.max(1, playerResult.requiredLaps)
+	end
+
+	if typeof(currentRaceResult) == "table" then
+		if typeof(currentRaceResult.requiredLaps) == "number" then
+			return math.max(1, currentRaceResult.requiredLaps)
+		end
+
+		if typeof(currentRaceResult.lapCount) == "number" then
+			return math.max(1, currentRaceResult.lapCount)
+		end
+	end
+
+	if currentLapCount ~= nil then
+		return currentLapCount
+	end
+
+	return 1
+end
+
+local function getCurrentLap(playerResult: any): number
+	if typeof(playerResult) == "table" and typeof(playerResult.currentLap) == "number" then
+		return math.max(1, playerResult.currentLap)
+	end
+
+	return 1
+end
+
+local function formatLapTimes(lapTimes: any): string
+	if typeof(lapTimes) ~= "table" or #lapTimes == 0 then
+		return "-"
+	end
+
+	local formattedLapTimes = {}
+
+	for index, lapTime in ipairs(lapTimes) do
+		if typeof(lapTime) == "number" then
+			formattedLapTimes[index] = FormatTime.fromSeconds(lapTime)
+		end
+	end
+
+	if #formattedLapTimes == 0 then
+		return "-"
+	end
+
+	return table.concat(formattedLapTimes, " / ")
+end
+
+local function getCheckpointProgressText(playerResult: any, splits: any): string
+	if typeof(playerResult) == "table"
+		and typeof(playerResult.nextCheckpointIndex) == "number"
+		and typeof(playerResult.checkpointCount) == "number"
+	then
+		local completedCheckpoints = math.clamp(playerResult.nextCheckpointIndex - 1, 0, playerResult.checkpointCount)
+
+		return string.format("%d / %d", completedCheckpoints, playerResult.checkpointCount)
+	end
+
+	if typeof(splits) == "table" then
+		return tostring(#splits) .. " completed"
+	end
+
+	return "-"
+end
+
 local function findLocalPlayerResult(): any
 	if typeof(currentRaceResult) ~= "table" then
 		return nil
@@ -215,6 +291,7 @@ local function rememberRaceId(raceId: any)
 	currentRaceResult = nil
 	currentCourseDisplayName = "-"
 	currentRaceFormat = nil
+	currentLapCount = nil
 	lateChoiceSubmittedRaceId = nil
 	finishedChoiceSubmittedRaceId = nil
 	renderedSummarySplitKey = ""
@@ -235,6 +312,12 @@ local function applyCourseMetadata(payload: any)
 		currentRaceFormat = payload.raceFormat
 	elseif typeof(payload.format) == "string" then
 		currentRaceFormat = payload.format
+	end
+
+	if typeof(payload.requiredLaps) == "number" then
+		currentLapCount = math.max(1, payload.requiredLaps)
+	elseif typeof(payload.lapCount) == "number" then
+		currentLapCount = math.max(1, payload.lapCount)
 	end
 end
 
@@ -299,9 +382,10 @@ local function updateRaceHud()
 
 	local localResult = findLocalPlayerResult()
 	local splits = getResultSplits(localResult)
-	local splitCount = if typeof(splits) == "table" then #splits else nil
 	local falls = getResultFalls(localResult)
 	local placement: any = nil
+	local requiredLaps = getRequiredLaps(localResult)
+	local currentLap = getCurrentLap(localResult)
 
 	if localResult ~= nil then
 		placement = localResult.placement
@@ -314,11 +398,17 @@ local function updateRaceHud()
 	end
 
 	raceHudLabels.Course.Text = "Course: " .. courseText
+
+	if currentRaceFormat == RaceConstants.RaceFormat.LapBased or requiredLaps > 1 then
+		raceHudLabels.Lap.Text = string.format("Lap: %d / %d", currentLap, requiredLaps)
+	else
+		raceHudLabels.Lap.Text = "Lap: -"
+	end
+
 	raceHudLabels.State.Text = "State: " .. tostring(currentRaceState or "Waiting")
 	raceHudLabels.Status.Text = "Status: " .. tostring(localPlayerStatus)
 	raceHudLabels.Timer.Text = "Timer: " .. formatMaybeTime(currentRemainingTime)
-	raceHudLabels.Checkpoints.Text = "Checkpoints: "
-		.. (if splitCount ~= nil then tostring(splitCount) .. " completed" else "-")
+	raceHudLabels.Checkpoints.Text = "Checkpoints: " .. getCheckpointProgressText(localResult, splits)
 	raceHudLabels.Falls.Text = "Falls: " .. formatMaybeNumber(falls)
 	raceHudLabels.Placement.Text = "Placement: " .. formatPlacement(placement)
 end
@@ -340,6 +430,16 @@ local function addResultRow(order: number, text: string)
 	row.LayoutOrder = order
 	row.Size = UDim2.new(1, 0, 0, 22)
 	row.TextColor3 = Color3.fromRGB(228, 232, 238)
+end
+
+local function formatResultLapSummary(playerResult: any): string
+	local lapTimesText = formatLapTimes(getResultLapTimes(playerResult))
+
+	if lapTimesText == "-" then
+		return ""
+	end
+
+	return "  Laps " .. lapTimesText
 end
 
 local function updateResultsUi()
@@ -365,11 +465,12 @@ local function updateResultsUi()
 				addResultRow(
 					rowOrder,
 					string.format(
-						"%s  %s  %s  Falls %s",
+						"%s  %s  %s  Falls %s%s",
 						formatPlacement(playerResult.placement),
 						getResultDisplayName(playerResult),
 						formatMaybeTime(playerResult.finishTime),
-						formatMaybeNumber(playerResult.falls)
+						formatMaybeNumber(playerResult.falls),
+						formatResultLapSummary(playerResult)
 					)
 				)
 				rowOrder += 1
@@ -390,10 +491,11 @@ local function updateResultsUi()
 				addResultRow(
 					rowOrder,
 					string.format(
-						"DNF  %s  Falls %s  %s",
+						"DNF  %s  Falls %s  %s%s",
 						getResultDisplayName(playerResult),
 						formatMaybeNumber(playerResult.falls),
-						reason
+						reason,
+						formatResultLapSummary(playerResult)
 					)
 				)
 				rowOrder += 1
@@ -428,7 +530,7 @@ local function getSummarySplitKey(splits: any, splitCount: number): string
 	for index, split in ipairs(splits) do
 		if typeof(split) == "table" then
 			local checkpointName = if typeof(split.checkpointName) == "string" then split.checkpointName else "Checkpoint"
-			parts[index] = string.format("%s:%s", checkpointName, tostring(split.elapsedTime))
+			parts[index] = string.format("%s:%s:%s", tostring(split.lap), checkpointName, tostring(split.elapsedTime))
 		end
 	end
 
@@ -458,10 +560,12 @@ local function updatePersonalSummaryUi()
 	local placement: any = nil
 	local finishTime: any = nil
 	local dnfReason = "-"
+	local lapTimes: any = nil
 
 	if localResult ~= nil then
 		placement = localResult.placement
 		finishTime = localResult.finishTime
+		lapTimes = getResultLapTimes(localResult)
 
 		if typeof(localResult.dnfReason) == "string" and localResult.dnfReason ~= "" then
 			dnfReason = localResult.dnfReason
@@ -474,6 +578,7 @@ local function updatePersonalSummaryUi()
 	summaryLabels.FinishTime.Text = "Finish: " .. formatMaybeTime(finishTime)
 	summaryLabels.DnfReason.Text = "DNF: " .. dnfReason
 	summaryLabels.Falls.Text = "Falls: " .. formatMaybeNumber(falls)
+	summaryLabels.LapTimes.Text = "Laps: " .. formatLapTimes(lapTimes)
 
 	local splitKey = getSummarySplitKey(splits, splitCount)
 
@@ -495,6 +600,10 @@ local function updatePersonalSummaryUi()
 
 			if typeof(split.checkpointName) == "string" then
 				checkpointName = split.checkpointName
+			end
+
+			if typeof(split.lap) == "number" and getRequiredLaps(localResult) > 1 then
+				checkpointName = string.format("Lap %d %s", split.lap, checkpointName)
 			end
 
 			addSummarySplitRow(
@@ -598,7 +707,7 @@ local function createRaceHud()
 	raceHudGui = screenGui
 	raceHudLabels = {}
 
-	local frame = createPanel(screenGui, "Panel", UDim2.fromScale(0.015, 0.11), UDim2.fromOffset(310, 214), Vector2.zero)
+	local frame = createPanel(screenGui, "Panel", UDim2.fromScale(0.015, 0.11), UDim2.fromOffset(310, 236), Vector2.zero)
 	frame.ClipsDescendants = true
 
 	local padding = Instance.new("UIPadding")
@@ -616,6 +725,7 @@ local function createRaceHud()
 
 	local fields = {
 		{ key = "Course", text = "Course: -" },
+		{ key = "Lap", text = "Lap: -" },
 		{ key = "State", text = "State: -" },
 		{ key = "Status", text = "Status: -" },
 		{ key = "Timer", text = "Timer: -" },
@@ -671,7 +781,7 @@ local function createPersonalSummaryUi()
 	personalSummaryGui = screenGui
 	summaryLabels = {}
 
-	local frame = createPanel(screenGui, "Panel", UDim2.fromScale(0.015, 0.46), UDim2.fromOffset(310, 238), Vector2.zero)
+	local frame = createPanel(screenGui, "Panel", UDim2.fromScale(0.015, 0.46), UDim2.fromOffset(330, 260), Vector2.zero)
 
 	local padding = Instance.new("UIPadding")
 	padding.PaddingTop = UDim.new(0, 12)
@@ -693,6 +803,7 @@ local function createPersonalSummaryUi()
 		{ key = "FinishTime", text = "Finish: -" },
 		{ key = "DnfReason", text = "DNF: -" },
 		{ key = "Falls", text = "Falls: -" },
+		{ key = "LapTimes", text = "Laps: -" },
 	}
 
 	for index, field in ipairs(fields) do
@@ -704,7 +815,7 @@ local function createPersonalSummaryUi()
 	local splitsFrame = Instance.new("ScrollingFrame")
 	splitsFrame.Name = "Splits"
 	splitsFrame.LayoutOrder = #fields + 2
-	splitsFrame.Size = UDim2.new(1, 0, 1, -152)
+	splitsFrame.Size = UDim2.new(1, 0, 1, -174)
 	splitsFrame.BackgroundTransparency = 1
 	splitsFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
 	splitsFrame.CanvasSize = UDim2.fromOffset(0, 0)

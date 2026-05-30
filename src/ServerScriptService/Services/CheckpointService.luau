@@ -8,6 +8,7 @@ local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
 local RaceTypes = require(ReplicatedStorage.Shared.RaceTypes)
 
 type PlayerRaceStatus = RaceTypes.PlayerRaceStatus
+type RaceFormat = RaceTypes.RaceFormat
 
 type ServiceContext = {
 	Services: { [string]: any },
@@ -21,6 +22,10 @@ type CheckpointDefinition = {
 
 type PlayerCheckpointProgress = {
 	raceId: string,
+	raceFormat: RaceFormat,
+	currentLap: number,
+	requiredLaps: number,
+	lapStartedAt: number,
 	nextCheckpointIndex: number,
 	finished: boolean,
 	completedCheckpointIndexes: { [number]: boolean },
@@ -79,6 +84,30 @@ local function getPlayerStatus(player: Player): PlayerRaceStatus?
 	return playerRaceService.GetPlayerStatus(player)
 end
 
+local function getActiveRaceFormat(): RaceFormat
+	if courseService ~= nil and courseService.GetRaceFormat ~= nil then
+		local raceFormat = courseService.GetRaceFormat()
+
+		if raceFormat == RaceConstants.RaceFormat.LapBased then
+			return RaceConstants.RaceFormat.LapBased
+		end
+	end
+
+	return RaceConstants.RaceFormat.PointToPoint
+end
+
+local function getRequiredLaps(raceFormat: RaceFormat): number
+	if raceFormat ~= RaceConstants.RaceFormat.LapBased then
+		return 1
+	end
+
+	if courseService ~= nil and courseService.GetLapCount ~= nil then
+		return math.max(1, courseService.GetLapCount())
+	end
+
+	return 1
+end
+
 local function isOfficialRacer(player: Player): boolean
 	return playerRaceService ~= nil
 		and playerRaceService.IsOfficialRacer ~= nil
@@ -95,8 +124,14 @@ local function getOrCreatePlayerProgress(player: Player, raceId: string): Player
 	local playerProgress = playerProgressByUserId[player.UserId]
 
 	if playerProgress == nil or playerProgress.raceId ~= raceId then
+		local raceFormat = getActiveRaceFormat()
+
 		playerProgress = {
 			raceId = raceId,
+			raceFormat = raceFormat,
+			currentLap = CheckpointConfig.DefaultLapNumber,
+			requiredLaps = getRequiredLaps(raceFormat),
+			lapStartedAt = 0,
 			nextCheckpointIndex = CheckpointConfig.StartingCheckpointIndex + 1,
 			finished = false,
 			completedCheckpointIndexes = {},
@@ -109,6 +144,20 @@ end
 
 local function hasCompletedAllCheckpoints(playerProgress: PlayerCheckpointProgress): boolean
 	return playerProgress.nextCheckpointIndex > #checkpointDefinitions
+end
+
+local function updateResultCheckpointProgress(player: Player, playerProgress: PlayerCheckpointProgress)
+	if resultsService == nil or resultsService.UpdateCheckpointProgress == nil then
+		return
+	end
+
+	resultsService.UpdateCheckpointProgress(
+		player,
+		playerProgress.currentLap,
+		playerProgress.requiredLaps,
+		playerProgress.nextCheckpointIndex,
+		#checkpointDefinitions
+	)
 end
 
 local function getCheckpointDefinitionByIndex(checkpointIndex: number): CheckpointDefinition?
@@ -163,10 +212,12 @@ local function bindCheckpointPart(checkpointDefinition: CheckpointDefinition)
 				player,
 				checkpointDefinition.index,
 				checkpointDefinition.name,
-				CheckpointConfig.DefaultLapNumber,
+				playerProgress.currentLap,
 				elapsedRaceTime
 			)
 		end
+
+		updateResultCheckpointProgress(player, playerProgress)
 
 		print(
 			string.format(
@@ -208,6 +259,39 @@ local function bindFinishPart(part: BasePart)
 
 		if resultsService == nil or resultsService.RecordFinish == nil then
 			return
+		end
+
+		if playerProgress.raceFormat == RaceConstants.RaceFormat.LapBased then
+			local lapTime = elapsedRaceTime - playerProgress.lapStartedAt
+			local nextLap = math.min(playerProgress.currentLap + 1, playerProgress.requiredLaps)
+
+			if resultsService.RecordLapComplete ~= nil then
+				resultsService.RecordLapComplete(
+					player,
+					playerProgress.currentLap,
+					lapTime,
+					nextLap,
+					playerProgress.requiredLaps
+				)
+			end
+
+			if playerProgress.currentLap < playerProgress.requiredLaps then
+				print(
+					string.format(
+						"[CheckpointService] %s completed lap %d/%d.",
+						player.Name,
+						playerProgress.currentLap,
+						playerProgress.requiredLaps
+					)
+				)
+
+				playerProgress.currentLap += 1
+				playerProgress.lapStartedAt = elapsedRaceTime
+				playerProgress.nextCheckpointIndex = CheckpointConfig.StartingCheckpointIndex + 1
+				playerProgress.completedCheckpointIndexes = {}
+				updateResultCheckpointProgress(player, playerProgress)
+				return
+			end
 		end
 
 		local finishResult = resultsService.RecordFinish(player, elapsedRaceTime)

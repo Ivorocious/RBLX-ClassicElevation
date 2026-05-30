@@ -35,7 +35,7 @@ Record important project decisions here.
 ### 2026-05-20 - MVP Race Foundation Is Server-Authoritative and Point-to-Point First
 
 **Decision:** The MVP race architecture starts with `RaceFormat = "PointToPoint"` while keeping
-`LapBased` as a future type/config option only.
+`LapBased` as a planned type/config option for later implementation.
 
 **Reasoning:** The first playable milestone should prove one excellent live race loop before adding
 course selection or lap/circuit complexity.
@@ -46,6 +46,21 @@ approved.
 
 **Alternatives Considered:** Building multiple formats, persistent PBs, ranked points, or course
 selection immediately. Rejected for MVP scope control.
+
+### 2026-05-30 - Add LapBased Validation Without Course Selection UI
+
+**Decision:** LapBased race validation is implemented server-side for enabled course models, but
+public course selection, course voting, and persistence remain outside MVP scope.
+
+**Reasoning:** Friend playtesting needs a circuit race path, but players should not be able to
+choose or authoritatively influence active course state from the client.
+
+**Impact:** `CheckpointService` owns lap progression, `ResultsService` stores lap-aware in-memory
+result data, and `CourseConfig.ActiveCourseId` remains the server-owned way to pick the active
+course for now.
+
+**Alternatives Considered:** Adding player-facing course selection or full rotation immediately.
+Rejected until both course formats are smoke-tested.
 
 ## Template
 
