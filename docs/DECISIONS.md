@@ -145,3 +145,7 @@ Use supported cliff strata, planted scenic banks, a mountain-connected gallery a
 ## 2026-09-06 - Classic Ascent v7
 
 Use bounded seeded foothold variation, full river banks with shorter/fewer logs, client-only foam, and cached ground-contact projectile arcs. Keep scenery boundaries independent of platform offsets. Approved Blender kit 112260230711687 adds cedar, fern and sculpted summits. Approved v6 copies were archived before installing v7. See [v7 handoff](CLASSIC_ASCENT_V7.md).
+
+## 2026-09-06 - Final altitude treatment
+
+Keep gameplay geometry intact and apply a one-time scenery pass to v7. Recess the rock floor, extend supports into layered ravine haze, add lower valley clouds, and enlarge scenery trees to 41-94 studs. Preserve before-update copies. See [v7 handoff](CLASSIC_ASCENT_V7.md#final-altitude-and-scale-pass).

@@ -37,3 +37,13 @@ Both accepted v6 copies are retained in `ServerStorage.CourseBuildArchive`:
 The reviewed v7 candidate remains in `ServerStorage.AscentV7FinalReview_1788644537`. The authored CourseLibrary copy and visible Workspace.RaceCourse are version 7. Preview-only offset models are stored outside Workspace.
 
 Start a Studio race and use **Skip checkpoint** to reach each section. First check the river: walk onto a log, stand, move along it, jump to the next row, and watch a hidden wrap from a bank. Then check the scattered footholds in 03/05/06/07/09, cover against the new projectile paths, depth mist below the bridges, and the clear summit finish.
+
+## Final altitude and scale pass
+
+The owner requested bottomless-looking drops and much larger scenery. `AscentDepthPass` applies once to v7 models, recorded as `AltitudeRevision = 1`; the builder also applies it to future builds.
+
+- Sections 03/04/05/06/07/09 now have their continuous rock floor about 240 studs below the route. Supporting rock columns extend down into two layers of blue-gray haze, replacing the readable shallow floor with an obscured drop.
+- Sixty larger cloud emitters form two lower valley rings around the map. Together with the ravine layers there are 132 authored emitters. The client seeds marked emitters when they arrive so the effect does not require waiting for a full particle cycle.
+- The 213 scenery trees now measure about 41-94 studs tall. Scenic boulders and ice teeth are also larger. Interactive cover, projectiles, logs and platform geometry were not scaled.
+- Rojo build passed. The pass ran twice without duplicating objects. Both installed copies retained all 19 checkpoints and exactly preserved the position, size and collision setting of 884 route, boundary and motion parts. Edit previews covered pit depth and forest scale; a brief live camera review confirmed the loaded haze and deeper drop. No course traversal or crowd/performance test was run.
+- Before-update copies are retained in `CourseBuildArchive` as `BeforeAltitude_RaceCourse_1788645754` and `BeforeAltitude_Course_ClassicAscentPointToPoint_1788645754`. Nothing was published. Existing manual rider acceptance remains open.

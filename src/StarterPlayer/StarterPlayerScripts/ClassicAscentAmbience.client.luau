@@ -66,6 +66,18 @@ local function setActive(active: boolean)
 end
 
 local elapsed = 0
+local warmed = setmetatable({}, {__mode="k"})
+local function warmMist(object: Instance)
+	if not object:IsA("ParticleEmitter") or warmed[object] then return end
+	local count = object:GetAttribute("PrewarmParticles")
+	if typeof(count) ~= "number" then return end
+	warmed[object] = true
+	object:Emit(count)
+end
+workspace.DescendantAdded:Connect(function(object)
+	if object:IsA("ParticleEmitter") then task.defer(warmMist,object) end
+end)
+for _,object in ipairs(workspace:GetDescendants()) do warmMist(object) end
 RunService.Heartbeat:Connect(function(delta)
 	elapsed += delta
 	if elapsed < 0.5 then return end

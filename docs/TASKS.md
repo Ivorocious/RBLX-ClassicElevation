@@ -81,3 +81,9 @@ See [v6 handoff](CLASSIC_ASCENT_V6.md).
 - [ ] Owner acceptance of log riding, jump difficulty, projectile cover and crowd performance.
 
 See [v7 handoff](CLASSIC_ASCENT_V7.md).
+
+## Final altitude treatment
+
+- [x] Bottomless-looking drops in 03/04/06/07 and other open jump sections.
+- [x] Lower valley clouds and larger forest, rock and ice scenery.
+- [x] Preserve gameplay geometry, retain backups and review the installed scenery.

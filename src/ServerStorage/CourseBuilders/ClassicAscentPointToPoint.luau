@@ -64,7 +64,10 @@ function Builder.Ensure(library: Folder): Model
 	local existing = library:FindFirstChild(MODEL_NAME)
 	if existing then
 		assert(existing:IsA("Model"), "Classic Ascent must be a Model")
-		if existing:GetAttribute("BuilderVersion") == 7 then return existing end
+		if existing:GetAttribute("BuilderVersion") == 7 then
+			require(script.Parent.AscentDepthPass).Apply(existing)
+			return existing
+		end
 		assert(existing:GetAttribute("BuilderVersion") >= 1 and existing:GetAttribute("BuilderVersion") <= 6, "Unrecognized authored course; reconcile before rebuilding")
 		local archiveName = MODEL_NAME .. "_Version" .. tostring(existing:GetAttribute("BuilderVersion"))
 		assert(not library:FindFirstChild(archiveName), "Generated version archive already exists")
@@ -162,6 +165,7 @@ function Builder.Ensure(library: Folder): Model
 	Details.RouteExtras(model, nodes)
 	require(script.Parent.AscentWorld).Build(model, nodes, CENTER)
 	Environment.Build(model, nodes, CENTER)
+	require(script.Parent.AscentDepthPass).Apply(model)
 	assert(checkpointIndex == 19, "Nineteen checkpoints required")
 	info:SetAttribute("RouteLengthStuds", math.floor(length))
 	info:SetAttribute("RouteTransitions", routeIndex)

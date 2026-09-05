@@ -338,3 +338,7 @@ Visually reviewed forest, river, cliffs, gallery and summit. All 170 route sampl
 ## 2026-09-06 - v7 focused review
 
 Rojo build and Studio compilation/build passed. Reviewed river, cliffs, causeway, summit and background. Installed v7 has 4,170 parts and 19 checkpoints; all 170 samples hit both boundary walls. Central projected gaps measured up to 6.86 studs, height offsets up to 1.48. All 40 river logs moved in a 0.6-second server sample; client foam movement and atmosphere density 0.34 were observed. Projectile cycles were active. Automated rider placement triggered recovery, so rider acceptance remains manual. No full-course or 20-player run. See [v7 handoff](CLASSIC_ASCENT_V7.md).
+
+## 2026-09-06 - Altitude and scale review
+
+Build passed; pit and forest edit previews and one brief live camera review completed. All 884 checked gameplay parts retained position, size and collision in both installed copies; 19 checkpoints remain. Reapplying the scenery pass added no duplicates. Trees measure about 41-94 studs. No traversal or crowd test. See [v7 handoff](CLASSIC_ASCENT_V7.md#final-altitude-and-scale-pass).
