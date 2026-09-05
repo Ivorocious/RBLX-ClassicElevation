@@ -137,3 +137,7 @@ Preserve the user's manual sign transforms in source and archive the original mo
 ## 2026-09-06 - Classic Ascent v5 mesh scenery
 
 Use the explicitly approved Blender prop asset 89332142209949, cached as named templates, for the v5 course. Preserve the approved mountain and the archived v4 course; remove repetitive ellipsoid decoration. Moving logs use one-way hidden resets; rolling hazards remain server-authoritative. See [v5 handoff](CLASSIC_ASCENT_V5.md).
+
+## 2026-09-06 - Classic Ascent v6 grounding
+
+Use supported cliff strata, planted scenic banks, a mountain-connected gallery and distant ridges around the preserved mountain. Block mountain/scenery shortcuts with continuous boundaries. River logs use native server-owned physics instead of moving rider characters; keep rider-carry acceptance open until the manual check passes. Previous Studio course copies were archived with explicit approval. See [v6 handoff](CLASSIC_ASCENT_V6.md).

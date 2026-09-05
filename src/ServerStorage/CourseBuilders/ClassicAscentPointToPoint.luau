@@ -64,8 +64,8 @@ function Builder.Ensure(library: Folder): Model
 	local existing = library:FindFirstChild(MODEL_NAME)
 	if existing then
 		assert(existing:IsA("Model"), "Classic Ascent must be a Model")
-		if existing:GetAttribute("BuilderVersion") == 5 then return existing end
-		assert(existing:GetAttribute("BuilderVersion") == 1 or existing:GetAttribute("BuilderVersion") == 2 or existing:GetAttribute("BuilderVersion") == 3 or existing:GetAttribute("BuilderVersion") == 4, "Unrecognized authored course; reconcile before rebuilding")
+		if existing:GetAttribute("BuilderVersion") == 6 then return existing end
+		assert(existing:GetAttribute("BuilderVersion") == 1 or existing:GetAttribute("BuilderVersion") == 2 or existing:GetAttribute("BuilderVersion") == 3 or existing:GetAttribute("BuilderVersion") == 4 or existing:GetAttribute("BuilderVersion") == 5, "Unrecognized authored course; reconcile before rebuilding")
 		local archiveName = MODEL_NAME .. "_Version" .. tostring(existing:GetAttribute("BuilderVersion"))
 		assert(not library:FindFirstChild(archiveName), "Generated version archive already exists")
 		existing.Name = archiveName
@@ -77,7 +77,7 @@ function Builder.Ensure(library: Folder): Model
 	end
 	local model = Instance.new("Model")
 	model.Name = MODEL_NAME
-	model:SetAttribute("BuilderVersion", 5)
+	model:SetAttribute("BuilderVersion", 6)
 	local info = folder(model, "CourseInfo")
 	for key, value in pairs({ CourseId = "classic_ascent_point_to_point", DisplayName = "Classic Ascent · Alpine Expedition", RaceFormat = "PointToPoint", LapCount = 1, Enabled = true, Difficulty = "Intermediate", TargetNewPlayerTime = 420, TargetPracticedTime = 300, CheckpointCount = 19, TimingValidated = false, DesignedRacerCapacity = 20, ParallelRoutes = 3 }) do
 		info:SetAttribute(key, value)
@@ -159,6 +159,7 @@ function Builder.Ensure(library: Folder): Model
 	Details.Sign(markers, finish.CFrame * CFrame.new(12, 1.5 + SignAdjustments[11].height, -5) * CFrame.Angles(0, SignAdjustments[11].yaw, 0), "SUMMIT", "CLASSIC ASCENT", true)
 	require(script.Parent.AscentProps).Prepare()
 	Details.RouteExtras(model, nodes)
+	require(script.Parent.AscentWorld).Build(model, nodes, CENTER)
 	Environment.Build(model, nodes, CENTER)
 	assert(checkpointIndex == 19, "Nineteen checkpoints required")
 	info:SetAttribute("RouteLengthStuds", math.floor(length))

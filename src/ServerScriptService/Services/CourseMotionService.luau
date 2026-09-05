@@ -1,6 +1,7 @@
 --!strict
 
 local Players = game:GetService("Players")
+local PhysicsService = game:GetService("PhysicsService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
@@ -17,6 +18,8 @@ type VisualState = {
 	transparency: number,
 	canCollide: boolean,
 	canTouch: boolean,
+	anchored: boolean,
+	collisionGroup: string,
 }
 
 type MotionRecord = {
@@ -38,6 +41,8 @@ type MotionRecord = {
 	originalTransparency: number,
 	originalCanCollide: boolean,
 	originalCanTouch: boolean,
+	originalAnchored: boolean,
+	originalCollisionGroup: string,
 	warning: BasePart?,
 	warningTransparency: number?,
 	phase: string,
@@ -47,6 +52,10 @@ type MotionRecord = {
 	previousCFrame: CFrame,
 	visuals: { VisualState },
 	random: Random,
+	linearVelocity: LinearVelocity?,
+	alignOrientation: AlignOrientation?,
+	welds: { WeldConstraint },
+	motionAttachment: Attachment?,
 }
 
 local CourseMotionService = {}
@@ -65,6 +74,23 @@ local boundCourse: Model? = nil
 local records: { MotionRecord } = {}
 local wasRaceActive = false
 local contactTimes: { [number]: { [BasePart]: number } } = {}
+local boundaryCollisionGroups: { [BasePart]: string } = {}
+
+local MOVING_LOG_GROUP = "MovingLogs"
+local COURSE_BOUNDARY_GROUP = "CourseBoundaries"
+
+local function setCollisionGroup(part: BasePart, groupName: string)
+	part.CollisionGroup = groupName
+end
+
+local function ensureMovingLogCollisionGroups()
+	for _, groupName in ipairs({ MOVING_LOG_GROUP, COURSE_BOUNDARY_GROUP }) do
+		if not PhysicsService:IsCollisionGroupRegistered(groupName) then
+			PhysicsService:RegisterCollisionGroup(groupName)
+		end
+	end
+	PhysicsService:CollisionGroupSetCollidable(MOVING_LOG_GROUP, COURSE_BOUNDARY_GROUP, false)
+end
 
 local function now(): number
 	return Workspace:GetServerTimeNow()
@@ -135,6 +161,34 @@ local function nextPause(record: MotionRecord): number
 	return record.random:NextNumber(record.pauseMin, record.pauseMax)
 end
 
+local function setMovingLogPhysics(record: MotionRecord, enabled: boolean)
+	if record.linearVelocity == nil or record.alignOrientation == nil then
+		return
+	end
+	record.linearVelocity.Enabled = enabled
+	record.alignOrientation.Enabled = enabled
+	if enabled then
+		setCollisionGroup(record.part, MOVING_LOG_GROUP)
+		for _, visual in ipairs(record.visuals) do
+			setCollisionGroup(visual.part, MOVING_LOG_GROUP)
+			visual.part.Anchored = false
+		end
+		record.part.Anchored = false
+		record.part.AssemblyLinearVelocity = record.linearVelocity.VectorVelocity
+		record.part.AssemblyAngularVelocity = Vector3.zero
+		pcall(function()
+			record.part:SetNetworkOwner(nil)
+		end)
+	else
+		record.part.AssemblyLinearVelocity = Vector3.zero
+		record.part.AssemblyAngularVelocity = Vector3.zero
+		record.part.Anchored = true
+		for _, visual in ipairs(record.visuals) do
+			visual.part.Anchored = true
+		end
+	end
+end
+
 local function buildExclusions(record: MotionRecord): { Instance }
 	local excluded: { Instance } = { record.part }
 	if record.warning ~= nil then
@@ -148,15 +202,20 @@ end
 
 local function resetRecord(record: MotionRecord, clearDiagnostics: boolean)
 	if record.part.Parent ~= nil then
+		setMovingLogPhysics(record, false)
 		moveRecord(record, record.authoredCFrame)
 		record.part.Transparency = record.originalTransparency
 		record.part.CanCollide = record.originalCanCollide
 		record.part.CanTouch = record.originalCanTouch
+		record.part.Anchored = record.originalAnchored
+		setCollisionGroup(record.part, record.originalCollisionGroup)
 		for _, visual in ipairs(record.visuals) do
 			if visual.part.Parent ~= nil then
 				visual.part.Transparency = visual.transparency
 				visual.part.CanCollide = visual.canCollide
 				visual.part.CanTouch = visual.canTouch
+				visual.part.Anchored = visual.anchored
+				setCollisionGroup(visual.part, visual.collisionGroup)
 			end
 		end
 		record.previousCFrame = record.startCFrame
@@ -168,6 +227,21 @@ local function resetRecord(record: MotionRecord, clearDiagnostics: boolean)
 		end
 	end
 	showWarning(record, false)
+end
+
+local function destroyMovingLogPhysics(record: MotionRecord)
+	for _, weld in ipairs(record.welds) do
+		weld:Destroy()
+	end
+	if record.linearVelocity ~= nil then
+		record.linearVelocity:Destroy()
+	end
+	if record.alignOrientation ~= nil then
+		record.alignOrientation:Destroy()
+	end
+	if record.motionAttachment ~= nil then
+		record.motionAttachment:Destroy()
+	end
 end
 
 local function restoreRecords(clearDiagnostics: boolean)
@@ -323,31 +397,6 @@ local function sweep(record: MotionRecord, fromPosition: Vector3, toPosition: Ve
 	return nil, false
 end
 
-local function carryGroundedRacers(record: MotionRecord, delta: CFrame)
-	if delta.Position.Magnitude < 0.0001 then
-		return
-	end
-	for _, player in ipairs(Players:GetPlayers()) do
-		if not isActiveRacer(player) then
-			continue
-		end
-		local character = player.Character
-		local humanoid = if character ~= nil then character:FindFirstChildOfClass("Humanoid") else nil
-		local root = if character ~= nil then character:FindFirstChild("HumanoidRootPart") else nil
-		if humanoid == nil or root == nil or not root:IsA("BasePart") or humanoid.FloorMaterial == Enum.Material.Air then
-			continue
-		end
-		local params = RaycastParams.new()
-		params.FilterType = Enum.RaycastFilterType.Include
-		params.FilterDescendantsInstances = { record.part }
-		local distance = humanoid.HipHeight + root.Size.Y * 0.5 + MotionConfig.GroundProbeExtraDistance
-		local hit = Workspace:Raycast(root.Position, Vector3.new(0, -distance, 0), params)
-		if hit ~= nil then
-			character:PivotTo(delta * character:GetPivot())
-		end
-	end
-end
-
 local function beginCycle(record: MotionRecord, timestamp: number)
 	record.direction = 1
 	if record.kind == kinds.MovingLog then
@@ -357,6 +406,7 @@ local function beginCycle(record: MotionRecord, timestamp: number)
 		moveRecord(record, startingCFrame)
 		record.previousCFrame = startingCFrame
 		setRecordVisible(record, true)
+		setMovingLogPhysics(record, true)
 		setPhase(record, "Travelling", timestamp + (1 - progress) * record.duration)
 		record.phaseStartedAt = timestamp - progress * record.duration
 	else
@@ -384,11 +434,8 @@ local function updateMovingLog(record: MotionRecord, timestamp: number)
 	if record.phase == "Idle" and timestamp >= record.nextPhaseAt then
 		beginCycle(record, timestamp)
 	elseif record.phase == "Travelling" then
-		local alpha = math.clamp((timestamp - record.phaseStartedAt) / math.max(record.duration, 0.01), 0, 1)
-		local previous = record.part.CFrame
-		moveRecord(record, record.startCFrame:Lerp(record.endCFrame, alpha))
-		carryGroundedRacers(record, record.part.CFrame * previous:Inverse())
 		if timestamp >= record.nextPhaseAt then
+			setMovingLogPhysics(record, false)
 			setRecordVisible(record, false)
 			moveRecord(record, record.startCFrame)
 			setPhase(record, "Cooldown", timestamp + record.pauseDuration)
@@ -491,12 +538,30 @@ end
 
 local function bindCourse(course: Model?)
 	restoreRecords(true)
+	for _, record in ipairs(records) do
+		destroyMovingLogPhysics(record)
+	end
+	for boundary, collisionGroup in pairs(boundaryCollisionGroups) do
+		if boundary.Parent ~= nil then
+			setCollisionGroup(boundary, collisionGroup)
+		end
+	end
 	table.clear(records)
 	table.clear(contactTimes)
+	table.clear(boundaryCollisionGroups)
 	boundCourse = course
 	wasRaceActive = false
 	if course == nil then
 		return
+	end
+	ensureMovingLogCollisionGroups()
+	for _, descendant in ipairs(course:GetDescendants()) do
+		if descendant:IsA("BasePart")
+			and (descendant:GetAttribute("CourseBoundary") == true or descendant:GetAttribute("EnvironmentSolid") == true)
+		then
+			boundaryCollisionGroups[descendant] = descendant.CollisionGroup
+			setCollisionGroup(descendant, COURSE_BOUNDARY_GROUP)
+		end
 	end
 	for _, descendant in ipairs(course:GetDescendants()) do
 		if not descendant:IsA("BasePart") then
@@ -531,6 +596,8 @@ local function bindCourse(course: Model?)
 					transparency = child.Transparency,
 					canCollide = child.CanCollide,
 					canTouch = child.CanTouch,
+					anchored = child.Anchored,
+					collisionGroup = child.CollisionGroup,
 				})
 			end
 		end
@@ -583,6 +650,8 @@ local function bindCourse(course: Model?)
 			originalTransparency = descendant.Transparency,
 			originalCanCollide = descendant.CanCollide,
 			originalCanTouch = descendant.CanTouch,
+			originalAnchored = descendant.Anchored,
+			originalCollisionGroup = descendant.CollisionGroup,
 			warning = warning,
 			warningTransparency = if warning ~= nil then warning.Transparency else nil,
 			phase = "Idle",
@@ -592,7 +661,47 @@ local function bindCourse(course: Model?)
 			previousCFrame = descendant.CFrame,
 			visuals = visuals,
 			random = Random.new(seed),
+			linearVelocity = nil,
+			alignOrientation = nil,
+			welds = {},
+			motionAttachment = nil,
 		}
+		if kind == kinds.MovingLog then
+			setCollisionGroup(descendant, MOVING_LOG_GROUP)
+			for _, visual in ipairs(record.visuals) do
+				setCollisionGroup(visual.part, MOVING_LOG_GROUP)
+			end
+			local attachment = Instance.new("Attachment")
+			attachment.Name = "MotionAttachment"
+			attachment.Parent = descendant
+			local linearVelocity = Instance.new("LinearVelocity")
+			linearVelocity.Name = "MotionLinearVelocity"
+			linearVelocity.Attachment0 = attachment
+			linearVelocity.RelativeTo = Enum.ActuatorRelativeTo.World
+			linearVelocity.ForceLimitsEnabled = false
+			linearVelocity.VectorVelocity = (record.endCFrame.Position - record.startCFrame.Position)
+				/ math.max(record.duration, 0.01)
+			linearVelocity.Enabled = false
+			linearVelocity.Parent = descendant
+			local alignOrientation = Instance.new("AlignOrientation")
+			alignOrientation.Name = "MotionAlignOrientation"
+			alignOrientation.Attachment0 = attachment
+			alignOrientation.Mode = Enum.OrientationAlignmentMode.OneAttachment
+			alignOrientation.CFrame = record.startCFrame.Rotation
+			alignOrientation.RigidityEnabled = true
+			alignOrientation.Enabled = false
+			alignOrientation.Parent = descendant
+			record.linearVelocity = linearVelocity
+			record.alignOrientation = alignOrientation
+			record.motionAttachment = attachment
+			for _, visual in ipairs(record.visuals) do
+				local weld = Instance.new("WeldConstraint")
+				weld.Part0 = descendant
+				weld.Part1 = visual.part
+				weld.Parent = descendant
+				table.insert(record.welds, weld)
+			end
+		end
 		table.insert(records, record)
 		resetRecord(record, false)
 	end

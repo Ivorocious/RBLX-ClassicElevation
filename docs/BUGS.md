@@ -53,3 +53,7 @@ checkpoint respawn after a void death.
   deferred to the upcoming lobby rebuild at the user's request.
 - Open validation: human v4 timing, slippery-floor feel, cover effectiveness and
   20-player crowd/performance. No full-course v4 automation was run.
+
+## Classic Ascent v6 - 2026-09-06
+
+- Open: river log idle carry needs manual acceptance. Native physics replaced forced rider teleports, and walking/jumping are possible, but focused automated idle samples showed about 4.6 studs of relative drift for 4.6 studs of log travel. Do not mark the river movement issue fully resolved until standing, walking, jumping and wrap behavior pass in Studio. See [v6 handoff](CLASSIC_ASCENT_V6.md).

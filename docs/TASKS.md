@@ -62,3 +62,12 @@ Track scoped implementation work for ProjectClassicElevation here.
 - [ ] Owner playtest: gaps, slippery ice, bridge crowds, snowball cover, and finish reveal; no 20-player or course-time claim yet.
 
 See [v5 handoff](CLASSIC_ASCENT_V5.md).
+
+## Classic Ascent v6
+
+- [x] Grounded scenery, planted banks, mountain boundaries, gallery, valley ridges and atmosphere.
+- [x] Archive approved old Studio copies and install v6; source build and boundary checks.
+- [x] Replace forced rider teleports with native moving-log physics.
+- [ ] Accept river rider behavior manually: idle carry, walking, jumping and hidden wrap. Automated idle carry checks remain inconclusive/failed.
+
+See [v6 handoff](CLASSIC_ASCENT_V6.md).

@@ -330,3 +330,7 @@ See docs/artifacts/classic-ascent-v4-quick-check.json. Full playtests belong to 
 ## 2026-09-06 - v5 focused validation
 
 No full-course run. Brief checks confirmed moving-log one-way travel and hidden resets, rolling logs/boulders, and existing lava/avalanche cycles. Fixed snowballs being consumed by mountain wedge bounds; all six snowman lanes then travelled and cycled. All 19 checkpoints remain; eight bridge refuges and 44 red warning circles are present. Full difficulty and 20-player validation remain with the owner. See [v5 handoff](CLASSIC_ASCENT_V5.md).
+
+## 2026-09-06 - v6 focused review
+
+Visually reviewed forest, river, cliffs, gallery and summit. All 170 route samples hit both boundary walls; 19 checkpoints remain. Rojo build and Studio source compilation passed. Focused river checks showed movement/jumping possible, but idle rider drift remained about the log travel distance in automated samples. Native log physics is installed; manual rider carry and hidden-wrap acceptance remain open. No full-course or 20-player run. See [v6 handoff](CLASSIC_ASCENT_V6.md).

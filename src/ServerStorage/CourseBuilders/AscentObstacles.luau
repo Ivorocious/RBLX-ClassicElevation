@@ -175,7 +175,7 @@ function Obstacles.Build(model: Model, nodes: {BasePart})
 		if step then bySection[section][step] = node end
 		if step and (section == 2 or section == 5) then
 			local water = section == 2
-			local bed = part(hazards, if water then "MountainRiver" else "LavaBasin", Vector3.new(68,1,node.Size.Z+6), node.CFrame*CFrame.new(0,-6,0), if water then Color3.fromRGB(50,118,137) else Color3.fromRGB(229,92,30), if water then Enum.Material.Glass else Enum.Material.Neon)
+			local bed = part(hazards, if water then "MountainRiver" else "LavaBasin", Vector3.new(if water then 100 else 68,1,node.Size.Z+6), node.CFrame*CFrame.new(0,-6,0), if water then Color3.fromRGB(50,118,137) else Color3.fromRGB(229,92,30), if water then Enum.Material.Glass else Enum.Material.Neon)
 			bed.Transparency = if water then 0.22 else 0
 			bed:SetAttribute("HazardType", "Kill")
 			if water then

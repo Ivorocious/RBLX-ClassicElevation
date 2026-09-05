@@ -11,6 +11,7 @@ local savedSky: { [string]: any }? = nil
 local saved: { [string]: any }? = nil
 local savedAtmosphere: { [string]: any }? = nil
 local atmosphere: Atmosphere? = nil
+local createdAtmosphere = false
 local correction = Instance.new("ColorCorrectionEffect")
 correction.Name = "ClassicAscentColor"
 correction.Enabled = false
@@ -24,10 +25,14 @@ local function setActive(active: boolean)
 		Lighting.Ambient = Color3.fromRGB(115, 126, 140)
 		Lighting.OutdoorAmbient = Color3.fromRGB(146, 153, 160)
 		atmosphere = Lighting:FindFirstChildOfClass("Atmosphere")
-		if atmosphere then
-			savedAtmosphere = { Density = atmosphere.Density, Offset = atmosphere.Offset, Color = atmosphere.Color, Decay = atmosphere.Decay, Haze = atmosphere.Haze, Glare = atmosphere.Glare }
-			atmosphere.Density, atmosphere.Offset, atmosphere.Haze, atmosphere.Glare = 0.2, 0.2, 0.65, 0.1
-			atmosphere.Color, atmosphere.Decay = Color3.fromRGB(207, 225, 239), Color3.fromRGB(131, 161, 177)
+		createdAtmosphere = atmosphere == nil
+		if not atmosphere then atmosphere = Instance.new("Atmosphere"); atmosphere.Name = "ClassicAscentHaze"; atmosphere.Parent = Lighting end
+		savedAtmosphere = {}
+		local atmosphereObject: any = atmosphere
+		local originalAtmosphere: any = savedAtmosphere
+		for key, value in pairs(Config.Atmosphere) do
+			originalAtmosphere[key] = atmosphereObject[key]
+			atmosphereObject[key] = value
 		end
 		sky = Lighting:FindFirstChildOfClass("Sky")
 		createdSky = sky == nil
@@ -43,7 +48,9 @@ local function setActive(active: boolean)
 		correction.Enabled = true
 	else
 		for key, value in pairs(saved :: { [string]: any }) do (Lighting :: any)[key] = value end
-		if atmosphere and savedAtmosphere then
+		if atmosphere and createdAtmosphere then
+			atmosphere:Destroy()
+		elseif atmosphere and savedAtmosphere then
 			for key, value in pairs(savedAtmosphere) do (atmosphere :: any)[key] = value end
 		end
 		if sky then
