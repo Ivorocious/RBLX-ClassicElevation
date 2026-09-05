@@ -59,3 +59,11 @@ The owner has passed Classic Ascent Point-to-Point for manual fine-tuning after 
 - Before-update model copies remain in `ServerStorage.CourseBuildArchive` with the prefix `BeforeHazeFinal_`. Nothing was published.
 
 Future level-design work should start with the [reusable chat brief](LEVEL_DESIGN_CHAT_STARTER.md) and [full design guide](LEVEL_DESIGN_GUIDE.md). They record the owner's preferences, failed approaches, effective patterns, review boundaries and manual handoff rules.
+
+## Lobby default and course loading
+
+The visible manual preview is now preserved at `ServerStorage.CoursePreviews.ClassicAscent_ManualPreview_1788647832`. The authored course remains in `ServerStorage.CourseLibrary.Course_ClassicAscentPointToPoint`.
+
+`CourseService.Start` prepares the library without spawning a map. The existing round-start selection step loads a runtime clone; returning players to the lobby at reset unloads that clone. Selection is still the existing fixed configuration, not a new voting screen. With `MinPlayers = 1`, one eligible player can trigger that selection automatically.
+
+Rojo build and `tests/studio/CourseLifecycle.luau` passed in Studio Edit mode: empty startup, library discovery, selected clone, 19 checkpoints, repeated unload and unchanged authored model. No full race traversal was run. For a manual check, start Play, observe loading when the round selects its map, then end the race and confirm reset unloads it before the next selection.

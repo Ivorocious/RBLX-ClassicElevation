@@ -554,11 +554,15 @@ local function spawnCourseRecord(record: CourseRecord): boolean
 	return true
 end
 
-local function ensureActiveCourse()
+local function prepareCourseLibrary()
 	ensureClassicPointToPointCourseFromFallback()
 	local classicAscentBuilder = require(ServerStorage.CourseBuilders.ClassicAscentPointToPoint)
 	classicAscentBuilder.Ensure(ensureCourseLibrary())
 	discoverCourseLibrary()
+end
+
+local function ensureActiveCourse()
+	prepareCourseLibrary()
 
 	local selectedRecord = selectActiveCourseRecord()
 
@@ -624,7 +628,20 @@ function CourseService.Start(_context: ServiceContext?)
 	end
 
 	isStarted = true
-	ensureActiveCourse()
+	prepareCourseLibrary()
+	CourseService.UnloadActiveCourse()
+end
+
+function CourseService.UnloadActiveCourse()
+	local course = getFallbackActiveCourse()
+	if course ~= nil then
+		if course:GetAttribute(CourseConfig.RuntimeActiveCourseAttribute) == true then
+			course:Destroy()
+		else
+			archiveExistingActiveCourse(course)
+		end
+	end
+	activeCourseInfo = nil
 end
 
 function CourseService.DiscoverCourses()

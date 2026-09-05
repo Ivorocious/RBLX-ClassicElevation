@@ -589,7 +589,6 @@ function CourseHazardService.BindActiveCourse()
 	local course = courseService.GetActiveCourse()
 
 	if course == nil then
-		warn("[CourseHazardService] Active course is unavailable.")
 		return
 	end
 

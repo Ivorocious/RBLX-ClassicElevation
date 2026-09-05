@@ -263,6 +263,10 @@ local function resetPlayersForNextRound(reason: string)
 	if playerRaceService ~= nil and playerRaceService.ResetPlayersForNextRound ~= nil then
 		playerRaceService.ResetPlayersForNextRound(reason)
 	end
+
+	if courseService ~= nil then
+		courseService.UnloadActiveCourse()
+	end
 end
 
 local function getQueuedPlayers(): { Player }

@@ -341,7 +341,6 @@ local function bindCourse()
 	local orderedCheckpoints = if courseService.GetOrderedCheckpoints ~= nil then courseService.GetOrderedCheckpoints() else {}
 
 	if activeCourse == nil then
-		warn("[CheckpointService] CourseService did not provide an active course.")
 		return
 	end
 

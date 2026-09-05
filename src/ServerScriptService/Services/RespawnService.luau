@@ -192,6 +192,10 @@ local function bindFallZones()
 		return
 	end
 
+	if courseService.GetActiveCourse() == nil then
+		return
+	end
+
 	local fallZones = courseService.GetFallZones()
 
 	if #fallZones == 0 then

@@ -167,7 +167,7 @@ Use repository tools, Rojo and Studio MCP before Computer Use. Headless Blender 
 - Never equate a lower part count with a measured FPS improvement. Consider mesh complexity, particles, transparency overlap, collision and replication as well.
 - A build, screenshot or automated movement sample is not proof of final difficulty, 20-player fairness or human fun.
 
-For manual tuning, the durable authored course is `ServerStorage.CourseLibrary.Course_ClassicAscentPointToPoint`; `Workspace.RaceCourse` is the preview/runtime copy. Capture accepted manual geometry into the library and save the Studio place. Rojo/Git do not automatically save all hand-authored place geometry. Preserve the current version/revision markers so an already-applied pass does not scale props again.
+For manual tuning, the durable authored course is `ServerStorage.CourseLibrary.Course_ClassicAscentPointToPoint`; `Workspace.RaceCourse` is the loaded runtime copy. The manual preview is hidden in `ServerStorage.CoursePreviews` while the default scene is the lobby. Capture accepted manual geometry into the library and save the Studio place. Rojo/Git do not automatically save all hand-authored place geometry. Preserve the current version/revision markers so an already-applied pass does not scale props again.
 
 ## Classic Ascent reference values — not universal defaults
 
