@@ -43,3 +43,13 @@ checkpoint respawn after a void death.
 **Actual:** TBD.
 
 **Notes:** TBD.
+## Classic Ascent v4 — 2026-09-05
+
+- Fixed normal hazard death delays/default-spawn flash by recovering the existing
+  live character directly. Unexpected reset/real death still uses Roblox respawn.
+- Fixed malformed camp roof, preserved manual sign angles/heights, removed the
+  Switchback lava and Skyline red seams, and concealed falling-rock sources.
+- Intermission uses the prior on-course staging flow. Lobby return expectations are
+  deferred to the upcoming lobby rebuild at the user's request.
+- Open validation: human v4 timing, slippery-floor feel, cover effectiveness and
+  20-player crowd/performance. No full-course v4 automation was run.

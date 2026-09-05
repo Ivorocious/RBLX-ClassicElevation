@@ -121,3 +121,15 @@ RespawnService death recovery. All hazard timing is in HazardConfig. Intermissio
 stages once; the gate opens on Racing without a second teleport. Local sky and
 lighting restore when the player returns to the lobby. No economy, DataStore,
 publishing, course rotation, or new circuit work is included.
+## 2026-09-05 — Shared adventure space and instant hazard recovery
+
+Version 4 uses three branching lines and wide shared checkpoints for the requested
+20-player race. Scenery sits between and above routes, with shared forest/snow ground.
+Keep the nine-minute ceiling; the user's roughly six-minute v3 run is human evidence,
+while v4 timings remain unmeasured. Do not increase enforced waiting to stretch runs.
+
+Ordinary lethal contacts call server-only RespawnService.RecoverPlayer instead of
+killing the Humanoid. Nonlethal snowballs deal 35 damage; lethal damage recovers and
+heals. CourseMotionService owns log travel, vents and projectile cycles. No client
+authority or new gameplay remotes. Unexpected real deaths retain the old fallback.
+Preserve the user's manual sign transforms in source and archive the original model.

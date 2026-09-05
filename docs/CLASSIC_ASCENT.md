@@ -1,141 +1,110 @@
 # Classic Ascent Point to Point
 
-## Current build
+## Current build: version 4
 
-The alpine environment rebuild is implemented on `codex/classic-ascent-environment`.
-Version 3 integrates the hiking trail with the mountain and adds active obby hazards.
-It replaces the rectangular placeholder with a rising spiral around a rock mountain,
-with camp and pines, garden streams, timber bridges, basalt columns, ruined stone
-architecture, cliff ledges, snow, and summit banners. This is an environment review
-build. Human visual acceptance, pacing, touch controls, and multiplayer tests remain
-outstanding; automated movement tests cannot establish enjoyable pacing or retention.
+Classic Ascent has three parallel paths that reconnect at 19 shared checkpoints,
+with wider forest and snow clearings for a 20-player race. The mountain rises to
+about Y425 above the route's Y64–244 climb. Sloped mountain faces, planted islands,
+overhead canopy, rock galleries and snow cornices surround the paths.
 
-The rejected placeholder is preserved at commit `85b8dea` on
-`codex/barebones-placeholder-classic-ascent`. The original point-to-point course,
-circuit, and template are preserved.
+The user's version 3 run took almost six minutes with several falls and was fun.
+That is the current human pacing evidence. Version 4 has not been timed by a
+human or tested with 20 players. Nine minutes remains the race timeout; finishing
+or losing all official racers ends it early. Targets are tuning intentions only.
 
-## Source and authoring
+## Sections
 
-- `src/ServerStorage/CourseBuilders/ClassicAscentPointToPoint.luau`: playable route,
-  checkpoints, recovery volumes, signs, and obstacle details.
-- `src/ServerStorage/CourseBuilders/AscentEnvironment.luau`: deterministic mountain
-  geometry and scenery; no imported assets or global Terrain edits.
-- `src/ServerStorage/CourseBuilders/AscentDetails.luau`: supported waymarkers, checkpoint milestones, start pen, rope spans, and hazard placement.
-- `src/ServerScriptService/Services/CourseHazardService.luau`: authoritative kill surfaces, falling rocks and collapsing platforms.
-- `src/StarterPlayer/StarterPlayerScripts/ClassicAscentAmbience.client.luau`: local
-  warm lighting, atmospheric haze and a course-specific sky, restored in the lobby.
-
-`Ensure(library)` creates the course before discovery. Older generated builder versions are retained
-under disabled `_Version1`/`_Version2` names when upgrading to version 3. Existing version 3
-models are retained, including manual edits. Further builder changes require explicit
-reconciliation: archive the prior generated model before rebuilding. Do not delete
-Studio-authored courses. Requiring a module alone does not create the course.
-
-Rojo owns the builder scripts, not CourseLibrary, Workspace terrain, or the lobby.
-The builder reproduces this course from Git; keep a Studio place backup for the
-existing authored assets. Git commits and Rojo sync do not publish the place.
-Use the matching Rojo 7.7.0 executable and plugin on localhost:34872.
-
-## Route
-
-The course rises from Y=64 to Y=244 across roughly 2,175 studs, wrapping 480 degrees
-around the mountain. There are 146 route transitions after Start: 126 obstacle
-platforms, nineteen checkpoints, and Finish. Every section has a midpoint checkpoint
-and an end checkpoint, with the final endpoint replaced by Finish. Material-matched milestones, sheltered lanterns, supported waymarkers, and a finish gate identify progress.
-
-| Section | Transitions | Play and setting |
+| Section | Central transitions | Design |
 | --- | ---: | --- |
-| Trailhead | 10 | Enclosed starting camp, embedded hiking trail, fallen-log warm-up |
-| Stepping Gardens | 14 | Narrow stone jumps above lethal hot-spring pools |
-| Switchback Climb | 16 | Rising rock steps with lethal glowing fissures |
-| Ridge Bridges | 16 | Collapsing timber planks, connected rope spans, broad recovery islands |
-| Pillar Yard | 18 | Narrow basalt jumps, molten pools and lethal fissures |
-| Broken Causeway | 12 | Ruined limestone spans and warned falling rocks |
-| Cliffside Traverse | 16 | Narrow ledges joined to cliffs, with warned rockfall |
-| Summit Steps | 18 | Fragile snow ledges that collapse after a warning |
-| Skyline | 16 | Narrow ice, lethal red ice seams, and falling ice rocks |
-| Summit Run | 10 | Broad final ascent, expedition flags and stone finish gate |
+| Trailhead | 10 | Broad forest floor, three dirt trails, low fallen trunks, supported camp shelter |
+| Stepping Gardens | 14 | River crossings on moving log bundles, shared banks, trees and gorge walls |
+| Switchback Climb | 24 | Smaller stone footholds on three lines; no lava |
+| Ridge Bridges | 16 | Three bridges, individually collapsing boards, shared stone refuges |
+| Pillar Yard | 18 | Basalt routes above lava, warned rising vents |
+| Broken Causeway | 12 | Three ruined spans, varied falling rocks concealed by overhead rock pockets |
+| Cliffside Traverse | 16 | Exposed outer rockfall route, central ledges, sheltered inner rock steps |
+| Summit Steps | 18 | Snow clearings, intermittent snowball volleys, solid rock cover |
+| Skyline | 20 | Small low-friction ice footholds, snowy checkpoint islands, ice arches |
+| Summit Run | 10 | Broad snowy approach, staggered giant rolling snowballs, side alcoves |
 
-Everything is anchored. Mountain banks and terrain shoulders join the trail. Banks and deep foundations are solid;
-small props remain noncolliding. Checkpoint pads remain wide. Decoration must not hide the intended landing
-or look like a required traversable path. The build uses native Roblox materials
-and geometry; visual ambience currently has no music or ambient sound asset.
+There are 158 central transitions and 159 map-specific recovery volumes.
+Branches are offset roughly 20 studs from the middle line; 66-stud checkpoint
+clearings let racers change paths. The central route is about 2,157 studs long.
+Scenery and collision remain separate where necessary to preserve jump gaps.
+The opening, snowy steps and summit use shared walkable ground between the paths.
 
-## Pacing targets
+## Runtime mechanics
 
-- Familiar good player: 2:30-3:15; clean target budget 2:40.
-- Typical player: 4-6 minutes including mistakes.
-- Less experienced player: 6-8 minutes.
-- These remain targets, not measured human completion times or retention gains.
-- Shared maximum: nine minutes, including older courses when manually selected.
-- All official racers finishing or leaving ends Racing early. A remaining official
-  racer retains the deadline; the first finisher does not shorten it.
-- Ghost and late racers do not hold the official round open.
+- River logs travel four studs sideways and carry grounded official racers. They
+  reverse smoothly; visual timber follows the moving collision platform.
+- Bridge boards disappear 0.45 seconds after contact and restore after 1.8 seconds.
+  Stone refuges remain solid. Parallel lines give following racers alternatives.
+- Lava vents warn for 1.4 seconds, rise for 0.75, remain up for 1.4, then sink.
+- Rockfall uses the existing amber warning and falling-rock cycle, with 13 sources
+  and varied diameters. Overhead pockets conceal the authored spawn positions.
+- Six snowball emitters fire staggered volleys. A hit deals 35 damage; a lethal
+  hit recovers the racer instead of killing their character. Solid cover stops a
+  snowball, and the projectile is consumed on its first player hit.
+- Six avalanche emitters send 12-stud snowballs down the final approach. Side
+  alcoves sit outside the intended rolling lines. Hits recover the racer.
+- Skyline has Ice material and friction 0.025; checkpoints remain grippy.
+- Hazards only affect official Racing players. No new client gameplay remotes.
+- Successful recovery preserves the character, zeroes velocity, heals, records one
+  fall and returns directly to the saved checkpoint. The 1.5-second duplicate
+  cooldown remains, with one second of motion-hazard immunity.
+- Unexpected real character death/reset still uses Roblox's respawn fallback.
+- The start pen is 66 by 36 studs with a full-width gate and a 5-column formation.
+  Intermission staging and gate opening keep the prior no-second-teleport behavior.
+  Lobby/intermission flow remains deferred until the planned lobby rebuild.
 
-Frequent checkpoints limit lost progress. Section landmarks provide visible goals,
-and wide islands offer pauses without enforced waiting. Tune frustrating sections
-before increasing the timeout. Do not add waiting solely to enforce run duration.
+## Source and manual editing
 
-## Fall recovery
+- `ClassicAscentPointToPoint.luau`: section geometry, branching routes, checkpoints.
+- `AscentEnvironment.luau`: mountain, ground, canopy, galleries and camp.
+- `AscentObstacles.luau`: log bundles, boards, vents, covers and projectile sources.
+- `AscentDetails.luau`: signs, checkpoint milestones and start pen.
+- `AscentSignAdjustments.luau`: user's captured sign rotation/height adjustments.
+- `CourseHazardService.luau`: recovery surfaces, rockfall and crumbling boards.
+- `CourseMotionService.luau` and `AscentMotionConfig.luau`: moving hazards/platforms.
+- `RespawnService.luau`: authoritative instant checkpoint recovery.
+- `ClassicAscentAmbience.client.luau`: course sky and lighting, unchanged in v4.
 
-Each route transition has a local `Recovery_###` volume twelve studs below it, plus
-`FallZone_Main` beneath the mountain. There are 147 volumes in total.
-`CourseService.GetFallZones()` accepts every BasePart descendant of FallZones,
-regardless of name or nesting. RespawnService disconnects old bindings before
-rebinding. The existing Y=4 fallback remains. Recovery applies to official active
-racers; separate unofficial checkpoint and respawn tracking remains backlog work.
+Paths are under `src/ServerStorage/CourseBuilders`, `src/ServerScriptService/Services`,
+`src/ReplicatedStorage/Config` and `src/StarterPlayer/StarterPlayerScripts`.
 
-## Verification and human acceptance
+The durable authored model in Studio is
+`ServerStorage.CourseLibrary.Course_ClassicAscentPointToPoint`.
+`Workspace.RaceCourse` is an edit preview and is replaced when a race spawns.
+For manual geometry work, copy the library model into Workspace, edit it, then
+copy the finished model back into CourseLibrary before Play. Preserve an archive
+before replacing either copy. Existing version 4 models are retained by Ensure;
+editing the builder scripts alone does not regenerate an existing version 4 model.
 
-See `PLAYTEST_NOTES.md` for actual results and limitations. During Studio Play,
-run `tests/studio/ClassicAscentSmoke.luau` as a temporary server Script, replacing
-`return Smoke` with `Smoke.Run()`. It requires one player and tests checkpoint
-ordering, rejected early finish, recovery, then physical movement across every node.
-Read `ServerStorage.ClassicAscentTestReport`. Movement uses Humanoid input; it does
-not teleport through the timed traversal. Stop Play to discard the runner.
+The user's original visible v3 model is preserved as
+`ServerStorage.CourseBuildArchive.ClassicAscent_v3_UserSignEdits_20260905`.
+Exact sign snapshots are in `docs/artifacts/classic-ascent-v3-manual-signs.json`.
+Their relative rotation/height adjustments carry into new mounted signs, whose
+wording now describes the actual mechanics. New absolute locations follow v4 paths.
 
-Run `ClassicAscentRecovery.luau` similarly, replacing `return Recovery` with
-`Recovery.Run()`, in the next fresh solo race. It checks progress reset, elevated,
-nested and general recovery, rebind behavior, and respawn orientation.
-Tests are outside the Rojo mapping and are never shipped as gameplay scripts.
+All scenery is reproducible native geometry. A Creator Store pine search was
+attempted, but the selected model could not be loaded due to asset access. No
+third-party scripts, uploaded assets, DataStore changes, economy changes or place
+publishing are part of this build. Use Rojo 7.7.0 on localhost:34872.
 
-Human acceptance: complete first and repeat runs on keyboard and touch, then test
-with 2-6 players. Record completion time, checkpoint splits, falls, timeouts, exits,
-and willingness to replay. Check camera room, path clarity beside scenery, platform
-edges at section boundaries, and finish readability. Human approval is still needed
-before calling the course a finished player experience.
+## Verification
 
-## Hazard and staging behavior (version 3)
+One focused Studio run passed 11 checks: startup, checkpoint registration,
+same-character recovery/healing, direct checkpoint destination, duplicate recovery
+suppression, moving logs/attached timber, snowball and avalanche cycle activation,
+and visible lava contact recovery. Evidence:
+`docs/artifacts/classic-ascent-v4-quick-check.json`.
+The runner is `tests/studio/ClassicAscentV4QuickCheck.luau`, outside Rojo's mapping.
 
-- 44 lethal surfaces: hot pools, molten pools, glowing fissures and red ice seams.
-- 9 fragile platforms. Touch starts a 1.25-second colour warning, then the platform
-  and its visual boards disappear for two seconds before restoring.
-- 8 falling-rock locations. An amber footprint warns for 1.3 seconds before a
-  0.7-second fall; the next cooldown is 2.5 seconds. Per-location offsets vary the
-  rhythm without unexplained random instant deaths. Safe checkpoints have no hazards.
-- Hazards run only while Racing and only kill official active racers. Existing
-  death recovery returns them to their latest checkpoint and records one fall.
-- Hazard binding restores the old course and disconnects old touch events before
-  binding a new one. Server overlap checks catch moving-rock hits. No new remotes.
-- Racers stage once during Intermission. They can move inside the protected start
-  terrace; high safety walls and a ceiling prevent climbing out. Timber exit rails
-  and an invisible collision gate stay closed through Countdown, then open at Racing.
-- Healthy staged racers are not teleported again at the Racing transition.
-  Queued respawns and actual escapes return to the pen. The original courses still
-  use their existing start platforms, with recovery bounds when no pen exists.
+Visual review covered the mountain, forest canopy and river crossing. A geometry
+check identified and shortened unintended long outside-lane jumps. No full-course
+robot runs were performed for v4. Old traversal runners describe v3 and should not
+be treated as v4 acceptance evidence.
 
-The sky uses Roblox's bundled six-face cloud textures, configured in
-`ClassicAscentAmbienceConfig.luau`. The client preserves the original Sky properties
-and restores them in the lobby. New custom six-face artwork would require asset
-upload; this version requires no external asset dependency.
-
-Official references consulted:
-[skyboxes](https://create.roblox.com/docs/environment/skybox),
-[deadly lava](https://github.com/Roblox/creator-docs/blob/main/content/en-us/tutorials/use-case-tutorials/scripting/basic-scripting/deadly-lava.md),
-[fading traps](https://github.com/Roblox/creator-docs/blob/main/content/en-us/tutorials/use-case-tutorials/scripting/basic-scripting/fading-trap.md).
-
-Additional Studio tests: `ClassicAscentStaging.luau` during a fresh Intermission,
-and `ClassicAscentHazards.luau` during a solo official race. Run as temporary server
-Scripts replacing their final return with `Staging.Run()` / `Hazards.Run()`.
-The traversal runner now waits for rockfall cooldown and jumps over center hazards;
-its time is not a measurement of a new player's decision-making.
+Manual acceptance remains with the user: route choice, fun, icy movement, projectile
+cover, bridge crowd flow and completion times. Twenty-player performance and touch
+controls remain unverified. Course ambience still has no music or ambient audio.

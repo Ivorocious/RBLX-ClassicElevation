@@ -3,6 +3,7 @@
 local Builder = {}
 local Environment = require(script.Parent.AscentEnvironment)
 local Details = require(script.Parent.AscentDetails)
+local SignAdjustments = require(script.Parent.AscentSignAdjustments)
 local MODEL_NAME = "Course_ClassicAscentPointToPoint"
 local CENTER = Vector3.new(1400, 0, -1200)
 local GOLD = Color3.fromRGB(225, 173, 75)
@@ -14,14 +15,14 @@ local SNOW = Color3.fromRGB(222, 234, 231)
 type Section = { name: string, count: number, width: number, gap: number, style: string, material: Enum.Material, color: Color3 }
 local SECTIONS: { Section } = {
 	{ name = "Trailhead", count = 10, width = 24, gap = 0, style = "trail", material = Enum.Material.Cobblestone, color = STONE },
-	{ name = "Stepping Gardens", count = 14, width = 11, gap = 5, style = "garden", material = Enum.Material.Slate, color = Color3.fromRGB(139, 160, 128) },
-	{ name = "Switchback Climb", count = 16, width = 16, gap = 2, style = "stairs", material = Enum.Material.Rock, color = Color3.fromRGB(159, 145, 117) },
+	{ name = "Stepping Gardens", count = 14, width = 14, gap = 3, style = "garden", material = Enum.Material.Slate, color = Color3.fromRGB(139, 160, 128) },
+	{ name = "Switchback Climb", count = 24, width = 9, gap = 3, style = "stairs", material = Enum.Material.Rock, color = Color3.fromRGB(159, 145, 117) },
 	{ name = "Ridge Bridges", count = 16, width = 10, gap = 0, style = "bridge", material = Enum.Material.WoodPlanks, color = WOOD },
 	{ name = "Pillar Yard", count = 18, width = 9, gap = 5, style = "pillars", material = Enum.Material.Basalt, color = Color3.fromRGB(91, 109, 119) },
 	{ name = "Broken Causeway", count = 12, width = 19, gap = 4, style = "ruins", material = Enum.Material.Limestone, color = Color3.fromRGB(180, 169, 135) },
 	{ name = "Cliffside Traverse", count = 16, width = 10, gap = 3, style = "ledge", material = Enum.Material.Slate, color = Color3.fromRGB(116, 139, 149) },
 	{ name = "Summit Steps", count = 18, width = 17, gap = 1, style = "snowstairs", material = Enum.Material.Snow, color = SNOW },
-	{ name = "Skyline", count = 16, width = 8, gap = 4, style = "teeth", material = Enum.Material.Glacier, color = Color3.fromRGB(168, 204, 214) },
+	{ name = "Skyline", count = 20, width = 10, gap = 2.5, style = "teeth", material = Enum.Material.Ice, color = Color3.fromRGB(168, 204, 214) },
 	{ name = "Summit Run", count = 10, width = 26, gap = 0, style = "summit", material = Enum.Material.Slate, color = Color3.fromRGB(199, 211, 210) },
 }
 
@@ -54,16 +55,7 @@ local function routePosition(sectionIndex: number, step: number): Vector3
 	local t = ((sectionIndex - 1) + step / section.count) / #SECTIONS
 	local angle = math.rad(-25 + t * 480)
 	local radius = 340 - 170 * t
-	local lateral = 0
-	if step ~= 0 and step ~= section.count and step ~= section.count / 2 then
-		if section.style == "garden" or section.style == "pillars" then
-			lateral = if step % 2 == 0 then 2 else -2
-		elseif section.style == "stairs" then
-			lateral = 7 * math.sin(step * math.pi / 4)
-		elseif section.style == "ledge" then
-			lateral = 4 * math.sin(step * math.pi / 4)
-		end
-	end
+	local lateral = 2 * math.sin(step * math.pi / 5)
 	return CENTER + Vector3.new(math.cos(angle) * (radius + lateral), 64 + t * 180, math.sin(angle) * (radius + lateral))
 end
 
@@ -87,7 +79,7 @@ local function platformDetails(parent: Instance, pad: Part, section: Section, st
 			end
 		end
 	elseif section.style == "garden" then
-		block(parent, "MossEdge", Vector3.new(size.X * 0.8, 1, size.Z * 0.7), cf * CFrame.new(0, -1.4, 0), Color3.fromRGB(78, 116, 87), Enum.Material.Grass, false)
+		if step % 3 == 0 then block(parent, "MossEdge", Vector3.new(size.X * 0.8, 1, size.Z * 0.7), cf * CFrame.new(0, -1.4, 0), Color3.fromRGB(78, 116, 87), Enum.Material.Grass, false) end
 	elseif section.style == "ledge" then
 		local bracket = block(parent, "CliffBracket", Vector3.new(size.X + 3, 8, size.Z * 0.8), cf * CFrame.new(0, -5, 0), DARK, Enum.Material.Rock, false)
 		bracket.Shape = Enum.PartType.Block
@@ -102,8 +94,8 @@ function Builder.Ensure(library: Folder): Model
 	local existing = library:FindFirstChild(MODEL_NAME)
 	if existing then
 		assert(existing:IsA("Model"), "Classic Ascent must be a Model")
-		if existing:GetAttribute("BuilderVersion") == 3 then return existing end
-		assert(existing:GetAttribute("BuilderVersion") == 1 or existing:GetAttribute("BuilderVersion") == 2, "Unrecognized authored course; reconcile before rebuilding")
+		if existing:GetAttribute("BuilderVersion") == 4 then return existing end
+		assert(existing:GetAttribute("BuilderVersion") == 1 or existing:GetAttribute("BuilderVersion") == 2 or existing:GetAttribute("BuilderVersion") == 3, "Unrecognized authored course; reconcile before rebuilding")
 		local archiveName = MODEL_NAME .. "_Version" .. tostring(existing:GetAttribute("BuilderVersion"))
 		assert(not library:FindFirstChild(archiveName), "Generated version archive already exists")
 		existing.Name = archiveName
@@ -115,9 +107,9 @@ function Builder.Ensure(library: Folder): Model
 	end
 	local model = Instance.new("Model")
 	model.Name = MODEL_NAME
-	model:SetAttribute("BuilderVersion", 3)
+	model:SetAttribute("BuilderVersion", 4)
 	local info = folder(model, "CourseInfo")
-	for key, value in pairs({ CourseId = "classic_ascent_point_to_point", DisplayName = "Classic Ascent · Alpine Expedition", RaceFormat = "PointToPoint", LapCount = 1, Enabled = true, Difficulty = "Intermediate", TargetNewPlayerTime = 360, TargetPracticedTime = 160, CheckpointCount = 19, TimingValidated = false }) do
+	for key, value in pairs({ CourseId = "classic_ascent_point_to_point", DisplayName = "Classic Ascent · Alpine Expedition", RaceFormat = "PointToPoint", LapCount = 1, Enabled = true, Difficulty = "Intermediate", TargetNewPlayerTime = 420, TargetPracticedTime = 300, CheckpointCount = 19, TimingValidated = false, DesignedRacerCapacity = 20, ParallelRoutes = 3 }) do
 		info:SetAttribute(key, value)
 	end
 	local obstacles = folder(model, "Obstacles")
@@ -128,7 +120,7 @@ function Builder.Ensure(library: Folder): Model
 	folder(model, "Bounds")
 	local startPosition = routePosition(1, 0)
 	local startCF = CFrame.lookAt(startPosition, Vector3.new(routePosition(1, 1).X, startPosition.Y, routePosition(1, 1).Z))
-	local start = block(model, "Start", Vector3.new(40, 3, 30), startCF, STONE, Enum.Material.Cobblestone)
+	local start = block(model, "Start", Vector3.new(66, 3, 36), startCF, STONE, Enum.Material.Cobblestone)
 	model.PrimaryPart = start
 	start:SetAttribute("SectionIndex", 1)
 	start:SetAttribute("SectionName", "Trailhead")
@@ -144,14 +136,14 @@ function Builder.Ensure(library: Folder): Model
 			local tangent = nextPosition - previousPosition
 			local cf = CFrame.lookAt(position, position + Vector3.new(tangent.X, 0, tangent.Z))
 			local landing = step == section.count / 2 or step == section.count
-			local sizeZ = math.max(7, math.min((position - previousPosition).Magnitude, (nextPosition - position).Magnitude) - section.gap)
-			local width = if landing then 26 else section.width
+			local sizeZ = math.max(5, math.min((position - previousPosition).Magnitude, (nextPosition - position).Magnitude) - section.gap)
+			local width = if landing then 66 else math.min(section.width, 14)
 			local pad: Part
 			if landing and sectionIndex == #SECTIONS and step == section.count then
-				pad = block(model, "Finish", Vector3.new(36, 3, 30), cf, STONE, Enum.Material.Slate)
+				pad = block(model, "Finish", Vector3.new(66, 3, 30), cf, STONE, Enum.Material.Slate)
 			elseif landing then
 				checkpointIndex += 1
-				pad = block(checkpoints, string.format("Checkpoint_%03d", checkpointIndex), Vector3.new(width, 3, math.max(18, sizeZ)), cf, section.color, section.material)
+				pad = block(checkpoints, string.format("Checkpoint_%03d", checkpointIndex), Vector3.new(width, 3, math.max(18, sizeZ)), cf, if section.style == "teeth" then SNOW else section.color, if section.style == "teeth" then Enum.Material.Snow else section.material)
 				Details.Checkpoint(markers, pad, checkpointIndex)
 			else
 				pad = block(group, string.format("Route_%03d", routeIndex + 1), Vector3.new(width, 3, sizeZ), cf, section.color, section.material)
@@ -163,13 +155,27 @@ function Builder.Ensure(library: Folder): Model
 			pad:SetAttribute("SectionStep", step)
 			pad:SetAttribute("SectionName", section.name)
 			pad:SetAttribute("ObstacleStyle", section.style)
+			pad:SetAttribute("RoutePad", true)
+			pad:SetAttribute("Lane", 0)
+			if not landing then
+				-- Three paths share rest areas; small bends pass either side of planted islands.
+				for _, lane in ipairs({-1, 1}) do
+					local offset = lane * (20 + 2 * math.sin(step * math.pi / 4))
+					local branch = block(group, string.format("Branch_%03d_%s", routeIndex, if lane < 0 then "Valley" else "Mountain"), pad.Size + Vector3.new(0,0,2.5), cf * CFrame.new(offset, 0, 0), section.color, section.material)
+					for key, value in pairs(pad:GetAttributes()) do branch:SetAttribute(key, value) end
+					branch:SetAttribute("RouteIndex", nil)
+					branch:SetAttribute("Lane", lane)
+					platformDetails(group, branch, section, step)
+				end
+			end
 			table.insert(nodes, pad)
 			length += (position - previousPosition).Magnitude
 			previousPosition = position
-			local zone = block(zones, string.format("Recovery_%03d", routeIndex), Vector3.new(width + 22, 3, sizeZ + 20), cf * CFrame.new(0, -12, 0), DARK, Enum.Material.SmoothPlastic, false)
+			local zone = block(zones, string.format("Recovery_%03d", routeIndex), Vector3.new(92, 3, sizeZ + 20), cf * CFrame.new(0, -12, 0), DARK, Enum.Material.SmoothPlastic, false)
 			zone.Transparency, zone.CanTouch = 1, true
 			if step == 1 then
-				Details.Sign(markers, cf * CFrame.new(width / 2 + 2, 1.5, 0), string.format("%02d  %s", sectionIndex, section.name), ({"Follow the trail", "Hot springs - stay on stone", "Jump the glowing cracks", "Loose boards - keep moving", "Molten rock below", "Watch for rockfall", "Wait outside amber circles", "Fragile snow ahead", "Sharp ice and falling rock", "The summit is close"})[sectionIndex], sectionIndex >= 5)
+				local adjustment = SignAdjustments[sectionIndex]
+				Details.Sign(markers, cf * CFrame.new(10, 1.5 + adjustment.height, 0) * CFrame.Angles(0, adjustment.yaw, 0), string.format("%02d  %s", sectionIndex, section.name), ({"Choose a path through the trees", "Ride the logs. Rest on the banks.", "Short jumps. Choose your footholds.", "Boards fall. Rest on stone.", "Glowing vents erupt. Wait, then jump.", "Amber circles warn of falling rocks.", "Outer ledges or the sheltered climb", "Use cover between snowball volleys.", "Slippery ice. Land on the snow.", "Dodge the avalanche. Use the alcoves."})[sectionIndex], sectionIndex >= 5)
 			end
 		end
 	end
@@ -182,7 +188,7 @@ function Builder.Ensure(library: Folder): Model
 		block(markers, "SummitBanner", Vector3.new(5, 12, 0.3), base * CFrame.new(side * 4, 16, 0), GOLD, Enum.Material.Fabric, false)
 	end
 	block(markers, "SummitLintel", Vector3.new(39, 3, 4), finish.CFrame * CFrame.new(0, 25, -8), STONE, Enum.Material.Limestone, false)
-	Details.Sign(markers, finish.CFrame * CFrame.new(12, 1.5, -5), "SUMMIT", "CLASSIC ASCENT", true)
+	Details.Sign(markers, finish.CFrame * CFrame.new(12, 1.5 + SignAdjustments[11].height, -5) * CFrame.Angles(0, SignAdjustments[11].yaw, 0), "SUMMIT", "CLASSIC ASCENT", true)
 	Details.RouteExtras(model, nodes)
 	Environment.Build(model, nodes, CENTER)
 	assert(checkpointIndex == 19, "Nineteen checkpoints required")

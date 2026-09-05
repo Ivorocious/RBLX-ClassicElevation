@@ -94,22 +94,10 @@ function Hazards.Run()
 			character:PivotTo(target)
 		end
 
-		local function waitForHazardRespawn(
-			oldCharacter: Model,
-			expectedFalls: number
-		): (Model, Humanoid, BasePart)
-			waitUntil(function()
-				return player.Character ~= nil and player.Character ~= oldCharacter
-			end, 10, "Hazard death did not reload the character")
-			waitUntil(function()
-				local character = player.Character
-				return character ~= nil
-					and character:FindFirstChildOfClass("Humanoid") ~= nil
-					and character:FindFirstChild("HumanoidRootPart") ~= nil
-			end, 5, "Respawned character was incomplete")
+		local function waitForHazardRecovery(expectedFalls: number): (Model, Humanoid, BasePart)
 			waitUntil(function()
 				return row.falls == expectedFalls
-			end, 3, "Hazard death did not record exactly one fall")
+			end, 3, "Hazard recovery did not record exactly one fall")
 			return getCharacter()
 		end
 
@@ -121,10 +109,9 @@ function Hazards.Run()
 		local fallsBeforeKill = row.falls
 		local characterBeforeKill = player.Character :: Model
 		pivotTo(killPart.CFrame)
-		local _newCharacter, _newHumanoid, respawnedRoot = waitForHazardRespawn(
-			characterBeforeKill,
-			fallsBeforeKill + 1
-		)
+		local recoveredCharacter, recoveredHumanoid, respawnedRoot = waitForHazardRecovery(fallsBeforeKill + 1)
+		check(recoveredCharacter == characterBeforeKill, "Static kill preserves the current character")
+		check(recoveredHumanoid.Health > 0, "Static kill recovery keeps the humanoid alive")
 		check(
 			(respawnedRoot.Position - firstCheckpoint.Position).Magnitude < 12,
 			"Static kill returns the racer to the latest checkpoint"
@@ -157,13 +144,14 @@ function Hazards.Run()
 		local characterBeforeRock, humanoidBeforeRock = getCharacter()
 		local hitDeadline = os.clock() + HazardConfig.FallingRock.FallDuration
 
-		while humanoidBeforeRock.Health > 0 and os.clock() < hitDeadline do
+		while row.falls == fallsBeforeRock and os.clock() < hitDeadline do
 			pivotTo(fallingRock.CFrame)
 			task.wait(0.03)
 		end
 
-		check(humanoidBeforeRock.Health <= 0, "Active FallingRock kills on physical overlap")
-		waitForHazardRespawn(characterBeforeRock, fallsBeforeRock + 1)
+		local recoveredRockCharacter, recoveredRockHumanoid = waitForHazardRecovery(fallsBeforeRock + 1)
+		check(recoveredRockCharacter == characterBeforeRock, "Active FallingRock preserves the current character")
+		check(recoveredRockHumanoid == humanoidBeforeRock and humanoidBeforeRock.Health > 0, "Active FallingRock recovers without killing")
 
 		local originalCanCollide = crumble.CanCollide
 		local originalColor = crumble.Color

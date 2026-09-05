@@ -32,6 +32,7 @@ local characterAddedConnections: { [Player]: RBXScriptConnection } = {}
 local humanoidDiedConnections: { [Player]: RBXScriptConnection } = {}
 
 local RESPAWN_COOLDOWN = 1.5
+local RECOVERY_IMMUNITY_DURATION = 1
 local HEARTBEAT_CHECK_INTERVAL = 0.25
 local heartbeatAccumulator = 0
 
@@ -139,33 +140,35 @@ local function getCheckpointRespawnCFrame(player: Player): CFrame?
 	return getFallbackStartRespawnCFrame()
 end
 
-local function respawnPlayer(player: Player, source: string, ignoreCooldown: boolean?)
+local function recoverPlayer(player: Player, source: string, ignoreCooldown: boolean?): boolean
 	if not isValidFallRespawnPlayer(player) then
-		return
+		return false
 	end
 
 	local character, humanoid, humanoidRootPart = getCharacterParts(player)
 
 	if character == nil or humanoid == nil or humanoidRootPart == nil then
-		return
+		return false
 	end
 
 	if humanoid.Health <= 0 then
-		return
+		return false
 	end
 
 	local respawnCFrame = getCheckpointRespawnCFrame(player)
 
 	if respawnCFrame == nil then
 		warn(string.format("[RespawnService] No respawn CFrame available for %s.", player.Name))
-		return
+		return false
 	end
 
 	if ignoreCooldown ~= true and not canRespawnNow(player) then
-		return
+		return false
 	end
 
 	markRespawnNow(player)
+	character:SetAttribute("RecoveryUntil", getServerTime() + RECOVERY_IMMUNITY_DURATION)
+	humanoid.Health = humanoid.MaxHealth
 	humanoidRootPart.AssemblyLinearVelocity = Vector3.zero
 	humanoidRootPart.AssemblyAngularVelocity = Vector3.zero
 	character:PivotTo(respawnCFrame)
@@ -175,6 +178,7 @@ local function respawnPlayer(player: Player, source: string, ignoreCooldown: boo
 	end
 
 	print(string.format("[RespawnService] Respawned %s after %s.", player.Name, source))
+	return true
 end
 
 local function bindFallZones()
@@ -200,7 +204,7 @@ local function bindFallZones()
 			local player = getPlayerFromTouchedPart(touchedPart)
 
 			if player ~= nil then
-				respawnPlayer(player, fallZone.Name)
+				RespawnService.RecoverPlayer(player, fallZone.Name)
 			end
 		end)
 		table.insert(fallZoneConnections, connection)
@@ -216,7 +220,7 @@ local function checkFallYThreshold()
 
 			if humanoid ~= nil and humanoid.Health > 0 and humanoidRootPart ~= nil then
 				if humanoidRootPart.Position.Y <= RaceConfig.FallYThreshold then
-					respawnPlayer(player, "FallYThreshold")
+					RespawnService.RecoverPlayer(player, "FallYThreshold")
 				end
 			end
 		end
@@ -298,7 +302,7 @@ local function handleCharacterAdded(player: Player, character: Model)
 			return
 		end
 
-		respawnPlayer(player, "CharacterRespawn", true)
+		recoverPlayer(player, "CharacterRespawn", true)
 	end)
 end
 
@@ -363,6 +367,10 @@ end
 
 function RespawnService.BindActiveCourse()
 	bindFallZones()
+end
+
+function RespawnService.RecoverPlayer(player: Player, source: string): boolean
+	return recoverPlayer(player, source, false)
 end
 
 function RespawnService.Start(_context: ServiceContext?)

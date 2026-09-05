@@ -19,6 +19,7 @@ local SERVICE_NAMES = {
 	"CheckpointService",
 	"RespawnService",
 	"CourseHazardService",
+	"CourseMotionService",
 	"GhostService",
 	"RaceService",
 }

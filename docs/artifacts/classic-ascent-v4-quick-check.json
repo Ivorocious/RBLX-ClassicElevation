@@ -1,0 +1,4 @@
+{
+  "Status": "Passed",
+  "Checks": "[\"Version 4 starts with 19 checkpoints\",\"Ordered checkpoints retained\",\"Recovery accepted for official racer\",\"Same character recovered and healed without death\",\"Recovery lands directly at saved checkpoint\",\"Duplicate recovery suppressed\",\"River logs move during race\",\"Log bundle visuals stay attached\",\"Snowball and avalanche cycles active\",\"Erupting lava is visible\",\"Lava contact recovers without replacing character\"]"
+}

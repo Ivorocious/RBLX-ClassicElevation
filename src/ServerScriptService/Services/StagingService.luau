@@ -35,7 +35,7 @@ local characterAddedConnections: { [Player]: RBXScriptConnection } = {}
 local heartbeatAccumulator = 0
 local nextFormationIndex = 1
 
-local FORMATION_COLUMNS = 3
+local FORMATION_COLUMNS = 5
 local FORMATION_SPACING = 4
 local ESCAPE_CHECK_INTERVAL = 0.25
 local HORIZONTAL_ESCAPE_MARGIN = 4

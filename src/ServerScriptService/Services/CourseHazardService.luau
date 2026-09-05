@@ -47,6 +47,8 @@ type CrumbleRecord = {
 	originalCanTouch: boolean,
 	phase: string,
 	nextPhaseAt: number,
+	warningDuration: number,
+	goneDuration: number,
 }
 
 local CourseHazardService = {}
@@ -56,6 +58,7 @@ local isStarted = false
 local raceService: any = nil
 local courseService: any = nil
 local playerRaceService: any = nil
+local respawnService: any = nil
 
 local killParts: { BasePart } = {}
 local fallingRocks: { FallingRockRecord } = {}
@@ -101,19 +104,14 @@ local function getPlayerFromPart(part: BasePart): Player?
 	return Players:GetPlayerFromCharacter(character)
 end
 
-local function killPlayerFromPart(part: BasePart)
+local function recoverPlayerFromPart(part: BasePart)
 	local player = getPlayerFromPart(part)
 
-	if player == nil or not isActiveOfficialRacer(player) then
+	if player == nil or respawnService == nil or respawnService.RecoverPlayer == nil then
 		return
 	end
 
-	local character = player.Character
-	local humanoid = if character ~= nil then character:FindFirstChildOfClass("Humanoid") else nil
-
-	if humanoid ~= nil and humanoid.Health > 0 then
-		humanoid.Health = 0
-	end
+	respawnService.RecoverPlayer(player, "CourseHazard")
 end
 
 local function setPhase(instance: BasePart, phase: string, nextPhaseAt: number)
@@ -299,7 +297,7 @@ local function beginCrumbleWarning(record: CrumbleRecord)
 	record.part.Color = HazardConfig.Crumble.WarningColor
 	record.part.Material = HazardConfig.Crumble.WarningMaterial
 	record.phase = phases.Warning
-	record.nextPhaseAt = getServerTime() + HazardConfig.Crumble.WarningDuration
+	record.nextPhaseAt = getServerTime() + record.warningDuration
 	setPhase(record.part, record.phase, record.nextPhaseAt)
 end
 
@@ -320,7 +318,7 @@ local function updateCrumbles(now: number)
 			end
 
 			record.phase = phases.Gone
-			record.nextPhaseAt = now + HazardConfig.Crumble.GoneDuration
+			record.nextPhaseAt = now + record.goneDuration
 			setPhase(record.part, record.phase, record.nextPhaseAt)
 		elseif record.phase == phases.Gone then
 			restoreCrumble(record, false)
@@ -346,7 +344,7 @@ local function scanPartForRacers(hazardPart: BasePart, overlapParams: OverlapPar
 	end
 
 	for _, overlappingPart in ipairs(Workspace:GetPartsInPart(hazardPart, overlapParams)) do
-		killPlayerFromPart(overlappingPart)
+		recoverPlayerFromPart(overlappingPart)
 	end
 end
 
@@ -446,7 +444,7 @@ end
 
 local function bindKillPart(part: BasePart)
 	table.insert(killParts, part)
-	table.insert(touchConnections, part.Touched:Connect(killPlayerFromPart))
+	table.insert(touchConnections, part.Touched:Connect(recoverPlayerFromPart))
 end
 
 local function bindFallingRock(part: BasePart)
@@ -485,12 +483,20 @@ local function bindFallingRock(part: BasePart)
 	resetFallingRock(record, false)
 	table.insert(touchConnections, part.Touched:Connect(function(touchedPart)
 		if record.phase == phases.Falling then
-			killPlayerFromPart(touchedPart)
+			recoverPlayerFromPart(touchedPart)
 		end
 	end))
 end
 
 local function bindCrumble(part: BasePart)
+	local crumbleDelayAttribute = part:GetAttribute("CrumbleDelay")
+	local crumbleResetTimeAttribute = part:GetAttribute("CrumbleResetTime")
+	local warningDuration = if typeof(crumbleDelayAttribute) == "number"
+		then math.max(0, crumbleDelayAttribute)
+		else HazardConfig.Crumble.WarningDuration
+	local goneDuration = if typeof(crumbleResetTimeAttribute) == "number"
+		then math.max(0, crumbleResetTimeAttribute)
+		else HazardConfig.Crumble.GoneDuration
 	local visuals: { PartVisual } = {
 		{
 			part = part,
@@ -520,6 +526,8 @@ local function bindCrumble(part: BasePart)
 		originalCanTouch = part.CanTouch,
 		phase = phases.Solid,
 		nextPhaseAt = 0,
+		warningDuration = warningDuration,
+		goneDuration = goneDuration,
 	}
 
 	table.insert(crumbles, record)
@@ -542,6 +550,7 @@ function CourseHazardService.Init(context: ServiceContext?)
 		raceService = context.Services.RaceService
 		courseService = context.Services.CourseService
 		playerRaceService = context.Services.PlayerRaceService
+		respawnService = context.Services.RespawnService
 	end
 
 	if raceService == nil then
@@ -554,6 +563,10 @@ function CourseHazardService.Init(context: ServiceContext?)
 
 	if playerRaceService == nil then
 		warn("[CourseHazardService] PlayerRaceService dependency is missing.")
+	end
+
+	if respawnService == nil then
+		warn("[CourseHazardService] RespawnService dependency is missing.")
 	end
 
 	isInitialized = true

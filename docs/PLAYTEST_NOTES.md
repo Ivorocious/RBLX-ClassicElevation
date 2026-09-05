@@ -315,3 +315,14 @@ source built successfully. Final cosmetic-only cleanup uses circular warnings an
 hides a fragile snow pad's ice strata with the pad; unused corbels under those
 fragile pads were omitted. Final generated count: 1,481 BaseParts. Play stopped;
 temporary runners/reports are gone and version 3 remains visible in Edit mode.
+# 2026-09-05 — Classic Ascent v4
+
+Human v3 feedback: the user, a strong obby player, finished in almost six minutes
+with multiple falls and enjoyed the course. Immersion and route capacity remained
+insufficient. This is stronger pacing evidence than the old informed robot run.
+
+V4 verification was deliberately limited to one short Studio session: 11 startup,
+checkpoint-recovery and moving-hazard checks passed. No full-course traversal or
+20-player session. Reviewed mountain/forest/river views and corrected unintended
+outside-lane jump lengths. Final geometry-only rope/alcove adjustments followed.
+See docs/artifacts/classic-ascent-v4-quick-check.json. Full playtests belong to the user.

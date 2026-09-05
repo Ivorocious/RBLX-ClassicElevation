@@ -44,3 +44,13 @@ Track scoped implementation work for ProjectClassicElevation here.
 - 2026-05-29: Migrated active course references to CourseService.
 - 2026-05-30: Implemented active course spawning and fixed CourseService selection.
 - 2026-05-30: Implemented LapBased race validation and lap result data.
+## Classic Ascent v4 handoff — 2026-09-05
+
+- [x] Three paths, shared clearings and wider staging for 20 racers.
+- [x] Taller mountain, canopy, supported camp and overhead rock/snow scenery.
+- [x] River logs, mini-cliffs, three collapsing bridges, vents, concealed rockfall,
+  snowball cover, slippery Skyline and summit avalanche.
+- [x] Preserve manual sign presentation and replace confusing sign text.
+- [x] Instant checkpoint recovery and one focused Studio verification session.
+- [ ] User manual fine-tuning and full playtest, including 20-player behavior.
+- [ ] Revisit intermission/lobby flow with the planned lobby rebuild.
