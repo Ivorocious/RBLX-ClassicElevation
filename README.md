@@ -1,5 +1,9 @@
 # ProjectClassicElevation
 
+The September Classic Ascent build is a **barebones mechanics placeholder**.
+Its complete environment and ten distinct section designs are still outstanding;
+see [current status](docs/CLASSIC_ASCENT.md).
+
 Roblox project baseline for building ProjectClassicElevation with filesystem-first source control, Rojo sync, and lightweight documentation for design and implementation work.
 
 ## Workflow
@@ -25,6 +29,20 @@ Roblox project baseline for building ProjectClassicElevation with filesystem-fir
 - `packages/`: future package-managed dependencies.
 
 ## Local Setup
+
+For the September Classic Ascent build, use Rojo **7.7.0** on both the CLI and
+Studio plugin. The machine's older `rojo` command may still resolve to 7.6.1.
+The project-local executable (ignored by Git) can be started with:
+
+```powershell
+./.tools/rojo-7.7.0/rojo.exe serve default.project.json
+```
+
+Obtain the matching Windows executable from the
+[official release](https://github.com/rojo-rbx/rojo/releases/tag/v7.7.0) if absent.
+Connect the Studio plugin to `localhost:34872`. Keep only one Rojo server running
+on that port. See [Classic Ascent](docs/CLASSIC_ASCENT.md) for course authoring,
+timing targets, and human acceptance tests.
 
 Required:
 

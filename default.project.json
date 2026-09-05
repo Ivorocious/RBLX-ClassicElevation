@@ -18,6 +18,14 @@
       }
     },
 
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "$ignoreUnknownInstances": true,
+      "CourseBuilders": {
+        "$path": "src/ServerStorage/CourseBuilders"
+      }
+    },
+
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "Main": {

@@ -4,6 +4,13 @@ Track scoped implementation work for ProjectClassicElevation here.
 
 ## Backlog
 
+- Replace the barebones Classic Ascent placeholder with an approved, complete
+  environment: ten distinct sections, mountain setting, ambience, and decoration.
+
+- Human-test Classic Ascent on keyboard/touch and with 2-6 racers; tune the
+  2:30-3:15 skilled and 4-6 minute typical completion targets.
+- Build the separate Classic Ascent circuit after the point-to-point route is accepted.
+
 - Confirm Rojo sync from filesystem into the open Roblox Studio place.
 - Create two shippable graybox courses.
 - Add separate unofficial checkpoint and respawn tracking for LateRacing and GhostRacing.
@@ -15,6 +22,9 @@ Track scoped implementation work for ProjectClassicElevation here.
 - None.
 
 ## Done
+
+- 2026-09-05: Implemented a reproducible barebones Classic Ascent placeholder,
+  multiple map-specific fall zones, nine-minute maximum, and early race completion.
 
 - 2026-05-20: Initialized ProjectClassicElevation from the Roblox baseline template.
 - 2026-05-20: Added Phase 1 MVP race architecture foundation.

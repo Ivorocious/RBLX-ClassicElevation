@@ -2,6 +2,16 @@
 
 ## Source of Truth
 
+Current course milestone: see [Classic Ascent](CLASSIC_ASCENT.md). Earlier phase
+sections below describe the implementation history; the September course and
+round-ending behavior supersede the earlier fixed course and timer-only behavior.
+
+`ServerStorage.CourseBuilders.ClassicAscentPointToPoint` is synced through Rojo.
+CourseService explicitly creates the course when missing before discovery. All
+BasePart descendants of a course's FallZones folder are rebound on course change.
+Racing has a 540-second maximum and ends early when the current race result has
+no active official racers. No new remotes or persistent data are introduced.
+
 Git stores scripts, documentation, configuration, and development history.
 
 Rojo syncs filesystem source into Roblox Studio. Durable script changes should be made in the repository first unless a task explicitly calls for a temporary Studio-only edit.

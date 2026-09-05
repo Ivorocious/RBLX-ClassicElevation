@@ -49,6 +49,38 @@ Use this checklist to tune the expanded six-checkpoint MVP graybox course.
 
 ## Sessions
 
+### 2026-09-05 Classic Ascent Point-to-Point
+
+**Build:** codex/classic-ascent-point-to-point; Rojo CLI/plugin 7.7.0.
+
+**Verified:** New course hierarchy has ten sections, 100 obstacle platforms,
+nineteen checkpoints, twenty local fall zones, and one general catch. CourseService
+validation returned no warnings. All three older library models remain present.
+
+**Solo physics smoke:** `tests/studio/ClassicAscentSmoke.luau` passed ten checks.
+Out-of-order checkpoints and an early Finish touch were rejected. A local fall
+returned the player to Start and counted once after two handler rebinds. A
+server-controlled Humanoid then physically walked and jumped all 120 route
+transitions in 148.43 seconds without an additional fall, recorded nineteen
+checkpoint splits, and finished officially. The solo round ended early and kept
+the finish time locked. The intentional pre-run fall is not part of the route
+traversal measurement.
+
+**Next-round recovery smoke:** `tests/studio/ClassicAscentRecovery.luau` passed
+eight checks: progress/falls reset; checkpoints recorded once; elevated recovery
+returned to checkpoint 8 facing the outgoing leg; nested arbitrary zone names
+were discovered and recovered once after repeated rebind; general catch/Y fallback
+recovered once; and a remaining official racer kept the round active. Runtime
+test scripts and the extra test zone were discarded by stopping Play.
+
+**Evidence boundary:** This is an automated traversal, not a human timing or
+retention test. The 2:30-3:15 skilled, 4-6 minute typical, and 6-8 minute beginner
+targets remain unvalidated. Touch controls, 2-6 player crowding, and actual
+multi-client first-finisher/last-departure behavior still require playtesting.
+
+**Tooling:** Rojo 7.7.0 build and Git whitespace checks pass. Global Rojo remains
+7.6.1; use the project-local command documented in README. No publishing performed.
+
 ### 2026-05-30 LapBased Race Validation
 
 **Build/Commit:** TBD.

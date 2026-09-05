@@ -195,6 +195,16 @@ local function setRaceState(nextRaceState: RaceState, duration: number?)
 	broadcastTimerUpdate()
 end
 
+local function haveAllOfficialRacersResolved(): boolean
+	if resultsService == nil or resultsService.GetCurrentRaceResult == nil then
+		return false
+	end
+
+	local result = resultsService.GetCurrentRaceResult()
+
+	return result ~= nil and result.raceId == currentRaceId and #result.activeRacers == 0
+end
+
 local function runTimedState(nextRaceState: RaceState, duration: number, onEntered: (() -> ())?)
 	setRaceState(nextRaceState, duration)
 
@@ -207,6 +217,11 @@ local function runTimedState(nextRaceState: RaceState, duration: number, onEnter
 	end
 
 	while true do
+		if nextRaceState == RaceConstants.RaceState.Racing and haveAllOfficialRacersResolved() then
+			print("[RaceService] All official racers finished or left; ending the race early.")
+			break
+		end
+
 		local remainingTime = getRemainingTime()
 
 		if remainingTime == nil or remainingTime <= 0 then

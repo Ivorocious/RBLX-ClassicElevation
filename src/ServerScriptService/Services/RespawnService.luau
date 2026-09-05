@@ -24,7 +24,7 @@ local courseService: any = nil
 local playerRaceService: any = nil
 local checkpointService: any = nil
 local resultsService: any = nil
-local fallZoneConnection: RBXScriptConnection? = nil
+local fallZoneConnections: { RBXScriptConnection } = {}
 local heartbeatConnection: RBXScriptConnection? = nil
 local lastRespawnAtByUserId: { [number]: number } = {}
 local pendingDeathRespawnRaceIdByUserId: { [number]: string } = {}
@@ -177,39 +177,36 @@ local function respawnPlayer(player: Player, source: string, ignoreCooldown: boo
 	print(string.format("[RespawnService] Respawned %s after %s.", player.Name, source))
 end
 
-local function bindFallZone()
-	if fallZoneConnection ~= nil then
-		fallZoneConnection:Disconnect()
-		fallZoneConnection = nil
+local function bindFallZones()
+	for _, connection in ipairs(fallZoneConnections) do
+		connection:Disconnect()
 	end
+	table.clear(fallZoneConnections)
 
 	if courseService == nil then
 		warn("[RespawnService] CourseService dependency is missing.")
 		return
 	end
 
-	local fallZoneInstance = nil
+	local fallZones = courseService.GetFallZones()
 
-	if courseService.GetMainFallZone ~= nil then
-		fallZoneInstance = courseService.GetMainFallZone()
-	elseif courseService.GetFallZoneMain ~= nil then
-		fallZoneInstance = courseService.GetFallZoneMain()
-	end
-
-	if fallZoneInstance == nil or not fallZoneInstance:IsA("BasePart") then
-		warn("[RespawnService] Active course main fall zone is unavailable.")
+	if #fallZones == 0 then
+		warn("[RespawnService] Active course fall zones are unavailable.")
 		return
 	end
 
-	fallZoneConnection = fallZoneInstance.Touched:Connect(function(touchedPart)
-		local player = getPlayerFromTouchedPart(touchedPart)
+	for _, fallZone in ipairs(fallZones) do
+		local connection = fallZone.Touched:Connect(function(touchedPart)
+			local player = getPlayerFromTouchedPart(touchedPart)
 
-		if player ~= nil then
-			respawnPlayer(player, "FallZone_Main")
-		end
-	end)
+			if player ~= nil then
+				respawnPlayer(player, fallZone.Name)
+			end
+		end)
+		table.insert(fallZoneConnections, connection)
+	end
 
-	print(string.format("[RespawnService] Bound %s.", fallZoneInstance:GetFullName()))
+	print(string.format("[RespawnService] Bound %d fall zone(s).", #fallZoneConnections))
 end
 
 local function checkFallYThreshold()
@@ -365,7 +362,7 @@ function RespawnService.Init(context: ServiceContext?)
 end
 
 function RespawnService.BindActiveCourse()
-	bindFallZone()
+	bindFallZones()
 end
 
 function RespawnService.Start(_context: ServiceContext?)

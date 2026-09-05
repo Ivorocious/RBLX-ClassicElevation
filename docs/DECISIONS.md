@@ -64,6 +64,20 @@ Rejected until both course formats are smoke-tested.
 
 ## Template
 
+### 2026-09-05 - Classic Ascent Uses a Reproducible Course Builder
+
+**Decision:** Add Course_ClassicAscentPointToPoint as a separate course, generated
+from a server-only builder when absent. Preserve the original Studio courses.
+
+**Reasoning:** New course geometry must be recoverable from Git while allowing
+explicit Studio authoring without silently overwriting it.
+
+**Impact:** Fixed selection uses classic_ascent_point_to_point. Course-specific
+fall volumes replace the assumption of one named trigger. The shared timeout is
+nine minutes, with early completion when all official racers finish or leave.
+Completion targets remain unvalidated until human timing passes. See CLASSIC_ASCENT.md.
+
+
 ### YYYY-MM-DD - Decision Title
 
 **Decision:** TBD.

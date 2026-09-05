@@ -413,7 +413,7 @@ function CheckpointService.GetCheckpointRespawnCFrame(player: Player): CFrame?
 		return nil
 	end
 
-	return CFrame.new(respawnPart.Position + Vector3.new(0, RESPAWN_VERTICAL_OFFSET, 0))
+	return respawnPart.CFrame + Vector3.new(0, RESPAWN_VERTICAL_OFFSET, 0)
 end
 
 function CheckpointService.Init(context: ServiceContext?)

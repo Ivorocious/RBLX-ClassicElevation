@@ -209,6 +209,20 @@ local function parseCheckpointIndex(checkpointName: string): number?
 	return tonumber(digits)
 end
 
+local function discoverFallZones(fallZonesFolder: Folder?): { BasePart }
+	local fallZones: { BasePart } = {}
+
+	if fallZonesFolder ~= nil then
+		for _, descendant in ipairs(fallZonesFolder:GetDescendants()) do
+			if descendant:IsA("BasePart") then
+				table.insert(fallZones, descendant)
+			end
+		end
+	end
+
+	return fallZones
+end
+
 local function discoverOrderedCheckpoints(checkpointsFolder: Folder?): { OrderedCheckpoint }
 	local discoveredCheckpoints = {}
 
@@ -262,7 +276,7 @@ local function getClassicPointToPointCourseInfo(courseModel: Model): CourseInfo
 	local defaults = CourseConfig.DefaultCourseInfo
 
 	return {
-		courseId = CourseConfig.ActiveCourseId,
+		courseId = "classic_point_to_point",
 		displayName = "Classic Point-to-Point",
 		raceFormat = RaceConstants.RaceFormat.PointToPoint,
 		lapCount = 1,
@@ -328,8 +342,8 @@ local function validateCourseModel(courseModel: Model, requireAuthoringFolders: 
 
 	if fallZonesFolder == nil then
 		addWarning(warnings, "FallZones must be a Folder.")
-	elseif getBasePart(fallZonesFolder, childNames.FallZoneMain) == nil then
-		addWarning(warnings, "FallZones.FallZone_Main must be a BasePart.")
+	elseif #discoverFallZones(fallZonesFolder) == 0 then
+		addWarning(warnings, "FallZones must contain at least one BasePart.")
 	end
 
 	if requireAuthoringFolders and getFolder(courseModel, childNames.RouteMarkers) == nil then
@@ -542,6 +556,8 @@ end
 
 local function ensureActiveCourse()
 	ensureClassicPointToPointCourseFromFallback()
+	local classicAscentBuilder = require(ServerStorage.CourseBuilders.ClassicAscentPointToPoint)
+	classicAscentBuilder.Ensure(ensureCourseLibrary())
 	discoverCourseLibrary()
 
 	local selectedRecord = selectActiveCourseRecord()
@@ -683,6 +699,10 @@ function CourseService.GetFallZoneMain(): BasePart?
 	local fallZonesFolder = CourseService.GetFallZonesFolder()
 
 	return getBasePart(fallZonesFolder, CourseConfig.RequiredChildNames.FallZoneMain)
+end
+
+function CourseService.GetFallZones(): { BasePart }
+	return discoverFallZones(CourseService.GetFallZonesFolder())
 end
 
 function CourseService.GetMainFallZone(): BasePart?
