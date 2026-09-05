@@ -218,9 +218,9 @@ spawn overlap. Clients cannot request or choose authoritative teleport locations
 
 - `WaitingForPlayers`: returns current players to the lobby target when the round loop enters the
   waiting state.
-- `Countdown`: moves queued official racers to the active course Start when Countdown begins.
-- Race start: stages queued racers again immediately before official `Racing` status starts, so
-  players who joined during Countdown are also at the start.
+- `Intermission`: stages queued racers once in the protected Start pen.
+- `Countdown`: stages newcomers without moving already-staged characters.
+- `Racing`: opens the exit gate; healthy staged characters keep their current positions.
 - `Resetting`: returns all players to the lobby target before resetting statuses to `Lobby`.
 
 Staging is separate from fall respawn. During `Racing`, players are not repeatedly teleported by
@@ -378,3 +378,17 @@ and `End Race`; they are development shortcuts and are not part of live gameplay
 - Use Studio playtesting for gameplay behavior.
 - Use focused tests for pure logic modules when practical.
 - Record manual verification steps in implementation summaries.
+
+## Classic Ascent hazards and course sky
+
+`CourseHazardService` binds after CourseService selects the active clone. It discovers
+`HazardType` attributes on the whole course, including collapsing route parts.
+Kill surfaces use server touch/overlap checks; falling rocks use server timing and
+overlap scans; collapsing parts restore their collision, colour, material and child
+visuals. Race state and official racer status gate all damage. RespawnService owns
+checkpoint death recovery. No client hazard requests or new remotes are introduced.
+
+The client ambience script uses `ClassicAscentAmbienceConfig` for the selected
+course and bundled sky textures. It saves and restores existing Sky and Lighting
+values locally when entering/leaving the course. Rojo maps configuration and scripts;
+the course builder owns generated geometry, and authored legacy models are archived.

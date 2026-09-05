@@ -35,24 +35,21 @@ local function banner(parent: Instance, base: CFrame, color: Color3)
 end
 
 local function mountain(parent: Instance, center: Vector3)
-	-- The radial slope stays below the playable spiral; local shelves join its edges.
-	for index = 1, 20 do
-		local angle = index * math.pi * 2 / 20
+	for index = 1, 14 do
+		local angle = index * math.pi * 2 / 14
 		local radial = Vector3.new(math.cos(angle), 0, math.sin(angle))
-		local position = center + radial * (210 + math.sin(index * 2.4) * 12) + Vector3.new(0, 120 + math.sin(index * 1.7) * 8, 0)
-		local frame = CFrame.lookAt(position, position + radial)
-		part(parent, "MountainButtress", Vector3.new(135, 370, 360), frame, ROCK:Lerp(Color3.fromRGB(70, 88, 82), (index % 4) * 0.1), Enum.Material.Rock, true)
+		local position = center + radial * 203 + Vector3.new(0, 112, 0)
+		part(parent, "MountainMass", Vector3.new(174, 350, 370), CFrame.lookAt(position, position + radial), ROCK, Enum.Material.Rock, true)
 	end
-	for index = 1, 9 do
-		local angle = index * 2.39996
-		local radius = if index == 1 then 0 else 35 + index * 5
-		local position = center + Vector3.new(math.cos(angle) * radius, 264 + index % 3 * 9, math.sin(angle) * radius)
-		local frame = CFrame.new(position) * CFrame.Angles(0, angle, 0)
-		part(parent, "SummitCrag", Vector3.new(56, 100 + index % 3 * 15, 78), frame, ROCK, Enum.Material.Slate, true)
-		part(parent, "SnowCornice", Vector3.new(58, (100 + index % 3 * 15) * 0.35, 78 * 0.35), frame * CFrame.new(0, (100 + index % 3 * 15) * 0.325 + 0.7, 78 * 0.325), SNOW, Enum.Material.Snow, true)
+	-- Paired slopes share a ridge; the snow follows the same slope without loose caps.
+	for _, ridge in ipairs({{x = 0, z = 0, width = 124, depth = 170, height = 88}, {x = 72, z = 25, width = 65, depth = 96, height = 53}}) do
+		for _, side in ipairs({-1, 1}) do
+			local cf = CFrame.new(center + Vector3.new(ridge.x, 223 + ridge.height / 2, ridge.z + side * ridge.depth / 4)) * CFrame.Angles(0, if side == -1 then 0 else math.pi, 0)
+			part(parent, "SummitRidge", Vector3.new(ridge.width, ridge.height, ridge.depth / 2), cf, ROCK, Enum.Material.Slate, true)
+			part(parent, "SettledSummitSnow", Vector3.new(ridge.width + 0.2, ridge.height * 0.45 + 0.4, ridge.depth * 0.225), cf * CFrame.new(0, ridge.height * 0.275 + 0.2, ridge.depth * 0.1375), SNOW, Enum.Material.Snow, true)
+		end
 	end
 end
-
 local function camp(parent: Instance, frame: CFrame)
 	for _, side in ipairs({-1, 1}) do
 		part(parent, "CanvasTent", Vector3.new(12, 8, 7), frame * CFrame.new(side * 3.5, 4, 0) * CFrame.Angles(0, side * math.pi / 2, 0), AMBER, Enum.Material.Fabric, true)
@@ -66,49 +63,58 @@ end
 
 function Environment.Build(model: Model, nodes: {Node}, center: Vector3): Folder
 	local root = Instance.new("Folder")
-	root.Name = "Environment"
-	root:SetAttribute("DecorationsAreNonGameplay", true)
-	root.Parent = model.Decoration
+	root.Name, root.Parent = "Environment", model.Decoration
 	mountain(root, center)
 	for index, node in ipairs(nodes) do
 		local section = node:GetAttribute("SectionIndex") :: number
 		local radial = Vector3.new(node.Position.X - center.X, 0, node.Position.Z - center.Z).Unit
-		local ground = CFrame.lookAt(node.Position - radial * (node.Size.X / 2 + 27) - Vector3.new(0, 4, 0), node.Position + radial * 20 - Vector3.new(0, 4, 0))
 		local snowy = section >= 8
+		local openTrail = section == 1 or section == 10
+		local top = node.Position.Y + node.Size.Y / 2
+		local depth = math.min(150, (node.Position - center).Magnitude - 45)
+		local tangentLength = math.max(node.Size.Z + 10, 24)
+		local innerEdge = node.Size.X / 2 - 1
+		local edgePosition = node.Position - radial * innerEdge
+		local frame = CFrame.lookAt(Vector3.new(edgePosition.X, top, edgePosition.Z), Vector3.new(edgePosition.X, top, edgePosition.Z) + radial)
 		local color = if snowy then SNOW elseif section <= 3 then GRASS else ROCK
 		local material = if snowy then Enum.Material.Snow elseif section <= 3 then Enum.Material.Grass else Enum.Material.Slate
-		-- Gorges and pillar jumps remain exposed; shelves sit on the mountain side.
-		part(root, "TrailShelf", Vector3.new(math.max(20, node.Size.Z + 7), 14, 42), ground * CFrame.new(0, -7, 0), color, material)
-		if index % 2 == 0 then
-			part(root, "CliffFace", Vector3.new(node.Size.Z + 14, 94 + index % 3 * 7, 40), ground * CFrame.new(0, -52, 0) * CFrame.Angles(0, 0, math.rad((index % 3 - 1) * 7)), ROCK, Enum.Material.Rock, true)
+		local bankHeight = if openTrail then 0 else 11
+		local bank = part(root, "ConnectedMountainBank", Vector3.new(tangentLength, 100 + bankHeight, depth), frame * CFrame.new(0, (bankHeight - 100) / 2, depth / 2 + (if openTrail then 0 else 6)), color, material)
+		bank.CanCollide, bank.CanQuery = true, true
+		bank:SetAttribute("EnvironmentSolid", true)
+		if not openTrail and section ~= 4 and node:GetAttribute("HazardType") ~= "Crumble" then
+			part(root, "JoinedLedgeCorbel", Vector3.new(node.Size.Z * 0.8, 18, node.Size.X / 2 + 14), frame * CFrame.new(0, -12, 3), ROCK, Enum.Material.Rock)
 		end
-		if (section <= 3 or section == 7 or section == 8) and index % 3 == 0 then
-			pine(root, ground * CFrame.new(0, 0, -3), 0.8 + (index % 4) * 0.15, snowy)
+		if openTrail then
+			local shoulder = part(root, "TrailShoulder", Vector3.new(tangentLength, 14, node.Size.X + 10), node.CFrame * CFrame.new(0, -5.6, 0), color, material)
+			shoulder.Size = Vector3.new(node.Size.X + 8, 14, node.Size.Z + 6)
+			shoulder.CanCollide, shoulder.CanQuery = true, true
+			shoulder:SetAttribute("EnvironmentSolid", true)
+		end
+		-- The support face reaches into the mountain instead of ending in mid-air.
+		local footing = part(root, "EmbeddedCliffFooting", Vector3.new(tangentLength, 104, depth + node.Size.X / 2), frame * CFrame.new(0, -67, depth / 2 - node.Size.X / 4), ROCK, Enum.Material.Rock)
+		footing.CanCollide, footing.CanQuery = true, true
+		footing:SetAttribute("EnvironmentSolid", true)
+		local propBase = frame * CFrame.new(0, bankHeight, 18)
+		if (section <= 3 or section == 8) and index % 3 == 0 then
+			pine(root, propBase, 0.8 + index % 3 * 0.12, snowy)
 		elseif section == 5 and index % 2 == 0 then
 			for column = 1, 3 do
-				local height = 12 + (index + column) % 4 * 5
-				part(root, "BasaltOrgan", Vector3.new(5, height, 6), ground * CFrame.new((column - 2) * 6, height / 2, -8), Color3.fromRGB(59, 75, 80), Enum.Material.Basalt)
+				local height = 8 + (index + column) % 3 * 5
+				part(root, "BasaltOutcrop", Vector3.new(5, height, 7), propBase * CFrame.new((column - 2) * 5, height / 2, 0), Color3.fromRGB(57, 73, 77), Enum.Material.Basalt)
 			end
-		elseif section == 7 and index % 2 == 0 then
-			part(root, "CliffWall", Vector3.new(node.Size.Z + 4, 35, 15), ground * CFrame.new(0, 12, -10) * CFrame.Angles(0, 0, 0.12), ROCK, Enum.Material.Rock)
-		elseif section >= 9 and index % 3 == 0 then
-			banner(root, ground, AMBER)
-		end
-		if section == 2 then
-			local water = part(root, "GardenStream", Vector3.new(node.Size.Z + 8, 0.4, 12), ground * CFrame.new(0, 0.3, 8), Color3.fromRGB(54, 161, 155), Enum.Material.Glass)
-			water.Transparency = 0.2
-			part(root, "StreamCascade", Vector3.new(2, 3, 12), ground * CFrame.new(-node.Size.Z / 2 - 2, -1, 8), Color3.fromRGB(157, 223, 208), Enum.Material.Glass).Transparency = 0.25
-			if index % 3 == 0 then
-				part(root, "GardenBoulder", Vector3.new(8, 6, 7), ground * CFrame.new(3, 2, -4) * CFrame.Angles(0, index, 0), ROCK, Enum.Material.Slate, true)
+		elseif section == 6 and index % 3 == 0 then
+			for _, x in ipairs({-6, 6}) do
+				part(root, "RuinColumn", Vector3.new(3, 12, 4), propBase * CFrame.new(x, 6, 0), Color3.fromRGB(176, 167, 140), Enum.Material.Limestone)
 			end
+			part(root, "RuinLintel", Vector3.new(16, 3, 5), propBase * CFrame.new(0, 13, 0), Color3.fromRGB(176, 167, 140), Enum.Material.Limestone)
+		elseif section >= 9 and index % 5 == 0 then banner(root, propBase, AMBER) end
+		if section == 2 or section == 5 then
+			local pool = part(root, if section == 2 then "ScaldingSpring" else "MoltenFissure", Vector3.new(node.Size.X + 12, 1, node.Size.Z + 8), node.CFrame * CFrame.new(0, -6, 0), if section == 2 then Color3.fromRGB(85, 181, 153) else Color3.fromRGB(219, 86, 34), Enum.Material.Neon)
+			pool.CanTouch, pool.CanQuery = true, true
+			pool:SetAttribute("HazardType", "Kill")
 		end
-		if section == 6 and index % 2 == 0 then
-			for _, x in ipairs({-7, 7}) do
-				part(root, "RuinColumn", Vector3.new(3, 18, 4), ground * CFrame.new(x, 9, -4), Color3.fromRGB(176, 167, 140), Enum.Material.Limestone)
-			end
-			part(root, "RuinLintel", Vector3.new(19, 4, 5), ground * CFrame.new(0, 19, -4) * CFrame.Angles(0, 0, 0.06), Color3.fromRGB(176, 167, 140), Enum.Material.Limestone)
-		end
-		if index == 3 then camp(root, ground * CFrame.new(0, 0, -3)) end
+		if index == 2 then camp(root, propBase * CFrame.new(0, 0, 4)) end
 	end
 	return root
 end

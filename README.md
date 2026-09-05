@@ -1,6 +1,6 @@
 # ProjectClassicElevation
 
-Classic Ascent now has an **alpine environment review build** on the rebuild branch.
+Classic Ascent version 3 has **integrated mountain terrain, active obby hazards, safe staging, and a course sky** on the rebuild branch.
 Human visual acceptance, pacing, and multiplayer validation remain outstanding;
 see [current status](docs/CLASSIC_ASCENT.md).
 

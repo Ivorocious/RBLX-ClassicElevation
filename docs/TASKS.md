@@ -19,9 +19,11 @@ Track scoped implementation work for ProjectClassicElevation here.
 
 ## In Progress
 
-- Classic Ascent environment review build: ten sections, mountain scenery, local ambience; 18 solo Studio checks passed; human acceptance pending.
+- Human review of Classic Ascent version 3: integrated terrain, active hazards, safe staging and course sky. Automated hazard-enabled traversal: 2:57; keyboard/touch and multiplayer tuning remain.
 
 ## Done
+
+- 2026-09-05: Implemented version 3 feedback: joined terrain, mounted signs and milestones, cleaner summit and rope spans, lethal/collapsing/rockfall hazards, protected intermission staging without a second teleport, and restoring course sky.
 
 - 2026-09-05: Implemented a reproducible barebones Classic Ascent placeholder,
   multiple map-specific fall zones, nine-minute maximum, and early race completion.

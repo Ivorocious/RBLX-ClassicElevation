@@ -3,6 +3,7 @@
 ## Current build
 
 The alpine environment rebuild is implemented on `codex/classic-ascent-environment`.
+Version 3 integrates the hiking trail with the mountain and adds active obby hazards.
 It replaces the rectangular placeholder with a rising spiral around a rock mountain,
 with camp and pines, garden streams, timber bridges, basalt columns, ruined stone
 architecture, cliff ledges, snow, and summit banners. This is an environment review
@@ -19,11 +20,13 @@ circuit, and template are preserved.
   checkpoints, recovery volumes, signs, and obstacle details.
 - `src/ServerStorage/CourseBuilders/AscentEnvironment.luau`: deterministic mountain
   geometry and scenery; no imported assets or global Terrain edits.
+- `src/ServerStorage/CourseBuilders/AscentDetails.luau`: supported waymarkers, checkpoint milestones, start pen, rope spans, and hazard placement.
+- `src/ServerScriptService/Services/CourseHazardService.luau`: authoritative kill surfaces, falling rocks and collapsing platforms.
 - `src/StarterPlayer/StarterPlayerScripts/ClassicAscentAmbience.client.luau`: local
-  warm lighting and atmospheric haze near the active course, restored in the lobby.
+  warm lighting, atmospheric haze and a course-specific sky, restored in the lobby.
 
-`Ensure(library)` creates the course before discovery. Builder version 1 is retained
-under a disabled `_Placeholder` name when upgrading to version 2. Existing version 2
+`Ensure(library)` creates the course before discovery. Older generated builder versions are retained
+under disabled `_Version1`/`_Version2` names when upgrading to version 3. Existing version 3
 models are retained, including manual edits. Further builder changes require explicit
 reconciliation: archive the prior generated model before rebuilding. Do not delete
 Studio-authored courses. Requiring a module alone does not create the course.
@@ -38,24 +41,23 @@ Use the matching Rojo 7.7.0 executable and plugin on localhost:34872.
 The course rises from Y=64 to Y=244 across roughly 2,175 studs, wrapping 480 degrees
 around the mountain. There are 146 route transitions after Start: 126 obstacle
 platforms, nineteen checkpoints, and Finish. Every section has a midpoint checkpoint
-and an end checkpoint, with the final endpoint replaced by Finish. Gold inlays,
-lanterns, checkpoint numbers, section signs, and a finish gate identify progress.
+and an end checkpoint, with the final endpoint replaced by Finish. Material-matched milestones, sheltered lanterns, supported waymarkers, and a finish gate identify progress.
 
 | Section | Transitions | Play and setting |
 | --- | ---: | --- |
-| Trailhead | 10 | Wide ascending stone approach, expedition camp and pines |
-| Stepping Gardens | 14 | Staggered stone jumps beside turquoise pools |
-| Switchback Climb | 16 | Side-to-side rising rock steps and forest shelves |
-| Ridge Bridges | 16 | Narrow timber decks, planks, rope rails, broad recovery islands |
-| Pillar Yard | 18 | Staggered basalt tops and tall column clusters |
-| Broken Causeway | 12 | Wider gaps between ruined limestone spans and piers |
-| Cliffside Traverse | 16 | Narrow offset ledges below rock faces |
-| Summit Steps | 18 | Closely spaced snow steps and snowy pines |
-| Skyline | 16 | Narrow ice platforms along the exposed upper ridge |
+| Trailhead | 10 | Enclosed starting camp, embedded hiking trail, fallen-log warm-up |
+| Stepping Gardens | 14 | Narrow stone jumps above lethal hot-spring pools |
+| Switchback Climb | 16 | Rising rock steps with lethal glowing fissures |
+| Ridge Bridges | 16 | Collapsing timber planks, connected rope spans, broad recovery islands |
+| Pillar Yard | 18 | Narrow basalt jumps, molten pools and lethal fissures |
+| Broken Causeway | 12 | Ruined limestone spans and warned falling rocks |
+| Cliffside Traverse | 16 | Narrow ledges joined to cliffs, with warned rockfall |
+| Summit Steps | 18 | Fragile snow ledges that collapse after a warning |
+| Skyline | 16 | Narrow ice, lethal red ice seams, and falling ice rocks |
 | Summit Run | 10 | Broad final ascent, expedition flags and stone finish gate |
 
-Everything is anchored. Scenery is noncolliding and separated from the playable
-ribbon; checkpoint pads remain wide. Decoration must not hide the intended landing
+Everything is anchored. Mountain banks and terrain shoulders join the trail. Banks and deep foundations are solid;
+small props remain noncolliding. Checkpoint pads remain wide. Decoration must not hide the intended landing
 or look like a required traversable path. The build uses native Roblox materials
 and geometry; visual ambience currently has no music or ambient sound asset.
 
@@ -102,3 +104,38 @@ with 2-6 players. Record completion time, checkpoint splits, falls, timeouts, ex
 and willingness to replay. Check camera room, path clarity beside scenery, platform
 edges at section boundaries, and finish readability. Human approval is still needed
 before calling the course a finished player experience.
+
+## Hazard and staging behavior (version 3)
+
+- 44 lethal surfaces: hot pools, molten pools, glowing fissures and red ice seams.
+- 9 fragile platforms. Touch starts a 1.25-second colour warning, then the platform
+  and its visual boards disappear for two seconds before restoring.
+- 8 falling-rock locations. An amber footprint warns for 1.3 seconds before a
+  0.7-second fall; the next cooldown is 2.5 seconds. Per-location offsets vary the
+  rhythm without unexplained random instant deaths. Safe checkpoints have no hazards.
+- Hazards run only while Racing and only kill official active racers. Existing
+  death recovery returns them to their latest checkpoint and records one fall.
+- Hazard binding restores the old course and disconnects old touch events before
+  binding a new one. Server overlap checks catch moving-rock hits. No new remotes.
+- Racers stage once during Intermission. They can move inside the protected start
+  terrace; high safety walls and a ceiling prevent climbing out. Timber exit rails
+  and an invisible collision gate stay closed through Countdown, then open at Racing.
+- Healthy staged racers are not teleported again at the Racing transition.
+  Queued respawns and actual escapes return to the pen. The original courses still
+  use their existing start platforms, with recovery bounds when no pen exists.
+
+The sky uses Roblox's bundled six-face cloud textures, configured in
+`ClassicAscentAmbienceConfig.luau`. The client preserves the original Sky properties
+and restores them in the lobby. New custom six-face artwork would require asset
+upload; this version requires no external asset dependency.
+
+Official references consulted:
+[skyboxes](https://create.roblox.com/docs/environment/skybox),
+[deadly lava](https://github.com/Roblox/creator-docs/blob/main/content/en-us/tutorials/use-case-tutorials/scripting/basic-scripting/deadly-lava.md),
+[fading traps](https://github.com/Roblox/creator-docs/blob/main/content/en-us/tutorials/use-case-tutorials/scripting/basic-scripting/fading-trap.md).
+
+Additional Studio tests: `ClassicAscentStaging.luau` during a fresh Intermission,
+and `ClassicAscentHazards.luau` during a solo official race. Run as temporary server
+Scripts replacing their final return with `Staging.Run()` / `Hazards.Run()`.
+The traversal runner now waits for rockfall cooldown and jumps over center hazards;
+its time is not a measurement of a new player's decision-making.

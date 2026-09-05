@@ -59,6 +59,8 @@ function Smoke.Run()
 		local function walk(target: Vector3, timeout: number)
 			local untilTime = os.clock() + timeout
 			repeat
+				assert(humanoid.Health > 0, "Hazard death at route " .. tostring(report:GetAttribute("RouteIndex")))
+				assert(row.falls == 1, "Unexpected fall at route " .. tostring(report:GetAttribute("RouteIndex")))
 				local delta = target - root.Position
 				local horizontal = Vector3.new(delta.X, 0, delta.Z)
 				if horizontal.Magnitude < 0.75 then
@@ -84,9 +86,31 @@ function Smoke.Run()
 				previous.Size.X / 2 / math.max(math.abs(localDirection.X), 0.0001),
 				previous.Size.Z / 2 / math.max(math.abs(localDirection.Z), 0.0001)
 			)
-			walk(previous.Position + direction * (edgeDistance - 1.5), 3)
+			local rockfallLane = target:GetAttribute("RockfallLane")
+			if rockfallLane then
+				local rock = course.Hazards[rockfallLane].FallingRock
+				local deadline = os.clock() + 8
+				while not (rock:GetAttribute("HazardPhase") == "Cooldown" and rock:GetAttribute("NextPhaseAt") - workspace:GetServerTimeNow() > 1.3) do
+					assert(os.clock() < deadline, "Rockfall safe window did not arrive")
+					task.wait(0.03)
+				end
+			end
+			if (root.Position - previous.Position):Dot(direction) < edgeDistance - 1.5 then
+				walk(previous.Position + direction * (edgeDistance - 1.5), 3)
+			end
+			task.wait(0.12)
+			humanoid.Jump = true
 			humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
-			walk(target.Position, 4)
+			if target:GetAttribute("JumpOverCenter") then
+				local approach = (target.CFrame * CFrame.new(0, 0, math.min(4, target.Size.Z / 2 - 0.65))).Position
+				walk(approach, 4)
+				task.wait(0.12)
+				humanoid.Jump = true
+				humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+				walk((target.CFrame * CFrame.new(0, 0, -math.min(4, target.Size.Z / 2 - 0.65))).Position, 4)
+			else
+				walk(target.Position, 4)
+			end
 			assert(row.falls == 1, "Unexpected fall on route " .. index)
 			previous = target
 		end

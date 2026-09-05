@@ -8,6 +8,13 @@ Track known bugs and regressions here.
 
 ## Fixed
 
+### Racers could leave staging, then be teleported back at the starting signal
+
+**Status:** Fixed in Classic Ascent version 3.
+
+Staging now occurs once during Intermission. A protected start pen and exit gate keep racers safe before Racing. The gate opens without moving healthy staged characters again. Verified with free movement, forward collision, escape recovery, queued respawn and transition checks.
+
+
 ### Active racer respawns in lobby after falling
 
 **Status:** Fixed

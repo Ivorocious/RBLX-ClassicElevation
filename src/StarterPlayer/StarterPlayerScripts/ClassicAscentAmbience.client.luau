@@ -4,6 +4,10 @@ local Lighting = game:GetService("Lighting")
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local player = Players.LocalPlayer
+local Config = require(game:GetService("ReplicatedStorage").Config.ClassicAscentAmbienceConfig)
+local sky: Sky? = nil
+local createdSky = false
+local savedSky: { [string]: any }? = nil
 local saved: { [string]: any }? = nil
 local savedAtmosphere: { [string]: any }? = nil
 local atmosphere: Atmosphere? = nil
@@ -25,6 +29,15 @@ local function setActive(active: boolean)
 			atmosphere.Density, atmosphere.Offset, atmosphere.Haze, atmosphere.Glare = 0.2, 0.2, 0.65, 0.1
 			atmosphere.Color, atmosphere.Decay = Color3.fromRGB(207, 225, 239), Color3.fromRGB(131, 161, 177)
 		end
+		sky = Lighting:FindFirstChildOfClass("Sky")
+		createdSky = sky == nil
+		if not sky then sky = Instance.new("Sky"); sky.Name = "ClassicAscentSky"; sky.Parent = Lighting end
+		savedSky = {}
+		local skyObject: any = sky
+		for key, value in pairs(Config.Sky) do
+			(savedSky :: {[string]: any})[key] = skyObject[key]
+			skyObject[key] = value
+		end
 		correction.Brightness, correction.Contrast, correction.Saturation = 0.01, 0.08, 0.08
 		correction.TintColor = Color3.fromRGB(255, 246, 232)
 		correction.Enabled = true
@@ -33,7 +46,14 @@ local function setActive(active: boolean)
 		if atmosphere and savedAtmosphere then
 			for key, value in pairs(savedAtmosphere) do (atmosphere :: any)[key] = value end
 		end
+		if sky then
+			if createdSky then sky:Destroy()
+			elseif savedSky then
+				for key, value in pairs(savedSky) do (sky :: any)[key] = value end
+			end
+		end
 		correction.Enabled = false
+		sky, savedSky = nil, nil
 		saved, savedAtmosphere = nil, nil
 	end
 end
@@ -47,8 +67,8 @@ RunService.Heartbeat:Connect(function(delta)
 	local info = course and course:FindFirstChild("CourseInfo")
 	local root = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
 	local start = course and course:FindFirstChild("Start")
-	local active = info ~= nil and info:GetAttribute("CourseId") == "classic_ascent_point_to_point"
+	local active = info ~= nil and info:GetAttribute("CourseId") == Config.CourseId
 		and root ~= nil and root:IsA("BasePart") and start ~= nil and start:IsA("BasePart")
-		and (root.Position - start.Position).Magnitude < 850
+		and (root.Position - start.Position).Magnitude < Config.ActivationDistance
 	setActive(active)
 end)

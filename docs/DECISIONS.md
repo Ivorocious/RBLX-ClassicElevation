@@ -104,3 +104,20 @@ are preserved in ServerStorage.CourseBuildArchive. The current Edit RaceCourse i
 a copy of the new authoring model; normal CourseService startup archives this copy
 and spawns the selected runtime course. Local ambience restores the preexisting
 Lighting values when the player returns to the lobby. Human acceptance is pending.
+
+### 2026-09-05 - Integrate mountain terrain, active obstacles, and safe staging
+
+**Decision:** Version 3 joins the route to solid banks and cliff foundations,
+replaces floating signs with mounted waymarkers, simplifies summit slopes, and
+connects bridge rope spans. Add three small hazard types with server-owned timing.
+
+**Reasoning:** The first alpine version still played as an unchallenging walkway
+with disconnected scenery. Hazards need visible warnings and checkpoint recovery,
+not unpredictable unavoidable deaths. A start barrier should define the race start
+without teleporting players twice.
+
+**Impact:** CourseHazardService binds with the active course and uses existing
+RespawnService death recovery. All hazard timing is in HazardConfig. Intermission
+stages once; the gate opens on Racing without a second teleport. Local sky and
+lighting restore when the player returns to the lobby. No economy, DataStore,
+publishing, course rotation, or new circuit work is included.

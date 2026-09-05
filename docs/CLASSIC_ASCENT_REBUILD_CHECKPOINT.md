@@ -1,72 +1,83 @@
 # Classic Ascent — restart checkpoint
 
-Updated 2026-09-05 after the alpine environment rebuild and Studio tests.
+Updated 2026-09-05 after version 3 gameplay and environment feedback.
 
-## Current state
+## Durable state
 
-- Branch: `codex/classic-ascent-environment`. This file belongs to the local
-  checkpoint commit containing the implemented environment review build.
-- Placeholder rollback: `85b8dea` on the pushed branch
+- Current branch: `codex/classic-ascent-environment`. The local commit containing
+  this file is the version 3 checkpoint. No rebuild push, merge, or Roblox publish.
+- Previous alpine version: `eed69b9` (version 2, before hazards/integration fixes).
+- Original placeholder: `85b8dea` on pushed
   `origin/codex/barebones-placeholder-classic-ascent`.
-- Earlier restart checkpoint: `fafc8d4`.
 - Remote: https://github.com/Ivorocious/RBLX-ClassicElevation.git.
-- `main` remains the May baseline; rebuild is not merged or pushed.
-- User rejected the initial rectangular blocks as a proof of concept. Do not
-  describe that placeholder, or this unapproved review build, as a finished game.
-- User asked us to handle Rojo/Git, minimize Computer Use, and keep restart points.
-  They reconnected Rojo successfully after upgrading their plan.
+- Main remains the May baseline. User delegates Rojo/Git handling to us.
+- Minimize Computer Use; ask the user for easy UI actions when needed.
 
-## Implemented and verified
+## User's latest requirements and implementation
 
-`ClassicAscentPointToPoint.luau` builds version 2: ten named environments, a rising
-480-degree spiral, 146 transitions, 19 checkpoints, 147 fall volumes, about 2,175
-studs. `AscentEnvironment.luau` supplies mountain rock, shelves, camp, pines,
-water, basalt, ruins, snowy vegetation, and summit flags. The scene contains
-1,296 BaseParts. Client-local lighting/haze activates near the course and restores
-in the lobby. There are no imported sound/music assets.
+1. Join scenery to the trail: connected banks, shoulders, embedded cliff supports.
+2. Replace catwalk pacing: 44 lethal surfaces, 9 collapsing platforms, 8 rockfalls.
+3. Integrate signage/checkpoints: supported waymarkers and material-matched milestones.
+4. Connect the track and mountain: terrain banks reach into the mountain mass.
+5. Clean summit/railings: paired rock/snow slopes and connected rope spans.
+6. Stage once during Intermission; protected start pen, closed exit through
+   Countdown, no second Racing teleport. Permanent gate wings guide the exit onto
+   the first trail. Queued respawns and actual escapes recover into the pen.
+7. Course-specific cloud sky and lighting, restoring original values on exit.
 
-All 18 solo Studio checks passed on this geometry. Physical traversal: 138.09
-seconds (2:18), no unexpected falls. Checked checkpoint order, early-finish rejection,
-all splits, early round end, locked results, next-round reset, arbitrary nested
-fall zones, repeated binding, and respawn orientation. Rojo build passed. Read
-`docs/PLAYTEST_NOTES.md` for details and boundaries.
+Geometry: builder version 3; 146 transitions, 19 checkpoints, 147 fall volumes,
+about 2,175 route studs and 1,481 BaseParts. Route geometry source is split between
+ClassicAscentPointToPoint, AscentEnvironment and AscentDetails. CourseHazardService
+owns runtime hazards. HazardConfig owns timings. Client sky settings live in
+ClassicAscentAmbienceConfig. No external uploads or music/audio were added.
 
-This does not establish human pacing, retention, touch usability, multiplayer
-crowding, device performance, or aesthetic acceptance. The original targets are
-2:30–3:15 familiar, 4–6 typical, 6–8 beginner, with a nine-minute maximum. Do not
-add artificial waiting to lengthen the clean run.
+## Verification
 
-## Studio and Rojo
+34 gameplay assertions passed: traversal 10, staging 9, hazards 7, recovery 8.
+Full hazard-enabled physical traversal: 176.76 seconds (2:57), no unexpected falls
+and all nineteen checkpoint splits. This is an automated informed route, not
+human first/repeat timing or retention evidence. The preflight fall is intentional.
+
+Six sky textures loaded successfully. Client course-ID switch restored the original
+SkyboxBk and ClockTime 14.5, then reactivated the course sky and ClockTime 15.2.
+Sampled route-body terrain intersections returned none after corrections. Real
+player-height bridge/snow views and overview/start views inspected. Rojo build
+and git diff checks passed. Final cosmetic cleanup places ice strata under their
+crumbling pads, removes their loose corbels, and uses round warning footprints.
+
+Not yet established: human fun/difficulty acceptance, keyboard/touch pacing,
+multiplayer crowding, device performance or retention. Keep nine-minute maximum;
+no waiting was added solely to enforce a run length. Human tuning targets remain
+roughly 2:30–3:15 familiar, 4–6 typical, 6–8 beginner. Follow the user's next feedback.
+
+## Studio / restart
 
 - Place: Project Classic Elevation, place ID 85558151074819.
-- Last Studio mode: Edit. Rediscover the MCP studio ID after a restart.
-- ServerStorage.CourseLibrary.Course_ClassicAscentPointToPoint is version 2.
-- Workspace.RaceCourse is a copy of that new model for visible Edit inspection.
-- Prior models/review previews are preserved in ServerStorage.CourseBuildArchive;
-  the original legacy courses and lobby are preserved.
-- CourseService archives the Edit RaceCourse at Play startup and spawns a runtime
-  copy from the selected library model. No extra preview duplicates remain in Workspace.
-- Temporary test runners/reports were discarded by stopping Play.
-- Matching CLI: `./.tools/rojo-7.7.0/rojo.exe` (ignored local tool); port 34872.
-  The global `rojo` may still resolve to incompatible 7.6.1.
-- Restart command: `./.tools/rojo-7.7.0/rojo.exe serve default.project.json`.
-  Check for an existing listener before starting another. Ask the user to reconnect
-  the plugin when needed instead of using Computer Use.
-- Build: `./.tools/rojo-7.7.0/rojo.exe build default.project.json -o .tools/classic-ascent-validation.rbxlx`.
+- Last mode: Edit; final model visible as Workspace.RaceCourse. The matching
+  authoring model is ServerStorage.CourseLibrary.Course_ClassicAscentPointToPoint.
+- Prior versions/reviews remain in ServerStorage.CourseBuildArchive. Legacy
+  courses and lobby are preserved. No extra preview model remains in Workspace.
+- Stop Play discarded temporary test runners, reports and test-only nested zone.
+- Use `.tools/rojo-7.7.0/rojo.exe serve default.project.json`, localhost:34872.
+  Check for an existing process/listener first. Global rojo may still be 7.6.1.
+- Build: `.tools/rojo-7.7.0/rojo.exe build default.project.json -o .tools/classic-ascent-validation.rbxlx`.
+- Builder preserves version 3 models. To refresh changed geometry, explicitly
+  archive the prior generated model and use a fresh cloned module require; MCP
+  require caches can otherwise expose stale code. Keep durable changes in files.
+- CourseService archives the Edit RaceCourse at runtime and spawns the library copy.
+- Git reconstructs generated course/scripts; keep a Studio backup for old authored
+  lobby/assets. Publishing requires an explicit user request.
 
-## Next useful action
+## Test execution notes
 
-Have the user inspect/play the new version and give concrete visual/difficulty
-feedback. Tune only that scoped feedback. Human acceptance remains open in TASKS.
-The separate Classic Ascent circuit and unofficial recovery remain future work.
-Do not publish Roblox or merge the branch automatically.
+Use exact `tests/studio/*.luau` text in temporary Play-only server Scripts, replacing
+ONLY the final module return with its `.Run()` call. Service modules required from
+MCP itself may have separate state from the live server Script environment.
+Read report Folder attributes through MCP. Start the staging test immediately after
+Play (one sequential tool call avoids missing its twenty-second Intermission).
 
-For further geometry edits, Ensure preserves an existing version 2 model. Archive
-that generated model explicitly before rebuilding from a fresh module require;
-MCP require caches can otherwise return stale code. Preserve authored assets.
-Keep every durable code/geometry change in repository files.
-
-Studio tests must run as temporary server Scripts containing the exact repository
-test text with the final module return replaced by `.Run()`. Requiring service
-modules from MCP directly can expose a different cached state from the live server
-Script environment. Read report attributes through MCP instead. Stop Play afterward.
+Traversal waits for rockfall cooldown and jumps center fissures. Do not backtrack
+to a takeoff marker after clearing a fissure. Crumble warning is 1.25 seconds; the
+original 0.65 seconds was too short for a normal-speed crossing. Hazard tests can
+follow staging in the same race; recovery requires the following fresh race.
+Stop Play after tests. See PLAYTEST_NOTES.md for exact findings.

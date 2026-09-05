@@ -32,6 +32,7 @@ local roundLoopStarted = false
 local playerRaceService: any = nil
 local resultsService: any = nil
 local stagingService: any = nil
+local courseHazardService: any = nil
 local courseService: any = nil
 local checkpointService: any = nil
 local respawnService: any = nil
@@ -278,6 +279,24 @@ local function stageQueuedPlayersAtStart(reason: string)
 	end
 end
 
+local function beginStagingQueuedPlayers(reason: string)
+	if stagingService == nil then
+		return
+	end
+
+	if stagingService.BeginStaging ~= nil then
+		stagingService.BeginStaging(getQueuedPlayers(), reason)
+	elseif stagingService.MovePlayersToRaceStart ~= nil then
+		stagingService.MovePlayersToRaceStart(getQueuedPlayers(), reason)
+	end
+end
+
+local function openStartForRace()
+	if stagingService ~= nil and stagingService.OnRaceStarted ~= nil then
+		stagingService.OnRaceStarted()
+	end
+end
+
 local function bindActiveCourseReferences(reason: string)
 	if courseService ~= nil and courseService.EnsureActiveCourse ~= nil then
 		courseService.EnsureActiveCourse()
@@ -290,6 +309,8 @@ local function bindActiveCourseReferences(reason: string)
 	if respawnService ~= nil and respawnService.BindActiveCourse ~= nil then
 		respawnService.BindActiveCourse()
 	end
+
+	if courseHazardService ~= nil then courseHazardService.BindActiveCourse() end
 
 	local activeCourse = getActiveCoursePayload()
 	print(
@@ -336,7 +357,9 @@ local function runRoundLoop()
 			intermissionDuration = 0
 		end
 
-		runTimedState(RaceConstants.RaceState.Intermission, intermissionDuration, nil)
+		runTimedState(RaceConstants.RaceState.Intermission, intermissionDuration, function()
+			beginStagingQueuedPlayers("intermission staging")
+		end)
 
 		if getEligiblePlayerCount() < RaceConfig.MinPlayers then
 			print("[RaceService] Not enough players after Intermission; resetting to wait for players.")
@@ -372,7 +395,6 @@ local function runRoundLoop()
 		end
 
 		devStartRaceNowRequested = false
-		stageQueuedPlayersAtStart("race start staging")
 
 		local raceStartedAt = getServerTime()
 		currentRaceStartedAt = raceStartedAt
@@ -400,7 +422,7 @@ local function runRoundLoop()
 			resultsService.RegisterActiveRacers(startedPlayers)
 		end
 
-		runTimedState(RaceConstants.RaceState.Racing, RaceConfig.RaceDuration, nil)
+		runTimedState(RaceConstants.RaceState.Racing, RaceConfig.RaceDuration, openStartForRace)
 
 		local raceDuration = getServerTime() - raceStartedAt
 		local dnfResults = {}
@@ -480,6 +502,7 @@ function RaceService.Init(context: ServiceContext?)
 		playerRaceService = context.Services.PlayerRaceService
 		resultsService = context.Services.ResultsService
 		stagingService = context.Services.StagingService
+		courseHazardService = context.Services.CourseHazardService
 		courseService = context.Services.CourseService
 		checkpointService = context.Services.CheckpointService
 		respawnService = context.Services.RespawnService

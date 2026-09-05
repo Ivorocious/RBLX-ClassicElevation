@@ -258,3 +258,60 @@ familiar-player budget but within the user's broad 2–3 minute skilled-run rang
 No human first/repeat timing, touch control, 2–6 player, device performance, retention,
 or audio acceptance evidence exists. Do not describe this as a finished/approved
 player experience or claim typical players currently need 4–6 minutes.
+
+## 2026-09-05 — Version 3 integrated terrain and active obby hazards
+
+User feedback: separated scenery/track/mountain; bland catwalk pacing; floating
+signs and generic checkpoints; noisy summit and broken rail spans; double staging
+teleport; unsafe start edges; course-specific sky requested.
+
+Implemented native terrain banks, trail shoulders, embedded cliff supports, mounted
+waymarkers, material-matched milestone checkpoints, paired summit slopes, connected
+rope spans, a protected start terrace and timed hazards. Version 3 has 146 route
+transitions, 19 checkpoints, 147 fall volumes, 44 lethal surfaces, 9 collapsing
+platforms and 8 rockfall locations. Final geometry has approximately 1,481 BaseParts.
+
+Verified results:
+- Full hazard-enabled Humanoid traversal passed all 10 assertions, all 19 splits,
+  zero unexpected traversal falls, 176.76 seconds (2:57). The intentional preflight
+  fall is separate. Timing includes the runner reading hazard phases and waiting
+  for safe rockfall windows, so it is not a human first-attempt measurement.
+- Final 20-stud start opening passed 9 staging assertions, including actual forward
+  movement against the closed collision gate, free movement retention, escape
+  fallback, queued death/respawn recovery, visual opening and no second teleport.
+- All six bundled sky textures loaded successfully in the client. A temporary
+  client course-ID switch restored the original SkyboxBk and ClockTime (14.5),
+  then reactivated the course sky and ClockTime (15.2). The original course ID was
+  restored immediately; the test did not change the server course.
+- Sampled terrain centerline intersections at route centers/midpoints; fixed bank
+  intrusion near basalt/cliff offsets, then the sample returned no intersections.
+- Inspected real Play-mode bridge/snow views with the new sky and Edit-mode
+  start/overview views. This is visual review, not the user's aesthetic acceptance.
+
+Tuning and test corrections:
+- Increased crumble warning from 0.65 to 1.25 seconds after physical traversal
+  showed the shorter time could collapse a board before normal-speed crossing.
+- The test now approaches a center fissure before jumping, rather than attempting
+  to clear an entire long platform in one jump. It also avoids walking backward
+  onto a fissure after clearing it. Isolated basalt traversal verified the cause.
+- Moved signs outside narrow lanes and extended their supports into the ground.
+- Added permanent gate wings so opening the exit does not expose start corners
+  wider than the first trail. Falling rocks hide until their warning phase.
+
+Runtime test scripts and diagnostic reports are Play-only and discarded on Stop.
+One temporary test runner had a source-string substitution error; the corrected
+runner was used. It is not part of shipped source. No standalone Luau analyzer,
+StyLua or Selene executable is installed. Rojo build and Studio execution are the
+available verification tools.
+
+Still requires human keyboard/touch runs, multiplayer crowding checks, device
+performance checks and retention/pacing feedback. Nine-minute timeout remains.
+
+Final version 3 verification: all 7 hazard assertions and all 8 recovery assertions
+passed after the complete traversal and final 9 staging assertions (34 gameplay
+assertions total). Hazard rebinds did not duplicate deaths/falls; recovery was tested
+in the next fresh race through the existing Studio-only EndRace control. Final
+source built successfully. Final cosmetic-only cleanup uses circular warnings and
+hides a fragile snow pad's ice strata with the pad; unused corbels under those
+fragile pads were omitted. Final generated count: 1,481 BaseParts. Play stopped;
+temporary runners/reports are gone and version 3 remains visible in Edit mode.
