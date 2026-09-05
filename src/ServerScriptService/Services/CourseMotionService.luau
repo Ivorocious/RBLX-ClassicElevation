@@ -12,13 +12,25 @@ type ServiceContext = {
 	Services: { [string]: any },
 }
 
+type VisualState = {
+	part: BasePart,
+	transparency: number,
+	canCollide: boolean,
+	canTouch: boolean,
+}
+
 type MotionRecord = {
 	part: BasePart,
 	kind: string,
+	authoredCFrame: CFrame,
 	startCFrame: CFrame,
 	endCFrame: CFrame,
+	initialProgress: number,
+	isFirstTravel: boolean,
 	duration: number,
 	pauseDuration: number,
+	pauseMin: number,
+	pauseMax: number,
 	warningDuration: number,
 	cycleOffset: number,
 	damage: number,
@@ -33,6 +45,8 @@ type MotionRecord = {
 	nextPhaseAt: number,
 	direction: number,
 	previousCFrame: CFrame,
+	visuals: { VisualState },
+	random: Random,
 }
 
 local CourseMotionService = {}
@@ -88,20 +102,63 @@ local function showWarning(record: MotionRecord, visible: boolean)
 	warning.Transparency = if visible then (record.warningTransparency or 0) else 1
 end
 
-local function movePart(part: BasePart, target: CFrame)
-	local delta = target * part.CFrame:Inverse()
-	part.CFrame = target
-	for _, child in ipairs(part:GetChildren()) do
-		if child:IsA("BasePart") then child.CFrame = delta * child.CFrame end
+local function moveRecord(record: MotionRecord, target: CFrame)
+	local delta = target * record.part.CFrame:Inverse()
+	record.part.CFrame = target
+	for _, visual in ipairs(record.visuals) do
+		if visual.part.Parent ~= nil then
+			visual.part.CFrame = delta * visual.part.CFrame
+		end
 	end
+end
+
+local function setRecordVisible(record: MotionRecord, visible: boolean)
+	record.part.Transparency = if visible then record.activeTransparency else 1
+	record.part.CanCollide = visible and record.originalCanCollide
+	record.part.CanTouch = visible and record.originalCanTouch
+	for _, visual in ipairs(record.visuals) do
+		if visual.part.Parent ~= nil then
+			visual.part.Transparency = if visible then visual.transparency else 1
+			visual.part.CanCollide = visible and visual.canCollide
+			visual.part.CanTouch = visible and visual.canTouch
+		end
+	end
+end
+
+local function nextPause(record: MotionRecord): number
+	if record.kind ~= kinds.Snowball and record.kind ~= kinds.RollingBoulder then
+		return record.pauseDuration
+	end
+	if record.pauseMax <= record.pauseMin then
+		return record.pauseMin
+	end
+	return record.random:NextNumber(record.pauseMin, record.pauseMax)
+end
+
+local function buildExclusions(record: MotionRecord): { Instance }
+	local excluded: { Instance } = { record.part }
+	if record.warning ~= nil then
+		table.insert(excluded, record.warning)
+	end
+	for _, visual in ipairs(record.visuals) do
+		table.insert(excluded, visual.part)
+	end
+	return excluded
 end
 
 local function resetRecord(record: MotionRecord, clearDiagnostics: boolean)
 	if record.part.Parent ~= nil then
-		movePart(record.part, record.startCFrame)
+		moveRecord(record, record.authoredCFrame)
 		record.part.Transparency = record.originalTransparency
 		record.part.CanCollide = record.originalCanCollide
 		record.part.CanTouch = record.originalCanTouch
+		for _, visual in ipairs(record.visuals) do
+			if visual.part.Parent ~= nil then
+				visual.part.Transparency = visual.transparency
+				visual.part.CanCollide = visual.canCollide
+				visual.part.CanTouch = visual.canTouch
+			end
+		end
 		record.previousCFrame = record.startCFrame
 		if clearDiagnostics then
 			record.part:SetAttribute(attributes.MotionPhase, nil)
@@ -161,24 +218,77 @@ local function playerFromHit(instance: Instance): Player?
 	return if character ~= nil then Players:GetPlayerFromCharacter(character) else nil
 end
 
+local function activeRacerCharacters(): { Instance }
+	local characters: { Instance } = {}
+	for _, player in ipairs(Players:GetPlayers()) do
+		if #characters >= MotionConfig.MaxRacersChecked then
+			break
+		end
+		if isActiveRacer(player) and player.Character ~= nil then
+			table.insert(characters, player.Character)
+		end
+	end
+	return characters
+end
+
+local function rollingHazardHit(record: MotionRecord, target: CFrame): Player?
+	local characters = activeRacerCharacters()
+	if #characters == 0 then
+		return nil
+	end
+	local overlapParams = OverlapParams.new()
+	overlapParams.FilterType = Enum.RaycastFilterType.Include
+	overlapParams.FilterDescendantsInstances = characters
+	for _, hit in ipairs(Workspace:GetPartBoundsInBox(record.part.CFrame, record.part.Size, overlapParams)) do
+		local player = playerFromHit(hit)
+		if player ~= nil then
+			return player
+		end
+	end
+	local displacement = target.Position - record.previousCFrame.Position
+	if displacement.Magnitude < 0.001 then
+		return nil
+	end
+	local raycastParams = RaycastParams.new()
+	raycastParams.FilterType = Enum.RaycastFilterType.Include
+	raycastParams.FilterDescendantsInstances = characters
+	local result: RaycastResult?
+	if record.kind == kinds.RollingLog then
+		result = Workspace:Blockcast(record.previousCFrame, record.part.Size, displacement, raycastParams)
+	else
+		local radius = math.max(
+			0.5,
+			math.min(record.part.Size.X, record.part.Size.Y, record.part.Size.Z)
+				* MotionConfig.ProjectileRadiusScale
+		)
+		result = Workspace:Spherecast(record.previousCFrame.Position, radius, displacement, raycastParams)
+	end
+	return if result ~= nil then playerFromHit(result.Instance) else nil
+end
+
 local function currentOverlap(record: MotionRecord): (Player?, boolean)
 	local params = OverlapParams.new()
 	params.FilterType = Enum.RaycastFilterType.Exclude
-	params.FilterDescendantsInstances = if record.warning ~= nil then { record.part, record.warning } else { record.part }
-	local hits = Workspace:GetPartBoundsInBox(record.part.CFrame, record.part.Size, params)
+	params.FilterDescendantsInstances = buildExclusions(record)
+	-- Exact geometry prevents a mountain wedge bounding box from swallowing snowballs.
+	local hits = if record.kind == kinds.Snowball then Workspace:GetPartsInPart(record.part, params) else Workspace:GetPartBoundsInBox(record.part.CFrame, record.part.Size, params)
 	table.sort(hits, function(left, right)
 		return (left.Position - record.part.Position).Magnitude < (right.Position - record.part.Position).Magnitude
 	end)
+	local touchedCover = false
 	for _, hit in ipairs(hits) do
 		local player = playerFromHit(hit)
 		if player ~= nil then
 			return player, false
 		end
 		if hit.CanCollide then
-			return nil, true
+			touchedCover = true
+			if record.kind == kinds.Snowball then
+				return nil, true
+			end
 		end
 	end
-	return nil, false
+	return nil, touchedCover
 end
 
 local function sweep(record: MotionRecord, fromPosition: Vector3, toPosition: Vector3): (Player?, boolean)
@@ -186,10 +296,7 @@ local function sweep(record: MotionRecord, fromPosition: Vector3, toPosition: Ve
 	if displacement.Magnitude < 0.001 then
 		return nil, false
 	end
-	local excluded: { Instance } = { record.part }
-	if record.warning ~= nil then
-		table.insert(excluded, record.warning)
-	end
+	local excluded = buildExclusions(record)
 	local radius = math.max(0.5, math.min(record.part.Size.X, record.part.Size.Y, record.part.Size.Z) * MotionConfig.ProjectileRadiusScale)
 	for _ = 1, 12 do
 		local params = RaycastParams.new()
@@ -205,7 +312,11 @@ local function sweep(record: MotionRecord, fromPosition: Vector3, toPosition: Ve
 			return player, false
 		end
 		if result.Instance:IsA("BasePart") and result.Instance.CanCollide then
-			return nil, true
+			if record.kind == kinds.Snowball then
+				return nil, true
+			end
+			table.insert(excluded, result.Instance)
+			continue
 		end
 		table.insert(excluded, result.Instance)
 	end
@@ -239,14 +350,19 @@ end
 
 local function beginCycle(record: MotionRecord, timestamp: number)
 	record.direction = 1
-	movePart(record.part, record.startCFrame)
-	record.previousCFrame = record.startCFrame
 	if record.kind == kinds.MovingLog then
-		setPhase(record, "MovingOut", timestamp + record.duration)
+		local progress = if record.isFirstTravel then record.initialProgress else 0
+		local startingCFrame = record.startCFrame:Lerp(record.endCFrame, progress)
+		record.isFirstTravel = false
+		moveRecord(record, startingCFrame)
+		record.previousCFrame = startingCFrame
+		setRecordVisible(record, true)
+		setPhase(record, "Travelling", timestamp + (1 - progress) * record.duration)
+		record.phaseStartedAt = timestamp - progress * record.duration
 	else
-		record.part.Transparency = 1
-		record.part.CanCollide = false
-		record.part.CanTouch = false
+		moveRecord(record, record.startCFrame)
+		record.previousCFrame = record.startCFrame
+		setRecordVisible(record, false)
 		showWarning(record, true)
 		setPhase(record, "Warning", timestamp + record.warningDuration)
 	end
@@ -256,6 +372,10 @@ local function startRace(timestamp: number)
 	table.clear(contactTimes)
 	for _, record in ipairs(records) do
 		resetRecord(record, false)
+		if record.kind == kinds.MovingLog then
+			record.isFirstTravel = true
+			setRecordVisible(record, false)
+		end
 		setPhase(record, "Idle", timestamp + record.cycleOffset)
 	end
 end
@@ -263,31 +383,26 @@ end
 local function updateMovingLog(record: MotionRecord, timestamp: number)
 	if record.phase == "Idle" and timestamp >= record.nextPhaseAt then
 		beginCycle(record, timestamp)
-	elseif (record.phase == "MovingOut" or record.phase == "MovingBack") then
+	elseif record.phase == "Travelling" then
 		local alpha = math.clamp((timestamp - record.phaseStartedAt) / math.max(record.duration, 0.01), 0, 1)
-		local eased = (1 - math.cos(alpha * math.pi)) * 0.5
-		local from = if record.direction == 1 then record.startCFrame else record.endCFrame
-		local destination = if record.direction == 1 then record.endCFrame else record.startCFrame
 		local previous = record.part.CFrame
-		movePart(record.part, from:Lerp(destination, eased))
+		moveRecord(record, record.startCFrame:Lerp(record.endCFrame, alpha))
 		carryGroundedRacers(record, record.part.CFrame * previous:Inverse())
 		if timestamp >= record.nextPhaseAt then
-			movePart(record.part, destination)
-			setPhase(record, "Paused", timestamp + record.pauseDuration)
+			setRecordVisible(record, false)
+			moveRecord(record, record.startCFrame)
+			setPhase(record, "Cooldown", timestamp + record.pauseDuration)
 		end
-	elseif record.phase == "Paused" and timestamp >= record.nextPhaseAt then
-		record.direction *= -1
-		setPhase(record, if record.direction == 1 then "MovingOut" else "MovingBack", timestamp + record.duration)
+	elseif record.phase == "Cooldown" and timestamp >= record.nextPhaseAt then
+		beginCycle(record, timestamp)
 	end
 end
 
 local function beginTravel(record: MotionRecord, timestamp: number)
 	showWarning(record, false)
-	record.part.Transparency = record.activeTransparency
-	record.part.CanCollide = record.originalCanCollide
-	record.part.CanTouch = record.originalCanTouch
+	setRecordVisible(record, true)
 	record.previousCFrame = record.startCFrame
-	movePart(record.part, record.startCFrame)
+	moveRecord(record, record.startCFrame)
 	setPhase(record, "Travelling", timestamp + record.duration)
 end
 
@@ -331,12 +446,21 @@ local function updateHazard(record: MotionRecord, timestamp: number)
 		local target = from:Lerp(destination, alpha)
 		if record.kind == kinds.Avalanche then
 			target *= CFrame.Angles(MotionConfig.AvalancheRotationSpeed * (timestamp - record.phaseStartedAt), 0, 0)
+		elseif record.kind == kinds.RollingLog or record.kind == kinds.RollingBoulder then
+			target *= CFrame.Angles(MotionConfig.RollingRotationSpeed * (timestamp - record.phaseStartedAt), 0, 0)
 		end
-		local hitPlayer, hitCover = currentOverlap(record)
-		if hitPlayer == nil and not hitCover then
-			hitPlayer, hitCover = sweep(record, record.previousCFrame.Position, target.Position)
+		local isRolling = record.kind == kinds.RollingLog or record.kind == kinds.RollingBoulder
+		local hitPlayer: Player? = nil
+		local hitCover = false
+		if isRolling then
+			hitPlayer = rollingHazardHit(record, target)
+		else
+			hitPlayer, hitCover = currentOverlap(record)
+			if hitPlayer == nil and (not hitCover or record.kind ~= kinds.Snowball) then
+				hitPlayer, hitCover = sweep(record, record.previousCFrame.Position, target.Position)
+			end
 		end
-		movePart(record.part, target)
+		moveRecord(record, target)
 		record.previousCFrame = target
 		if hitPlayer ~= nil and record.kind ~= kinds.LavaSpurt then
 			affectPlayer(record, hitPlayer, timestamp)
@@ -352,10 +476,9 @@ local function updateHazard(record: MotionRecord, timestamp: number)
 			record.previousCFrame = record.endCFrame
 			setPhase(record, "LavaPause", timestamp + record.pauseDuration)
 		elseif alpha >= 1 or timestamp >= record.nextPhaseAt then
-			record.part.Transparency = 1
-			record.part.CanCollide = false
-			record.part.CanTouch = false
-			setPhase(record, "Cooldown", timestamp + record.pauseDuration)
+			setRecordVisible(record, false)
+			moveRecord(record, record.startCFrame)
+			setPhase(record, "Cooldown", timestamp + nextPause(record))
 		end
 	elseif record.phase == "LavaPause" and timestamp >= record.nextPhaseAt then
 		setPhase(record, "Travelling", timestamp + record.duration)
@@ -380,11 +503,18 @@ local function bindCourse(course: Model?)
 			continue
 		end
 		local kind = descendant:GetAttribute(attributes.MotionKind)
+		local motionStart = descendant:GetAttribute(attributes.MotionStart)
 		local motionEnd = descendant:GetAttribute(attributes.MotionEnd)
 		if typeof(kind) ~= "string" or typeof(motionEnd) ~= "CFrame" then
 			continue
 		end
-		if kind ~= kinds.MovingLog and kind ~= kinds.LavaSpurt and kind ~= kinds.Snowball and kind ~= kinds.Avalanche then
+		if kind ~= kinds.MovingLog
+			and kind ~= kinds.LavaSpurt
+			and kind ~= kinds.Snowball
+			and kind ~= kinds.Avalanche
+			and kind ~= kinds.RollingLog
+			and kind ~= kinds.RollingBoulder
+		then
 			continue
 		end
 		if not descendant.Anchored then
@@ -393,14 +523,56 @@ local function bindCourse(course: Model?)
 		end
 		local sibling = if descendant.Parent ~= nil then descendant.Parent:FindFirstChild("Warning") else nil
 		local warning = if sibling ~= nil and sibling:IsA("BasePart") then sibling else nil
+		local visuals: { VisualState } = {}
+		for _, child in ipairs(descendant:GetDescendants()) do
+			if child:IsA("BasePart") and child ~= warning then
+				table.insert(visuals, {
+					part = child,
+					transparency = child.Transparency,
+					canCollide = child.CanCollide,
+					canTouch = child.CanTouch,
+				})
+			end
+		end
+		local defaultPause = if kind == kinds.MovingLog then defaults.MovingLogPauseDuration else defaults.PauseDuration
+		local defaultPauseMin = if kind == kinds.RollingBoulder
+			then defaults.RollingBoulderPauseMin
+			elseif kind == kinds.Snowball then defaults.SnowballPauseMin
+			else defaultPause
+		local defaultPauseMax = if kind == kinds.RollingBoulder
+			then defaults.RollingBoulderPauseMax
+			elseif kind == kinds.Snowball then defaults.SnowballPauseMax
+			else defaultPause
+		local pauseMin = numberAttribute(descendant, attributes.PauseMin, defaultPauseMin)
+		local pauseMax = numberAttribute(descendant, attributes.PauseMax, defaultPauseMax)
+		if pauseMax < pauseMin then
+			pauseMin, pauseMax = pauseMax, pauseMin
+		end
+		local warningDuration = numberAttribute(descendant, attributes.WarningDuration, defaults.WarningDuration)
+		if kind == kinds.RollingBoulder then
+			warningDuration = math.max(warningDuration, MotionConfig.RollingBoulderMinWarningDuration)
+		end
+		local seed = 0
+		for index = 1, #descendant:GetFullName() do
+			seed = (seed * 31 + string.byte(descendant:GetFullName(), index)) % 2147483647
+		end
 		local record: MotionRecord = {
 			part = descendant,
 			kind = kind,
-			startCFrame = descendant.CFrame,
+			authoredCFrame = descendant.CFrame,
+			startCFrame = if typeof(motionStart) == "CFrame" then motionStart else descendant.CFrame,
 			endCFrame = motionEnd,
+			initialProgress = math.clamp(
+				numberAttribute(descendant, attributes.InitialProgress, 0),
+				0,
+				1
+			),
+			isFirstTravel = true,
 			duration = numberAttribute(descendant, attributes.MotionDuration, defaults.MotionDuration),
-			pauseDuration = numberAttribute(descendant, attributes.PauseDuration, defaults.PauseDuration),
-			warningDuration = numberAttribute(descendant, attributes.WarningDuration, defaults.WarningDuration),
+			pauseDuration = numberAttribute(descendant, attributes.PauseDuration, defaultPause),
+			pauseMin = pauseMin,
+			pauseMax = pauseMax,
+			warningDuration = warningDuration,
 			cycleOffset = numberAttribute(descendant, attributes.CycleOffset, 0),
 			damage = numberAttribute(descendant, attributes.Damage, defaults.SnowballDamage),
 			activeTransparency = math.clamp(
@@ -418,6 +590,8 @@ local function bindCourse(course: Model?)
 			nextPhaseAt = 0,
 			direction = 1,
 			previousCFrame = descendant.CFrame,
+			visuals = visuals,
+			random = Random.new(seed),
 		}
 		table.insert(records, record)
 		resetRecord(record, false)

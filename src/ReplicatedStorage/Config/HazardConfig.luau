@@ -34,7 +34,7 @@ HazardConfig.FallingRock = {
 	FallDuration = 0.7,
 	CooldownDuration = 2.5,
 	ResetDuration = 0.1,
-	WarningColor = Color3.fromRGB(255, 174, 48),
+	WarningColor = Color3.fromRGB(239, 65, 55),
 	WarningMaterial = Enum.Material.Neon,
 	WarningTransparency = 0.2,
 }

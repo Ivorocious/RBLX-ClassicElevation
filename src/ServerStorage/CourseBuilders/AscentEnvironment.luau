@@ -1,16 +1,13 @@
 --!strict
 
+local Props = require(script.Parent.AscentProps)
+
 local Environment = {}
 
 local ROCK = Color3.fromRGB(91, 101, 99)
 local DARK_ROCK = Color3.fromRGB(55, 67, 68)
-local PALE_ROCK = Color3.fromRGB(151, 151, 133)
 local GRASS = Color3.fromRGB(71, 111, 72)
-local PINE = Color3.fromRGB(35, 78, 57)
 local SNOW = Color3.fromRGB(226, 237, 235)
-local ICE = Color3.fromRGB(158, 201, 216)
-local WOOD = Color3.fromRGB(103, 72, 46)
-local CANVAS = Color3.fromRGB(194, 139, 64)
 
 type Node = BasePart
 
@@ -25,13 +22,6 @@ local function part(parent: Instance, name: string, size: Vector3, cf: CFrame, c
 	return object
 end
 
-local function roundRock(parent: Instance, name: string, size: Vector3, cf: CFrame, color: Color3, material: Enum.Material): Part
-	local object = part(parent, name, size, cf, color, material)
-	local mesh = Instance.new("SpecialMesh")
-	mesh.MeshType, mesh.Parent = Enum.MeshType.Sphere, object
-	return object
-end
-
 local function wedge(parent: Instance, name: string, size: Vector3, cf: CFrame, color: Color3, material: Enum.Material, solid: boolean?): WedgePart
 	local object = Instance.new("WedgePart")
 	object.Name, object.Size, object.CFrame = name, size, cf
@@ -42,6 +32,7 @@ local function wedge(parent: Instance, name: string, size: Vector3, cf: CFrame, 
 	object.Parent = parent
 	return object
 end
+
 
 local function mountain(parent: Instance, center: Vector3)
 	local root = Instance.new("Folder")
@@ -57,41 +48,6 @@ local function mountain(parent: Instance, center: Vector3)
 		local ridgeFrame = CFrame.new(center + Vector3.new(0, 382.5, side * 25)) * CFrame.Angles(0, if side == -1 then 0 else math.pi, 0)
 		wedge(root, "SummitSnowRidge", Vector3.new(100, 85, 50), ridgeFrame, SNOW, Enum.Material.Snow, true)
 	end
-end
-
-local function pine(parent: Instance, frame: CFrame, scale: number, snowy: boolean)
-	part(parent, "PineTrunk", Vector3.new(1.4 * scale, 28, 1.4 * scale), frame * CFrame.new(0, 14, 0), WOOD, Enum.Material.Wood)
-	for tier = 1, 3 do
-		local width = (26 - tier * 4) * scale
-		local crown = part(parent, "PineCrown", Vector3.new(width, 8 * scale, width), frame * CFrame.new(0, 18 + tier * 4 * scale, 0), if snowy and tier >= 2 then SNOW else PINE:Lerp(GRASS, tier * 0.08), if snowy and tier >= 2 then Enum.Material.Snow else Enum.Material.Grass)
-		local mesh = Instance.new("SpecialMesh")
-		mesh.MeshType, mesh.Parent = Enum.MeshType.Sphere, crown
-	end
-end
-
-local function fern(parent: Instance, frame: CFrame, scale: number, snowy: boolean)
-	for leaf = 0, 3 do
-		local angle = leaf * math.pi / 2
-		part(parent, "FernFrond", Vector3.new(0.25, 0.8, 5) * scale, frame * CFrame.new(0, 1.2 * scale, 0) * CFrame.Angles(math.rad(-18), angle, 0) * CFrame.new(0, 0, -2 * scale), if snowy then Color3.fromRGB(127, 155, 137) else GRASS, Enum.Material.Grass)
-	end
-end
-
-local function lowSupport(parent: Instance, node: Node, section: number, step: number)
-	local frame = node.CFrame
-	local suspended = node:GetAttribute("MotionKind") == "MovingLog" or (section == 4 and step % 4 ~= 0 and node.Parent.Name ~= "Checkpoints")
-	local supportTop = if suspended then node.Size.Y / 2 - 17 else -node.Size.Y / 2
-	local height = 30 + (step % 3) * 7
-	local color = if section >= 8 then Color3.fromRGB(111, 137, 145) else DARK_ROCK
-	local supportWidth = math.max(7, math.min(14, node.Size.X - 1))
-	for _, x in ipairs(if node.Size.X >= 50 then { -20, 0, 20 } else { 0 }) do
-		local support = roundRock(parent, "TrailRockSupport", Vector3.new(supportWidth, height, math.max(5, node.Size.Z - 1)), frame * CFrame.new(x, supportTop - height / 2, 0), color, if section >= 8 then Enum.Material.Glacier else Enum.Material.Rock)
-		support.CanCollide, support.CanQuery = true, true
-		support:SetAttribute("EnvironmentSolid", true)
-	end
-	local spurTop = node.Size.Y / 2 - 17
-	local spur = roundRock(parent, "MountainRoot", Vector3.new(35, height + 18, math.max(13, node.Size.Z + 2)), frame * CFrame.new(43, spurTop - (height + 18) / 2, 3), color, Enum.Material.Rock)
-	spur.CanCollide, spur.CanQuery = true, true
-	spur:SetAttribute("EnvironmentSolid", true)
 end
 
 local function risingHillside(parent: Instance, node: Node, center: Vector3, section: number, variation: number)
@@ -111,161 +67,208 @@ local function risingHillside(parent: Instance, node: Node, center: Vector3, sec
 	end
 end
 
-local function bankScenery(parent: Instance, node: Node, section: number, step: number)
-	local frame, top = node.CFrame, node.Size.Y / 2
-	local snowy = section >= 8
-	local color = if snowy then SNOW elseif section <= 3 then GRASS else ROCK
-	local material = if snowy then Enum.Material.Snow elseif section <= 3 then Enum.Material.Grass else Enum.Material.Slate
-	for _, x in ipairs({ 53, 70 }) do
-		local height = 12 + ((step + math.floor(x)) % 3) * 4
-		roundRock(parent, "InnerTrailBank", Vector3.new(18, height, math.max(14, node.Size.Z + 5)), frame * CFrame.new(x, top - 4, 1), color, material)
-	end
-	if step % 3 == 1 and (section <= 3 or section == 8) then
-		pine(parent, frame * CFrame.new(55, top + 4, (step % 2) * 5 - 2), 0.72 + (step % 3) * 0.08, snowy)
-	elseif step % 4 == 1 then
-		roundRock(parent, "TrailBoulder", Vector3.new(9 + step % 3, 7, 8), frame * CFrame.new(53, top + 1, 2), color:Lerp(DARK_ROCK, 0.35), material)
-	end
-	if section <= 3 and step % 2 == 0 then fern(parent, frame * CFrame.new(45, top + 2, -3), 0.8, false) end
+local function placeProp(parent: Instance, kind: string, node: Node, x: number, z: number, height: number, yaw: number?, roll: number?)
+	local bottom = node.CFrame * CFrame.new(x, node.Size.Y / 2, z) * CFrame.Angles(0, math.rad(yaw or 0), math.rad(roll or 0))
+	Props.Place(parent, kind, bottom, height)
 end
 
-local function centerIsland(parent: Instance, node: Node, section: number, step: number)
-	if step % 4 ~= 1 then return end
-	local frame, top, snowy = node.CFrame, node.Size.Y / 2, section >= 8
-	local positions = if section <= 3 then { -32, -10, 10 } else { -10, 10 }
+local function sharedGround(parent: Instance, node: Node, section: number, checkpoint: boolean)
+	local width = if checkpoint then math.max(node.Size.X + 2, 64) else 62
+	local ground = part(parent, "SharedAdventureGround", Vector3.new(width, 6, node.Size.Z + 3), node.CFrame * CFrame.new(0, node.Size.Y / 2 - 3.25, 0), if section == 1 then GRASS else SNOW, if section == 1 then Enum.Material.Grass else Enum.Material.Snow, true)
+	ground:SetAttribute("EnvironmentSolid", true)
+end
+
+local function cliffFoundation(parent: Instance, node: Node, section: number, variation: number)
+	if section == 4 or section == 5 then return end
+	local width = math.max(12, node.Size.Z + 4)
+	local height = 22 + variation * 4
+	local face = wedge(parent, "AngularTrailFoundation", Vector3.new(width, height, 24), node.CFrame * CFrame.new(29, node.Size.Y / 2 - 12, 0) * CFrame.Angles(0, math.pi / 2, 0), if section >= 8 then Color3.fromRGB(124, 148, 154) else DARK_ROCK, if section >= 8 then Enum.Material.Glacier else Enum.Material.Rock, true)
+	face:SetAttribute("EnvironmentSolid", true)
+end
+
+local function forestCluster(parent: Instance, node: Node, step: number, snowy: boolean, force: boolean?)
+	local seed = (node:GetAttribute("RouteIndex") or step) :: number
+	local random = Random.new(seed * 977 + (if snowy then 89 else 13))
+	if not force and random:NextNumber() > (if snowy then 0.62 else 0.72) then return end
+	local choices = if snowy then { "PineSnow", "PineWind", "PineA" } else { "PineA", "PineWind", "PineA" }
+	local positions: { number } = {}
+	local desired = random:NextInteger(2, 3)
+	for _ = 1, 30 do
+		if #positions >= desired then break end
+		local candidate = random:NextNumber(-25, 25)
+		local clear = true
+		for _, existing in ipairs(positions) do if math.abs(candidate - existing) < 8 then clear = false end end
+		if snowy then
+			for _, lane in ipairs({ -20, 0, 20 }) do if math.abs(candidate - lane) < 3 then clear = false end end
+		end
+		if clear then table.insert(positions, candidate) end
+	end
 	for _, x in ipairs(positions) do
-		roundRock(parent, "BetweenRouteIsland", Vector3.new(5, 5, math.min(8, node.Size.Z - 1)), frame * CFrame.new(x, top - 1.8, 0), if snowy then SNOW else GRASS, if snowy then Enum.Material.Snow else Enum.Material.Grass)
-		if section <= 3 then
-			pine(parent, frame * CFrame.new(x, top + 0.5, 0), 0.74 + (math.abs(x) % 3) * 0.06, false)
-		elseif section == 8 then
-			fern(parent, frame * CFrame.new(x, top + 0.6, 0), 0.55, snowy)
-		else
-			roundRock(parent, "BetweenRouteStone", Vector3.new(2.8, 4, 2.8), frame * CFrame.new(x, top + 0.8, 0), if snowy then ICE else PALE_ROCK, if snowy then Enum.Material.Glacier else Enum.Material.Rock)
+		local kind = choices[random:NextInteger(1, #choices)]
+		local z = random:NextNumber(-node.Size.Z * 0.4, node.Size.Z * 0.4)
+		placeProp(parent, kind, node, x, z, random:NextNumber(if snowy then 17 else 18, if snowy then 25 else 24), random:NextNumber(-35, 35))
+		for plantIndex = 1, 2 do
+			placeProp(parent, if snowy or random:NextNumber() < 0.58 then "GrassClump" else "Wildflowers", node, math.clamp(x + random:NextNumber(-3.5, 3.5), -28, 28), math.clamp(z + random:NextNumber(-3, 3), -node.Size.Z * 0.42, node.Size.Z * 0.42), random:NextNumber(1.25, 1.9), random:NextNumber(0, 360) + plantIndex)
 		end
 	end
+	for _ = #positions * 2 + 1, random:NextInteger(4, 8) do
+		placeProp(parent, if snowy or random:NextNumber() < 0.6 then "GrassClump" else "Wildflowers", node, random:NextNumber(-27, 27), random:NextNumber(-node.Size.Z * 0.4, node.Size.Z * 0.4), random:NextNumber(1.2, 1.8), random:NextNumber(0, 360))
+	end
 end
 
-local function campHut(parent: Instance, node: Node)
-	local hut = node.CFrame * CFrame.new(52, node.Size.Y / 2, 1)
-	part(parent, "CampFloor", Vector3.new(18, 1, 14), hut * CFrame.new(0, 0.5, 0), WOOD, Enum.Material.WoodPlanks)
-	for _, x in ipairs({ -8, 8 }) do
-		for _, z in ipairs({ -6, 6 }) do part(parent, "HutPost", Vector3.new(1, 10, 1), hut * CFrame.new(x, 5.5, z), WOOD, Enum.Material.Wood) end
+local function trailheadScenery(parent: Instance, node: Node, step: number)
+	forestCluster(parent, node, step, false)
+	if step % 3 == 1 then
+		for _, x in ipairs({ -22, 22 }) do placeProp(parent, if step % 2 == 0 then "Wildflowers" else "GrassClump", node, x, (x / 8) % 3, 1.5 + (step % 3) * 0.2, step * 17 + x) end
 	end
-	part(parent, "HutBackWall", Vector3.new(17, 8, 1), hut * CFrame.new(0, 5, 6), Color3.fromRGB(130, 91, 53), Enum.Material.WoodPlanks)
-	for _, side in ipairs({ -1, 1 }) do
-		part(parent, "PitchedCampRoof", Vector3.new(11, 1, 17), hut * CFrame.new(side * 4.5, 11, 0) * CFrame.Angles(0, 0, math.rad(-side * 30)), CANVAS, Enum.Material.Fabric)
-	end
-	for crate = 1, 3 do part(parent, "SupplyCrate", Vector3.new(3, 3, 3), hut * CFrame.new(-5 + crate * 4, 2, 3), WOOD, Enum.Material.WoodPlanks) end
+	if step == 4 or step == 8 then placeProp(parent, "RootLog", node, if step == 4 then -11 else 12, 1, 3.1, step * 29, if step == 4 then 8 else -6) end
 end
 
-local function gorge(parent: Instance, node: Node, step: number)
-	local frame, top = node.CFrame, node.Size.Y / 2
-	for _, side in ipairs({ -1, 1 }) do roundRock(parent, "RiverGorgeWall", Vector3.new(13, 30, node.Size.Z + 5), frame * CFrame.new(side * 35, top - 12, 0), DARK_ROCK, Enum.Material.Rock) end
+local function propLedge(parent: Instance, node: Node, x: number, width: number, color: Color3, material: Enum.Material)
+	part(parent, "SceneryRestLedge", Vector3.new(width, 4, math.max(7, node.Size.Z - 1)), node.CFrame * CFrame.new(x, node.Size.Y / 2 - 2, 0), color, material, true):SetAttribute("EnvironmentSolid", true)
+end
+
+local function riverbankScenery(parent: Instance, node: Node, step: number, checkpoint: boolean)
+	if not checkpoint and step % 4 ~= 0 then return end
+	local side = if step % 8 == 0 then -1 else 1
+	local x = if checkpoint then side * math.min(25, node.Size.X / 2 - 4) else side * 30
+	propLedge(parent, node, x, 8, DARK_ROCK, Enum.Material.Rock)
+	placeProp(parent, if step % 8 == 0 then "GraniteBoulder" else "LichenBoulder", node, x, 0, 4.2 + step % 3 * 0.35, step * 31, side * 7)
+	placeProp(parent, "GrassClump", node, x - side * 2.5, -2, 1.4, step * 23)
+end
+
+local function switchbackScenery(parent: Instance, node: Node, step: number)
+	if step % 3 ~= 1 then return end
+	for index, x in ipairs({ -29, 29 }) do
+		propLedge(parent, node, x, 7, DARK_ROCK, Enum.Material.Rock)
+		placeProp(parent, if (step + index) % 2 == 0 then "GraniteBoulder" else "BasaltBoulder", node, x, (index - 1.5) * 3, 4.2 + ((step + index) % 3) * 0.5, step * 21 + index * 37, if index == 1 then -10 else 12)
+	end
+end
+
+local function bridgeScenery(parent: Instance, node: Node, step: number)
+	if step % 4 ~= 1 then return end
+	local side = if step % 8 == 1 then 1 else -1
+	propLedge(parent, node, side * 30, 7, DARK_ROCK, Enum.Material.Rock)
+	placeProp(parent, if side == 1 then "GraniteBoulder" else "LichenBoulder", node, side * 30, 0, 4, step * 33, side * 5)
+end
+
+local function basaltOverhang(parent: Instance, node: Node, step: number)
+	if step % 3 ~= 2 then return end
+	local variation = step % 5
+	local rootPosition = node.CFrame * CFrame.new(53, node.Size.Y / 2 + 15 + variation, 0)
+	local rootFrame = CFrame.lookAt(rootPosition.Position, rootPosition.Position - node.CFrame.RightVector)
+	local anchor = wedge(parent, "BasaltOverhangRoot", Vector3.new(node.Size.Z + 8, 34 + variation * 3, 52), rootFrame * CFrame.Angles(0, 0, math.rad((variation - 2) * 3)), DARK_ROCK, Enum.Material.Basalt)
+	anchor.CanCollide, anchor.CanQuery = false, false
+	local x = 16 + variation * 2
+	local overhang = wedge(parent, "BasaltOverhang", Vector3.new(28 + variation * 3, 8 + variation, node.Size.Z + 8 + variation * 2), node.CFrame * CFrame.new(x, node.Size.Y / 2 + 24 + variation, 0) * CFrame.Angles(math.rad((variation - 2) * 4), math.rad(step * 11), math.rad(if step % 2 == 0 then 7 else -9)), DARK_ROCK, Enum.Material.Basalt)
+	overhang.CanCollide, overhang.CanQuery = false, false
+	placeProp(parent, "BasaltBoulder", node, if x > 0 then 34 else -34, 1, 4.5 + variation * 0.2, step * 27, variation * 3)
+end
+
+local function ruinScenery(parent: Instance, node: Node, step: number)
 	if step % 4 == 1 then
-		local fall = part(parent, "Waterfall", Vector3.new(1.1, 27, 8), frame * CFrame.new(48, top - 9, 2), Color3.fromRGB(105, 190, 207), Enum.Material.Glass)
-		fall.Transparency = 0.22
-		part(parent, "WaterfallMist", Vector3.new(9, 1, 9), frame * CFrame.new(43, top - 21, 2), Color3.fromRGB(202, 235, 235), Enum.Material.Neon).Transparency = 0.45
+		local side = if step % 8 == 1 then -1 else 1
+		placeProp(parent, if side == -1 then "RuinPillarA" else "RuinPillarB", node, side * 30, 0, 20 + step % 3, step * 13, -side * (58 + step % 3 * 4))
+		placeProp(parent, "GraniteBoulder", node, side * 24, 3, 3.8, step * 41)
 	end
 end
 
-local function bridgeAnchors(parent: Instance, node: Node, step: number)
-	local top = node.Size.Y / 2 - 17
-	for _, x in ipairs({ -29, 29 }) do
-		local height = 34 + step % 3 * 5
-		local anchor = part(parent, "BridgeGorgeAnchor", Vector3.new(8, height, math.max(8, node.Size.Z - 2)), node.CFrame * CFrame.new(x, top - height / 2, 0), PALE_ROCK, Enum.Material.Rock, true)
-		anchor:SetAttribute("EnvironmentSolid", true)
+local function openCliffScenery(parent: Instance, node: Node, step: number)
+	if step % 5 == 1 then
+		local rootPosition = node.CFrame * CFrame.new(51, node.Size.Y / 2 + 17, 0)
+		local rootFrame = CFrame.lookAt(rootPosition.Position, rootPosition.Position - node.CFrame.RightVector)
+		local rootMass = wedge(parent, "SparseCliffRoot", Vector3.new(node.Size.Z + 5, 37, 48), rootFrame * CFrame.Angles(0, 0, math.rad(-5)), ROCK, Enum.Material.Slate)
+		rootMass.CanCollide, rootMass.CanQuery = false, false
+		placeProp(parent, "GraniteBoulder", node, 30, -2, 4.5, step * 17, -9)
+		local ledge = wedge(parent, "SparseCliffOverhang", Vector3.new(23 + step % 3 * 4, 7, node.Size.Z + 4), node.CFrame * CFrame.new(18, node.Size.Y / 2 + 27, 0) * CFrame.Angles(0, math.rad(step * 9), math.rad(8)), ROCK, Enum.Material.Slate)
+		ledge.CanCollide, ledge.CanQuery = false, false
 	end
 end
 
-local function basaltCavern(parent: Instance, node: Node, step: number)
-	if step % 3 ~= 0 then return end
-	local frame, top = node.CFrame, node.Size.Y / 2
-	for _, x in ipairs({ -32, 32 }) do part(parent, "BasaltCavernColumn", Vector3.new(7, 23 + step % 4 * 3, 8), frame * CFrame.new(x, top + 7, 0), DARK_ROCK, Enum.Material.Basalt) end
-	for _, x in ipairs({ -20, 0, 20 }) do
-		part(parent, "BasaltCavernCeiling", Vector3.new(24, 9, node.Size.Z + 6), frame * CFrame.new(x, top + 26, 0) * CFrame.Angles(0, 0, math.rad(if (x + step) % 2 == 0 then 4 else -4)), DARK_ROCK, Enum.Material.Basalt)
-	end
+local function snowForest(parent: Instance, node: Node, step: number, checkpoint: boolean)
+	forestCluster(parent, node, step, true, checkpoint)
+	if step % 4 == 2 then placeProp(parent, "SnowCoverOutcrop", node, if step % 8 == 2 then -32 else 32, 0, 6.5, step * 29, 4) end
 end
 
-local function overheadGallery(parent: Instance, node: Node, section: number, step: number)
-	local frame, top = node.CFrame, node.Size.Y / 2
-	local color = if section >= 9 then ICE elseif section == 6 then PALE_ROCK else ROCK
-	local material = if section >= 9 then Enum.Material.Glacier elseif section == 6 then Enum.Material.Limestone else Enum.Material.Rock
-	if step % 4 == 1 then
-		for _, x in ipairs({ -32, 32 }) do roundRock(parent, if section == 6 then "RuinGalleryPier" else "RockArchPier", Vector3.new(9, 29, 10), frame * CFrame.new(x, top + 10, 0), color, material) end
-		for _, x in ipairs({ -20, 0, 20 }) do roundRock(parent, if section == 6 then "RuinGalleryLintel" else "RockArchCrown", Vector3.new(28, 8, node.Size.Z + 5), frame * CFrame.new(x, top + 27, 0), color, material) end
-	end
+local function iceOutcrops(parent: Instance, node: Node, step: number)
+	if step % 4 ~= 1 then return end
+	local side = if step % 8 == 1 then -1 else 1
+	placeProp(parent, if side == -1 then "IceToothA" else "IceToothB", node, side * 32, -2, 6.5 + step % 3, side * (10 + step * 3), -side * 8)
+	if step % 8 == 1 then placeProp(parent, "IceToothA", node, side * 27, 4, 4.8, -step * 7, side * 12) end
 end
 
-local function concealRockfallSources(parent: Instance, model: Model)
+local function summitScenery(parent: Instance, node: Node, step: number)
+	if step >= 8 or step % 3 ~= 1 then return end
+	local side = if step % 2 == 0 then -1 else 1
+	placeProp(parent, "SnowCoverOutcrop", node, side * 33, 1, 5.5 + step % 2, step * 31, side * 5)
+end
+
+local function concealRockfallSources(parent: Instance, model: Model, nodes: { Node })
 	local hazards = model:FindFirstChild("Hazards")
 	if not hazards then return end
+	local sources: { BasePart } = {}
 	for _, descendant in ipairs(hazards:GetDescendants()) do
 		if descendant:IsA("BasePart") and descendant.Name == "FallingRock" then
-			local source = descendant :: BasePart
-			roundRock(parent, "RockfallSourcePocket", Vector3.new(13, 11, 13), source.CFrame, source.Color, source.Material)
-			for _, x in ipairs({ -8, 8 }) do
-				roundRock(parent, "RockfallSourceShelf", Vector3.new(12, 9, 16), source.CFrame * CFrame.new(x, 2, 0), source.Color:Lerp(DARK_ROCK, 0.18), source.Material)
-			end
+			table.insert(sources, descendant :: BasePart)
 		end
 	end
-end
-
-local function iceScenery(parent: Instance, node: Node, step: number)
-	if step % 3 ~= 1 then return end
-	local frame, top = node.CFrame, node.Size.Y / 2
-	for _, x in ipairs({ -32, 32 }) do part(parent, "IceArchPillar", Vector3.new(6, 23, 7), frame * CFrame.new(x, top + 9, 0) * CFrame.Angles(0, 0, math.rad(-x / 8)), ICE, Enum.Material.Glacier) end
-	part(parent, "IceArchCrown", Vector3.new(69, 7, node.Size.Z + 3), frame * CFrame.new(0, top + 24, 0), ICE, Enum.Material.Glacier)
-end
-
-local function avalancheCornice(parent: Instance, node: Node, step: number)
-	if step % 3 ~= 1 then return end
-	local frame, top = node.CFrame, node.Size.Y / 2
-	for _, x in ipairs({ -21, 0, 21 }) do roundRock(parent, "AvalancheCornice", Vector3.new(27, 10 + step % 3, node.Size.Z + 10), frame * CFrame.new(x, top + 31, 2), SNOW, Enum.Material.Snow) end
-	for _, x in ipairs({ -25, 26 }) do roundRock(parent, "CorniceAnchor", Vector3.new(13, 25, 13), frame * CFrame.new(x, top + 16, 3), Color3.fromRGB(114, 139, 147), Enum.Material.Glacier) end
+	table.sort(sources, function(a, b)
+		local aIndex = tonumber(a.Parent.Name:match("(%d+)$")) or 0
+		local bIndex = tonumber(b.Parent.Name:match("(%d+)$")) or 0
+		return aIndex < bIndex
+	end)
+	for sourceIndex = 1, #sources, 2 do
+		local first = sources[sourceIndex]
+		local second = sources[math.min(sourceIndex + 1, #sources)]
+		local midpoint = (first.Position + second.Position) / 2
+		local nearest = nodes[1]
+		local nearestDistance = math.huge
+		for _, node in ipairs(nodes) do
+			local distance = (node.Position - midpoint).Magnitude
+			if distance < nearestDistance then nearest, nearestDistance = node, distance end
+		end
+		local side = if sourceIndex % 4 == 1 then 1 else -1
+		local base = (nearest.CFrame * CFrame.new(side * 27, nearest.Size.Y / 2, 0)).Position
+		local supportFrame = CFrame.lookAt(base, midpoint) * CFrame.Angles(-math.pi / 2, 0, 0)
+		Props.Place(parent, if side == 1 then "RuinPillarA" else "RuinPillarB", supportFrame, (midpoint - base).Magnitude)
+		if first ~= second then
+			local beamFrame = CFrame.lookAt(first.Position, second.Position) * CFrame.Angles(-math.pi / 2, 0, 0)
+			Props.Place(parent, "RuinPillarB", beamFrame, (second.Position - first.Position).Magnitude)
+		else
+			Props.Place(parent, "RootLog", first.CFrame * CFrame.new(0, -1.5, 0), 4)
+		end
+		for _, source in ipairs(if first == second then { first } else { first, second }) do
+			Props.Place(parent, if source.Material == Enum.Material.Glacier then "IceToothB" else "GraniteBoulder", source.CFrame * CFrame.new(0, -2.5, 0), if source.Material == Enum.Material.Glacier then 7 else 5)
+		end
+	end
 end
 
 function Environment.Build(model: Model, nodes: { Node }, center: Vector3): Folder
 	local root = Instance.new("Folder")
 	root.Name, root.Parent = "Environment", model.Decoration
+	Props.Prepare()
 	mountain(root, center)
 	for nodeIndex, node in ipairs(nodes) do
 		local section = node:GetAttribute("SectionIndex") :: number
 		local step = (node:GetAttribute("SectionStep") or 0) :: number
 		local checkpoint = node.Parent == model.Checkpoints or node.Name == "Start" or node.Name == "Finish"
-		lowSupport(root, node, section, step)
 		if nodeIndex % 2 == 1 then risingHillside(root, node, center, section, nodeIndex % 3) end
-		bankScenery(root, node, section, step)
-		if section == 1 or section == 8 or section == 10 then
-			local ground = part(root, "SharedAdventureGround", Vector3.new(node.Size.X + (if checkpoint then 2 else 54), 6, node.Size.Z + 3), node.CFrame * CFrame.new(0, node.Size.Y/2 - 3.25, 0), if section == 1 then GRASS else SNOW, if section == 1 then Enum.Material.Grass else Enum.Material.Snow, true)
-			ground:SetAttribute("EnvironmentSolid", true)
-		end
-		if not checkpoint then centerIsland(root, node, section, step) end
-		if section == 1 and step == 2 then
-			campHut(root, node)
-		elseif section == 2 then
-			gorge(root, node, step)
-		elseif section == 3 and step % 3 == 1 then
-			for _, x in ipairs({ -31, 31 }) do roundRock(root, "SwitchbackMarker", Vector3.new(8, 13, 9), node.CFrame * CFrame.new(x, node.Size.Y / 2 + 3, 0), PALE_ROCK, Enum.Material.Rock) end
-		elseif section == 4 and not checkpoint then
-			bridgeAnchors(root, node, step)
-		elseif section == 5 then
-			basaltCavern(root, node, step)
-		elseif section == 6 or section == 7 then
-			overheadGallery(root, node, section, step)
-		elseif section == 8 and not checkpoint and step % 3 == 1 then
-			for _, x in ipairs({ -29, 29 }) do pine(root, node.CFrame * CFrame.new(x, node.Size.Y / 2, 0), 0.7, true) end
-		elseif section == 9 then
-			iceScenery(root, node, step)
-			if not checkpoint then overheadGallery(root, node, section, step) end
-		elseif section == 10 then
-			avalancheCornice(root, node, step)
+		if section == 1 or section == 8 or section == 10 then sharedGround(root, node, section, checkpoint) end
+		if nodeIndex % 3 == 1 and section ~= 1 and section ~= 8 and section ~= 10 then cliffFoundation(root, node, section, nodeIndex % 3) end
+
+		if section == 1 then trailheadScenery(root, node, step)
+		elseif section == 2 then riverbankScenery(root, node, step, checkpoint)
+		elseif section == 3 then switchbackScenery(root, node, step)
+		elseif section == 4 then bridgeScenery(root, node, step)
+		elseif section == 5 then basaltOverhang(root, node, step)
+		elseif section == 6 then ruinScenery(root, node, step)
+		elseif section == 7 then openCliffScenery(root, node, step)
+		elseif section == 8 then snowForest(root, node, step, checkpoint)
+		elseif section == 9 then iceOutcrops(root, node, step)
+		elseif section == 10 then summitScenery(root, node, step)
 		end
 	end
-	concealRockfallSources(root, model)
-	for _, branch in ipairs(model.Obstacles:GetDescendants()) do
-		if branch:IsA("BasePart") and branch:GetAttribute("RoutePad") == true and branch:GetAttribute("Lane") ~= 0 then
-			lowSupport(root, branch, branch:GetAttribute("SectionIndex") :: number, branch:GetAttribute("SectionStep") :: number)
-		end
-	end
+	concealRockfallSources(root, model, nodes)
 	return root
 end
 

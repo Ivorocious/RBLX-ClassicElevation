@@ -1,0 +1,29 @@
+{
+  "initialMotionCheck": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"checkpoints\":19,\"version\":5,\"kinds\":{\"LavaSpurt\":{\"backwards\":false,\"phases\":{\"LavaPause\":true,\"Travelling\":true,\"Cooldown\":true,\"Warning\":true},\"hidden\":true,\"moved\":true},\"RollingLog\":{\"backwards\":false,\"phases\":{\"Travelling\":true,\"Cooldown\":true,\"Warning\":true},\"hidden\":true,\"moved\":true},\"RollingBoulder\":{\"backwards\":false,\"phases\":{\"Travelling\":true,\"Cooldown\":true,\"Warning\":true},\"hidden\":true,\"moved\":true},\"MovingLog\":{\"backwards\":false,\"phases\":{\"Cooldown\":true,\"Travelling\":true},\"hidden\":true,\"moved\":true},\"Snowball\":{\"backwards\":false,\"phases\":{\"Cooldown\":true,\"Warning\":true},\"hidden\":true,\"moved\":false},\"Avalanche\":{\"backwards\":false,\"phases\":{\"Travelling\":true,\"Cooldown\":true,\"Warning\":true},\"hidden\":true,\"moved\":true}}}"
+      }
+    ],
+    "isError": false
+  },
+  "snowballRetest": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"1\":{\"maxDistance\":47.87294387817383,\"name\":\"Snowball_Route_131_-1\",\"phases\":{\"Travelling\":true,\"Cooldown\":true,\"Warning\":true}},\"3\":{\"maxDistance\":29.011192321777345,\"name\":\"Snowball_Route_131_1\",\"phases\":{\"Travelling\":true,\"Cooldown\":true,\"Warning\":true}},\"2\":{\"maxDistance\":49.89689636230469,\"name\":\"Snowball_Route_131_0\",\"phases\":{\"Warning\":true,\"Cooldown\":true,\"Travelling\":true}},\"5\":{\"maxDistance\":39.225032806396487,\"name\":\"Snowball_Route_140_0\",\"phases\":{\"Travelling\":true,\"Cooldown\":true,\"Warning\":true}},\"4\":{\"maxDistance\":53.967742919921878,\"name\":\"Snowball_Route_140_-1\",\"phases\":{\"Warning\":true,\"Cooldown\":true,\"Travelling\":true}},\"6\":{\"maxDistance\":43.82184600830078,\"name\":\"Snowball_Route_140_1\",\"phases\":{\"Travelling\":true,\"Cooldown\":true,\"Warning\":true}}}"
+      }
+    ],
+    "isError": false
+  },
+  "finalStructure": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"previousParts\":4708,\"meshes\":557,\"issues\":[],\"refuges\":8,\"motions\":{\"LavaSpurt\":12,\"RollingLog\":6,\"Snowball\":6,\"MovingLog\":60,\"Avalanche\":6,\"RollingBoulder\":4},\"syntaxErrors\":[],\"version\":5,\"warnings\":44,\"parts\":2478}"
+      }
+    ],
+    "isError": false
+  }
+}

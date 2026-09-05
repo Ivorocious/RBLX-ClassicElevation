@@ -54,3 +54,11 @@ Track scoped implementation work for ProjectClassicElevation here.
 - [x] Instant checkpoint recovery and one focused Studio verification session.
 - [ ] User manual fine-tuning and full playtest, including 20-player behavior.
 - [ ] Revisit intermission/lobby flow with the planned lobby rebuild.
+
+## Classic Ascent v5
+
+- [x] Blender prop kit, irregular scenery, larger gaps, rolling hazards, bridge refuges, red warnings, and clear summit approach.
+- [x] Rojo build, Studio syntax/structure checks, and short motion checks.
+- [ ] Owner playtest: gaps, slippery ice, bridge crowds, snowball cover, and finish reveal; no 20-player or course-time claim yet.
+
+See [v5 handoff](CLASSIC_ASCENT_V5.md).

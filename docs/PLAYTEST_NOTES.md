@@ -326,3 +326,7 @@ checkpoint-recovery and moving-hazard checks passed. No full-course traversal or
 20-player session. Reviewed mountain/forest/river views and corrected unintended
 outside-lane jump lengths. Final geometry-only rope/alcove adjustments followed.
 See docs/artifacts/classic-ascent-v4-quick-check.json. Full playtests belong to the user.
+
+## 2026-09-06 - v5 focused validation
+
+No full-course run. Brief checks confirmed moving-log one-way travel and hidden resets, rolling logs/boulders, and existing lava/avalanche cycles. Fixed snowballs being consumed by mountain wedge bounds; all six snowman lanes then travelled and cycled. All 19 checkpoints remain; eight bridge refuges and 44 red warning circles are present. Full difficulty and 20-player validation remain with the owner. See [v5 handoff](CLASSIC_ASCENT_V5.md).

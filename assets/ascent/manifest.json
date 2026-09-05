@@ -1,0 +1,281 @@
+{
+  "scene": "AscentPropsV5",
+  "authorUnits": "studs",
+  "props": [
+    {
+      "name": "PineA",
+      "height": 22,
+      "parts": [
+        "PineA__Bark",
+        "PineA__Needles"
+      ],
+      "triangles": 1140
+    },
+    {
+      "name": "PineWind",
+      "height": 20,
+      "parts": [
+        "PineWind__Bark",
+        "PineWind__Needles"
+      ],
+      "triangles": 1140
+    },
+    {
+      "name": "PineSnow",
+      "height": 25,
+      "parts": [
+        "PineSnow__Bark",
+        "PineSnow__Needles",
+        "PineSnow__Snow"
+      ],
+      "triangles": 1332
+    },
+    {
+      "name": "GraniteBoulder",
+      "height": 5,
+      "parts": [
+        "GraniteBoulder__Granite"
+      ],
+      "triangles": 80
+    },
+    {
+      "name": "BasaltBoulder",
+      "height": 5,
+      "parts": [
+        "BasaltBoulder__Basalt"
+      ],
+      "triangles": 80
+    },
+    {
+      "name": "LichenBoulder",
+      "height": 5,
+      "parts": [
+        "LichenBoulder__Granite",
+        "LichenBoulder__Lichen"
+      ],
+      "triangles": 180
+    },
+    {
+      "name": "RuinPillarA",
+      "height": 18,
+      "parts": [
+        "RuinPillarA__Limestone"
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "RuinPillarB",
+      "height": 18,
+      "parts": [
+        "RuinPillarB__Limestone"
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "IceToothA",
+      "height": 7,
+      "parts": [
+        "IceToothA__Ice"
+      ],
+      "triangles": 24
+    },
+    {
+      "name": "IceToothB",
+      "height": 8,
+      "parts": [
+        "IceToothB__Ice"
+      ],
+      "triangles": 24
+    },
+    {
+      "name": "GrassClump",
+      "height": 2,
+      "parts": [
+        "GrassClump__Grass"
+      ],
+      "triangles": 144
+    },
+    {
+      "name": "Wildflowers",
+      "height": 2,
+      "parts": [
+        "Wildflowers__FlowerPurple",
+        "Wildflowers__FlowerWhite",
+        "Wildflowers__FlowerYellow",
+        "Wildflowers__Grass"
+      ],
+      "triangles": 384
+    },
+    {
+      "name": "RootLog",
+      "height": 3.4,
+      "parts": [
+        "RootLog__Bark"
+      ],
+      "triangles": 264
+    },
+    {
+      "name": "Snowman",
+      "height": 7,
+      "parts": [
+        "Snowman__Bark",
+        "Snowman__Carrot",
+        "Snowman__Coal",
+        "Snowman__Scarf",
+        "Snowman__Snow"
+      ],
+      "triangles": 388
+    },
+    {
+      "name": "SnowCoverOutcrop",
+      "height": 8,
+      "parts": [
+        "SnowCoverOutcrop__Granite",
+        "SnowCoverOutcrop__Snow"
+      ],
+      "triangles": 300
+    }
+  ],
+  "colors": {
+    "PineA__Bark": [
+      0.23999999463558197,
+      0.11999999731779099,
+      0.054999999701976776
+    ],
+    "PineA__Needles": [
+      0.054999999701976776,
+      0.2199999988079071,
+      0.11999999731779099
+    ],
+    "PineWind__Bark": [
+      0.23999999463558197,
+      0.11999999731779099,
+      0.054999999701976776
+    ],
+    "PineWind__Needles": [
+      0.054999999701976776,
+      0.2199999988079071,
+      0.11999999731779099
+    ],
+    "PineSnow__Bark": [
+      0.23999999463558197,
+      0.11999999731779099,
+      0.054999999701976776
+    ],
+    "PineSnow__Needles": [
+      0.054999999701976776,
+      0.2199999988079071,
+      0.11999999731779099
+    ],
+    "PineSnow__Snow": [
+      0.8299999833106995,
+      0.9100000262260437,
+      0.9399999976158142
+    ],
+    "GraniteBoulder__Granite": [
+      0.3100000023841858,
+      0.3400000035762787,
+      0.3400000035762787
+    ],
+    "BasaltBoulder__Basalt": [
+      0.10000000149011612,
+      0.14000000059604645,
+      0.1599999964237213
+    ],
+    "LichenBoulder__Granite": [
+      0.3100000023841858,
+      0.3400000035762787,
+      0.3400000035762787
+    ],
+    "LichenBoulder__Lichen": [
+      0.30000001192092896,
+      0.38999998569488525,
+      0.20000000298023224
+    ],
+    "RuinPillarA__Limestone": [
+      0.47999998927116394,
+      0.44999998807907104,
+      0.3499999940395355
+    ],
+    "RuinPillarB__Limestone": [
+      0.47999998927116394,
+      0.44999998807907104,
+      0.3499999940395355
+    ],
+    "IceToothA__Ice": [
+      0.33000001311302185,
+      0.6800000071525574,
+      0.8199999928474426
+    ],
+    "IceToothB__Ice": [
+      0.33000001311302185,
+      0.6800000071525574,
+      0.8199999928474426
+    ],
+    "GrassClump__Grass": [
+      0.18000000715255737,
+      0.3799999952316284,
+      0.11999999731779099
+    ],
+    "Wildflowers__Grass": [
+      0.18000000715255737,
+      0.3799999952316284,
+      0.11999999731779099
+    ],
+    "Wildflowers__FlowerWhite": [
+      0.949999988079071,
+      0.9300000071525574,
+      0.8100000023841858
+    ],
+    "Wildflowers__FlowerYellow": [
+      0.949999988079071,
+      0.6200000047683716,
+      0.05000000074505806
+    ],
+    "Wildflowers__FlowerPurple": [
+      0.47999998927116394,
+      0.20000000298023224,
+      0.6200000047683716
+    ],
+    "RootLog__Bark": [
+      0.23999999463558197,
+      0.11999999731779099,
+      0.054999999701976776
+    ],
+    "Snowman__Snow": [
+      0.8299999833106995,
+      0.9100000262260437,
+      0.9399999976158142
+    ],
+    "Snowman__Coal": [
+      0.02500000037252903,
+      0.029999999329447746,
+      0.03500000014901161
+    ],
+    "Snowman__Carrot": [
+      0.949999988079071,
+      0.27000001072883606,
+      0.03500000014901161
+    ],
+    "Snowman__Bark": [
+      0.23999999463558197,
+      0.11999999731779099,
+      0.054999999701976776
+    ],
+    "Snowman__Scarf": [
+      0.5799999833106995,
+      0.054999999701976776,
+      0.04500000178813934
+    ],
+    "SnowCoverOutcrop__Granite": [
+      0.3100000023841858,
+      0.3400000035762787,
+      0.3400000035762787
+    ],
+    "SnowCoverOutcrop__Snow": [
+      0.8299999833106995,
+      0.9100000262260437,
+      0.9399999976158142
+    ]
+  }
+}

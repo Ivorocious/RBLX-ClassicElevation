@@ -133,3 +133,7 @@ killing the Humanoid. Nonlethal snowballs deal 35 damage; lethal damage recovers
 heals. CourseMotionService owns log travel, vents and projectile cycles. No client
 authority or new gameplay remotes. Unexpected real deaths retain the old fallback.
 Preserve the user's manual sign transforms in source and archive the original model.
+
+## 2026-09-06 - Classic Ascent v5 mesh scenery
+
+Use the explicitly approved Blender prop asset 89332142209949, cached as named templates, for the v5 course. Preserve the approved mountain and the archived v4 course; remove repetitive ellipsoid decoration. Moving logs use one-way hidden resets; rolling hazards remain server-authoritative. See [v5 handoff](CLASSIC_ASCENT_V5.md).
