@@ -482,6 +482,8 @@ local function handleDevRaceStateRequest(player: Player, payload)
 		end
 	elseif action == "SkipState" then
 		endCurrentTimedStateNow("SkipState")
+	elseif action == "SkipCheckpoint" then
+		if checkpointService ~= nil then checkpointService.SkipCheckpointForStudio(player) end
 	elseif action == "EndRace" then
 		if currentRaceState == RaceConstants.RaceState.Racing then
 			endCurrentTimedStateNow("EndRace")

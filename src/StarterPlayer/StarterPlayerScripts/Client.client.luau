@@ -180,7 +180,7 @@ local function createDevRaceControls()
 	frame.Name = "Panel"
 	frame.AnchorPoint = Vector2.new(1, 0)
 	frame.Position = UDim2.new(1, -32, 0, 210)
-	frame.Size = UDim2.fromOffset(180, 142)
+	frame.Size = UDim2.fromOffset(180, 176)
 	frame.BackgroundColor3 = Color3.fromRGB(25, 28, 34)
 	frame.BackgroundTransparency = 0.1
 	frame.BorderSizePixel = 0
@@ -199,6 +199,7 @@ local function createDevRaceControls()
 	local buttons = {
 		{ label = "Start Race", action = "StartRaceNow" },
 		{ label = "Skip State", action = "SkipState" },
+		{ label = "Skip checkpoint", action = "SkipCheckpoint" },
 		{ label = "End Race", action = "EndRace" },
 	}
 

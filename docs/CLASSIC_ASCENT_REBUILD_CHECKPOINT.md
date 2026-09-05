@@ -54,6 +54,10 @@ No new gameplay remotes, economy, DataStore, publishing or circuit work.
 
 ## Manual fine-tuning
 
+Studio's DEV RACE panel includes **Skip checkpoint**. During Racing it moves the
+local official racer to the next checkpoint (then Finish), using normal touch
+registration. It is guarded on both client and server and unavailable in live games.
+
 The library model is used for races; Workspace.RaceCourse is only a preview.
 Capture Workspace edits back into the library before Play, preserving an archive.
 Ensure preserves existing v4 models. Further generator edits need deliberate

@@ -397,6 +397,20 @@ function CheckpointService.GetLatestCheckpointIndex(player: Player): number
 	return math.max(CheckpointConfig.StartingCheckpointIndex, playerProgress.nextCheckpointIndex - 1)
 end
 
+function CheckpointService.SkipCheckpointForStudio(player: Player)
+	if not game:GetService("RunService"):IsStudio() or not isValidOfficialRacer(player) then return end
+	local character = player.Character
+	local humanoid = if character then character:FindFirstChildOfClass("Humanoid") else nil
+	local root = if character then character:FindFirstChild("HumanoidRootPart") else nil
+	if not character or not humanoid or humanoid.Health <= 0 or not root or not root:IsA("BasePart") then return end
+	local nextCheckpoint = getCheckpointDefinitionByIndex(CheckpointService.GetLatestCheckpointIndex(player) + 1)
+	local target = if nextCheckpoint then nextCheckpoint.part else finishPart
+	if not target then return end
+	root.AssemblyLinearVelocity, root.AssemblyAngularVelocity = Vector3.zero, Vector3.zero
+	character:PivotTo(target.CFrame + Vector3.new(0, RESPAWN_VERTICAL_OFFSET, 0))
+	-- Landing uses the normal checkpoint touch validation and saves recovery progress.
+end
+
 function CheckpointService.GetCheckpointRespawnCFrame(player: Player): CFrame?
 	local latestCheckpointIndex = CheckpointService.GetLatestCheckpointIndex(player)
 	local respawnPart = startPart
