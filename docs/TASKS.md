@@ -71,3 +71,13 @@ See [v5 handoff](CLASSIC_ASCENT_V5.md).
 - [ ] Accept river rider behavior manually: idle carry, walking, jumping and hidden wrap. Automated idle carry checks remain inconclusive/failed.
 
 See [v6 handoff](CLASSIC_ASCENT_V6.md).
+
+## Classic Ascent v7
+
+- [x] Shorter/fewer river logs, complete banks and animated foam.
+- [x] Scattered footholds, ravine mist, broken gallery, varied projectile arcs and denser scenery.
+- [x] Upload approved Blender kit, review candidate, archive approved v6 copies and install v7.
+- [x] Focused geometry, build and live movement checks.
+- [ ] Owner acceptance of log riding, jump difficulty, projectile cover and crowd performance.
+
+See [v7 handoff](CLASSIC_ASCENT_V7.md).

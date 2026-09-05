@@ -108,32 +108,43 @@ end
 
 local function riverLog(parent: Instance, pad: BasePart, central: BasePart, lane: number, step: number)
 	pad.Transparency,pad.CanCollide,pad.CanTouch,pad.CanQuery = 1,false,false,false
+	if lane == 0 then return end
 	local direction = if step%2 == 0 then 1 else -1
-	local start = central.CFrame*CFrame.new(-direction*50,-0.7,0)
-	local finish = central.CFrame*CFrame.new(direction*50,-0.7,0)
-	local progress = 0.18+(lane+1)*0.32
+	local start = central.CFrame*CFrame.new(-direction*34,-0.4,0)
+	local finish = central.CFrame*CFrame.new(direction*34,-0.4,0)
+	local progress = if lane < 0 then 0.22 else 0.72
 	local m = group(parent,"RiverLog_"..pad.Name)
-	local log = part(m,"FlowingLog",Vector3.new(26,4.4,4.4),start:Lerp(finish,progress),WOOD,Enum.Material.Wood,true)
+	local log = part(m,"FlowingLog",Vector3.new(16,3.8,3.8),start:Lerp(finish,progress),WOOD,Enum.Material.Wood,true)
 	log.Shape = Enum.PartType.Cylinder
-	motion(log,"MovingLog",finish,14,0.6,0)
+	motion(log,"MovingLog",finish,13,0.6,0)
 	log:SetAttribute("MotionStart",start)
 	log:SetAttribute("InitialProgress",progress)
 	for _, side in ipairs({-1,1}) do
-		local cap = part(log,"CutEnd",Vector3.new(0.08,4.1,4.1),log.CFrame*CFrame.new(side*13.02,0,0),Color3.fromRGB(180,138,87),Enum.Material.Wood)
+		local cap = part(log,"CutEnd",Vector3.new(0.06,3.5,3.5),log.CFrame*CFrame.new(side*8.02,0,0),Color3.fromRGB(180,138,87),Enum.Material.Wood)
 		cap.Shape,cap.CanTouch,cap.CanQuery = Enum.PartType.Cylinder,false,false
 	end
 end
 
 local function rollingBoulder(parent: Instance, pad: BasePart, step: number)
 	local m = group(parent,"HillsideBoulder_"..step)
-	local diameter = 6+step%3
-	local start = pad.CFrame*CFrame.new(38,diameter/2+1.5,0)
-	local finish = pad.CFrame*CFrame.new(-40,diameter/2+1.5,0)
+	local diameter = 4.5+step%4
+	local start = pad.CFrame*CFrame.new(32,18+diameter/2,-2+step%5)
+	local finish = pad.CFrame*CFrame.new(-38,-6,2-step%5)
 	local rock = part(m,"RollingBoulder",Vector3.one*diameter,start,ROCK,Enum.Material.Rock)
 	rock.Shape,rock.Transparency = Enum.PartType.Ball,1
+	rock:SetAttribute("ActiveTransparency",1)
 	motion(rock,"RollingBoulder",finish,4.8,6,step*0.4)
-	rock:SetAttribute("PauseMin",4)
-	rock:SetAttribute("PauseMax",8)
+	rock:SetAttribute("PhysicsMotion",true)
+	rock:SetAttribute("BounceCount",2)
+	rock:SetAttribute("ArcHeight",4)
+	rock:SetAttribute("VisualSpin",true)
+	rock:SetAttribute("PauseMin",5)
+	rock:SetAttribute("PauseMax",10)
+	local visual = Props.Place(rock,if step%2 == 0 then "GraniteBoulder" else "BasaltBoulder",start*CFrame.new(0,-diameter/2,0),diameter)
+	visual.Name = "TumblingStone"
+	for _, mesh in ipairs(visual:GetDescendants()) do
+		if mesh:IsA("BasePart") then mesh.Transparency = 1; mesh:SetAttribute("ActiveTransparency", 0) end
+	end
 	warning(m,pad.CFrame*CFrame.new(20,1.56,0),diameter+2)
 	Props.Place(m,"BasaltBoulder",pad.CFrame*CFrame.new(43,-3,1)*CFrame.Angles(0,0.7,0),15)
 end
@@ -147,6 +158,17 @@ local function projectile(parent: Instance, startNode: BasePart, endNode: BasePa
 	local destination = (endNode.CFrame * CFrame.new(lane*20, height, 0)).Position
 	local ball = part(m, kind, Vector3.one*diameter, CFrame.lookAt(origin, destination), SNOW, Enum.Material.Snow)
 	ball.Shape, ball.Transparency = Enum.PartType.Ball, 1
+	ball:SetAttribute("PhysicsMotion",true)
+	ball:SetAttribute("BounceCount",if avalanche then 2 else 0)
+	ball:SetAttribute("ArcHeight",if avalanche then 2.8 else 6)
+	ball:SetAttribute("VisualSpin",true)
+	for i=1,4 do
+		local angle = i*math.pi/2
+		local fleck = part(ball,"PackedSnow",Vector3.one*diameter*0.2,ball.CFrame*CFrame.new(math.cos(angle)*diameter*.43,math.sin(angle)*diameter*.43,0),Color3.fromRGB(189,210,220),Enum.Material.Snow)
+		fleck.Shape,fleck.CanQuery,fleck.CanTouch = Enum.PartType.Ball,false,false
+		fleck.Transparency = 1
+		fleck:SetAttribute("ActiveTransparency", 0)
+	end
 	motion(ball, kind, CFrame.lookAt(destination, destination+(destination-origin)), if avalanche then 4.5 else 2.4, if avalanche then 6 else 3.8, offset)
 	ball:SetAttribute("Damage", 35)
 	warning(m, startNode.CFrame*CFrame.new(lane*20,1.56,0), diameter+2)
@@ -175,13 +197,20 @@ function Obstacles.Build(model: Model, nodes: {BasePart})
 		if step then bySection[section][step] = node end
 		if step and (section == 2 or section == 5) then
 			local water = section == 2
-			local bed = part(hazards, if water then "MountainRiver" else "LavaBasin", Vector3.new(if water then 100 else 68,1,node.Size.Z+6), node.CFrame*CFrame.new(0,-6,0), if water then Color3.fromRGB(50,118,137) else Color3.fromRGB(229,92,30), if water then Enum.Material.Glass else Enum.Material.Neon)
+			if water and (step%4 == 0 or node.Parent == model.Checkpoints) then
+				part(details,"CompleteRiverBank",Vector3.new(92,4,node.Size.Z+2),node.CFrame*CFrame.new(0,-0.7,0),Color3.fromRGB(106,118,83),Enum.Material.Ground,true)
+				continue
+			end
+			local bed = part(hazards, if water then "MountainRiver" else "LavaBasin", Vector3.new(if water then 92 else 68,1,node.Size.Z+6), node.CFrame*CFrame.new(0,if water then -2.3 else -6,0), if water then Color3.fromRGB(50,118,137) else Color3.fromRGB(229,92,30), if water then Enum.Material.SmoothPlastic else Enum.Material.Neon)
 			bed.Transparency = if water then 0.22 else 0
 			bed:SetAttribute("HazardType", "Kill")
 			if water then
-				for _, x in ipairs({-15,12}) do
-					local foam = part(details,"RiverFoam",Vector3.new(10,0.08,0.6),node.CFrame*CFrame.new(x,-5.4,0),Color3.fromRGB(199,230,223),Enum.Material.SmoothPlastic)
+				for _, x in ipairs({-29,0,29}) do
+					local foam = part(details,"RiverFoam",Vector3.new(6,0.04,0.35),node.CFrame*CFrame.new(x,-1.76,-1.5),Color3.fromRGB(199,230,223),Enum.Material.SmoothPlastic)
 					foam.CanTouch, foam.CanQuery = false, false
+					foam:SetAttribute("FlowOrigin",node.CFrame*CFrame.new(0,-1.76,-1.5))
+					foam:SetAttribute("FlowPhase",(x+32)/86)
+					foam:SetAttribute("FlowDirection",if step%2==0 then 1 else -1)
 				end
 			end
 		end
@@ -197,8 +226,10 @@ function Obstacles.Build(model: Model, nodes: {BasePart})
 			if step%4 ~= 0 then
 				riverLog(hazards,pad,bySection[2][step],lane,step)
 			elseif lane == 0 then
-				pad.Size = Vector3.new(66,3,pad.Size.Z)
+				pad.Size = Vector3.new(92,3,pad.Size.Z)
 				pad.Material = Enum.Material.Ground
+			else
+				pad.Transparency,pad.CanCollide,pad.CanTouch,pad.CanQuery = 1,false,false,false
 			end
 		elseif section == 3 or section == 9 then
 			pad.Size = Vector3.new(pad.Size.X, 5+(step%3), pad.Size.Z)
@@ -220,7 +251,7 @@ function Obstacles.Build(model: Model, nodes: {BasePart})
 			plume.Transparency=1
 			motion(plume,"LavaSpurt",cf*CFrame.new(0,5,0),0.75,1.4,index%5*0.65)
 		elseif section == 6 then
-			if (step+lane)%3 == 1 then rockfall(hazards,pad,index) end
+			if step%2 == 1 and (step+lane)%3 == 1 then rockfall(hazards,pad,index) end
 		elseif section == 7 then
 			if (step+lane*2)%5 == 1 then cover(details,pad,if lane == 1 then 1 else -1) end
 		elseif section == 8 then

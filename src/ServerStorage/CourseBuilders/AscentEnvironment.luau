@@ -93,12 +93,21 @@ end
 local function forestWall(parent: Instance, node: Node, section: number, step: number, snowy: boolean, checkpoint: boolean)
 	local seed = (node:GetAttribute("RouteIndex") or step) :: number
 	local random = Random.new(seed * 1129 + section * 71)
-	if random:NextNumber() < (if snowy then 0.18 else 0.24) then return end
-	local count = random:NextInteger(1, 3)
+	-- Wider gaps are intentional view windows; populated nodes form a dense left-biased forest bank.
+	if random:NextNumber() < (if snowy then 0.16 else 0.2) then return end
+	local count = random:NextInteger(3, 6)
 	for _ = 1, count do
-		local x = scenicX(random)
-		local kind = if snowy and random:NextNumber() < 0.7 then "PineSnow" elseif random:NextNumber() < 0.38 then "PineWind" else "PineA"
+		local x = if random:NextNumber() < 0.72 then random:NextNumber(-59, -42) else random:NextNumber(42, 59)
+		local kind = if not snowy and random:NextNumber() < 0.3 then "Cedar" elseif snowy and random:NextNumber() < 0.7 then "PineSnow" elseif random:NextNumber() < 0.38 then "PineWind" else "PineA"
 		placeProp(parent, kind, node, x, random:NextNumber(-node.Size.Z * 0.42, node.Size.Z * 0.42), random:NextNumber(if snowy then 18 else 19, if snowy then 26 else 25), random:NextNumber(-50, 50))
+	end
+	if not checkpoint then
+		for _ = 1, random:NextInteger(2, 5) do
+			local x = if random:NextNumber() < 0.7 then random:NextNumber(-58, -41) else random:NextNumber(41, 58)
+			local kind = if snowy then (if random:NextNumber() < 0.58 then "SnowCoverOutcrop" else "LichenBoulder") elseif random:NextNumber() < 0.34 then "RootLog" elseif random:NextNumber() < 0.56 then "LichenBoulder" elseif random:NextNumber() < 0.55 then "Fern" elseif random:NextNumber() < 0.78 then "Wildflowers" else "GrassClump"
+			local height = if kind == "RootLog" then random:NextNumber(2.5, 3.8) elseif kind == "SnowCoverOutcrop" then random:NextNumber(3.5, 6) elseif kind == "LichenBoulder" then random:NextNumber(2.2, 4.5) else random:NextNumber(1.0, 1.7)
+			placeProp(parent, kind, node, x, random:NextNumber(-node.Size.Z * 0.42, node.Size.Z * 0.42), height, random:NextNumber(0, 360))
+		end
 	end
 	if not snowy and not checkpoint and section == 1 and step > 0 and random:NextNumber() < 0.65 then
 		local x = if random:NextNumber() < 0.5 then -10 else 10
@@ -128,19 +137,23 @@ local function riverForest(parent: Instance, node: Node, step: number)
 	local seed = (node:GetAttribute("RouteIndex") or step) :: number
 	local random = Random.new(seed * 1237 + 29)
 	if random:NextNumber() < 0.25 then return end
-	for _ = 1, random:NextInteger(1, 2) do
-		local x = if random:NextNumber() < 0.5 then random:NextNumber(-64, -53) else random:NextNumber(53, 64)
-		placeProp(parent, if random:NextNumber() < 0.38 then "PineWind" else "PineA", node, x, random:NextNumber(-node.Size.Z * 0.4, node.Size.Z * 0.4), random:NextNumber(18, 24), random:NextNumber(-45, 45))
+	for _ = 1, random:NextInteger(3, 5) do
+		local x = if random:NextNumber() < 0.72 then random:NextNumber(-63, -49) else random:NextNumber(49, 63)
+		placeProp(parent, if random:NextNumber() < 0.3 then "Cedar" elseif random:NextNumber() < 0.38 then "PineWind" else "PineA", node, x, random:NextNumber(-node.Size.Z * 0.4, node.Size.Z * 0.4), random:NextNumber(18, 24), random:NextNumber(-45, 45))
+	end
+	if random:NextNumber() < 0.72 then
+		placeProp(parent, if random:NextNumber() < 0.5 then "RootLog" else "LichenBoulder", node, random:NextNumber(-62, -50), random:NextNumber(-node.Size.Z * 0.35, node.Size.Z * 0.35), random:NextNumber(2.8, 4.4), random:NextNumber(0, 360))
 	end
 end
 
 local function iceScenery(parent: Instance, node: Node, step: number)
 	local seed = (node:GetAttribute("RouteIndex") or step) :: number
 	local random = Random.new(seed * 947 + 901)
-	if random:NextNumber() < 0.58 then return end
-	for _ = 1, random:NextInteger(1, 2) do
-		placeProp(parent, if random:NextNumber() < 0.5 then "IceToothA" else "IceToothB", node, scenicX(random), random:NextNumber(-node.Size.Z * 0.38, node.Size.Z * 0.38), random:NextNumber(5.5, 9), random:NextNumber(-28, 28))
+	if random:NextNumber() < 0.48 then return end
+	for _ = 1, random:NextInteger(2, 4) do
+		placeProp(parent, if random:NextNumber() < 0.5 then "IceToothA" else "IceToothB", node, scenicX(random), random:NextNumber(-node.Size.Z * 0.4, node.Size.Z * 0.4), random:NextNumber(18, 35), random:NextNumber(-18, 18))
 	end
+	if random:NextNumber() < 0.55 then placeProp(parent, "SnowCoverOutcrop", node, scenicX(random), random:NextNumber(-2, 2), random:NextNumber(4.5, 7.5), random:NextNumber(-25, 25)) end
 end
 
 local function summitScenery(parent: Instance, node: Node, step: number)
@@ -155,7 +168,21 @@ function Environment.Build(model: Model, nodes: { Node }, center: Vector3): Fold
 	root.Name, root.Parent = "Environment", model.Decoration
 	Props.Prepare()
 	mountain(root, center)
+	local summitFrame = CFrame.new(center + Vector3.new(0, 180, 0)) * CFrame.Angles(0, math.rad(24), 0)
+	local summit = Props.Place(root, "AlpineMassif", summitFrame, 380)
+	for _, mesh in ipairs(summit:GetDescendants()) do
+		if mesh:IsA("BasePart") then
+			local relative = summitFrame:ToObjectSpace(mesh.CFrame)
+			mesh.Size *= Vector3.new(.65,1,.65)
+			mesh.CFrame = summitFrame*CFrame.new(relative.Position*Vector3.new(.65,1,.65))*relative.Rotation
+		end
+	end
 	for nodeIndex, node in ipairs(nodes) do
+		local frame = node:GetAttribute("SceneryFrame")
+		if typeof(frame) == "CFrame" then
+			node = node:Clone()
+			node.CFrame = frame
+		end
 		local section = node:GetAttribute("SectionIndex") :: number
 		local step = (node:GetAttribute("SectionStep") or 0) :: number
 		local checkpoint = node.Parent == model.Checkpoints or node.Name == "Start" or node.Name == "Finish"

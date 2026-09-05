@@ -334,3 +334,7 @@ No full-course run. Brief checks confirmed moving-log one-way travel and hidden 
 ## 2026-09-06 - v6 focused review
 
 Visually reviewed forest, river, cliffs, gallery and summit. All 170 route samples hit both boundary walls; 19 checkpoints remain. Rojo build and Studio source compilation passed. Focused river checks showed movement/jumping possible, but idle rider drift remained about the log travel distance in automated samples. Native log physics is installed; manual rider carry and hidden-wrap acceptance remain open. No full-course or 20-player run. See [v6 handoff](CLASSIC_ASCENT_V6.md).
+
+## 2026-09-06 - v7 focused review
+
+Rojo build and Studio compilation/build passed. Reviewed river, cliffs, causeway, summit and background. Installed v7 has 4,170 parts and 19 checkpoints; all 170 samples hit both boundary walls. Central projected gaps measured up to 6.86 studs, height offsets up to 1.48. All 40 river logs moved in a 0.6-second server sample; client foam movement and atmosphere density 0.34 were observed. Projectile cycles were active. Automated rider placement triggered recovery, so rider acceptance remains manual. No full-course or 20-player run. See [v7 handoff](CLASSIC_ASCENT_V7.md).

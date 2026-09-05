@@ -3,18 +3,18 @@
 local ServerStorage = game:GetService("ServerStorage")
 local InsertService = game:GetService("InsertService")
 local Manifest = require(script.Parent.AscentPropManifest)
+local V7Manifest = require(script.Parent.AscentV7PropManifest)
 local Props = {}
 local templates: Folder? = nil
 
-function Props.Prepare(): Folder
-	if templates then return templates end
-	local cached = ServerStorage:FindFirstChild("AscentMeshLibraryV5")
-	if cached and cached:IsA("Folder") then templates = cached; return cached end
-	local source = ServerStorage:FindFirstChild("AscentPropsImportV5")
+local function prepareLibrary(manifest: any, version: string): Folder
+	local cached = ServerStorage:FindFirstChild("AscentMeshLibrary" .. version)
+	if cached and cached:IsA("Folder") then return cached end
+	local source = ServerStorage:FindFirstChild("AscentPropsImport" .. version)
 	if not source then
-		assert(Manifest.AssetId > 0, "The Blender prop kit must be uploaded before building Classic Ascent v5")
-		source = InsertService:LoadAsset(Manifest.AssetId)
-		source.Name, source.Parent = "AscentPropsImportV5", ServerStorage
+		assert(manifest.AssetId > 0, "The Blender prop kit must be uploaded before building Classic Ascent")
+		source = InsertService:LoadAsset(manifest.AssetId)
+		source.Name, source.Parent = "AscentPropsImport" .. version, ServerStorage
 	end
 	local meshes: {[string]: MeshPart} = {}
 	for _, object in ipairs(source:GetDescendants()) do
@@ -22,15 +22,15 @@ function Props.Prepare(): Folder
 		if object:IsA("MeshPart") then meshes[object.Name] = object end
 	end
 	local library = Instance.new("Folder")
-	library.Name = "AscentMeshLibraryV5"
-	for name, definition in pairs(Manifest.Props) do
+	library.Name = "AscentMeshLibrary" .. version
+	for name, definition in pairs(manifest.Props) do
 		local model = Instance.new("Model")
 		model.Name = name
 		for _, meshName in ipairs(definition.parts) do
 			local original = meshes[meshName]
 			assert(original, "Missing Blender mesh: " .. meshName)
 			local mesh = original:Clone()
-			mesh.Color, mesh.Material = Manifest.Colors[meshName], Enum.Material.SmoothPlastic
+			mesh.Color, mesh.Material = manifest.Colors[meshName], Enum.Material.SmoothPlastic
 			mesh.Anchored, mesh.CanCollide, mesh.CanTouch, mesh.CanQuery = true, false, false, false
 			mesh.Parent = model
 		end
@@ -44,6 +44,16 @@ function Props.Prepare(): Folder
 		model.Parent = library
 	end
 	library.Parent = ServerStorage
+	return library
+end
+
+function Props.Prepare(): Folder
+	if templates then return templates end
+	local original = prepareLibrary(Manifest, "V5")
+	local library = prepareLibrary(V7Manifest, "V7")
+	for _, model in ipairs(original:GetChildren()) do
+		if not library:FindFirstChild(model.Name) then model:Clone().Parent = library end
+	end
 	templates = library
 	return library
 end

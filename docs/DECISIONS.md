@@ -141,3 +141,7 @@ Use the explicitly approved Blender prop asset 89332142209949, cached as named t
 ## 2026-09-06 - Classic Ascent v6 grounding
 
 Use supported cliff strata, planted scenic banks, a mountain-connected gallery and distant ridges around the preserved mountain. Block mountain/scenery shortcuts with continuous boundaries. River logs use native server-owned physics instead of moving rider characters; keep rider-carry acceptance open until the manual check passes. Previous Studio course copies were archived with explicit approval. See [v6 handoff](CLASSIC_ASCENT_V6.md).
+
+## 2026-09-06 - Classic Ascent v7
+
+Use bounded seeded foothold variation, full river banks with shorter/fewer logs, client-only foam, and cached ground-contact projectile arcs. Keep scenery boundaries independent of platform offsets. Approved Blender kit 112260230711687 adds cedar, fern and sculpted summits. Approved v6 copies were archived before installing v7. See [v7 handoff](CLASSIC_ASCENT_V7.md).

@@ -57,3 +57,8 @@ checkpoint respawn after a void death.
 ## Classic Ascent v6 - 2026-09-06
 
 - Open: river log idle carry needs manual acceptance. Native physics replaced forced rider teleports, and walking/jumping are possible, but focused automated idle samples showed about 4.6 studs of relative drift for 4.6 studs of log travel. Do not mark the river movement issue fully resolved until standing, walking, jumping and wrap behavior pass in Studio. See [v6 handoff](CLASSIC_ASCENT_V6.md).
+
+## Classic Ascent v7 - 2026-09-06
+
+- Fixed late-arriving river foam discovery after course replacement; moving foam was observed on the client.
+- River bank overlap and log density were revised. All 40 logs moved in a server sample. Rider carry remains open: the short automated placement triggered recovery and did not establish standing/walking/jumping acceptance. See [v7 handoff](CLASSIC_ASCENT_V7.md).

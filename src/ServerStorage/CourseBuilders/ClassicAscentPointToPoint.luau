@@ -15,7 +15,7 @@ local SNOW = Color3.fromRGB(222, 234, 231)
 type Section = { name: string, count: number, width: number, gap: number, style: string, material: Enum.Material, color: Color3 }
 local SECTIONS: { Section } = {
 	{ name = "Trailhead", count = 10, width = 24, gap = 0, style = "trail", material = Enum.Material.Cobblestone, color = STONE },
-	{ name = "Stepping Gardens", count = 28, width = 14, gap = 4.5, style = "garden", material = Enum.Material.Slate, color = Color3.fromRGB(139, 160, 128) },
+	{ name = "River Rapids", count = 28, width = 14, gap = 4.5, style = "garden", material = Enum.Material.Slate, color = Color3.fromRGB(139, 160, 128) },
 	{ name = "Switchback Climb", count = 24, width = 9, gap = 5, style = "stairs", material = Enum.Material.Rock, color = Color3.fromRGB(159, 145, 117) },
 	{ name = "Ridge Bridges", count = 16, width = 10, gap = 0, style = "bridge", material = Enum.Material.WoodPlanks, color = WOOD },
 	{ name = "Pillar Yard", count = 18, width = 9, gap = 5.5, style = "pillars", material = Enum.Material.Basalt, color = Color3.fromRGB(91, 109, 119) },
@@ -64,8 +64,8 @@ function Builder.Ensure(library: Folder): Model
 	local existing = library:FindFirstChild(MODEL_NAME)
 	if existing then
 		assert(existing:IsA("Model"), "Classic Ascent must be a Model")
-		if existing:GetAttribute("BuilderVersion") == 6 then return existing end
-		assert(existing:GetAttribute("BuilderVersion") == 1 or existing:GetAttribute("BuilderVersion") == 2 or existing:GetAttribute("BuilderVersion") == 3 or existing:GetAttribute("BuilderVersion") == 4 or existing:GetAttribute("BuilderVersion") == 5, "Unrecognized authored course; reconcile before rebuilding")
+		if existing:GetAttribute("BuilderVersion") == 7 then return existing end
+		assert(existing:GetAttribute("BuilderVersion") >= 1 and existing:GetAttribute("BuilderVersion") <= 6, "Unrecognized authored course; reconcile before rebuilding")
 		local archiveName = MODEL_NAME .. "_Version" .. tostring(existing:GetAttribute("BuilderVersion"))
 		assert(not library:FindFirstChild(archiveName), "Generated version archive already exists")
 		existing.Name = archiveName
@@ -77,7 +77,7 @@ function Builder.Ensure(library: Folder): Model
 	end
 	local model = Instance.new("Model")
 	model.Name = MODEL_NAME
-	model:SetAttribute("BuilderVersion", 6)
+	model:SetAttribute("BuilderVersion", 7)
 	local info = folder(model, "CourseInfo")
 	for key, value in pairs({ CourseId = "classic_ascent_point_to_point", DisplayName = "Classic Ascent · Alpine Expedition", RaceFormat = "PointToPoint", LapCount = 1, Enabled = true, Difficulty = "Intermediate", TargetNewPlayerTime = 420, TargetPracticedTime = 300, CheckpointCount = 19, TimingValidated = false, DesignedRacerCapacity = 20, ParallelRoutes = 3 }) do
 		info:SetAttribute(key, value)
@@ -113,7 +113,7 @@ function Builder.Ensure(library: Folder): Model
 				pad = block(model, "Finish", Vector3.new(66, 3, 30), cf, STONE, Enum.Material.Slate)
 			elseif landing then
 				checkpointIndex += 1
-				pad = block(checkpoints, string.format("Checkpoint_%03d", checkpointIndex), Vector3.new(width, 3, math.max(18, sizeZ)), cf, if section.style == "teeth" then SNOW else section.color, if section.style == "teeth" then Enum.Material.Snow else section.material)
+				pad = block(checkpoints, string.format("Checkpoint_%03d", checkpointIndex), Vector3.new(width, 3, if sectionIndex == 2 then 10 else math.max(18, sizeZ)), cf, if section.style == "teeth" then SNOW else section.color, if section.style == "teeth" then Enum.Material.Snow else section.material)
 				Details.Checkpoint(markers, pad, checkpointIndex)
 			else
 				pad = block(group, string.format("Route_%03d", routeIndex + 1), Vector3.new(width, 3, sizeZ), cf, section.color, section.material)
@@ -158,6 +158,7 @@ function Builder.Ensure(library: Folder): Model
 	block(markers, "SummitLintel", Vector3.new(39, 3, 4), finish.CFrame * CFrame.new(0, 25, -8), STONE, Enum.Material.Limestone, false)
 	Details.Sign(markers, finish.CFrame * CFrame.new(12, 1.5 + SignAdjustments[11].height, -5) * CFrame.Angles(0, SignAdjustments[11].yaw, 0), "SUMMIT", "CLASSIC ASCENT", true)
 	require(script.Parent.AscentProps).Prepare()
+	require(script.Parent.AscentLayout).Apply(model)
 	Details.RouteExtras(model, nodes)
 	require(script.Parent.AscentWorld).Build(model, nodes, CENTER)
 	Environment.Build(model, nodes, CENTER)

@@ -1,0 +1,57 @@
+{
+  "props": [
+    {
+      "name": "AlpineMassif",
+      "height": 150,
+      "parts": [
+        "AlpineMassif__Snow",
+        "AlpineMassif__SummitRock"
+      ],
+      "triangles": 2137
+    },
+    {
+      "name": "Cedar",
+      "height": 24,
+      "parts": [
+        "Cedar__Bark",
+        "Cedar__Cedar"
+      ],
+      "triangles": 5574
+    },
+    {
+      "name": "Fern",
+      "height": 1.6,
+      "parts": [
+        "Fern__Fern"
+      ],
+      "triangles": 1134
+    }
+  ],
+  "colors": {
+    "AlpineMassif__SummitRock": [
+      0.27000001072883606,
+      0.3199999928474426,
+      0.3400000035762787
+    ],
+    "AlpineMassif__Snow": [
+      0.8299999833106995,
+      0.9100000262260437,
+      0.9399999976158142
+    ],
+    "Cedar__Bark": [
+      0.23999999463558197,
+      0.11999999731779099,
+      0.054999999701976776
+    ],
+    "Cedar__Cedar": [
+      0.11999999731779099,
+      0.28999999165534973,
+      0.1599999964237213
+    ],
+    "Fern__Fern": [
+      0.23000000417232513,
+      0.4099999964237213,
+      0.14000000059604645
+    ]
+  }
+}
