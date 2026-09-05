@@ -1,6 +1,12 @@
 # Classic Ascent Point to Point
 
-## Current build: version 4
+## Current status: passed for manual fine-tuning
+
+September 6, 2026: the accepted course is builder version 7, `AltitudeRevision = 2`. See the [current v7 handoff](CLASSIC_ASCENT_V7.md), [level-design guide](LEVEL_DESIGN_GUIDE.md) and [reusable chat brief](LEVEL_DESIGN_CHAT_STARTER.md). Preserve accepted geometry and manual edits; do not regenerate this course without a new request.
+
+## Historical version 4 reference
+
+The following records an earlier build. Use the v7 handoff for current implementation and verification limits.
 
 Classic Ascent has three parallel paths that reconnect at 19 shared checkpoints,
 with wider forest and snow clearings for a 20-player race. The mountain rises to

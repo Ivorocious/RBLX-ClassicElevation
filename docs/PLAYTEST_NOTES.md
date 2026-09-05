@@ -342,3 +342,7 @@ Rojo build and Studio compilation/build passed. Reviewed river, cliffs, causeway
 ## 2026-09-06 - Altitude and scale review
 
 Build passed; pit and forest edit previews and one brief live camera review completed. All 884 checked gameplay parts retained position, size and collision in both installed copies; 19 checkpoints remain. Reapplying the scenery pass added no duplicates. Trees measure about 41-94 studs. No traversal or crowd test. See [v7 handoff](CLASSIC_ASCENT_V7.md#final-altitude-and-scale-pass).
+
+## 2026-09-06 - Final Skyline haze check
+
+Rojo build passed. Both installed copies retain all 884 checked gameplay parts unchanged; repeating revision 2 added no objects. A brief live Skyline camera review confirmed obscured depth, readable platforms, 12 local Skyline emitters, zero active valley emitters and native Atmosphere values 0.37 density / 0.02 offset / 3.1 haze. Studio returned to Edit mode. No traversal, crowd test or FPS measurement. Owner design acceptance moves the course to manual fine-tuning; prior gameplay verification limits remain.

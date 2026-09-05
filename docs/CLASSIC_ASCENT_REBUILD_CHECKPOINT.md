@@ -1,5 +1,7 @@
 # Classic Ascent — restart checkpoint
 
+**Historical v4 checkpoint.** The current accepted course is builder version 7, `AltitudeRevision = 2`, and has moved to manual fine-tuning. Use the [v7 handoff](CLASSIC_ASCENT_V7.md) for current state. Do not apply this older rebuild procedure over accepted or manually edited geometry.
+
 Updated 2026-09-05: version 4 adventure and instant-recovery pass.
 
 ## Git and Rojo

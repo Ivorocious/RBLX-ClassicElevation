@@ -40,10 +40,22 @@ Start a Studio race and use **Skip checkpoint** to reach each section. First che
 
 ## Final altitude and scale pass
 
-The owner requested bottomless-looking drops and much larger scenery. `AscentDepthPass` applies once to v7 models, recorded as `AltitudeRevision = 1`; the builder also applies it to future builds.
+The owner requested bottomless-looking drops and much larger scenery. The initial `AscentDepthPass` was recorded as `AltitudeRevision = 1`; the final haze refinement below advances it to revision 2. The builder also applies it to future builds.
 
 - Sections 03/04/05/06/07/09 now have their continuous rock floor about 240 studs below the route. Supporting rock columns extend down into two layers of blue-gray haze, replacing the readable shallow floor with an obscured drop.
 - Sixty larger cloud emitters form two lower valley rings around the map. Together with the ravine layers there are 132 authored emitters. The client seeds marked emitters when they arrive so the effect does not require waiting for a full particle cycle.
 - The 213 scenery trees now measure about 41-94 studs tall. Scenic boulders and ice teeth are also larger. Interactive cover, projectiles, logs and platform geometry were not scaled.
 - Rojo build passed. The pass ran twice without duplicating objects. Both installed copies retained all 19 checkpoints and exactly preserved the position, size and collision setting of 884 route, boundary and motion parts. Edit previews covered pit depth and forest scale; a brief live camera review confirmed the loaded haze and deeper drop. No course traversal or crowd/performance test was run.
 - Before-update copies are retained in `CourseBuildArchive` as `BeforeAltitude_RaceCourse_1788645754` and `BeforeAltitude_Course_ClassicAscentPointToPoint_1788645754`. Nothing was published. Existing manual rider acceptance remains open.
+
+## Final haze and design acceptance
+
+The owner has passed Classic Ascent Point-to-Point for manual fine-tuning after this final change. The generated design phase is complete. Preserve accepted geometry; do not initiate another rebuild or polish pass without a new request. Design acceptance does not replace the manual gameplay and performance checks listed above.
+
+- Both installed copies now have `AltitudeRevision = 2`. Section 09 has 12 dedicated emitters across two layers, 34 and 51 studs below the route. These sit above the underlying mountain slope, measured about 65–73 studs below the sampled gaps; the previous deeper mist was partly hidden by that slope.
+- Native Atmosphere and the existing distant ranges provide map-wide haze: Density 0.37, Offset 0.02, Haze 3.1. All 60 broad valley smoke emitters are disabled, cleared and excluded from prewarming. Their anchors remain in existing models for reversibility; fresh builds do not create them.
+- Seventy-two local pit emitters remain, including the 12 in Skyline. Their lifetimes are 16–20 seconds. Disabled emitters are no longer seeded by the client. This reduces broad particle work, but no FPS improvement was measured.
+- Rojo build passed. Both installed copies preserved all 884 checked gameplay parts' position, size and collision settings. Applying the pass again added no objects. A brief live Skyline camera check confirmed the obscured lower surface, readable platforms, 12 Skyline emitters, zero active valley emitters and the configured atmosphere values. No course traversal or crowd test was run. Studio was returned to Edit mode.
+- Before-update model copies remain in `ServerStorage.CourseBuildArchive` with the prefix `BeforeHazeFinal_`. Nothing was published.
+
+Future level-design work should start with the [reusable chat brief](LEVEL_DESIGN_CHAT_STARTER.md) and [full design guide](LEVEL_DESIGN_GUIDE.md). They record the owner's preferences, failed approaches, effective patterns, review boundaries and manual handoff rules.

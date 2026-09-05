@@ -149,3 +149,7 @@ Use bounded seeded foothold variation, full river banks with shorter/fewer logs,
 ## 2026-09-06 - Final altitude treatment
 
 Keep gameplay geometry intact and apply a one-time scenery pass to v7. Recess the rock floor, extend supports into layered ravine haze, add lower valley clouds, and enlarge scenery trees to 41-94 studs. Preserve before-update copies. See [v7 handoff](CLASSIC_ASCENT_V7.md#final-altitude-and-scale-pass).
+
+## 2026-09-06 - Final haze and manual design handoff
+
+Use native Atmosphere and distant ranges for broad haze; retire the 60 valley smoke emitters. Keep local bottomless-pit effects and place Skyline layers above the actual mountain slope. Classic Ascent has passed generated level design and moves to manual fine-tuning. Preserve accepted geometry unless another change is requested. See [v7 handoff](CLASSIC_ASCENT_V7.md#final-haze-and-design-acceptance) and [reusable design guide](LEVEL_DESIGN_GUIDE.md).

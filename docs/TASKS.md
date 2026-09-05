@@ -87,3 +87,11 @@ See [v7 handoff](CLASSIC_ASCENT_V7.md).
 - [x] Bottomless-looking drops in 03/04/06/07 and other open jump sections.
 - [x] Lower valley clouds and larger forest, rock and ice scenery.
 - [x] Preserve gameplay geometry, retain backups and review the installed scenery.
+
+## Classic Ascent generated design complete
+
+- [x] Refine section 09 bottomless haze above the underlying mountain slope.
+- [x] Replace map-wide smoke with native atmospheric distance haze.
+- [x] Record the complete design lessons and a paste-ready specialized-chat brief.
+- [x] Mark Classic Ascent Point-to-Point passed for manual fine-tuning.
+- Manual tuning is the next stage; do not initiate another generated redesign without a new request. Existing gameplay acceptance items remain as recorded in the [v7 handoff](CLASSIC_ASCENT_V7.md).

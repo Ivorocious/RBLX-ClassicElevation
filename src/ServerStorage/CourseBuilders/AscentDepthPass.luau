@@ -8,9 +8,9 @@ local function key(position: Vector3): string
 	return string.format("%.1f:%.1f:%.1f",position.X,position.Y,position.Z)
 end
 
-local function cloud(parent: Instance, frame: CFrame, size: number, color: Color3, opacity: number, valley: boolean)
+local function cloud(parent: Instance, frame: CFrame, size: number, color: Color3, opacity: number)
 	local anchor = Instance.new("Part")
-	anchor.Name = if valley then "ValleyCloud" else "BottomlessHaze"
+	anchor.Name = "BottomlessHaze"
 	anchor.Size,anchor.CFrame = Vector3.new(size*.4,6,size*.3),frame
 	anchor.Anchored,anchor.Transparency = true,1
 	anchor.CanCollide,anchor.CanTouch,anchor.CanQuery = false,false,false
@@ -21,17 +21,59 @@ local function cloud(parent: Instance, frame: CFrame, size: number, color: Color
 	mist.Color = ColorSequence.new(color)
 	mist.Size = NumberSequence.new({NumberSequenceKeypoint.new(0,size*.85),NumberSequenceKeypoint.new(1,size)})
 	mist.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,opacity),NumberSequenceKeypoint.new(.7,opacity),NumberSequenceKeypoint.new(1,1)})
-	mist.Lifetime = NumberRange.new(25,32)
-	mist.Rate = if valley then .22 else .4
+	mist.Lifetime = NumberRange.new(16,20)
+	mist.Rate = .4
 	mist.Speed = NumberRange.new(.1,.4)
 	mist.Rotation,mist.RotSpeed = NumberRange.new(0,360),NumberRange.new(-1,1)
 	mist.LightInfluence = 0
-	mist:SetAttribute("PrewarmParticles",if valley then 8 else 12)
+	mist:SetAttribute("PrewarmParticles",12)
 	mist.Parent = anchor
 end
 
+local function refineHaze(model: Model)
+	local anchors = model.Decoration:FindFirstChild("AltitudeClouds")
+	assert(anchors,"The altitude pass must exist before refining haze")
+	local skyline: {[string]: {frame: CFrame, layer: number}} = {}
+	for _,p in ipairs(model:GetDescendants()) do
+		if p:IsA("BasePart") and p:GetAttribute("SectionIndex") == 9 and p:GetAttribute("RouteIndex") then
+			local frame = p:GetAttribute("SceneryFrame") or p.CFrame
+			for layer,depth in ipairs({67,132}) do
+				skyline[key((frame*CFrame.new(0,-depth,0)).Position)] = {frame=frame,layer=layer}
+			end
+		end
+	end
+	for _,anchor in ipairs(anchors:GetChildren()) do
+		if not anchor:IsA("BasePart") then continue end
+		local mist = anchor:FindFirstChildOfClass("ParticleEmitter")
+		if not mist then continue end
+		if anchor.Name == "ValleyCloud" then
+			mist.Enabled,mist.Rate = false,0
+			mist:SetAttribute("PrewarmParticles",0)
+			mist:Clear()
+			anchor:SetAttribute("RetiredForAtmosphere",true)
+		else
+			mist.Lifetime = NumberRange.new(16,20)
+			local placement = skyline[key(anchor.Position)]
+			if placement then
+				local upper = placement.layer == 1
+				local size = if upper then 44 else 66
+				local opacity = if upper then .45 else .14
+				anchor.CFrame = placement.frame*CFrame.new(0,if upper then -34 else -51,0)
+				anchor.Size = Vector3.new(size*.4,6,size*.3)
+				anchor:SetAttribute("SectionIndex",9)
+				anchor:SetAttribute("DepthLayer",placement.layer)
+				mist.Size = NumberSequence.new({NumberSequenceKeypoint.new(0,size*.85),NumberSequenceKeypoint.new(1,size)})
+				mist.Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,opacity),NumberSequenceKeypoint.new(.7,opacity),NumberSequenceKeypoint.new(1,1)})
+			end
+		end
+	end
+	model:SetAttribute("AltitudeRevision",2)
+end
+
 function Depth.Apply(model: Model)
-	if model:GetAttribute("AltitudeRevision") == 1 then return end
+	local revision = model:GetAttribute("AltitudeRevision")
+	if revision == 2 then return end
+	if revision == 1 then refineHaze(model); return end
 	local decoration = model:FindFirstChild("Decoration")
 	assert(decoration,"Course decoration is required")
 	local world = decoration:FindFirstChild("CliffsAndValley")
@@ -75,17 +117,8 @@ function Depth.Apply(model: Model)
 	for _,p in ipairs(nodes) do
 		if (p:GetAttribute("SectionStep") :: number)%3 ~= 1 then continue end
 		local frame = p:GetAttribute("SceneryFrame") or p.CFrame
-		cloud(haze,frame*CFrame.new(0,-67,0),75,Color3.fromRGB(111,137,151),.6,false)
-		cloud(haze,frame*CFrame.new(0,-132,0),125,Color3.fromRGB(77,103,121),.14,false)
-	end
-	local center = Vector3.new(1400,0,-1200)
-	for ring=1,2 do
-		local count = if ring == 1 then 24 else 36
-		local radius = if ring == 1 then 560 else 1020
-		for i=1,count do
-			local angle = i/count*math.pi*2+ring*.17
-			cloud(haze,CFrame.new(center+Vector3.new(math.cos(angle)*radius,-75-ring*25,math.sin(angle)*radius)),200,Color3.fromRGB(155,178,190),.3,true)
-		end
+		cloud(haze,frame*CFrame.new(0,-67,0),75,Color3.fromRGB(111,137,151),.6)
+		cloud(haze,frame*CFrame.new(0,-132,0),125,Color3.fromRGB(77,103,121),.14)
 	end
 	local random = Random.new(8011)
 	for _,prop in ipairs(environment:GetChildren()) do
@@ -100,6 +133,7 @@ function Depth.Apply(model: Model)
 		if factor ~= 1 then prop:ScaleTo(prop:GetScale()*factor) end
 	end
 	model:SetAttribute("AltitudeRevision",1)
+	refineHaze(model)
 end
 
 return Depth

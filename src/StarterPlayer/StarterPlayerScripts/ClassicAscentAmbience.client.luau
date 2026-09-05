@@ -68,7 +68,7 @@ end
 local elapsed = 0
 local warmed = setmetatable({}, {__mode="k"})
 local function warmMist(object: Instance)
-	if not object:IsA("ParticleEmitter") or warmed[object] then return end
+	if not object:IsA("ParticleEmitter") or not object.Enabled or warmed[object] then return end
 	local count = object:GetAttribute("PrewarmParticles")
 	if typeof(count) ~= "number" then return end
 	warmed[object] = true
