@@ -4,14 +4,14 @@ Track scoped implementation work for ProjectClassicElevation here.
 
 ## Backlog
 
-- Replace the barebones Classic Ascent placeholder with an approved, complete
+- Review and approve the Classic Ascent alpine environment build for a complete
   environment: ten distinct sections, mountain setting, ambience, and decoration.
 
 - Human-test Classic Ascent on keyboard/touch and with 2-6 racers; tune the
   2:30-3:15 skilled and 4-6 minute typical completion targets.
 - Build the separate Classic Ascent circuit after the point-to-point route is accepted.
 
-- Confirm Rojo sync from filesystem into the open Roblox Studio place.
+- Preserve the existing Studio-authored lobby and old courses in a saved place backup.
 - Create two shippable graybox courses.
 - Add separate unofficial checkpoint and respawn tracking for LateRacing and GhostRacing.
 - Add test tooling when the first pure logic modules exist.
@@ -19,7 +19,7 @@ Track scoped implementation work for ProjectClassicElevation here.
 
 ## In Progress
 
-- None.
+- Classic Ascent environment review build: ten sections, mountain scenery, local ambience; 18 solo Studio checks passed; human acceptance pending.
 
 ## Done
 

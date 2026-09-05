@@ -1,103 +1,104 @@
-# Classic Ascent Point to Point — Barebones Placeholder
+# Classic Ascent Point to Point
 
 ## Current build
 
-**Status: mechanics proof of concept, not the completed Classic Ascent experience.**
-The user reviewed this build on 2026-09-05 and rejected its visual completeness.
-The ten named groups do not yet provide ten meaningfully distinct sections.
-The mountain setting, terrain composition, ambience, and substantial decoration
-remain unimplemented. Passing movement and race tests does not establish visual
-quality, enjoyable pacing, or acceptance of the course.
+The alpine environment rebuild is implemented on `codex/classic-ascent-environment`.
+It replaces the rectangular placeholder with a rising spiral around a rock mountain,
+with camp and pines, garden streams, timber bridges, basalt columns, ruined stone
+architecture, cliff ledges, snow, and summit banners. This is an environment review
+build. Human visual acceptance, pacing, touch controls, and multiplayer tests remain
+outstanding; automated movement tests cannot establish enjoyable pacing or retention.
 
-`Course_ClassicAscentPointToPoint` / `classic_ascent_point_to_point` is a static
-graybox built from `src/ServerStorage/CourseBuilders/ClassicAscentPointToPoint.luau`.
-The original point-to-point course, circuit, and template are preserved.
+The rejected placeholder is preserved at commit `85b8dea` on
+`codex/barebones-placeholder-classic-ascent`. The original point-to-point course,
+circuit, and template are preserved.
 
-The builder runs before course discovery and only creates a missing model in
-`ServerStorage.CourseLibrary`. Requiring the module alone does not build anything.
-`Ensure(library)` can also be called in Studio Edit mode to create the authoring
-model. Existing models are never overwritten, including after a builder edit.
-Builder changes therefore need an explicit reconciliation with an existing
-authoring model before they take effect. Keep durable geometry changes in the
-builder; Studio-only adjustments are not backed up by Git.
+## Source and authoring
 
-Rojo maps only `ServerStorage.CourseBuilders`; it preserves unknown ServerStorage
-instances and does not own the existing CourseLibrary or lobby. A clean checkout
-recreates this course, but the existing Studio-authored lobby still needs its place
-backup. Publishing is not part of this implementation.
+- `src/ServerStorage/CourseBuilders/ClassicAscentPointToPoint.luau`: playable route,
+  checkpoints, recovery volumes, signs, and obstacle details.
+- `src/ServerStorage/CourseBuilders/AscentEnvironment.luau`: deterministic mountain
+  geometry and scenery; no imported assets or global Terrain edits.
+- `src/StarterPlayer/StarterPlayerScripts/ClassicAscentAmbience.client.luau`: local
+  warm lighting and atmospheric haze near the active course, restored in the lobby.
+
+`Ensure(library)` creates the course before discovery. Builder version 1 is retained
+under a disabled `_Placeholder` name when upgrading to version 2. Existing version 2
+models are retained, including manual edits. Further builder changes require explicit
+reconciliation: archive the prior generated model before rebuilding. Do not delete
+Studio-authored courses. Requiring a module alone does not create the course.
+
+Rojo owns the builder scripts, not CourseLibrary, Workspace terrain, or the lobby.
+The builder reproduces this course from Git; keep a Studio place backup for the
+existing authored assets. Git commits and Rojo sync do not publish the place.
+Use the matching Rojo 7.7.0 executable and plugin on localhost:34872.
 
 ## Route
 
-The route has ten sections, 100 obstacle platforms, nineteen checkpoint landings,
-and a separate finish. Each section has a midpoint recovery landing and ends on a
-wide landing; the last endpoint is Finish. Broad checkpoint pads connect the
-right-angle bends. Section names are shown on signs and stored on route parts.
-The generated route measures about 2,360 studs between successive platform centers.
-Checkpoint respawns preserve the pad orientation; bend pads face the outgoing leg.
+The course rises from Y=64 to Y=244 across roughly 2,175 studs, wrapping 480 degrees
+around the mountain. There are 146 route transitions after Start: 126 obstacle
+platforms, nineteen checkpoints, and Finish. Every section has a midpoint checkpoint
+and an end checkpoint, with the final endpoint replaced by Finish. Gold inlays,
+lanterns, checkpoint numbers, section signs, and a finish gate identify progress.
 
-| Section | Character | Skilled budget |
-| --- | --- | --- |
-| Trailhead | Broad warm-up jumps | 12 seconds |
-| Stepping Gardens | Staggered landings | 15 seconds |
-| Switchback Climb | Short rising platform sequence | 18 seconds |
-| Ridge Bridges | Narrow platforms with passing islands | 14 seconds |
-| Pillar Yard | Staggered, rising precision landings | 20 seconds |
-| Broken Causeway | Wide flowing jumps | 14 seconds |
-| Cliffside Traverse | Offset ledges | 20 seconds |
-| Summit Steps | Second sustained climb | 17 seconds |
-| Skyline | Mixed widths, offsets, and rises | 18 seconds |
-| Summit Run | Broad final approach and finish arch | 12 seconds |
+| Section | Transitions | Play and setting |
+| --- | ---: | --- |
+| Trailhead | 10 | Wide ascending stone approach, expedition camp and pines |
+| Stepping Gardens | 14 | Staggered stone jumps beside turquoise pools |
+| Switchback Climb | 16 | Side-to-side rising rock steps and forest shelves |
+| Ridge Bridges | 16 | Narrow timber decks, planks, rope rails, broad recovery islands |
+| Pillar Yard | 18 | Staggered basalt tops and tall column clusters |
+| Broken Causeway | 12 | Wider gaps between ruined limestone spans and piers |
+| Cliffside Traverse | 16 | Narrow offset ledges below rock faces |
+| Summit Steps | 18 | Closely spaced snow steps and snowy pines |
+| Skyline | 16 | Narrow ice platforms along the exposed upper ridge |
+| Summit Run | 10 | Broad final ascent, expedition flags and stone finish gate |
 
-All geometry is anchored. Required jumps use four-stud forward gaps and at most
-two-stud rises. Side offsets provide variation without requiring wall hops or
-camera tricks. Noncolliding cliffs provide visual context without allowing
-scenery shortcuts. Gold marks checkpoint landings and the finish.
+Everything is anchored. Scenery is noncolliding and separated from the playable
+ribbon; checkpoint pads remain wide. Decoration must not hide the intended landing
+or look like a required traversable path. The build uses native Roblox materials
+and geometry; visual ambience currently has no music or ambient sound asset.
 
-## Pacing and retention targets
+## Pacing targets
 
-- Familiar good player: 2:30-3:15; clean route budget 2:40.
+- Familiar good player: 2:30-3:15; clean target budget 2:40.
 - Typical player: 4-6 minutes including mistakes.
 - Less experienced player: 6-8 minutes.
-- These are unvalidated targets, not measured completion times or retention gains.
-- The current shared race timeout is nine minutes (540 seconds), including the
-  older courses when manually selected. It is a maximum, not a minimum run length.
-- Racing ends early when all official racers have finished or left. A remaining
-  official racer retains the deadline; the first finisher does not shorten it.
+- These remain targets, not measured human completion times or retention gains.
+- Shared maximum: nine minutes, including older courses when manually selected.
+- All official racers finishing or leaving ends Racing early. A remaining official
+  racer retains the deadline; the first finisher does not shorten it.
 - Ghost and late racers do not hold the official round open.
+
+Frequent checkpoints limit lost progress. Section landmarks provide visible goals,
+and wide islands offer pauses without enforced waiting. Tune frustrating sections
+before increasing the timeout. Do not add waiting solely to enforce run duration.
 
 ## Fall recovery
 
-Twenty local volumes cover the two halves of each section, with a lower general
-catch volume. `CourseService.GetFallZones()` discovers all BasePart descendants
-of FallZones, regardless of name or nesting. RespawnService disconnects the old
-set before binding the new one. The pre-existing global Y=4 fallback remains.
-All playable route surfaces are above it.
+Each route transition has a local `Recovery_###` volume twelve studs below it, plus
+`FallZone_Main` beneath the mountain. There are 147 volumes in total.
+`CourseService.GetFallZones()` accepts every BasePart descendant of FallZones,
+regardless of name or nesting. RespawnService disconnects old bindings before
+rebinding. The existing Y=4 fallback remains. Recovery applies to official active
+racers; separate unofficial checkpoint and respawn tracking remains backlog work.
 
-Recovery still applies only to official active racers. Separate unofficial
-checkpoint/respawn tracking remains a backlog item.
+## Verification and human acceptance
 
-## Human acceptance checks
+See `PLAYTEST_NOTES.md` for actual results and limitations. During Studio Play,
+run `tests/studio/ClassicAscentSmoke.luau` as a temporary server Script, replacing
+`return Smoke` with `Smoke.Run()`. It requires one player and tests checkpoint
+ordering, rejected early finish, recovery, then physical movement across every node.
+Read `ServerStorage.ClassicAscentTestReport`. Movement uses Humanoid input; it does
+not teleport through the timed traversal. Stop Play to discard the runner.
 
-Test the full route on keyboard and touch, and test crowding with 2-6 players.
-Record first and repeat attempts separately: completion time, checkpoint splits,
-falls, timeouts, exits, and whether players choose another run. Do not treat a
-teleported checkpoint smoke test as a timing or jump-reachability test.
+Run `ClassicAscentRecovery.luau` similarly, replacing `return Recovery` with
+`Recovery.Run()`, in the next fresh solo race. It checks progress reset, elevated,
+nested and general recovery, rebind behavior, and respawn orientation.
+Tests are outside the Rojo mapping and are never shipped as gameplay scripts.
 
-Verify immediate start/finish clarity, both turns between terraces, camera space
-around signs and cliffs, fall recovery near section boundaries, and a smooth final
-approach. Tune slow or frustrating sections before extending the timeout to ten
-minutes. Never add waiting solely to enforce the skilled completion target.
-
-`tests/studio/ClassicAscentSmoke.luau` contains the repeatable solo physics smoke
-test. During Studio Play, run its contents as a temporary server Script, replacing
-the final `return Smoke` with `Smoke.Run()`. Do not save this runner in the place.
-It takes control of one character, tests rejected checkpoint/finish shortcuts,
-checks local fall recovery and rebinds, then physically walks/jumps all route parts.
-Its results appear in `ServerStorage.ClassicAscentTestReport` in the server model.
-Stop Play to discard the temporary runner and report. The tests folder is not
-mapped into the shipped place.
-
-`tests/studio/ClassicAscentRecovery.luau` similarly runs as a temporary server
-Script (replace `return Recovery` with `Recovery.Run()`) in the following fresh
-solo race. It checks reset state, elevated/nested/general recovery, and checkpoint
-orientation. It adds one runtime-only nested test volume. Stop Play afterward.
+Human acceptance: complete first and repeat runs on keyboard and touch, then test
+with 2-6 players. Record completion time, checkpoint splits, falls, timeouts, exits,
+and willingness to replay. Check camera room, path clarity beside scenery, platform
+edges at section boundaries, and finish readability. Human approval is still needed
+before calling the course a finished player experience.

@@ -368,7 +368,7 @@ and `End Race`; they are development shortcuts and are not part of live gameplay
 
 ## Current Tooling Baseline
 
-- Rojo: verified with version 7.6.1.
+- Rojo: September build verified with matching CLI/plugin 7.7.0; global CLI may still be 7.6.1.
 - StyLua: configuration added in `stylua.toml`; executable availability not yet verified.
 - Selene: configuration added in `selene.toml`; executable availability not yet verified.
 - Package management: `packages/` exists as a placeholder; no package manager is active yet.

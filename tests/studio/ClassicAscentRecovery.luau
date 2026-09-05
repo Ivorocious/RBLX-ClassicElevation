@@ -46,19 +46,19 @@ function Recovery.Run()
 		end
 		check(row.nextCheckpointIndex == 9 and #row.checkpointSplits == 8, "Next round records each checkpoint once")
 		local checkpoint = course.Checkpoints.Checkpoint_008
-		pivot(course.FallZones.FallZone_04_12.CFrame)
+		pivot(course.FallZones.Recovery_056.CFrame)
 		check(row.falls == 1 and (root.Position - checkpoint.Position).Magnitude < 10, "Elevated local fall returns to latest checkpoint")
 		check(root.CFrame.LookVector:Dot(checkpoint.CFrame.LookVector) > 0.95, "Respawn faces outgoing leg")
 		task.wait(1.6)
 		local nested = Instance.new("Folder")
 		nested.Name = "TestNestedZones"
 		nested.Parent = course.FallZones
-		local zone = course.FallZones.FallZone_04_12:Clone()
+		local zone = course.FallZones.Recovery_056:Clone()
 		zone.Name = "ArbitraryRecoveryName"
 		zone.CFrame = CFrame.new(checkpoint.Position + Vector3.new(0, -15, 70))
 		zone.Size = Vector3.new(10, 3, 10)
 		zone.Parent = nested
-		check(#courses.GetFallZones() == 22, "Nested arbitrarily named zone discovered")
+		check(#courses.GetFallZones() == course.CourseInfo:GetAttribute("RouteTransitions") + 2, "Nested arbitrarily named zone discovered")
 		respawn.BindActiveCourse()
 		respawn.BindActiveCourse()
 		pivot(zone.CFrame)

@@ -1,74 +1,72 @@
-# Classic Ascent rebuild — restart checkpoint
+# Classic Ascent — restart checkpoint
 
-Updated: 2026-09-05. Read this first when resuming after usage limits reset.
+Updated 2026-09-05 after the alpine environment rebuild and Studio tests.
 
-## User request and acceptance boundary
+## Current state
 
-The user rejected the first course as a barebones proof of concept: uniform
-floating platforms, ten names without ten distinct environments, missing mountain
-ambience and decoration. Do not call that version a completed experience.
-They explicitly requested implementing the complete environment rebuild.
-They also requested durable checkpoints because their five-hour limit is near.
-Minimize Computer Use; ask the user for easy UI actions instead.
-
-## Git and tools
-
-- Current rebuild branch: `codex/classic-ascent-environment`.
-- Starting commit: `85b8dea`, pushed on
+- Branch: `codex/classic-ascent-environment`. This file belongs to the local
+  checkpoint commit containing the implemented environment review build.
+- Placeholder rollback: `85b8dea` on the pushed branch
   `origin/codex/barebones-placeholder-classic-ascent`.
-- `main` remains at `cc78937` (May implementation).
+- Earlier restart checkpoint: `fafc8d4`.
 - Remote: https://github.com/Ivorocious/RBLX-ClassicElevation.git.
-- User authorized pushing the placeholder. Keep the rebuild locally committed;
-  do not assume a new unfinished rebuild should be published or merged.
-- Rojo executable: `./.tools/rojo-7.7.0/rojo.exe`; server port 34872.
-  Global `rojo` is still 7.6.1 and incompatible with the updated plugin.
-- Studio place: Project Classic Elevation, place ID 85558151074819.
-  Rediscover its MCP studio ID; IDs change after Studio restarts.
-- Last inspection: Edit mode; CourseLibrary has the original template,
-  point-to-point, and circuit. The placeholder authoring model was absent.
+- `main` remains the May baseline; rebuild is not merged or pushed.
+- User rejected the initial rectangular blocks as a proof of concept. Do not
+  describe that placeholder, or this unapproved review build, as a finished game.
+- User asked us to handle Rojo/Git, minimize Computer Use, and keep restart points.
+  They reconnected Rojo successfully after upgrading their plan.
 
-## Accepted mechanics already implemented
+## Implemented and verified
 
-Nine-minute timeout, early ending when all officials finish/leave, arbitrary nested
-map-specific fall zones, checkpoint orientation preserved, existing course IDs
-kept distinct. Eighteen solo checks passed on the PLACEHOLDER geometry, including
-physical traversal at 148.43 seconds. These results do not validate rebuilt geometry.
-No human pacing, touch, retention, or multi-client acceptance evidence exists.
+`ClassicAscentPointToPoint.luau` builds version 2: ten named environments, a rising
+480-degree spiral, 146 transitions, 19 checkpoints, 147 fall volumes, about 2,175
+studs. `AscentEnvironment.luau` supplies mountain rock, shelves, camp, pines,
+water, basalt, ruins, snowy vegetation, and summit flags. The scene contains
+1,296 BaseParts. Client-local lighting/haze activates near the course and restores
+in the lobby. There are no imported sound/music assets.
 
-## Rebuild direction
+All 18 solo Studio checks passed on this geometry. Physical traversal: 138.09
+seconds (2:18), no unexpected falls. Checked checkpoint order, early-finish rejection,
+all splits, early round end, locked results, next-round reset, arbitrary nested
+fall zones, repeated binding, and respawn orientation. Rojo build passed. Read
+`docs/PLAYTEST_NOTES.md` for details and boundaries.
 
-Replace rectangular rows with a winding alpine ascent around a mountain: green
-trailhead and camp, garden water crossing, switchback steps, timber gorge bridge,
-basalt pillars, ruined aqueduct, cliff traverse, snow steps, exposed skyline,
-and summit plaza. Sections must differ in obstacle composition AND environment.
-Use purposeful geology, vegetation, water, architecture, signage, and local
-lighting effects. Inspect real Studio screenshots from player height.
+This does not establish human pacing, retention, touch usability, multiplayer
+crowding, device performance, or aesthetic acceptance. The original targets are
+2:30–3:15 familiar, 4–6 typical, 6–8 beginner, with a nine-minute maximum. Do not
+add artificial waiting to lengthen the clean run.
 
-Target familiar skilled run 2:30-3:15, typical 4-6 min, beginner 6-8 min; unvalidated
-until playtesting. Preserve nineteen checkpoints and nine-minute maximum.
+## Studio and Rojo
 
-## Work at this checkpoint
+- Place: Project Classic Elevation, place ID 85558151074819.
+- Last Studio mode: Edit. Rediscover the MCP studio ID after a restart.
+- ServerStorage.CourseLibrary.Course_ClassicAscentPointToPoint is version 2.
+- Workspace.RaceCourse is a copy of that new model for visible Edit inspection.
+- Prior models/review previews are preserved in ServerStorage.CourseBuildArchive;
+  the original legacy courses and lobby are preserved.
+- CourseService archives the Edit RaceCourse at Play startup and spawns a runtime
+  copy from the selected library model. No extra preview duplicates remain in Workspace.
+- Temporary test runners/reports were discarded by stopping Play.
+- Matching CLI: `./.tools/rojo-7.7.0/rojo.exe` (ignored local tool); port 34872.
+  The global `rojo` may still resolve to incompatible 7.6.1.
+- Restart command: `./.tools/rojo-7.7.0/rojo.exe serve default.project.json`.
+  Check for an existing listener before starting another. Ask the user to reconnect
+  the plugin when needed instead of using Computer Use.
+- Build: `./.tools/rojo-7.7.0/rojo.exe build default.project.json -o .tools/classic-ascent-validation.rbxlx`.
 
-- Initial Studio/repo inspection complete; rebuild branch created.
-- Parent is redesigning `ClassicAscentPointToPoint.luau` route geometry.
-- A bounded cheaper subagent is writing ONLY `AscentEnvironment.luau` in
-  `src/ServerStorage/CourseBuilders`. Check whether it exists and read it.
-  Do not assume an old agent remains alive across a restart.
-- Module contract: `Build(model, nodes, center)`, with ordered BaseParts carrying
-  SectionIndex/SectionName; scenery only, no collision, no global Lighting edits.
-- No rebuilt geometry has been synced, created, or tested yet.
+## Next useful action
 
-## Next steps
+Have the user inspect/play the new version and give concrete visual/difficulty
+feedback. Tune only that scoped feedback. Human acceptance remains open in TASKS.
+The separate Classic Ascent circuit and unofficial recovery remain future work.
+Do not publish Roblox or merge the branch automatically.
 
-1. Inspect git status and this checkpoint; review any new environment module.
-2. Complete curved route with genuinely distinct obstacle types and safe geometry.
-3. Integrate scenery and course-scoped ambience, preserving existing place assets.
-4. Reconcile existing authoring model explicitly; builder Ensure deliberately
-   does not overwrite models. Archive prior generated versions rather than delete.
-5. Rojo build/sync; create new authoring model; inspect overview AND player views.
-6. Update the repository smoke tests for the rebuilt route; physically traverse,
-   verify fall zones/ordering/early finish, then record actual limits honestly.
-7. Commit milestones and update this checkpoint before yielding.
+For further geometry edits, Ensure preserves an existing version 2 model. Archive
+that generated model explicitly before rebuilding from a fresh module require;
+MCP require caches can otherwise return stale code. Preserve authored assets.
+Keep every durable code/geometry change in repository files.
 
-Never publish the Roblox place automatically. Do not expand into economy,
-persistence, monetization, circuit implementation, or unrelated UI work.
+Studio tests must run as temporary server Scripts containing the exact repository
+test text with the final module return replaced by `.Run()`. Requiring service
+modules from MCP directly can expose a different cached state from the live server
+Script environment. Read report attributes through MCP instead. Stop Play afterward.

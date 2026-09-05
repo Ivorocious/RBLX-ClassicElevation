@@ -1,7 +1,7 @@
 # ProjectClassicElevation
 
-The September Classic Ascent build is a **barebones mechanics placeholder**.
-Its complete environment and ten distinct section designs are still outstanding;
+Classic Ascent now has an **alpine environment review build** on the rebuild branch.
+Human visual acceptance, pacing, and multiplayer validation remain outstanding;
 see [current status](docs/CLASSIC_ASCENT.md).
 
 Roblox project baseline for building ProjectClassicElevation with filesystem-first source control, Rojo sync, and lightweight documentation for design and implementation work.
@@ -25,7 +25,7 @@ Roblox project baseline for building ProjectClassicElevation with filesystem-fir
 - `src/ServerScriptService`: server scripts and services.
 - `src/StarterPlayer/StarterPlayerScripts`: client scripts.
 - `src/StarterGui`: UI assets and scripts.
-- `tests/`: future automated tests.
+- `tests/studio/`: Studio-only traversal and recovery checks.
 - `packages/`: future package-managed dependencies.
 
 ## Local Setup

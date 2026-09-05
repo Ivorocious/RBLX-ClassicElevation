@@ -222,3 +222,39 @@ collision/visual state is not re-synced after reset.
   count because their next-round status is Racing, and they can finish the race. FIXED
 
 **Follow-up Tasks:** Retest finished-player Ghost Race through reset into the next official race.
+
+## 2026-09-05 — Alpine environment review build
+
+Branch: `codex/classic-ascent-environment`; builder version 2.
+
+- Rojo 7.7.0 reconnected on localhost:34872; project build passed.
+- Studio generated 1,296 BaseParts, 146 route transitions, 19 checkpoints,
+  147 fall volumes, and approximately 2,175 studs of route.
+- Inspected real overview and player-height views of the trailhead, bridges,
+  ruined causeway, and snow section. Fixed buried scenery and unsupported snow caps
+  during review. Native geometry still needs the user's aesthetic acceptance.
+- Sampled the route centerline at platform centers and transition midpoints,
+  at body/head heights. No opaque decoration intersected those sampled points.
+  This is a limited geometric check, not a full swept character/camera test.
+- `ClassicAscentSmoke`: all 10 checks passed. Physical Humanoid traversal of every
+  node took 138.09 seconds (2:18), with no unexpected falls; all nineteen splits
+  recorded, early completion and finish lock verified.
+- The first traversal stopped at route 25 because MoveTo settled outside the test's
+  one-stud center tolerance despite landing safely. The runner now uses directional
+  Humanoid input to reach its targets. Full rerun passed.
+- `ClassicAscentRecovery`: all 8 checks passed in the next round. Verified reset,
+  elevated/local/nested/general recovery, orientation, and single fall counts after
+  repeated binding. A remaining official racer kept the round open.
+- Client ambience activated near the course (ClockTime 15.2, Atmosphere density 0.2)
+  and disabled after lobby return, restoring ClockTime 14.5.
+- No new script errors found in Studio output. No standalone Luau analyzer, StyLua,
+  or Selene executable was available; live Studio execution and Rojo build were used.
+- Stopped Play after tests, discarding temporary runners and test-only fall volume.
+  Preserved old generated models in ServerStorage.CourseBuildArchive and placed a
+  version 2 copy in Workspace.RaceCourse for immediate Edit inspection.
+
+Limits: 2:18 is an automated clean-run measurement, below the aspirational 2:30
+familiar-player budget but within the user's broad 2–3 minute skilled-run range.
+No human first/repeat timing, touch control, 2–6 player, device performance, retention,
+or audio acceptance evidence exists. Do not describe this as a finished/approved
+player experience or claim typical players currently need 4–6 minutes.

@@ -47,7 +47,7 @@ function Smoke.Run()
 		check(row.finishTime == nil and race.IsRaceActive(), "Early finish rejected without shortening race")
 		respawn.BindActiveCourse()
 		respawn.BindActiveCourse()
-		pivot(course.FallZones.FallZone_01_06.CFrame)
+		pivot(course.FallZones.Recovery_006.CFrame)
 		check(row.falls == 1, "Local zone records one fall after repeated rebind")
 		check((root.Position - course.Start.Position).Magnitude < 15, "Fall before checkpoint returns to Start")
 		local route = {}
@@ -55,15 +55,21 @@ function Smoke.Run()
 			if instance:IsA("BasePart") and instance:GetAttribute("RouteIndex") then table.insert(route, instance) end
 		end
 		table.sort(route, function(a, b) return a:GetAttribute("RouteIndex") < b:GetAttribute("RouteIndex") end)
-		check(#route == 120, "All 120 route transitions discovered")
+		check(#route == course.CourseInfo:GetAttribute("RouteTransitions"), "All declared route transitions discovered")
 		local function walk(target: Vector3, timeout: number)
-			humanoid:MoveTo(target)
 			local untilTime = os.clock() + timeout
 			repeat
+				local delta = target - root.Position
+				local horizontal = Vector3.new(delta.X, 0, delta.Z)
+				if horizontal.Magnitude < 0.75 then
+					humanoid:Move(Vector3.zero)
+					if humanoid.FloorMaterial ~= Enum.Material.Air then return end
+				else
+					humanoid:Move(horizontal.Unit)
+				end
 				task.wait(0.03)
-				local delta = root.Position - target
-				if Vector3.new(delta.X, 0, delta.Z).Magnitude < 1 and humanoid.FloorMaterial ~= Enum.Material.Air then return end
 			until os.clock() >= untilTime
+			humanoid:Move(Vector3.zero)
 			error("Movement timeout at route " .. tostring(report:GetAttribute("RouteIndex")))
 		end
 		pivot(course.Start.CFrame + Vector3.new(0, 4, 0))

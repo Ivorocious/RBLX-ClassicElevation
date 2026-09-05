@@ -87,3 +87,20 @@ Completion targets remain unvalidated until human timing passes. See CLASSIC_ASC
 **Impact:** TBD.
 
 **Alternatives Considered:** TBD.
+
+### 2026-09-05 - Alpine environment rebuild and explicit authoring refresh
+
+**Decision:** Replace the rectangular placeholder with a ten-section, 146-transition
+mountain route. Separate route construction from deterministic scenery. Keep the
+nineteen checkpoints, nine-minute maximum, and existing authoritative race rules.
+
+**Reasoning:** Passing mechanics tests did not satisfy the requested complete
+setting. The route needs recognizable places and visible progress while retaining
+short recovery distances. Native parts and materials keep the course reproducible.
+
+**Impact:** Builder version 1 is archived under a disabled placeholder name when
+upgraded. Version 2 authoring models are not silently overwritten. Review iterations
+are preserved in ServerStorage.CourseBuildArchive. The current Edit RaceCourse is
+a copy of the new authoring model; normal CourseService startup archives this copy
+and spawns the selected runtime course. Local ambience restores the preexisting
+Lighting values when the player returns to the lobby. Human acceptance is pending.
