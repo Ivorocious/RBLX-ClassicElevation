@@ -2,6 +2,14 @@
 
 Record manual Studio playtest findings here.
 
+## 2026-09-06 — River finish and Skyline checks
+
+The 72-second live river check observed 208 resets and 210 starts with no visible
+transition. All 14,400 endpoint sightline samples were occluded. The largest
+measured Skyline jump passed a client-owned edge-takeoff test; safe ice stopping,
+human timing, touch, and multiplayer remain unverified. See the
+[full check and review record](RIVER_FINISH_VERIFICATION.md).
+
 ## MVP Manual Checklist
 
 Use this checklist for the current MVP race loop before moving into larger feature phases.

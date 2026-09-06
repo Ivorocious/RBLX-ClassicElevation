@@ -66,6 +66,7 @@ function Builder.Ensure(library: Folder): Model
 		assert(existing:IsA("Model"), "Classic Ascent must be a Model")
 		if existing:GetAttribute("BuilderVersion") == 7 then
 			require(script.Parent.AscentDepthPass).Apply(existing)
+			require(script.Parent.AscentRiverFinishPass).Apply(existing)
 			return existing
 		end
 		assert(existing:GetAttribute("BuilderVersion") >= 1 and existing:GetAttribute("BuilderVersion") <= 6, "Unrecognized authored course; reconcile before rebuilding")
@@ -166,6 +167,7 @@ function Builder.Ensure(library: Folder): Model
 	require(script.Parent.AscentWorld).Build(model, nodes, CENTER)
 	Environment.Build(model, nodes, CENTER)
 	require(script.Parent.AscentDepthPass).Apply(model)
+	require(script.Parent.AscentRiverFinishPass).Apply(model)
 	assert(checkpointIndex == 19, "Nineteen checkpoints required")
 	info:SetAttribute("RouteLengthStuds", math.floor(length))
 	info:SetAttribute("RouteTransitions", routeIndex)

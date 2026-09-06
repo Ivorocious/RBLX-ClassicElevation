@@ -2,6 +2,13 @@
 
 Record important project decisions here.
 
+### 2026-09-06 — River reset concealment and modest Skyline tuning
+
+Cap camera zoom at 30 studs. Keep the extended river outside the existing
+boundaries and enclose complete log reset positions with opaque scenery. Preserve
+log speed and arrival frequency. Shorten Section 09 footholds by 0.5 studs while
+improving their contrast. See [verification](RIVER_FINISH_VERIFICATION.md).
+
 ### 2026-05-19 - Use Git and Rojo as Source of Truth
 
 **Decision:** Git stores durable project source, and Rojo syncs filesystem source into Roblox Studio.

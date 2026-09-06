@@ -35,7 +35,8 @@ RunService.Heartbeat:Connect(function(delta)
 		if typeof(origin) ~= "CFrame" or (root.Position-origin.Position).Magnitude > 260 then continue end
 		local phase = (clock/9+(streak:GetAttribute("FlowPhase") or 0))%1
 		local direction = streak:GetAttribute("FlowDirection") or 1
-		streak.CFrame = origin*CFrame.new((phase*80-40)*direction,0,0)
+		local width = streak:GetAttribute("FlowWidth") or 80
+		streak.CFrame = origin*CFrame.new((phase-.5)*width*direction,0,0)
 		streak.Transparency = 0.2+0.8*(math.abs(phase-0.5)*2)^6
 	end
 end)

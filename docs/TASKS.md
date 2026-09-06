@@ -2,6 +2,11 @@
 
 Track scoped implementation work for ProjectClassicElevation here.
 
+## River finish verification
+
+- Implemented the 30-stud zoom cap, hidden extended river resets, and modest
+  Section 09 gap increase. See [checks and remaining human tests](RIVER_FINISH_VERIFICATION.md).
+
 ## Backlog
 
 - Review and approve the Classic Ascent alpine environment build for a complete
