@@ -308,13 +308,14 @@ broadcasts course id, display name, race format, and lap count in race state/tim
 `ResultsService` stores the same course metadata in the in-memory result payload.
 
 Phase 8E adds fixed, config-driven active course spawning. Playable course models live in
-`ServerStorage/CourseLibrary`; `CourseTemplate` is a manual-building template and is not selected
-for gameplay because it is disabled. The MVP selected course id is
-`classic_point_to_point` through `CourseConfig.ActiveCourseId`, and selection mode is `Fixed`.
+`ServerStorage/CourseLibrary`; the disabled manual-building template lives separately at
+`ServerStorage/CourseTemplates/CourseTemplate`. The current selected course id is
+`classic_ascent_point_to_point` through `CourseConfig.ActiveCourseId`, and selection mode is `Fixed`.
 
-At startup and round start, `CourseService` discovers enabled library courses, selects the
-configured course when available, clones it into Workspace as `Workspace/RaceCourse`, and marks the
-clone with a runtime active-course attribute. If a previous active course was a runtime clone, it is
+At startup, `CourseService` prepares and discovers the library while leaving the lobby without a loaded map.
+At round start it selects the configured course, clones it into Workspace as `Workspace/RaceCourse`, and marks the
+clone with a runtime active-course attribute. Returning players to the lobby at reset unloads that clone.
+If a previous active course was a runtime clone, it is
 destroyed before replacement. If the previous `Workspace/RaceCourse` was an unmarked authored
 course, it is archived under `ServerStorage/CourseArchive` instead of being deleted. If the library
 or configured course is missing, `CourseService` can create `Course_ClassicPointToPoint` from the
@@ -342,13 +343,13 @@ PointToPoint races.
 Studio now also contains `ServerStorage/CourseLibrary/Course_ClassicCircuit`, a simple technical
 graybox course for validating the LapBased framework. It uses CourseId `classic_circuit`, DisplayName
 `Classic Circuit`, RaceFormat `LapBased`, LapCount `3`, Enabled `true`, and four checkpoints.
-`CourseConfig.ActiveCourseId` remains fixed to `classic_point_to_point`; testing the circuit is a
+`CourseConfig.ActiveCourseId` is currently fixed to `classic_ascent_point_to_point`; testing the circuit is a
 manual config switch until course rotation/selection is implemented.
 
 Phase 8F does not add DataStore persistence, public course selection, course voting, final creative
 course design, or separate unofficial checkpoint/respawn tracking for LateRacing and GhostRacing.
 
-Studio now contains `ServerStorage/CourseLibrary/CourseTemplate`, a reusable authoring model with
+Studio now contains `ServerStorage/CourseTemplates/CourseTemplate`, a reusable authoring model with
 `CourseInfo`, Start, Checkpoints, Finish, Obstacles, FallZones, RouteMarkers, Decoration, and Bounds.
 `CourseInfo` attributes define CourseId, DisplayName, RaceFormat, LapCount, Enabled, Difficulty,
 target completion times, and CheckpointCount. The template uses the graybox color convention for
