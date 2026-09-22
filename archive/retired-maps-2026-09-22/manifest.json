@@ -1,0 +1,216 @@
+{
+  "date": "2026-09-22",
+  "placeId": 85558151074819,
+  "roots": [
+    {
+      "path": "ServerStorage.Archive",
+      "fingerprint": {
+        "hash": 1286923888,
+        "scripts": 29,
+        "instances": 106646,
+        "classes": {
+          "Vector3Value": 138,
+          "Humanoid": 2,
+          "Part": 22547,
+          "MeshPart": 61150,
+          "Folder": 998,
+          "BallSocketConstraint": 28,
+          "Animator": 2,
+          "Attachment": 106,
+          "WedgePart": 60,
+          "TextLabel": 1057,
+          "HumanoidDescription": 2,
+          "NumberValue": 36,
+          "BindableFunction": 2,
+          "ModuleScript": 27,
+          "LocalScript": 2,
+          "SurfaceGui": 651,
+          "StringValue": 147,
+          "ObjectValue": 190,
+          "Sound": 60,
+          "GeneratedFolder": 1,
+          "BodyPartDescription": 6,
+          "Animation": 54,
+          "ProceduralModel": 2,
+          "AnimationConstraint": 30,
+          "SpawnLocation": 2,
+          "NoCollisionConstraint": 38,
+          "BodyColors": 2,
+          "PointLight": 174,
+          "Seat": 28,
+          "Model": 19022,
+          "FaceControls": 2,
+          "WrapTarget": 30,
+          "UnionOperation": 4,
+          "PackageLink": 46
+        },
+        "sourceBytes": 1438464,
+        "parts": 83791
+      },
+      "verified": true,
+      "receipt": {
+        "bytes": 22052889,
+        "file": "retired-studio-archive.rbxm",
+        "sha256": "628936bb0d480892e1868a906f2b8dfd8d792a7beea64342a9b76acc5d6979be"
+      }
+    },
+    {
+      "path": "ServerStorage.CourseLibrary.Course_ClassicAscentPointToPoint",
+      "fingerprint": {
+        "hash": 598301510,
+        "scripts": 0,
+        "instances": 5994,
+        "classes": {
+          "ParticleEmitter": 153,
+          "Part": 3312,
+          "MeshPart": 1297,
+          "SurfaceGui": 43,
+          "Folder": 62,
+          "PointLight": 19,
+          "TextLabel": 43,
+          "Model": 935,
+          "Attachment": 7,
+          "WedgePart": 123
+        },
+        "sourceBytes": 0,
+        "parts": 4732
+      },
+      "verified": true,
+      "receipt": {
+        "bytes": 464236,
+        "file": "classic-ascent-v7.rbxm",
+        "sha256": "24eedd2cf0a7b8f0de73e2fe80cc80533714e987fea44b0167ec22ce898cd212"
+      }
+    }
+  ],
+  "sourceSnapshot": {
+    "file": "source-at-archive.zip",
+    "sha256": "bb16d89a19db337515fc69e892a0dfd376f64cd0953f2375f010a6c351274f35",
+    "contents": [
+      "src",
+      "default.project.json"
+    ]
+  },
+  "before": {
+    "memoryMb": 4063.484375,
+    "total": 122915,
+    "storage": [
+      {
+        "meshes": 535,
+        "name": "ServerStorage.AssetImports",
+        "scripts": 0,
+        "parts": 535,
+        "instances": 544
+      },
+      {
+        "meshes": 178,
+        "name": "ServerStorage.AssetLibraries",
+        "scripts": 0,
+        "parts": 178,
+        "instances": 220
+      },
+      {
+        "meshes": 195,
+        "name": "ServerStorage.DeveloperAssets",
+        "scripts": 0,
+        "parts": 437,
+        "instances": 558
+      },
+      {
+        "meshes": 61150,
+        "name": "ServerStorage.Archive",
+        "scripts": 29,
+        "parts": 83791,
+        "instances": 106646
+      },
+      {
+        "meshes": 0,
+        "name": "ServerStorage.__Rojo_SessionLock",
+        "scripts": 0,
+        "parts": 0,
+        "instances": 1
+      },
+      {
+        "meshes": 1297,
+        "name": "ServerStorage.CourseLibrary",
+        "scripts": 0,
+        "parts": 4816,
+        "instances": 6095
+      },
+      {
+        "meshes": 0,
+        "name": "ServerStorage.CourseBuilders",
+        "scripts": 68,
+        "parts": 0,
+        "instances": 71
+      },
+      {
+        "meshes": 58205,
+        "name": "ServerStorage.Archive.CityRun",
+        "scripts": 15,
+        "parts": 78744,
+        "instances": 100539
+      },
+      {
+        "meshes": 2775,
+        "name": "ServerStorage.Archive.Lobby",
+        "scripts": 2,
+        "parts": 4818,
+        "instances": 5801
+      },
+      {
+        "meshes": 0,
+        "name": "ServerStorage.Archive.LegacyTools",
+        "scripts": 6,
+        "parts": 0,
+        "instances": 7
+      },
+      {
+        "meshes": 170,
+        "name": "ServerStorage.Archive.LooseWorkspace",
+        "scripts": 6,
+        "parts": 229,
+        "instances": 297
+      },
+      {
+        "meshes": 0,
+        "name": "ServerStorage.Archive.DevelopmentCleanup20260922",
+        "scripts": 0,
+        "parts": 0,
+        "instances": 1
+      },
+      {
+        "meshes": 0,
+        "name": "ServerStorage.CourseLibrary.Course_ClassicCircuit",
+        "scripts": 0,
+        "parts": 27,
+        "instances": 35
+      },
+      {
+        "meshes": 0,
+        "name": "ServerStorage.CourseLibrary.Course_ClassicPointToPoint",
+        "scripts": 0,
+        "parts": 57,
+        "instances": 65
+      },
+      {
+        "meshes": 1297,
+        "name": "ServerStorage.CourseLibrary.Course_ClassicAscentPointToPoint",
+        "scripts": 0,
+        "parts": 4732,
+        "instances": 5994
+      }
+    ],
+    "workspace": {
+      "meshes": 2287,
+      "name": "Workspace",
+      "scripts": 3,
+      "parts": 4174,
+      "instances": 6121
+    }
+  },
+  "referenceAudit": {
+    "incomingObjectJointConstraintReferences": []
+  },
+  "note": "Native snapshots preserve authored models. Referenced Roblox mesh/texture IDs still depend on availability of those assets. Source zip captures uncommitted code as well as tracked code. No publishing performed."
+}
