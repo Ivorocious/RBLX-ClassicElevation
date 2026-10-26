@@ -38,6 +38,9 @@
       "Main": {
         "$path": "src/ServerScriptService/Main.server.luau"
       },
+      "StoreObstaclePalette": {
+        "$path": "src/ServerScriptService/StoreObstaclePalette.server.luau"
+      },
       "Services": {
         "$className": "Folder",
         "$path": "src/ServerScriptService/Services"

@@ -2,7 +2,7 @@
 
 **66 reusable sets, shared across all current and future courses.** V5 adds **24 sets, numbered 43–66**, in a new wing beside the original palette. All first 42 models, their display pieces and the palette position are preserved. Recolor and decorate the pieces for your course while keeping danger, crumble and timed surfaces readable.
 
-The kit is currently at `Workspace.ObstacleKit_Palette.CopyThese`, at its owner-controlled position. When storing it outside the scene, use `ServerStorage.DeveloperAssets.ObstacleKit_Palette`. Select the Workspace palette in Explorer and press **F** to find it. `Display_DoNotCopy` contains only labels and non-colliding display mats.
+The kit is currently at `Workspace.ObstacleKit_Palette.CopyThese`, at its owner-controlled position. When storing it outside the scene, use `ServerStorage.DeveloperAssets.ObstacleKit_Palette`. Live servers move it there at startup ([StoreObstaclePalette.server.luau](../src/ServerScriptService/StoreObstaclePalette.server.luau)) so players never download it; Studio Edit and Play leave it in Workspace. Select the Workspace palette in Explorer and press **F** to find it. `Display_DoNotCopy` contains only labels and non-colliding display mats.
 
 ## Place a trap or set
 
