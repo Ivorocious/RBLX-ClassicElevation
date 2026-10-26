@@ -1,0 +1,102 @@
+{
+  "props": [
+    {
+      "name": "BasaltColumns",
+      "height": 24,
+      "parts": [
+        "BasaltColumns__Basalt"
+      ],
+      "triangles": 160
+    },
+    {
+      "name": "RuinAbutment",
+      "height": 24,
+      "parts": [
+        "RuinAbutment__Limestone"
+      ],
+      "triangles": 472
+    },
+    {
+      "name": "CliffButtress",
+      "height": 42,
+      "parts": [
+        "CliffButtress__RidgeRock"
+      ],
+      "triangles": 320
+    },
+    {
+      "name": "GlacierSerac",
+      "height": 35,
+      "parts": [
+        "GlacierSerac__Ice",
+        "GlacierSerac__Snow"
+      ],
+      "triangles": 208
+    },
+    {
+      "name": "SnowRidge",
+      "height": 20,
+      "parts": [
+        "SnowRidge__RidgeRock",
+        "SnowRidge__Snow"
+      ],
+      "triangles": 64
+    },
+    {
+      "name": "CedarLite",
+      "height": 24,
+      "parts": [
+        "CedarLite__Bark",
+        "CedarLite__Cedar"
+      ],
+      "triangles": 1974
+    }
+  ],
+  "colors": {
+    "BasaltColumns__Basalt": [
+      0.10000000149011612,
+      0.14000000059604645,
+      0.1599999964237213
+    ],
+    "RuinAbutment__Limestone": [
+      0.47999998927116394,
+      0.44999998807907104,
+      0.3499999940395355
+    ],
+    "CliffButtress__RidgeRock": [
+      0.25,
+      0.3100000023841858,
+      0.3400000035762787
+    ],
+    "GlacierSerac__Ice": [
+      0.33000001311302185,
+      0.6800000071525574,
+      0.8199999928474426
+    ],
+    "GlacierSerac__Snow": [
+      0.8299999833106995,
+      0.9100000262260437,
+      0.9399999976158142
+    ],
+    "SnowRidge__RidgeRock": [
+      0.25,
+      0.3100000023841858,
+      0.3400000035762787
+    ],
+    "SnowRidge__Snow": [
+      0.8299999833106995,
+      0.9100000262260437,
+      0.9399999976158142
+    ],
+    "CedarLite__Bark": [
+      0.23999999463558197,
+      0.11999999731779099,
+      0.054999999701976776
+    ],
+    "CedarLite__Cedar": [
+      0.11999999731779099,
+      0.28999999165534973,
+      0.1599999964237213
+    ]
+  }
+}

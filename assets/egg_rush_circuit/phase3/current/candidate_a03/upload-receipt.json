@@ -1,0 +1,16 @@
+{
+  "sha256": "39f0633130f71e05f1282f59280940a39772ba386ec074a8a6d6fac5baf0b69e",
+  "request": {
+    "assetType": "Model",
+    "displayName": "ER_Phase3_World_A03",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/a91be556-bcef-459f-be71-cd80d2b8aeb1",
+  "assetId": "80825818781490"
+}

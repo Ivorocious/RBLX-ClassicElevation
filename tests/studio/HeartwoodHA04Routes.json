@@ -1,0 +1,2503 @@
+{
+  "candidate": "HA_V1_04",
+  "scope": "Physical routes with final four steps walking; main adds one explicit supported Wide-edge walk before its ordinary detour jump. No in-run reposition or checkpoint edits. B2 aims at unchanged J4 center.",
+  "commands": {
+    "continuous_main": {
+      "action": "sequence",
+      "checkpoint": 0,
+      "steps": [
+        {
+          "id": "root-1",
+          "to": [
+            -152,
+            1,
+            136
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_1"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-2",
+          "to": [
+            -178,
+            2,
+            124
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_2"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-3",
+          "to": [
+            -192,
+            4,
+            98
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_3"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-4",
+          "to": [
+            -177,
+            6,
+            70
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_4"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-5",
+          "to": [
+            -148,
+            8,
+            62
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_5"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-6",
+          "to": [
+            -122,
+            10,
+            64
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_6"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "H01-clear-1",
+          "waitPod": 1,
+          "fullCycle": true,
+          "section": "S01"
+        },
+        {
+          "id": "root-7",
+          "to": [
+            -104,
+            10,
+            64
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_7"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-8",
+          "to": [
+            -85,
+            10,
+            64
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_8"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "H01-clear-2",
+          "waitPod": 2,
+          "fullCycle": true,
+          "section": "S01"
+        },
+        {
+          "id": "root-9",
+          "to": [
+            -85,
+            12,
+            44
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_9"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-10",
+          "to": [
+            -85,
+            12,
+            25
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_10"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-11",
+          "to": [
+            -78,
+            14,
+            5
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_11",
+            "Decoration.S01_AncientRoots.Root_12"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-12",
+          "to": [
+            -64,
+            17,
+            -4
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_12"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "R1",
+          "to": [
+            -46,
+            20,
+            -6
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.R1"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "entry-1",
+          "to": [
+            -50,
+            22.4,
+            8
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Entry_1",
+            "Decoration.S02_LivingHeartwood.Entry_2"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "entry-2",
+          "to": [
+            -44,
+            24.7,
+            7
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Entry_2",
+            "Decoration.S02_LivingHeartwood.Entry_2"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "J1",
+          "to": [
+            -34,
+            27,
+            -1
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.J1"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_1",
+          "to": [
+            -27,
+            29.2,
+            22
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_1"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_2",
+          "to": [
+            -7,
+            31.4,
+            37
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_2"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_3",
+          "to": [
+            16,
+            33.6,
+            33
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_3"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_4",
+          "to": [
+            35,
+            35.8,
+            18
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_4"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_5",
+          "to": [
+            42,
+            38,
+            -5
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_5"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_6",
+          "to": [
+            32,
+            40.2,
+            -28
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_6"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_7",
+          "to": [
+            11,
+            42.4,
+            -42
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_7"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_8",
+          "to": [
+            -12,
+            44.6,
+            -42
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_8"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_9",
+          "to": [
+            -31,
+            46.8,
+            -28
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_9"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_10",
+          "to": [
+            -37,
+            49,
+            -5
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_10"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_11",
+          "to": [
+            -24,
+            51.2,
+            15
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_11"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_12",
+          "to": [
+            -3,
+            53.4,
+            25
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_12"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_13",
+          "to": [
+            18,
+            55.6,
+            15
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_13"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_14",
+          "to": [
+            27,
+            57.8,
+            -3
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_14"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "J2",
+          "to": [
+            26,
+            60,
+            -20
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.J2",
+            "Decoration.S02_LivingHeartwood.PulseLane"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "H02-clear",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "section": "S02"
+        },
+        {
+          "id": "R2",
+          "to": [
+            52,
+            68,
+            -50
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.R2",
+            "Decoration.S02_LivingHeartwood.PulseLane"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "garden-1",
+          "to": [
+            78,
+            72,
+            -51
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Garden_1"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "garden-2",
+          "to": [
+            91,
+            76,
+            -30
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Garden_2"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "garden-3",
+          "to": [
+            98,
+            80,
+            -4
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Garden_3"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "P0",
+          "to": [
+            96,
+            82,
+            20
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P0"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "H03-open-1",
+          "waitLeaf": 1,
+          "leafPhaseMaximum": 0.8,
+          "waitSeconds": 10,
+          "section": "S03"
+        },
+        {
+          "id": "P1",
+          "to": [
+            89,
+            86,
+            65
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P1"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4.5,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "H03-open-2",
+          "waitLeaf": 2,
+          "leafPhaseMaximum": 0.8,
+          "waitSeconds": 10,
+          "section": "S03"
+        },
+        {
+          "id": "P2",
+          "to": [
+            61,
+            91,
+            98
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P2"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4.5,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "H03-open-3",
+          "waitLeaf": 3,
+          "leafPhaseMaximum": 0.8,
+          "waitSeconds": 10,
+          "section": "S03"
+        },
+        {
+          "id": "P3",
+          "to": [
+            20,
+            96,
+            101
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P3"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4.5,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "fork-1",
+          "to": [
+            0,
+            100,
+            112
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Fork_1"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "fork-2",
+          "to": [
+            18,
+            104,
+            124
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Fork_2"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "fork-3",
+          "to": [
+            34,
+            108,
+            108
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Fork_3"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "R3",
+          "to": [
+            26,
+            112,
+            90
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.R3",
+            "Decoration.S04_SanctuaryBough.CatchReturn_4",
+            "Decoration.S04_SanctuaryBough.CatchReturn_5"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "B0",
+          "bloom": "B0",
+          "to": [
+            -30,
+            122,
+            78
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J3"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "B1-approach",
+          "to": [
+            -40,
+            122,
+            94
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.MainBloomApproach",
+            "Decoration.S04_SanctuaryBough.Blooms.B1"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "B1",
+          "bloom": "B1",
+          "to": [
+            -48,
+            132,
+            129
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Wide"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "wide-edge-preparation",
+          "to": [
+            -57,
+            132,
+            127
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Wide.Top"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 2,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-1",
+          "to": [
+            -73,
+            133,
+            123
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_1"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-2",
+          "to": [
+            -94,
+            134,
+            120
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_2"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-3",
+          "to": [
+            -114,
+            135,
+            106
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_3"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-4",
+          "to": [
+            -125,
+            136,
+            83
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_4"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-5",
+          "to": [
+            -114,
+            137,
+            61
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_5"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-6",
+          "to": [
+            -96,
+            138,
+            48
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_6"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-7",
+          "to": [
+            -76,
+            140,
+            62
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_7",
+            "Decoration.S04_SanctuaryBough.Blooms.B2.FlowerSurface"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "B2",
+          "bloom": "B2",
+          "to": [
+            -54,
+            150,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "J4",
+          "to": [
+            -54,
+            150,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "finish-walk-1",
+          "to": [
+            -64,
+            153,
+            51
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4",
+            "Decoration.S04_SanctuaryBough.FinishWalk_2"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "finish-walk-2",
+          "to": [
+            -85,
+            157,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.FinishWalk_2",
+            "Decoration.S04_SanctuaryBough.FinishWalk_3"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "finish-walk-3",
+          "to": [
+            -92,
+            162,
+            34
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.FinishWalk_3",
+            "Decoration.S04_SanctuaryBough.FinishWalk_4"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "F0",
+          "to": [
+            -106,
+            162,
+            28
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.F0",
+            "Decoration.S04_SanctuaryBough.FinishWalk_4"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3,
+          "maximumDistance": 4,
+          "stopDistance": 0.6,
+          "expectStatus": "Finished"
+        }
+      ],
+      "expectCheckpoint": 3,
+      "from": [
+        -128,
+        0,
+        130
+      ],
+      "finishTo": [
+        -106,
+        162,
+        28
+      ],
+      "expectStatus": "Finished",
+      "maximumDistance": 4
+    },
+    "continuous_shortcuts": {
+      "action": "sequence",
+      "checkpoint": 0,
+      "steps": [
+        {
+          "id": "root-1",
+          "to": [
+            -152,
+            1,
+            136
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_1"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-2",
+          "to": [
+            -178,
+            2,
+            124
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_2"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-3",
+          "to": [
+            -192,
+            4,
+            98
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_3"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-4",
+          "to": [
+            -177,
+            6,
+            70
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_4"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-5",
+          "to": [
+            -148,
+            8,
+            62
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_5"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-6",
+          "to": [
+            -122,
+            10,
+            64
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_6"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "H01-clear-1",
+          "waitPod": 1,
+          "fullCycle": true,
+          "section": "S01"
+        },
+        {
+          "id": "root-7",
+          "to": [
+            -104,
+            10,
+            64
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_7"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-8",
+          "to": [
+            -85,
+            10,
+            64
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_8"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "H01-clear-2",
+          "waitPod": 2,
+          "fullCycle": true,
+          "section": "S01"
+        },
+        {
+          "id": "root-9",
+          "to": [
+            -85,
+            12,
+            44
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_9"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-10",
+          "to": [
+            -85,
+            12,
+            25
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_10"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-11",
+          "to": [
+            -78,
+            14,
+            5
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_11",
+            "Decoration.S01_AncientRoots.Root_12"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "root-12",
+          "to": [
+            -64,
+            17,
+            -4
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_12"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 0
+        },
+        {
+          "id": "R1",
+          "to": [
+            -46,
+            20,
+            -6
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.R1"
+          ],
+          "section": "S01",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "entry-1",
+          "to": [
+            -50,
+            22.4,
+            8
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Entry_1",
+            "Decoration.S02_LivingHeartwood.Entry_2"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "entry-2",
+          "to": [
+            -44,
+            24.7,
+            7
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Entry_2",
+            "Decoration.S02_LivingHeartwood.Entry_2"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "J1",
+          "to": [
+            -34,
+            27,
+            -1
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.J1"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_1",
+          "to": [
+            -26,
+            32.5,
+            -8
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_1"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_2",
+          "to": [
+            -17,
+            38,
+            -11
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_2"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_3",
+          "to": [
+            -8,
+            43.5,
+            -8
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_3"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_4",
+          "to": [
+            1,
+            49,
+            -5
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_4"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_5",
+          "to": [
+            10,
+            54.5,
+            -9
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_5"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_6",
+          "to": [
+            20,
+            60,
+            -17
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_6"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "J2",
+          "to": [
+            26,
+            60,
+            -20
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.J2",
+            "Decoration.S02_LivingHeartwood.PulseLane"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "H02-clear",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "section": "S02"
+        },
+        {
+          "id": "R2",
+          "to": [
+            52,
+            68,
+            -50
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.R2",
+            "Decoration.S02_LivingHeartwood.PulseLane"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "garden-1",
+          "to": [
+            78,
+            72,
+            -51
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Garden_1"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "garden-2",
+          "to": [
+            91,
+            76,
+            -30
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Garden_2"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "garden-3",
+          "to": [
+            98,
+            80,
+            -4
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Garden_3"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "P0",
+          "to": [
+            96,
+            82,
+            20
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P0"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "H03-open-1",
+          "waitLeaf": 1,
+          "leafPhaseMaximum": 0.8,
+          "waitSeconds": 10,
+          "section": "S03"
+        },
+        {
+          "id": "P1",
+          "to": [
+            89,
+            86,
+            65
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P1"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4.5,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "H03-open-2",
+          "waitLeaf": 2,
+          "leafPhaseMaximum": 0.8,
+          "waitSeconds": 10,
+          "section": "S03"
+        },
+        {
+          "id": "P2",
+          "to": [
+            61,
+            91,
+            98
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P2"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4.5,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "H03-open-3",
+          "waitLeaf": 3,
+          "leafPhaseMaximum": 0.8,
+          "waitSeconds": 10,
+          "section": "S03"
+        },
+        {
+          "id": "P3",
+          "to": [
+            20,
+            96,
+            101
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P3"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4.5,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "fork-1",
+          "to": [
+            0,
+            100,
+            112
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Fork_1"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "fork-2",
+          "to": [
+            18,
+            104,
+            124
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Fork_2"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "fork-3",
+          "to": [
+            34,
+            108,
+            108
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.Fork_3"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 2
+        },
+        {
+          "id": "R3",
+          "to": [
+            26,
+            112,
+            90
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.R3",
+            "Decoration.S04_SanctuaryBough.CatchReturn_4",
+            "Decoration.S04_SanctuaryBough.CatchReturn_5"
+          ],
+          "section": "S03",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "B0",
+          "bloom": "B0",
+          "to": [
+            -30,
+            122,
+            78
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J3"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "XA-approach",
+          "to": [
+            -31,
+            122,
+            62.5
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.HardBloomApproach",
+            "Decoration.S04_SanctuaryBough.Blooms.XA"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "XA",
+          "bloom": "XA",
+          "to": [
+            -40,
+            136,
+            62.5
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Blooms.XB"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "XB",
+          "bloom": "XB",
+          "to": [
+            -48,
+            150,
+            45
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "J4",
+          "to": [
+            -54,
+            150,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "finish-walk-1",
+          "to": [
+            -64,
+            153,
+            51
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4",
+            "Decoration.S04_SanctuaryBough.FinishWalk_2"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "finish-walk-2",
+          "to": [
+            -85,
+            157,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.FinishWalk_2",
+            "Decoration.S04_SanctuaryBough.FinishWalk_3"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "finish-walk-3",
+          "to": [
+            -92,
+            162,
+            34
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.FinishWalk_3",
+            "Decoration.S04_SanctuaryBough.FinishWalk_4"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "F0",
+          "to": [
+            -106,
+            162,
+            28
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.F0",
+            "Decoration.S04_SanctuaryBough.FinishWalk_4"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3,
+          "maximumDistance": 4,
+          "stopDistance": 0.6,
+          "expectStatus": "Finished"
+        }
+      ],
+      "expectCheckpoint": 3,
+      "from": [
+        -128,
+        0,
+        130
+      ],
+      "finishTo": [
+        -106,
+        162,
+        28
+      ],
+      "expectStatus": "Finished",
+      "maximumDistance": 4
+    },
+    "matched_x01_main": {
+      "action": "sequence",
+      "checkpoint": 1,
+      "steps": [
+        {
+          "id": "Main_1",
+          "to": [
+            -27,
+            29.2,
+            22
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_1"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_2",
+          "to": [
+            -7,
+            31.4,
+            37
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_2"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_3",
+          "to": [
+            16,
+            33.6,
+            33
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_3"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_4",
+          "to": [
+            35,
+            35.8,
+            18
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_4"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_5",
+          "to": [
+            42,
+            38,
+            -5
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_5"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_6",
+          "to": [
+            32,
+            40.2,
+            -28
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_6"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_7",
+          "to": [
+            11,
+            42.4,
+            -42
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_7"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_8",
+          "to": [
+            -12,
+            44.6,
+            -42
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_8"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_9",
+          "to": [
+            -31,
+            46.8,
+            -28
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_9"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_10",
+          "to": [
+            -37,
+            49,
+            -5
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_10"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_11",
+          "to": [
+            -24,
+            51.2,
+            15
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_11"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_12",
+          "to": [
+            -3,
+            53.4,
+            25
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_12"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_13",
+          "to": [
+            18,
+            55.6,
+            15
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_13"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "Main_14",
+          "to": [
+            27,
+            57.8,
+            -3
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.Main_14"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "J2",
+          "to": [
+            26,
+            60,
+            -20
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.J2",
+            "Decoration.S02_LivingHeartwood.PulseLane"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        }
+      ],
+      "expectCheckpoint": 1,
+      "from": [
+        -34,
+        27,
+        -1
+      ],
+      "finishTo": [
+        26,
+        60,
+        -20
+      ],
+      "expectStatus": "Racing"
+    },
+    "matched_x01_shortcut": {
+      "action": "sequence",
+      "checkpoint": 1,
+      "steps": [
+        {
+          "id": "X01_1",
+          "to": [
+            -26,
+            32.5,
+            -8
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_1"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_2",
+          "to": [
+            -17,
+            38,
+            -11
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_2"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_3",
+          "to": [
+            -8,
+            43.5,
+            -8
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_3"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_4",
+          "to": [
+            1,
+            49,
+            -5
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_4"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_5",
+          "to": [
+            10,
+            54.5,
+            -9
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_5"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "X01_6",
+          "to": [
+            20,
+            60,
+            -17
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.X01_6"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        },
+        {
+          "id": "J2",
+          "to": [
+            26,
+            60,
+            -20
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.J2",
+            "Decoration.S02_LivingHeartwood.PulseLane"
+          ],
+          "section": "S02",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 1
+        }
+      ],
+      "expectCheckpoint": 1,
+      "from": [
+        -34,
+        27,
+        -1
+      ],
+      "finishTo": [
+        26,
+        60,
+        -20
+      ],
+      "expectStatus": "Racing"
+    },
+    "matched_x02_main": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "B1-approach",
+          "to": [
+            -40,
+            122,
+            94
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.MainBloomApproach",
+            "Decoration.S04_SanctuaryBough.Blooms.B1"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "B1",
+          "bloom": "B1",
+          "to": [
+            -48,
+            132,
+            129
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Wide"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-1",
+          "to": [
+            -73,
+            133,
+            123
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_1"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-2",
+          "to": [
+            -94,
+            134,
+            120
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_2"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-3",
+          "to": [
+            -114,
+            135,
+            106
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_3"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-4",
+          "to": [
+            -125,
+            136,
+            83
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_4"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-5",
+          "to": [
+            -114,
+            137,
+            61
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_5"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-6",
+          "to": [
+            -96,
+            138,
+            48
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_6"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "detour-7",
+          "to": [
+            -76,
+            140,
+            62
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Detour_7",
+            "Decoration.S04_SanctuaryBough.Blooms.B2.FlowerSurface"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "B2",
+          "bloom": "B2",
+          "to": [
+            -54,
+            150,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "J4",
+          "to": [
+            -54,
+            150,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        }
+      ],
+      "expectCheckpoint": 3,
+      "from": [
+        -30,
+        122,
+        78
+      ],
+      "finishTo": [
+        -54,
+        150,
+        37
+      ],
+      "expectStatus": "Racing"
+    },
+    "matched_x02_shortcut": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "XA-approach",
+          "to": [
+            -31,
+            122,
+            62.5
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.HardBloomApproach",
+            "Decoration.S04_SanctuaryBough.Blooms.XA"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "XA",
+          "bloom": "XA",
+          "to": [
+            -40,
+            136,
+            62.5
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Blooms.XB"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "XB",
+          "bloom": "XB",
+          "to": [
+            -48,
+            150,
+            45
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "J4",
+          "to": [
+            -54,
+            150,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        }
+      ],
+      "expectCheckpoint": 3,
+      "from": [
+        -30,
+        122,
+        78
+      ],
+      "finishTo": [
+        -54,
+        150,
+        37
+      ],
+      "expectStatus": "Racing"
+    },
+    "failed_x02_and_replay": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "XA-approach",
+          "to": [
+            -31,
+            122,
+            62.5
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.HardBloomApproach",
+            "Decoration.S04_SanctuaryBough.Blooms.XA"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "XA",
+          "bloom": "XA",
+          "to": [
+            -8,
+            136,
+            54
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Blooms.XB"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3,
+          "expectRecovery": true,
+          "expectRecoveryCheckpoint": 3,
+          "recoveryTo": [
+            26,
+            112,
+            90
+          ],
+          "recoverySupports": [
+            "Decoration.S04_SanctuaryBough.R3",
+            "Decoration.S04_SanctuaryBough.CatchReturn_4",
+            "Decoration.S04_SanctuaryBough.CatchReturn_5"
+          ],
+          "recoverySource": "HeartwoodMissedBloom"
+        },
+        {
+          "id": "B0",
+          "bloom": "B0",
+          "to": [
+            -30,
+            122,
+            78
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J3"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3,
+          "replay": true
+        },
+        {
+          "id": "XA-approach",
+          "to": [
+            -31,
+            122,
+            62.5
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.HardBloomApproach",
+            "Decoration.S04_SanctuaryBough.Blooms.XA"
+          ],
+          "section": "S04",
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3,
+          "replay": true
+        },
+        {
+          "id": "XA",
+          "bloom": "XA",
+          "to": [
+            -40,
+            136,
+            62.5
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Blooms.XB"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3,
+          "replay": true
+        },
+        {
+          "id": "XB",
+          "bloom": "XB",
+          "to": [
+            -48,
+            150,
+            45
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "section": "S04",
+          "seconds": 3,
+          "enterSeconds": 4,
+          "expectCheckpoint": 3,
+          "replay": true
+        },
+        {
+          "id": "J4",
+          "to": [
+            -54,
+            150,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "section": "S04",
+          "jump": true,
+          "seconds": 4,
+          "expectCheckpoint": 3,
+          "replay": true
+        }
+      ],
+      "expectCheckpoint": 3,
+      "from": [
+        -30,
+        122,
+        78
+      ],
+      "finishTo": [
+        -54,
+        150,
+        37
+      ],
+      "expectStatus": "Racing"
+    }
+  },
+  "finishFixture": "Real avatar contact on the 26x5x3 Finish marker locks movement before root centre arrival. Require exact intended grounded F0 support, Finished, checkpoint3 and distance<=4 to unchanged F0 centre. Retained final-form trace froze at3.329; this assertion correction changes no gameplay geometry or tuning."
+}

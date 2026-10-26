@@ -2,11 +2,11 @@
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
 
 local FormatTime = require(ReplicatedStorage.Shared.FormatTime)
 local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
 local RaceUiController = require(script.Parent:WaitForChild("Controllers"):WaitForChild("RaceUiController"))
+local StudioDevController = require(script.Parent.Controllers.StudioDevController)
 
 local remotesFolder = ReplicatedStorage:WaitForChild("Remotes")
 
@@ -28,7 +28,6 @@ local raceResultsUpdatedRemote = getRemoteEvent(RaceConstants.RemoteNames.RaceRe
 local requestSpectateRemote = getRemoteEvent(RaceConstants.RemoteNames.RequestSpectate)
 local requestRaceLateRemote = getRemoteEvent(RaceConstants.RemoteNames.RequestRaceLate)
 local requestGhostRaceRemote = getRemoteEvent(RaceConstants.RemoteNames.RequestGhostRace)
-local requestDevRaceStateRemote = getRemoteEvent(RaceConstants.RemoteNames.RequestDevRaceState)
 
 local localPlayer = Players.LocalPlayer
 
@@ -159,77 +158,12 @@ if raceResultsUpdatedRemote ~= nil then
 	end)
 end
 
-local function createDevRaceControls()
-	if not RunService:IsStudio() or requestDevRaceStateRemote == nil then
-		return
-	end
-
-	local playerGui = localPlayer:WaitForChild("PlayerGui")
-	local existingGui = playerGui:FindFirstChild("DevRaceControls")
-
-	if existingGui ~= nil then
-		existingGui:Destroy()
-	end
-
-	local screenGui = Instance.new("ScreenGui")
-	screenGui.Name = "DevRaceControls"
-	screenGui.ResetOnSpawn = false
-	screenGui.Parent = playerGui
-
-	local frame = Instance.new("Frame")
-	frame.Name = "Panel"
-	frame.AnchorPoint = Vector2.new(1, 0)
-	frame.Position = UDim2.new(1, -32, 0, 210)
-	frame.Size = UDim2.fromOffset(180, 176)
-	frame.BackgroundColor3 = Color3.fromRGB(25, 28, 34)
-	frame.BackgroundTransparency = 0.1
-	frame.BorderSizePixel = 0
-	frame.Parent = screenGui
-
-	local title = Instance.new("TextLabel")
-	title.Name = "Title"
-	title.Size = UDim2.new(1, 0, 0, 30)
-	title.BackgroundTransparency = 1
-	title.Font = Enum.Font.GothamBold
-	title.Text = "DEV RACE"
-	title.TextColor3 = Color3.fromRGB(235, 235, 235)
-	title.TextSize = 14
-	title.Parent = frame
-
-	local buttons = {
-		{ label = "Start Race", action = "StartRaceNow" },
-		{ label = "Skip State", action = "SkipState" },
-		{ label = "Skip checkpoint", action = "SkipCheckpoint" },
-		{ label = "End Race", action = "EndRace" },
-	}
-
-	for index, buttonConfig in ipairs(buttons) do
-		local button = Instance.new("TextButton")
-		button.Name = buttonConfig.action
-		button.Position = UDim2.fromOffset(12, 32 + (index - 1) * 34)
-		button.Size = UDim2.new(1, -24, 0, 30)
-		button.BackgroundColor3 = Color3.fromRGB(55, 68, 86)
-		button.BorderSizePixel = 0
-		button.Font = Enum.Font.Gotham
-		button.Text = buttonConfig.label
-		button.TextColor3 = Color3.fromRGB(255, 255, 255)
-		button.TextSize = 13
-		button.Parent = frame
-
-		button.Activated:Connect(function()
-			requestDevRaceStateRemote:FireServer({
-				action = buttonConfig.action,
-			})
-		end)
-	end
-end
-
 RaceUiController.Init({
 	localPlayer = localPlayer,
 	requestSpectateRemote = requestSpectateRemote,
 	requestRaceLateRemote = requestRaceLateRemote,
 	requestGhostRaceRemote = requestGhostRaceRemote,
 })
-createDevRaceControls()
+StudioDevController.Init()
 
 print("[ClientRaceDebug] Phase 6 race UI and remote debug listeners connected.")

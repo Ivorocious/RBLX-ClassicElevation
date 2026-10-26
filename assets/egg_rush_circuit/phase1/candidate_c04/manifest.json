@@ -1,0 +1,1135 @@
+{
+  "candidate": "ER_P1_KIT_C03",
+  "blender": "5.2.1 LTS",
+  "units": "1 Blender unit =1 intended Roblox stud",
+  "axes": "Blender X right,Z up,front-Y; Roblox(X,Y,Z)=(BlenderX,BlenderZ,-BlenderY)",
+  "exportSettings": {
+    "axis_forward": "-Z",
+    "axis_up": "Y",
+    "apply_scale_options": "FBX_SCALE_UNITS"
+  },
+  "palette": {
+    "Shell": "FFF0CA",
+    "ShellShade": "E8D4A8",
+    "Mint": "68CDB0",
+    "Coral": "F67D60",
+    "Lilac": "B688D8",
+    "Honey": "B97B43",
+    "Straw": "D89C53",
+    "Iron": "646A78",
+    "IronLight": "949BA9",
+    "Ink": "343744",
+    "Amber": "FFC04B",
+    "GlassBlue": "8CC7DA"
+  },
+  "assetCount": 20,
+  "partCount": 46,
+  "triangles": 5056,
+  "assets": [
+    {
+      "name": "EggCoral",
+      "family": "Eggs",
+      "boundsBlender": [
+        [
+          -3.0,
+          -3.0,
+          0.0
+        ],
+        [
+          3.0,
+          3.0,
+          8.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        6.0,
+        8.0,
+        6.0
+      ],
+      "pivot": "Bottom center; square cap stays horizontal in rest pose.",
+      "use": "One identical square-stepped silhouette at every scale. Controlled visual rolling only.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_EggCoral__Coral",
+          "role": "Coral",
+          "triangles": 28,
+          "nonManifoldEdges": 30
+        },
+        {
+          "name": "ER_EggCoral__Shell",
+          "role": "Shell",
+          "triangles": 676,
+          "nonManifoldEdges": 30
+        }
+      ],
+      "fbx": "ER_Eggs.fbx"
+    },
+    {
+      "name": "EggMint",
+      "family": "Eggs",
+      "boundsBlender": [
+        [
+          -3.0,
+          -3.0,
+          0.0
+        ],
+        [
+          3.0,
+          3.0,
+          8.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        6.0,
+        8.0,
+        6.0
+      ],
+      "pivot": "Bottom center; square cap stays horizontal in rest pose.",
+      "use": "One identical square-stepped silhouette at every scale. Controlled visual rolling only.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        28.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_EggMint__Mint",
+          "role": "Mint",
+          "triangles": 28,
+          "nonManifoldEdges": 30
+        },
+        {
+          "name": "ER_EggMint__Shell",
+          "role": "Shell",
+          "triangles": 676,
+          "nonManifoldEdges": 30
+        }
+      ],
+      "fbx": "ER_Eggs.fbx"
+    },
+    {
+      "name": "EggLilac",
+      "family": "Eggs",
+      "boundsBlender": [
+        [
+          -3.0,
+          -3.0,
+          0.0
+        ],
+        [
+          3.0,
+          3.0,
+          8.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        6.0,
+        8.0,
+        6.0
+      ],
+      "pivot": "Bottom center; square cap stays horizontal in rest pose.",
+      "use": "One identical square-stepped silhouette at every scale. Controlled visual rolling only.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        56.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        56.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_EggLilac__Lilac",
+          "role": "Lilac",
+          "triangles": 28,
+          "nonManifoldEdges": 30
+        },
+        {
+          "name": "ER_EggLilac__Shell",
+          "role": "Shell",
+          "triangles": 676,
+          "nonManifoldEdges": 30
+        }
+      ],
+      "fbx": "ER_Eggs.fbx"
+    },
+    {
+      "name": "EggDisplay",
+      "family": "Eggs",
+      "boundsBlender": [
+        [
+          -1.125,
+          -1.125,
+          0.0
+        ],
+        [
+          1.125,
+          1.125,
+          3.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        2.25,
+        3.0,
+        2.25
+      ],
+      "pivot": "Bottom center; square cap stays horizontal in rest pose.",
+      "use": "One identical square-stepped silhouette at every scale. Controlled visual rolling only.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        84.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        84.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_EggDisplay__Mint",
+          "role": "Mint",
+          "triangles": 28,
+          "nonManifoldEdges": 30
+        },
+        {
+          "name": "ER_EggDisplay__Shell",
+          "role": "Shell",
+          "triangles": 676,
+          "nonManifoldEdges": 30
+        }
+      ],
+      "fbx": "ER_Eggs.fbx"
+    },
+    {
+      "name": "ShellPad",
+      "family": "Shells",
+      "boundsBlender": [
+        [
+          -4.0,
+          -3.0,
+          0.0
+        ],
+        [
+          4.034999847412109,
+          3.0,
+          2.4000000953674316
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        8.03499984741211,
+        2.4000000953674316,
+        6.0
+      ],
+      "pivot": "Bottom center. Shell wall one stud minimum at rim; bowl bottom1.1 studs.",
+      "use": "Thick stepped shell with a deliberately flat landing lip.",
+      "contacts": [
+        {
+          "center": [
+            0,
+            2.1,
+            0
+          ],
+          "size": [
+            7.6,
+            0.6,
+            5.6
+          ]
+        }
+      ],
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_ShellPad__Mint",
+          "role": "Mint",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShellPad__Shell",
+          "role": "Shell",
+          "triangles": 92,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Shells.fbx"
+    },
+    {
+      "name": "ShellBowl",
+      "family": "Shells",
+      "boundsBlender": [
+        [
+          -6.0,
+          -5.0,
+          0.0
+        ],
+        [
+          6.034999847412109,
+          5.0,
+          4.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        12.03499984741211,
+        4.0,
+        10.0
+      ],
+      "pivot": "Bottom center. Shell wall one stud minimum at rim; bowl bottom1.1 studs.",
+      "use": "Hollow open shell; no bounding-box collider.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        28.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_ShellBowl__Mint",
+          "role": "Mint",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShellBowl__Shell",
+          "role": "Shell",
+          "triangles": 124,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Shells.fbx"
+    },
+    {
+      "name": "ShellLeaf",
+      "family": "Shells",
+      "boundsBlender": [
+        [
+          -5.0,
+          0.0,
+          -3.200000047683716
+        ],
+        [
+          5.034999847412109,
+          8.0,
+          0.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        10.03499984741211,
+        3.200000047683716,
+        8.0
+      ],
+      "pivot": "Hinge center at X0 Y0 Z0; leaf extends +Y; flat walking top Z0. Rotate about local X.",
+      "use": "Thick stepped shell with a deliberately flat landing lip.",
+      "contacts": [
+        {
+          "center": [
+            0,
+            -0.3,
+            -4.0
+          ],
+          "size": [
+            9.6,
+            0.6,
+            7.8
+          ]
+        }
+      ],
+      "packageOffsetBlender": [
+        56.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        56.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_ShellLeaf__Mint",
+          "role": "Mint",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShellLeaf__Shell",
+          "role": "Shell",
+          "triangles": 92,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Shells.fbx"
+    },
+    {
+      "name": "NestRing",
+      "family": "Shells",
+      "boundsBlender": [
+        [
+          -7.150000095367432,
+          -7.0,
+          0.0
+        ],
+        [
+          7.150000095367432,
+          7.0,
+          2.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        14.300000190734863,
+        2.0,
+        14.0
+      ],
+      "pivot": "Bottom center; open center radius6 at authored size.",
+      "use": "Two broad twelve-sided straw bands, six broad bindings. Art ring; use separate floor if needed.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        84.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        84.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_NestRing__Honey",
+          "role": "Honey",
+          "triangles": 168,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_NestRing__Straw",
+          "role": "Straw",
+          "triangles": 96,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Shells.fbx"
+    },
+    {
+      "name": "SlidingTray",
+      "family": "Machinery",
+      "boundsBlender": [
+        [
+          -5.0,
+          -4.099999904632568,
+          -0.75
+        ],
+        [
+          5.0,
+          4.099999904632568,
+          2.799999952316284
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        3.549999952316284,
+        8.199999809265137
+      ],
+      "pivot": "Deck bottom center; travel axis local Y; deck topZ.9.",
+      "use": "Separate tray from fixed rails and native contact. Mint guards are across local X ends.",
+      "contacts": [
+        {
+          "center": [
+            0,
+            0.45,
+            0
+          ],
+          "size": [
+            10,
+            0.9,
+            8
+          ]
+        }
+      ],
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_SlidingTray__Coral",
+          "role": "Coral",
+          "triangles": 48,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_SlidingTray__Iron",
+          "role": "Iron",
+          "triangles": 48,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_SlidingTray__Mint",
+          "role": "Mint",
+          "triangles": 24,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_SlidingTray__Shell",
+          "role": "Shell",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Machinery.fbx"
+    },
+    {
+      "name": "RailPair",
+      "family": "Machinery",
+      "boundsBlender": [
+        [
+          -5.0,
+          -11.0,
+          -0.4000000059604645
+        ],
+        [
+          5.0,
+          11.0,
+          0.8999999761581421
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        1.2999999821186066,
+        22.0
+      ],
+      "pivot": "Rail topZ.9; travel along local Y. Width8.15, length22.",
+      "use": "Fixed visual rails. Keep all exposed rails noncollidable unless a deliberate route requires otherwise.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        28.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_RailPair__Iron",
+          "role": "Iron",
+          "triangles": 36,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_RailPair__IronLight",
+          "role": "IronLight",
+          "triangles": 24,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Machinery.fbx"
+    },
+    {
+      "name": "EggChute",
+      "family": "Machinery",
+      "boundsBlender": [
+        [
+          -5.25,
+          -0.6000000238418579,
+          -0.8999999761581421
+        ],
+        [
+          5.25,
+          16.600000381469727,
+          9.676216125488281
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        10.5,
+        10.576216101646423,
+        17.200000405311584
+      ],
+      "pivot": "Feed centerY0 height8; outletY16 height.6; bottom0.",
+      "use": "Broad six-section curved open trough, supported coral frame. Visual guide; hazard path is separate.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        56.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        56.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_EggChute__Coral",
+          "role": "Coral",
+          "triangles": 72,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_EggChute__Shell",
+          "role": "Shell",
+          "triangles": 144,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_EggChute__ShellShade",
+          "role": "ShellShade",
+          "triangles": 72,
+          "nonManifoldEdges": 20
+        }
+      ],
+      "fbx": "ER_Machinery.fbx"
+    },
+    {
+      "name": "PipeStraight",
+      "family": "Machinery",
+      "boundsBlender": [
+        [
+          -1.399999976158142,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          1.399999976158142,
+          10.0,
+          2.9000000953674316
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        2.799999952316284,
+        2.8000000938773155,
+        10.0
+      ],
+      "pivot": "Open mouth at localY0; bottom approximately0.",
+      "use": "Hollow twelve-sided pipe; visible wall thickness. Decorative only.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        84.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        84.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_PipeStraight__Mint",
+          "role": "Mint",
+          "triangles": 96,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Machinery.fbx"
+    },
+    {
+      "name": "PipeElbow",
+      "family": "Machinery",
+      "boundsBlender": [
+        [
+          -1.399999976158142,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          1.399999976158142,
+          7.400000095367432,
+          7.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        2.799999952316284,
+        6.899999998509884,
+        7.400000095367432
+      ],
+      "pivot": "Open mouth at localY0; bottom approximately0.",
+      "use": "Hollow twelve-sided pipe; visible wall thickness. Decorative only.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        0.0,
+        30.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -30.0
+      ],
+      "parts": [
+        {
+          "name": "ER_PipeElbow__Mint",
+          "role": "Mint",
+          "triangles": 288,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Machinery.fbx"
+    },
+    {
+      "name": "ShellHinge",
+      "family": "Machinery",
+      "boundsBlender": [
+        [
+          -5.800000190734863,
+          -1.0499999523162842,
+          -0.05000000074505806
+        ],
+        [
+          5.800000190734863,
+          1.0499999523162842,
+          2.049999952316284
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        11.600000381469727,
+        2.0999999530613422,
+        2.0999999046325684
+      ],
+      "pivot": "Axle localX at Z1; mate leaf pivot to axle center.",
+      "use": "Fixed coral hinge with gray axle. Leaf exported independently for animation.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        28.0,
+        30.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -30.0
+      ],
+      "parts": [
+        {
+          "name": "ER_ShellHinge__Coral",
+          "role": "Coral",
+          "triangles": 216,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShellHinge__Iron",
+          "role": "Iron",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Machinery.fbx"
+    },
+    {
+      "name": "WarningBeacon",
+      "family": "Machinery",
+      "boundsBlender": [
+        [
+          -0.699999988079071,
+          -0.699999988079071,
+          0.0
+        ],
+        [
+          0.699999988079071,
+          0.699999988079071,
+          1.850000023841858
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        1.399999976158142,
+        1.850000023841858,
+        1.399999976158142
+      ],
+      "pivot": "Bottom center.",
+      "use": "Amber visual warning; native light/sound/state belongs to runtime. No emissive hazard-red decoration.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        56.0,
+        30.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        56.0,
+        0.0,
+        -30.0
+      ],
+      "parts": [
+        {
+          "name": "ER_WarningBeacon__Amber",
+          "role": "Amber",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_WarningBeacon__Coral",
+          "role": "Coral",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Machinery.fbx"
+    },
+    {
+      "name": "WorkshopBay",
+      "family": "Workshop",
+      "boundsBlender": [
+        [
+          -8.0,
+          -1.399999976158142,
+          0.0
+        ],
+        [
+          8.0,
+          1.399999976158142,
+          10.600000381469727
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        16.0,
+        10.600000381469727,
+        2.799999952316284
+      ],
+      "pivot": "Bottom center; facade faces-Y; rear+Y.",
+      "use": "Two broad nursery windows and low stepped coral cornice. Flat opaque glass avoids transparency sorting.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_WorkshopBay__Coral",
+          "role": "Coral",
+          "triangles": 24,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_WorkshopBay__GlassBlue",
+          "role": "GlassBlue",
+          "triangles": 24,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_WorkshopBay__Mint",
+          "role": "Mint",
+          "triangles": 24,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_WorkshopBay__Shell",
+          "role": "Shell",
+          "triangles": 48,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Workshop.fbx"
+    },
+    {
+      "name": "NurseryArch",
+      "family": "Workshop",
+      "boundsBlender": [
+        [
+          -5.550000190734863,
+          -1.2000000476837158,
+          0.0
+        ],
+        [
+          5.550000190734863,
+          1.2000000476837158,
+          8.399999618530273
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        11.100000381469727,
+        8.399999618530273,
+        2.4000000953674316
+      ],
+      "pivot": "Bottom center; opening8.1 wide\u00d76.2 high.",
+      "use": "Block-built mint service arch. No portal functionality.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        28.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_NurseryArch__Mint",
+          "role": "Mint",
+          "triangles": 48,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Workshop.fbx"
+    },
+    {
+      "name": "SortingShed",
+      "family": "Workshop",
+      "boundsBlender": [
+        [
+          -6.0,
+          -4.5,
+          0.0
+        ],
+        [
+          6.0,
+          4.5,
+          9.199999809265137
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        12.0,
+        9.199999809265137,
+        9.0
+      ],
+      "pivot": "Bottom center; all four sides open.",
+      "use": "Simple honey supports and stepped coral roof. Keep lower than route or beyond reachable gaps.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        56.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        56.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_SortingShed__Coral",
+          "role": "Coral",
+          "triangles": 24,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_SortingShed__Honey",
+          "role": "Honey",
+          "triangles": 48,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Workshop.fbx"
+    },
+    {
+      "name": "GuardianBody",
+      "family": "Guardian",
+      "boundsBlender": [
+        [
+          -4.980000019073486,
+          -7.300000190734863,
+          0.0
+        ],
+        [
+          4.980000019073486,
+          5.5,
+          11.649999618530273
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        9.960000038146973,
+        11.649999618530273,
+        12.800000190734863
+      ],
+      "pivot": "Feet bottom0; faces-Y; tail socket(0,4.8,4.5).",
+      "use": "Sleepy block-built chicken. Separate movable tail; art only.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_GuardianBody__Coral",
+          "role": "Coral",
+          "triangles": 72,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_GuardianBody__Ink",
+          "role": "Ink",
+          "triangles": 24,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_GuardianBody__Lilac",
+          "role": "Lilac",
+          "triangles": 24,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_GuardianBody__Shell",
+          "role": "Shell",
+          "triangles": 96,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Guardian.fbx"
+    },
+    {
+      "name": "GuardianTail",
+      "family": "Guardian",
+      "boundsBlender": [
+        [
+          -3.25,
+          0.0,
+          -1.100000023841858
+        ],
+        [
+          3.25,
+          5.599999904632568,
+          6.300000190734863
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        6.5,
+        7.400000214576721,
+        5.599999904632568
+      ],
+      "pivot": "Attachment center0; extends+Y; rotate localZ for sweep. Mate to body socket.",
+      "use": "Four broad stepped feather blocks. Runtime owns warning, sweep and matching visible contact volume.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        28.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_GuardianTail__Coral",
+          "role": "Coral",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_GuardianTail__Lilac",
+          "role": "Lilac",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_GuardianTail__Mint",
+          "role": "Mint",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_GuardianTail__Shell",
+          "role": "Shell",
+          "triangles": 24,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Guardian.fbx"
+    }
+  ],
+  "builderSHA256": "2cb7246c0c82772914f09f138d98d4c67233bc1a77b61c91da705373301df060",
+  "collision": "Visual meshes only. Contacts are suggested separate native Roblox boxes in local Roblox XYZ.",
+  "caveat": "FBX importer color, scale, individual part placement, contact and performance require Studio verification.",
+  "blenderFbxRoundtrip": [
+    {
+      "file": "ER_Eggs.fbx",
+      "parts": 8,
+      "boundsErrorStuds": 1e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    },
+    {
+      "file": "ER_Guardian.fbx",
+      "parts": 8,
+      "boundsErrorStuds": 1e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    },
+    {
+      "file": "ER_Machinery.fbx",
+      "parts": 15,
+      "boundsErrorStuds": 2.7e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    },
+    {
+      "file": "ER_Shells.fbx",
+      "parts": 8,
+      "boundsErrorStuds": 1.4e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    },
+    {
+      "file": "ER_Workshop.fbx",
+      "parts": 7,
+      "boundsErrorStuds": 1.5e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    }
+  ],
+  "buildSeconds": 10.657,
+  "files": {
+    "ER_Eggs.fbx": "17b40496900cc06a72f1bef0ce9b9eba43cd8b83b843c371c54a88c2d6c37911",
+    "ER_Guardian.fbx": "af1a4485a2d3be983eae8d1da9e51ea22a1dcefccc9a824448950fc6cc558617",
+    "ER_kit_sheet.png": "942966a07248b9bd122803469cdc29c900af9af9ba7ccc1972db2cbd192029d5",
+    "ER_Machinery.fbx": "9222daf9f20e134a8db60365396345482f93663200ab0d8b24f4e2b1a147e359",
+    "ER_phase1_kit.blend": "4f86ed74efcd0710bd3c3989cd17892486c42e13d2bf03c9056326331ce39f4d",
+    "ER_Shells.fbx": "42e90075440abc683275ec834c95f7c30391ea3cf41f7677edb456c060caea6c",
+    "ER_Workshop.fbx": "90a95cdd0979d5713b3d5c679bad68a2205c6175ef22ec3a21025c26a8dfe2a0"
+  }
+}

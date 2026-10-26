@@ -1,0 +1,4171 @@
+{
+  "revision": "C09",
+  "meshes": {
+    "BranchDirections2_Support1__Iron__00": {
+      "component": "BranchDirections2_Support1",
+      "material": "Iron",
+      "triangles": 20,
+      "sourceMesh": "BranchDirections2__Iron__00"
+    },
+    "BranchDirections2_Support2__Iron__00": {
+      "component": "BranchDirections2_Support2",
+      "material": "Iron",
+      "triangles": 20,
+      "sourceMesh": "BranchDirections2__Iron__00"
+    },
+    "BranchDirections2_Board_MAIN__Teal__00": {
+      "component": "BranchDirections2_Board_MAIN",
+      "material": "Teal",
+      "triangles": 12,
+      "sourceMesh": "BranchDirections2__Teal__00"
+    },
+    "BranchDirections2_Lettering_MAIN_-1__Cream__00": {
+      "component": "BranchDirections2_Lettering_MAIN_-1",
+      "material": "Cream",
+      "triangles": 148,
+      "sourceMesh": "BranchDirections2__Cream__00"
+    },
+    "BranchDirections2_Arrow_MAIN_-1__Cream__00": {
+      "component": "BranchDirections2_Arrow_MAIN_-1",
+      "material": "Cream",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections2__Cream__00"
+    },
+    "BranchDirections2_Lettering_MAIN_1__Cream__00": {
+      "component": "BranchDirections2_Lettering_MAIN_1",
+      "material": "Cream",
+      "triangles": 148,
+      "sourceMesh": "BranchDirections2__Cream__00"
+    },
+    "BranchDirections2_Arrow_MAIN_1__Cream__00": {
+      "component": "BranchDirections2_Arrow_MAIN_1",
+      "material": "Cream",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections2__Cream__00"
+    },
+    "BranchDirections2_Board_EXPERT__Yellow__00": {
+      "component": "BranchDirections2_Board_EXPERT",
+      "material": "Yellow",
+      "triangles": 12,
+      "sourceMesh": "BranchDirections2__Yellow__00"
+    },
+    "BranchDirections2_Lettering_EXPERT_-1__Iron__00": {
+      "component": "BranchDirections2_Lettering_EXPERT_-1",
+      "material": "Iron",
+      "triangles": 320,
+      "sourceMesh": "BranchDirections2__Iron__00"
+    },
+    "BranchDirections2_Arrow_EXPERT_-1__Iron__00": {
+      "component": "BranchDirections2_Arrow_EXPERT_-1",
+      "material": "Iron",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections2__Iron__00"
+    },
+    "BranchDirections2_Lettering_EXPERT_1__Iron__00": {
+      "component": "BranchDirections2_Lettering_EXPERT_1",
+      "material": "Iron",
+      "triangles": 320,
+      "sourceMesh": "BranchDirections2__Iron__00"
+    },
+    "BranchDirections2_Arrow_EXPERT_1__Iron__00": {
+      "component": "BranchDirections2_Arrow_EXPERT_1",
+      "material": "Iron",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections2__Iron__00"
+    },
+    "BranchDirections2_FloorArrow_MAIN__Teal__00": {
+      "component": "BranchDirections2_FloorArrow_MAIN",
+      "material": "Teal",
+      "triangles": 24,
+      "sourceMesh": "BranchDirections2__Teal__00"
+    },
+    "BranchDirections2_FloorArrow_EXPERT__Yellow__00": {
+      "component": "BranchDirections2_FloorArrow_EXPERT",
+      "material": "Yellow",
+      "triangles": 24,
+      "sourceMesh": "BranchDirections2__Yellow__00"
+    },
+    "BranchDirections4_Support1__Iron__00": {
+      "component": "BranchDirections4_Support1",
+      "material": "Iron",
+      "triangles": 20,
+      "sourceMesh": "BranchDirections4__Iron__00"
+    },
+    "BranchDirections4_Support2__Iron__00": {
+      "component": "BranchDirections4_Support2",
+      "material": "Iron",
+      "triangles": 20,
+      "sourceMesh": "BranchDirections4__Iron__00"
+    },
+    "BranchDirections4_Board_MAIN__Teal__00": {
+      "component": "BranchDirections4_Board_MAIN",
+      "material": "Teal",
+      "triangles": 12,
+      "sourceMesh": "BranchDirections4__Teal__00"
+    },
+    "BranchDirections4_Lettering_MAIN_-1__Cream__00": {
+      "component": "BranchDirections4_Lettering_MAIN_-1",
+      "material": "Cream",
+      "triangles": 148,
+      "sourceMesh": "BranchDirections4__Cream__00"
+    },
+    "BranchDirections4_Arrow_MAIN_-1__Cream__00": {
+      "component": "BranchDirections4_Arrow_MAIN_-1",
+      "material": "Cream",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections4__Cream__00"
+    },
+    "BranchDirections4_Lettering_MAIN_1__Cream__00": {
+      "component": "BranchDirections4_Lettering_MAIN_1",
+      "material": "Cream",
+      "triangles": 148,
+      "sourceMesh": "BranchDirections4__Cream__00"
+    },
+    "BranchDirections4_Arrow_MAIN_1__Cream__00": {
+      "component": "BranchDirections4_Arrow_MAIN_1",
+      "material": "Cream",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections4__Cream__00"
+    },
+    "BranchDirections4_Board_EXPERT__Yellow__00": {
+      "component": "BranchDirections4_Board_EXPERT",
+      "material": "Yellow",
+      "triangles": 12,
+      "sourceMesh": "BranchDirections4__Yellow__00"
+    },
+    "BranchDirections4_Lettering_EXPERT_-1__Iron__00": {
+      "component": "BranchDirections4_Lettering_EXPERT_-1",
+      "material": "Iron",
+      "triangles": 320,
+      "sourceMesh": "BranchDirections4__Iron__00"
+    },
+    "BranchDirections4_Arrow_EXPERT_-1__Iron__00": {
+      "component": "BranchDirections4_Arrow_EXPERT_-1",
+      "material": "Iron",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections4__Iron__00"
+    },
+    "BranchDirections4_Lettering_EXPERT_1__Iron__00": {
+      "component": "BranchDirections4_Lettering_EXPERT_1",
+      "material": "Iron",
+      "triangles": 320,
+      "sourceMesh": "BranchDirections4__Iron__00"
+    },
+    "BranchDirections4_Arrow_EXPERT_1__Iron__00": {
+      "component": "BranchDirections4_Arrow_EXPERT_1",
+      "material": "Iron",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections4__Iron__00"
+    },
+    "BranchDirections4_FloorArrow_MAIN__Teal__00": {
+      "component": "BranchDirections4_FloorArrow_MAIN",
+      "material": "Teal",
+      "triangles": 24,
+      "sourceMesh": "BranchDirections4__Teal__00"
+    },
+    "BranchDirections4_FloorArrow_EXPERT__Yellow__00": {
+      "component": "BranchDirections4_FloorArrow_EXPERT",
+      "material": "Yellow",
+      "triangles": 24,
+      "sourceMesh": "BranchDirections4__Yellow__00"
+    },
+    "BranchDirections8_Support1__Iron__00": {
+      "component": "BranchDirections8_Support1",
+      "material": "Iron",
+      "triangles": 20,
+      "sourceMesh": "BranchDirections8__Iron__00"
+    },
+    "BranchDirections8_Support2__Iron__00": {
+      "component": "BranchDirections8_Support2",
+      "material": "Iron",
+      "triangles": 20,
+      "sourceMesh": "BranchDirections8__Iron__00"
+    },
+    "BranchDirections8_Board_MAIN__Teal__00": {
+      "component": "BranchDirections8_Board_MAIN",
+      "material": "Teal",
+      "triangles": 12,
+      "sourceMesh": "BranchDirections8__Teal__00"
+    },
+    "BranchDirections8_Lettering_MAIN_-1__Cream__00": {
+      "component": "BranchDirections8_Lettering_MAIN_-1",
+      "material": "Cream",
+      "triangles": 148,
+      "sourceMesh": "BranchDirections8__Cream__00"
+    },
+    "BranchDirections8_Arrow_MAIN_-1__Cream__00": {
+      "component": "BranchDirections8_Arrow_MAIN_-1",
+      "material": "Cream",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections8__Cream__00"
+    },
+    "BranchDirections8_Lettering_MAIN_1__Cream__00": {
+      "component": "BranchDirections8_Lettering_MAIN_1",
+      "material": "Cream",
+      "triangles": 148,
+      "sourceMesh": "BranchDirections8__Cream__00"
+    },
+    "BranchDirections8_Arrow_MAIN_1__Cream__00": {
+      "component": "BranchDirections8_Arrow_MAIN_1",
+      "material": "Cream",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections8__Cream__00"
+    },
+    "BranchDirections8_Board_EXPERT__Yellow__00": {
+      "component": "BranchDirections8_Board_EXPERT",
+      "material": "Yellow",
+      "triangles": 12,
+      "sourceMesh": "BranchDirections8__Yellow__00"
+    },
+    "BranchDirections8_Lettering_EXPERT_-1__Iron__00": {
+      "component": "BranchDirections8_Lettering_EXPERT_-1",
+      "material": "Iron",
+      "triangles": 320,
+      "sourceMesh": "BranchDirections8__Iron__00"
+    },
+    "BranchDirections8_Arrow_EXPERT_-1__Iron__00": {
+      "component": "BranchDirections8_Arrow_EXPERT_-1",
+      "material": "Iron",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections8__Iron__00"
+    },
+    "BranchDirections8_Lettering_EXPERT_1__Iron__00": {
+      "component": "BranchDirections8_Lettering_EXPERT_1",
+      "material": "Iron",
+      "triangles": 320,
+      "sourceMesh": "BranchDirections8__Iron__00"
+    },
+    "BranchDirections8_Arrow_EXPERT_1__Iron__00": {
+      "component": "BranchDirections8_Arrow_EXPERT_1",
+      "material": "Iron",
+      "triangles": 8,
+      "sourceMesh": "BranchDirections8__Iron__00"
+    },
+    "BranchDirections8_FloorArrow_MAIN__Teal__00": {
+      "component": "BranchDirections8_FloorArrow_MAIN",
+      "material": "Teal",
+      "triangles": 24,
+      "sourceMesh": "BranchDirections8__Teal__00"
+    },
+    "BranchDirections8_FloorArrow_EXPERT__Yellow__00": {
+      "component": "BranchDirections8_FloorArrow_EXPERT",
+      "material": "Yellow",
+      "triangles": 24,
+      "sourceMesh": "BranchDirections8__Yellow__00"
+    },
+    "MarketArch_Support1__Brick__00": {
+      "component": "MarketArch_Support1",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": "MarketArch__Brick__00"
+    },
+    "MarketArch_Cap1__Cream__00": {
+      "component": "MarketArch_Cap1",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": "MarketArch__Cream__00"
+    },
+    "MarketArch_Support2__Brick__00": {
+      "component": "MarketArch_Support2",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": "MarketArch__Brick__00"
+    },
+    "MarketArch_Cap2__Cream__00": {
+      "component": "MarketArch_Cap2",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": "MarketArch__Cream__00"
+    },
+    "MarketArch_Panel__Teal__00": {
+      "component": "MarketArch_Panel",
+      "material": "Teal",
+      "triangles": 12,
+      "sourceMesh": "MarketArch__Teal__00"
+    },
+    "MarketArch_LetteringFront__Cream__00": {
+      "component": "MarketArch_LetteringFront",
+      "material": "Cream",
+      "triangles": 632,
+      "sourceMesh": "MarketArch__Cream__00"
+    },
+    "MarketArch_LetteringBack__Cream__00": {
+      "component": "MarketArch_LetteringBack",
+      "material": "Cream",
+      "triangles": 632,
+      "sourceMesh": "MarketArch__Cream__00"
+    },
+    "MarketCloseFronts_FLOWERS_Window__Cream__00": {
+      "component": "MarketCloseFronts_FLOWERS_Window",
+      "material": "Cream",
+      "triangles": 60,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_FLOWERS_Window__WoodDark__00": {
+      "component": "MarketCloseFronts_FLOWERS_Window",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_FLOWERS_Window__Glass__00": {
+      "component": "MarketCloseFronts_FLOWERS_Window",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_FLOWERS_Panel__Coral__00": {
+      "component": "MarketCloseFronts_FLOWERS_Panel",
+      "material": "Coral",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_FLOWERS_Lettering__Cream__00": {
+      "component": "MarketCloseFronts_FLOWERS_Lettering",
+      "material": "Cream",
+      "triangles": 392,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_FLOWERS_Awning__Coral__00": {
+      "component": "MarketCloseFronts_FLOWERS_Awning",
+      "material": "Coral",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_FLOWERS_Awning__Cream__00": {
+      "component": "MarketCloseFronts_FLOWERS_Awning",
+      "material": "Cream",
+      "triangles": 48,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_FLOWERS_Piers__Brick__00": {
+      "component": "MarketCloseFronts_FLOWERS_Piers",
+      "material": "Brick",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Brick__00"
+    },
+    "MarketCloseFronts_FRUIT_Window__Cream__00": {
+      "component": "MarketCloseFronts_FRUIT_Window",
+      "material": "Cream",
+      "triangles": 60,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_FRUIT_Window__WoodDark__00": {
+      "component": "MarketCloseFronts_FRUIT_Window",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_FRUIT_Window__Glass__00": {
+      "component": "MarketCloseFronts_FRUIT_Window",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_FRUIT_Panel__Teal__00": {
+      "component": "MarketCloseFronts_FRUIT_Panel",
+      "material": "Teal",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Teal__00"
+    },
+    "MarketCloseFronts_FRUIT_Lettering__Cream__00": {
+      "component": "MarketCloseFronts_FRUIT_Lettering",
+      "material": "Cream",
+      "triangles": 240,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_FRUIT_Awning__Teal__00": {
+      "component": "MarketCloseFronts_FRUIT_Awning",
+      "material": "Teal",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Teal__00"
+    },
+    "MarketCloseFronts_FRUIT_Awning__Cream__00": {
+      "component": "MarketCloseFronts_FRUIT_Awning",
+      "material": "Cream",
+      "triangles": 48,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_FRUIT_Piers__Brick__00": {
+      "component": "MarketCloseFronts_FRUIT_Piers",
+      "material": "Brick",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Brick__00"
+    },
+    "MarketCloseFronts_BAKERY_Window__Cream__00": {
+      "component": "MarketCloseFronts_BAKERY_Window",
+      "material": "Cream",
+      "triangles": 60,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_BAKERY_Window__WoodDark__00": {
+      "component": "MarketCloseFronts_BAKERY_Window",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_BAKERY_Window__Glass__00": {
+      "component": "MarketCloseFronts_BAKERY_Window",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_BAKERY_Panel__Yellow__00": {
+      "component": "MarketCloseFronts_BAKERY_Panel",
+      "material": "Yellow",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Yellow__00"
+    },
+    "MarketCloseFronts_BAKERY_Lettering__Cream__00": {
+      "component": "MarketCloseFronts_BAKERY_Lettering",
+      "material": "Cream",
+      "triangles": 364,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_BAKERY_Awning__Yellow__00": {
+      "component": "MarketCloseFronts_BAKERY_Awning",
+      "material": "Yellow",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Yellow__00"
+    },
+    "MarketCloseFronts_BAKERY_Awning__Cream__00": {
+      "component": "MarketCloseFronts_BAKERY_Awning",
+      "material": "Cream",
+      "triangles": 48,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_BAKERY_Piers__Brick__00": {
+      "component": "MarketCloseFronts_BAKERY_Piers",
+      "material": "Brick",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Brick__00"
+    },
+    "MarketCloseFronts_CAFE_Window__Cream__00": {
+      "component": "MarketCloseFronts_CAFE_Window",
+      "material": "Cream",
+      "triangles": 60,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_CAFE_Window__WoodDark__00": {
+      "component": "MarketCloseFronts_CAFE_Window",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_CAFE_Window__Glass__00": {
+      "component": "MarketCloseFronts_CAFE_Window",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_CAFE_Panel__Coral__00": {
+      "component": "MarketCloseFronts_CAFE_Panel",
+      "material": "Coral",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_CAFE_Lettering__Cream__00": {
+      "component": "MarketCloseFronts_CAFE_Lettering",
+      "material": "Cream",
+      "triangles": 192,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_CAFE_Awning__Coral__00": {
+      "component": "MarketCloseFronts_CAFE_Awning",
+      "material": "Coral",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_CAFE_Awning__Cream__00": {
+      "component": "MarketCloseFronts_CAFE_Awning",
+      "material": "Cream",
+      "triangles": 48,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_CAFE_Piers__Brick__00": {
+      "component": "MarketCloseFronts_CAFE_Piers",
+      "material": "Brick",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Brick__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window-5__WoodDark__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window-5",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window-5__Glass__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window-5",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window-5__Cream__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window-5",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window-5__WoodLight__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window-5",
+      "material": "WoodLight",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodLight__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window0__WoodDark__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window0",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window0__Glass__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window0__Cream__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window0",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window0__WoodLight__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window0",
+      "material": "WoodLight",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodLight__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window5__WoodDark__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window5",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window5__Glass__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window5",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window5__Cream__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window5",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Window5__WoodLight__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Window5",
+      "material": "WoodLight",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodLight__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Panel__Coral__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Panel",
+      "material": "Coral",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Lettering__Cream__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Lettering",
+      "material": "Cream",
+      "triangles": 364,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter-6__Terracotta__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Planter-6",
+      "material": "Terracotta",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Terracotta__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter-6__LeafLight__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Planter-6",
+      "material": "LeafLight",
+      "triangles": 240,
+      "sourceMesh": "MarketCloseFronts__LeafLight__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter-6__Yellow__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Planter-6",
+      "material": "Yellow",
+      "triangles": 360,
+      "sourceMesh": "MarketCloseFronts__Yellow__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter-6__Leaf__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Planter-6",
+      "material": "Leaf",
+      "triangles": 480,
+      "sourceMesh": "MarketCloseFronts__Leaf__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter-6__Coral__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Planter-6",
+      "material": "Coral",
+      "triangles": 540,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter6__Terracotta__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Planter6",
+      "material": "Terracotta",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Terracotta__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter6__LeafLight__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Planter6",
+      "material": "LeafLight",
+      "triangles": 240,
+      "sourceMesh": "MarketCloseFronts__LeafLight__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter6__Yellow__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Planter6",
+      "material": "Yellow",
+      "triangles": 360,
+      "sourceMesh": "MarketCloseFronts__Yellow__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter6__Leaf__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Planter6",
+      "material": "Leaf",
+      "triangles": 480,
+      "sourceMesh": "MarketCloseFronts__Leaf__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter6__Coral__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Planter6",
+      "material": "Coral",
+      "triangles": 540,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Awning__Cream__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Awning",
+      "material": "Cream",
+      "triangles": 420,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetBAKERY_Awning__Coral__00": {
+      "component": "MarketCloseFronts_StreetBAKERY_Awning",
+      "material": "Coral",
+      "triangles": 420,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window-5__WoodDark__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window-5",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window-5__Glass__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window-5",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window-5__Cream__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window-5",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window-5__WoodLight__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window-5",
+      "material": "WoodLight",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodLight__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window0__WoodDark__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window0",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window0__Glass__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window0__Cream__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window0",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window0__WoodLight__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window0",
+      "material": "WoodLight",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodLight__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window5__WoodDark__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window5",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window5__Glass__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window5",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window5__Cream__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window5",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Window5__WoodLight__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Window5",
+      "material": "WoodLight",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodLight__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Panel__Teal__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Panel",
+      "material": "Teal",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Teal__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Lettering__Cream__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Lettering",
+      "material": "Cream",
+      "triangles": 452,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Planter-6__Terracotta__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Planter-6",
+      "material": "Terracotta",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Terracotta__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Planter-6__LeafLight__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Planter-6",
+      "material": "LeafLight",
+      "triangles": 240,
+      "sourceMesh": "MarketCloseFronts__LeafLight__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Planter-6__Yellow__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Planter-6",
+      "material": "Yellow",
+      "triangles": 360,
+      "sourceMesh": "MarketCloseFronts__Yellow__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Planter-6__Leaf__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Planter-6",
+      "material": "Leaf",
+      "triangles": 480,
+      "sourceMesh": "MarketCloseFronts__Leaf__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Planter-6__Coral__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Planter-6",
+      "material": "Coral",
+      "triangles": 540,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Planter6__Terracotta__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Planter6",
+      "material": "Terracotta",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Terracotta__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Planter6__LeafLight__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Planter6",
+      "material": "LeafLight",
+      "triangles": 240,
+      "sourceMesh": "MarketCloseFronts__LeafLight__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Planter6__Yellow__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Planter6",
+      "material": "Yellow",
+      "triangles": 360,
+      "sourceMesh": "MarketCloseFronts__Yellow__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Planter6__Leaf__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Planter6",
+      "material": "Leaf",
+      "triangles": 480,
+      "sourceMesh": "MarketCloseFronts__Leaf__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Planter6__Coral__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Planter6",
+      "material": "Coral",
+      "triangles": 540,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Awning__Cream__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Awning",
+      "material": "Cream",
+      "triangles": 420,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetGROCER_Awning__Teal__00": {
+      "component": "MarketCloseFronts_StreetGROCER_Awning",
+      "material": "Teal",
+      "triangles": 420,
+      "sourceMesh": "MarketCloseFronts__Teal__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window-5__WoodDark__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window-5",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window-5__Glass__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window-5",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window-5__Cream__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window-5",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window-5__WoodLight__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window-5",
+      "material": "WoodLight",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodLight__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window0__WoodDark__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window0",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window0__Glass__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window0__Cream__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window0",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window0__WoodLight__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window0",
+      "material": "WoodLight",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodLight__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window5__WoodDark__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window5",
+      "material": "WoodDark",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodDark__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window5__Glass__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window5",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Glass__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window5__Cream__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window5",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Window5__WoodLight__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Window5",
+      "material": "WoodLight",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__WoodLight__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Panel__Yellow__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Panel",
+      "material": "Yellow",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Yellow__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Lettering__Cream__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Lettering",
+      "material": "Cream",
+      "triangles": 192,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Planter-6__Terracotta__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Planter-6",
+      "material": "Terracotta",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Terracotta__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Planter-6__LeafLight__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Planter-6",
+      "material": "LeafLight",
+      "triangles": 240,
+      "sourceMesh": "MarketCloseFronts__LeafLight__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Planter-6__Yellow__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Planter-6",
+      "material": "Yellow",
+      "triangles": 360,
+      "sourceMesh": "MarketCloseFronts__Yellow__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Planter-6__Leaf__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Planter-6",
+      "material": "Leaf",
+      "triangles": 480,
+      "sourceMesh": "MarketCloseFronts__Leaf__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Planter-6__Coral__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Planter-6",
+      "material": "Coral",
+      "triangles": 540,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Planter6__Terracotta__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Planter6",
+      "material": "Terracotta",
+      "triangles": 12,
+      "sourceMesh": "MarketCloseFronts__Terracotta__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Planter6__LeafLight__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Planter6",
+      "material": "LeafLight",
+      "triangles": 240,
+      "sourceMesh": "MarketCloseFronts__LeafLight__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Planter6__Yellow__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Planter6",
+      "material": "Yellow",
+      "triangles": 360,
+      "sourceMesh": "MarketCloseFronts__Yellow__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Planter6__Leaf__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Planter6",
+      "material": "Leaf",
+      "triangles": 480,
+      "sourceMesh": "MarketCloseFronts__Leaf__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Planter6__Coral__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Planter6",
+      "material": "Coral",
+      "triangles": 540,
+      "sourceMesh": "MarketCloseFronts__Coral__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Awning__Cream__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Awning",
+      "material": "Cream",
+      "triangles": 420,
+      "sourceMesh": "MarketCloseFronts__Cream__00"
+    },
+    "MarketCloseFronts_StreetCAFE_Awning__Yellow__00": {
+      "component": "MarketCloseFronts_StreetCAFE_Awning",
+      "material": "Yellow",
+      "triangles": 420,
+      "sourceMesh": "MarketCloseFronts__Yellow__00"
+    },
+    "OwnerFacade_Window_-1_0_0__Cream__00": {
+      "component": "OwnerFacade_Window_-1_0_0",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_0__Glass__00": {
+      "component": "OwnerFacade_Window_-1_0_0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_0__Stone__00": {
+      "component": "OwnerFacade_Window_-1_0_0",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_1__Cream__00": {
+      "component": "OwnerFacade_Window_-1_0_1",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_1__Glass__00": {
+      "component": "OwnerFacade_Window_-1_0_1",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_1__Stone__00": {
+      "component": "OwnerFacade_Window_-1_0_1",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_2__Cream__00": {
+      "component": "OwnerFacade_Window_-1_0_2",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_2__Glass__00": {
+      "component": "OwnerFacade_Window_-1_0_2",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_2__Stone__00": {
+      "component": "OwnerFacade_Window_-1_0_2",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_3__Cream__00": {
+      "component": "OwnerFacade_Window_-1_0_3",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_3__Glass__00": {
+      "component": "OwnerFacade_Window_-1_0_3",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_0_3__Stone__00": {
+      "component": "OwnerFacade_Window_-1_0_3",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_0__Cream__00": {
+      "component": "OwnerFacade_Window_-1_1_0",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_0__Glass__00": {
+      "component": "OwnerFacade_Window_-1_1_0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_0__Stone__00": {
+      "component": "OwnerFacade_Window_-1_1_0",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_0__Teal__00": {
+      "component": "OwnerFacade_Window_-1_1_0",
+      "material": "Teal",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_1__Cream__00": {
+      "component": "OwnerFacade_Window_-1_1_1",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_1__Glass__00": {
+      "component": "OwnerFacade_Window_-1_1_1",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_1__Stone__00": {
+      "component": "OwnerFacade_Window_-1_1_1",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_2__Cream__00": {
+      "component": "OwnerFacade_Window_-1_1_2",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_2__Glass__00": {
+      "component": "OwnerFacade_Window_-1_1_2",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_2__Stone__00": {
+      "component": "OwnerFacade_Window_-1_1_2",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_2__Teal__00": {
+      "component": "OwnerFacade_Window_-1_1_2",
+      "material": "Teal",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_3__Cream__00": {
+      "component": "OwnerFacade_Window_-1_1_3",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_3__Glass__00": {
+      "component": "OwnerFacade_Window_-1_1_3",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_1_3__Stone__00": {
+      "component": "OwnerFacade_Window_-1_1_3",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_0__Cream__00": {
+      "component": "OwnerFacade_Window_-1_2_0",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_0__Glass__00": {
+      "component": "OwnerFacade_Window_-1_2_0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_0__Stone__00": {
+      "component": "OwnerFacade_Window_-1_2_0",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_1__Cream__00": {
+      "component": "OwnerFacade_Window_-1_2_1",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_1__Glass__00": {
+      "component": "OwnerFacade_Window_-1_2_1",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_1__Stone__00": {
+      "component": "OwnerFacade_Window_-1_2_1",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_2__Cream__00": {
+      "component": "OwnerFacade_Window_-1_2_2",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_2__Glass__00": {
+      "component": "OwnerFacade_Window_-1_2_2",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_2__Stone__00": {
+      "component": "OwnerFacade_Window_-1_2_2",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_3__Cream__00": {
+      "component": "OwnerFacade_Window_-1_2_3",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_3__Glass__00": {
+      "component": "OwnerFacade_Window_-1_2_3",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_-1_2_3__Stone__00": {
+      "component": "OwnerFacade_Window_-1_2_3",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_FloorTrim_-1_12.3__Cream__00": {
+      "component": "OwnerFacade_FloorTrim_-1_12.3",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_FloorTrim_-1_23.3__Cream__00": {
+      "component": "OwnerFacade_FloorTrim_-1_23.3",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_0__Cream__00": {
+      "component": "OwnerFacade_Window_1_0_0",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_0__Glass__00": {
+      "component": "OwnerFacade_Window_1_0_0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_0__Stone__00": {
+      "component": "OwnerFacade_Window_1_0_0",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_1__Cream__00": {
+      "component": "OwnerFacade_Window_1_0_1",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_1__Glass__00": {
+      "component": "OwnerFacade_Window_1_0_1",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_1__Stone__00": {
+      "component": "OwnerFacade_Window_1_0_1",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_2__Cream__00": {
+      "component": "OwnerFacade_Window_1_0_2",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_2__Glass__00": {
+      "component": "OwnerFacade_Window_1_0_2",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_2__Stone__00": {
+      "component": "OwnerFacade_Window_1_0_2",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_3__Cream__00": {
+      "component": "OwnerFacade_Window_1_0_3",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_3__Glass__00": {
+      "component": "OwnerFacade_Window_1_0_3",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_0_3__Stone__00": {
+      "component": "OwnerFacade_Window_1_0_3",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_0__Cream__00": {
+      "component": "OwnerFacade_Window_1_1_0",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_0__Glass__00": {
+      "component": "OwnerFacade_Window_1_1_0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_0__Stone__00": {
+      "component": "OwnerFacade_Window_1_1_0",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_0__Teal__00": {
+      "component": "OwnerFacade_Window_1_1_0",
+      "material": "Teal",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_1__Cream__00": {
+      "component": "OwnerFacade_Window_1_1_1",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_1__Glass__00": {
+      "component": "OwnerFacade_Window_1_1_1",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_1__Stone__00": {
+      "component": "OwnerFacade_Window_1_1_1",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_2__Cream__00": {
+      "component": "OwnerFacade_Window_1_1_2",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_2__Glass__00": {
+      "component": "OwnerFacade_Window_1_1_2",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_2__Stone__00": {
+      "component": "OwnerFacade_Window_1_1_2",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_2__Teal__00": {
+      "component": "OwnerFacade_Window_1_1_2",
+      "material": "Teal",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_3__Cream__00": {
+      "component": "OwnerFacade_Window_1_1_3",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_3__Glass__00": {
+      "component": "OwnerFacade_Window_1_1_3",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_1_3__Stone__00": {
+      "component": "OwnerFacade_Window_1_1_3",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_0__Cream__00": {
+      "component": "OwnerFacade_Window_1_2_0",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_0__Glass__00": {
+      "component": "OwnerFacade_Window_1_2_0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_0__Stone__00": {
+      "component": "OwnerFacade_Window_1_2_0",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_1__Cream__00": {
+      "component": "OwnerFacade_Window_1_2_1",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_1__Glass__00": {
+      "component": "OwnerFacade_Window_1_2_1",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_1__Stone__00": {
+      "component": "OwnerFacade_Window_1_2_1",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_2__Cream__00": {
+      "component": "OwnerFacade_Window_1_2_2",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_2__Glass__00": {
+      "component": "OwnerFacade_Window_1_2_2",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_2__Stone__00": {
+      "component": "OwnerFacade_Window_1_2_2",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_3__Cream__00": {
+      "component": "OwnerFacade_Window_1_2_3",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_3__Glass__00": {
+      "component": "OwnerFacade_Window_1_2_3",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_Window_1_2_3__Stone__00": {
+      "component": "OwnerFacade_Window_1_2_3",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_FloorTrim_1_12.3__Cream__00": {
+      "component": "OwnerFacade_FloorTrim_1_12.3",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_FloorTrim_1_23.3__Cream__00": {
+      "component": "OwnerFacade_FloorTrim_1_23.3",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_-1_0__Cream__00": {
+      "component": "OwnerFacade_EndWindow_-1_0",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_-1_0__Glass__00": {
+      "component": "OwnerFacade_EndWindow_-1_0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_-1_1__Cream__00": {
+      "component": "OwnerFacade_EndWindow_-1_1",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_-1_1__Glass__00": {
+      "component": "OwnerFacade_EndWindow_-1_1",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_-1_2__Cream__00": {
+      "component": "OwnerFacade_EndWindow_-1_2",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_-1_2__Glass__00": {
+      "component": "OwnerFacade_EndWindow_-1_2",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_1_0__Cream__00": {
+      "component": "OwnerFacade_EndWindow_1_0",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_1_0__Glass__00": {
+      "component": "OwnerFacade_EndWindow_1_0",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_1_1__Cream__00": {
+      "component": "OwnerFacade_EndWindow_1_1",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_1_1__Glass__00": {
+      "component": "OwnerFacade_EndWindow_1_1",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_1_2__Cream__00": {
+      "component": "OwnerFacade_EndWindow_1_2",
+      "material": "Cream",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "OwnerFacade_EndWindow_1_2__Glass__00": {
+      "component": "OwnerFacade_EndWindow_1_2",
+      "material": "Glass",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_RoofVent_0__Rail__00": {
+      "component": "OwnerFacade_RoofVent_0",
+      "material": "Rail",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_RoofVent_0__Cream__00": {
+      "component": "OwnerFacade_RoofVent_0",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_RoofVent_1__Rail__00": {
+      "component": "OwnerFacade_RoofVent_1",
+      "material": "Rail",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_RoofVent_1__Cream__00": {
+      "component": "OwnerFacade_RoofVent_1",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_RoofVent_2__Rail__00": {
+      "component": "OwnerFacade_RoofVent_2",
+      "material": "Rail",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "OwnerFacade_RoofVent_2__Cream__00": {
+      "component": "OwnerFacade_RoofVent_2",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "GroundRing_West__Stone__00": {
+      "component": "GroundRing_West",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "GroundRing_East__Stone__00": {
+      "component": "GroundRing_East",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "GroundRing_North__Stone__00": {
+      "component": "GroundRing_North",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "GroundRing_South__Stone__00": {
+      "component": "GroundRing_South",
+      "material": "Stone",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Floor__Rail__00": {
+      "component": "CourtyardDepth_Floor",
+      "material": "Rail",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Foundation_0__Terracotta__00": {
+      "component": "CourtyardDepth_Foundation_0",
+      "material": "Terracotta",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_0_0__Cream__00": {
+      "component": "CourtyardDepth_Bays_0_0",
+      "material": "Cream",
+      "triangles": 84,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_0_0__Glass__00": {
+      "component": "CourtyardDepth_Bays_0_0",
+      "material": "Glass",
+      "triangles": 72,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_0_1__Cream__00": {
+      "component": "CourtyardDepth_Bays_0_1",
+      "material": "Cream",
+      "triangles": 84,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_0_1__Glass__00": {
+      "component": "CourtyardDepth_Bays_0_1",
+      "material": "Glass",
+      "triangles": 72,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_0_2__Cream__00": {
+      "component": "CourtyardDepth_Bays_0_2",
+      "material": "Cream",
+      "triangles": 84,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_0_2__Glass__00": {
+      "component": "CourtyardDepth_Bays_0_2",
+      "material": "Glass",
+      "triangles": 72,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_0_3__Cream__00": {
+      "component": "CourtyardDepth_Bays_0_3",
+      "material": "Cream",
+      "triangles": 84,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_0_3__Glass__00": {
+      "component": "CourtyardDepth_Bays_0_3",
+      "material": "Glass",
+      "triangles": 72,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Foundation_1__Brick__00": {
+      "component": "CourtyardDepth_Foundation_1",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_1_0__Cream__00": {
+      "component": "CourtyardDepth_Bays_1_0",
+      "material": "Cream",
+      "triangles": 96,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_1_0__Glass__00": {
+      "component": "CourtyardDepth_Bays_1_0",
+      "material": "Glass",
+      "triangles": 84,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_1_1__Cream__00": {
+      "component": "CourtyardDepth_Bays_1_1",
+      "material": "Cream",
+      "triangles": 96,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_1_1__Glass__00": {
+      "component": "CourtyardDepth_Bays_1_1",
+      "material": "Glass",
+      "triangles": 84,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_1_2__Cream__00": {
+      "component": "CourtyardDepth_Bays_1_2",
+      "material": "Cream",
+      "triangles": 96,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_1_2__Glass__00": {
+      "component": "CourtyardDepth_Bays_1_2",
+      "material": "Glass",
+      "triangles": 84,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_1_3__Cream__00": {
+      "component": "CourtyardDepth_Bays_1_3",
+      "material": "Cream",
+      "triangles": 96,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_1_3__Glass__00": {
+      "component": "CourtyardDepth_Bays_1_3",
+      "material": "Glass",
+      "triangles": 84,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Foundation_2__Plaster__00": {
+      "component": "CourtyardDepth_Foundation_2",
+      "material": "Plaster",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_2_0__Cream__00": {
+      "component": "CourtyardDepth_Bays_2_0",
+      "material": "Cream",
+      "triangles": 60,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_2_0__Glass__00": {
+      "component": "CourtyardDepth_Bays_2_0",
+      "material": "Glass",
+      "triangles": 48,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_2_1__Cream__00": {
+      "component": "CourtyardDepth_Bays_2_1",
+      "material": "Cream",
+      "triangles": 60,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_2_1__Glass__00": {
+      "component": "CourtyardDepth_Bays_2_1",
+      "material": "Glass",
+      "triangles": 48,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_2_2__Cream__00": {
+      "component": "CourtyardDepth_Bays_2_2",
+      "material": "Cream",
+      "triangles": 60,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_2_2__Glass__00": {
+      "component": "CourtyardDepth_Bays_2_2",
+      "material": "Glass",
+      "triangles": 48,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_2_3__Cream__00": {
+      "component": "CourtyardDepth_Bays_2_3",
+      "material": "Cream",
+      "triangles": 60,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_2_3__Glass__00": {
+      "component": "CourtyardDepth_Bays_2_3",
+      "material": "Glass",
+      "triangles": 48,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Foundation_3__Terracotta__00": {
+      "component": "CourtyardDepth_Foundation_3",
+      "material": "Terracotta",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_3_0__Cream__00": {
+      "component": "CourtyardDepth_Bays_3_0",
+      "material": "Cream",
+      "triangles": 72,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_3_0__Glass__00": {
+      "component": "CourtyardDepth_Bays_3_0",
+      "material": "Glass",
+      "triangles": 60,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_3_1__Cream__00": {
+      "component": "CourtyardDepth_Bays_3_1",
+      "material": "Cream",
+      "triangles": 72,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_3_1__Glass__00": {
+      "component": "CourtyardDepth_Bays_3_1",
+      "material": "Glass",
+      "triangles": 60,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_3_2__Cream__00": {
+      "component": "CourtyardDepth_Bays_3_2",
+      "material": "Cream",
+      "triangles": 72,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_3_2__Glass__00": {
+      "component": "CourtyardDepth_Bays_3_2",
+      "material": "Glass",
+      "triangles": 60,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_3_3__Cream__00": {
+      "component": "CourtyardDepth_Bays_3_3",
+      "material": "Cream",
+      "triangles": 72,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_3_3__Glass__00": {
+      "component": "CourtyardDepth_Bays_3_3",
+      "material": "Glass",
+      "triangles": 60,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Foundation_4__Brick__00": {
+      "component": "CourtyardDepth_Foundation_4",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_4_0__Cream__00": {
+      "component": "CourtyardDepth_Bays_4_0",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_4_0__Glass__00": {
+      "component": "CourtyardDepth_Bays_4_0",
+      "material": "Glass",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_4_1__Cream__00": {
+      "component": "CourtyardDepth_Bays_4_1",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_4_1__Glass__00": {
+      "component": "CourtyardDepth_Bays_4_1",
+      "material": "Glass",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_4_2__Cream__00": {
+      "component": "CourtyardDepth_Bays_4_2",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_4_2__Glass__00": {
+      "component": "CourtyardDepth_Bays_4_2",
+      "material": "Glass",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_4_3__Cream__00": {
+      "component": "CourtyardDepth_Bays_4_3",
+      "material": "Cream",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Bays_4_3__Glass__00": {
+      "component": "CourtyardDepth_Bays_4_3",
+      "material": "Glass",
+      "triangles": 24,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-242_5__Brick__00": {
+      "component": "CourtyardDepth_Pier_-242_5",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-242_5__Stone__00": {
+      "component": "CourtyardDepth_Pier_-242_5",
+      "material": "Stone",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-196_5__Brick__00": {
+      "component": "CourtyardDepth_Pier_-196_5",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-196_5__Stone__00": {
+      "component": "CourtyardDepth_Pier_-196_5",
+      "material": "Stone",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-150_5__Brick__00": {
+      "component": "CourtyardDepth_Pier_-150_5",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-150_5__Stone__00": {
+      "component": "CourtyardDepth_Pier_-150_5",
+      "material": "Stone",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-104_5__Brick__00": {
+      "component": "CourtyardDepth_Pier_-104_5",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-104_5__Stone__00": {
+      "component": "CourtyardDepth_Pier_-104_5",
+      "material": "Stone",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-242_-55__Brick__00": {
+      "component": "CourtyardDepth_Pier_-242_-55",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-242_-55__Stone__00": {
+      "component": "CourtyardDepth_Pier_-242_-55",
+      "material": "Stone",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-196_-55__Brick__00": {
+      "component": "CourtyardDepth_Pier_-196_-55",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-196_-55__Stone__00": {
+      "component": "CourtyardDepth_Pier_-196_-55",
+      "material": "Stone",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-150_-55__Brick__00": {
+      "component": "CourtyardDepth_Pier_-150_-55",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-150_-55__Stone__00": {
+      "component": "CourtyardDepth_Pier_-150_-55",
+      "material": "Stone",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-104_-55__Brick__00": {
+      "component": "CourtyardDepth_Pier_-104_-55",
+      "material": "Brick",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_Pier_-104_-55__Stone__00": {
+      "component": "CourtyardDepth_Pier_-104_-55",
+      "material": "Stone",
+      "triangles": 36,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_0__Plaster__00": {
+      "component": "CourtyardDepth_LowRoof_0",
+      "material": "Plaster",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_0__Roof__00": {
+      "component": "CourtyardDepth_LowRoof_0",
+      "material": "Roof",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_0__Cream__00": {
+      "component": "CourtyardDepth_LowRoof_0",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_1__Plaster__00": {
+      "component": "CourtyardDepth_LowRoof_1",
+      "material": "Plaster",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_1__Roof__00": {
+      "component": "CourtyardDepth_LowRoof_1",
+      "material": "Roof",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_1__Cream__00": {
+      "component": "CourtyardDepth_LowRoof_1",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_2__Plaster__00": {
+      "component": "CourtyardDepth_LowRoof_2",
+      "material": "Plaster",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_2__Roof__00": {
+      "component": "CourtyardDepth_LowRoof_2",
+      "material": "Roof",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_2__Cream__00": {
+      "component": "CourtyardDepth_LowRoof_2",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_3__Plaster__00": {
+      "component": "CourtyardDepth_LowRoof_3",
+      "material": "Plaster",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_3__Roof__00": {
+      "component": "CourtyardDepth_LowRoof_3",
+      "material": "Roof",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_3__Cream__00": {
+      "component": "CourtyardDepth_LowRoof_3",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_4__Plaster__00": {
+      "component": "CourtyardDepth_LowRoof_4",
+      "material": "Plaster",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_4__Roof__00": {
+      "component": "CourtyardDepth_LowRoof_4",
+      "material": "Roof",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "CourtyardDepth_LowRoof_4__Cream__00": {
+      "component": "CourtyardDepth_LowRoof_4",
+      "material": "Cream",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "MarkerOrigin__Iron__00": {
+      "component": "MarkerOrigin",
+      "material": "Iron",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "MarkerRight__Iron__00": {
+      "component": "MarkerRight",
+      "material": "Iron",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "MarkerUp__Iron__00": {
+      "component": "MarkerUp",
+      "material": "Iron",
+      "triangles": 12,
+      "sourceMesh": null
+    },
+    "MarkerForward__Iron__00": {
+      "component": "MarkerForward",
+      "material": "Iron",
+      "triangles": 12,
+      "sourceMesh": null
+    }
+  },
+  "colors": {
+    "Brick": [
+      0.66,
+      0.26,
+      0.16
+    ],
+    "Terracotta": [
+      0.79,
+      0.37,
+      0.23
+    ],
+    "Plaster": [
+      0.93,
+      0.76,
+      0.48
+    ],
+    "Cream": [
+      0.93,
+      0.87,
+      0.72
+    ],
+    "Stone": [
+      0.64,
+      0.65,
+      0.61
+    ],
+    "Roof": [
+      0.24,
+      0.3,
+      0.32
+    ],
+    "Teal": [
+      0.035,
+      0.49,
+      0.48
+    ],
+    "Coral": [
+      0.89,
+      0.24,
+      0.2
+    ],
+    "Yellow": [
+      0.99,
+      0.66,
+      0.1
+    ],
+    "Blue": [
+      0.08,
+      0.3,
+      0.58
+    ],
+    "Iron": [
+      0.095,
+      0.14,
+      0.18
+    ],
+    "Glass": [
+      0.16,
+      0.27,
+      0.31
+    ],
+    "Wood": [
+      0.43,
+      0.26,
+      0.13
+    ],
+    "Leaf": [
+      0.22,
+      0.42,
+      0.14
+    ],
+    "LeafLight": [
+      0.45,
+      0.6,
+      0.19
+    ],
+    "Soil": [
+      0.22,
+      0.17,
+      0.12
+    ],
+    "Red": [
+      0.96,
+      0.055,
+      0.035
+    ],
+    "White": [
+      0.96,
+      0.95,
+      0.85
+    ],
+    "Rail": [
+      0.37,
+      0.43,
+      0.46
+    ],
+    "Skyline": [
+      0.4,
+      0.52,
+      0.57
+    ],
+    "Light": [
+      1,
+      0.86,
+      0.48
+    ],
+    "WoodLight": [
+      0.59,
+      0.4,
+      0.23
+    ],
+    "WoodDark": [
+      0.3,
+      0.18,
+      0.1
+    ],
+    "WindowGlow": [
+      0.96,
+      0.72,
+      0.34
+    ]
+  },
+  "sourceFrames": {
+    "BranchDirections2__Iron__00": {
+      "cf": [
+        3310.000244140625,
+        35.30009460449219,
+        67.67041015625,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        0.6700016260147095,
+        12.600029945373535,
+        8.940021514892578
+      ],
+      "model": "BranchDirections2"
+    },
+    "BranchDirections4__Teal__00": {
+      "cf": [
+        3402.23388671875,
+        87.086669921875,
+        -253.98046875,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        14.92503547668457,
+        9.843021392822266,
+        7.9599995613098145
+      ],
+      "model": "BranchDirections4"
+    },
+    "BranchDirections4__Cream__00": {
+      "cf": [
+        3394.996337890625,
+        91.00017547607422,
+        -255.45556640625,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        0.6700016260147095,
+        0.936008095741272,
+        4.001864910125732
+      ],
+      "model": "BranchDirections4"
+    },
+    "BranchDirections2__Teal__00": {
+      "cf": [
+        3327.387939453125,
+        35.29509735107422,
+        72.100341796875,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        35.2250862121582,
+        12.210030555725098,
+        19.200040817260742
+      ],
+      "model": "BranchDirections2"
+    },
+    "MarketCloseFronts__Yellow__00": {
+      "cf": [
+        3326.4169921875,
+        13.881309509277344,
+        170.3720703125,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        55.13041687011719,
+        15.437520980834961,
+        163.79379272460938
+      ],
+      "model": "MarketCloseFronts"
+    },
+    "BranchDirections8__Iron__00": {
+      "cf": [
+        3722.774169921875,
+        85.80020904541016,
+        74.000732421875,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        6.457261085510254,
+        21.600051879882812,
+        0.6700016260147095
+      ],
+      "model": "BranchDirections8"
+    },
+    "MarketCloseFronts__Terracotta__00": {
+      "cf": [
+        3326.202392578125,
+        4.000048637390137,
+        224.500732421875,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        54.50012969970703,
+        2.5000154972076416,
+        57.0001335144043
+      ],
+      "model": "MarketCloseFronts"
+    },
+    "BranchDirections8__Cream__00": {
+      "cf": [
+        3724.45654296875,
+        95.000244140625,
+        74.000732421875,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        4.001864910125732,
+        0.936008095741272,
+        0.6700016260147095
+      ],
+      "model": "BranchDirections8"
+    },
+    "MarketArch__Teal__00": {
+      "cf": [
+        3330,
+        26.47148895263672,
+        196,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        1.6307831174344756e-07,
+        0,
+        1.6307831174344756e-07,
+        -1
+      ],
+      "size": [
+        49,
+        4,
+        0.7999805212020874
+      ],
+      "model": "MarketArch"
+    },
+    "MarketArch__Cream__00": {
+      "cf": [
+        3330,
+        25.336502075195312,
+        196,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        1.6307831174344756e-07,
+        0,
+        1.6307831174344756e-07,
+        -1
+      ],
+      "size": [
+        50.39999771118164,
+        3.6730005741119385,
+        4.400000095367432
+      ],
+      "model": "MarketArch"
+    },
+    "BranchDirections4__Yellow__00": {
+      "cf": [
+        3406.634033203125,
+        85.34916687011719,
+        -250.13037109375,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        23.725055694580078,
+        6.3180131912231445,
+        15.660017967224121
+      ],
+      "model": "BranchDirections4"
+    },
+    "BranchDirections2__Yellow__00": {
+      "cf": [
+        3330.73779296875,
+        33.5325927734375,
+        69.25048828125,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        41.92509841918945,
+        8.735023498535156,
+        13.500032424926758
+      ],
+      "model": "BranchDirections2"
+    },
+    "BranchDirections2__Cream__00": {
+      "cf": [
+        3310.00048828125,
+        40.200103759765625,
+        66.679443359375,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        0.6700016260147095,
+        1.200002908706665,
+        6.958131790161133
+      ],
+      "model": "BranchDirections2"
+    },
+    "MarketCloseFronts__WoodLight__00": {
+      "cf": [
+        3326.202392578125,
+        4.300045013427734,
+        224.500732421875,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        55.10013198852539,
+        0.500010073184967,
+        55.80012893676758
+      ],
+      "model": "MarketCloseFronts"
+    },
+    "BranchDirections8__Yellow__00": {
+      "cf": [
+        3711.7314453125,
+        89.36173248291016,
+        64.763427734375,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        30.460071563720703,
+        6.293022632598877,
+        18.925045013427734
+      ],
+      "model": "BranchDirections8"
+    },
+    "MarketCloseFronts__Cream__00": {
+      "cf": [
+        3314.9267578125,
+        12.182394027709961,
+        169.950439453125,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        76.85018920898438,
+        17.3647403717041,
+        163.80038452148438
+      ],
+      "model": "MarketCloseFronts"
+    },
+    "MarketCloseFronts__Coral__00": {
+      "cf": [
+        3314.73388671875,
+        13.824308395385742,
+        170.98828125,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        77.46440124511719,
+        15.55151081085205,
+        165.02540588378906
+      ],
+      "model": "MarketCloseFronts"
+    },
+    "MarketCloseFronts__Glass__00": {
+      "cf": [
+        3315.914306640625,
+        10.95004653930664,
+        170.313232421875,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        75.12519073486328,
+        12.400012016296387,
+        162.97540283203125
+      ],
+      "model": "MarketCloseFronts"
+    },
+    "BranchDirections8__Teal__00": {
+      "cf": [
+        3718.4814453125,
+        91.11172485351562,
+        64.76318359375,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        16.960041046142578,
+        9.793031692504883,
+        18.925045013427734
+      ],
+      "model": "BranchDirections8"
+    },
+    "MarketCloseFronts__LeafLight__00": {
+      "cf": [
+        3326.690673828125,
+        6.081493377685547,
+        224.759033203125,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        56.003074645996094,
+        2.8521926403045654,
+        56.07979965209961
+      ],
+      "model": "MarketCloseFronts"
+    },
+    "MarketCloseFronts__Teal__00": {
+      "cf": [
+        3324.77685546875,
+        17.098953247070312,
+        169.48779296875,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        57.55013656616211,
+        9.002225875854492,
+        162.02540588378906
+      ],
+      "model": "MarketCloseFronts"
+    },
+    "MarketCloseFronts__Leaf__00": {
+      "cf": [
+        3326.059814453125,
+        6.054041862487793,
+        224.513916015625,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        55.915164947509766,
+        2.7716524600982666,
+        56.018157958984375
+      ],
+      "model": "MarketCloseFronts"
+    },
+    "MarketCloseFronts__WoodDark__00": {
+      "cf": [
+        3315.77685546875,
+        10.475044250488281,
+        170.325439453125,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        76.35018157958984,
+        13.950016021728516,
+        163.650390625
+      ],
+      "model": "MarketCloseFronts"
+    },
+    "BranchDirections4__Iron__00": {
+      "cf": [
+        3394.996337890625,
+        86.30016326904297,
+        -253.782470703125,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        0.6700016260147095,
+        12.600035667419434,
+        6.476031303405762
+      ],
+      "model": "BranchDirections4"
+    },
+    "MarketArch__Brick__00": {
+      "cf": [
+        3330,
+        11.999999046325684,
+        196,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        1.6307831174344756e-07,
+        0,
+        1.6307831174344756e-07,
+        -1
+      ],
+      "size": [
+        49.200008392333984,
+        24,
+        3.200019598007202
+      ],
+      "model": "MarketArch"
+    },
+    "MarketCloseFronts__Brick__00": {
+      "cf": [
+        3314.000732421875,
+        11.000040054321289,
+        89.00048828125,
+        -1,
+        0,
+        1.1026860420315643e-06,
+        0,
+        1,
+        0,
+        -1.1026859283447266e-06,
+        0,
+        -1
+      ],
+      "size": [
+        76.00018310546875,
+        22.000051498413086,
+        1.200002908706665
+      ],
+      "model": "MarketCloseFronts"
+    }
+  },
+  "components": {
+    "BranchDirections2_Support1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Support2": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Board_MAIN": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Lettering_MAIN_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Arrow_MAIN_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Lettering_MAIN_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Arrow_MAIN_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Board_EXPERT": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Lettering_EXPERT_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Arrow_EXPERT_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Lettering_EXPERT_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_Arrow_EXPERT_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_FloorArrow_MAIN": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections2_FloorArrow_EXPERT": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Support1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Support2": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Board_MAIN": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Lettering_MAIN_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Arrow_MAIN_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Lettering_MAIN_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Arrow_MAIN_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Board_EXPERT": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Lettering_EXPERT_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Arrow_EXPERT_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Lettering_EXPERT_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_Arrow_EXPERT_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_FloorArrow_MAIN": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections4_FloorArrow_EXPERT": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Support1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Support2": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Board_MAIN": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Lettering_MAIN_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Arrow_MAIN_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Lettering_MAIN_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Arrow_MAIN_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Board_EXPERT": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Lettering_EXPERT_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Arrow_EXPERT_-1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Lettering_EXPERT_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_Arrow_EXPERT_1": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_FloorArrow_MAIN": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "BranchDirections8_FloorArrow_EXPERT": {
+      "section": "Wayfinding",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketArch_Support1": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketArch_Cap1": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketArch_Support2": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketArch_Cap2": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketArch_Panel": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketArch_LetteringFront": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketArch_LetteringBack": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_FLOWERS_Window": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_FLOWERS_Panel": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_FLOWERS_Lettering": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_FLOWERS_Awning": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_FLOWERS_Piers": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_FRUIT_Window": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_FRUIT_Panel": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_FRUIT_Lettering": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_FRUIT_Awning": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_FRUIT_Piers": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_BAKERY_Window": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_BAKERY_Panel": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_BAKERY_Lettering": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_BAKERY_Awning": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_BAKERY_Piers": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_CAFE_Window": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_CAFE_Panel": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_CAFE_Lettering": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_CAFE_Awning": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_CAFE_Piers": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetBAKERY_Window-5": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetBAKERY_Window0": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetBAKERY_Window5": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetBAKERY_Panel": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetBAKERY_Lettering": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter-6": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetBAKERY_Planter6": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetBAKERY_Awning": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetGROCER_Window-5": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetGROCER_Window0": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetGROCER_Window5": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetGROCER_Panel": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetGROCER_Lettering": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetGROCER_Planter-6": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetGROCER_Planter6": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetGROCER_Awning": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetCAFE_Window-5": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetCAFE_Window0": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetCAFE_Window5": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetCAFE_Panel": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetCAFE_Lettering": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetCAFE_Planter-6": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetCAFE_Planter6": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarketCloseFronts_StreetCAFE_Awning": {
+      "section": "Market",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_0_0": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_0_1": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_0_2": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_0_3": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_1_0": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_1_1": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_1_2": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_1_3": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_2_0": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_2_1": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_2_2": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_-1_2_3": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_FloorTrim_-1_12.3": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_FloorTrim_-1_23.3": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_0_0": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_0_1": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_0_2": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_0_3": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_1_0": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_1_1": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_1_2": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_1_3": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_2_0": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_2_1": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_2_2": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_Window_1_2_3": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_FloorTrim_1_12.3": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_FloorTrim_1_23.3": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_EndWindow_-1_0": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_EndWindow_-1_1": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_EndWindow_-1_2": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_EndWindow_1_0": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_EndWindow_1_1": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_EndWindow_1_2": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_RoofVent_0": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_RoofVent_1": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "OwnerFacade_RoofVent_2": {
+      "section": "OwnerFacade",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "GroundRing_West": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "GroundRing_East": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "GroundRing_North": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "GroundRing_South": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Floor": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Foundation_0": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_0_0": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_0_1": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_0_2": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_0_3": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Foundation_1": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_1_0": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_1_1": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_1_2": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_1_3": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Foundation_2": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_2_0": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_2_1": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_2_2": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_2_3": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Foundation_3": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_3_0": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_3_1": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_3_2": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_3_3": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Foundation_4": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_4_0": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_4_1": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_4_2": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Bays_4_3": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Pier_-242_5": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Pier_-196_5": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Pier_-150_5": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Pier_-104_5": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Pier_-242_-55": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Pier_-196_-55": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Pier_-150_-55": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_Pier_-104_-55": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_LowRoof_0": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_LowRoof_1": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_LowRoof_2": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_LowRoof_3": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "CourtyardDepth_LowRoof_4": {
+      "section": "Depth",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarkerOrigin": {
+      "section": "Calibration",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarkerRight": {
+      "section": "Calibration",
+      "pivot": [
+        10,
+        0,
+        0
+      ]
+    },
+    "MarkerUp": {
+      "section": "Calibration",
+      "pivot": [
+        0,
+        10,
+        0
+      ]
+    },
+    "MarkerForward": {
+      "section": "Calibration",
+      "pivot": [
+        0,
+        0,
+        -10
+      ]
+    }
+  }
+}

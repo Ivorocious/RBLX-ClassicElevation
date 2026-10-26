@@ -1,0 +1,122 @@
+{
+  "build": "V3_DISTRICT_ADDON_01",
+  "sourceAssets": 5,
+  "sourceChecks": [
+    {
+      "id": "V3_LoadingFacade",
+      "zeroAreaTriangles": 0,
+      "uvValid": true,
+      "materialSlots": 1,
+      "negativeScale": false,
+      "isolatedArtworkFaces": 0,
+      "inwardArtworkFaces": [],
+      "dimensions": [
+        24.0,
+        2.825000047683716,
+        14.0
+      ]
+    },
+    {
+      "id": "V3_ServiceStock",
+      "zeroAreaTriangles": 0,
+      "uvValid": true,
+      "materialSlots": 1,
+      "negativeScale": false,
+      "isolatedArtworkFaces": 0,
+      "inwardArtworkFaces": [],
+      "dimensions": [
+        12.75,
+        4.550000190734863,
+        4.5
+      ]
+    },
+    {
+      "id": "V3_WorksiteHoarding",
+      "zeroAreaTriangles": 0,
+      "uvValid": true,
+      "materialSlots": 1,
+      "negativeScale": false,
+      "isolatedArtworkFaces": 0,
+      "inwardArtworkFaces": [],
+      "dimensions": [
+        17.0,
+        2.5999999046325684,
+        8.0
+      ]
+    },
+    {
+      "id": "V3_MaterialsStock",
+      "zeroAreaTriangles": 0,
+      "uvValid": true,
+      "materialSlots": 1,
+      "negativeScale": false,
+      "isolatedArtworkFaces": 0,
+      "inwardArtworkFaces": [],
+      "dimensions": [
+        10.5,
+        8.0,
+        5.099999904632568
+      ]
+    },
+    {
+      "id": "V3_ServiceCanopy",
+      "zeroAreaTriangles": 0,
+      "uvValid": true,
+      "materialSlots": 1,
+      "negativeScale": false,
+      "isolatedArtworkFaces": 0,
+      "inwardArtworkFaces": [],
+      "dimensions": [
+        24.0,
+        12.440000534057617,
+        11.25
+      ]
+    }
+  ],
+  "roundtripChecks": [
+    {
+      "id": "V3_LoadingFacade",
+      "expectedFound": true,
+      "dimensionsMaxError": 0.0,
+      "trianglesMatch": true,
+      "materials": 1,
+      "hasImage": true
+    },
+    {
+      "id": "V3_MaterialsStock",
+      "expectedFound": true,
+      "dimensionsMaxError": 0.0,
+      "trianglesMatch": true,
+      "materials": 1,
+      "hasImage": true
+    },
+    {
+      "id": "V3_ServiceCanopy",
+      "expectedFound": true,
+      "dimensionsMaxError": 0.0,
+      "trianglesMatch": true,
+      "materials": 1,
+      "hasImage": true
+    },
+    {
+      "id": "V3_ServiceStock",
+      "expectedFound": true,
+      "dimensionsMaxError": 0.0,
+      "trianglesMatch": true,
+      "materials": 1,
+      "hasImage": true
+    },
+    {
+      "id": "V3_WorksiteHoarding",
+      "expectedFound": true,
+      "dimensionsMaxError": 0.0,
+      "trianglesMatch": true,
+      "materials": 1,
+      "hasImage": true
+    }
+  ],
+  "localFbxRoundtripPassed": true,
+  "sourcePassed": true,
+  "packageSHA256": "b078b76a3f0eff3c6f7ad0534e23df7c8a4d6d0676d4be6770169dff202331e9",
+  "note": "Local Blender source and FBX reimport only; not Roblox import, mobile frame-time or map validation."
+}

@@ -1,0 +1,16 @@
+{
+  "sha256": "90a95cdd0979d5713b3d5c679bad68a2205c6175ef22ec3a21025c26a8dfe2a0",
+  "request": {
+    "assetType": "Model",
+    "displayName": "ER_P1_C04_Workshop",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/3ef7aa67-0f51-40bd-a7c6-d6c21cb31d93",
+  "assetId": "91848550256251"
+}

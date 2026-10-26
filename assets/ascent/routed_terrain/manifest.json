@@ -1,0 +1,1527 @@
+{
+  "props": [
+    {
+      "name": "RoutedShelf03_01_06",
+      "height": 86.29156494140625,
+      "size": [
+        83.7904052734375,
+        86.29156494140625,
+        100.18792724609375
+      ],
+      "center": [
+        1473.0193481445312,
+        100.89578247070312,
+        -901.3128967285156
+      ],
+      "parts": [
+        "RoutedShelf03_01_06__Path01",
+        "RoutedShelf03_01_06__Left01",
+        "RoutedShelf03_01_06__RightInner01",
+        "RoutedShelf03_01_06__RightWall01",
+        "RoutedShelf03_01_06__Path02",
+        "RoutedShelf03_01_06__Left02",
+        "RoutedShelf03_01_06__RightInner02",
+        "RoutedShelf03_01_06__RightWall02",
+        "RoutedShelf03_01_06__Path03",
+        "RoutedShelf03_01_06__Left03",
+        "RoutedShelf03_01_06__RightInner03",
+        "RoutedShelf03_01_06__RightWall03",
+        "RoutedShelf03_01_06__Path04",
+        "RoutedShelf03_01_06__Left04",
+        "RoutedShelf03_01_06__RightInner04",
+        "RoutedShelf03_01_06__RightWall04",
+        "RoutedShelf03_01_06__Path05",
+        "RoutedShelf03_01_06__Left05",
+        "RoutedShelf03_01_06__RightInner05",
+        "RoutedShelf03_01_06__RightWall05"
+      ],
+      "cells": [
+        {
+          "name": "RoutedShelf03_01_06__Path01",
+          "path": true,
+          "first": 1,
+          "last": 2
+        },
+        {
+          "name": "RoutedShelf03_01_06__Left01",
+          "path": false,
+          "first": 1,
+          "last": 2
+        },
+        {
+          "name": "RoutedShelf03_01_06__RightInner01",
+          "path": false,
+          "first": 1,
+          "last": 2
+        },
+        {
+          "name": "RoutedShelf03_01_06__RightWall01",
+          "path": false,
+          "first": 1,
+          "last": 2
+        },
+        {
+          "name": "RoutedShelf03_01_06__Path02",
+          "path": true,
+          "first": 2,
+          "last": 3
+        },
+        {
+          "name": "RoutedShelf03_01_06__Left02",
+          "path": false,
+          "first": 2,
+          "last": 3
+        },
+        {
+          "name": "RoutedShelf03_01_06__RightInner02",
+          "path": false,
+          "first": 2,
+          "last": 3
+        },
+        {
+          "name": "RoutedShelf03_01_06__RightWall02",
+          "path": false,
+          "first": 2,
+          "last": 3
+        },
+        {
+          "name": "RoutedShelf03_01_06__Path03",
+          "path": true,
+          "first": 3,
+          "last": 4
+        },
+        {
+          "name": "RoutedShelf03_01_06__Left03",
+          "path": false,
+          "first": 3,
+          "last": 4
+        },
+        {
+          "name": "RoutedShelf03_01_06__RightInner03",
+          "path": false,
+          "first": 3,
+          "last": 4
+        },
+        {
+          "name": "RoutedShelf03_01_06__RightWall03",
+          "path": false,
+          "first": 3,
+          "last": 4
+        },
+        {
+          "name": "RoutedShelf03_01_06__Path04",
+          "path": true,
+          "first": 4,
+          "last": 5
+        },
+        {
+          "name": "RoutedShelf03_01_06__Left04",
+          "path": false,
+          "first": 4,
+          "last": 5
+        },
+        {
+          "name": "RoutedShelf03_01_06__RightInner04",
+          "path": false,
+          "first": 4,
+          "last": 5
+        },
+        {
+          "name": "RoutedShelf03_01_06__RightWall04",
+          "path": false,
+          "first": 4,
+          "last": 5
+        },
+        {
+          "name": "RoutedShelf03_01_06__Path05",
+          "path": true,
+          "first": 5,
+          "last": 6
+        },
+        {
+          "name": "RoutedShelf03_01_06__Left05",
+          "path": false,
+          "first": 5,
+          "last": 6
+        },
+        {
+          "name": "RoutedShelf03_01_06__RightInner05",
+          "path": false,
+          "first": 5,
+          "last": 6
+        },
+        {
+          "name": "RoutedShelf03_01_06__RightWall05",
+          "path": false,
+          "first": 5,
+          "last": 6
+        }
+      ],
+      "section": 3,
+      "first": 1,
+      "last": 6,
+      "points": [
+        [
+          1489.6112060546875,
+          100.75,
+          -904.8294677734375
+        ],
+        [
+          1478.477294921875,
+          101.90658569335938,
+          -896.63525390625
+        ],
+        [
+          1470.585205078125,
+          103.75658416748047,
+          -892.4874877929688
+        ],
+        [
+          1460.856201171875,
+          105.56827545166016,
+          -889.1414184570312
+        ],
+        [
+          1450.00048828125,
+          105.21826934814453,
+          -888.0029907226562
+        ],
+        [
+          1439.18701171875,
+          106.85533142089844,
+          -889.1771850585938
+        ]
+      ]
+    },
+    {
+      "name": "RoutedShelf03_09_15",
+      "height": 81.42549133300781,
+      "size": [
+        117.5079345703125,
+        81.42549133300781,
+        97.33978271484375
+      ],
+      "center": [
+        1381.3759155273438,
+        105.2925796508789,
+        -930.4488220214844
+      ],
+      "parts": [
+        "RoutedShelf03_09_15__Path01",
+        "RoutedShelf03_09_15__Left01",
+        "RoutedShelf03_09_15__RightInner01",
+        "RoutedShelf03_09_15__RightWall01",
+        "RoutedShelf03_09_15__Path02",
+        "RoutedShelf03_09_15__Left02",
+        "RoutedShelf03_09_15__RightInner02",
+        "RoutedShelf03_09_15__RightWall02",
+        "RoutedShelf03_09_15__Path03",
+        "RoutedShelf03_09_15__Left03",
+        "RoutedShelf03_09_15__RightInner03",
+        "RoutedShelf03_09_15__RightWall03",
+        "RoutedShelf03_09_15__Path04",
+        "RoutedShelf03_09_15__Left04",
+        "RoutedShelf03_09_15__RightInner04",
+        "RoutedShelf03_09_15__RightWall04",
+        "RoutedShelf03_09_15__Path05",
+        "RoutedShelf03_09_15__Left05",
+        "RoutedShelf03_09_15__RightInner05",
+        "RoutedShelf03_09_15__RightWall05",
+        "RoutedShelf03_09_15__Path06",
+        "RoutedShelf03_09_15__Left06",
+        "RoutedShelf03_09_15__RightInner06",
+        "RoutedShelf03_09_15__RightWall06"
+      ],
+      "cells": [
+        {
+          "name": "RoutedShelf03_09_15__Path01",
+          "path": true,
+          "first": 9,
+          "last": 10
+        },
+        {
+          "name": "RoutedShelf03_09_15__Left01",
+          "path": false,
+          "first": 9,
+          "last": 10
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightInner01",
+          "path": false,
+          "first": 9,
+          "last": 10
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightWall01",
+          "path": false,
+          "first": 9,
+          "last": 10
+        },
+        {
+          "name": "RoutedShelf03_09_15__Path02",
+          "path": true,
+          "first": 10,
+          "last": 11
+        },
+        {
+          "name": "RoutedShelf03_09_15__Left02",
+          "path": false,
+          "first": 10,
+          "last": 11
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightInner02",
+          "path": false,
+          "first": 10,
+          "last": 11
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightWall02",
+          "path": false,
+          "first": 10,
+          "last": 11
+        },
+        {
+          "name": "RoutedShelf03_09_15__Path03",
+          "path": true,
+          "first": 11,
+          "last": 12
+        },
+        {
+          "name": "RoutedShelf03_09_15__Left03",
+          "path": false,
+          "first": 11,
+          "last": 12
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightInner03",
+          "path": false,
+          "first": 11,
+          "last": 12
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightWall03",
+          "path": false,
+          "first": 11,
+          "last": 12
+        },
+        {
+          "name": "RoutedShelf03_09_15__Path04",
+          "path": true,
+          "first": 12,
+          "last": 13
+        },
+        {
+          "name": "RoutedShelf03_09_15__Left04",
+          "path": false,
+          "first": 12,
+          "last": 13
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightInner04",
+          "path": false,
+          "first": 12,
+          "last": 13
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightWall04",
+          "path": false,
+          "first": 12,
+          "last": 13
+        },
+        {
+          "name": "RoutedShelf03_09_15__Path05",
+          "path": true,
+          "first": 13,
+          "last": 14
+        },
+        {
+          "name": "RoutedShelf03_09_15__Left05",
+          "path": false,
+          "first": 13,
+          "last": 14
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightInner05",
+          "path": false,
+          "first": 13,
+          "last": 14
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightWall05",
+          "path": false,
+          "first": 13,
+          "last": 14
+        },
+        {
+          "name": "RoutedShelf03_09_15__Path06",
+          "path": true,
+          "first": 14,
+          "last": 15
+        },
+        {
+          "name": "RoutedShelf03_09_15__Left06",
+          "path": false,
+          "first": 14,
+          "last": 15
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightInner06",
+          "path": false,
+          "first": 14,
+          "last": 15
+        },
+        {
+          "name": "RoutedShelf03_09_15__RightWall06",
+          "path": false,
+          "first": 14,
+          "last": 15
+        }
+      ],
+      "section": 3,
+      "first": 9,
+      "last": 15,
+      "points": [
+        [
+          1404.377197265625,
+          107.579833984375,
+          -906.69482421875
+        ],
+        [
+          1396.0274658203125,
+          108.94591522216797,
+          -913.1278076171875
+        ],
+        [
+          1386.005859375,
+          108.59591674804688,
+          -919.9182739257812
+        ],
+        [
+          1375.6400146484375,
+          110.0999984741211,
+          -921.5635986328125
+        ],
+        [
+          1366.215576171875,
+          111.19591522216797,
+          -926.2499389648438
+        ],
+        [
+          1354.508544921875,
+          110.84591674804688,
+          -924.9591064453125
+        ],
+        [
+          1342.780029296875,
+          111.22200012207031,
+          -921.1168212890625
+        ]
+      ]
+    },
+    {
+      "name": "RoutedShelf03_18_24",
+      "height": 78.01728057861328,
+      "size": [
+        86.3292236328125,
+        78.01728057861328,
+        103.758544921875
+      ],
+      "center": [
+        1276.8905639648438,
+        110.64326095581055,
+        -927.4715576171875
+      ],
+      "parts": [
+        "RoutedShelf03_18_24__Path01",
+        "RoutedShelf03_18_24__Left01",
+        "RoutedShelf03_18_24__RightInner01",
+        "RoutedShelf03_18_24__RightWall01",
+        "RoutedShelf03_18_24__Path02",
+        "RoutedShelf03_18_24__Left02",
+        "RoutedShelf03_18_24__RightInner02",
+        "RoutedShelf03_18_24__RightWall02",
+        "RoutedShelf03_18_24__Path03",
+        "RoutedShelf03_18_24__Left03",
+        "RoutedShelf03_18_24__RightInner03",
+        "RoutedShelf03_18_24__RightWall03",
+        "RoutedShelf03_18_24__Path04",
+        "RoutedShelf03_18_24__Left04",
+        "RoutedShelf03_18_24__RightInner04",
+        "RoutedShelf03_18_24__RightWall04",
+        "RoutedShelf03_18_24__Path05",
+        "RoutedShelf03_18_24__Left05",
+        "RoutedShelf03_18_24__RightInner05",
+        "RoutedShelf03_18_24__RightWall05",
+        "RoutedShelf03_18_24__Path06",
+        "RoutedShelf03_18_24__Left06",
+        "RoutedShelf03_18_24__RightInner06",
+        "RoutedShelf03_18_24__RightWall06"
+      ],
+      "cells": [
+        {
+          "name": "RoutedShelf03_18_24__Path01",
+          "path": true,
+          "first": 18,
+          "last": 19
+        },
+        {
+          "name": "RoutedShelf03_18_24__Left01",
+          "path": false,
+          "first": 18,
+          "last": 19
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightInner01",
+          "path": false,
+          "first": 18,
+          "last": 19
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightWall01",
+          "path": false,
+          "first": 18,
+          "last": 19
+        },
+        {
+          "name": "RoutedShelf03_18_24__Path02",
+          "path": true,
+          "first": 19,
+          "last": 20
+        },
+        {
+          "name": "RoutedShelf03_18_24__Left02",
+          "path": false,
+          "first": 19,
+          "last": 20
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightInner02",
+          "path": false,
+          "first": 19,
+          "last": 20
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightWall02",
+          "path": false,
+          "first": 19,
+          "last": 20
+        },
+        {
+          "name": "RoutedShelf03_18_24__Path03",
+          "path": true,
+          "first": 20,
+          "last": 21
+        },
+        {
+          "name": "RoutedShelf03_18_24__Left03",
+          "path": false,
+          "first": 20,
+          "last": 21
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightInner03",
+          "path": false,
+          "first": 20,
+          "last": 21
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightWall03",
+          "path": false,
+          "first": 20,
+          "last": 21
+        },
+        {
+          "name": "RoutedShelf03_18_24__Path04",
+          "path": true,
+          "first": 21,
+          "last": 22
+        },
+        {
+          "name": "RoutedShelf03_18_24__Left04",
+          "path": false,
+          "first": 21,
+          "last": 22
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightInner04",
+          "path": false,
+          "first": 21,
+          "last": 22
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightWall04",
+          "path": false,
+          "first": 21,
+          "last": 22
+        },
+        {
+          "name": "RoutedShelf03_18_24__Path05",
+          "path": true,
+          "first": 22,
+          "last": 23
+        },
+        {
+          "name": "RoutedShelf03_18_24__Left05",
+          "path": false,
+          "first": 22,
+          "last": 23
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightInner05",
+          "path": false,
+          "first": 22,
+          "last": 23
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightWall05",
+          "path": false,
+          "first": 22,
+          "last": 23
+        },
+        {
+          "name": "RoutedShelf03_18_24__Path06",
+          "path": true,
+          "first": 23,
+          "last": 24
+        },
+        {
+          "name": "RoutedShelf03_18_24__Left06",
+          "path": false,
+          "first": 23,
+          "last": 24
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightInner06",
+          "path": false,
+          "first": 23,
+          "last": 24
+        },
+        {
+          "name": "RoutedShelf03_18_24__RightWall06",
+          "path": false,
+          "first": 23,
+          "last": 24
+        }
+      ],
+      "section": 3,
+      "first": 18,
+      "last": 24,
+      "points": [
+        [
+          1311.5711669921875,
+          115.3346176147461,
+          -908.099365234375
+        ],
+        [
+          1299.546630859375,
+          114.984619140625,
+          -907.0697631835938
+        ],
+        [
+          1288.7320556640625,
+          114.6346206665039,
+          -909.752197265625
+        ],
+        [
+          1279.4893798828125,
+          115.48348236083984,
+          -916.2095947265625
+        ],
+        [
+          1271.9649658203125,
+          117.33348083496094,
+          -926.231201171875
+        ],
+        [
+          1267.78955078125,
+          119.18347930908203,
+          -935.9547729492188
+        ],
+        [
+          1259.8900146484375,
+          119.0999984741211,
+          -947.2349243164062
+        ]
+      ]
+    },
+    {
+      "name": "RoutedShelf09_01_03",
+      "height": 80.34149169921875,
+      "size": [
+        95.9671630859375,
+        80.34149169921875,
+        46.1119384765625
+      ],
+      "center": [
+        1584.4338989257812,
+        207.8604278564453,
+        -1180.1216430664062
+      ],
+      "parts": [
+        "RoutedShelf09_01_03__Path01",
+        "RoutedShelf09_01_03__Left01",
+        "RoutedShelf09_01_03__RightInner01",
+        "RoutedShelf09_01_03__RightWall01",
+        "RoutedShelf09_01_03__Path02",
+        "RoutedShelf09_01_03__Left02",
+        "RoutedShelf09_01_03__RightInner02",
+        "RoutedShelf09_01_03__RightWall02"
+      ],
+      "cells": [
+        {
+          "name": "RoutedShelf09_01_03__Path01",
+          "path": true,
+          "first": 1,
+          "last": 2
+        },
+        {
+          "name": "RoutedShelf09_01_03__Left01",
+          "path": false,
+          "first": 1,
+          "last": 2
+        },
+        {
+          "name": "RoutedShelf09_01_03__RightInner01",
+          "path": false,
+          "first": 1,
+          "last": 2
+        },
+        {
+          "name": "RoutedShelf09_01_03__RightWall01",
+          "path": false,
+          "first": 1,
+          "last": 2
+        },
+        {
+          "name": "RoutedShelf09_01_03__Path02",
+          "path": true,
+          "first": 2,
+          "last": 3
+        },
+        {
+          "name": "RoutedShelf09_01_03__Left02",
+          "path": false,
+          "first": 2,
+          "last": 3
+        },
+        {
+          "name": "RoutedShelf09_01_03__RightInner02",
+          "path": false,
+          "first": 2,
+          "last": 3
+        },
+        {
+          "name": "RoutedShelf09_01_03__RightWall02",
+          "path": false,
+          "first": 2,
+          "last": 3
+        }
+      ],
+      "section": 9,
+      "first": 1,
+      "last": 3,
+      "points": [
+        [
+          1591.453857421875,
+          210.68968200683594,
+          -1196.1163330078125
+        ],
+        [
+          1592.235595703125,
+          212.03268432617188,
+          -1185.52490234375
+        ],
+        [
+          1594.802001953125,
+          213.20046997070312,
+          -1176.67236328125
+        ]
+      ]
+    },
+    {
+      "name": "RoutedShelf09_05_07",
+      "height": 82.74102783203125,
+      "size": [
+        93.2760009765625,
+        82.74102783203125,
+        53.290771484375
+      ],
+      "center": [
+        1569.1754760742188,
+        211.5930633544922,
+        -1155.0760498046875
+      ],
+      "parts": [
+        "RoutedShelf09_05_07__Path01",
+        "RoutedShelf09_05_07__Left01",
+        "RoutedShelf09_05_07__RightInner01",
+        "RoutedShelf09_05_07__RightWall01",
+        "RoutedShelf09_05_07__Path02",
+        "RoutedShelf09_05_07__Left02",
+        "RoutedShelf09_05_07__RightInner02",
+        "RoutedShelf09_05_07__RightWall02"
+      ],
+      "cells": [
+        {
+          "name": "RoutedShelf09_05_07__Path01",
+          "path": true,
+          "first": 5,
+          "last": 6
+        },
+        {
+          "name": "RoutedShelf09_05_07__Left01",
+          "path": false,
+          "first": 5,
+          "last": 6
+        },
+        {
+          "name": "RoutedShelf09_05_07__RightInner01",
+          "path": false,
+          "first": 5,
+          "last": 6
+        },
+        {
+          "name": "RoutedShelf09_05_07__RightWall01",
+          "path": false,
+          "first": 5,
+          "last": 6
+        },
+        {
+          "name": "RoutedShelf09_05_07__Path02",
+          "path": true,
+          "first": 6,
+          "last": 7
+        },
+        {
+          "name": "RoutedShelf09_05_07__Left02",
+          "path": false,
+          "first": 6,
+          "last": 7
+        },
+        {
+          "name": "RoutedShelf09_05_07__RightInner02",
+          "path": false,
+          "first": 6,
+          "last": 7
+        },
+        {
+          "name": "RoutedShelf09_05_07__RightWall02",
+          "path": false,
+          "first": 6,
+          "last": 7
+        }
+      ],
+      "section": 9,
+      "first": 5,
+      "last": 7,
+      "points": [
+        [
+          1581.78857421875,
+          213.22254943847656,
+          -1161.352783203125
+        ],
+        [
+          1579.0084228515625,
+          214.28359985351562,
+          -1152.947509765625
+        ],
+        [
+          1581.0208740234375,
+          215.18931579589844,
+          -1144.28173828125
+        ]
+      ]
+    },
+    {
+      "name": "RoutedShelf09_10_12",
+      "height": 79.03176879882812,
+      "size": [
+        81.3291015625,
+        79.03176879882812,
+        78.1754150390625
+      ],
+      "center": [
+        1548.536376953125,
+        216.45042419433594,
+        -1128.7542114257812
+      ],
+      "parts": [
+        "RoutedShelf09_10_12__Path01",
+        "RoutedShelf09_10_12__Left01",
+        "RoutedShelf09_10_12__RightInner01",
+        "RoutedShelf09_10_12__RightWall01",
+        "RoutedShelf09_10_12__Path02",
+        "RoutedShelf09_10_12__Left02",
+        "RoutedShelf09_10_12__RightInner02",
+        "RoutedShelf09_10_12__RightWall02"
+      ],
+      "cells": [
+        {
+          "name": "RoutedShelf09_10_12__Path01",
+          "path": true,
+          "first": 10,
+          "last": 11
+        },
+        {
+          "name": "RoutedShelf09_10_12__Left01",
+          "path": false,
+          "first": 10,
+          "last": 11
+        },
+        {
+          "name": "RoutedShelf09_10_12__RightInner01",
+          "path": false,
+          "first": 10,
+          "last": 11
+        },
+        {
+          "name": "RoutedShelf09_10_12__RightWall01",
+          "path": false,
+          "first": 10,
+          "last": 11
+        },
+        {
+          "name": "RoutedShelf09_10_12__Path02",
+          "path": true,
+          "first": 11,
+          "last": 12
+        },
+        {
+          "name": "RoutedShelf09_10_12__Left02",
+          "path": false,
+          "first": 11,
+          "last": 12
+        },
+        {
+          "name": "RoutedShelf09_10_12__RightInner02",
+          "path": false,
+          "first": 11,
+          "last": 12
+        },
+        {
+          "name": "RoutedShelf09_10_12__RightWall02",
+          "path": false,
+          "first": 11,
+          "last": 12
+        }
+      ],
+      "section": 9,
+      "first": 10,
+      "last": 12,
+      "points": [
+        [
+          1568.5269775390625,
+          219.93453979492188,
+          -1119.974365234375
+        ],
+        [
+          1560.5535888671875,
+          221.45057678222656,
+          -1115.1795654296875
+        ],
+        [
+          1556.61328125,
+          221.83111572265625,
+          -1106.5458984375
+        ]
+      ]
+    },
+    {
+      "name": "RoutedShelf09_14_16",
+      "height": 82.64607238769531,
+      "size": [
+        49.6690673828125,
+        82.64607238769531,
+        98.2835693359375
+      ],
+      "center": [
+        1534.8283081054688,
+        220.64812469482422,
+        -1097.5043334960938
+      ],
+      "parts": [
+        "RoutedShelf09_14_16__Path01",
+        "RoutedShelf09_14_16__Left01",
+        "RoutedShelf09_14_16__RightInner01",
+        "RoutedShelf09_14_16__RightWall01",
+        "RoutedShelf09_14_16__Path02",
+        "RoutedShelf09_14_16__Left02",
+        "RoutedShelf09_14_16__RightInner02",
+        "RoutedShelf09_14_16__RightWall02"
+      ],
+      "cells": [
+        {
+          "name": "RoutedShelf09_14_16__Path01",
+          "path": true,
+          "first": 14,
+          "last": 15
+        },
+        {
+          "name": "RoutedShelf09_14_16__Left01",
+          "path": false,
+          "first": 14,
+          "last": 15
+        },
+        {
+          "name": "RoutedShelf09_14_16__RightInner01",
+          "path": false,
+          "first": 14,
+          "last": 15
+        },
+        {
+          "name": "RoutedShelf09_14_16__RightWall01",
+          "path": false,
+          "first": 14,
+          "last": 15
+        },
+        {
+          "name": "RoutedShelf09_14_16__Path02",
+          "path": true,
+          "first": 15,
+          "last": 16
+        },
+        {
+          "name": "RoutedShelf09_14_16__Left02",
+          "path": false,
+          "first": 15,
+          "last": 16
+        },
+        {
+          "name": "RoutedShelf09_14_16__RightInner02",
+          "path": false,
+          "first": 15,
+          "last": 16
+        },
+        {
+          "name": "RoutedShelf09_14_16__RightWall02",
+          "path": false,
+          "first": 15,
+          "last": 16
+        }
+      ],
+      "section": 9,
+      "first": 14,
+      "last": 16,
+      "points": [
+        [
+          1548.528076171875,
+          222.32508850097656,
+          -1091.307861328125
+        ],
+        [
+          1538.85595703125,
+          222.8168182373047,
+          -1088.86767578125
+        ],
+        [
+          1531.1807861328125,
+          224.26219177246094,
+          -1086.1026611328125
+        ]
+      ]
+    }
+  ],
+  "parts": {
+    "RoutedShelf03_01_06__Path01": [
+      0.3904379673730221,
+      0.4404379673730221,
+      0.3704379673730221
+    ],
+    "RoutedShelf03_01_06__Left01": [
+      0.29913924451269513,
+      0.35913924451269513,
+      0.32913924451269516
+    ],
+    "RoutedShelf03_01_06__RightInner01": [
+      0.2945157243883536,
+      0.3545157243883536,
+      0.32451572438835363
+    ],
+    "RoutedShelf03_01_06__RightWall01": [
+      0.2986146504995424,
+      0.3586146504995424,
+      0.3286146504995424
+    ],
+    "RoutedShelf03_01_06__Path02": [
+      0.38482744645527955,
+      0.43482744645527954,
+      0.36482744645527954
+    ],
+    "RoutedShelf03_01_06__Left02": [
+      0.29152205187094843,
+      0.3515220518709484,
+      0.32152205187094846
+    ],
+    "RoutedShelf03_01_06__RightInner02": [
+      0.30166146272838185,
+      0.36166146272838184,
+      0.3316614627283819
+    ],
+    "RoutedShelf03_01_06__RightWall02": [
+      0.282892482989592,
+      0.342892482989592,
+      0.31289248298959205
+    ],
+    "RoutedShelf03_01_06__Path03": [
+      0.3905539072322833,
+      0.44055390723228327,
+      0.37055390723228326
+    ],
+    "RoutedShelf03_01_06__Left03": [
+      0.2941168567540831,
+      0.3541168567540831,
+      0.32411685675408314
+    ],
+    "RoutedShelf03_01_06__RightInner03": [
+      0.29818666091697255,
+      0.35818666091697254,
+      0.3281866609169726
+    ],
+    "RoutedShelf03_01_06__RightWall03": [
+      0.285887610877038,
+      0.345887610877038,
+      0.31588761087703804
+    ],
+    "RoutedShelf03_01_06__Path04": [
+      0.3953925195488193,
+      0.4453925195488193,
+      0.3753925195488193
+    ],
+    "RoutedShelf03_01_06__Left04": [
+      0.29639966165820997,
+      0.35639966165820997,
+      0.32639966165821
+    ],
+    "RoutedShelf03_01_06__RightInner04": [
+      0.2837584343179139,
+      0.3437584343179139,
+      0.31375843431791395
+    ],
+    "RoutedShelf03_01_06__RightWall04": [
+      0.2789997504523696,
+      0.3389997504523695,
+      0.3089997504523696
+    ],
+    "RoutedShelf03_01_06__Path05": [
+      0.3837084409759533,
+      0.4337084409759533,
+      0.3637084409759533
+    ],
+    "RoutedShelf03_01_06__Left05": [
+      0.2976423667368881,
+      0.3576423667368881,
+      0.3276423667368881
+    ],
+    "RoutedShelf03_01_06__RightInner05": [
+      0.29261573038012434,
+      0.35261573038012434,
+      0.32261573038012437
+    ],
+    "RoutedShelf03_01_06__RightWall05": [
+      0.27910562790558613,
+      0.3391056279055861,
+      0.30910562790558616
+    ],
+    "RoutedShelf03_09_15__Path01": [
+      0.38294699097268065,
+      0.43294699097268063,
+      0.3629469909726806
+    ],
+    "RoutedShelf03_09_15__Left01": [
+      0.2798585942892282,
+      0.3398585942892282,
+      0.30985859428922824
+    ],
+    "RoutedShelf03_09_15__RightInner01": [
+      0.29143319784589555,
+      0.35143319784589555,
+      0.3214331978458956
+    ],
+    "RoutedShelf03_09_15__RightWall01": [
+      0.2892672082218754,
+      0.3492672082218754,
+      0.31926720822187543
+    ],
+    "RoutedShelf03_09_15__Path02": [
+      0.40030091868086587,
+      0.45030091868086586,
+      0.38030091868086585
+    ],
+    "RoutedShelf03_09_15__Left02": [
+      0.2890894466153512,
+      0.3490894466153512,
+      0.3190894466153512
+    ],
+    "RoutedShelf03_09_15__RightInner02": [
+      0.2937417161743365,
+      0.3537417161743365,
+      0.3237417161743365
+    ],
+    "RoutedShelf03_09_15__RightWall02": [
+      0.29514702143966765,
+      0.35514702143966764,
+      0.32514702143966767
+    ],
+    "RoutedShelf03_09_15__Path03": [
+      0.3794659755659259,
+      0.42946597556592586,
+      0.35946597556592585
+    ],
+    "RoutedShelf03_09_15__Left03": [
+      0.3003439838164908,
+      0.3603439838164908,
+      0.3303439838164908
+    ],
+    "RoutedShelf03_09_15__RightInner03": [
+      0.29957949843833975,
+      0.35957949843833975,
+      0.3295794984383398
+    ],
+    "RoutedShelf03_09_15__RightWall03": [
+      0.28717767535569316,
+      0.34717767535569316,
+      0.3171776753556932
+    ],
+    "RoutedShelf03_09_15__Path04": [
+      0.39729667365044763,
+      0.4472966736504476,
+      0.3772966736504476
+    ],
+    "RoutedShelf03_09_15__Left04": [
+      0.3006721858898085,
+      0.3606721858898085,
+      0.3306721858898085
+    ],
+    "RoutedShelf03_09_15__RightInner04": [
+      0.27910810865245483,
+      0.33910810865245483,
+      0.30910810865245486
+    ],
+    "RoutedShelf03_09_15__RightWall04": [
+      0.29483870980036997,
+      0.35483870980036997,
+      0.32483870980037
+    ],
+    "RoutedShelf03_09_15__Path05": [
+      0.3929704503714466,
+      0.4429704503714466,
+      0.3729704503714466
+    ],
+    "RoutedShelf03_09_15__Left05": [
+      0.28025419701171606,
+      0.34025419701171605,
+      0.3102541970117161
+    ],
+    "RoutedShelf03_09_15__RightInner05": [
+      0.2975840904851945,
+      0.3575840904851945,
+      0.32758409048519455
+    ],
+    "RoutedShelf03_09_15__RightWall05": [
+      0.2869243668758693,
+      0.3469243668758693,
+      0.31692436687586933
+    ],
+    "RoutedShelf03_09_15__Path06": [
+      0.3804476353513194,
+      0.4304476353513194,
+      0.3604476353513194
+    ],
+    "RoutedShelf03_09_15__Left06": [
+      0.2892382151338098,
+      0.3492382151338098,
+      0.31923821513380984
+    ],
+    "RoutedShelf03_09_15__RightInner06": [
+      0.2968149577747543,
+      0.35681495777475436,
+      0.32681495777475433
+    ],
+    "RoutedShelf03_09_15__RightWall06": [
+      0.29677962863291885,
+      0.35677962863291884,
+      0.3267796286329189
+    ],
+    "RoutedShelf03_18_24__Path01": [
+      0.39743160248300813,
+      0.4474316024830081,
+      0.3774316024830081
+    ],
+    "RoutedShelf03_18_24__Left01": [
+      0.2801618439734444,
+      0.3401618439734444,
+      0.31016184397344443
+    ],
+    "RoutedShelf03_18_24__RightInner01": [
+      0.29379589610121215,
+      0.35379589610121215,
+      0.3237958961012122
+    ],
+    "RoutedShelf03_18_24__RightWall01": [
+      0.2942495398080591,
+      0.3542495398080591,
+      0.32424953980805915
+    ],
+    "RoutedShelf03_18_24__Path02": [
+      0.392741105842603,
+      0.442741105842603,
+      0.372741105842603
+    ],
+    "RoutedShelf03_18_24__Left02": [
+      0.28909833427720616,
+      0.34909833427720616,
+      0.3190983342772062
+    ],
+    "RoutedShelf03_18_24__RightInner02": [
+      0.2823625329996056,
+      0.3423625329996056,
+      0.31236253299960565
+    ],
+    "RoutedShelf03_18_24__RightWall02": [
+      0.2968285702320141,
+      0.3568285702320141,
+      0.3268285702320141
+    ],
+    "RoutedShelf03_18_24__Path03": [
+      0.399972597995572,
+      0.449972597995572,
+      0.379972597995572
+    ],
+    "RoutedShelf03_18_24__Left03": [
+      0.29898870850822384,
+      0.35898870850822384,
+      0.32898870850822387
+    ],
+    "RoutedShelf03_18_24__RightInner03": [
+      0.2876518489836441,
+      0.3476518489836441,
+      0.3176518489836441
+    ],
+    "RoutedShelf03_18_24__RightWall03": [
+      0.2871281924165774,
+      0.34712819241657744,
+      0.3171281924165774
+    ],
+    "RoutedShelf03_18_24__Path04": [
+      0.40110012631394176,
+      0.45110012631394175,
+      0.38110012631394174
+    ],
+    "RoutedShelf03_18_24__Left04": [
+      0.28718265955897465,
+      0.34718265955897465,
+      0.3171826595589747
+    ],
+    "RoutedShelf03_18_24__RightInner04": [
+      0.2873107556364408,
+      0.3473107556364408,
+      0.31731075563644084
+    ],
+    "RoutedShelf03_18_24__RightWall04": [
+      0.29668796868773795,
+      0.35668796868773794,
+      0.326687968687738
+    ],
+    "RoutedShelf03_18_24__Path05": [
+      0.3842498302515666,
+      0.4342498302515666,
+      0.3642498302515666
+    ],
+    "RoutedShelf03_18_24__Left05": [
+      0.28668536858354476,
+      0.34668536858354476,
+      0.3166853685835448
+    ],
+    "RoutedShelf03_18_24__RightInner05": [
+      0.30188264229401884,
+      0.36188264229401884,
+      0.33188264229401887
+    ],
+    "RoutedShelf03_18_24__RightWall05": [
+      0.29802114011054365,
+      0.35802114011054365,
+      0.3280211401105437
+    ],
+    "RoutedShelf03_18_24__Path06": [
+      0.39475737799437005,
+      0.44475737799437004,
+      0.37475737799437003
+    ],
+    "RoutedShelf03_18_24__Left06": [
+      0.28534718840821494,
+      0.34534718840821493,
+      0.31534718840821496
+    ],
+    "RoutedShelf03_18_24__RightInner06": [
+      0.29307060931285533,
+      0.35307060931285533,
+      0.32307060931285536
+    ],
+    "RoutedShelf03_18_24__RightWall06": [
+      0.28864758454911016,
+      0.34864758454911016,
+      0.3186475845491102
+    ],
+    "RoutedShelf09_01_03__Path01": [
+      0.4012012705874952,
+      0.4512012705874952,
+      0.3812012705874952
+    ],
+    "RoutedShelf09_01_03__Left01": [
+      0.2894019281421468,
+      0.3494019281421468,
+      0.31940192814214685
+    ],
+    "RoutedShelf09_01_03__RightInner01": [
+      0.2807798967821439,
+      0.3407798967821439,
+      0.3107798967821439
+    ],
+    "RoutedShelf09_01_03__RightWall01": [
+      0.2790755032199211,
+      0.3390755032199211,
+      0.3090755032199211
+    ],
+    "RoutedShelf09_01_03__Path02": [
+      0.40109358688205166,
+      0.45109358688205164,
+      0.38109358688205164
+    ],
+    "RoutedShelf09_01_03__Left02": [
+      0.2994865176393603,
+      0.3594865176393603,
+      0.3294865176393603
+    ],
+    "RoutedShelf09_01_03__RightInner02": [
+      0.2969614734710164,
+      0.3569614734710164,
+      0.32696147347101645
+    ],
+    "RoutedShelf09_01_03__RightWall02": [
+      0.2899257210228745,
+      0.3499257210228745,
+      0.31992572102287453
+    ],
+    "RoutedShelf09_05_07__Path01": [
+      0.3936498685544979,
+      0.4436498685544979,
+      0.3736498685544979
+    ],
+    "RoutedShelf09_05_07__Left01": [
+      0.29598950403680513,
+      0.3559895040368051,
+      0.32598950403680516
+    ],
+    "RoutedShelf09_05_07__RightInner01": [
+      0.28054513391492847,
+      0.34054513391492847,
+      0.3105451339149285
+    ],
+    "RoutedShelf09_05_07__RightWall01": [
+      0.27853963521488057,
+      0.33853963521488056,
+      0.3085396352148806
+    ],
+    "RoutedShelf09_05_07__Path02": [
+      0.3831769994945593,
+      0.4331769994945593,
+      0.3631769994945593
+    ],
+    "RoutedShelf09_05_07__Left02": [
+      0.29876946812417,
+      0.35876946812417,
+      0.32876946812417
+    ],
+    "RoutedShelf09_05_07__RightInner02": [
+      0.28659036347849326,
+      0.34659036347849326,
+      0.3165903634784933
+    ],
+    "RoutedShelf09_05_07__RightWall02": [
+      0.2798931099609843,
+      0.3398931099609843,
+      0.30989310996098435
+    ],
+    "RoutedShelf09_10_12__Path01": [
+      0.382283422001482,
+      0.432283422001482,
+      0.362283422001482
+    ],
+    "RoutedShelf09_10_12__Left01": [
+      0.2837776969689139,
+      0.3437776969689139,
+      0.31377769696891394
+    ],
+    "RoutedShelf09_10_12__RightInner01": [
+      0.28690859835412086,
+      0.34690859835412086,
+      0.3169085983541209
+    ],
+    "RoutedShelf09_10_12__RightWall01": [
+      0.28240326515916714,
+      0.34240326515916714,
+      0.31240326515916716
+    ],
+    "RoutedShelf09_10_12__Path02": [
+      0.39680598130339506,
+      0.44680598130339505,
+      0.37680598130339504
+    ],
+    "RoutedShelf09_10_12__Left02": [
+      0.2935034547905481,
+      0.3535034547905481,
+      0.32350345479054815
+    ],
+    "RoutedShelf09_10_12__RightInner02": [
+      0.2880428773460249,
+      0.3480428773460249,
+      0.31804287734602493
+    ],
+    "RoutedShelf09_10_12__RightWall02": [
+      0.2965247890982182,
+      0.3565247890982182,
+      0.32652478909821825
+    ],
+    "RoutedShelf09_14_16__Path01": [
+      0.4006189222273796,
+      0.4506189222273796,
+      0.3806189222273796
+    ],
+    "RoutedShelf09_14_16__Left01": [
+      0.29347671524514035,
+      0.35347671524514035,
+      0.3234767152451404
+    ],
+    "RoutedShelf09_14_16__RightInner01": [
+      0.28751703723121613,
+      0.3475170372312162,
+      0.31751703723121616
+    ],
+    "RoutedShelf09_14_16__RightWall01": [
+      0.28865831388365,
+      0.34865831388365,
+      0.31865831388365
+    ],
+    "RoutedShelf09_14_16__Path02": [
+      0.38039234599940114,
+      0.4303923459994011,
+      0.3603923459994011
+    ],
+    "RoutedShelf09_14_16__Left02": [
+      0.2977925346072388,
+      0.3577925346072388,
+      0.32779253460723884
+    ],
+    "RoutedShelf09_14_16__RightInner02": [
+      0.2945959858695274,
+      0.3545959858695274,
+      0.3245959858695274
+    ],
+    "RoutedShelf09_14_16__RightWall02": [
+      0.2945156759679983,
+      0.3545156759679983,
+      0.32451567596799835
+    ]
+  }
+}

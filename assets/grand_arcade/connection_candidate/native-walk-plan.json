@@ -1,0 +1,42 @@
+{
+  "kind": "Prepared native walking plan; not an executed playtest",
+  "placeId": 85558151074819,
+  "stagePivot": [1552, 374.2, -942],
+  "paths": [
+    {"name": "Center", "x": 1552},
+    {"name": "Left near edge", "x": 1544.8},
+    {"name": "Right near edge", "x": 1559.2}
+  ],
+  "forwardWaypoints": [
+    {"z": -886, "floorY": 370, "location": "Safely inside lower lobby"},
+    {"z": -891, "floorY": 370, "location": "Before former cross rail"},
+    {"z": -894, "floorY": 370, "location": "Lower landing/ramp seam"},
+    {"z": -898, "floorY": 371.05, "location": "Ramp first quarter"},
+    {"z": -902, "floorY": 372.1, "location": "Ramp midpoint"},
+    {"z": -906, "floorY": 373.15, "location": "Ramp third quarter"},
+    {"z": -910, "floorY": 374.2, "location": "Ramp/upper landing seam"},
+    {"z": -918, "floorY": 374.2, "location": "Stage platform edge join"},
+    {"z": -928, "floorY": 374.2, "location": "Over ten studs inside platform, before presenter dais"}
+  ],
+  "return": "Reverse the same waypoints. Only after reaching Z -886, walk sideways to the next path X; do not reposition onto ramp or stage.",
+  "setup": [
+    "Use the actual normal player character with Studio flight off and all root parts unanchored.",
+    "Use the existing Studio tools to hold a Lobby phase so a race transition cannot teleport the player mid-check.",
+    "Wait until arrival/editor/stage presentation is closed; pause only normal input controls owned by the probe if MoveTo is used.",
+    "Set JumpPower and JumpHeight to zero, Jump false, and locally disable the Jumping state for the probe. Record prior values and restore afterward.",
+    "Keep the ordinary character WalkSpeed and record it. Infer the actual standing offset from the settled lower-lobby character rather than assuming R6 and R15 have identical hip heights.",
+    "A single initial placement inside the lower lobby may prepare the run; record it explicitly. No placement after the forward walking begins."
+  ],
+  "evidence": [
+    "Record each forward/return MoveTo completion plus actual root position, health, elapsed time and humanoid state.",
+    "Sample movement about every 0.05 seconds, mark Jumping/Freefall/death, and flag abrupt position changes that could be teleports.",
+    "At each waypoint, root Y must match expected floor Y plus the settled standing offset within a reasonable walking tolerance.",
+    "Record all three round trips and the sideways lower-lobby transitions; preserve the player's original settings and remove only the owned probe.",
+    "Capture native player-height views at the lower seam, ramp midpoint and stage join."
+  ],
+  "limitations": [
+    "Raycasts, route coordinates and a successful import alone do not establish walking.",
+    "The center endpoint intentionally stops before the presenter dais; the test must not confuse climbing its separate lip with entering Grand Arcade.",
+    "This is one ordinary avatar and a native local playtest, not device, multiplayer, FPS or complete-race proof."
+  ]
+}

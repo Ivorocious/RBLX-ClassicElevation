@@ -1,0 +1,25 @@
+{
+  "fingerprint": {
+    "hash": 1403973613,
+    "scripts": 7,
+    "instances": 946,
+    "classes": {
+      "Folder": 29,
+      "PointLight": 5,
+      "TextLabel": 23,
+      "ModuleScript": 7,
+      "Part": 350,
+      "MeshPart": 498,
+      "Model": 11,
+      "SurfaceGui": 23
+    },
+    "sourceBytes": 146345,
+    "parts": 848
+  },
+  "verified": true,
+  "receipt": {
+    "bytes": 287145,
+    "file": "shipwreck-cave26-checkpoint.rbxm",
+    "sha256": "83e0ed5e124974127ce92ae4b26d4c9343aa373204bf0edbfadef390d5571c04"
+  }
+}

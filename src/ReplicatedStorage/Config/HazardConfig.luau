@@ -42,9 +42,10 @@ HazardConfig.FallingRock = {
 HazardConfig.Crumble = {
 	WarningDuration = 1.25,
 	GoneDuration = 2,
-	WarningColor = Color3.fromRGB(255, 170, 54),
-	WarningMaterial = Enum.Material.Neon,
-	GoneTransparency = 1,
+	ShakeDistance = 0.12,
+	ShakeFrequency = 18,
+	FallDistance = 18,
+	FallDuration = 0.55,
 }
 
 return HazardConfig

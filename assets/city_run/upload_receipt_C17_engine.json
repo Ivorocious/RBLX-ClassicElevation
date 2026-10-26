@@ -1,0 +1,16 @@
+{
+  "sha256": "2ce9b0f614f1a566dfac3283187223fc6491cfd9c31cbf1bed60fb6b56b85d42",
+  "request": {
+    "assetType": "Audio",
+    "displayName": "CityRun_C17_CarEngineRev",
+    "description": "Original synthesized City Run C17 market-car engine rev loop.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/b7853f31-2ae3-4efe-85d7-af5d4642afab",
+  "assetId": "102058378010336"
+}

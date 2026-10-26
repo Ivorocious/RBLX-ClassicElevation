@@ -1,0 +1,24 @@
+00:02.141  blend            | Read blend: "C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\art\proposal03\MC_ART_REPAIR55_PROPOSAL.blend"
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+FINAL55_RENDER_START gallery-owner
+00:46.313  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\final-blender\render01\after55-gallery-owner.png'
+FINAL55_RENDER_DONE gallery-owner
+FINAL55_RENDER_START crown-exterior
+00:58.688  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\final-blender\render01\after55-crown-exterior.png'
+FINAL55_RENDER_DONE crown-exterior
+FINAL55_RENDER_START gate-depth
+01:13.391  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\final-blender\render01\after55-gate-depth.png'
+FINAL55_RENDER_DONE gate-depth
+FINAL55_RENDER_START crown-depth
+01:25.485  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\final-blender\render01\after55-crown-depth.png'
+FINAL55_RENDER_DONE crown-depth
+01:26.719  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\ivorr\.thumbnails\large\blender_52436_59be1b30d7a9cdf6835c1fb7b91b4670.png.png"
+Info: Saved as "MC_SOURCE55_FINAL_COMPOSITION.blend"
+FINAL55_COMPOSITION_PASS {"counts": {"units": 315, "meshes": 868, "triangles": 259002}, "operations": 200, "images": 4, "physics": {"colliders": 147, "walkables": 135, "hazards": 55, "arrows": 19, "records": 222, "collection": "Source55_Gameplay_Bounds_Reference_Not_Rendered", "notIncludedInSceneryMeshCost": true, "boundary": "Editor-only bounds and original captured records; native installed geometry parity remains the lead native audit."}}
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

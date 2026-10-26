@@ -1,0 +1,18 @@
+{
+  "authored-vertices.json": {
+    "bytes": 1100346,
+    "sha256": "3a079acf56ce3ed5f32b0c98d530e0e31418185f878b90b347939fe76ad1a0ac"
+  },
+  "manifest.json": {
+    "bytes": 109616,
+    "sha256": "b3f1b6baa53659da551d42dbaba026dddc65bea5fb69c0cc982b339b0adbce3a"
+  },
+  "MC_ENCLOSURE_KIT.blend": {
+    "bytes": 2398845,
+    "sha256": "669091bc01ab6b4d1137aca933138c05135d601841db321c794ec94bd8c04cf1"
+  },
+  "MC_ENCLOSURE_KIT.fbx": {
+    "bytes": 1400332,
+    "sha256": "8910e3e6ef3a7d8287376fc1b21e3262820c6ae165ae99211fb703e7c762eb04"
+  }
+}

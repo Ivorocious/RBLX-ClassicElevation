@@ -1,0 +1,16 @@
+{
+  "sha256": "4b7f5480c93fc757daa119b31aa2e7c4a78b83ce670085b704e3a5cfd1cc4a87",
+  "request": {
+    "assetType": "Model",
+    "displayName": "City Run V3 final architecture 03",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/b8c2861a-b55a-419e-a919-0c9d5fb2fa23",
+  "assetId": "114559795852237"
+}

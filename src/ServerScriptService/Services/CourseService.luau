@@ -3,6 +3,7 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerStorage = game:GetService("ServerStorage")
 local Workspace = game:GetService("Workspace")
+local RunService = game:GetService("RunService")
 
 local CheckpointConfig = require(ReplicatedStorage.Config.CheckpointConfig)
 local CourseConfig = require(ReplicatedStorage.Config.CourseConfig)
@@ -32,9 +33,12 @@ local CourseService = {}
 
 local isInitialized = false
 local isStarted = false
+local inspectionMode = false
+local studioCourseId: string? = nil
 local discoveredCoursesById: { [string]: CourseRecord } = {}
 local discoveredCourseOrder: { string } = {}
 local activeCourseInfo: CourseInfo? = nil
+local lastDiscoveryReport: string? = nil
 
 local function getCourseLibrary(): Folder?
 	local library = ServerStorage:FindFirstChild(CourseConfig.CourseLibraryName)
@@ -61,7 +65,9 @@ local function ensureCourseLibrary(): Folder
 end
 
 local function ensureCourseArchive(): Folder
-	local archive = ServerStorage:FindFirstChild(CourseConfig.CourseArchiveName)
+	local archiveRoot = ServerStorage:FindFirstChild("Archive")
+	if not archiveRoot then archiveRoot = Instance.new("Folder"); archiveRoot.Name = "Archive"; archiveRoot.Parent = ServerStorage end
+	local archive = archiveRoot:FindFirstChild(CourseConfig.CourseArchiveName)
 
 	if archive ~= nil and archive:IsA("Folder") then
 		return archive
@@ -69,7 +75,7 @@ local function ensureCourseArchive(): Folder
 
 	archive = Instance.new("Folder")
 	archive.Name = CourseConfig.CourseArchiveName
-	archive.Parent = ServerStorage
+	archive.Parent = archiveRoot
 
 	return archive
 end
@@ -90,10 +96,6 @@ local function ensureFolder(parent: Instance, folderName: string): Folder
 	folder.Parent = parent
 
 	return folder
-end
-
-local function ensureCourseInfoInstance(courseModel: Model): Instance
-	return ensureFolder(courseModel, CourseConfig.RequiredChildNames.CourseInfo)
 end
 
 local function getStringAttribute(instance: Instance?, attributeName: string, fallback: string): string
@@ -251,43 +253,6 @@ local function discoverOrderedCheckpoints(checkpointsFolder: Folder?): { Ordered
 	return discoveredCheckpoints
 end
 
-local function countOrderedCheckpoints(courseModel: Model): number
-	local checkpointsFolder = getFolder(courseModel, CourseConfig.RequiredChildNames.Checkpoints)
-
-	return #discoverOrderedCheckpoints(checkpointsFolder)
-end
-
-local function writeCourseInfoAttributes(courseModel: Model, courseInfo: CourseInfo)
-	local attributes = CourseConfig.CourseInfoAttributes
-	local courseInfoInstance = ensureCourseInfoInstance(courseModel)
-
-	courseInfoInstance:SetAttribute(attributes.CourseId, courseInfo.courseId)
-	courseInfoInstance:SetAttribute(attributes.DisplayName, courseInfo.displayName)
-	courseInfoInstance:SetAttribute(attributes.RaceFormat, courseInfo.raceFormat)
-	courseInfoInstance:SetAttribute(attributes.LapCount, courseInfo.lapCount)
-	courseInfoInstance:SetAttribute(attributes.Enabled, courseInfo.enabled)
-	courseInfoInstance:SetAttribute(attributes.Difficulty, courseInfo.difficulty)
-	courseInfoInstance:SetAttribute(attributes.TargetNewPlayerTime, courseInfo.targetNewPlayerTime)
-	courseInfoInstance:SetAttribute(attributes.TargetPracticedTime, courseInfo.targetPracticedTime)
-	courseInfoInstance:SetAttribute(attributes.CheckpointCount, courseInfo.checkpointCount)
-end
-
-local function getClassicPointToPointCourseInfo(courseModel: Model): CourseInfo
-	local defaults = CourseConfig.DefaultCourseInfo
-
-	return {
-		courseId = "classic_point_to_point",
-		displayName = "Classic Point-to-Point",
-		raceFormat = RaceConstants.RaceFormat.PointToPoint,
-		lapCount = 1,
-		enabled = true,
-		difficulty = defaults.Difficulty,
-		targetNewPlayerTime = defaults.TargetNewPlayerTime,
-		targetPracticedTime = defaults.TargetPracticedTime,
-		checkpointCount = countOrderedCheckpoints(courseModel),
-	}
-end
-
 local function addWarning(warnings: { string }, message: string)
 	table.insert(warnings, message)
 end
@@ -364,17 +329,39 @@ end
 local function discoverCourseLibrary()
 	discoveredCoursesById = {}
 	discoveredCourseOrder = {}
+	local duplicateCourseIds: { [string]: boolean } = {}
+	local reportWarnings: { string } = {}
+
+	-- The tournament rediscovers on every update, so repeat the log only when the result changes.
+	local function report(summary: string)
+		local signature = table.concat(reportWarnings, "\n") .. "\n" .. summary
+		if signature == lastDiscoveryReport then
+			return
+		end
+		lastDiscoveryReport = signature
+		for _, warningMessage in ipairs(reportWarnings) do
+			warn(warningMessage)
+		end
+		print(summary)
+	end
 
 	local library = getCourseLibrary()
 
 	if library == nil then
-		print("[CourseService] ServerStorage.CourseLibrary was not found; using Workspace.RaceCourse fallback.")
+		report("[CourseService] ServerStorage.CourseLibrary was not found; using Workspace.RaceCourse fallback.")
 		return
 	end
 
 	for _, child in ipairs(library:GetChildren()) do
 		if child:IsA("Model") then
 			local info = readCourseInfo(child)
+			if CourseConfig.RetiredCourseIds[info.courseId] then continue end
+			if discoveredCoursesById[info.courseId] ~= nil or duplicateCourseIds[info.courseId] then
+				duplicateCourseIds[info.courseId] = true
+				discoveredCoursesById[info.courseId] = nil
+				table.insert(reportWarnings, string.format("[CourseService] Duplicate course ID %s; all copies are excluded until reconciled.", info.courseId))
+				continue
+			end
 			local warnings = validateCourseModel(child, true)
 
 			discoveredCoursesById[info.courseId] = {
@@ -382,74 +369,35 @@ local function discoverCourseLibrary()
 				info = info,
 				validationWarnings = warnings,
 			}
-			table.insert(discoveredCourseOrder, info.courseId)
 
 			for _, warningMessage in ipairs(warnings) do
-				warn(string.format("[CourseService] %s: %s", child.Name, warningMessage))
+				table.insert(reportWarnings, string.format("[CourseService] %s: %s", child.Name, warningMessage))
 			end
 		end
 	end
 
+	for courseId in pairs(discoveredCoursesById) do
+		table.insert(discoveredCourseOrder, courseId)
+	end
 	table.sort(discoveredCourseOrder)
-	print(string.format("[CourseService] Discovered %d course model(s).", #discoveredCourseOrder))
+	report(string.format("[CourseService] Discovered %d course model(s).", #discoveredCourseOrder))
 end
 
 local function getFallbackActiveCourse(): Model?
 	local activeCourse = Workspace:FindFirstChild(CourseConfig.ActiveCourseModelName)
 
-	if activeCourse ~= nil and activeCourse:IsA("Model") then
+	if activeCourse ~= nil and activeCourse:IsA("Model") and not CourseConfig.RetiredCourseIds[readCourseInfo(activeCourse).courseId] then
 		return activeCourse
 	end
 
 	return nil
 end
 
-local function ensureClassicPointToPointCourseFromFallback()
-	local library = ensureCourseLibrary()
-	local existingCourse = library:FindFirstChild(CourseConfig.ClassicPointToPointCourseName)
-
-	if existingCourse ~= nil then
-		if existingCourse:IsA("Model") then
-			ensureFolder(existingCourse, CourseConfig.RequiredChildNames.Obstacles)
-			ensureFolder(existingCourse, CourseConfig.RequiredChildNames.RouteMarkers)
-			ensureFolder(existingCourse, CourseConfig.RequiredChildNames.Decoration)
-			ensureFolder(existingCourse, CourseConfig.RequiredChildNames.Bounds)
-			writeCourseInfoAttributes(existingCourse, getClassicPointToPointCourseInfo(existingCourse))
-		else
-			warn(
-				string.format(
-					"[CourseService] %s exists but is not a Model.",
-					CourseConfig.ClassicPointToPointCourseName
-				)
-			)
-		end
-
-		return
-	end
-
-	local fallbackCourse = getFallbackActiveCourse()
-
-	if fallbackCourse == nil then
-		return
-	end
-
-	local courseClone = fallbackCourse:Clone()
-	courseClone.Name = CourseConfig.ClassicPointToPointCourseName
-	courseClone:SetAttribute(CourseConfig.RuntimeActiveCourseAttribute, nil)
-	courseClone:SetAttribute(CourseConfig.SourceCourseIdAttribute, nil)
-
-	ensureFolder(courseClone, CourseConfig.RequiredChildNames.Obstacles)
-	ensureFolder(courseClone, CourseConfig.RequiredChildNames.RouteMarkers)
-	ensureFolder(courseClone, CourseConfig.RequiredChildNames.Decoration)
-	ensureFolder(courseClone, CourseConfig.RequiredChildNames.Bounds)
-	writeCourseInfoAttributes(courseClone, getClassicPointToPointCourseInfo(courseClone))
-
-	courseClone.Parent = library
-	print("[CourseService] Created Course_ClassicPointToPoint from Workspace.RaceCourse fallback.")
-end
-
-local function isPlayableCourseRecord(record: CourseRecord): boolean
-	if record.info.enabled ~= true then
+local function isPlayableCourseRecord(record: CourseRecord, allowStudioDevelopment: boolean?): boolean
+	if CourseConfig.RetiredCourseIds[record.info.courseId] then return false end
+	local studioDevelopment = allowStudioDevelopment == true and RunService:IsStudio()
+		and record.info.courseId == "stud_garden_v2" and record.model:GetAttribute("SGV2Owned") == true
+	if record.info.enabled ~= true and not studioDevelopment then
 		return false
 	end
 
@@ -467,9 +415,9 @@ local function selectActiveCourseRecord(): CourseRecord?
 		warn(string.format("[CourseService] Unsupported selection mode %s; using Fixed.", tostring(CourseConfig.SelectionMode)))
 	end
 
-	local configuredRecord = discoveredCoursesById[CourseConfig.ActiveCourseId]
+	local configuredRecord = discoveredCoursesById[studioCourseId or CourseConfig.ActiveCourseId]
 
-	if configuredRecord ~= nil and isPlayableCourseRecord(configuredRecord) then
+	if configuredRecord ~= nil and isPlayableCourseRecord(configuredRecord, studioCourseId ~= nil) then
 		return configuredRecord
 	end
 
@@ -510,10 +458,10 @@ local function archiveExistingActiveCourse(activeCourse: Model)
 
 	activeCourse.Name = archivedName
 	activeCourse.Parent = archive
-	print(string.format("[CourseService] Archived existing active course as ServerStorage.CourseArchive.%s.", archivedName))
+	print(string.format("[CourseService] Archived existing active course as %s.", activeCourse:GetFullName()))
 end
 
-local function spawnCourseRecord(record: CourseRecord): boolean
+local function spawnCourseRecord(record: CourseRecord, isCurrent: (() -> boolean)?): boolean
 	local courseClone = record.model:Clone()
 	courseClone.Name = CourseConfig.ActiveCourseModelName
 	courseClone:SetAttribute(CourseConfig.RuntimeActiveCourseAttribute, true)
@@ -530,6 +478,7 @@ local function spawnCourseRecord(record: CourseRecord): boolean
 		return false
 	end
 
+	if isCurrent and not isCurrent() then courseClone:Destroy();return false end
 	local existingActiveCourse = getFallbackActiveCourse()
 
 	if existingActiveCourse ~= nil then
@@ -555,9 +504,85 @@ local function spawnCourseRecord(record: CourseRecord): boolean
 end
 
 local function prepareCourseLibrary()
-	ensureClassicPointToPointCourseFromFallback()
-	local classicAscentBuilder = require(ServerStorage.CourseBuilders.ClassicAscentPointToPoint)
-	classicAscentBuilder.Ensure(ensureCourseLibrary())
+	local eggRush = Workspace:FindFirstChild("Course_EggRush")
+	if RunService:IsRunning() and eggRush ~= nil then
+		assert(eggRush:IsA("Model") and eggRush:GetAttribute("ManualEditing") == true
+			and eggRush:GetAttribute("EROwned") == true, "Preserve the Egg Rush editing model")
+		assert(readCourseInfo(eggRush).courseId == "egg_rush_circuit", "Unexpected Egg Rush identity")
+		local warnings = validateCourseModel(eggRush, true)
+		assert(#warnings == 0, "Egg Rush is incomplete: " .. table.concat(warnings, "; "))
+		local library = ensureCourseLibrary()
+		local previous = library:FindFirstChild(eggRush.Name)
+		if previous ~= nil and previous ~= eggRush then
+			previous.Name = getUniqueArchiveName("EggRush_BeforeEditing")
+			previous.Parent = ensureCourseArchive()
+		end
+		eggRush.Parent = library
+	end
+	local studGarden = Workspace:FindFirstChild("Course_StudGarden")
+	if RunService:IsStudio() and RunService:IsRunning() and studGarden ~= nil then
+		assert(studGarden:IsA("Model") and studGarden:GetAttribute("ManualEditing") == true
+			and studGarden:GetAttribute("SGV2Owned") == true, "Preserve the Stud Garden editing model")
+		local warnings = validateCourseModel(studGarden, true)
+		assert(#warnings == 0, "Stud Garden is incomplete: " .. table.concat(warnings, "; "))
+		assert(readCourseInfo(studGarden).courseId == "stud_garden_v2", "Unexpected Stud Garden identity")
+		local library = ensureCourseLibrary()
+		assert(library:FindFirstChild(studGarden.Name) == nil, "Resolve the existing Stud Garden template before replacing it")
+		studGarden.Parent = library
+	end
+	local shipwreck = Workspace:FindFirstChild("Course_ShipwreckCove")
+	if shipwreck == nil then
+		local library = getCourseLibrary()
+		local storedShipwreck = library and library:FindFirstChild("Course_ShipwreckCove")
+		if storedShipwreck and storedShipwreck:IsA("Folder") then
+			shipwreck = storedShipwreck
+		end
+	end
+	if RunService:IsRunning() and shipwreck then
+		if shipwreck:IsA("Folder") and shipwreck:GetAttribute("EditablePiecesVersion") == 1 then
+			shipwreck = require(ServerStorage.CourseBuilders.ShipwreckCove.Authoring).ToRuntime(shipwreck)
+		end
+		assert(shipwreck:IsA("Model") and shipwreck:GetAttribute("ManualEditing") == true, "Preserve Shipwreck editing model")
+		local warnings = validateCourseModel(shipwreck, true)
+		assert(#warnings == 0, "Shipwreck candidate is incomplete: " .. table.concat(warnings, "; "))
+		local library = ensureCourseLibrary()
+		local previous = library:FindFirstChild(shipwreck.Name)
+		if previous and previous ~= shipwreck then
+			previous.Name = getUniqueArchiveName("Shipwreck_BeforeEditing")
+			previous.Parent = ensureCourseArchive()
+		end
+		shipwreck.Parent = library
+	end
+	local cityRun = Workspace:FindFirstChild("Course_CityRun")
+	if RunService:IsRunning() and cityRun ~= nil then
+		assert(cityRun:IsA("Model") and cityRun:GetAttribute("ManualEditing") == true,
+			"The visible City Run must be marked ManualEditing before Play")
+		local warnings = validateCourseModel(cityRun, true)
+		assert(#warnings == 0, "City Run is incomplete: " .. table.concat(warnings, "; "))
+		assert(readCourseInfo(cityRun).courseId == "city_run", "Unexpected City Run identity")
+		local library = ensureCourseLibrary()
+		local previous = library:FindFirstChild("Course_CityRun")
+		if previous ~= nil then
+			previous.Name = getUniqueArchiveName("CityRun_BeforeEditing")
+			previous.Parent = ensureCourseArchive()
+		end
+		cityRun.Parent = library
+	end
+	local moonlit = Workspace:FindFirstChild("Course_MoonlitCitadel")
+	if RunService:IsRunning() and moonlit ~= nil then
+		assert(moonlit:IsA("Model") and moonlit:GetAttribute(CourseConfig.ManualEditingAttribute) == true,
+			"The visible Moonlit Citadel must be marked ManualEditing before Play")
+		local warnings = validateCourseModel(moonlit, true)
+		assert(#warnings == 0, "Moonlit Citadel is incomplete: " .. table.concat(warnings, "; "))
+		assert(readCourseInfo(moonlit).courseId == "moonlit_citadel", "Unexpected Moonlit Citadel identity")
+		local library = ensureCourseLibrary()
+		local previous = library:FindFirstChild(moonlit.Name)
+		if previous ~= nil and previous ~= moonlit then
+			previous.Name = getUniqueArchiveName("MoonlitCitadel_BeforeEditing")
+			previous.Parent = ensureCourseArchive()
+		end
+		moonlit.Parent = library
+	end
 	discoverCourseLibrary()
 end
 
@@ -628,11 +653,13 @@ function CourseService.Start(_context: ServiceContext?)
 	end
 
 	isStarted = true
+	inspectionMode = false
 	prepareCourseLibrary()
-	CourseService.UnloadActiveCourse()
+	if not inspectionMode then CourseService.UnloadActiveCourse() end
 end
 
 function CourseService.UnloadActiveCourse()
+	if inspectionMode then return end
 	local course = getFallbackActiveCourse()
 	if course ~= nil then
 		if course:GetAttribute(CourseConfig.RuntimeActiveCourseAttribute) == true then
@@ -644,12 +671,33 @@ function CourseService.UnloadActiveCourse()
 	activeCourseInfo = nil
 end
 
+function CourseService.CanSelectCourseForStudio(courseId: string): boolean
+    if not RunService:IsStudio() then return false end
+    local record = discoveredCoursesById[courseId]
+    return record ~= nil and isPlayableCourseRecord(record, true)
+end
+
+function CourseService.SelectCourseForStudio(courseId: string): boolean
+    if not CourseService.CanSelectCourseForStudio(courseId) then return false end
+    studioCourseId = courseId
+    return true
+end
+
+function CourseService.GetSelectedCourseId(): string
+    return studioCourseId or CourseConfig.ActiveCourseId
+end
+
 function CourseService.DiscoverCourses()
 	discoverCourseLibrary()
 end
 
 function CourseService.EnsureActiveCourse()
+	if inspectionMode then return end
 	ensureActiveCourse()
+end
+
+function CourseService.IsInspectionMode(): boolean
+	return inspectionMode
 end
 
 function CourseService.GetDiscoveredCourseIds(): { string }
@@ -660,6 +708,27 @@ function CourseService.GetDiscoveredCourseIds(): { string }
 	end
 
 	return courseIds
+end
+
+function CourseService.GetEligibleCourses(): {CourseInfo}
+	discoverCourseLibrary()
+	local result = {}
+	for _, id in discoveredCourseOrder do
+		local record = discoveredCoursesById[id]
+		if record.model.Parent == getCourseLibrary() and isPlayableCourseRecord(record) then
+			record.info = readCourseInfo(record.model)
+			if record.info.enabled then table.insert(result,table.clone(record.info)) end
+		end
+	end
+	return result
+end
+
+function CourseService.LoadTournamentCourse(courseId: string,isCurrent: (() -> boolean)?): boolean
+	if inspectionMode then return false end
+	prepareCourseLibrary()
+	local record = discoveredCoursesById[courseId]
+	if not record or not isPlayableCourseRecord(record) then return false end
+	return spawnCourseRecord(record,isCurrent) and CourseService.GetActiveCourseId() == courseId
 end
 
 function CourseService.GetCourseInfo(courseId: string): CourseInfo?

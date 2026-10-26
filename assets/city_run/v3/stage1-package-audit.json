@@ -1,0 +1,14 @@
+{
+  "build": "V3_KIT_05+V3_DISTRICT_ADDON_01",
+  "assets": 69,
+  "triangles": 22746,
+  "referencedMaterials": [
+    "V3_Shared_Painted_Atlas"
+  ],
+  "referencedImages": [
+    "painted_atlas.png"
+  ],
+  "failures": [],
+  "passed": true,
+  "scope": "Editable source and export integrity; no runtime performance claim"
+}

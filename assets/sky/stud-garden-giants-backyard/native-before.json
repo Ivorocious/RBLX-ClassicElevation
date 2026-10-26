@@ -1,0 +1,223 @@
+{
+  "httpEnabled": false,
+  "lighting": {
+    "ExposureCompensation": 0,
+    "EnvironmentDiffuseScale": 1,
+    "EnvironmentSpecularScale": 1,
+    "Ambient": [
+      0.27450981736183167,
+      0.3137255012989044,
+      0.3921568691730499
+    ],
+    "OutdoorAmbient": [
+      0.3921568691730499,
+      0.45098039507865906,
+      0.529411792755127
+    ],
+    "ClockTime": 14.5,
+    "Brightness": 2,
+    "ShadowSoftness": 0.20000000298023224,
+    "GlobalShadows": true
+  },
+  "placeId": 85558151074819,
+  "courseInfo": {
+    "CheckpointCount": 9,
+    "CourseId": "stud_garden_v2",
+    "DisplayName": "Stud Garden V2",
+    "Difficulty": "Intermediate; optional precision branches",
+    "TargetPracticedTime": 150,
+    "RaceFormat": "PointToPoint",
+    "TargetNewPlayerTime": 270,
+    "Enabled": false,
+    "LapCount": 1
+  },
+  "sources": {
+    "ReplicatedStorage.Config.RaceConfig": "--!strict\n\nlocal RaceConstants = require(script.Parent.Parent.Shared.RaceConstants)\nlocal RaceTypes = require(script.Parent.Parent.Shared.RaceTypes)\n\nexport type RaceConfig = {\n\tRaceFormat: RaceTypes.RaceFormat,\n\tMinPlayers: number,\n\tIntermissionDuration: number,\n\tCountdownDuration: number,\n\tRaceDuration: number,\n\tRaceEndingDuration: number,\n\tResultsDuration: number,\n\tResettingDuration: number,\n\tFallYThreshold: number,\n\tDefaultCourseId: string,\n\tLobbyModelName: string,\n\tLobbySpawnMarkerName: string,\n\tLobbyFallbackPartName: string,\n\tLobbyAmbiencePadding: Vector3,\n\tRaceCourseModelName: string,\n\tRaceStartPartName: string,\n\tRacerStartVerticalOffset: number,\n\tLobbyResetVerticalOffset: number,\n\tStagingTeleportEnabled: boolean,\n\tStudioLobbyPreview: boolean,\n}\n\nlocal RaceConfig: RaceConfig = {\n\tRaceFormat = RaceConstants.RaceFormat.PointToPoint,\n\tMinPlayers = 1,\n\tIntermissionDuration = RaceConstants.DefaultDurations.Intermission,\n\tCountdownDuration = RaceConstants.DefaultDurations.Countdown,\n\tRaceDuration = 540,\n\tRaceEndingDuration = RaceConstants.DefaultDurations.RaceEnding,\n\tResultsDuration = RaceConstants.DefaultDurations.Results,\n\tResettingDuration = RaceConstants.DefaultDurations.Resetting,\n\tFallYThreshold = 4,\n\tDefaultCourseId = \"MVP_PointToPoint_01\",\n\tLobbyModelName = \"Lobby\",\n\tLobbySpawnMarkerName = \"LobbySpawnPadMarker\",\n\tLobbyFallbackPartName = \"LobbyPlatform\",\n\tLobbyAmbiencePadding = Vector3.new(8, 12, 8),\n\tRaceCourseModelName = \"RaceCourse\",\n\tRaceStartPartName = \"Start\",\n\tRacerStartVerticalOffset = 5,\n\tLobbyResetVerticalOffset = 5,\n\tStagingTeleportEnabled = true,\n\tStudioLobbyPreview = true,\n}\n\nreturn RaceConfig\n",
+    "StarterPlayer.StarterPlayerScripts.ClassicAscentAmbience": "--!strict\n\nlocal Lighting = game:GetService(\"Lighting\")\nlocal Players = game:GetService(\"Players\")\nlocal RunService = game:GetService(\"RunService\")\nlocal player = Players.LocalPlayer\nlocal ConfigFolder = game:GetService(\"ReplicatedStorage\").Config\nlocal RaceConfig = require(ConfigFolder.RaceConfig)\nlocal profiles: { [string]: any } = {}\nfor _, module in { ConfigFolder.ClassicAscentAmbienceConfig, ConfigFolder.CityRunAmbienceConfig, ConfigFolder.ShipwreckAmbienceConfig } do\n\tlocal config = require(module)\n\tprofiles[config.CourseId] = config\nend\nlocal activeProfile: any = nil\nlocal sky: Sky? = nil\nlocal createdSky = false\nlocal savedSky: { [string]: any }? = nil\nlocal saved: { [string]: any }? = nil\nlocal savedAtmosphere: { [string]: any }? = nil\nlocal atmosphere: Atmosphere? = nil\nlocal createdAtmosphere = false\nlocal savedEffects: {any} = {}\nlocal hiddenState: {[Instance]: {[string]: any}} = {}\nlocal hiddenConnection: RBXScriptConnection? = nil\nlocal hiddenRoots: {[string]: boolean} = {}\nlocal correction = Instance.new(\"ColorCorrectionEffect\")\ncorrection.Name = \"CourseColor\"\ncorrection.Enabled = false\ncorrection.Parent = Lighting\n\nlocal function hideProperty(object: Instance, property: string, value: any)\n\tlocal state = hiddenState[object]\n\tif not state then\n\t\tstate = {}\n\t\thiddenState[object] = state\n\tend\n\tif state[property] == nil then state[property] = (object :: any)[property] end\n\t(object :: any)[property] = value\nend\n\nlocal function hideObject(object: Instance)\n\tif object:IsA(\"BasePart\") then\n\t\thideProperty(object, \"LocalTransparencyModifier\", 1)\n\telseif object:IsA(\"GuiObject\") then\n\t\thideProperty(object, \"Visible\", false)\n\telseif object:IsA(\"LayerCollector\") or object:IsA(\"BillboardGui\") or object:IsA(\"SurfaceGui\")\n\t\tor object:IsA(\"ParticleEmitter\") or object:IsA(\"Beam\") or object:IsA(\"Trail\")\n\t\tor object:IsA(\"Light\") or object:IsA(\"Highlight\") then\n\t\thideProperty(object, \"Enabled\", false)\n\telseif object:IsA(\"Decal\") or object:IsA(\"Texture\") then\n\t\thideProperty(object, \"Transparency\", 1)\n\tend\nend\n\nlocal function hideBranch(root: Instance)\n\thideObject(root)\n\tfor _, descendant in root:GetDescendants() do hideObject(descendant) end\nend\n\nlocal function restoreHidden()\n\tif hiddenConnection then hiddenConnection:Disconnect(); hiddenConnection = nil end\n\tfor object, properties in hiddenState do\n\t\tfor property, value in properties do\n\t\t\tpcall(function() (object :: any)[property] = value end)\n\t\tend\n\tend\n\ttable.clear(hiddenState)\n\ttable.clear(hiddenRoots)\nend\n\nlocal function hideOutOfBounds(config: any)\n\tfor _, name in config.HideWorkspaceRoots or {} do hiddenRoots[name] = true end\n\tfor name in hiddenRoots do\n\t\tlocal root = workspace:FindFirstChild(name)\n\t\tif root then hideBranch(root) end\n\tend\n\thiddenConnection = workspace.DescendantAdded:Connect(function(object)\n\t\tlocal root = object\n\t\twhile root.Parent and root.Parent ~= workspace do root = root.Parent end\n\t\tif root.Parent == workspace and hiddenRoots[root.Name] then hideBranch(object) end\n\tend)\nend\n\nlocal function setActive(config: any?)\n\tif config == activeProfile then return end\n\trestoreHidden()\n\n\t-- Restore the baseline before switching maps so one map never becomes another's fallback.\n\tif saved then\n\t\tfor _, entry in savedEffects do\n\t\t\tif entry.created then entry.object:Destroy()\n\t\t\telse\n\t\t\t\tfor key, value in entry.properties do entry.object[key] = value end\n\t\t\tend\n\t\tend\n\t\ttable.clear(savedEffects)\n\t\tfor key, value in pairs(saved) do (Lighting :: any)[key] = value end\n\t\tif atmosphere and createdAtmosphere then\n\t\t\tatmosphere:Destroy()\n\t\telseif atmosphere and savedAtmosphere then\n\t\t\tfor key, value in pairs(savedAtmosphere) do (atmosphere :: any)[key] = value end\n\t\tend\n\t\tif sky and createdSky then\n\t\t\tsky:Destroy()\n\t\telseif sky and savedSky then\n\t\t\tfor key, value in pairs(savedSky) do (sky :: any)[key] = value end\n\t\tend\n\t\tcorrection.Enabled = false\n\t\tsky, savedSky = nil, nil\n\t\tatmosphere, savedAtmosphere = nil, nil\n\t\tsaved = nil\n\tend\n\n\tactiveProfile = config\n\tif not config then return end\n\tif config.HideWorkspaceRoots then hideOutOfBounds(config) end\n\tlocal lightingObject: any = Lighting\n\tlocal originalLighting: {[string]: any} = {}\n\tsaved = originalLighting\n\tfor key, value in pairs(config.Lighting) do\n\t\toriginalLighting[key] = lightingObject[key]\n\t\tlightingObject[key] = value\n\tend\n\tatmosphere = Lighting:FindFirstChildOfClass(\"Atmosphere\")\n\tcreatedAtmosphere = atmosphere == nil\n\tif not atmosphere then\n\t\tatmosphere = Instance.new(\"Atmosphere\")\n\t\tatmosphere.Name = \"CourseHaze\"\n\t\tatmosphere.Parent = Lighting\n\tend\n\tlocal atmosphereObject: any = atmosphere\n\tlocal originalAtmosphere: {[string]: any} = {}\n\tsavedAtmosphere = originalAtmosphere\n\tfor key, value in pairs(config.Atmosphere) do\n\t\toriginalAtmosphere[key] = atmosphereObject[key]\n\t\tatmosphereObject[key] = value\n\tend\n\tsky = Lighting:FindFirstChildOfClass(\"Sky\")\n\tcreatedSky = sky == nil\n\tif not sky then\n\t\tsky = Instance.new(\"Sky\")\n\t\tsky.Name = \"CourseSky\"\n\t\tsky.Parent = Lighting\n\tend\n\tlocal skyObject: any = sky\n\tlocal originalSky: {[string]: any} = {}\n\tsavedSky = originalSky\n\tfor key, value in pairs(config.Sky) do\n\t\toriginalSky[key] = skyObject[key]\n\t\tskyObject[key] = value\n\tend\n\tfor key, value in pairs(config.ColorCorrection) do (correction :: any)[key] = value end\n\tcorrection.Enabled = true\n\tfor className, properties in config.Effects or {} do\n\t\tlocal effect: any = Lighting:FindFirstChildOfClass(className)\n\t\tlocal created = effect == nil\n\t\tif not effect then\n\t\t\teffect = Instance.new(className)\n\t\t\teffect.Name = \"Course\" .. className\n\t\t\teffect.Parent = Lighting\n\t\tend\n\t\tlocal original: {[string]: any} = {}\n\t\tfor key, value in properties do\n\t\t\toriginal[key] = effect[key]\n\t\t\teffect[key] = value\n\t\tend\n\t\ttable.insert(savedEffects, {object=effect, created=created, properties=original})\n\tend\nend\n\nlocal elapsed = 0\nlocal warmed = setmetatable({}, {__mode=\"k\"})\nlocal function warmMist(object: Instance)\n\tif not object:IsA(\"ParticleEmitter\") or not object.Enabled or warmed[object] then return end\n\tlocal count = object:GetAttribute(\"PrewarmParticles\")\n\tif typeof(count) ~= \"number\" then return end\n\twarmed[object] = true\n\tobject:Emit(count)\nend\nworkspace.DescendantAdded:Connect(function(object)\n\tif object:IsA(\"ParticleEmitter\") then task.defer(warmMist,object) end\nend)\nfor _,object in ipairs(workspace:GetDescendants()) do warmMist(object) end\nlocal function isInsideLobby(position: Vector3): boolean\n\tlocal lobby = workspace:FindFirstChild(RaceConfig.LobbyModelName)\n\tif not lobby or not lobby:IsA(\"Model\") then return false end\n\tlocal frame, size = lobby:GetBoundingBox()\n\tlocal point = frame:PointToObjectSpace(position)\n\tlocal half = size / 2 + RaceConfig.LobbyAmbiencePadding\n\treturn math.abs(point.X) <= half.X and math.abs(point.Y) <= half.Y and math.abs(point.Z) <= half.Z\nend\n\nRunService.Heartbeat:Connect(function(delta)\n\telapsed += delta\n\tif elapsed < 0.5 then return end\n\telapsed = 0\n\tlocal course = workspace:FindFirstChild(\"RaceCourse\")\n\tlocal info = course and course:FindFirstChild(\"CourseInfo\")\n\tlocal root = player.Character and player.Character:FindFirstChild(\"HumanoidRootPart\")\n\tlocal start = course and course:FindFirstChild(\"Start\")\n\tlocal config = if info then profiles[info:GetAttribute(\"CourseId\")] else nil\n\tlocal active = config ~= nil and root ~= nil and root:IsA(\"BasePart\")\n\t\tand player:GetAttribute(\"ArrivalOpen\") ~= true\n\t\tand not isInsideLobby(root.Position)\n\t\tand start ~= nil and start:IsA(\"BasePart\")\n\t\tand (root.Position - start.Position).Magnitude < config.ActivationDistance\n\tsetActive(if active then config else nil)\nend)\n"
+  },
+  "camera": {
+    "cf": [
+      1477.2783203125,
+      315.2106018066406,
+      -805.2171630859375,
+      0.9490882158279419,
+      0.06558291614055634,
+      -0.3081080913543701,
+      -3.725290742551124e-9,
+      0.9780879020690918,
+      0.20819267630577087,
+      0.315010666847229,
+      -0.19759321212768555,
+      0.9282915592193604
+    ],
+    "fov": 70
+  },
+  "sky": {
+    "StarCount": 0,
+    "SkyboxUp": "rbxassetid://110937313651057",
+    "SkyboxBk": "rbxassetid://94560555738002",
+    "CelestialBodiesShown": true,
+    "SkyboxOrientation": [
+      0,
+      0,
+      0
+    ],
+    "SkyboxFt": "rbxassetid://127241254235216",
+    "SkyboxDn": "rbxassetid://96562086675523",
+    "SunAngularSize": 7,
+    "SkyboxLf": "rbxassetid://106027538090518",
+    "SkyboxRt": "rbxassetid://77937123693721",
+    "MoonAngularSize": 11
+  },
+  "atmosphere": {
+    "Density": 0,
+    "Decay": [
+      0.47058823704719543,
+      0.5882353186607361,
+      0.7450980544090271
+    ],
+    "Color": [
+      0.7568627595901489,
+      0.8705882430076599,
+      1
+    ],
+    "Glare": 0,
+    "Offset": 0,
+    "Haze": 0
+  },
+  "start": {
+    "cf": [
+      1418,
+      260.739990234375,
+      -1032,
+      0,
+      0,
+      -1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    "size": [
+      48,
+      1,
+      26
+    ]
+  },
+  "mode": "Edit",
+  "lobby": {
+    "cf": [
+      1552,
+      410.706298828125,
+      -850,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ],
+    "size": [
+      150,
+      114.41256713867188,
+      152
+    ]
+  },
+  "points": [
+    {
+      "path": "Workspace.SGV2_Phase3_F04.Checkpoints.Checkpoint_007",
+      "distance": 298.828125,
+      "position": [
+        1639,
+        268.239990234375,
+        -1233
+      ]
+    },
+    {
+      "path": "Workspace.SGV2_Phase3_F04.Checkpoints.Checkpoint_006",
+      "distance": 396.808837890625,
+      "position": [
+        1694,
+        268.239990234375,
+        -1317
+      ]
+    },
+    {
+      "path": "Workspace.SGV2_Phase3_F04.Checkpoints.Checkpoint_002",
+      "distance": 146.25064086914062,
+      "position": [
+        1507,
+        264.239990234375,
+        -1148
+      ]
+    },
+    {
+      "path": "Workspace.SGV2_Phase3_F04.Checkpoints.Checkpoint_009",
+      "distance": 191.47128295898438,
+      "position": [
+        1599,
+        268.239990234375,
+        -1094
+      ]
+    },
+    {
+      "path": "Workspace.SGV2_Phase3_F04.Checkpoints.Checkpoint_001",
+      "distance": 66.6935806274414,
+      "position": [
+        1411,
+        267.29998779296875,
+        -1098
+      ]
+    },
+    {
+      "path": "Workspace.SGV2_Phase3_F04.Checkpoints.Checkpoint_004",
+      "distance": 270.63861083984375,
+      "position": [
+        1401,
+        268.239990234375,
+        -1302
+      ]
+    },
+    {
+      "path": "Workspace.SGV2_Phase3_F04.Checkpoints.Checkpoint_005",
+      "distance": 310.2809143066406,
+      "position": [
+        1545,
+        268.239990234375,
+        -1315
+      ]
+    },
+    {
+      "path": "Workspace.SGV2_Phase3_F04.Checkpoints.Checkpoint_003",
+      "distance": 256.9907531738281,
+      "position": [
+        1507,
+        267.239990234375,
+        -1273
+      ]
+    },
+    {
+      "path": "Workspace.SGV2_Phase3_F04.Checkpoints.Checkpoint_008",
+      "distance": 217.85362243652344,
+      "position": [
+        1594,
+        270.75,
+        -1160
+      ]
+    },
+    {
+      "path": "Workspace.SGV2_Phase3_F04.Finish",
+      "distance": 129.63121032714844,
+      "position": [
+        1547,
+        267.239990234375,
+        -1021
+      ]
+    }
+  ]
+}

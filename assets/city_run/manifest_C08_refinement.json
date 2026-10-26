@@ -1,0 +1,2784 @@
+{
+  "revision": "C08_03",
+  "colors": {
+    "Brick": [
+      0.66,
+      0.26,
+      0.16
+    ],
+    "Terracotta": [
+      0.79,
+      0.37,
+      0.23
+    ],
+    "Plaster": [
+      0.93,
+      0.76,
+      0.48
+    ],
+    "Cream": [
+      0.93,
+      0.87,
+      0.72
+    ],
+    "Stone": [
+      0.64,
+      0.65,
+      0.61
+    ],
+    "Roof": [
+      0.24,
+      0.3,
+      0.32
+    ],
+    "Teal": [
+      0.035,
+      0.49,
+      0.48
+    ],
+    "Coral": [
+      0.89,
+      0.24,
+      0.2
+    ],
+    "Yellow": [
+      0.99,
+      0.66,
+      0.1
+    ],
+    "Blue": [
+      0.08,
+      0.3,
+      0.58
+    ],
+    "Iron": [
+      0.095,
+      0.14,
+      0.18
+    ],
+    "Glass": [
+      0.16,
+      0.27,
+      0.31
+    ],
+    "Wood": [
+      0.43,
+      0.26,
+      0.13
+    ],
+    "Leaf": [
+      0.22,
+      0.42,
+      0.14
+    ],
+    "LeafLight": [
+      0.45,
+      0.6,
+      0.19
+    ],
+    "Soil": [
+      0.22,
+      0.17,
+      0.12
+    ],
+    "Red": [
+      0.96,
+      0.055,
+      0.035
+    ],
+    "White": [
+      0.96,
+      0.95,
+      0.85
+    ],
+    "Rail": [
+      0.37,
+      0.43,
+      0.46
+    ],
+    "Skyline": [
+      0.4,
+      0.52,
+      0.57
+    ],
+    "Light": [
+      1,
+      0.86,
+      0.48
+    ],
+    "WoodLight": [
+      0.59,
+      0.4,
+      0.23
+    ],
+    "WoodDark": [
+      0.3,
+      0.18,
+      0.1
+    ],
+    "WindowGlow": [
+      0.96,
+      0.72,
+      0.34
+    ],
+    "SkylineFar": [
+      0.36,
+      0.44,
+      0.48
+    ],
+    "SkylineMid": [
+      0.49,
+      0.53,
+      0.52
+    ],
+    "SkylineGlass": [
+      0.27,
+      0.35,
+      0.38
+    ]
+  },
+  "meshes": {
+    "EditableSurface_X01_00_00__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_00_00",
+      "triangles": 12
+    },
+    "EditableSurface_X01_00_00__Coral__00": {
+      "material": "Coral",
+      "component": "EditableSurface_X01_00_00",
+      "triangles": 12
+    },
+    "EditableSurface_X01_00_00__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_00_00",
+      "triangles": 12
+    },
+    "EditableSurface_X01_00_01__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_00_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_00_01__Blue__00": {
+      "material": "Blue",
+      "component": "EditableSurface_X01_00_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_00_01__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_00_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_00_01__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_00_01",
+      "triangles": 40
+    },
+    "EditableSurface_X01_00_02__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_00_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_00_02__Teal__00": {
+      "material": "Teal",
+      "component": "EditableSurface_X01_00_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_00_02__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_00_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_00_02__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_00_02",
+      "triangles": 40
+    },
+    "EditableSurface_X01_01_01__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_01_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_01_01__Coral__00": {
+      "material": "Coral",
+      "component": "EditableSurface_X01_01_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_01_01__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_01_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_01_01__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_01_01",
+      "triangles": 40
+    },
+    "EditableSurface_X01_01_02__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_01_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_01_02__Blue__00": {
+      "material": "Blue",
+      "component": "EditableSurface_X01_01_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_01_02__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_01_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_01_02__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_01_02",
+      "triangles": 40
+    },
+    "EditableSurface_X01_01_03__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_01_03",
+      "triangles": 12
+    },
+    "EditableSurface_X01_01_03__Teal__00": {
+      "material": "Teal",
+      "component": "EditableSurface_X01_01_03",
+      "triangles": 12
+    },
+    "EditableSurface_X01_01_03__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_01_03",
+      "triangles": 12
+    },
+    "EditableSurface_X01_01_03__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_01_03",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_01__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_01__Coral__00": {
+      "material": "Coral",
+      "component": "EditableSurface_X01_02_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_01__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_01__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_01",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_02__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_02__Blue__00": {
+      "material": "Blue",
+      "component": "EditableSurface_X01_02_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_02__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_02__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_02",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_03__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_03",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_03__Teal__00": {
+      "material": "Teal",
+      "component": "EditableSurface_X01_02_03",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_03__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_03",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_03__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_03",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_04__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_04",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_04__Coral__00": {
+      "material": "Coral",
+      "component": "EditableSurface_X01_02_04",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_04__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_04",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_04__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_04",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_05__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_05",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_05__Blue__00": {
+      "material": "Blue",
+      "component": "EditableSurface_X01_02_05",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_05__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_05",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_05__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_05",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_06__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_06",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_06__Teal__00": {
+      "material": "Teal",
+      "component": "EditableSurface_X01_02_06",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_06__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_06",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_06__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_06",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_07__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_07",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_07__Coral__00": {
+      "material": "Coral",
+      "component": "EditableSurface_X01_02_07",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_07__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_07",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_07__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_07",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_08__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_08",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_08__Blue__00": {
+      "material": "Blue",
+      "component": "EditableSurface_X01_02_08",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_08__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_08",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_08__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_08",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_09__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_09",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_09__Teal__00": {
+      "material": "Teal",
+      "component": "EditableSurface_X01_02_09",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_09__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_09",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_09__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_09",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_10__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_10",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_10__Coral__00": {
+      "material": "Coral",
+      "component": "EditableSurface_X01_02_10",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_10__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_10",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_10__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_10",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_11__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_11",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_11__Blue__00": {
+      "material": "Blue",
+      "component": "EditableSurface_X01_02_11",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_11__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_11",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_11__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_11",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_12__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_12",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_12__Teal__00": {
+      "material": "Teal",
+      "component": "EditableSurface_X01_02_12",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_12__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_12",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_12__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_12",
+      "triangles": 40
+    },
+    "EditableSurface_X01_02_13__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_02_13",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_13__Coral__00": {
+      "material": "Coral",
+      "component": "EditableSurface_X01_02_13",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_13__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_02_13",
+      "triangles": 12
+    },
+    "EditableSurface_X01_02_13__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_02_13",
+      "triangles": 40
+    },
+    "EditableSurface_X01_03_01__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_03_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_03_01__Blue__00": {
+      "material": "Blue",
+      "component": "EditableSurface_X01_03_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_03_01__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_03_01",
+      "triangles": 12
+    },
+    "EditableSurface_X01_03_01__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_03_01",
+      "triangles": 40
+    },
+    "EditableSurface_X01_03_02__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_03_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_03_02__Teal__00": {
+      "material": "Teal",
+      "component": "EditableSurface_X01_03_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_03_02__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_03_02",
+      "triangles": 12
+    },
+    "EditableSurface_X01_03_02__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_03_02",
+      "triangles": 40
+    },
+    "EditableSurface_X01_03_03__Cream__00": {
+      "material": "Cream",
+      "component": "EditableSurface_X01_03_03",
+      "triangles": 12
+    },
+    "EditableSurface_X01_03_03__Coral__00": {
+      "material": "Coral",
+      "component": "EditableSurface_X01_03_03",
+      "triangles": 12
+    },
+    "EditableSurface_X01_03_03__Yellow__00": {
+      "material": "Yellow",
+      "component": "EditableSurface_X01_03_03",
+      "triangles": 12
+    },
+    "EditableSurface_X01_03_03__Iron__00": {
+      "material": "Iron",
+      "component": "EditableSurface_X01_03_03",
+      "triangles": 40
+    },
+    "MarkerOrigin__Iron__00": {
+      "material": "Iron",
+      "component": "MarkerOrigin",
+      "triangles": 12
+    },
+    "MarkerRight__Iron__00": {
+      "material": "Iron",
+      "component": "MarkerRight",
+      "triangles": 12
+    },
+    "MarkerUp__Iron__00": {
+      "material": "Iron",
+      "component": "MarkerUp",
+      "triangles": 12
+    },
+    "MarkerForward__Iron__00": {
+      "material": "Iron",
+      "component": "MarkerForward",
+      "triangles": 12
+    },
+    "StationScaffoldFrame__Brick__00": {
+      "material": "Brick",
+      "component": "StationScaffoldFrame",
+      "triangles": 36
+    },
+    "StationScaffoldFrame__Cream__00": {
+      "material": "Cream",
+      "component": "StationScaffoldFrame",
+      "triangles": 36
+    },
+    "StationScaffoldFrame__Rail__00": {
+      "material": "Rail",
+      "component": "StationScaffoldFrame",
+      "triangles": 28
+    },
+    "StationScaffoldTies__Rail__00": {
+      "material": "Rail",
+      "component": "StationScaffoldTies",
+      "triangles": 440
+    },
+    "CityInfill_00__Brick__00": {
+      "material": "Brick",
+      "component": "CityInfill_00",
+      "triangles": 12
+    },
+    "CityInfill_00__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_00",
+      "triangles": 12
+    },
+    "CityInfill_00__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_00",
+      "triangles": 1728
+    },
+    "CityInfill_00__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_00",
+      "triangles": 24
+    },
+    "CityInfill_00__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_00",
+      "triangles": 324
+    },
+    "CityInfill_00__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_00",
+      "triangles": 348
+    },
+    "CityInfill_00__WindowGlow__00": {
+      "material": "WindowGlow",
+      "component": "CityInfill_00",
+      "triangles": 36
+    },
+    "CityInfill_00__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CityInfill_00",
+      "triangles": 48
+    },
+    "CityInfill_01__Plaster__00": {
+      "material": "Plaster",
+      "component": "CityInfill_01",
+      "triangles": 12
+    },
+    "CityInfill_01__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_01",
+      "triangles": 12
+    },
+    "CityInfill_01__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_01",
+      "triangles": 2064
+    },
+    "CityInfill_01__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_01",
+      "triangles": 12
+    },
+    "CityInfill_01__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CityInfill_01",
+      "triangles": 96
+    },
+    "CityInfill_01__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_01",
+      "triangles": 532
+    },
+    "CityInfill_01__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_01",
+      "triangles": 420
+    },
+    "CityInfill_01__Coral__00": {
+      "material": "Coral",
+      "component": "CityInfill_01",
+      "triangles": 24
+    },
+    "CityInfill_01__WindowGlow__00": {
+      "material": "WindowGlow",
+      "component": "CityInfill_01",
+      "triangles": 36
+    },
+    "CityInfill_02__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CityInfill_02",
+      "triangles": 12
+    },
+    "CityInfill_02__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_02",
+      "triangles": 12
+    },
+    "CityInfill_02__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_02",
+      "triangles": 396
+    },
+    "CityInfill_02__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_02",
+      "triangles": 12
+    },
+    "CityInfill_02__Teal__00": {
+      "material": "Teal",
+      "component": "CityInfill_02",
+      "triangles": 8
+    },
+    "CityInfill_02__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_02",
+      "triangles": 24
+    },
+    "CityInfill_02__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_02",
+      "triangles": 168
+    },
+    "CityInfill_03__Brick__00": {
+      "material": "Brick",
+      "component": "CityInfill_03",
+      "triangles": 24
+    },
+    "CityInfill_03__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_03",
+      "triangles": 12
+    },
+    "CityInfill_03__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_03",
+      "triangles": 2232
+    },
+    "CityInfill_03__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_03",
+      "triangles": 12
+    },
+    "CityInfill_03__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_03",
+      "triangles": 568
+    },
+    "CityInfill_03__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_03",
+      "triangles": 456
+    },
+    "CityInfill_03__Teal__00": {
+      "material": "Teal",
+      "component": "CityInfill_03",
+      "triangles": 24
+    },
+    "CityInfill_03__WindowGlow__00": {
+      "material": "WindowGlow",
+      "component": "CityInfill_03",
+      "triangles": 48
+    },
+    "CityInfill_03__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CityInfill_03",
+      "triangles": 60
+    },
+    "CityInfill_04__Plaster__00": {
+      "material": "Plaster",
+      "component": "CityInfill_04",
+      "triangles": 12
+    },
+    "CityInfill_04__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_04",
+      "triangles": 12
+    },
+    "CityInfill_04__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_04",
+      "triangles": 1740
+    },
+    "CityInfill_04__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_04",
+      "triangles": 24
+    },
+    "CityInfill_04__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_04",
+      "triangles": 324
+    },
+    "CityInfill_04__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_04",
+      "triangles": 348
+    },
+    "CityInfill_04__WindowGlow__00": {
+      "material": "WindowGlow",
+      "component": "CityInfill_04",
+      "triangles": 36
+    },
+    "CityInfill_04__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CityInfill_04",
+      "triangles": 60
+    },
+    "CityInfill_05__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CityInfill_05",
+      "triangles": 108
+    },
+    "CityInfill_05__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_05",
+      "triangles": 12
+    },
+    "CityInfill_05__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_05",
+      "triangles": 1416
+    },
+    "CityInfill_05__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_05",
+      "triangles": 12
+    },
+    "CityInfill_05__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_05",
+      "triangles": 788
+    },
+    "CityInfill_05__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_05",
+      "triangles": 288
+    },
+    "CityInfill_05__Coral__00": {
+      "material": "Coral",
+      "component": "CityInfill_05",
+      "triangles": 552
+    },
+    "CityInfill_05__WindowGlow__00": {
+      "material": "WindowGlow",
+      "component": "CityInfill_05",
+      "triangles": 24
+    },
+    "CityInfill_05__WoodDark__00": {
+      "material": "WoodDark",
+      "component": "CityInfill_05",
+      "triangles": 36
+    },
+    "CityInfill_05__Wood__00": {
+      "material": "Wood",
+      "component": "CityInfill_05",
+      "triangles": 48
+    },
+    "CityInfill_05__Soil__00": {
+      "material": "Soil",
+      "component": "CityInfill_05",
+      "triangles": 12
+    },
+    "CityInfill_05__LeafLight__00": {
+      "material": "LeafLight",
+      "component": "CityInfill_05",
+      "triangles": 240
+    },
+    "CityInfill_05__Yellow__00": {
+      "material": "Yellow",
+      "component": "CityInfill_05",
+      "triangles": 360
+    },
+    "CityInfill_05__Leaf__00": {
+      "material": "Leaf",
+      "component": "CityInfill_05",
+      "triangles": 480
+    },
+    "CityInfill_06__Brick__00": {
+      "material": "Brick",
+      "component": "CityInfill_06",
+      "triangles": 12
+    },
+    "CityInfill_06__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_06",
+      "triangles": 12
+    },
+    "CityInfill_06__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_06",
+      "triangles": 600
+    },
+    "CityInfill_06__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_06",
+      "triangles": 12
+    },
+    "CityInfill_06__Teal__00": {
+      "material": "Teal",
+      "component": "CityInfill_06",
+      "triangles": 8
+    },
+    "CityInfill_06__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_06",
+      "triangles": 24
+    },
+    "CityInfill_06__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_06",
+      "triangles": 264
+    },
+    "CityInfill_07__Plaster__00": {
+      "material": "Plaster",
+      "component": "CityInfill_07",
+      "triangles": 12
+    },
+    "CityInfill_07__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_07",
+      "triangles": 12
+    },
+    "CityInfill_07__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_07",
+      "triangles": 564
+    },
+    "CityInfill_07__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_07",
+      "triangles": 12
+    },
+    "CityInfill_07__Brick__00": {
+      "material": "Brick",
+      "component": "CityInfill_07",
+      "triangles": 12
+    },
+    "CityInfill_07__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_07",
+      "triangles": 196
+    },
+    "CityInfill_07__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_07",
+      "triangles": 216
+    },
+    "CityInfill_07__Teal__00": {
+      "material": "Teal",
+      "component": "CityInfill_07",
+      "triangles": 24
+    },
+    "CityInfill_08__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CityInfill_08",
+      "triangles": 96
+    },
+    "CityInfill_08__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_08",
+      "triangles": 12
+    },
+    "CityInfill_08__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_08",
+      "triangles": 1428
+    },
+    "CityInfill_08__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_08",
+      "triangles": 24
+    },
+    "CityInfill_08__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_08",
+      "triangles": 2004
+    },
+    "CityInfill_08__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_08",
+      "triangles": 288
+    },
+    "CityInfill_08__WoodDark__00": {
+      "material": "WoodDark",
+      "component": "CityInfill_08",
+      "triangles": 144
+    },
+    "CityInfill_08__Wood__00": {
+      "material": "Wood",
+      "component": "CityInfill_08",
+      "triangles": 192
+    },
+    "CityInfill_08__WindowGlow__00": {
+      "material": "WindowGlow",
+      "component": "CityInfill_08",
+      "triangles": 24
+    },
+    "CityInfill_08__Soil__00": {
+      "material": "Soil",
+      "component": "CityInfill_08",
+      "triangles": 36
+    },
+    "CityInfill_08__LeafLight__00": {
+      "material": "LeafLight",
+      "component": "CityInfill_08",
+      "triangles": 720
+    },
+    "CityInfill_08__Yellow__00": {
+      "material": "Yellow",
+      "component": "CityInfill_08",
+      "triangles": 1080
+    },
+    "CityInfill_08__Leaf__00": {
+      "material": "Leaf",
+      "component": "CityInfill_08",
+      "triangles": 1440
+    },
+    "CityInfill_08__Coral__00": {
+      "material": "Coral",
+      "component": "CityInfill_08",
+      "triangles": 1620
+    },
+    "CityInfill_09__Brick__00": {
+      "material": "Brick",
+      "component": "CityInfill_09",
+      "triangles": 12
+    },
+    "CityInfill_09__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_09",
+      "triangles": 12
+    },
+    "CityInfill_09__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_09",
+      "triangles": 624
+    },
+    "CityInfill_09__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_09",
+      "triangles": 12
+    },
+    "CityInfill_09__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CityInfill_09",
+      "triangles": 36
+    },
+    "CityInfill_09__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_09",
+      "triangles": 184
+    },
+    "CityInfill_09__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_09",
+      "triangles": 264
+    },
+    "CityInfill_09__Coral__00": {
+      "material": "Coral",
+      "component": "CityInfill_09",
+      "triangles": 24
+    },
+    "CityInfill_10__Plaster__00": {
+      "material": "Plaster",
+      "component": "CityInfill_10",
+      "triangles": 12
+    },
+    "CityInfill_10__Stone__00": {
+      "material": "Stone",
+      "component": "CityInfill_10",
+      "triangles": 12
+    },
+    "CityInfill_10__Cream__00": {
+      "material": "Cream",
+      "component": "CityInfill_10",
+      "triangles": 504
+    },
+    "CityInfill_10__Roof__00": {
+      "material": "Roof",
+      "component": "CityInfill_10",
+      "triangles": 12
+    },
+    "CityInfill_10__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CityInfill_10",
+      "triangles": 36
+    },
+    "CityInfill_10__Iron__00": {
+      "material": "Iron",
+      "component": "CityInfill_10",
+      "triangles": 184
+    },
+    "CityInfill_10__Glass__00": {
+      "material": "Glass",
+      "component": "CityInfill_10",
+      "triangles": 204
+    },
+    "CityInfill_10__Coral__00": {
+      "material": "Coral",
+      "component": "CityInfill_10",
+      "triangles": 24
+    },
+    "CitySkyline_0_00__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkyline_0_00",
+      "triangles": 12
+    },
+    "CitySkyline_0_00__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_00",
+      "triangles": 12
+    },
+    "CitySkyline_0_00__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_00",
+      "triangles": 36
+    },
+    "CitySkyline_0_00__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_00",
+      "triangles": 24
+    },
+    "CitySkyline_0_00__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_00",
+      "triangles": 420
+    },
+    "CitySkyline_0_01__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_0_01",
+      "triangles": 12
+    },
+    "CitySkyline_0_01__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_01",
+      "triangles": 12
+    },
+    "CitySkyline_0_01__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_01",
+      "triangles": 12
+    },
+    "CitySkyline_0_01__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_01",
+      "triangles": 12
+    },
+    "CitySkyline_0_01__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkyline_0_01",
+      "triangles": 36
+    },
+    "CitySkyline_0_01__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_01",
+      "triangles": 480
+    },
+    "CitySkyline_0_02__Plaster__00": {
+      "material": "Plaster",
+      "component": "CitySkyline_0_02",
+      "triangles": 12
+    },
+    "CitySkyline_0_02__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_02",
+      "triangles": 12
+    },
+    "CitySkyline_0_02__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_02",
+      "triangles": 12
+    },
+    "CitySkyline_0_02__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_02",
+      "triangles": 12
+    },
+    "CitySkyline_0_02__Teal__00": {
+      "material": "Teal",
+      "component": "CitySkyline_0_02",
+      "triangles": 8
+    },
+    "CitySkyline_0_02__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_02",
+      "triangles": 600
+    },
+    "CitySkyline_0_03__Brick__00": {
+      "material": "Brick",
+      "component": "CitySkyline_0_03",
+      "triangles": 24
+    },
+    "CitySkyline_0_03__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_03",
+      "triangles": 12
+    },
+    "CitySkyline_0_03__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_03",
+      "triangles": 60
+    },
+    "CitySkyline_0_03__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_03",
+      "triangles": 12
+    },
+    "CitySkyline_0_03__Iron__00": {
+      "material": "Iron",
+      "component": "CitySkyline_0_03",
+      "triangles": 12
+    },
+    "CitySkyline_0_03__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_03",
+      "triangles": 660
+    },
+    "CitySkyline_0_04__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkyline_0_04",
+      "triangles": 12
+    },
+    "CitySkyline_0_04__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_04",
+      "triangles": 12
+    },
+    "CitySkyline_0_04__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_04",
+      "triangles": 36
+    },
+    "CitySkyline_0_04__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_04",
+      "triangles": 24
+    },
+    "CitySkyline_0_04__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_04",
+      "triangles": 480
+    },
+    "CitySkyline_0_05__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_0_05",
+      "triangles": 12
+    },
+    "CitySkyline_0_05__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_05",
+      "triangles": 12
+    },
+    "CitySkyline_0_05__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_05",
+      "triangles": 12
+    },
+    "CitySkyline_0_05__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_05",
+      "triangles": 12
+    },
+    "CitySkyline_0_05__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkyline_0_05",
+      "triangles": 36
+    },
+    "CitySkyline_0_05__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_05",
+      "triangles": 540
+    },
+    "CitySkyline_0_06__Plaster__00": {
+      "material": "Plaster",
+      "component": "CitySkyline_0_06",
+      "triangles": 12
+    },
+    "CitySkyline_0_06__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_06",
+      "triangles": 12
+    },
+    "CitySkyline_0_06__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_06",
+      "triangles": 12
+    },
+    "CitySkyline_0_06__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_06",
+      "triangles": 12
+    },
+    "CitySkyline_0_06__Teal__00": {
+      "material": "Teal",
+      "component": "CitySkyline_0_06",
+      "triangles": 8
+    },
+    "CitySkyline_0_06__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_06",
+      "triangles": 600
+    },
+    "CitySkyline_0_07__Brick__00": {
+      "material": "Brick",
+      "component": "CitySkyline_0_07",
+      "triangles": 24
+    },
+    "CitySkyline_0_07__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_07",
+      "triangles": 12
+    },
+    "CitySkyline_0_07__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_07",
+      "triangles": 60
+    },
+    "CitySkyline_0_07__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_07",
+      "triangles": 12
+    },
+    "CitySkyline_0_07__Iron__00": {
+      "material": "Iron",
+      "component": "CitySkyline_0_07",
+      "triangles": 12
+    },
+    "CitySkyline_0_07__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_07",
+      "triangles": 420
+    },
+    "CitySkyline_0_08__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkyline_0_08",
+      "triangles": 12
+    },
+    "CitySkyline_0_08__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_08",
+      "triangles": 12
+    },
+    "CitySkyline_0_08__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_08",
+      "triangles": 36
+    },
+    "CitySkyline_0_08__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_08",
+      "triangles": 24
+    },
+    "CitySkyline_0_08__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_08",
+      "triangles": 540
+    },
+    "CitySkyline_0_09__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_0_09",
+      "triangles": 12
+    },
+    "CitySkyline_0_09__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_09",
+      "triangles": 12
+    },
+    "CitySkyline_0_09__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_09",
+      "triangles": 12
+    },
+    "CitySkyline_0_09__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_09",
+      "triangles": 12
+    },
+    "CitySkyline_0_09__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkyline_0_09",
+      "triangles": 36
+    },
+    "CitySkyline_0_09__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_09",
+      "triangles": 600
+    },
+    "CitySkyline_0_10__Plaster__00": {
+      "material": "Plaster",
+      "component": "CitySkyline_0_10",
+      "triangles": 12
+    },
+    "CitySkyline_0_10__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_10",
+      "triangles": 12
+    },
+    "CitySkyline_0_10__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_10",
+      "triangles": 12
+    },
+    "CitySkyline_0_10__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_10",
+      "triangles": 12
+    },
+    "CitySkyline_0_10__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkyline_0_10",
+      "triangles": 36
+    },
+    "CitySkyline_0_10__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_10",
+      "triangles": 660
+    },
+    "CitySkyline_0_11__Brick__00": {
+      "material": "Brick",
+      "component": "CitySkyline_0_11",
+      "triangles": 12
+    },
+    "CitySkyline_0_11__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_11",
+      "triangles": 12
+    },
+    "CitySkyline_0_11__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_11",
+      "triangles": 12
+    },
+    "CitySkyline_0_11__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_11",
+      "triangles": 12
+    },
+    "CitySkyline_0_11__Teal__00": {
+      "material": "Teal",
+      "component": "CitySkyline_0_11",
+      "triangles": 8
+    },
+    "CitySkyline_0_11__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_11",
+      "triangles": 480
+    },
+    "CitySkyline_0_12__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkyline_0_12",
+      "triangles": 12
+    },
+    "CitySkyline_0_12__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_12",
+      "triangles": 12
+    },
+    "CitySkyline_0_12__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_12",
+      "triangles": 60
+    },
+    "CitySkyline_0_12__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_12",
+      "triangles": 12
+    },
+    "CitySkyline_0_12__Brick__00": {
+      "material": "Brick",
+      "component": "CitySkyline_0_12",
+      "triangles": 12
+    },
+    "CitySkyline_0_12__Iron__00": {
+      "material": "Iron",
+      "component": "CitySkyline_0_12",
+      "triangles": 12
+    },
+    "CitySkyline_0_12__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_12",
+      "triangles": 540
+    },
+    "CitySkyline_0_13__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_0_13",
+      "triangles": 12
+    },
+    "CitySkyline_0_13__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_13",
+      "triangles": 12
+    },
+    "CitySkyline_0_13__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_13",
+      "triangles": 36
+    },
+    "CitySkyline_0_13__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_13",
+      "triangles": 24
+    },
+    "CitySkyline_0_13__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_13",
+      "triangles": 660
+    },
+    "CitySkyline_0_14__Plaster__00": {
+      "material": "Plaster",
+      "component": "CitySkyline_0_14",
+      "triangles": 12
+    },
+    "CitySkyline_0_14__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_14",
+      "triangles": 12
+    },
+    "CitySkyline_0_14__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_14",
+      "triangles": 12
+    },
+    "CitySkyline_0_14__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_14",
+      "triangles": 12
+    },
+    "CitySkyline_0_14__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkyline_0_14",
+      "triangles": 36
+    },
+    "CitySkyline_0_14__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_14",
+      "triangles": 480
+    },
+    "CitySkyline_0_15__Brick__00": {
+      "material": "Brick",
+      "component": "CitySkyline_0_15",
+      "triangles": 12
+    },
+    "CitySkyline_0_15__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_15",
+      "triangles": 12
+    },
+    "CitySkyline_0_15__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_15",
+      "triangles": 12
+    },
+    "CitySkyline_0_15__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_15",
+      "triangles": 12
+    },
+    "CitySkyline_0_15__Teal__00": {
+      "material": "Teal",
+      "component": "CitySkyline_0_15",
+      "triangles": 8
+    },
+    "CitySkyline_0_15__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_15",
+      "triangles": 540
+    },
+    "CitySkyline_0_16__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkyline_0_16",
+      "triangles": 12
+    },
+    "CitySkyline_0_16__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_16",
+      "triangles": 12
+    },
+    "CitySkyline_0_16__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_16",
+      "triangles": 60
+    },
+    "CitySkyline_0_16__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_16",
+      "triangles": 12
+    },
+    "CitySkyline_0_16__Brick__00": {
+      "material": "Brick",
+      "component": "CitySkyline_0_16",
+      "triangles": 12
+    },
+    "CitySkyline_0_16__Iron__00": {
+      "material": "Iron",
+      "component": "CitySkyline_0_16",
+      "triangles": 12
+    },
+    "CitySkyline_0_16__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_16",
+      "triangles": 600
+    },
+    "CitySkyline_0_17__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_0_17",
+      "triangles": 12
+    },
+    "CitySkyline_0_17__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_0_17",
+      "triangles": 12
+    },
+    "CitySkyline_0_17__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkyline_0_17",
+      "triangles": 36
+    },
+    "CitySkyline_0_17__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkyline_0_17",
+      "triangles": 24
+    },
+    "CitySkyline_0_17__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_0_17",
+      "triangles": 660
+    },
+    "CitySkyline_1_00__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_00",
+      "triangles": 12
+    },
+    "CitySkyline_1_00__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_00",
+      "triangles": 12
+    },
+    "CitySkyline_1_00__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_00",
+      "triangles": 792
+    },
+    "CitySkyline_1_00__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_00",
+      "triangles": 12
+    },
+    "CitySkyline_1_00__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_00",
+      "triangles": 12
+    },
+    "CitySkyline_1_00__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_00",
+      "triangles": 36
+    },
+    "CitySkyline_1_01__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_01",
+      "triangles": 12
+    },
+    "CitySkyline_1_01__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_01",
+      "triangles": 12
+    },
+    "CitySkyline_1_01__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_01",
+      "triangles": 1008
+    },
+    "CitySkyline_1_01__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_01",
+      "triangles": 12
+    },
+    "CitySkyline_1_01__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_01",
+      "triangles": 12
+    },
+    "CitySkyline_1_01__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_01",
+      "triangles": 8
+    },
+    "CitySkyline_1_02__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_02",
+      "triangles": 12
+    },
+    "CitySkyline_1_02__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_02",
+      "triangles": 12
+    },
+    "CitySkyline_1_02__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_02",
+      "triangles": 792
+    },
+    "CitySkyline_1_02__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_02",
+      "triangles": 60
+    },
+    "CitySkyline_1_02__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_02",
+      "triangles": 12
+    },
+    "CitySkyline_1_02__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_02",
+      "triangles": 12
+    },
+    "CitySkyline_1_02__SkylineMid__03": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_02",
+      "triangles": 12
+    },
+    "CitySkyline_1_03__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_03",
+      "triangles": 12
+    },
+    "CitySkyline_1_03__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_03",
+      "triangles": 12
+    },
+    "CitySkyline_1_03__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_03",
+      "triangles": 1008
+    },
+    "CitySkyline_1_03__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_03",
+      "triangles": 36
+    },
+    "CitySkyline_1_03__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_03",
+      "triangles": 24
+    },
+    "CitySkyline_1_04__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_04",
+      "triangles": 12
+    },
+    "CitySkyline_1_04__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_04",
+      "triangles": 12
+    },
+    "CitySkyline_1_04__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_04",
+      "triangles": 792
+    },
+    "CitySkyline_1_04__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_04",
+      "triangles": 12
+    },
+    "CitySkyline_1_04__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_04",
+      "triangles": 12
+    },
+    "CitySkyline_1_04__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_04",
+      "triangles": 36
+    },
+    "CitySkyline_1_05__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_05",
+      "triangles": 12
+    },
+    "CitySkyline_1_05__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_05",
+      "triangles": 12
+    },
+    "CitySkyline_1_05__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_05",
+      "triangles": 1092
+    },
+    "CitySkyline_1_05__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_05",
+      "triangles": 12
+    },
+    "CitySkyline_1_05__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_05",
+      "triangles": 12
+    },
+    "CitySkyline_1_05__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_05",
+      "triangles": 8
+    },
+    "CitySkyline_1_06__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_06",
+      "triangles": 12
+    },
+    "CitySkyline_1_06__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_06",
+      "triangles": 12
+    },
+    "CitySkyline_1_06__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_06",
+      "triangles": 792
+    },
+    "CitySkyline_1_06__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_06",
+      "triangles": 60
+    },
+    "CitySkyline_1_06__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_06",
+      "triangles": 12
+    },
+    "CitySkyline_1_06__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_06",
+      "triangles": 12
+    },
+    "CitySkyline_1_06__SkylineMid__03": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_06",
+      "triangles": 12
+    },
+    "CitySkyline_1_07__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_07",
+      "triangles": 12
+    },
+    "CitySkyline_1_07__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_07",
+      "triangles": 12
+    },
+    "CitySkyline_1_07__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_07",
+      "triangles": 1092
+    },
+    "CitySkyline_1_07__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_07",
+      "triangles": 36
+    },
+    "CitySkyline_1_07__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_07",
+      "triangles": 24
+    },
+    "CitySkyline_1_08__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_08",
+      "triangles": 12
+    },
+    "CitySkyline_1_08__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_08",
+      "triangles": 12
+    },
+    "CitySkyline_1_08__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_08",
+      "triangles": 792
+    },
+    "CitySkyline_1_08__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_08",
+      "triangles": 12
+    },
+    "CitySkyline_1_08__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_08",
+      "triangles": 12
+    },
+    "CitySkyline_1_08__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_08",
+      "triangles": 36
+    },
+    "CitySkyline_1_09__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_09",
+      "triangles": 12
+    },
+    "CitySkyline_1_09__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_09",
+      "triangles": 12
+    },
+    "CitySkyline_1_09__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_09",
+      "triangles": 1092
+    },
+    "CitySkyline_1_09__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_09",
+      "triangles": 12
+    },
+    "CitySkyline_1_09__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_09",
+      "triangles": 12
+    },
+    "CitySkyline_1_09__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_09",
+      "triangles": 8
+    },
+    "CitySkyline_1_10__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_10",
+      "triangles": 12
+    },
+    "CitySkyline_1_10__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_10",
+      "triangles": 12
+    },
+    "CitySkyline_1_10__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_10",
+      "triangles": 792
+    },
+    "CitySkyline_1_10__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_10",
+      "triangles": 12
+    },
+    "CitySkyline_1_10__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_10",
+      "triangles": 12
+    },
+    "CitySkyline_1_10__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_10",
+      "triangles": 8
+    },
+    "CitySkyline_1_11__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_11",
+      "triangles": 12
+    },
+    "CitySkyline_1_11__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_11",
+      "triangles": 12
+    },
+    "CitySkyline_1_11__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_11",
+      "triangles": 1092
+    },
+    "CitySkyline_1_11__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_11",
+      "triangles": 60
+    },
+    "CitySkyline_1_11__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_11",
+      "triangles": 12
+    },
+    "CitySkyline_1_11__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_11",
+      "triangles": 12
+    },
+    "CitySkyline_1_11__SkylineMid__03": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_11",
+      "triangles": 12
+    },
+    "CitySkyline_1_12__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_12",
+      "triangles": 12
+    },
+    "CitySkyline_1_12__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_12",
+      "triangles": 12
+    },
+    "CitySkyline_1_12__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_12",
+      "triangles": 792
+    },
+    "CitySkyline_1_12__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_12",
+      "triangles": 36
+    },
+    "CitySkyline_1_12__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_12",
+      "triangles": 24
+    },
+    "CitySkyline_1_13__SkylineFar__00": {
+      "material": "SkylineFar",
+      "component": "CitySkyline_1_13",
+      "triangles": 12
+    },
+    "CitySkyline_1_13__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkyline_1_13",
+      "triangles": 12
+    },
+    "CitySkyline_1_13__SkylineGlass__00": {
+      "material": "SkylineGlass",
+      "component": "CitySkyline_1_13",
+      "triangles": 1092
+    },
+    "CitySkyline_1_13__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_13",
+      "triangles": 12
+    },
+    "CitySkyline_1_13__SkylineMid__01": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_13",
+      "triangles": 12
+    },
+    "CitySkyline_1_13__SkylineMid__02": {
+      "material": "SkylineMid",
+      "component": "CitySkyline_1_13",
+      "triangles": 36
+    },
+    "CitySkylineNear_00__Plaster__00": {
+      "material": "Plaster",
+      "component": "CitySkylineNear_00",
+      "triangles": 12
+    },
+    "CitySkylineNear_00__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkylineNear_00",
+      "triangles": 12
+    },
+    "CitySkylineNear_00__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkylineNear_00",
+      "triangles": 384
+    },
+    "CitySkylineNear_00__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkylineNear_00",
+      "triangles": 12
+    },
+    "CitySkylineNear_00__Brick__00": {
+      "material": "Brick",
+      "component": "CitySkylineNear_00",
+      "triangles": 12
+    },
+    "CitySkylineNear_00__Iron__00": {
+      "material": "Iron",
+      "component": "CitySkylineNear_00",
+      "triangles": 12
+    },
+    "CitySkylineNear_00__Glass__00": {
+      "material": "Glass",
+      "component": "CitySkylineNear_00",
+      "triangles": 324
+    },
+    "CitySkylineNear_01__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkylineNear_01",
+      "triangles": 12
+    },
+    "CitySkylineNear_01__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkylineNear_01",
+      "triangles": 12
+    },
+    "CitySkylineNear_01__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkylineNear_01",
+      "triangles": 432
+    },
+    "CitySkylineNear_01__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkylineNear_01",
+      "triangles": 24
+    },
+    "CitySkylineNear_01__Glass__00": {
+      "material": "Glass",
+      "component": "CitySkylineNear_01",
+      "triangles": 396
+    },
+    "CitySkylineNear_02__Brick__00": {
+      "material": "Brick",
+      "component": "CitySkylineNear_02",
+      "triangles": 12
+    },
+    "CitySkylineNear_02__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkylineNear_02",
+      "triangles": 12
+    },
+    "CitySkylineNear_02__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkylineNear_02",
+      "triangles": 300
+    },
+    "CitySkylineNear_02__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkylineNear_02",
+      "triangles": 12
+    },
+    "CitySkylineNear_02__Terracotta__00": {
+      "material": "Terracotta",
+      "component": "CitySkylineNear_02",
+      "triangles": 36
+    },
+    "CitySkylineNear_02__Glass__00": {
+      "material": "Glass",
+      "component": "CitySkylineNear_02",
+      "triangles": 288
+    },
+    "CitySkylineNear_03__SkylineMid__00": {
+      "material": "SkylineMid",
+      "component": "CitySkylineNear_03",
+      "triangles": 12
+    },
+    "CitySkylineNear_03__Stone__00": {
+      "material": "Stone",
+      "component": "CitySkylineNear_03",
+      "triangles": 12
+    },
+    "CitySkylineNear_03__Cream__00": {
+      "material": "Cream",
+      "component": "CitySkylineNear_03",
+      "triangles": 372
+    },
+    "CitySkylineNear_03__Roof__00": {
+      "material": "Roof",
+      "component": "CitySkylineNear_03",
+      "triangles": 12
+    },
+    "CitySkylineNear_03__Teal__00": {
+      "material": "Teal",
+      "component": "CitySkylineNear_03",
+      "triangles": 8
+    },
+    "CitySkylineNear_03__Glass__00": {
+      "material": "Glass",
+      "component": "CitySkylineNear_03",
+      "triangles": 360
+    }
+  },
+  "components": {
+    "EditableSurface_X01_00_00": {
+      "section": "Climb",
+      "pivot": [
+        -150.0,
+        29.0,
+        80.0
+      ]
+    },
+    "EditableSurface_X01_00_01": {
+      "section": "Climb",
+      "pivot": [
+        -150.0,
+        31.0,
+        66.0
+      ]
+    },
+    "EditableSurface_X01_00_02": {
+      "section": "Climb",
+      "pivot": [
+        -150.0,
+        33.0,
+        52.0
+      ]
+    },
+    "EditableSurface_X01_01_01": {
+      "section": "Climb",
+      "pivot": [
+        -136.66666666666666,
+        34.333333333333336,
+        52.0
+      ]
+    },
+    "EditableSurface_X01_01_02": {
+      "section": "Climb",
+      "pivot": [
+        -123.33333333333334,
+        35.666666666666664,
+        52.0
+      ]
+    },
+    "EditableSurface_X01_01_03": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        37.0,
+        52.0
+      ]
+    },
+    "EditableSurface_X01_02_01": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        39.15384615384615,
+        38.38461538461539
+      ]
+    },
+    "EditableSurface_X01_02_02": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        41.30769230769231,
+        24.769230769230766
+      ]
+    },
+    "EditableSurface_X01_02_03": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        43.46153846153846,
+        11.153846153846153
+      ]
+    },
+    "EditableSurface_X01_02_04": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        45.61538461538461,
+        -2.461538461538467
+      ]
+    },
+    "EditableSurface_X01_02_05": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        47.769230769230774,
+        -16.07692307692308
+      ]
+    },
+    "EditableSurface_X01_02_06": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        49.92307692307692,
+        -29.692307692307693
+      ]
+    },
+    "EditableSurface_X01_02_07": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        52.07692307692308,
+        -43.30769230769231
+      ]
+    },
+    "EditableSurface_X01_02_08": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        54.23076923076923,
+        -56.923076923076934
+      ]
+    },
+    "EditableSurface_X01_02_09": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        56.38461538461539,
+        -70.53846153846153
+      ]
+    },
+    "EditableSurface_X01_02_10": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        58.53846153846154,
+        -84.15384615384616
+      ]
+    },
+    "EditableSurface_X01_02_11": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        60.69230769230769,
+        -97.76923076923077
+      ]
+    },
+    "EditableSurface_X01_02_12": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        62.84615384615385,
+        -111.38461538461539
+      ]
+    },
+    "EditableSurface_X01_02_13": {
+      "section": "Climb",
+      "pivot": [
+        -110.0,
+        65.0,
+        -125.0
+      ]
+    },
+    "EditableSurface_X01_03_01": {
+      "section": "Climb",
+      "pivot": [
+        -123.33333333333333,
+        66.33333333333333,
+        -125.0
+      ]
+    },
+    "EditableSurface_X01_03_02": {
+      "section": "Climb",
+      "pivot": [
+        -136.66666666666666,
+        67.66666666666667,
+        -125.0
+      ]
+    },
+    "EditableSurface_X01_03_03": {
+      "section": "Climb",
+      "pivot": [
+        -150.0,
+        69.0,
+        -125.0
+      ]
+    },
+    "StationScaffoldFrame": {
+      "section": "Station",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "StationScaffoldTies": {
+      "section": "Station",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarkerOrigin": {
+      "section": "Calibration",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarkerRight": {
+      "section": "Calibration",
+      "pivot": [
+        10,
+        0,
+        0
+      ]
+    },
+    "MarkerUp": {
+      "section": "Calibration",
+      "pivot": [
+        0,
+        10,
+        0
+      ]
+    },
+    "MarkerForward": {
+      "section": "Calibration",
+      "pivot": [
+        0,
+        0,
+        -10
+      ]
+    },
+    "CityInfill_00": {
+      "section": "Scenery",
+      "pivot": [
+        -50,
+        0,
+        -185
+      ]
+    },
+    "CityInfill_01": {
+      "section": "Scenery",
+      "pivot": [
+        -10,
+        0,
+        -165
+      ]
+    },
+    "CityInfill_02": {
+      "section": "Scenery",
+      "pivot": [
+        32,
+        0,
+        -139
+      ]
+    },
+    "CityInfill_03": {
+      "section": "Scenery",
+      "pivot": [
+        80,
+        0,
+        -168
+      ]
+    },
+    "CityInfill_04": {
+      "section": "Scenery",
+      "pivot": [
+        118,
+        0,
+        -133
+      ]
+    },
+    "CityInfill_05": {
+      "section": "Scenery",
+      "pivot": [
+        -46,
+        0,
+        -99
+      ]
+    },
+    "CityInfill_06": {
+      "section": "Scenery",
+      "pivot": [
+        20,
+        0,
+        -68
+      ]
+    },
+    "CityInfill_07": {
+      "section": "Scenery",
+      "pivot": [
+        82,
+        0,
+        -53
+      ]
+    },
+    "CityInfill_08": {
+      "section": "Scenery",
+      "pivot": [
+        -45,
+        0,
+        66
+      ]
+    },
+    "CityInfill_09": {
+      "section": "Scenery",
+      "pivot": [
+        32,
+        0,
+        49
+      ]
+    },
+    "CityInfill_10": {
+      "section": "Scenery",
+      "pivot": [
+        92,
+        0,
+        37
+      ]
+    },
+    "CitySkyline_0_00": {
+      "section": "Scenery",
+      "pivot": [
+        -420,
+        0,
+        -469
+      ]
+    },
+    "CitySkyline_0_01": {
+      "section": "Scenery",
+      "pivot": [
+        -372,
+        0,
+        -476
+      ]
+    },
+    "CitySkyline_0_02": {
+      "section": "Scenery",
+      "pivot": [
+        -324,
+        0,
+        -483
+      ]
+    },
+    "CitySkyline_0_03": {
+      "section": "Scenery",
+      "pivot": [
+        -276,
+        0,
+        -469
+      ]
+    },
+    "CitySkyline_0_04": {
+      "section": "Scenery",
+      "pivot": [
+        -228,
+        0,
+        -476
+      ]
+    },
+    "CitySkyline_0_05": {
+      "section": "Scenery",
+      "pivot": [
+        -180,
+        0,
+        -483
+      ]
+    },
+    "CitySkyline_0_06": {
+      "section": "Scenery",
+      "pivot": [
+        -132,
+        0,
+        -469
+      ]
+    },
+    "CitySkyline_0_07": {
+      "section": "Scenery",
+      "pivot": [
+        -84,
+        0,
+        -476
+      ]
+    },
+    "CitySkyline_0_08": {
+      "section": "Scenery",
+      "pivot": [
+        -36,
+        0,
+        -483
+      ]
+    },
+    "CitySkyline_0_09": {
+      "section": "Scenery",
+      "pivot": [
+        12,
+        0,
+        -469
+      ]
+    },
+    "CitySkyline_0_10": {
+      "section": "Scenery",
+      "pivot": [
+        60,
+        0,
+        -476
+      ]
+    },
+    "CitySkyline_0_11": {
+      "section": "Scenery",
+      "pivot": [
+        108,
+        0,
+        -483
+      ]
+    },
+    "CitySkyline_0_12": {
+      "section": "Scenery",
+      "pivot": [
+        156,
+        0,
+        -469
+      ]
+    },
+    "CitySkyline_0_13": {
+      "section": "Scenery",
+      "pivot": [
+        204,
+        0,
+        -476
+      ]
+    },
+    "CitySkyline_0_14": {
+      "section": "Scenery",
+      "pivot": [
+        252,
+        0,
+        -483
+      ]
+    },
+    "CitySkyline_0_15": {
+      "section": "Scenery",
+      "pivot": [
+        300,
+        0,
+        -469
+      ]
+    },
+    "CitySkyline_0_16": {
+      "section": "Scenery",
+      "pivot": [
+        348,
+        0,
+        -476
+      ]
+    },
+    "CitySkyline_0_17": {
+      "section": "Scenery",
+      "pivot": [
+        396,
+        0,
+        -483
+      ]
+    },
+    "CitySkyline_1_00": {
+      "section": "Scenery",
+      "pivot": [
+        -402,
+        0,
+        -550
+      ]
+    },
+    "CitySkyline_1_01": {
+      "section": "Scenery",
+      "pivot": [
+        -338,
+        0,
+        -557
+      ]
+    },
+    "CitySkyline_1_02": {
+      "section": "Scenery",
+      "pivot": [
+        -274,
+        0,
+        -564
+      ]
+    },
+    "CitySkyline_1_03": {
+      "section": "Scenery",
+      "pivot": [
+        -210,
+        0,
+        -550
+      ]
+    },
+    "CitySkyline_1_04": {
+      "section": "Scenery",
+      "pivot": [
+        -146,
+        0,
+        -557
+      ]
+    },
+    "CitySkyline_1_05": {
+      "section": "Scenery",
+      "pivot": [
+        -82,
+        0,
+        -564
+      ]
+    },
+    "CitySkyline_1_06": {
+      "section": "Scenery",
+      "pivot": [
+        -18,
+        0,
+        -550
+      ]
+    },
+    "CitySkyline_1_07": {
+      "section": "Scenery",
+      "pivot": [
+        46,
+        0,
+        -557
+      ]
+    },
+    "CitySkyline_1_08": {
+      "section": "Scenery",
+      "pivot": [
+        110,
+        0,
+        -564
+      ]
+    },
+    "CitySkyline_1_09": {
+      "section": "Scenery",
+      "pivot": [
+        174,
+        0,
+        -550
+      ]
+    },
+    "CitySkyline_1_10": {
+      "section": "Scenery",
+      "pivot": [
+        238,
+        0,
+        -557
+      ]
+    },
+    "CitySkyline_1_11": {
+      "section": "Scenery",
+      "pivot": [
+        302,
+        0,
+        -564
+      ]
+    },
+    "CitySkyline_1_12": {
+      "section": "Scenery",
+      "pivot": [
+        366,
+        0,
+        -550
+      ]
+    },
+    "CitySkyline_1_13": {
+      "section": "Scenery",
+      "pivot": [
+        430,
+        0,
+        -557
+      ]
+    },
+    "CitySkylineNear_00": {
+      "section": "Scenery",
+      "pivot": [
+        345,
+        0,
+        -245
+      ]
+    },
+    "CitySkylineNear_01": {
+      "section": "Scenery",
+      "pivot": [
+        389,
+        0,
+        -230
+      ]
+    },
+    "CitySkylineNear_02": {
+      "section": "Scenery",
+      "pivot": [
+        366,
+        0,
+        -154
+      ]
+    },
+    "CitySkylineNear_03": {
+      "section": "Scenery",
+      "pivot": [
+        414,
+        0,
+        -142
+      ]
+    }
+  }
+}

@@ -1,0 +1,911 @@
+{
+  "candidate": "MC_P3_TOWER_LANDSCAPE_TL01",
+  "units": "1 Blender unit = 1 intended stud",
+  "axes": "Roblox=(X,Z,-Y); base pivots",
+  "assets": [
+    {
+      "asset": "MC_TL_GrandPinnacle",
+      "bounds": [
+        [
+          -12.0,
+          -10.0,
+          0.0
+        ],
+        [
+          12.0,
+          10.0,
+          112.0
+        ]
+      ],
+      "geometry": {
+        "vertices": 170,
+        "triangles": 284,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 14,
+        "minimum_island_volume": 0.9081476529439307,
+        "signed_volume": 26728.866994222004,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding architecture",
+      "mounting_notes": "Grounded closed keep architecture; base pivot.",
+      "occupied_boxes_blender": [
+        {
+          "low": [
+            -12,
+            -10,
+            0
+          ],
+          "high": [
+            12,
+            10,
+            112
+          ]
+        }
+      ],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_TL_FlankPinnacle",
+      "bounds": [
+        [
+          -6.0,
+          -6.0,
+          0.0
+        ],
+        [
+          6.0,
+          6.0,
+          62.0
+        ]
+      ],
+      "geometry": {
+        "vertices": 106,
+        "triangles": 180,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 8,
+        "minimum_island_volume": 0.5794105318685367,
+        "signed_volume": 5271.158874709159,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding architecture",
+      "mounting_notes": "Grounded closed keep architecture; base pivot.",
+      "occupied_boxes_blender": [
+        {
+          "low": [
+            -6,
+            -6,
+            0
+          ],
+          "high": [
+            6,
+            6,
+            62
+          ]
+        }
+      ],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_TL_SteppedButtress",
+      "bounds": [
+        [
+          -4.0,
+          -12.0,
+          0.0
+        ],
+        [
+          4.0,
+          0.0,
+          156.0
+        ]
+      ],
+      "geometry": {
+        "vertices": 64,
+        "triangles": 96,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 8,
+        "minimum_island_volume": 68.99999491373697,
+        "signed_volume": 8513.281508803368,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding architecture",
+      "mounting_notes": "Grounded closed keep architecture; base pivot.",
+      "occupied_boxes_blender": [
+        {
+          "low": [
+            -4,
+            -12,
+            0
+          ],
+          "high": [
+            4,
+            0,
+            156
+          ]
+        }
+      ],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_P3_Rural_Mound",
+      "bounds": [
+        [
+          -32.0,
+          -26.0,
+          -14.0
+        ],
+        [
+          32.0,
+          26.0,
+          6.0
+        ]
+      ],
+      "geometry": {
+        "vertices": 253,
+        "triangles": 494,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 3,
+        "minimum_island_volume": 5931.790368159615,
+        "signed_volume": 35503.633381605156,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding rural scenery",
+      "mounting_notes": "Closed rural scenery; soil/root pivot; Roblox front +Z.",
+      "occupied_boxes_blender": [
+        {
+          "low": [
+            -32.0,
+            -26.0,
+            -14
+          ],
+          "high": [
+            32.0,
+            26.0,
+            6
+          ]
+        }
+      ],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_P3_Rural_BroadleafClump",
+      "bounds": [
+        [
+          -16.774351119995117,
+          -13.603875160217285,
+          -2.0
+        ],
+        [
+          15.774351119995117,
+          11.554359436035156,
+          30.0
+        ]
+      ],
+      "geometry": {
+        "vertices": 354,
+        "triangles": 684,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 6,
+        "minimum_island_volume": 18.87891767919064,
+        "signed_volume": 6430.592016734183,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding rural scenery",
+      "mounting_notes": "Closed rural scenery; soil/root pivot; Roblox front +Z.",
+      "occupied_boxes_blender": [
+        {
+          "low": [
+            -16.774351209636414,
+            -13.603875471609676,
+            -2
+          ],
+          "high": [
+            15.774351209636412,
+            11.554359905560888,
+            30
+          ]
+        }
+      ],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_P3_Rural_EvergreenGrove",
+      "bounds": [
+        [
+          -15.0,
+          -14.706338882446289,
+          -2.0
+        ],
+        [
+          15.300000190734863,
+          12.706338882446289,
+          34.0
+        ]
+      ],
+      "geometry": {
+        "vertices": 552,
+        "triangles": 1044,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 15,
+        "minimum_island_volume": 14.423554658889762,
+        "signed_volume": 3870.8818786380184,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding rural scenery",
+      "mounting_notes": "Closed rural scenery; soil/root pivot; Roblox front +Z.",
+      "occupied_boxes_blender": [
+        {
+          "low": [
+            -15.0,
+            -14.706339097770922,
+            -2
+          ],
+          "high": [
+            15.3,
+            12.706339097770922,
+            34
+          ]
+        }
+      ],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_P3_Rural_HeatherFern",
+      "bounds": [
+        [
+          -9.0,
+          -6.0,
+          -0.25
+        ],
+        [
+          9.0,
+          4.5,
+          2.799999952316284
+        ]
+      ],
+      "geometry": {
+        "vertices": 199,
+        "triangles": 360,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 10,
+        "minimum_island_volume": 0.1299037237962087,
+        "signed_volume": 129.16615580705306,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding rural scenery",
+      "mounting_notes": "Closed rural scenery; soil/root pivot; Roblox front +Z.",
+      "occupied_boxes_blender": [
+        {
+          "low": [
+            -9.0,
+            -6.0,
+            -0.25
+          ],
+          "high": [
+            9.0,
+            4.5,
+            2.8
+          ]
+        }
+      ],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    }
+  ],
+  "export_parts": [
+    {
+      "name": "MC_TL_GrandPinnacle__Stone",
+      "asset": "MC_TL_GrandPinnacle",
+      "material": "Stone",
+      "rgb": [
+        111,
+        122,
+        137
+      ],
+      "center": [
+        0.0,
+        0.0,
+        35.0
+      ],
+      "size": [
+        24.0,
+        20.0,
+        70.0
+      ],
+      "roblox_center": [
+        0.0,
+        35.0,
+        -0.0
+      ],
+      "roblox_size": [
+        24.0,
+        70.0,
+        20.0
+      ],
+      "triangles": 52
+    },
+    {
+      "name": "MC_TL_GrandPinnacle__StoneLight",
+      "asset": "MC_TL_GrandPinnacle",
+      "material": "StoneLight",
+      "rgb": [
+        149,
+        157,
+        169
+      ],
+      "center": [
+        0.0,
+        0.0,
+        60.0
+      ],
+      "size": [
+        23.0,
+        18.0,
+        104.0
+      ],
+      "roblox_center": [
+        0.0,
+        60.0,
+        -0.0
+      ],
+      "roblox_size": [
+        23.0,
+        104.0,
+        18.0
+      ],
+      "triangles": 108
+    },
+    {
+      "name": "MC_TL_GrandPinnacle__Slate",
+      "asset": "MC_TL_GrandPinnacle",
+      "material": "Slate",
+      "rgb": [
+        37,
+        55,
+        81
+      ],
+      "center": [
+        0.0,
+        -0.017499923706054688,
+        61.0
+      ],
+      "size": [
+        18.0,
+        16.03499984741211,
+        84.0
+      ],
+      "roblox_center": [
+        0.0,
+        61.0,
+        0.017499923706054688
+      ],
+      "roblox_size": [
+        18.0,
+        84.0,
+        16.03499984741211
+      ],
+      "triangles": 124
+    },
+    {
+      "name": "MC_TL_FlankPinnacle__Stone",
+      "asset": "MC_TL_FlankPinnacle",
+      "material": "Stone",
+      "rgb": [
+        111,
+        122,
+        137
+      ],
+      "center": [
+        0.0,
+        0.0,
+        18.0
+      ],
+      "size": [
+        10.0,
+        10.0,
+        28.0
+      ],
+      "roblox_center": [
+        0.0,
+        18.0,
+        -0.0
+      ],
+      "roblox_size": [
+        10.0,
+        28.0,
+        10.0
+      ],
+      "triangles": 28
+    },
+    {
+      "name": "MC_TL_FlankPinnacle__StoneLight",
+      "asset": "MC_TL_FlankPinnacle",
+      "material": "StoneLight",
+      "rgb": [
+        149,
+        157,
+        169
+      ],
+      "center": [
+        0.0,
+        0.0,
+        31.0
+      ],
+      "size": [
+        12.0,
+        12.0,
+        62.0
+      ],
+      "roblox_center": [
+        0.0,
+        31.0,
+        -0.0
+      ],
+      "roblox_size": [
+        12.0,
+        62.0,
+        12.0
+      ],
+      "triangles": 92
+    },
+    {
+      "name": "MC_TL_FlankPinnacle__Slate",
+      "asset": "MC_TL_FlankPinnacle",
+      "material": "Slate",
+      "rgb": [
+        37,
+        55,
+        81
+      ],
+      "center": [
+        0.0,
+        0.0,
+        35.5
+      ],
+      "size": [
+        12.0,
+        12.0,
+        47.0
+      ],
+      "roblox_center": [
+        0.0,
+        35.5,
+        -0.0
+      ],
+      "roblox_size": [
+        12.0,
+        47.0,
+        12.0
+      ],
+      "triangles": 60
+    },
+    {
+      "name": "MC_TL_SteppedButtress__Stone",
+      "asset": "MC_TL_SteppedButtress",
+      "material": "Stone",
+      "rgb": [
+        111,
+        122,
+        137
+      ],
+      "center": [
+        0.0,
+        -6.0,
+        78.00000274647027
+      ],
+      "size": [
+        8.0,
+        12.0,
+        155.98000549338758
+      ],
+      "roblox_center": [
+        0.0,
+        78.00000274647027,
+        6.0
+      ],
+      "roblox_size": [
+        8.0,
+        155.98000549338758,
+        12.0
+      ],
+      "triangles": 36
+    },
+    {
+      "name": "MC_TL_SteppedButtress__StoneLight",
+      "asset": "MC_TL_SteppedButtress",
+      "material": "StoneLight",
+      "rgb": [
+        149,
+        157,
+        169
+      ],
+      "center": [
+        0.0,
+        -6.0,
+        78.0
+      ],
+      "size": [
+        8.0,
+        12.0,
+        156.0
+      ],
+      "roblox_center": [
+        0.0,
+        78.0,
+        6.0
+      ],
+      "roblox_size": [
+        8.0,
+        156.0,
+        12.0
+      ],
+      "triangles": 36
+    },
+    {
+      "name": "MC_TL_SteppedButtress__Slate",
+      "asset": "MC_TL_SteppedButtress",
+      "material": "Slate",
+      "rgb": [
+        37,
+        55,
+        81
+      ],
+      "center": [
+        0.0,
+        -6.0,
+        75.99499988555908
+      ],
+      "size": [
+        8.0,
+        12.0,
+        100.01000022888184
+      ],
+      "roblox_center": [
+        0.0,
+        75.99499988555908,
+        6.0
+      ],
+      "roblox_size": [
+        8.0,
+        100.01000022888184,
+        12.0
+      ],
+      "triangles": 24
+    },
+    {
+      "name": "MC_P3_Rural_Mound__Rock",
+      "asset": "MC_P3_Rural_Mound",
+      "material": "Rock",
+      "rgb": [
+        102,
+        111,
+        108
+      ],
+      "center": [
+        0.0,
+        0.0,
+        -8.850000023841858
+      ],
+      "size": [
+        64.0,
+        52.0,
+        10.299999952316284
+      ],
+      "roblox_center": [
+        0.0,
+        -8.850000023841858,
+        -0.0
+      ],
+      "roblox_size": [
+        64.0,
+        10.299999952316284,
+        52.0
+      ],
+      "triangles": 124
+    },
+    {
+      "name": "MC_P3_Rural_Mound__Earth",
+      "asset": "MC_P3_Rural_Mound",
+      "material": "Earth",
+      "rgb": [
+        104,
+        86,
+        63
+      ],
+      "center": [
+        0.0,
+        0.0,
+        -2.1749999970197678
+      ],
+      "size": [
+        61.599998474121094,
+        50.20000076293945,
+        3.6500000059604645
+      ],
+      "roblox_center": [
+        0.0,
+        -2.1749999970197678,
+        -0.0
+      ],
+      "roblox_size": [
+        61.599998474121094,
+        3.6500000059604645,
+        50.20000076293945
+      ],
+      "triangles": 92
+    },
+    {
+      "name": "MC_P3_Rural_Mound__Grass",
+      "asset": "MC_P3_Rural_Mound",
+      "material": "Grass",
+      "rgb": [
+        91,
+        129,
+        64
+      ],
+      "center": [
+        0.0,
+        0.0,
+        2.7999999970197678
+      ],
+      "size": [
+        62.400001525878906,
+        50.70000076293945,
+        6.4000000059604645
+      ],
+      "roblox_center": [
+        0.0,
+        2.7999999970197678,
+        -0.0
+      ],
+      "roblox_size": [
+        62.400001525878906,
+        6.4000000059604645,
+        50.70000076293945
+      ],
+      "triangles": 278
+    },
+    {
+      "name": "MC_P3_Rural_BroadleafClump__Wood",
+      "asset": "MC_P3_Rural_BroadleafClump",
+      "material": "Wood",
+      "rgb": [
+        101,
+        77,
+        53
+      ],
+      "center": [
+        -0.4999997615814209,
+        -1.5,
+        10.25
+      ],
+      "size": [
+        16.799999713897705,
+        10.699999809265137,
+        24.5
+      ],
+      "roblox_center": [
+        -0.4999997615814209,
+        10.25,
+        1.5
+      ],
+      "roblox_size": [
+        16.799999713897705,
+        24.5,
+        10.699999809265137
+      ],
+      "triangles": 180
+    },
+    {
+      "name": "MC_P3_Rural_BroadleafClump__Foliage",
+      "asset": "MC_P3_Rural_BroadleafClump",
+      "material": "Foliage",
+      "rgb": [
+        70,
+        117,
+        67
+      ],
+      "center": [
+        -0.5,
+        -1.0247578620910645,
+        20.0
+      ],
+      "size": [
+        32.548702239990234,
+        25.15823459625244,
+        20.0
+      ],
+      "roblox_center": [
+        -0.5,
+        20.0,
+        1.0247578620910645
+      ],
+      "roblox_size": [
+        32.548702239990234,
+        20.0,
+        25.15823459625244
+      ],
+      "triangles": 504
+    },
+    {
+      "name": "MC_P3_Rural_EvergreenGrove__Wood",
+      "asset": "MC_P3_Rural_EvergreenGrove",
+      "material": "Wood",
+      "rgb": [
+        101,
+        77,
+        53
+      ],
+      "center": [
+        -0.5,
+        -1.0,
+        15.0
+      ],
+      "size": [
+        18.600000381469727,
+        17.5,
+        34.0
+      ],
+      "roblox_center": [
+        -0.5,
+        15.0,
+        1.0
+      ],
+      "roblox_size": [
+        18.600000381469727,
+        34.0,
+        17.5
+      ],
+      "triangles": 132
+    },
+    {
+      "name": "MC_P3_Rural_EvergreenGrove__Needles",
+      "asset": "MC_P3_Rural_EvergreenGrove",
+      "material": "Needles",
+      "rgb": [
+        62,
+        102,
+        73
+      ],
+      "center": [
+        0.15000009536743164,
+        -1.0,
+        19.0
+      ],
+      "size": [
+        30.300000190734863,
+        27.412677764892578,
+        30.0
+      ],
+      "roblox_center": [
+        0.15000009536743164,
+        19.0,
+        1.0
+      ],
+      "roblox_size": [
+        30.300000190734863,
+        30.0,
+        27.412677764892578
+      ],
+      "triangles": 912
+    },
+    {
+      "name": "MC_P3_Rural_HeatherFern__Leaf",
+      "asset": "MC_P3_Rural_HeatherFern",
+      "material": "Leaf",
+      "rgb": [
+        86,
+        123,
+        66
+      ],
+      "center": [
+        0.0,
+        -0.75,
+        1.274999976158142
+      ],
+      "size": [
+        18.0,
+        10.5,
+        3.049999952316284
+      ],
+      "roblox_center": [
+        0.0,
+        1.274999976158142,
+        0.75
+      ],
+      "roblox_size": [
+        18.0,
+        3.049999952316284,
+        10.5
+      ],
+      "triangles": 240
+    },
+    {
+      "name": "MC_P3_Rural_HeatherFern__Flower",
+      "asset": "MC_P3_Rural_HeatherFern",
+      "material": "Flower",
+      "rgb": [
+        151,
+        133,
+        171
+      ],
+      "center": [
+        0.0,
+        -0.5,
+        2.25
+      ],
+      "size": [
+        12.8660249710083,
+        5.75,
+        1.0999999046325684
+      ],
+      "roblox_center": [
+        0.0,
+        2.25,
+        0.5
+      ],
+      "roblox_size": [
+        12.8660249710083,
+        1.0999999046325684,
+        5.75
+      ],
+      "triangles": 120
+    }
+  ],
+  "source_hashes": {
+    "assets\\moonlit_citadel\\bl02\\architecture.py": "45518e507c45a3c461de249992b8195ce1e7301339df1cf59b1edbfeb7cf8296",
+    "assets\\moonlit_citadel\\phase3\\drafts\\world_kit.py": "7d4926c2cee83e4a6831b8400ac939dab187152f131e554799f93e9201822b58",
+    "tools\\moonlit-citadel\\phase3\\tower-landscape-20261013\\drafts\\tower\\BlenderTowerRecipe.py": "b3d40e08a6b4ee279a50b89b8b2f9c976ece383dee6f9829098684d4f1462102",
+    "tools\\moonlit-citadel\\phase3\\tower-landscape-20261013\\drafts\\landscape\\LandscapeKitRecipes.py": "cc9bca49425d34e069ae494f813c56d2e60111e077a14439e3275dc4d33401f0"
+  },
+  "part_count": 18,
+  "export_triangles": 3142
+}

@@ -1,0 +1,17 @@
+{
+  "build": "SC_MAP_30",
+  "bytes": 251973,
+  "classes": {
+    "Folder": 79,
+    "Frame": 42,
+    "MeshPart": 757,
+    "Model": 194,
+    "Part": 356,
+    "PointLight": 5,
+    "SurfaceGui": 19,
+    "TextLabel": 12
+  },
+  "name": "Course_ShipwreckCove",
+  "path": "assets/shipwreck_cove/revision/SC30_CANDIDATE_03.rbxm",
+  "reviewBuild": "SC30_CANDIDATE_03"
+}

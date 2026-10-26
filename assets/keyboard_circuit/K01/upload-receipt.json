@@ -1,0 +1,16 @@
+{
+  "sha256": "588338c77c802e9532b4ea8c0c3b95bf5a5176fb5c81a57a5277dc9b8b7d18ea",
+  "request": {
+    "assetType": "Model",
+    "displayName": "KCOrdinaryKeyK01",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/e68e6e5a-b4df-44a5-86bc-5eb3e8726e64",
+  "assetId": "135513166308389"
+}

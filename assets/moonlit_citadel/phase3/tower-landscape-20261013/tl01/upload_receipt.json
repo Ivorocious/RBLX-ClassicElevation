@@ -1,0 +1,16 @@
+{
+  "sha256": "6e1b9fa5101fa072aad5919c3f632b180719c343b48999bb1bb230e9742eaddb",
+  "request": {
+    "assetType": "Model",
+    "displayName": "Moonlit Citadel Tower Landscape TL01",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/29656a3a-a220-4370-b09d-57418c44192e",
+  "assetId": "87010266952840"
+}

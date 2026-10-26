@@ -1,0 +1,853 @@
+{
+  "build": "SC_MAP_18",
+  "assets": [
+    "ConnectedHeadland",
+    "GroundedHullUnderbody",
+    "R_HullBow_175",
+    "R_HullMid_176",
+    "R_HullStern_177",
+    "CaveApproach",
+    "TideChamber"
+  ],
+  "ship": {
+    "hitSamples": 0,
+    "clusters": []
+  },
+  "cave": {
+    "hitSamples": 0,
+    "clusters": []
+  },
+  "caveRoof": {
+    "sampleCount": 213,
+    "uncovered": [],
+    "minimum": {
+      "segment": 3,
+      "route": [
+        112.54,
+        10.0,
+        45.39
+      ],
+      "offset": 5,
+      "roof": 26.56,
+      "roofAsset": "TideChamber",
+      "headroom": 16.56
+    },
+    "below8": []
+  },
+  "ridgeSupport": [
+    {
+      "node": 0,
+      "route": [
+        20,
+        45,
+        -106
+      ],
+      "ridgeTop": 42.1,
+      "gap": 2.9
+    },
+    {
+      "node": 1,
+      "route": [
+        34,
+        48,
+        -120
+      ],
+      "ridgeTop": 45.1,
+      "gap": 2.9
+    },
+    {
+      "node": 2,
+      "route": [
+        50,
+        51,
+        -130
+      ],
+      "ridgeTop": 48.1,
+      "gap": 2.9
+    },
+    {
+      "node": 3,
+      "route": [
+        67,
+        54,
+        -137
+      ],
+      "ridgeTop": 40.1,
+      "gap": 13.9
+    },
+    {
+      "node": 4,
+      "route": [
+        84,
+        55,
+        -130
+      ],
+      "ridgeTop": 52.1,
+      "gap": 2.9
+    },
+    {
+      "node": 5,
+      "route": [
+        101,
+        53,
+        -116
+      ],
+      "ridgeTop": 50.1,
+      "gap": 2.9
+    },
+    {
+      "node": 6,
+      "route": [
+        116,
+        49,
+        -101
+      ],
+      "ridgeTop": 46.1,
+      "gap": 2.9
+    },
+    {
+      "node": 7,
+      "route": [
+        129,
+        44,
+        -85
+      ],
+      "ridgeTop": 30.1,
+      "gap": 13.9
+    },
+    {
+      "node": 8,
+      "route": [
+        134,
+        39,
+        -66
+      ],
+      "ridgeTop": 36.1,
+      "gap": 2.9
+    },
+    {
+      "node": 9,
+      "route": [
+        127,
+        33,
+        -48
+      ],
+      "ridgeTop": 30.1,
+      "gap": 2.9
+    },
+    {
+      "node": 10,
+      "route": [
+        119,
+        26,
+        -33
+      ],
+      "ridgeTop": 23.1,
+      "gap": 2.9
+    }
+  ],
+  "ridgeLedgeFootprint": [
+    {
+      "name": "S03_00",
+      "ledgeBottom": 42,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 42.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_01",
+      "ledgeBottom": 45,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 45.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_02",
+      "ledgeBottom": 48,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 48.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_04",
+      "ledgeBottom": 52,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 52.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_05",
+      "ledgeBottom": 50,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 50.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 50.02,
+          "gapBelowLedge": -0.02
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_06",
+      "ledgeBottom": 46,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 46.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 46.28,
+          "gapBelowLedge": -0.28
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_08",
+      "ledgeBottom": 36,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 36.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_09",
+      "ledgeBottom": 30,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 30.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_10",
+      "ledgeBottom": 23,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 23.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    }
+  ]
+}

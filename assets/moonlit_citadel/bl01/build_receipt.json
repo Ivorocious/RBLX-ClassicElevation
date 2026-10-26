@@ -1,0 +1,30 @@
+{
+  "candidate": "MC_P1_BL01",
+  "elapsed_seconds": 35.371,
+  "files": {
+    "architecture.py": {
+      "bytes": 18492,
+      "sha256": "b4d4a7c8ea00d2b9dcb76e67351cacfe650c5ebef4a89ba2a73cbde111a199c5"
+    },
+    "mechanisms.py": {
+      "bytes": 16059,
+      "sha256": "4aac175fc9487bd3f01acefcb458ab064a2d9c2c62901c673472a9adc4f0afbd"
+    },
+    "build_sample.py": {
+      "bytes": 19181,
+      "sha256": "593edd7d613c495663aa9d05843d7db657b12c71e0f261c1ed46b17f1680068b"
+    },
+    "MC_BL01_library.fbx": {
+      "bytes": 1452892,
+      "sha256": "fb5346e7284001d1a0a854777b162993577c94ceda0d86b50e9378afe5caa30c"
+    },
+    "MC_BL01_sample.blend": {
+      "bytes": 1554069,
+      "sha256": "97f5c2e23337e2c994af7c17a5060d5ef1724e0fc3484eb282ce809ec55bb258"
+    },
+    "manifest.json": {
+      "bytes": 44609,
+      "sha256": "0e6d745688fe893e0fec06d863e56452aea198f4db046e8db4503d00c5129477"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "boundary": "Offline source/API proof; native Wedge orientation and contacts remain for Studio",
+  "build": "ER_CHICKEN_R05_A01",
+  "checks": [
+    "Luau compile",
+    "manifest transform and scale parity",
+    "native primitive class, size, color, material and contact flags",
+    "visible red wedge Beak is the only lethal piece",
+    "physical wedge tip and fixed attachment contract"
+  ],
+  "lethalPiecesChecked": 4,
+  "models": 12,
+  "partsChecked": 228,
+  "status": "passed",
+  "wedgePiecesChecked": 60
+}

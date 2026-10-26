@@ -1,0 +1,7 @@
+{
+  "description": "Cloud-sea lobby lighting immediately before the requested brightness reduction. Restore only these three properties in default.project.json and Studio Lighting to revert this adjustment.",
+  "placeId": 85558151074819,
+  "Ambient": [0.39215686274509803, 0.43137254901960786, 0.5098039215686274],
+  "OutdoorAmbient": [0.5490196078431373, 0.596078431372549, 0.6666666666666666],
+  "Brightness": 3
+}

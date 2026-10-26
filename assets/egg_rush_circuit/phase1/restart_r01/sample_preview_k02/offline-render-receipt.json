@@ -1,0 +1,51 @@
+{
+  "candidate": "ER_P1_R01",
+  "evidence": "Offline source assembly; not Studio/playable proof",
+  "poses": "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\docs\\artifacts\\egg-rush-circuit\\phase1\\restart-r01\\sample-poses.json",
+  "posesSHA256": "cfb057ed2c4948b939b0c05b049f81746dddc1e3a653f92b0d063df9a72c2172",
+  "sourceSHA256": {
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\src\\ServerStorage\\CourseBuilders\\EggRush\\RestartR01\\Study.luau": "26081b2fdfd8e86fa18fc00bb9fec26bba70508444cf347228e9b199df300ac0",
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\src\\ServerStorage\\CourseBuilders\\EggRush\\RestartR01\\Sample.luau": "6250f532e0a1c3c1a7bfdb7b0bc98d9f23b0b52d49dcd1321ffedcdd3fcb62f3"
+  },
+  "archiveSHA256": {
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\egg_rush_circuit\\world\\candidate_c03\\ER_world_kit.blend": "052e8278dc379ecdfe227964e0720b53bcbd181f3ace9126bb5a1e40cc7c5103",
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\egg_rush_circuit\\phase1\\candidate_c04\\ER_phase1_kit.blend": "4f86ed74efcd0710bd3c3989cd17892486c42e13d2bf03c9056326331ce39f4d",
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\egg_rush_circuit\\phase1\\restart_r01\\candidate_k02\\ER_P1_R01_kit.blend": "3727f2b50a307abc37e1f857f5b042bc1851747cb27d418f523b68916fd4e2fd"
+  },
+  "authorCollections": {
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\egg_rush_circuit\\world\\candidate_c03\\ER_world_kit.blend": [
+      "AUTHOR_BareRock",
+      "AUTHOR_MintPipeArch",
+      "AUTHOR_RockSupportLow",
+      "AUTHOR_ShrubGroup"
+    ],
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\egg_rush_circuit\\phase1\\candidate_c04\\ER_phase1_kit.blend": [
+      "AUTHOR_EggDisplay",
+      "AUTHOR_NestRing",
+      "AUTHOR_PipeElbow",
+      "AUTHOR_PipeStraight",
+      "AUTHOR_SortingShed",
+      "AUTHOR_WarningBeacon",
+      "AUTHOR_WorkshopBay"
+    ],
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\egg_rush_circuit\\phase1\\restart_r01\\candidate_k02\\ER_P1_R01_kit.blend": [
+      "AUTHOR_ShellFragment",
+      "AUTHOR_ShellHingeCrown",
+      "AUTHOR_ShellHingeWide",
+      "AUTHOR_ShellLeafCrown",
+      "AUTHOR_ShellLeafWide"
+    ]
+  },
+  "artModels": 59,
+  "artMaterialParts": 151,
+  "nativeVisibleParts": 30,
+  "mechanismPose": "Exact open rest frames from saved Sample output; runtime not started",
+  "marker": "Preview-only5.5-stud scale marker on saved fork decisionPoint",
+  "approximations": "Native Studs surfaces approximated with low broad discs; SurfaceGui choice text re-created from part names; neutral offline lighting",
+  "outputFiles": [
+    "Shellworks_R01_offline.blend",
+    "Shellworks_R01_offline_decision.png",
+    "Shellworks_R01_offline_oblique.png"
+  ],
+  "caveat": "No native import, contact, moving-camera, traversal, crowd, FPS or owner-acceptance result follows from this render."
+}

@@ -1,0 +1,440 @@
+{
+  "revision": "C10_02",
+  "components": {
+    "Construction_RenovationBlock": {
+      "section": "Construction"
+    },
+    "Station_TracksideOffice": {
+      "section": "Station"
+    },
+    "Construction_RenovationScaffold": {
+      "section": "Construction"
+    },
+    "Station_HallClerestory": {
+      "section": "Station"
+    },
+    "Depot_ArrivalGantry": {
+      "section": "Depot"
+    },
+    "Depot_TransferGantry": {
+      "section": "Depot"
+    },
+    "Depot_OverheadRailWires": {
+      "section": "Depot"
+    },
+    "StationCrumble_OverheadNotice": {
+      "section": "Wayfinding"
+    },
+    "MarkerOrigin": {
+      "section": "Calibration"
+    },
+    "MarkerRight": {
+      "section": "Calibration"
+    },
+    "MarkerUp": {
+      "section": "Calibration"
+    },
+    "MarkerForward": {
+      "section": "Calibration"
+    }
+  },
+  "meshes": {
+    "Construction_RenovationBlock__Plaster__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Plaster",
+      "triangles": 12
+    },
+    "Construction_RenovationBlock__Stone__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "Construction_RenovationBlock__Cream__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Cream",
+      "triangles": 7572
+    },
+    "Construction_RenovationBlock__Roof__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Roof",
+      "triangles": 24
+    },
+    "Construction_RenovationBlock__Iron__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Iron",
+      "triangles": 6900
+    },
+    "Construction_RenovationBlock__Glass__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Glass",
+      "triangles": 888
+    },
+    "Construction_RenovationBlock__WindowGlow__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "WindowGlow",
+      "triangles": 216
+    },
+    "Construction_RenovationBlock__WoodDark__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "WoodDark",
+      "triangles": 432
+    },
+    "Construction_RenovationBlock__Teal__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Teal",
+      "triangles": 576
+    },
+    "Construction_RenovationBlock__Terracotta__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Terracotta",
+      "triangles": 468
+    },
+    "Construction_RenovationBlock__Soil__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Soil",
+      "triangles": 108
+    },
+    "Construction_RenovationBlock__LeafLight__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "LeafLight",
+      "triangles": 2160
+    },
+    "Construction_RenovationBlock__Yellow__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Yellow",
+      "triangles": 3240
+    },
+    "Construction_RenovationBlock__Leaf__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Leaf",
+      "triangles": 4320
+    },
+    "Construction_RenovationBlock__Coral__00.001": {
+      "component": "Construction_RenovationBlock",
+      "material": "Coral",
+      "triangles": 4860
+    },
+    "Station_TracksideOffice__Brick__00.001": {
+      "component": "Station_TracksideOffice",
+      "material": "Brick",
+      "triangles": 12
+    },
+    "Station_TracksideOffice__Stone__00.001": {
+      "component": "Station_TracksideOffice",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "Station_TracksideOffice__Cream__00.001": {
+      "component": "Station_TracksideOffice",
+      "material": "Cream",
+      "triangles": 10140
+    },
+    "Station_TracksideOffice__Cream__01.001": {
+      "component": "Station_TracksideOffice",
+      "material": "Cream",
+      "triangles": 4272
+    },
+    "Station_TracksideOffice__Roof__00.001": {
+      "component": "Station_TracksideOffice",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "Station_TracksideOffice__Terracotta__00.001": {
+      "component": "Station_TracksideOffice",
+      "material": "Terracotta",
+      "triangles": 252
+    },
+    "Station_TracksideOffice__Iron__00.001": {
+      "component": "Station_TracksideOffice",
+      "material": "Iron",
+      "triangles": 424
+    },
+    "Station_TracksideOffice__Glass__00.001": {
+      "component": "Station_TracksideOffice",
+      "material": "Glass",
+      "triangles": 1884
+    },
+    "Station_TracksideOffice__Coral__00.001": {
+      "component": "Station_TracksideOffice",
+      "material": "Coral",
+      "triangles": 60
+    },
+    "Construction_RenovationScaffold__Iron__00.001": {
+      "component": "Construction_RenovationScaffold",
+      "material": "Iron",
+      "triangles": 292
+    },
+    "Construction_RenovationScaffold__Stone__00.001": {
+      "component": "Construction_RenovationScaffold",
+      "material": "Stone",
+      "triangles": 48
+    },
+    "Construction_RenovationScaffold__WoodDark__00.001": {
+      "component": "Construction_RenovationScaffold",
+      "material": "WoodDark",
+      "triangles": 48
+    },
+    "Construction_RenovationScaffold__Rail__00.001": {
+      "component": "Construction_RenovationScaffold",
+      "material": "Rail",
+      "triangles": 112
+    },
+    "Construction_RenovationScaffold__Teal__00.001": {
+      "component": "Construction_RenovationScaffold",
+      "material": "Teal",
+      "triangles": 12
+    },
+    "Construction_RenovationScaffold__White__00.001": {
+      "component": "Construction_RenovationScaffold",
+      "material": "White",
+      "triangles": 448
+    },
+    "Station_HallClerestory__Cream__00.001": {
+      "component": "Station_HallClerestory",
+      "material": "Cream",
+      "triangles": 132
+    },
+    "Station_HallClerestory__Stone__00.001": {
+      "component": "Station_HallClerestory",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "Station_HallClerestory__Teal__00.001": {
+      "component": "Station_HallClerestory",
+      "material": "Teal",
+      "triangles": 24
+    },
+    "Station_HallClerestory__Iron__00.001": {
+      "component": "Station_HallClerestory",
+      "material": "Iron",
+      "triangles": 120
+    },
+    "Station_HallClerestory__Glass__00.001": {
+      "component": "Station_HallClerestory",
+      "material": "Glass",
+      "triangles": 216
+    },
+    "Station_HallClerestory__White__00.001": {
+      "component": "Station_HallClerestory",
+      "material": "White",
+      "triangles": 312
+    },
+    "Depot_ArrivalGantry__Iron__00.001": {
+      "component": "Depot_ArrivalGantry",
+      "material": "Iron",
+      "triangles": 124
+    },
+    "Depot_ArrivalGantry__Stone__00.001": {
+      "component": "Depot_ArrivalGantry",
+      "material": "Stone",
+      "triangles": 24
+    },
+    "Depot_ArrivalGantry__Rail__00.001": {
+      "component": "Depot_ArrivalGantry",
+      "material": "Rail",
+      "triangles": 80
+    },
+    "Depot_ArrivalGantry__White__00.001": {
+      "component": "Depot_ArrivalGantry",
+      "material": "White",
+      "triangles": 1800
+    },
+    "Depot_TransferGantry__Iron__00.001": {
+      "component": "Depot_TransferGantry",
+      "material": "Iron",
+      "triangles": 124
+    },
+    "Depot_TransferGantry__Stone__00.001": {
+      "component": "Depot_TransferGantry",
+      "material": "Stone",
+      "triangles": 24
+    },
+    "Depot_TransferGantry__Rail__00.001": {
+      "component": "Depot_TransferGantry",
+      "material": "Rail",
+      "triangles": 80
+    },
+    "Depot_TransferGantry__White__00.001": {
+      "component": "Depot_TransferGantry",
+      "material": "White",
+      "triangles": 2400
+    },
+    "Depot_OverheadRailWires__Iron__00.001": {
+      "component": "Depot_OverheadRailWires",
+      "material": "Iron",
+      "triangles": 76
+    },
+    "Depot_OverheadRailWires__Rail__00.001": {
+      "component": "Depot_OverheadRailWires",
+      "material": "Rail",
+      "triangles": 96
+    },
+    "Depot_OverheadRailWires__Cream__00.001": {
+      "component": "Depot_OverheadRailWires",
+      "material": "Cream",
+      "triangles": 24
+    },
+    "StationCrumble_OverheadNotice__Iron__00.001": {
+      "component": "StationCrumble_OverheadNotice",
+      "material": "Iron",
+      "triangles": 84
+    },
+    "StationCrumble_OverheadNotice__Stone__00.001": {
+      "component": "StationCrumble_OverheadNotice",
+      "material": "Stone",
+      "triangles": 24
+    },
+    "StationCrumble_OverheadNotice__Teal__00.001": {
+      "component": "StationCrumble_OverheadNotice",
+      "material": "Teal",
+      "triangles": 12
+    },
+    "StationCrumble_OverheadNotice__White__00.001": {
+      "component": "StationCrumble_OverheadNotice",
+      "material": "White",
+      "triangles": 936
+    },
+    "MarkerOrigin__Iron__00.002": {
+      "component": "MarkerOrigin",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerRight__Iron__00.002": {
+      "component": "MarkerRight",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerUp__Iron__00.002": {
+      "component": "MarkerUp",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerForward__Iron__00.002": {
+      "component": "MarkerForward",
+      "material": "Iron",
+      "triangles": 12
+    }
+  },
+  "colors": {
+    "Brick": [
+      0.66,
+      0.26,
+      0.16
+    ],
+    "Terracotta": [
+      0.79,
+      0.37,
+      0.23
+    ],
+    "Plaster": [
+      0.93,
+      0.76,
+      0.48
+    ],
+    "Cream": [
+      0.93,
+      0.87,
+      0.72
+    ],
+    "Stone": [
+      0.64,
+      0.65,
+      0.61
+    ],
+    "Roof": [
+      0.24,
+      0.3,
+      0.32
+    ],
+    "Teal": [
+      0.035,
+      0.49,
+      0.48
+    ],
+    "Coral": [
+      0.89,
+      0.24,
+      0.2
+    ],
+    "Yellow": [
+      0.99,
+      0.66,
+      0.1
+    ],
+    "Blue": [
+      0.08,
+      0.3,
+      0.58
+    ],
+    "Iron": [
+      0.095,
+      0.14,
+      0.18
+    ],
+    "Glass": [
+      0.16,
+      0.27,
+      0.31
+    ],
+    "Wood": [
+      0.43,
+      0.26,
+      0.13
+    ],
+    "Leaf": [
+      0.22,
+      0.42,
+      0.14
+    ],
+    "LeafLight": [
+      0.45,
+      0.6,
+      0.19
+    ],
+    "Soil": [
+      0.22,
+      0.17,
+      0.12
+    ],
+    "Red": [
+      0.96,
+      0.055,
+      0.035
+    ],
+    "White": [
+      0.96,
+      0.95,
+      0.85
+    ],
+    "Rail": [
+      0.37,
+      0.43,
+      0.46
+    ],
+    "Skyline": [
+      0.4,
+      0.52,
+      0.57
+    ],
+    "Light": [
+      1,
+      0.86,
+      0.48
+    ],
+    "WoodLight": [
+      0.59,
+      0.4,
+      0.23
+    ],
+    "WoodDark": [
+      0.3,
+      0.18,
+      0.1
+    ],
+    "WindowGlow": [
+      0.96,
+      0.72,
+      0.34
+    ]
+  }
+}

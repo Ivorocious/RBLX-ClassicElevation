@@ -1,0 +1,15 @@
+{
+  "bytes": 60115,
+  "chunks": 2,
+  "roundTrip": [
+    {
+      "name": "__ShipwreckCove_Phase1",
+      "descendants": 174
+    },
+    {
+      "name": "__ShipwreckCove_NormalizedKit03",
+      "descendants": 35
+    }
+  ],
+  "build": "SC_P1_05"
+}

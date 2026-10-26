@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "F03_C13_Surface_StationMain_00_06",
+    "headCenter": [
+      3823.555664,
+      97.538887,
+      57
+    ],
+    "nearestSurfaceDistance": 2.5388641357421875
+  },
+  {
+    "asset": "F03_C13_Surface_StationMain_00_00",
+    "headCenter": [
+      3705,
+      88.428574,
+      50.857143
+    ],
+    "nearestSurfaceDistance": 3.4419336318969727
+  }
+]

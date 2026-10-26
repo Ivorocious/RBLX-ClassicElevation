@@ -1,0 +1,327 @@
+{
+  "hazardMode": "Movement-only cloned fixture; Runtime.Create not called, so timed hazards are inactive",
+  "jumpHeight": 7.2,
+  "scenarios": [
+    {
+      "name": "continuousCave",
+      "finalPosition": [
+        -845.95,
+        93.62,
+        58
+      ],
+      "initialPosition": [
+        -792,
+        98.12,
+        -18
+      ],
+      "passed": true,
+      "links": [
+        {
+          "landingPosition": [
+            -786.98,
+            95.65,
+            1.09
+          ],
+          "stagingPosition": [
+            -790.03,
+            98,
+            -10.52
+          ],
+          "to": "S04_Entry_00",
+          "startPosition": [
+            -792,
+            97.98,
+            -18
+          ],
+          "groundedTakeoff": true,
+          "gap": 2.07,
+          "arrivedFromPriorLink": false,
+          "from": "R4_CaveEntry",
+          "passed": true,
+          "takeoffPosition": [
+            -789.41,
+            98,
+            -8.17
+          ],
+          "landingSurface": "S04_Entry_00",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -782.04,
+            93.7,
+            15.17
+          ],
+          "stagingPosition": [
+            -786.11,
+            96,
+            3.56
+          ],
+          "to": "S04_Entry_01",
+          "startPosition": [
+            -786.98,
+            95.65,
+            1.09
+          ],
+          "groundedTakeoff": true,
+          "gap": 8.48,
+          "arrivedFromPriorLink": true,
+          "from": "S04_Entry_00",
+          "passed": true,
+          "takeoffPosition": [
+            -785.28,
+            96,
+            5.92
+          ],
+          "landingSurface": "S04_Entry_01",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -780.12,
+            92.65,
+            35.44
+          ],
+          "stagingPosition": [
+            -780.15,
+            94,
+            23.35
+          ],
+          "to": "S04_Entry_02",
+          "startPosition": [
+            -782.04,
+            93.7,
+            15.17
+          ],
+          "groundedTakeoff": true,
+          "gap": 7,
+          "arrivedFromPriorLink": true,
+          "from": "S04_Entry_01",
+          "passed": true,
+          "takeoffPosition": [
+            -780.12,
+            94,
+            25.78
+          ],
+          "landingSurface": "S04_Entry_02",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -785.29,
+            93.23,
+            53.29
+          ],
+          "stagingPosition": [
+            -781.15,
+            93,
+            42.57
+          ],
+          "to": "S04_Entry_03",
+          "startPosition": [
+            -780.12,
+            92.65,
+            35.44
+          ],
+          "groundedTakeoff": true,
+          "gap": 6.44,
+          "arrivedFromPriorLink": true,
+          "from": "S04_Entry_02",
+          "passed": true,
+          "takeoffPosition": [
+            -782.01,
+            93,
+            44.84
+          ],
+          "landingSurface": "S04_Entry_03",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -801.36,
+            93.23,
+            57.56
+          ],
+          "stagingPosition": [
+            -789.9,
+            93,
+            57.48
+          ],
+          "to": "SurgeEastRefuge",
+          "startPosition": [
+            -785.29,
+            93.23,
+            53.29
+          ],
+          "groundedTakeoff": true,
+          "gap": 4.5,
+          "arrivedFromPriorLink": true,
+          "from": "S04_Entry_03",
+          "passed": true,
+          "takeoffPosition": [
+            -792.3,
+            93,
+            57.56
+          ],
+          "landingSurface": "SurgeEastRefuge",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -829.52,
+            87.57,
+            57.99
+          ],
+          "stagingPosition": [
+            -816.43,
+            93,
+            57.98
+          ],
+          "to": "SurgePassage",
+          "startPosition": [
+            -801.36,
+            93.23,
+            57.56
+          ],
+          "groundedTakeoff": true,
+          "gap": 2,
+          "arrivedFromPriorLink": true,
+          "from": "SurgeEastRefuge",
+          "passed": true,
+          "takeoffPosition": [
+            -818.86,
+            93,
+            57.99
+          ],
+          "landingSurface": "SurgePassage",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -845.95,
+            93.62,
+            58
+          ],
+          "stagingPosition": [
+            -836.32,
+            88,
+            58
+          ],
+          "to": "SurgeWestRefuge",
+          "startPosition": [
+            -829.52,
+            87.57,
+            57.99
+          ],
+          "groundedTakeoff": true,
+          "gap": 2,
+          "arrivedFromPriorLink": true,
+          "from": "SurgePassage",
+          "passed": true,
+          "takeoffPosition": [
+            -839.02,
+            88,
+            58
+          ],
+          "landingSurface": "SurgeWestRefuge",
+          "jumpRequired": true
+        }
+      ]
+    },
+    {
+      "name": "firstRib",
+      "finalPosition": [
+        -992.58,
+        99.36,
+        -60.86
+      ],
+      "initialPosition": [
+        -1008,
+        96.12,
+        -66
+      ],
+      "passed": true,
+      "links": [
+        {
+          "landingPosition": [
+            -992.58,
+            99.36,
+            -60.86
+          ],
+          "stagingPosition": [
+            -999.5,
+            96,
+            -63.17
+          ],
+          "to": "Rib00",
+          "startPosition": [
+            -1008,
+            96.05,
+            -66
+          ],
+          "groundedTakeoff": true,
+          "gap": 2.03,
+          "arrivedFromPriorLink": false,
+          "from": "R2_Boarding",
+          "passed": true,
+          "takeoffPosition": [
+            -996.94,
+            96,
+            -62.31
+          ],
+          "landingSurface": "Rib00",
+          "jumpRequired": true
+        }
+      ]
+    },
+    {
+      "name": "firstSpar",
+      "finalPosition": [
+        -885.14,
+        123.21,
+        -89.1
+      ],
+      "initialPosition": [
+        -900,
+        126.12,
+        -100
+      ],
+      "passed": true,
+      "links": [
+        {
+          "landingPosition": [
+            -885.14,
+            123.21,
+            -89.1
+          ],
+          "stagingPosition": [
+            -891.02,
+            126,
+            -93.41
+          ],
+          "to": "Spar00",
+          "startPosition": [
+            -900,
+            126.05,
+            -100
+          ],
+          "groundedTakeoff": true,
+          "gap": -0.83,
+          "arrivedFromPriorLink": false,
+          "from": "R3_Stern",
+          "passed": true,
+          "takeoffPosition": [
+            -888.85,
+            126,
+            -91.82
+          ],
+          "landingSurface": "Spar00",
+          "jumpRequired": false
+        }
+      ]
+    }
+  ],
+  "method": "Actual server-owned R15 physics. One initial placement per scenario; no teleports or velocity resets between cave links. Rib and spar are separate first-link scenarios.",
+  "walkSpeed": 16,
+  "build": "SC_MAP_21"
+}

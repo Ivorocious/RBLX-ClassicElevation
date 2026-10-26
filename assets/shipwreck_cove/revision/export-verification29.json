@@ -1,0 +1,83 @@
+{
+  "build": "SC_PALM_29",
+  "method": "Blender FBX re-import; object count, evaluated triangles, pivots, materials, and atlas UV tiles",
+  "fbxReimportPassed": true,
+  "uniqueTriangles": 2072,
+  "triangleLimit": 2100,
+  "assets": {
+    "SC_R_PalmTrunk29": {
+      "vertices": 492,
+      "triangles": 980,
+      "materials": 1,
+      "uvLayers": 1,
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensionsBlender": [
+        3.451627,
+        2.388137,
+        24.5
+      ],
+      "atlasUVAudit": {
+        "facesChecked": 482,
+        "allFaceUVsStayWithinOneAtlasTile": true
+      }
+    },
+    "SC_R_PalmCrown29": {
+      "vertices": 705,
+      "triangles": 1092,
+      "materials": 1,
+      "uvLayers": 1,
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensionsBlender": [
+        21.331249,
+        25.032701,
+        5.066101
+      ],
+      "atlasUVAudit": {
+        "facesChecked": 534,
+        "allFaceUVsStayWithinOneAtlasTile": true
+      }
+    }
+  },
+  "files": {
+    "build_palm29.py": {
+      "bytes": 16703,
+      "sha256": "ccb01e133f02fd0be98b580d4e52c7cc30dd7e3ef65206fd0e46ae40ce8ebb42"
+    },
+    "ShipwreckCove_Palm29.blend": {
+      "bytes": 120221,
+      "sha256": "ccdd17dd33169ab2b7dc87188ddb76dffd2a57f9f9f96edca586a5960ba39a4d"
+    },
+    "SC_R_PalmTrunk29.fbx": {
+      "bytes": 39948,
+      "sha256": "54b66eaeca6c5f6816554c4e9bd217967817f13eeeb4b67dbbd931c40a4797ce"
+    },
+    "SC_R_PalmCrown29.fbx": {
+      "bytes": 45260,
+      "sha256": "5627c296ba9ab6a128315c56bf8935a61ea40f8c5c05c6360d5c41779c8f3c2d"
+    },
+    "manifest29.json": {
+      "bytes": 5017,
+      "sha256": "47aa7c6b1dcc5cfdfc8a42f78ef4da52505c3cf2224308bd22dcf765258f7de7"
+    },
+    "palette.png": {
+      "bytes": 545,
+      "sha256": "7ada08dfd92d972bd66e2b973f4c11bbb3a55625ea7efa4dcbed70e308483766"
+    },
+    "upload-receipt29-final-trunk2.json": {
+      "bytes": 491,
+      "sha256": "83a2a6c8ac585adef3e6770ed5f309f9dfb4eef4e1b2deb0ed2b29324a38c4a7"
+    },
+    "upload-receipt29-final-crown.json": {
+      "bytes": 491,
+      "sha256": "ba5d1d6d36802cfa0de4dd3f33dbacae6ff76ce44ae2fbcae9c91501b292d311"
+    }
+  }
+}

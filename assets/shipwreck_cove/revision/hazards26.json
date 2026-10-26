@@ -1,0 +1,26 @@
+{
+  "records": [
+    {
+      "name": "H02 dry and warning do not hit; both crests hit standing R15",
+      "passed": true
+    },
+    {
+      "name": "Both raised refuges stay safe through complete two-crest surge",
+      "passed": true
+    },
+    {
+      "name": "Two separate visible crests, one continuous pool, bounded cleanup",
+      "passed": true
+    },
+    {
+      "name": "Standing racer arms, drops, and restores a cave stone",
+      "passed": true
+    },
+    {
+      "name": "Stop restores an active crumble stone and removes bursts",
+      "passed": true
+    }
+  ],
+  "limits": "Controlled clock and teleported actual R15 in translated production Runtime fixture; particle objects and phases checked, not rendered burst appearance, full route playthrough, or multiplayer load.",
+  "build": "SC_CAVE_26"
+}

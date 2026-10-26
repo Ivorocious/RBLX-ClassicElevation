@@ -1,0 +1,10 @@
+[
+  {
+    "path": "src/StarterPlayer/StarterPlayerScripts/ClassicAscentAmbience.client.luau",
+    "sha256": "a38550b28d1c17fadb06c59d6c593334db360e6d578fca8ce245289f46612e82"
+  },
+  {
+    "path": "tests/studio/CourseAmbience.luau",
+    "sha256": "29504961b149f62e552f626bd8a09996262031521b7a4a502a87e7bb1c53bb63"
+  }
+]

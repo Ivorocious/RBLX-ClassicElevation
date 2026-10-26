@@ -1,0 +1,43 @@
+{
+  "status": "uploaded",
+  "reference": "docs/artifacts/keyboard-circuit/skybox-studies/20261009-v07/37-keycap-archive.png",
+  "ownerIntent": "Keyboard Archive is supposed to be the skybox! not an enclosement",
+  "studioId": "80496bf2-4ba9-4cb8-b185-5a27ef1da808",
+  "placeId": 85558151074819,
+  "faces": {
+    "SkyboxFt": {
+      "file": "keyboard-archive-bk.png",
+      "assetId": "rbxassetid://135284146028712"
+    },
+    "SkyboxBk": {
+      "file": "keyboard-archive-ft.png",
+      "assetId": "rbxassetid://80816315379134"
+    },
+    "SkyboxRt": {
+      "file": "keyboard-archive-rt.png",
+      "assetId": "rbxassetid://127191104998913"
+    },
+    "SkyboxLf": {
+      "file": "keyboard-archive-lf.png",
+      "assetId": "rbxassetid://108685301499016"
+    },
+    "SkyboxUp": {
+      "file": "keyboard-archive-up-roblox.png",
+      "assetId": "rbxassetid://109248728511991"
+    },
+    "SkyboxDn": {
+      "file": "keyboard-archive-dn-roblox-final.png",
+      "assetId": "rbxassetid://96062275999034"
+    }
+  },
+  "rawUploadMapping": {
+    "http://127.0.0.1:8874/keyboard-archive-bk.png": "rbxassetid://135284146028712",
+    "http://127.0.0.1:8874/keyboard-archive-rt.png": "rbxassetid://127191104998913",
+    "http://127.0.0.1:8874/keyboard-archive-ft.png": "rbxassetid://80816315379134",
+    "http://127.0.0.1:8874/keyboard-archive-dn-roblox-final.png": "rbxassetid://96062275999034",
+    "http://127.0.0.1:8874/keyboard-archive-up-roblox.png": "rbxassetid://109248728511991",
+    "http://127.0.0.1:8874/keyboard-archive-lf.png": "rbxassetid://108685301499016"
+  },
+  "nativeLoadVerification": "pending Creator integration",
+  "placePublished": false
+}

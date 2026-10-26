@@ -1,0 +1,16 @@
+{
+  "sha256": "7f91eef49c1ae764b4461ff36922932b92f316e4bf9f10baf94973235019c24f",
+  "request": {
+    "assetType": "Model",
+    "displayName": "SC_Headland30",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/b150822c-8a99-42f2-9ac2-8759716503cf",
+  "assetId": "116611667229959"
+}

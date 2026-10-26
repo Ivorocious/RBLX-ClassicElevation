@@ -1,0 +1,44 @@
+{
+  "build": "V3_KIT_05+V3_DISTRICT_ADDON_01",
+  "presentation": "FINAL_STUDIES_10",
+  "packages": [
+    {
+      "file": "CityRun_V3_AssetKit.fbx",
+      "assetId": "113491549212344",
+      "sha256": "95740f1e2884f2cccc8145d42d77b3f9d4cc8e79a4b9521428c394de96a05408"
+    },
+    {
+      "file": "district_addon01/CityRun_DistrictAddon.fbx",
+      "assetId": "94105724616140",
+      "sha256": "b078b76a3f0eff3c6f7ad0534e23df7c8a4d6d0676d4be6770169dff202331e9"
+    }
+  ],
+  "textureId": "rbxassetid://117032649495568",
+  "meshCount": 69,
+  "normalization": "Apply manifest dimensions and bounds-derived pivots with import_review05.luau and import_district_addon01.luau; raw import scale approximately24.236689.",
+  "reviewFolder": "Workspace.CityRunV3AssetReview",
+  "canonicalLibraries": [
+    "CityRunV3PaintedAssetKit05",
+    "CityRunV3DistrictAddon01"
+  ],
+  "studies": [
+    "FinalStudies10",
+    "DistrictStudies09.Construction",
+    "FitStudies07",
+    "CompositionStudies07"
+  ],
+  "referenceOnly": true,
+  "measuredMobilePerformance": false,
+  "status": "Both packages uploaded under user approval; all69 native dimensions, pivots, texture and visual flags verified.",
+  "visualAcceptance": {
+    "scope": "Stage1 asset creation only",
+    "allFourStrictlyAbove8": true,
+    "scores": {
+      "lunaGrounding": 8.4,
+      "lunaReadability": 8.8,
+      "terraComposition": 8.1,
+      "solResources": 8.5
+    },
+    "evidence": "../../../docs/artifacts/city-run/v3/studio10/evidence.json"
+  }
+}

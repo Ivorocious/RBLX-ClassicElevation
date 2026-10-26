@@ -1,0 +1,2253 @@
+{
+  "build": "HA_R2_TREE_STUDY_01",
+  "variant": "cathedral_fan",
+  "detail": "study",
+  "units": "one Blender unit = one Roblox stud before import normalization",
+  "coordinate_mapping": "Blender (x,y,z) -> Roblox (x,z,-y)",
+  "design": "Three rooted piers enclose a lower chamber; the upper trunk opens into a spreading fan with a taller rear leader.",
+  "tree_bounds": {
+    "min_blender": [
+      -153.588623046875,
+      -92.13208770751953,
+      -11.476385116577148
+    ],
+    "max_blender": [
+      148.97653198242188,
+      85.47315979003906,
+      405.0057373046875
+    ],
+    "height_studs": 416.48212242126465
+  },
+  "objects": [
+    {
+      "name": "HA2_cathedral_fan_PrimaryStem_00",
+      "package": "structure",
+      "vertices": 576,
+      "triangles": 1148,
+      "bounds_min_blender": [
+        -70.78912353515625,
+        -43.80058288574219,
+        -4.108590126037598
+      ],
+      "bounds_max_blender": [
+        19.687652587890625,
+        31.267576217651367,
+        285.7637939453125
+      ],
+      "center_blender": [
+        -25.550735473632812,
+        -6.26650333404541,
+        140.82760190963745
+      ],
+      "size_blender": [
+        90.47677612304688,
+        75.06815910339355,
+        289.8723840713501
+      ],
+      "center_roblox": [
+        -25.550735473632812,
+        140.82760190963745,
+        6.26650333404541
+      ],
+      "size_roblox": [
+        90.47677612304688,
+        289.8723840713501,
+        75.06815910339355
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_PrimaryStem_01",
+      "package": "structure",
+      "vertices": 576,
+      "triangles": 1148,
+      "bounds_min_blender": [
+        -18.22075843811035,
+        -43.81970977783203,
+        -3.7192444801330566
+      ],
+      "bounds_max_blender": [
+        72.00926208496094,
+        33.053096771240234,
+        306.2923278808594
+      ],
+      "center_blender": [
+        26.894251823425293,
+        -5.383306503295898,
+        151.28654170036316
+      ],
+      "size_blender": [
+        90.23002052307129,
+        76.87280654907227,
+        310.01157236099243
+      ],
+      "center_roblox": [
+        26.894251823425293,
+        151.28654170036316,
+        5.383306503295898
+      ],
+      "size_roblox": [
+        90.23002052307129,
+        310.01157236099243,
+        76.87280654907227
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_PrimaryStem_02",
+      "package": "structure",
+      "vertices": 576,
+      "triangles": 1148,
+      "bounds_min_blender": [
+        -30.07400894165039,
+        -3.6489105224609375,
+        -0.7210178375244141
+      ],
+      "bounds_max_blender": [
+        32.19141387939453,
+        66.1364517211914,
+        371.3680114746094
+      ],
+      "center_blender": [
+        1.0587024688720703,
+        31.243770599365234,
+        185.32349681854248
+      ],
+      "size_blender": [
+        62.26542282104492,
+        69.78536224365234,
+        372.0890293121338
+      ],
+      "center_roblox": [
+        1.0587024688720703,
+        185.32349681854248,
+        -31.243770599365234
+      ],
+      "size_roblox": [
+        62.26542282104492,
+        372.0890293121338,
+        69.78536224365234
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_MajorBough_00",
+      "package": "structure",
+      "vertices": 176,
+      "triangles": 348,
+      "bounds_min_blender": [
+        -90.13066864013672,
+        -32.57829666137695,
+        72.31731414794922
+      ],
+      "bounds_max_blender": [
+        -30.5161075592041,
+        0.45071983337402344,
+        131.22598266601562
+      ],
+      "center_blender": [
+        -60.32338809967041,
+        -16.063788414001465,
+        101.77164840698242
+      ],
+      "size_blender": [
+        59.61456108093262,
+        33.02901649475098,
+        58.908668518066406
+      ],
+      "center_roblox": [
+        -60.32338809967041,
+        101.77164840698242,
+        16.063788414001465
+      ],
+      "size_roblox": [
+        59.61456108093262,
+        58.908668518066406,
+        33.02901649475098
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_MajorBough_01",
+      "package": "structure",
+      "vertices": 176,
+      "triangles": 348,
+      "bounds_min_blender": [
+        24.097354888916016,
+        -30.906530380249023,
+        89.68461608886719
+      ],
+      "bounds_max_blender": [
+        90.48743438720703,
+        9.827930450439453,
+        158.84527587890625
+      ],
+      "center_blender": [
+        57.29239463806152,
+        -10.539299964904785,
+        124.26494598388672
+      ],
+      "size_blender": [
+        66.39007949829102,
+        40.73446083068848,
+        69.16065979003906
+      ],
+      "center_roblox": [
+        57.29239463806152,
+        124.26494598388672,
+        10.539299964904785
+      ],
+      "size_roblox": [
+        66.39007949829102,
+        69.16065979003906,
+        40.73446083068848
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_MajorBough_02",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -95.0103530883789,
+        -20.254915237426758,
+        184.8328857421875
+      ],
+      "bounds_max_blender": [
+        0.544525146484375,
+        21.74047088623047,
+        260.2928771972656
+      ],
+      "center_blender": [
+        -47.232913970947266,
+        0.7427778244018555,
+        222.56288146972656
+      ],
+      "size_blender": [
+        95.55487823486328,
+        41.99538612365723,
+        75.45999145507812
+      ],
+      "center_roblox": [
+        -47.232913970947266,
+        222.56288146972656,
+        -0.7427778244018555
+      ],
+      "size_roblox": [
+        95.55487823486328,
+        75.45999145507812,
+        41.99538612365723
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_MajorBough_03",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -124.60746002197266,
+        -12.241399765014648,
+        227.89013671875
+      ],
+      "bounds_max_blender": [
+        -28.808338165283203,
+        27.75148582458496,
+        310.6048583984375
+      ],
+      "center_blender": [
+        -76.70789909362793,
+        7.755043029785156,
+        269.24749755859375
+      ],
+      "size_blender": [
+        95.79912185668945,
+        39.99288558959961,
+        82.7147216796875
+      ],
+      "center_roblox": [
+        -76.70789909362793,
+        269.24749755859375,
+        -7.755043029785156
+      ],
+      "size_roblox": [
+        95.79912185668945,
+        82.7147216796875,
+        39.99288558959961
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_MajorBough_04",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        27.574623107910156,
+        -8.980247497558594,
+        245.86672973632812
+      ],
+      "bounds_max_blender": [
+        118.11157989501953,
+        32.252349853515625,
+        342.24493408203125
+      ],
+      "center_blender": [
+        72.84310150146484,
+        11.636051177978516,
+        294.0558319091797
+      ],
+      "size_blender": [
+        90.53695678710938,
+        41.23259735107422,
+        96.37820434570312
+      ],
+      "center_roblox": [
+        72.84310150146484,
+        294.0558319091797,
+        -11.636051177978516
+      ],
+      "size_roblox": [
+        90.53695678710938,
+        96.37820434570312,
+        41.23259735107422
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_MajorBough_05",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -66.58260345458984,
+        -2.9327821731567383,
+        265.92193603515625
+      ],
+      "bounds_max_blender": [
+        -29.431161880493164,
+        25.98645782470703,
+        346.3866271972656
+      ],
+      "center_blender": [
+        -48.006882667541504,
+        11.526837825775146,
+        306.15428161621094
+      ],
+      "size_blender": [
+        37.15144157409668,
+        28.91923999786377,
+        80.46469116210938
+      ],
+      "center_roblox": [
+        -48.006882667541504,
+        306.15428161621094,
+        -11.526837825775146
+      ],
+      "size_roblox": [
+        37.15144157409668,
+        80.46469116210938,
+        28.91923999786377
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_MajorBough_06",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        16.163358688354492,
+        -1.0241336822509766,
+        275.93798828125
+      ],
+      "bounds_max_blender": [
+        63.5068473815918,
+        29.026784896850586,
+        374.3211669921875
+      ],
+      "center_blender": [
+        39.835103034973145,
+        14.001325607299805,
+        325.12957763671875
+      ],
+      "size_blender": [
+        47.343488693237305,
+        30.050918579101562,
+        98.3831787109375
+      ],
+      "center_roblox": [
+        39.835103034973145,
+        325.12957763671875,
+        -14.001325607299805
+      ],
+      "size_roblox": [
+        47.343488693237305,
+        98.3831787109375,
+        30.050918579101562
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_MajorBough_07",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -44.39093017578125,
+        -1.8446111679077148,
+        294.74908447265625
+      ],
+      "bounds_max_blender": [
+        9.136865615844727,
+        30.70545768737793,
+        388.2496032714844
+      ],
+      "center_blender": [
+        -17.62703227996826,
+        14.430423259735107,
+        341.4993438720703
+      ],
+      "size_blender": [
+        53.52779579162598,
+        32.550068855285645,
+        93.50051879882812
+      ],
+      "center_roblox": [
+        -17.62703227996826,
+        341.4993438720703,
+        -14.430423259735107
+      ],
+      "size_roblox": [
+        53.52779579162598,
+        93.50051879882812,
+        32.550068855285645
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_MajorBough_08",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -12.018012046813965,
+        1.8448123931884766,
+        309.2221374511719
+      ],
+      "bounds_max_blender": [
+        76.34030151367188,
+        40.65726852416992,
+        376.61810302734375
+      ],
+      "center_blender": [
+        32.161144733428955,
+        21.2510404586792,
+        342.9201202392578
+      ],
+      "size_blender": [
+        88.35831356048584,
+        38.812456130981445,
+        67.39596557617188
+      ],
+      "center_roblox": [
+        32.161144733428955,
+        342.9201202392578,
+        -21.2510404586792
+      ],
+      "size_roblox": [
+        88.35831356048584,
+        67.39596557617188,
+        38.812456130981445
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_Root_00",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        21.27828598022461,
+        -20.78015899658203,
+        -10.286252975463867
+      ],
+      "bounds_max_blender": [
+        104.0480728149414,
+        32.20354461669922,
+        31.530139923095703
+      ],
+      "center_blender": [
+        62.66317939758301,
+        5.711692810058594,
+        10.621943473815918
+      ],
+      "size_blender": [
+        82.7697868347168,
+        52.98370361328125,
+        41.81639289855957
+      ],
+      "center_roblox": [
+        62.66317939758301,
+        10.621943473815918,
+        -5.711692810058594
+      ],
+      "size_roblox": [
+        82.7697868347168,
+        41.81639289855957,
+        52.98370361328125
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_Root_01",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -2.954608201980591,
+        14.528484344482422,
+        -10.196348190307617
+      ],
+      "bounds_max_blender": [
+        51.82818603515625,
+        85.07230377197266,
+        33.733909606933594
+      ],
+      "center_blender": [
+        24.43678891658783,
+        49.80039405822754,
+        11.768780708312988
+      ],
+      "size_blender": [
+        54.78279423713684,
+        70.54381942749023,
+        43.93025779724121
+      ],
+      "center_roblox": [
+        24.43678891658783,
+        11.768780708312988,
+        -49.80039405822754
+      ],
+      "size_roblox": [
+        54.78279423713684,
+        43.93025779724121,
+        70.54381942749023
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_Root_02",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -28.58243179321289,
+        23.426179885864258,
+        -6.130022048950195
+      ],
+      "bounds_max_blender": [
+        19.928394317626953,
+        85.47315979003906,
+        32.42634963989258
+      ],
+      "center_blender": [
+        -4.327018737792969,
+        54.44966983795166,
+        13.148163795471191
+      ],
+      "size_blender": [
+        48.510826110839844,
+        62.046979904174805,
+        38.55637168884277
+      ],
+      "center_roblox": [
+        -4.327018737792969,
+        13.148163795471191,
+        -54.44966983795166
+      ],
+      "size_roblox": [
+        48.510826110839844,
+        38.55637168884277,
+        62.046979904174805
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_Root_03",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -99.38448333740234,
+        16.704072952270508,
+        -7.630666732788086
+      ],
+      "bounds_max_blender": [
+        8.144535064697266,
+        60.171913146972656,
+        44.323638916015625
+      ],
+      "center_blender": [
+        -45.61997413635254,
+        38.43799304962158,
+        18.34648609161377
+      ],
+      "size_blender": [
+        107.52901840209961,
+        43.46784019470215,
+        51.95430564880371
+      ],
+      "center_roblox": [
+        -45.61997413635254,
+        18.34648609161377,
+        -38.43799304962158
+      ],
+      "size_roblox": [
+        107.52901840209961,
+        51.95430564880371,
+        43.46784019470215
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_Root_04",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -105.0526123046875,
+        -32.50421142578125,
+        -10.256097793579102
+      ],
+      "bounds_max_blender": [
+        -20.163610458374023,
+        16.784988403320312,
+        33.629737854003906
+      ],
+      "center_blender": [
+        -62.60811138153076,
+        -7.859611511230469,
+        11.686820030212402
+      ],
+      "size_blender": [
+        84.88900184631348,
+        49.28919982910156,
+        43.88583564758301
+      ],
+      "center_roblox": [
+        -62.60811138153076,
+        11.686820030212402,
+        7.859611511230469
+      ],
+      "size_roblox": [
+        84.88900184631348,
+        43.88583564758301,
+        49.28919982910156
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_Root_05",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -60.07304382324219,
+        -92.13208770751953,
+        -10.188238143920898
+      ],
+      "bounds_max_blender": [
+        -17.156356811523438,
+        -8.02474308013916,
+        33.7252082824707
+      ],
+      "center_blender": [
+        -38.61470031738281,
+        -50.078415393829346,
+        11.768485069274902
+      ],
+      "size_blender": [
+        42.91668701171875,
+        84.10734462738037,
+        43.9134464263916
+      ],
+      "center_roblox": [
+        -38.61470031738281,
+        11.768485069274902,
+        50.078415393829346
+      ],
+      "size_roblox": [
+        42.91668701171875,
+        43.9134464263916,
+        84.10734462738037
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_Root_06",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -17.125640869140625,
+        -88.3647689819336,
+        -9.706666946411133
+      ],
+      "bounds_max_blender": [
+        51.231815338134766,
+        0.39730262756347656,
+        45.256813049316406
+      ],
+      "center_blender": [
+        17.05308723449707,
+        -43.98373317718506,
+        17.775073051452637
+      ],
+      "size_blender": [
+        68.35745620727539,
+        88.76207160949707,
+        54.96347999572754
+      ],
+      "center_roblox": [
+        17.05308723449707,
+        17.775073051452637,
+        43.98373317718506
+      ],
+      "size_roblox": [
+        68.35745620727539,
+        54.96347999572754,
+        88.76207160949707
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_Root_07",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        14.926923751831055,
+        -54.01799011230469,
+        -11.476385116577148
+      ],
+      "bounds_max_blender": [
+        98.2542724609375,
+        -4.723028182983398,
+        32.410980224609375
+      ],
+      "center_blender": [
+        56.59059810638428,
+        -29.370509147644043,
+        10.467297554016113
+      ],
+      "size_blender": [
+        83.32734870910645,
+        49.29496192932129,
+        43.88736534118652
+      ],
+      "center_roblox": [
+        56.59059810638428,
+        10.467297554016113,
+        29.370509147644043
+      ],
+      "size_roblox": [
+        83.32734870910645,
+        43.88736534118652,
+        49.29496192932129
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_FrontRootArch",
+      "package": "structure",
+      "vertices": 496,
+      "triangles": 988,
+      "bounds_min_blender": [
+        -64.9599609375,
+        -88.80577850341797,
+        -7.443685531616211
+      ],
+      "bounds_max_blender": [
+        64.02749633789062,
+        0.9943180084228516,
+        80.10594177246094
+      ],
+      "center_blender": [
+        -0.4662322998046875,
+        -43.90573024749756,
+        36.33112812042236
+      ],
+      "size_blender": [
+        128.98745727539062,
+        89.80009651184082,
+        87.54962730407715
+      ],
+      "center_roblox": [
+        -0.4662322998046875,
+        36.33112812042236,
+        43.90573024749756
+      ],
+      "size_roblox": [
+        128.98745727539062,
+        87.54962730407715,
+        89.80009651184082
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_00",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -112.15152740478516,
+        -36.76865768432617,
+        119.05546569824219
+      ],
+      "bounds_max_blender": [
+        -63.490665435791016,
+        12.786224365234375,
+        144.02952575683594
+      ],
+      "center_blender": [
+        -87.82109642028809,
+        -11.991216659545898,
+        131.54249572753906
+      ],
+      "size_blender": [
+        48.66086196899414,
+        49.55488204956055,
+        24.97406005859375
+      ],
+      "center_roblox": [
+        -87.82109642028809,
+        131.54249572753906,
+        11.991216659545898
+      ],
+      "size_roblox": [
+        48.66086196899414,
+        24.97406005859375,
+        49.55488204956055
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_00_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -102.3046646118164,
+        -24.41202163696289,
+        121.1562728881836
+      ],
+      "bounds_max_blender": [
+        -73.56544494628906,
+        3.0831334590911865,
+        130.15353393554688
+      ],
+      "center_blender": [
+        -87.93505477905273,
+        -10.664444088935852,
+        125.65490341186523
+      ],
+      "size_blender": [
+        28.739219665527344,
+        27.495155096054077,
+        8.997261047363281
+      ],
+      "center_roblox": [
+        -87.93505477905273,
+        125.65490341186523,
+        10.664444088935852
+      ],
+      "size_roblox": [
+        28.739219665527344,
+        8.997261047363281,
+        27.495155096054077
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_01",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        61.65414810180664,
+        -20.138452529907227,
+        146.01991271972656
+      ],
+      "bounds_max_blender": [
+        117.78077697753906,
+        33.76911926269531,
+        172.90216064453125
+      ],
+      "center_blender": [
+        89.71746253967285,
+        6.815333366394043,
+        159.4610366821289
+      ],
+      "size_blender": [
+        56.12662887573242,
+        53.90757179260254,
+        26.882247924804688
+      ],
+      "center_roblox": [
+        89.71746253967285,
+        159.4610366821289,
+        -6.815333366394043
+      ],
+      "size_roblox": [
+        56.12662887573242,
+        26.882247924804688,
+        53.90757179260254
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_01_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        72.55943298339844,
+        -6.392731666564941,
+        148.2887725830078
+      ],
+      "bounds_max_blender": [
+        103.5809555053711,
+        23.28301239013672,
+        158.0058135986328
+      ],
+      "center_blender": [
+        88.07019424438477,
+        8.445140361785889,
+        153.1472930908203
+      ],
+      "size_blender": [
+        31.021522521972656,
+        29.67574405670166,
+        9.717041015625
+      ],
+      "center_roblox": [
+        88.07019424438477,
+        153.1472930908203,
+        -8.445140361785889
+      ],
+      "size_roblox": [
+        31.021522521972656,
+        9.717041015625,
+        29.67574405670166
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_02",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -105.67598724365234,
+        -17.913042068481445,
+        240.5376739501953
+      ],
+      "bounds_max_blender": [
+        -54.51029968261719,
+        32.77766799926758,
+        266.07745361328125
+      ],
+      "center_blender": [
+        -80.09314346313477,
+        7.432312965393066,
+        253.30756378173828
+      ],
+      "size_blender": [
+        51.165687561035156,
+        50.69071006774902,
+        25.539779663085938
+      ],
+      "center_roblox": [
+        -80.09314346313477,
+        253.30756378173828,
+        -7.432312965393066
+      ],
+      "size_roblox": [
+        51.165687561035156,
+        25.539779663085938,
+        50.69071006774902
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_02_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -94.87261199951172,
+        -5.902376651763916,
+        242.7225341796875
+      ],
+      "bounds_max_blender": [
+        -64.99224090576172,
+        22.683073043823242,
+        252.0796661376953
+      ],
+      "center_blender": [
+        -79.93242645263672,
+        8.390348196029663,
+        247.4011001586914
+      ],
+      "size_blender": [
+        29.88037109375,
+        28.585449695587158,
+        9.357131958007812
+      ],
+      "center_roblox": [
+        -79.93242645263672,
+        247.4011001586914,
+        -8.390348196029663
+      ],
+      "size_roblox": [
+        29.88037109375,
+        9.357131958007812,
+        28.585449695587158
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_03",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -153.588623046875,
+        -29.216310501098633,
+        295.43096923828125
+      ],
+      "bounds_max_blender": [
+        -91.62805938720703,
+        30.72636604309082,
+        327.5181884765625
+      ],
+      "center_blender": [
+        -122.60834121704102,
+        0.7550277709960938,
+        311.4745788574219
+      ],
+      "size_blender": [
+        61.96056365966797,
+        59.94267654418945,
+        32.08721923828125
+      ],
+      "center_roblox": [
+        -122.60834121704102,
+        311.4745788574219,
+        -0.7550277709960938
+      ],
+      "size_roblox": [
+        61.96056365966797,
+        32.08721923828125,
+        59.94267654418945
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_03_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -141.2803192138672,
+        -16.84450340270996,
+        298.12005615234375
+      ],
+      "bounds_max_blender": [
+        -104.55303192138672,
+        18.282711029052734,
+        309.6365051269531
+      ],
+      "center_blender": [
+        -122.91667556762695,
+        0.7191038131713867,
+        303.87828063964844
+      ],
+      "size_blender": [
+        36.72728729248047,
+        35.127214431762695,
+        11.516448974609375
+      ],
+      "center_roblox": [
+        -122.91667556762695,
+        303.87828063964844,
+        -0.7191038131713867
+      ],
+      "size_roblox": [
+        36.72728729248047,
+        11.516448974609375,
+        35.127214431762695
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_04",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -107.9672622680664,
+        -12.6012601852417,
+        277.0198669433594
+      ],
+      "bounds_max_blender": [
+        -55.03490447998047,
+        40.76911926269531,
+        304.4906921386719
+      ],
+      "center_blender": [
+        -81.50108337402344,
+        14.083929538726807,
+        290.7552795410156
+      ],
+      "size_blender": [
+        52.93235778808594,
+        53.37037944793701,
+        27.4708251953125
+      ],
+      "center_roblox": [
+        -81.50108337402344,
+        290.7552795410156,
+        -14.083929538726807
+      ],
+      "size_roblox": [
+        52.93235778808594,
+        27.4708251953125,
+        53.37037944793701
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_04_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -97.44056701660156,
+        0.6072677373886108,
+        279.2887878417969
+      ],
+      "bounds_max_blender": [
+        -66.4190444946289,
+        30.28301429748535,
+        289.00579833984375
+      ],
+      "center_blender": [
+        -81.92980575561523,
+        15.445141017436981,
+        284.1472930908203
+      ],
+      "size_blender": [
+        31.021522521972656,
+        29.67574656009674,
+        9.717010498046875
+      ],
+      "center_roblox": [
+        -81.92980575561523,
+        284.1472930908203,
+        -15.445141017436981
+      ],
+      "size_roblox": [
+        31.021522521972656,
+        9.717010498046875,
+        29.67574656009674
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_05",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        83.00544738769531,
+        -25.268356323242188,
+        326.9132385253906
+      ],
+      "bounds_max_blender": [
+        148.97653198242188,
+        41.40364074707031,
+        360.21295166015625
+      ],
+      "center_blender": [
+        115.9909896850586,
+        8.067642211914062,
+        343.56309509277344
+      ],
+      "size_blender": [
+        65.97108459472656,
+        66.6719970703125,
+        33.299713134765625
+      ],
+      "center_roblox": [
+        115.9909896850586,
+        343.56309509277344,
+        -8.067642211914062
+      ],
+      "size_roblox": [
+        65.97108459472656,
+        33.299713134765625,
+        66.6719970703125
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_05_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        97.15172576904297,
+        -9.334861755371094,
+        329.6862487792969
+      ],
+      "bounds_max_blender": [
+        135.02017211914062,
+        26.882654190063477,
+        341.56268310546875
+      ],
+      "center_blender": [
+        116.0859489440918,
+        8.773896217346191,
+        335.6244659423828
+      ],
+      "size_blender": [
+        37.868446350097656,
+        36.21751594543457,
+        11.876434326171875
+      ],
+      "center_roblox": [
+        116.0859489440918,
+        335.6244659423828,
+        -8.773896217346191
+      ],
+      "size_roblox": [
+        37.868446350097656,
+        11.876434326171875,
+        36.21751594543457
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_06",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        55.69683074951172,
+        -7.23537540435791,
+        308.0198669433594
+      ],
+      "bounds_max_blender": [
+        111.12045288085938,
+        47.76911926269531,
+        335.58819580078125
+      ],
+      "center_blender": [
+        83.40864181518555,
+        20.2668719291687,
+        321.8040313720703
+      ],
+      "size_blender": [
+        55.423622131347656,
+        55.00449466705322,
+        27.568328857421875
+      ],
+      "center_roblox": [
+        83.40864181518555,
+        321.8040313720703,
+        -20.2668719291687
+      ],
+      "size_roblox": [
+        55.423622131347656,
+        27.568328857421875,
+        55.00449466705322
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_06_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        68.55943298339844,
+        7.6072678565979,
+        310.2887878417969
+      ],
+      "bounds_max_blender": [
+        99.5809555053711,
+        37.283016204833984,
+        320.00579833984375
+      ],
+      "center_blender": [
+        84.07019424438477,
+        22.445142030715942,
+        315.1472930908203
+      ],
+      "size_blender": [
+        31.021522521972656,
+        29.675748348236084,
+        9.717010498046875
+      ],
+      "center_roblox": [
+        84.07019424438477,
+        315.1472930908203,
+        -22.445142030715942
+      ],
+      "size_roblox": [
+        31.021522521972656,
+        9.717010498046875,
+        29.675748348236084
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_07",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -64.537109375,
+        -11.433491706848145,
+        334.466552734375
+      ],
+      "bounds_max_blender": [
+        -3.5888044834136963,
+        47.21703338623047,
+        364.311279296875
+      ],
+      "center_blender": [
+        -34.06295692920685,
+        17.891770839691162,
+        349.388916015625
+      ],
+      "size_blender": [
+        60.948304891586304,
+        58.65052509307861,
+        29.8447265625
+      ],
+      "center_roblox": [
+        -34.06295692920685,
+        349.388916015625,
+        -17.891770839691162
+      ],
+      "size_roblox": [
+        60.948304891586304,
+        29.8447265625,
+        58.65052509307861
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_07_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -50.14441680908203,
+        2.136202573776245,
+        336.9875183105469
+      ],
+      "bounds_max_blender": [
+        -15.69943618774414,
+        35.08283233642578,
+        347.78424072265625
+      ],
+      "center_blender": [
+        -32.921926498413086,
+        18.609517455101013,
+        342.38587951660156
+      ],
+      "size_blender": [
+        34.44498062133789,
+        32.946629762649536,
+        10.796722412109375
+      ],
+      "center_roblox": [
+        -32.921926498413086,
+        342.38587951660156,
+        -18.609517455101013
+      ],
+      "size_roblox": [
+        34.44498062133789,
+        10.796722412109375,
+        32.946629762649536
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_08",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        3.010143756866455,
+        -11.335770606994629,
+        361.50213623046875
+      ],
+      "bounds_max_blender": [
+        58.6677131652832,
+        44.76057052612305,
+        389.5918273925781
+      ],
+      "center_blender": [
+        30.83892846107483,
+        16.71239995956421,
+        375.54698181152344
+      ],
+      "size_blender": [
+        55.65756940841675,
+        56.096341133117676,
+        28.089691162109375
+      ],
+      "center_roblox": [
+        30.83892846107483,
+        375.54698181152344,
+        -16.71239995956421
+      ],
+      "size_roblox": [
+        55.65756940841675,
+        28.089691162109375,
+        56.096341133117676
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_08_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        14.991484642028809,
+        3.1169118881225586,
+        363.8550109863281
+      ],
+      "bounds_max_blender": [
+        47.15415954589844,
+        33.882957458496094,
+        373.9319763183594
+      ],
+      "center_blender": [
+        31.072822093963623,
+        18.499934673309326,
+        368.89349365234375
+      ],
+      "size_blender": [
+        32.16267490386963,
+        30.766045570373535,
+        10.07696533203125
+      ],
+      "center_roblox": [
+        31.072822093963623,
+        368.89349365234375,
+        -18.499934673309326
+      ],
+      "size_roblox": [
+        32.16267490386963,
+        10.07696533203125,
+        30.766045570373535
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_09",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -52.642093658447266,
+        -26.820558547973633,
+        374.466552734375
+      ],
+      "bounds_max_blender": [
+        4.411195278167725,
+        34.35722732543945,
+        405.0057373046875
+      ],
+      "center_blender": [
+        -24.11544919013977,
+        3.76833438873291,
+        389.73614501953125
+      ],
+      "size_blender": [
+        57.05328893661499,
+        61.177785873413086,
+        30.5391845703125
+      ],
+      "center_roblox": [
+        -24.11544919013977,
+        389.73614501953125,
+        -3.76833438873291
+      ],
+      "size_roblox": [
+        57.05328893661499,
+        30.5391845703125,
+        61.177785873413086
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_09_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -42.14441680908203,
+        -11.863797187805176,
+        376.9875183105469
+      ],
+      "bounds_max_blender": [
+        -7.699436187744141,
+        21.082834243774414,
+        387.78424072265625
+      ],
+      "center_blender": [
+        -24.921926498413086,
+        4.609518527984619,
+        382.38587951660156
+      ],
+      "size_blender": [
+        34.44498062133789,
+        32.94663143157959,
+        10.796722412109375
+      ],
+      "center_roblox": [
+        -24.921926498413086,
+        382.38587951660156,
+        -4.609518527984619
+      ],
+      "size_roblox": [
+        34.44498062133789,
+        10.796722412109375,
+        32.94663143157959
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_10",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        47.94477462768555,
+        0.10967313498258591,
+        362.9843444824219
+      ],
+      "bounds_max_blender": [
+        103.43082427978516,
+        56.34090805053711,
+        391.4255065917969
+      ],
+      "center_blender": [
+        75.68779945373535,
+        28.225290592759848,
+        377.2049255371094
+      ],
+      "size_blender": [
+        55.48604965209961,
+        56.23123491555452,
+        28.441162109375
+      ],
+      "center_roblox": [
+        75.68779945373535,
+        377.2049255371094,
+        -28.225290592759848
+      ],
+      "size_roblox": [
+        55.48604965209961,
+        28.441162109375,
+        56.23123491555452
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_10_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        58.42353057861328,
+        12.626557350158691,
+        365.4212646484375
+      ],
+      "bounds_max_blender": [
+        91.72736358642578,
+        44.48289489746094,
+        375.85809326171875
+      ],
+      "center_blender": [
+        75.07544708251953,
+        28.554726123809814,
+        370.6396789550781
+      ],
+      "size_blender": [
+        33.3038330078125,
+        31.856337547302246,
+        10.43682861328125
+      ],
+      "center_roblox": [
+        75.07544708251953,
+        370.6396789550781,
+        -28.554726123809814
+      ],
+      "size_roblox": [
+        33.3038330078125,
+        10.43682861328125,
+        31.856337547302246
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_11",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -33.52783203125,
+        -4.977564811706543,
+        361.5732727050781
+      ],
+      "bounds_max_blender": [
+        15.785937309265137,
+        41.924232482910156,
+        385.0478210449219
+      ],
+      "center_blender": [
+        -8.870947360992432,
+        18.473333835601807,
+        373.310546875
+      ],
+      "size_blender": [
+        49.31376934051514,
+        46.9017972946167,
+        23.47454833984375
+      ],
+      "center_roblox": [
+        -8.870947360992432,
+        373.310546875,
+        -18.473333835601807
+      ],
+      "size_roblox": [
+        49.31376934051514,
+        23.47454833984375,
+        46.9017972946167
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_Crown_11_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -22.736709594726562,
+        6.07833194732666,
+        363.59002685546875
+      ],
+      "bounds_max_blender": [
+        4.861353874206543,
+        32.48319625854492,
+        372.2273864746094
+      ],
+      "center_blender": [
+        -8.93767786026001,
+        19.28076410293579,
+        367.90870666503906
+      ],
+      "size_blender": [
+        27.598063468933105,
+        26.40486431121826,
+        8.637359619140625
+      ],
+      "center_roblox": [
+        -8.93767786026001,
+        367.90870666503906,
+        -19.28076410293579
+      ],
+      "size_roblox": [
+        27.598063468933105,
+        8.637359619140625,
+        26.40486431121826
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_NearLeafSpray_00",
+      "package": "foliage",
+      "vertices": 1152,
+      "triangles": 2176,
+      "bounds_min_blender": [
+        -102.08808135986328,
+        -10.61280632019043,
+        255.32249450683594
+      ],
+      "bounds_max_blender": [
+        -89.13739013671875,
+        1.980378270149231,
+        262.324951171875
+      ],
+      "center_blender": [
+        -95.61273574829102,
+        -4.316214025020599,
+        258.82372283935547
+      ],
+      "size_blender": [
+        12.950691223144531,
+        12.59318459033966,
+        7.0024566650390625
+      ],
+      "center_roblox": [
+        -95.61273574829102,
+        258.82372283935547,
+        4.316214025020599
+      ],
+      "size_roblox": [
+        12.950691223144531,
+        7.0024566650390625,
+        12.59318459033966
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_NearLeafSpray_00_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -100.08152770996094,
+        -7.585628986358643,
+        255.96377563476562
+      ],
+      "bounds_max_blender": [
+        -91.88308715820312,
+        0.2842056453227997,
+        258.518310546875
+      ],
+      "center_blender": [
+        -95.98230743408203,
+        -3.6507116705179214,
+        257.2410430908203
+      ],
+      "size_blender": [
+        8.198440551757812,
+        7.869834631681442,
+        2.554534912109375
+      ],
+      "center_roblox": [
+        -95.98230743408203,
+        257.2410430908203,
+        3.6507116705179214
+      ],
+      "size_roblox": [
+        8.198440551757812,
+        2.554534912109375,
+        7.869834631681442
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_NearLeafSpray_01",
+      "package": "foliage",
+      "vertices": 1152,
+      "triangles": 2176,
+      "bounds_min_blender": [
+        -82.68831634521484,
+        -6.7675604820251465,
+        256.3224792480469
+      ],
+      "bounds_max_blender": [
+        -70.13739013671875,
+        6.58353853225708,
+        263.0759582519531
+      ],
+      "center_blender": [
+        -76.4128532409668,
+        -0.0920109748840332,
+        259.69921875
+      ],
+      "size_blender": [
+        12.550926208496094,
+        13.351099014282227,
+        6.75347900390625
+      ],
+      "center_roblox": [
+        -76.4128532409668,
+        259.69921875,
+        0.0920109748840332
+      ],
+      "size_roblox": [
+        12.550926208496094,
+        6.75347900390625,
+        13.351099014282227
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_NearLeafSpray_01_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -81.08152770996094,
+        -3.5856289863586426,
+        256.9637756347656
+      ],
+      "bounds_max_blender": [
+        -72.88308715820312,
+        4.284205436706543,
+        259.518310546875
+      ],
+      "center_blender": [
+        -76.98230743408203,
+        0.3492882251739502,
+        258.2410430908203
+      ],
+      "size_blender": [
+        8.198440551757812,
+        7.8698344230651855,
+        2.554534912109375
+      ],
+      "center_roblox": [
+        -76.98230743408203,
+        258.2410430908203,
+        -0.3492882251739502
+      ],
+      "size_roblox": [
+        8.198440551757812,
+        2.554534912109375,
+        7.8698344230651855
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_NearLeafSpray_02",
+      "package": "foliage",
+      "vertices": 1152,
+      "triangles": 2176,
+      "bounds_min_blender": [
+        -54.708839416503906,
+        -31.502178192138672,
+        26.297500610351562
+      ],
+      "bounds_max_blender": [
+        -38.17664337158203,
+        -14.663968086242676,
+        35.29345703125
+      ],
+      "center_blender": [
+        -46.44274139404297,
+        -23.083073139190674,
+        30.79547882080078
+      ],
+      "size_blender": [
+        16.532196044921875,
+        16.838210105895996,
+        8.995956420898438
+      ],
+      "center_roblox": [
+        -46.44274139404297,
+        30.79547882080078,
+        23.083073139190674
+      ],
+      "size_roblox": [
+        16.532196044921875,
+        8.995956420898438,
+        16.838210105895996
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_NearLeafSpray_02_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -52.217437744140625,
+        -27.566343307495117,
+        27.09625816345215
+      ],
+      "bounds_max_blender": [
+        -41.73667526245117,
+        -17.515901565551758,
+        30.358118057250977
+      ],
+      "center_blender": [
+        -46.9770565032959,
+        -22.541122436523438,
+        28.727188110351562
+      ],
+      "size_blender": [
+        10.480762481689453,
+        10.05044174194336,
+        3.261859893798828
+      ],
+      "center_roblox": [
+        -46.9770565032959,
+        28.727188110351562,
+        22.541122436523438
+      ],
+      "size_roblox": [
+        10.480762481689453,
+        3.261859893798828,
+        10.05044174194336
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_NearLeafSpray_03",
+      "package": "foliage",
+      "vertices": 1152,
+      "triangles": 2176,
+      "bounds_min_blender": [
+        39.22664260864258,
+        -28.502178192138672,
+        19.297500610351562
+      ],
+      "bounds_max_blender": [
+        56.186073303222656,
+        -12.547440528869629,
+        28.429460525512695
+      ],
+      "center_blender": [
+        47.70635795593262,
+        -20.52480936050415,
+        23.86348056793213
+      ],
+      "size_blender": [
+        16.959430694580078,
+        15.954737663269043,
+        9.131959915161133
+      ],
+      "center_roblox": [
+        47.70635795593262,
+        23.86348056793213,
+        20.52480936050415
+      ],
+      "size_roblox": [
+        16.959430694580078,
+        9.131959915161133,
+        15.954737663269043
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_NearLeafSpray_03_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        41.782562255859375,
+        -24.566343307495117,
+        20.09625816345215
+      ],
+      "bounds_max_blender": [
+        52.26332473754883,
+        -14.515902519226074,
+        23.358118057250977
+      ],
+      "center_blender": [
+        47.0229434967041,
+        -19.541122913360596,
+        21.727188110351562
+      ],
+      "size_blender": [
+        10.480762481689453,
+        10.050440788269043,
+        3.261859893798828
+      ],
+      "center_roblox": [
+        47.0229434967041,
+        21.727188110351562,
+        19.541122913360596
+      ],
+      "size_roblox": [
+        10.480762481689453,
+        3.261859893798828,
+        10.050440788269043
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_cathedral_fan_WesternFlower",
+      "package": "flowers",
+      "vertices": 936,
+      "triangles": 1740,
+      "bounds_min_blender": [
+        -110.27967071533203,
+        -30.831510543823242,
+        259.79998779296875
+      ],
+      "bounds_max_blender": [
+        -73.0,
+        6.831512451171875,
+        268.7876892089844
+      ],
+      "center_blender": [
+        -91.63983535766602,
+        -11.999999046325684,
+        264.29383850097656
+      ],
+      "size_blender": [
+        37.27967071533203,
+        37.66302299499512,
+        8.987701416015625
+      ],
+      "center_roblox": [
+        -91.63983535766602,
+        264.29383850097656,
+        11.999999046325684
+      ],
+      "size_roblox": [
+        37.27967071533203,
+        8.987701416015625,
+        37.66302299499512
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    }
+  ],
+  "editable_growth_sources": [],
+  "wood_fusion": {
+    "enabled": false,
+    "voxel_size": 2.2,
+    "triangle_ceiling": 150000
+  },
+  "triangles": 88952,
+  "packages": {},
+  "colour_texture": "heartwood-colour.png",
+  "roughness_texture": "heartwood-roughness.png",
+  "palette": [
+    {
+      "tile": 0,
+      "name": "cedar",
+      "rgb": [
+        145,
+        86,
+        48
+      ],
+      "roughness": 0.91
+    },
+    {
+      "tile": 1,
+      "name": "sienna_shadow",
+      "rgb": [
+        103,
+        61,
+        39
+      ],
+      "roughness": 0.94
+    },
+    {
+      "tile": 2,
+      "name": "amber_wood",
+      "rgb": [
+        181,
+        113,
+        59
+      ],
+      "roughness": 0.89
+    },
+    {
+      "tile": 3,
+      "name": "olive_leaf",
+      "rgb": [
+        79,
+        108,
+        43
+      ],
+      "roughness": 0.94
+    },
+    {
+      "tile": 4,
+      "name": "moss_leaf",
+      "rgb": [
+        48,
+        86,
+        46
+      ],
+      "roughness": 0.96
+    },
+    {
+      "tile": 5,
+      "name": "young_leaf",
+      "rgb": [
+        126,
+        153,
+        61
+      ],
+      "roughness": 0.91
+    },
+    {
+      "tile": 6,
+      "name": "peach_petal",
+      "rgb": [
+        243,
+        172,
+        119
+      ],
+      "roughness": 0.88
+    },
+    {
+      "tile": 7,
+      "name": "gold_petal",
+      "rgb": [
+        255,
+        218,
+        143
+      ],
+      "roughness": 0.86
+    },
+    {
+      "tile": 8,
+      "name": "pollen",
+      "rgb": [
+        220,
+        150,
+        45
+      ],
+      "roughness": 0.89
+    },
+    {
+      "tile": 9,
+      "name": "wood_edge",
+      "rgb": [
+        204,
+        149,
+        87
+      ],
+      "roughness": 0.92
+    },
+    {
+      "tile": 10,
+      "name": "fern",
+      "rgb": [
+        74,
+        121,
+        57
+      ],
+      "roughness": 0.95
+    },
+    {
+      "tile": 11,
+      "name": "leaf_shadow",
+      "rgb": [
+        33,
+        62,
+        37
+      ],
+      "roughness": 0.97
+    },
+    {
+      "tile": 12,
+      "name": "petal_tip",
+      "rgb": [
+        255,
+        236,
+        182
+      ],
+      "roughness": 0.88
+    },
+    {
+      "tile": 13,
+      "name": "scale_avatar_blue",
+      "rgb": [
+        40,
+        106,
+        166
+      ],
+      "roughness": 0.93
+    },
+    {
+      "tile": 14,
+      "name": "scale_avatar_head",
+      "rgb": [
+        240,
+        184,
+        62
+      ],
+      "roughness": 0.93
+    },
+    {
+      "tile": 15,
+      "name": "study_ground",
+      "rgb": [
+        107,
+        105,
+        83
+      ],
+      "roughness": 0.97
+    }
+  ],
+  "preview_only": "Ground, lighting, cameras and six-stud mannequin are excluded from all FBX packages.",
+  "evidence_limits": [
+    "A saved Blender render is not imported Roblox material proof.",
+    "Closed meshes do not establish route collision, camera clearance or human playability.",
+    "No device, 20-player, performance, route or owner acceptance claim is made."
+  ]
+}

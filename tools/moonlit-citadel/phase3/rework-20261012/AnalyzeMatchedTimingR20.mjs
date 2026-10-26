@@ -1,0 +1,18 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { fileURLToPath } from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../../../..');
+const dir=path.join(root,'docs/artifacts/moonlit-citadel/phase3/rework-20261012');
+const hash='0c9d6772c1e73659bb52937d94dbf95a1ae9f0a72e80ba8c2301b1b43f3bf33e';
+const normalFile='rw10_normal_full_r20.json',expertFile='rw10_expert_full_r20.json';
+const rawN=await fs.readFile(path.join(dir,normalFile),'utf8'),rawE=await fs.readFile(path.join(dir,expertFile),'utf8');
+const normal=JSON.parse(rawN),expert=JSON.parse(rawE);
+for (const run of [normal,expert]) if (!run.complete || run.state!=='Complete' || run.sourceHash!==hash || run.final.falls!==0 || run.deaths!==0) throw Error('Full run guard failed');
+const boundaries=[['Stone-Arch Climb','CP01Terrace','SharedArches.CP01Terrace',[3856,2488],'ArchMerge','ArchNormal.ArchMerge',[3878,2644]],['Lantern Pendulums','CP02Terrace','Gallery.CP02Terrace',[3920,2628],'GalleryExit','MachineryApproach.GalleryExit',[4112,2628]],['Upper approach before boarding','CP04Terrace','Lifts.CP04Terrace',[4112,2514],'UpperRearBoarding','Lifts.UpperRearBoarding',[4112,2438]],['Counterweight Ascent including the required ride','CP04Terrace','Lifts.CP04Terrace',[4112,2514],'SharedUpperExit','Lifts.SharedUpperExit',[4112,2438]]];
+function endpoint(run,name,part,goal){const rows=run.steps.filter(s=>s.name===name&&s.expected==='Workspace.RaceCourse.Obstacles.'+part+'.Contact'&&s.actualExpectedSupport===true&&Math.hypot(s.position[0]-goal[0],s.position[2]-goal[1])<.25);if(!rows.length)throw Error('Endpoint not present '+name);return rows[0];}
+const branches=boundaries.map(([name,from,fromPart,fromGoal,to,toPart,toGoal])=>{let ns=endpoint(normal,from,fromPart,fromGoal),ne=endpoint(normal,to,toPart,toGoal),es=endpoint(expert,from,fromPart,fromGoal),ee=endpoint(expert,to,toPart,toGoal),n=ne.elapsed-ns.elapsed,e=ee.elapsed-es.elapsed;return {name,fork:fromPart,rejoin:toPart,normalSeconds:n,expertSeconds:e,expertSavingSeconds:n-e,expertSavingPercent:100*(n-e)/n,waits: name==='Lantern Pendulums'?{normalSwingWaitSeconds:normal.timing.lanternWait,expertSwingWaitSeconds:expert.timing.lanternWait,normalExcludingSwingWaitSeconds:n-normal.timing.lanternWait,expertExcludingSwingWaitSeconds:e-expert.timing.lanternWait}:undefined,endpoints:{normalStart:ns,normalEnd:ne,expertStart:es,expertEnd:ee}};});
+const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
+const report={sourceRevision:30,buildRevision:24,sourceHash:hash,directedClockOnly:true,humanPacingProof:false,sharedEndpointToleranceStuds:.25,branchComparisons:branches,full:{normalSeconds:normal.elapsed,expertSeconds:expert.elapsed,normalReleaseToFinishSeconds:normal.timing.releaseToFinish,expertReleaseToFinishSeconds:expert.timing.releaseToFinish,expertSavingSeconds:normal.elapsed-expert.elapsed,expertSavingPercent:100*(normal.elapsed-expert.elapsed)/normal.elapsed,normalTiming:normal.timing,expertTiming:expert.timing},rawInputs:[{file:normalFile,sha256:sha(rawN),raceId:normal.raceId},{file:expertFile,sha256:sha(rawE),raceId:expert.raceId}],limitations:['One successful directed full run per branch set; no human timing validation.','Equal physical fork and rejoin positions, but live mechanisms were not phase synchronized.','The full-run lift waits may differ; the full time saving is not a phase matched reward measurement.','Counterweight includes the compulsory upper lift ride on both routes.','Normal 4-6 minute and practiced Expert 2-3 minute human goals remain unvalidated.']};
+await fs.writeFile(path.join(dir,'rw10_matched_timing_r20.json'),JSON.stringify(report,null,2),{flag:'w'});
+export default report;

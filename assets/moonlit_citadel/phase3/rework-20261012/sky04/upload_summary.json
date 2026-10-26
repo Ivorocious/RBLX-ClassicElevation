@@ -1,0 +1,32 @@
+[
+  {
+    "property": "SkyboxBk",
+    "state": "complete",
+    "assetId": "119591637361429"
+  },
+  {
+    "property": "SkyboxDn",
+    "state": "complete",
+    "assetId": "81233894808962"
+  },
+  {
+    "property": "SkyboxFt",
+    "state": "complete",
+    "assetId": "136920684348219"
+  },
+  {
+    "property": "SkyboxLf",
+    "state": "complete",
+    "assetId": "99622089516191"
+  },
+  {
+    "property": "SkyboxRt",
+    "state": "complete",
+    "assetId": "95853984087799"
+  },
+  {
+    "property": "SkyboxUp",
+    "state": "complete",
+    "assetId": "126102685877031"
+  }
+]

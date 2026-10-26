@@ -1,0 +1,154 @@
+{
+  "pass": true,
+  "candidate": "MC_P3_DETAIL_DT01_R01",
+  "assets": 8,
+  "meshParts": 26,
+  "triangles": 9574,
+  "materialPartsClosedManifoldOutward": true,
+  "source52Preserved": true,
+  "source52Inspection": {
+    "source": "tools\\moonlit-citadel\\phase3\\closeout-20261014\\drafts\\keep-surface52\\render01\\MC_KEEP_SURFACE52_CANDIDATE.blend",
+    "sha256": "d2bc244216110d37b14f44ea6ed053b44302a3b2a39a98d943ee4ef56849c175",
+    "objects": 1378,
+    "meshes": 1356,
+    "protectedVisibleMeshes": 717,
+    "worldMeshes": 639,
+    "keepRelief": [
+      1.0,
+      1.0,
+      1.04
+    ],
+    "readOnlyInspection": true
+  },
+  "studioTouched": false,
+  "liveBlenderTouched": false,
+  "uploaded": false,
+  "previews": [
+    {
+      "file": "01-kit-overview.png",
+      "sha256": "45ec937cd185ee494dd2e58d09c25a127253b79c5332e3e7064b5dbf5df50a42",
+      "bytes": 1573979,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "camera": [
+        34,
+        -55,
+        33
+      ],
+      "target": [
+        1,
+        0,
+        5
+      ],
+      "orthographicScale": 61,
+      "originalBlenderRender": true
+    },
+    {
+      "file": "02-facade-and-heraldry.png",
+      "sha256": "f071e0e33826ef12cca2b36b0eaf7c1695cb2afc022892c7cbaf093b6592e28b",
+      "bytes": 1523440,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "camera": [
+        -4,
+        -35,
+        18
+      ],
+      "target": [
+        -4,
+        5,
+        6.2
+      ],
+      "orthographicScale": 37,
+      "originalBlenderRender": true
+    },
+    {
+      "file": "03-roofs-and-yard.png",
+      "sha256": "fe55ec9e3d9c1cd02497aa6727aa3fc0ec4404ea4a051190522e95bae82a1235",
+      "bytes": 1630291,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "camera": [
+        35,
+        -42,
+        26
+      ],
+      "target": [
+        3,
+        -8,
+        2.7
+      ],
+      "orthographicScale": 48,
+      "originalBlenderRender": true
+    }
+  ],
+  "inputHashes": {
+    "tools/moonlit-citadel/phase3/detail-pass-20261014/drafts/assets/r01/BuildDetailKit.py": "869c719edcc5588f0f1a1e473f4597ddcdd328de5d64d48df8488593f43637e1",
+    "tools/moonlit-citadel/phase3/detail-pass-20261014/drafts/assets/r01/DetailRecipes.py": "4e6c16734aa7f13b92809bcea6a9f1c3af7aca677c59ca6c7951aff5ee9e50d1",
+    "assets/moonlit_citadel/bl02/architecture.py": "45518e507c45a3c461de249992b8195ce1e7301339df1cf59b1edbfeb7cf8296",
+    "assets/moonlit_citadel/phase3/drafts/world_kit.py": "7d4926c2cee83e4a6831b8400ac939dab187152f131e554799f93e9201822b58",
+    "tools/moonlit-citadel/phase3/closeout-20261014/drafts/keep-surface52/render01/MC_KEEP_SURFACE52_CANDIDATE.blend": "d2bc244216110d37b14f44ea6ed053b44302a3b2a39a98d943ee4ef56849c175",
+    "docs/artifacts/moonlit-citadel/phase3/closeout-20261014/combined-plan52.json": "3b0e592a6695e70a881d30daaa7bfb27915a60bec6acce75e685358b7a7266c2",
+    "docs/artifacts/moonlit-citadel/phase3/closeout-20261014/before/closeout_source52_packet.json": "80978718783aa23b70cd08d4edb240674ae3e53da827ab396f90ce5d67043617",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/01-kit-overview.png": "3cf0d6e8d2ddee7858214a4f4b0be4f4c59931c6e00b586df4887cd7f889cc43",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/02-facade-and-heraldry.png": "472802c36d75218dd18ecbe9fa92105fef47c197d194f259fde08415e296627d",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/03-roofs-and-yard.png": "54b42a6470cd0ccc3f2ea285269c2cae2fc5491cb7a32e53ac57dc71f1e373fe",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/authored-geometry.json": "4c6e3d73a3b5858f0eca12aa02ad214c01ca581888462841050f61b728176a97",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/build-receipt.json": "beee63ac3b0294080997557249d602166ff18f1d786506d60473538d4a5ffd42",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/DetailGeometry.luau": "bcdb9e91d902cbb1b870c9d85ec47595535e61573b68e0fb97afea615d81dc03",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/manifest.json": "506bc3d61952d0c892637c441c21072c49ab639b96b64448580b44bf0f9bde87",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/MC_DETAIL_KIT_DT01.blend": "79a64baa2125ddb91d09743c48deb1f953585fbaa45d2fb9318bcf4d19443528",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/MC_DETAIL_KIT_DT01.fbx": "155cdd1029d2292f4eff7c5d778dae44f235933b5c62a02eeae822028cbeb687",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/occupied-geometry.json": "3c9e001d1037a28a9da09cc5284313b7c81d60bbbfec714a56b64c6764a2826f",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/source52-inspection.json": "e6793ed37604847700f4c527d5ff726a604d8c10760f01364afcfa1ca6c8073b",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/upload_receipt.json": "b840dfa574a9d1e7db636549b3ba93ccc91f9085dad499e439f5bc7d3d9190b9"
+  },
+  "files": {
+    "01-kit-overview.png": {
+      "bytes": 1573979,
+      "sha256": "45ec937cd185ee494dd2e58d09c25a127253b79c5332e3e7064b5dbf5df50a42"
+    },
+    "02-facade-and-heraldry.png": {
+      "bytes": 1523440,
+      "sha256": "f071e0e33826ef12cca2b36b0eaf7c1695cb2afc022892c7cbaf093b6592e28b"
+    },
+    "03-roofs-and-yard.png": {
+      "bytes": 1630291,
+      "sha256": "fe55ec9e3d9c1cd02497aa6727aa3fc0ec4404ea4a051190522e95bae82a1235"
+    },
+    "authored-geometry.json": {
+      "bytes": 432490,
+      "sha256": "c2a083765fd943c3e2167ed718495a9cd04467c850012f43043889cf3b00dc16"
+    },
+    "DetailGeometry.luau": {
+      "bytes": 26254,
+      "sha256": "2fd077a353edd7b7c14f541899852691833140527af463d84ddd9dee955c2b08"
+    },
+    "manifest.json": {
+      "bytes": 108524,
+      "sha256": "f0da2fbcf1aed1c5651755086e443487ad39ca4c983b4f5ca650cceb1ef68eaa"
+    },
+    "MC_DETAIL_KIT_DT01.blend": {
+      "bytes": 382143,
+      "sha256": "cc6f87375bfd4bfc2a1a35d661b7e402309e05f47133a0f4636ddf8909de6f57"
+    },
+    "MC_DETAIL_KIT_DT01.fbx": {
+      "bytes": 295500,
+      "sha256": "3db9fb9b88ecec399761ee9d2ac679cd5ffb8d44b03b31019195877a6e0f78ba"
+    },
+    "occupied-geometry.json": {
+      "bytes": 146914,
+      "sha256": "1a9cab973b2db4d8b1877d06d1fca5f7c600b9ba2061838a6530ca531f90b5b1"
+    },
+    "source52-inspection.json": {
+      "bytes": 403,
+      "sha256": "e6793ed37604847700f4c527d5ff726a604d8c10760f01364afcfa1ca6c8073b"
+    }
+  }
+}

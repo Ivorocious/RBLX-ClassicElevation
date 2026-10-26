@@ -1,0 +1,277 @@
+{
+  "revision": "V1",
+  "units": "studs",
+  "axes": "X right, Y depth, Z up",
+  "pitch": 1,
+  "width": 0.65,
+  "height": 0.12,
+  "colors": {
+    "Green": [
+      94,
+      157,
+      76
+    ],
+    "Gold": [
+      231,
+      186,
+      71
+    ],
+    "Blue": [
+      79,
+      140,
+      193
+    ],
+    "Coral": [
+      192,
+      97,
+      76
+    ],
+    "Purple": [
+      150,
+      116,
+      181
+    ],
+    "Gray": [
+      178,
+      185,
+      192
+    ]
+  },
+  "meshes": {
+    "Floor": {
+      "triangles": 1164,
+      "studs": 64,
+      "material": "Green",
+      "location": [
+        -11,
+        -7,
+        0
+      ],
+      "colliders": [
+        {
+          "shape": "Block",
+          "center": [
+            0,
+            0,
+            0.5
+          ],
+          "size": [
+            8,
+            8,
+            1
+          ]
+        }
+      ]
+    },
+    "Wall": {
+      "triangles": 876,
+      "studs": 48,
+      "material": "Gold",
+      "location": [
+        0,
+        7,
+        0
+      ],
+      "colliders": [
+        {
+          "shape": "Block",
+          "center": [
+            0,
+            0,
+            3
+          ],
+          "size": [
+            8,
+            1,
+            6
+          ]
+        }
+      ]
+    },
+    "Wedge": {
+      "triangles": 1160,
+      "studs": 64,
+      "material": "Blue",
+      "location": [
+        0,
+        -7,
+        0
+      ],
+      "colliders": [
+        {
+          "shape": "Wedge",
+          "center": [
+            0,
+            0,
+            2
+          ],
+          "size": [
+            8,
+            8,
+            4
+          ]
+        }
+      ]
+    },
+    "Stair": {
+      "triangles": 1200,
+      "studs": 64,
+      "material": "Coral",
+      "location": [
+        11,
+        -7,
+        0
+      ],
+      "colliders": [
+        {
+          "shape": "Block",
+          "center": [
+            0,
+            -3,
+            0.5
+          ],
+          "size": [
+            8,
+            2,
+            1
+          ]
+        },
+        {
+          "shape": "Block",
+          "center": [
+            0,
+            -1,
+            1.0
+          ],
+          "size": [
+            8,
+            2,
+            2
+          ]
+        },
+        {
+          "shape": "Block",
+          "center": [
+            0,
+            1,
+            1.5
+          ],
+          "size": [
+            8,
+            2,
+            3
+          ]
+        },
+        {
+          "shape": "Block",
+          "center": [
+            0,
+            3,
+            2.0
+          ],
+          "size": [
+            8,
+            2,
+            4
+          ]
+        }
+      ]
+    },
+    "Corner": {
+      "triangles": 726,
+      "studs": 39,
+      "material": "Purple",
+      "location": [
+        -11,
+        7,
+        0
+      ],
+      "colliders": [
+        {
+          "shape": "Block",
+          "center": [
+            -2.5,
+            0,
+            0.5
+          ],
+          "size": [
+            3,
+            8,
+            1
+          ]
+        },
+        {
+          "shape": "Block",
+          "center": [
+            1.5,
+            2.5,
+            0.5
+          ],
+          "size": [
+            5,
+            3,
+            1
+          ]
+        }
+      ]
+    },
+    "ColorTexture": {
+      "triangles": 12,
+      "studs": 0,
+      "material": "Gray",
+      "location": [
+        7,
+        7,
+        0
+      ],
+      "colliders": [
+        {
+          "shape": "Block",
+          "center": [
+            0,
+            0,
+            0.5
+          ],
+          "size": [
+            5,
+            5,
+            1
+          ]
+        }
+      ]
+    },
+    "NormalMap": {
+      "triangles": 12,
+      "studs": 0,
+      "material": "Gray",
+      "location": [
+        14,
+        7,
+        0
+      ],
+      "colliders": [
+        {
+          "shape": "Block",
+          "center": [
+            0,
+            0,
+            0.5
+          ],
+          "size": [
+            5,
+            5,
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "fbxMeshes": [
+    "Floor",
+    "Wall",
+    "Wedge",
+    "Stair",
+    "Corner"
+  ],
+  "totalGeometryStuds": 279
+}

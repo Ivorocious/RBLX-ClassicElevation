@@ -1,0 +1,16 @@
+{
+  "sha256": "f04051390c543d26151e354cfee7f76bd9b96aaaffbdce9b91f9bc76be3256fc",
+  "request": {
+    "assetType": "Model",
+    "displayName": "SC_HullClear31Mid",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/b1d18b35-5b0e-479c-a323-d3846e7a47f8",
+  "assetId": "126954399416529"
+}

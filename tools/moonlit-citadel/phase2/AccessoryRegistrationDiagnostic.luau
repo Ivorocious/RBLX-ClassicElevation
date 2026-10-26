@@ -1,0 +1,9 @@
+assert(game.PlaceId==0 and game.GameId==0) local P=game.Players:GetPlayerByUserId(-1) local root=P.Character.HumanoidRootPart local cage=workspace.RaceCourse.Obstacles.SwingLanterns.SwingBand1.CageAndCore local contact=cage:FindFirstChildWhichIsA("BasePart",true) local owner="MC_P2_R04_AccessoryDiagnostic_"..game.HttpService:GenerateGUID(false)
+local a=Instance.new("Accessory") a.Name=owner a:SetAttribute("OwnedMoonlitTest",true)
+local h=Instance.new("Part") h.Name="Handle" h.Size=Vector3.new(3,3,3) h.CFrame=contact.CFrame h.CanCollide=false h.CanTouch=false h.CanQuery=true h.Massless=true h.Parent=a
+local w=Instance.new("Weld") w.Part0=root w.Part1=h w.C0=root.CFrame:ToObjectSpace(contact.CFrame) w.Parent=h a.Parent=P.Character
+local params=OverlapParams.new() params.FilterType=Enum.RaycastFilterType.Include params.FilterDescendantsInstances={h}
+local function xyz(v) return {v.X,v.Y,v.Z} end local rows={} local ok,err=xpcall(function() for i=1,8 do local hits={} for _,part in cage:GetDescendants() do if part:IsA("BasePart") then local hit=workspace:GetPartsInPart(part,params) if #hit>0 then table.insert(hits,part.Name) end end end table.insert(rows,{at=workspace:GetServerTimeNow(),root=xyz(root.Position),handle=xyz(h.Position),target=xyz(contact.Position),delta=(h.Position-contact.Position).Magnitude,parent=h.Parent:GetFullName(),joints=#h:GetJoints(),weldActive=w.Active,weldEnabled=w.Enabled,c0={w.C0:GetComponents()},c1={w.C1:GetComponents()},handleCanQuery=h.CanQuery,hits=hits}) task.wait(.1) end end,debug.traceback)
+assert(a:GetAttribute("OwnedMoonlitTest") and a.Name==owner) a:Destroy()
+local report={candidate="MC_P2_C01_R04",case="Accessory registration diagnostic; not acceptance",rows=rows,ok=ok,error=err,sourceCodeSaved=true}
+require(game.ServerStorage.MoonlitPhase2Tools.TrialControl).SaveReport("MC_P2_C01_R04_AccessoryRegistration01",report) return game.HttpService:JSONEncode(report)

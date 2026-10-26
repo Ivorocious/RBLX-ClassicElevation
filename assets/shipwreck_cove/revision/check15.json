@@ -1,0 +1,852 @@
+{
+  "build": "SC_MAP_15",
+  "assets": [
+    "ConnectedHeadland",
+    "R_HullBow_174",
+    "R_HullMid_175",
+    "R_HullStern_176",
+    "CaveApproach",
+    "TideChamber"
+  ],
+  "ship": {
+    "hitSamples": 0,
+    "clusters": []
+  },
+  "cave": {
+    "hitSamples": 0,
+    "clusters": []
+  },
+  "caveRoof": {
+    "sampleCount": 213,
+    "uncovered": [],
+    "minimum": {
+      "segment": 3,
+      "route": [
+        112.54,
+        10.0,
+        45.39
+      ],
+      "offset": 5,
+      "roof": 26.56,
+      "roofAsset": "TideChamber",
+      "headroom": 16.56
+    },
+    "below8": []
+  },
+  "ridgeSupport": [
+    {
+      "node": 0,
+      "route": [
+        20,
+        45,
+        -106
+      ],
+      "ridgeTop": 42.1,
+      "gap": 2.9
+    },
+    {
+      "node": 1,
+      "route": [
+        34,
+        48,
+        -120
+      ],
+      "ridgeTop": 45.1,
+      "gap": 2.9
+    },
+    {
+      "node": 2,
+      "route": [
+        50,
+        51,
+        -130
+      ],
+      "ridgeTop": 48.1,
+      "gap": 2.9
+    },
+    {
+      "node": 3,
+      "route": [
+        67,
+        54,
+        -137
+      ],
+      "ridgeTop": 40.1,
+      "gap": 13.9
+    },
+    {
+      "node": 4,
+      "route": [
+        84,
+        55,
+        -130
+      ],
+      "ridgeTop": 52.1,
+      "gap": 2.9
+    },
+    {
+      "node": 5,
+      "route": [
+        101,
+        53,
+        -116
+      ],
+      "ridgeTop": 50.1,
+      "gap": 2.9
+    },
+    {
+      "node": 6,
+      "route": [
+        116,
+        49,
+        -101
+      ],
+      "ridgeTop": 46.1,
+      "gap": 2.9
+    },
+    {
+      "node": 7,
+      "route": [
+        129,
+        44,
+        -85
+      ],
+      "ridgeTop": 30.1,
+      "gap": 13.9
+    },
+    {
+      "node": 8,
+      "route": [
+        134,
+        39,
+        -66
+      ],
+      "ridgeTop": 36.1,
+      "gap": 2.9
+    },
+    {
+      "node": 9,
+      "route": [
+        127,
+        33,
+        -48
+      ],
+      "ridgeTop": 30.1,
+      "gap": 2.9
+    },
+    {
+      "node": 10,
+      "route": [
+        119,
+        26,
+        -33
+      ],
+      "ridgeTop": 23.1,
+      "gap": 2.9
+    }
+  ],
+  "ridgeLedgeFootprint": [
+    {
+      "name": "S03_00",
+      "ledgeBottom": 42,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 42.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": -2.69,
+          "gapBelowLedge": 44.69
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 37.46,
+          "gapBelowLedge": 4.54
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        }
+      ]
+    },
+    {
+      "name": "S03_01",
+      "ledgeBottom": 45,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 40.36,
+          "gapBelowLedge": 4.64
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 38.33,
+          "gapBelowLedge": 6.67
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 39.27,
+          "gapBelowLedge": 5.73
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 43.87,
+          "gapBelowLedge": 1.13
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 45.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": -3.91,
+          "gapBelowLedge": 48.91
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 41.68,
+          "gapBelowLedge": 3.32
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 40.1,
+          "gapBelowLedge": 4.9
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        }
+      ]
+    },
+    {
+      "name": "S03_02",
+      "ledgeBottom": 48,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 42.5,
+          "gapBelowLedge": 5.5
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 41.45,
+          "gapBelowLedge": 6.55
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 43.83,
+          "gapBelowLedge": 4.17
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 46.65,
+          "gapBelowLedge": 1.35
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 48.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": -5.72,
+          "gapBelowLedge": 53.72
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 45.48,
+          "gapBelowLedge": 2.52
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 43.53,
+          "gapBelowLedge": 4.47
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        }
+      ]
+    },
+    {
+      "name": "S03_04",
+      "ledgeBottom": 52,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 46.92,
+          "gapBelowLedge": 5.08
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 48.88,
+          "gapBelowLedge": 3.12
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 50.14,
+          "gapBelowLedge": 1.86
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 52.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 50.07,
+          "gapBelowLedge": 1.93
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 51.41,
+          "gapBelowLedge": 0.59
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 49.19,
+          "gapBelowLedge": 2.81
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 47.11,
+          "gapBelowLedge": 4.89
+        }
+      ]
+    },
+    {
+      "name": "S03_05",
+      "ledgeBottom": 50,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 46.17,
+          "gapBelowLedge": 3.83
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 2.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 48.34,
+          "gapBelowLedge": 1.66
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 50.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 47.14,
+          "gapBelowLedge": 2.86
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 50.02,
+          "gapBelowLedge": -0.02
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 46.92,
+          "gapBelowLedge": 3.08
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 43.89,
+          "gapBelowLedge": 6.11
+        }
+      ]
+    },
+    {
+      "name": "S03_06",
+      "ledgeBottom": 46,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 41.99,
+          "gapBelowLedge": 4.01
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 44.09,
+          "gapBelowLedge": 1.91
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 43.98,
+          "gapBelowLedge": 2.02
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 46.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 42.37,
+          "gapBelowLedge": 3.63
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 46.28,
+          "gapBelowLedge": -0.28
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 43.05,
+          "gapBelowLedge": 2.95
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 39.29,
+          "gapBelowLedge": 6.71
+        }
+      ]
+    },
+    {
+      "name": "S03_08",
+      "ledgeBottom": 36,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 31.6,
+          "gapBelowLedge": 4.4
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 34.52,
+          "gapBelowLedge": 1.48
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 32.26,
+          "gapBelowLedge": 3.74
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 33.26,
+          "gapBelowLedge": 2.74
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 36.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 28.94,
+          "gapBelowLedge": 7.06
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 35.64,
+          "gapBelowLedge": 0.36
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 32.94,
+          "gapBelowLedge": 3.06
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 27.79,
+          "gapBelowLedge": 8.21
+        }
+      ]
+    },
+    {
+      "name": "S03_09",
+      "ledgeBottom": 30,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": -2.57,
+          "gapBelowLedge": 32.57
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 24.06,
+          "gapBelowLedge": 5.94
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 25.96,
+          "gapBelowLedge": 4.04
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 30.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 20.94,
+          "gapBelowLedge": 9.06
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 27.69,
+          "gapBelowLedge": 2.31
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 26.94,
+          "gapBelowLedge": 3.06
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 20.99,
+          "gapBelowLedge": 9.01
+        }
+      ]
+    },
+    {
+      "name": "S03_10",
+      "ledgeBottom": 23,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 3.14,
+          "gapBelowLedge": 19.86
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 18.05,
+          "gapBelowLedge": 4.95
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 23.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 19.69,
+          "gapBelowLedge": 3.31
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": null,
+          "gapBelowLedge": null
+        }
+      ]
+    }
+  ]
+}

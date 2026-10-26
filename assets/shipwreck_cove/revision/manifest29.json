@@ -1,0 +1,196 @@
+{
+  "build": "SC_PALM_29",
+  "sourceBuild": "SC_KIT_28",
+  "sourceAsset": "SC_R_Palm28",
+  "assetOrder": [
+    "SC_R_PalmTrunk29",
+    "SC_R_PalmCrown29"
+  ],
+  "assembly": {
+    "modelRoot": "SC_R_Palm29ModelRoot",
+    "trunkPairRole": "pairTrunk",
+    "crownPairRole": "pairCrown",
+    "localRootBlenderXYZ": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionsRobloxXYZ": [
+      21.331249237060547,
+      26.032445907592773,
+      25.03270149230957
+    ],
+    "centerRobloxXYZ": [
+      2.38437557220459,
+      13.016222953796387,
+      0.07537174224853516
+    ],
+    "trunkTopBlenderXYZ": [
+      2.25,
+      0.0,
+      24.5
+    ],
+    "trunkTopRobloxXYZ": [
+      2.25,
+      24.5,
+      0.0
+    ],
+    "placement": "Place both models at the same root to assemble the full palm."
+  },
+  "assets": [
+    {
+      "id": "SC_R_PalmTrunk29",
+      "role": "trunk",
+      "triangles": 980,
+      "vertices": 492,
+      "faces": 482,
+      "dimensionsRobloxXYZ": [
+        3.4516271352767944,
+        24.5,
+        2.388136625289917
+      ],
+      "boundsBlender": {
+        "min": [
+          -0.9819999933242798,
+          -1.0,
+          0.0
+        ],
+        "max": [
+          2.4696271419525146,
+          1.388136625289917,
+          24.5
+        ]
+      },
+      "centerBlender": [
+        0.7438135743141174,
+        0.1940683126449585,
+        12.25
+      ],
+      "centerRobloxXYZ": [
+        0.7438135743141174,
+        12.25,
+        -0.1940683126449585
+      ],
+      "localPivotBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "assemblyRootRobloxXYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objectLocationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Ground pivot at the assembly root. Curved 24.5-stud trunk with 13 raised 0.10-stud bark scar rings; narrow tan lips sit over a wood atlas body.",
+      "atlasUVAudit": {
+        "facesChecked": 482,
+        "allFaceUVsStayWithinOneAtlasTile": true
+      },
+      "localScaleBlender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atlas": "palette.png",
+      "scarCount": 13,
+      "scarWidthStuds": 0.1,
+      "scarRaisedRadiusStuds": 0.05,
+      "sidesAround": 12,
+      "robloxModelAssetId": "127728599452995",
+      "uploadReceipt": "upload-receipt29-final-trunk2.json",
+      "uploadedFbxSha256": "54b66eaeca6c5f6816554c4e9bd217967817f13eeeb4b67dbbd931c40a4797ce"
+    },
+    {
+      "id": "SC_R_PalmCrown29",
+      "role": "crown",
+      "triangles": 1092,
+      "vertices": 705,
+      "faces": 534,
+      "dimensionsRobloxXYZ": [
+        21.331249237060547,
+        5.06610107421875,
+        25.03270149230957
+      ],
+      "boundsBlender": {
+        "min": [
+          -8.281249046325684,
+          -12.59172248840332,
+          20.966344833374023
+        ],
+        "max": [
+          13.050000190734863,
+          12.44097900390625,
+          26.032445907592773
+        ]
+      },
+      "centerBlender": [
+        2.38437557220459,
+        -0.07537174224853516,
+        23.4993953704834
+      ],
+      "centerRobloxXYZ": [
+        2.38437557220459,
+        23.4993953704834,
+        0.07537174224853516
+      ],
+      "localPivotBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "assemblyRootRobloxXYZ": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objectLocationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "notes": "Ground pivot at the shared assembly root; exact approved Kit28 crown geometry, including nine fronds and three coconuts, copied without reshaping.",
+      "atlasUVAudit": {
+        "facesChecked": 534,
+        "allFaceUVsStayWithinOneAtlasTile": true
+      },
+      "localScaleBlender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atlas": "palette.png",
+      "robloxModelAssetId": "137368535339562",
+      "uploadReceipt": "upload-receipt29-final-crown.json",
+      "uploadedFbxSha256": "8580577e600bd31a15c22d483524679e02caa6e356ed8b27478b705c499a029f",
+      "localReexportFbxSha256": "5627c296ba9ab6a128315c56bf8935a61ea40f8c5c05c6360d5c41779c8f3c2d",
+      "uploadNote": "Existing uploaded crown ID retained; local FBX was re-exported from unchanged approved Kit28 crown geometry."
+    }
+  ],
+  "libraryTriangles": 2072,
+  "triangleLimit": 2100,
+  "materialCount": 1,
+  "atlas": "palette.png",
+  "atlasDimensions": [
+    128,
+    128
+  ],
+  "export": {
+    "unitScaleApplied": true,
+    "axisForward": "-Z",
+    "axisUp": "Y",
+    "sourceToRoblox": "Roblox XYZ = Blender XZY with Roblox Z = -Blender Y",
+    "oneMeshModelPerFBX": true
+  },
+  "files": [
+    "SC_R_PalmTrunk29.fbx",
+    "SC_R_PalmCrown29.fbx",
+    "ShipwreckCove_Palm29.blend",
+    "palette.png"
+  ],
+  "crownUploadPolicy": "The uploaded Kit28 crown asset ID is reused; no crown upload was made for this trunk revision."
+}

@@ -1,0 +1,16 @@
+{
+  "sha256": "17b40496900cc06a72f1bef0ce9b9eba43cd8b83b843c371c54a88c2d6c37911",
+  "request": {
+    "assetType": "Model",
+    "displayName": "ER_P1_C04_Eggs",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/2d046ae2-da8e-496f-aff0-739e607eca77",
+  "assetId": "131320563153709"
+}

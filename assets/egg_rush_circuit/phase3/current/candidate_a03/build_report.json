@@ -1,0 +1,17 @@
+{
+  "build": "ER_P3_WORLD_KIT_A03",
+  "archetypes": 15,
+  "nativeAndMeshPieces": 151,
+  "meshTemplates": 8,
+  "triangles": 928,
+  "seconds": 28.653,
+  "hashes": {
+    "ER_WorldMeshLibrary.fbx": "39f0633130f71e05f1282f59280940a39772ba386ec074a8a6d6fac5baf0b69e",
+    "manifest.json": "efbcf0e22883a2dc9578c760bac6c23629f427d958a578339d62c78329d2fb9a",
+    "saved_blend_check.json": "fb521e1c6605f163d62ee9880188b22f3fa43d12c82eb931b7ce45831471d205",
+    "source_front_oblique.png": "2d3de7edeaeed2fbb35ba8dcdc4020905bcf7480dbc19343ae0ad3e3898dd437",
+    "source_rear_oblique.png": "6cd22041fbaa04e143b343553c9c69894dd8f3d7cc7577cd060bdce32cddaa3a",
+    "source_underside.png": "460f66782579273428a22e9790239812a2372d65609a2ae7a795cf73edd57219",
+    "world_kit.blend": "0850349f05ef231acff9a46728eec113cf72d6eb6f73bebed15de15db48d123a"
+  }
+}

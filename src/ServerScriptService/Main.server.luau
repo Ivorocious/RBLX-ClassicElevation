@@ -12,14 +12,27 @@ type StartupContext = {
 }
 
 local SERVICE_NAMES = {
+	"OnboardingService",
+	"LobbyService",
 	"CourseService",
+	"GrandArcadeService",
+	"TournamentService",
 	"PlayerRaceService",
+	"VisitProgressService",
+	"PracticeService",
 	"ResultsService",
+	"LobbyActivityService",
+	"LobbyPodiumService",
 	"StagingService",
 	"CheckpointService",
 	"RespawnService",
 	"CourseHazardService",
-	"CourseMotionService",
+	"StudioDevService",
+	"CityRunService",
+	"ShipwreckService",
+	"StudGardenService",
+	"EggRushService",
+	"MoonlitCitadelService",
 	"GhostService",
 	"RaceService",
 }

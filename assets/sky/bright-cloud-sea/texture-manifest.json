@@ -1,0 +1,74 @@
+{
+  "size": 1024,
+  "source_size": [
+    1774,
+    887
+  ],
+  "faces": {
+    "ft": {
+      "file": "cloud-sea-ft.png",
+      "sha256": "5160301f53ddf25f89faef4d0d89a5d0017f38c0af91d923f327259faed8da72"
+    },
+    "bk": {
+      "file": "cloud-sea-bk.png",
+      "sha256": "56386c1da36b4b48ba561113b2c5680f7ff1211afdc36ec03ddd8e7d07087e29"
+    },
+    "rt": {
+      "file": "cloud-sea-rt.png",
+      "sha256": "38044ea37b42dede16aaf9530444357eb7a4e7681a00e87d61aca349fbcdf285"
+    },
+    "lf": {
+      "file": "cloud-sea-lf.png",
+      "sha256": "8b9b39cdd0e47e370785ade4f853354d60b0126fa35b1feb0f2160110f420619"
+    },
+    "up": {
+      "file": "cloud-sea-up.png",
+      "sha256": "d7b041d6c7068e5d6c8f2108a92ae4b8d2e1b4307e62e44c241069d5223f9a50"
+    },
+    "dn": {
+      "file": "cloud-sea-dn.png",
+      "sha256": "b31545cad69628252170b5bd82f30841971d60ad7987262c0939387194b870ad"
+    }
+  },
+  "roblox_faces": {
+    "SkyboxFt": {
+      "file": "cloud-sea-bk.png",
+      "sha256": "56386c1da36b4b48ba561113b2c5680f7ff1211afdc36ec03ddd8e7d07087e29"
+    },
+    "SkyboxBk": {
+      "file": "cloud-sea-ft.png",
+      "sha256": "5160301f53ddf25f89faef4d0d89a5d0017f38c0af91d923f327259faed8da72"
+    },
+    "SkyboxRt": {
+      "file": "cloud-sea-rt.png",
+      "sha256": "38044ea37b42dede16aaf9530444357eb7a4e7681a00e87d61aca349fbcdf285"
+    },
+    "SkyboxLf": {
+      "file": "cloud-sea-lf.png",
+      "sha256": "8b9b39cdd0e47e370785ade4f853354d60b0126fa35b1feb0f2160110f420619"
+    },
+    "SkyboxUp": {
+      "file": "cloud-sea-up-roblox.png",
+      "sha256": "ae9bf963dec6456f6ff0b62125e3805d2452f97afdf62091e98891746cf57abe"
+    },
+    "SkyboxDn": {
+      "file": "cloud-sea-dn-roblox-final.png",
+      "sha256": "f2cd43360803acf5ac3b625075a07c3cd6f1db4fb48a9668eb06f8692b14e4ba"
+    }
+  },
+  "edge_max_channel_error": {
+    "ft-right/rt-left": 0,
+    "rt-right/bk-left": 0,
+    "bk-right/lf-left": 0,
+    "lf-right/ft-left": 0,
+    "ft-top/up-top": 0,
+    "bk-top/up-bottom": 0,
+    "rt-top/up-right": 0,
+    "lf-top/up-left": 0,
+    "ft-bottom/dn-bottom": 0,
+    "bk-bottom/dn-top": 0,
+    "rt-bottom/dn-right": 0,
+    "lf-bottom/dn-left": 0
+  },
+  "note": "Technical spherical seam/pole normalization, bilinear cube projection, and perimeter-preserving nadir stitching; panorama and nadir art generated with ImageGen."
+}

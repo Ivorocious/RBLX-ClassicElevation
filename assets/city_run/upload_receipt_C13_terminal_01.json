@@ -1,0 +1,16 @@
+{
+  "sha256": "fdef6cf115789922ca72fcebbc349c7de6194ca9d216dd4e660614636906a2cc",
+  "request": {
+    "assetType": "Model",
+    "displayName": "City Run C13 editable terminal QC 01",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/5ec66ea7-58f3-4b55-b0b7-4a1807907053",
+  "assetId": "111310812801054"
+}

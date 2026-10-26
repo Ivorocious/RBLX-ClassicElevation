@@ -1,0 +1,14 @@
+{
+  "MC_P3_REWORK_KIT.fbx": {
+    "bytes": 80012,
+    "sha256": "c5fbf73691013f9aec1f7be1a6abb8529e4b28ac5d6f8d08a2fc777ff06cac28"
+  },
+  "MC_P3_REWORK_KIT.blend": {
+    "bytes": 156338,
+    "sha256": "347b36a90a07af84d9d9168d4622dea54832bbede7c3a411dea90403066ff59d"
+  },
+  "manifest.json": {
+    "bytes": 12733,
+    "sha256": "118ab5e7649d3fb56261b952ff4a42308236a5aaaa69cc1a96ee5a20f8fc7aa7"
+  }
+}

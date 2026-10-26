@@ -2,7 +2,10 @@
   "name": "ProjectClassicElevation",
   "tree": {
     "$className": "DataModel",
-
+    "ReplicatedFirst": {
+      "$className": "ReplicatedFirst",
+      "$path": "src/ReplicatedFirst"
+    },
     "ReplicatedStorage": {
       "$className": "ReplicatedStorage",
       "Shared": {
@@ -17,17 +20,21 @@
         "$path": "src/ReplicatedStorage/Remotes"
       }
     },
-
     "ServerStorage": {
       "$className": "ServerStorage",
       "$ignoreUnknownInstances": true,
       "CourseBuilders": {
         "$path": "src/ServerStorage/CourseBuilders"
+      },
+      "UIStories": {
+        "$path": "src/ServerStorage/UIStories"
       }
     },
-
     "ServerScriptService": {
       "$className": "ServerScriptService",
+      "MoonlitCitadelPreview": {
+        "$path": "src/ServerScriptService/MoonlitCitadelPreview.server.luau"
+      },
       "Main": {
         "$path": "src/ServerScriptService/Main.server.luau"
       },
@@ -36,7 +43,6 @@
         "$path": "src/ServerScriptService/Services"
       }
     },
-
     "StarterPlayer": {
       "$className": "StarterPlayer",
       "$properties": {
@@ -47,20 +53,69 @@
         "$path": "src/StarterPlayer/StarterPlayerScripts"
       }
     },
-
     "StarterGui": {
       "$className": "StarterGui",
       "$path": "src/StarterGui"
     },
-
     "Workspace": {
       "$className": "Workspace",
       "$ignoreUnknownInstances": true
     },
-
     "Lighting": {
       "$className": "Lighting",
-      "$ignoreUnknownInstances": true
+      "$ignoreUnknownInstances": true,
+      "$properties": {
+        "Ambient": [
+          0.27450980392156865,
+          0.3137254901960784,
+          0.39215686274509803
+        ],
+        "OutdoorAmbient": [
+          0.39215686274509803,
+          0.45098039215686275,
+          0.5294117647058824
+        ],
+        "Brightness": 2,
+        "ClockTime": 14.5
+      },
+      "Sky": {
+        "$className": "Sky",
+        "$properties": {
+          "SkyboxFt": "rbxassetid://127241254235216",
+          "SkyboxBk": "rbxassetid://94560555738002",
+          "SkyboxLf": "rbxassetid://106027538090518",
+          "SkyboxRt": "rbxassetid://77937123693721",
+          "SkyboxUp": "rbxassetid://110937313651057",
+          "SkyboxDn": "rbxassetid://96562086675523",
+          "SkyboxOrientation": [
+            0,
+            0,
+            0
+          ],
+          "CelestialBodiesShown": true,
+          "StarCount": 0,
+          "SunAngularSize": 7
+        }
+      },
+      "Atmosphere": {
+        "$className": "Atmosphere",
+        "$properties": {
+          "Density": 0,
+          "Offset": 0,
+          "Haze": 0,
+          "Glare": 0,
+          "Color": [
+            0.7568627450980392,
+            0.8705882352941177,
+            1
+          ],
+          "Decay": [
+            0.47058823529411764,
+            0.5882352941176471,
+            0.7450980392156863
+          ]
+        }
+      }
     }
   }
 }

@@ -1,5 +1,7 @@
 # Course storage
 
+**October 27, 2026:** Classic Ascent is shelved. `classic_ascent_point_to_point` is in `CourseConfig.RetiredCourseIds`, so any copy left in the library is skipped. Its Studio models (library copy, preview, mesh libraries) are still to be exported to `archive/classic-ascent-shelved-2026-10-27/` and removed. The September inventory below predates this.
+
 Updated September 6, 2026 after the pre-tuning cleanup.
 
 ## Active library

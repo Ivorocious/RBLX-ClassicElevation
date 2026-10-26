@@ -1,0 +1,33 @@
+{
+  "props": [
+    {
+      "name": "EmbeddedShelf",
+      "height": 20,
+      "parts": [
+        "EmbeddedShelf__ColdRock"
+      ],
+      "triangles": 92
+    },
+    {
+      "name": "BrokenLedge",
+      "height": 20,
+      "parts": [
+        "BrokenLedge__ColdRock"
+      ],
+      "triangles": 92
+    },
+    {
+      "name": "WeatheredSlab",
+      "height": 20,
+      "parts": [
+        "WeatheredSlab__ColdRock"
+      ],
+      "triangles": 92
+    }
+  ],
+  "topFootprintScale": {
+    "EmbeddedShelf": 0.6060606060606061,
+    "BrokenLedge": 0.7407407407407407,
+    "WeatheredSlab": 0.8928571428571428
+  }
+}

@@ -1,0 +1,1723 @@
+{
+  "build": "V3_FINAL_03",
+  "assets": [
+    {
+      "id": "F03_C13_EastArcade",
+      "dimensionsRobloxXYZ": [
+        42.85986328125,
+        134.35003662109375,
+        42.860015869140625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        67.17501831054688
+      ],
+      "triangles": 4268,
+      "vertices": 2772
+    },
+    {
+      "id": "F03_C13_EastArrival",
+      "dimensionsRobloxXYZ": [
+        38.85986328125,
+        116.35003662109375,
+        39.86001205444336
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        58.175018310546875
+      ],
+      "triangles": 3740,
+      "vertices": 2420
+    },
+    {
+      "id": "F03_C13_EastCorner",
+      "dimensionsRobloxXYZ": [
+        40.85986328125,
+        145.35003662109375,
+        46.860015869140625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        72.67501831054688
+      ],
+      "triangles": 5100,
+      "vertices": 3312
+    },
+    {
+      "id": "F03_C13_EastLink01",
+      "dimensionsRobloxXYZ": [
+        40.85986328125,
+        114.70002746582031,
+        18.860000610351562
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        57.350013732910156
+      ],
+      "triangles": 3112,
+      "vertices": 2016
+    },
+    {
+      "id": "F03_C13_EastLink02",
+      "dimensionsRobloxXYZ": [
+        40.85986328125,
+        129.70001220703125,
+        20.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        64.85000610351562
+      ],
+      "triangles": 3392,
+      "vertices": 2204
+    },
+    {
+      "id": "F03_C13_EastReturn",
+      "dimensionsRobloxXYZ": [
+        56.85986328125,
+        134.70001220703125,
+        38.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        67.35000610351562
+      ],
+      "triangles": 5064,
+      "vertices": 3288
+    },
+    {
+      "id": "F03_C13_ExpertBack01",
+      "dimensionsRobloxXYZ": [
+        42.85986328125,
+        142.70001220703125,
+        40.860015869140625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        71.35000610351562
+      ],
+      "triangles": 4368,
+      "vertices": 2840
+    },
+    {
+      "id": "F03_C13_ExpertBack02",
+      "dimensionsRobloxXYZ": [
+        42.85986328125,
+        150.70001220703125,
+        40.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        75.35000610351562
+      ],
+      "triangles": 4664,
+      "vertices": 3036
+    },
+    {
+      "id": "F03_C13_ExpertBack03",
+      "dimensionsRobloxXYZ": [
+        42.85986328125,
+        143.70001220703125,
+        40.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        71.85000610351562
+      ],
+      "triangles": 4664,
+      "vertices": 3036
+    },
+    {
+      "id": "F03_C13_ExpertService01",
+      "dimensionsRobloxXYZ": [
+        30.1298828125,
+        123.70002746582031,
+        30.860015869140625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        61.850013732910156
+      ],
+      "triangles": 3292,
+      "vertices": 2136
+    },
+    {
+      "id": "F03_C13_ExpertService02",
+      "dimensionsRobloxXYZ": [
+        30.1298828125,
+        142.70001220703125,
+        30.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        71.35000610351562
+      ],
+      "triangles": 3332,
+      "vertices": 2164
+    },
+    {
+      "id": "F03_C13_ExpertService03",
+      "dimensionsRobloxXYZ": [
+        30.1298828125,
+        147.70001220703125,
+        32.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        73.85000610351562
+      ],
+      "triangles": 3484,
+      "vertices": 2264
+    },
+    {
+      "id": "F03_C13_ExpertService04",
+      "dimensionsRobloxXYZ": [
+        30.1298828125,
+        136.70001220703125,
+        18.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        68.35000610351562
+      ],
+      "triangles": 2556,
+      "vertices": 1660
+    },
+    {
+      "id": "F03_C13_MainHall",
+      "dimensionsRobloxXYZ": [
+        72.1044921875,
+        121.80805206298828,
+        122.0
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        60.90402603149414
+      ],
+      "triangles": 10520,
+      "vertices": 7004
+    },
+    {
+      "id": "F03_C13_NorthGallery",
+      "dimensionsRobloxXYZ": [
+        26.0,
+        102.59993743896484,
+        40.0
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        51.29996871948242
+      ],
+      "triangles": 2840,
+      "vertices": 1836
+    },
+    {
+      "id": "F03_C13_SouthCourt",
+      "dimensionsRobloxXYZ": [
+        42.85986328125,
+        140.35003662109375,
+        35.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        70.17501831054688
+      ],
+      "triangles": 4316,
+      "vertices": 2804
+    },
+    {
+      "id": "F03_C13_SouthHotel",
+      "dimensionsRobloxXYZ": [
+        39.85986328125,
+        134.35003662109375,
+        28.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        67.17501831054688
+      ],
+      "triangles": 3292,
+      "vertices": 2136
+    },
+    {
+      "id": "F03_C13_SouthLink01",
+      "dimensionsRobloxXYZ": [
+        15.85986328125,
+        125.69990539550781,
+        28.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        62.849952697753906
+      ],
+      "triangles": 1880,
+      "vertices": 1224
+    },
+    {
+      "id": "F03_C13_SouthLink02",
+      "dimensionsRobloxXYZ": [
+        17.85986328125,
+        128.70001220703125,
+        28.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        64.35000610351562
+      ],
+      "triangles": 1880,
+      "vertices": 1224
+    },
+    {
+      "id": "F03_C13_StationBase",
+      "dimensionsRobloxXYZ": [
+        150.85986328125,
+        75.35005187988281,
+        180.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        37.675025939941406
+      ],
+      "triangles": 14892,
+      "vertices": 9576
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_00_00",
+      "dimensionsRobloxXYZ": [
+        16.33349609375,
+        11.0650634765625,
+        9.900001525878906
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        5.53253173828125
+      ],
+      "triangles": 72,
+      "vertices": 48
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_00_06",
+      "dimensionsRobloxXYZ": [
+        16.43359375,
+        20.06505584716797,
+        15.975006103515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        10.032527923583984
+      ],
+      "triangles": 84,
+      "vertices": 56
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_01_08",
+      "dimensionsRobloxXYZ": [
+        16.85009765625,
+        3.0650558471679688,
+        15.975006103515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        1.5325279235839844
+      ],
+      "triangles": 60,
+      "vertices": 40
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_02_01",
+      "dimensionsRobloxXYZ": [
+        16.85009765625,
+        5.565055847167969,
+        10.0
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        2.7825279235839844
+      ],
+      "triangles": 60,
+      "vertices": 40
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_02_02",
+      "dimensionsRobloxXYZ": [
+        16.85009765625,
+        8.065055847167969,
+        10.0
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        4.032527923583984
+      ],
+      "triangles": 60,
+      "vertices": 40
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_02_03",
+      "dimensionsRobloxXYZ": [
+        16.85009765625,
+        10.565055847167969,
+        10.0
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        5.282527923583984
+      ],
+      "triangles": 84,
+      "vertices": 56
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_02_04",
+      "dimensionsRobloxXYZ": [
+        16.85009765625,
+        13.065055847167969,
+        13.600006103515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        6.532527923583984
+      ],
+      "triangles": 84,
+      "vertices": 56
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_03_01",
+      "dimensionsRobloxXYZ": [
+        10.0,
+        17.56493377685547,
+        13.600006103515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        8.782466888427734
+      ],
+      "triangles": 84,
+      "vertices": 56
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_03_02",
+      "dimensionsRobloxXYZ": [
+        12.2666015625,
+        22.06493377685547,
+        13.600006103515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        11.032466888427734
+      ],
+      "triangles": 84,
+      "vertices": 56
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_04_01",
+      "dimensionsRobloxXYZ": [
+        12.2666015625,
+        52.39836120605469,
+        10.0
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        26.199180603027344
+      ],
+      "triangles": 84,
+      "vertices": 56
+    },
+    {
+      "id": "F03_C13_Surface_StationMain_04_02",
+      "dimensionsRobloxXYZ": [
+        12.2666015625,
+        54.73164367675781,
+        10.0
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        27.365821838378906
+      ],
+      "triangles": 84,
+      "vertices": 56
+    },
+    {
+      "id": "F03_C13_TerraceFoundation",
+      "dimensionsRobloxXYZ": [
+        78.85986328125,
+        131.70001220703125,
+        40.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        65.85000610351562
+      ],
+      "triangles": 6464,
+      "vertices": 4192
+    },
+    {
+      "id": "F03_C13_TowerFoundation",
+      "dimensionsRobloxXYZ": [
+        38.85986328125,
+        132.0,
+        34.8599853515625
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        66.0
+      ],
+      "triangles": 3776,
+      "vertices": 2444
+    },
+    {
+      "id": "F03_C13_TrackOffice",
+      "dimensionsRobloxXYZ": [
+        46.85986328125,
+        118.35002899169922,
+        24.860008239746094
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        59.17501449584961
+      ],
+      "triangles": 3244,
+      "vertices": 2104
+    },
+    {
+      "id": "F03_C13_WestWing",
+      "dimensionsRobloxXYZ": [
+        32.85986328125,
+        103.35003662109375,
+        91.85999298095703
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        51.675018310546875
+      ],
+      "triangles": 5996,
+      "vertices": 3880
+    },
+    {
+      "id": "F03_City_2",
+      "dimensionsRobloxXYZ": [
+        35.29999923706055,
+        61.68000030517578,
+        33.75
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        30.84000015258789
+      ],
+      "triangles": 612,
+      "vertices": 1224
+    },
+    {
+      "id": "F03_City_7",
+      "dimensionsRobloxXYZ": [
+        101.41000366210938,
+        143.97000122070312,
+        101.41000366210938
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        71.98500061035156
+      ],
+      "triangles": 3792,
+      "vertices": 7584
+    },
+    {
+      "id": "F03_City_9",
+      "dimensionsRobloxXYZ": [
+        33.38999938964844,
+        57.54999923706055,
+        33.75
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        28.774999618530273
+      ],
+      "triangles": 612,
+      "vertices": 1224
+    },
+    {
+      "id": "F03_City_12",
+      "dimensionsRobloxXYZ": [
+        64.70999908447266,
+        97.94999694824219,
+        67.81999969482422
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        48.974998474121094
+      ],
+      "triangles": 1596,
+      "vertices": 3192
+    },
+    {
+      "id": "F03_City_14",
+      "dimensionsRobloxXYZ": [
+        58.83000183105469,
+        95.62000274658203,
+        56.040000915527344
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        47.810001373291016
+      ],
+      "triangles": 1356,
+      "vertices": 2712
+    },
+    {
+      "id": "F03_City_16",
+      "dimensionsRobloxXYZ": [
+        37.75,
+        66.5,
+        38.5
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        33.25
+      ],
+      "triangles": 612,
+      "vertices": 1224
+    },
+    {
+      "id": "F03_City_19",
+      "dimensionsRobloxXYZ": [
+        30.5,
+        74.5,
+        36.58000183105469
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        37.25
+      ],
+      "triangles": 644,
+      "vertices": 1288
+    },
+    {
+      "id": "F03_City_22",
+      "dimensionsRobloxXYZ": [
+        32.9900016784668,
+        54.5,
+        38.75
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        27.25
+      ],
+      "triangles": 612,
+      "vertices": 1224
+    },
+    {
+      "id": "F03_City_30",
+      "dimensionsRobloxXYZ": [
+        36.720001220703125,
+        64.55000305175781,
+        32.75
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        32.275001525878906
+      ],
+      "triangles": 612,
+      "vertices": 1224
+    },
+    {
+      "id": "F03_City_34",
+      "dimensionsRobloxXYZ": [
+        76.04000091552734,
+        140.5500030517578,
+        78.01000213623047
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        70.2750015258789
+      ],
+      "triangles": 2712,
+      "vertices": 5424
+    },
+    {
+      "id": "F03_City_36",
+      "dimensionsRobloxXYZ": [
+        40.279998779296875,
+        77.5,
+        39.81999969482422
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        38.75
+      ],
+      "triangles": 744,
+      "vertices": 1488
+    },
+    {
+      "id": "F03_City_38",
+      "dimensionsRobloxXYZ": [
+        10.569999694824219,
+        23.200000762939453,
+        9.329999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        11.600000381469727
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_42",
+      "dimensionsRobloxXYZ": [
+        15.369999885559082,
+        19.8700008392334,
+        9.329999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        9.9350004196167
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_44",
+      "dimensionsRobloxXYZ": [
+        9.199999809265137,
+        21.200000762939453,
+        14.829999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        10.600000381469727
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_46",
+      "dimensionsRobloxXYZ": [
+        15.369999885559082,
+        18.530000686645508,
+        9.329999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        9.265000343322754
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_50",
+      "dimensionsRobloxXYZ": [
+        10.569999694824219,
+        23.200000762939453,
+        9.329999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        11.600000381469727
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_52",
+      "dimensionsRobloxXYZ": [
+        15.359999656677246,
+        17.200000762939453,
+        13.069999694824219
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        8.600000381469727
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_54",
+      "dimensionsRobloxXYZ": [
+        15.359999656677246,
+        21.200000762939453,
+        14.829999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        10.600000381469727
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_56",
+      "dimensionsRobloxXYZ": [
+        10.5600004196167,
+        23.200000762939453,
+        14.6899995803833
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        11.600000381469727
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_58",
+      "dimensionsRobloxXYZ": [
+        10.5600004196167,
+        23.200000762939453,
+        10.359999656677246
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        11.600000381469727
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_62",
+      "dimensionsRobloxXYZ": [
+        9.199999809265137,
+        22.530000686645508,
+        14.6899995803833
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        11.265000343322754
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_66",
+      "dimensionsRobloxXYZ": [
+        9.199999809265137,
+        22.530000686645508,
+        10.350000381469727
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        11.265000343322754
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_68",
+      "dimensionsRobloxXYZ": [
+        9.199999809265137,
+        21.8700008392334,
+        10.359999656677246
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        10.9350004196167
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_70",
+      "dimensionsRobloxXYZ": [
+        14.699999809265137,
+        21.200000762939453,
+        9.329999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        10.600000381469727
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_72",
+      "dimensionsRobloxXYZ": [
+        9.199999809265137,
+        21.8700008392334,
+        14.6899995803833
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        10.9350004196167
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_74",
+      "dimensionsRobloxXYZ": [
+        14.699999809265137,
+        21.200000762939453,
+        14.829999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        10.600000381469727
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_76",
+      "dimensionsRobloxXYZ": [
+        9.220000267028809,
+        21.219999313354492,
+        14.699999809265137
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        10.609999656677246
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_78",
+      "dimensionsRobloxXYZ": [
+        9.220000267028809,
+        21.25,
+        10.380000114440918
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        10.625
+      ],
+      "triangles": 136,
+      "vertices": 272
+    },
+    {
+      "id": "F03_City_89",
+      "dimensionsRobloxXYZ": [
+        43.529998779296875,
+        133.4499969482422,
+        56.97999954223633
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        66.7249984741211
+      ],
+      "triangles": 1812,
+      "vertices": 3624
+    },
+    {
+      "id": "F03_City_91",
+      "dimensionsRobloxXYZ": [
+        54.40999984741211,
+        132.11000061035156,
+        49.959999084472656
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        66.05500030517578
+      ],
+      "triangles": 1812,
+      "vertices": 3624
+    },
+    {
+      "id": "F03_City_93",
+      "dimensionsRobloxXYZ": [
+        50.709999084472656,
+        128.25,
+        40.84000015258789
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        64.125
+      ],
+      "triangles": 1300,
+      "vertices": 2600
+    },
+    {
+      "id": "F03_City_96",
+      "dimensionsRobloxXYZ": [
+        49.650001525878906,
+        148.00999450683594,
+        49.09000015258789
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        74.00499725341797
+      ],
+      "triangles": 1804,
+      "vertices": 3608
+    },
+    {
+      "id": "F03_City_98",
+      "dimensionsRobloxXYZ": [
+        39.279998779296875,
+        138.22000122070312,
+        46.9900016784668
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        69.11000061035156
+      ],
+      "triangles": 1452,
+      "vertices": 2904
+    },
+    {
+      "id": "F03_City_101",
+      "dimensionsRobloxXYZ": [
+        33.04999923706055,
+        125.55000305175781,
+        50.790000915527344
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        62.775001525878906
+      ],
+      "triangles": 1300,
+      "vertices": 2600
+    },
+    {
+      "id": "F03_City_103",
+      "dimensionsRobloxXYZ": [
+        49.5,
+        166.69000244140625,
+        48.43000030517578
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        83.34500122070312
+      ],
+      "triangles": 1976,
+      "vertices": 3952
+    },
+    {
+      "id": "F03_City_107",
+      "dimensionsRobloxXYZ": [
+        48.220001220703125,
+        157.64999389648438,
+        47.88999938964844
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        78.82499694824219
+      ],
+      "triangles": 1804,
+      "vertices": 3608
+    },
+    {
+      "id": "F03_City_109",
+      "dimensionsRobloxXYZ": [
+        34.90999984741211,
+        117.5,
+        41.040000915527344
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        58.75
+      ],
+      "triangles": 1140,
+      "vertices": 2280
+    },
+    {
+      "id": "F03_City_111",
+      "dimensionsRobloxXYZ": [
+        31.079999923706055,
+        111.94999694824219,
+        48.130001068115234
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        55.974998474121094
+      ],
+      "triangles": 1008,
+      "vertices": 2016
+    },
+    {
+      "id": "F03_City_190",
+      "dimensionsRobloxXYZ": [
+        23.299999237060547,
+        60.54999923706055,
+        26.75
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        30.274999618530273
+      ],
+      "triangles": 452,
+      "vertices": 904
+    },
+    {
+      "id": "F03_City_192",
+      "dimensionsRobloxXYZ": [
+        27.5,
+        68.94999694824219,
+        34.75
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        34.474998474121094
+      ],
+      "triangles": 532,
+      "vertices": 1064
+    },
+    {
+      "id": "F03_City_194",
+      "dimensionsRobloxXYZ": [
+        30.5,
+        63.5,
+        30.049999237060547
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        31.75
+      ],
+      "triangles": 452,
+      "vertices": 904
+    },
+    {
+      "id": "F03_City_212",
+      "dimensionsRobloxXYZ": [
+        39.470001220703125,
+        122.55000305175781,
+        33.88999938964844
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        61.275001525878906
+      ],
+      "triangles": 1140,
+      "vertices": 2280
+    },
+    {
+      "id": "F03_City_214",
+      "dimensionsRobloxXYZ": [
+        37.5,
+        66.29000091552734,
+        52.61000061035156
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        33.14500045776367
+      ],
+      "triangles": 772,
+      "vertices": 1544
+    },
+    {
+      "id": "F03_City_216",
+      "dimensionsRobloxXYZ": [
+        36.959999084472656,
+        115.68000030517578,
+        30.31999969482422
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        57.84000015258789
+      ],
+      "triangles": 980,
+      "vertices": 1960
+    },
+    {
+      "id": "F03_City_218",
+      "dimensionsRobloxXYZ": [
+        31.8700008392334,
+        56.5,
+        35.11000061035156
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        28.25
+      ],
+      "triangles": 532,
+      "vertices": 1064
+    },
+    {
+      "id": "F03_City_220",
+      "dimensionsRobloxXYZ": [
+        46.150001525878906,
+        63.70000076293945,
+        88.5
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        31.850000381469727
+      ],
+      "triangles": 1092,
+      "vertices": 2184
+    },
+    {
+      "id": "F03_City_222",
+      "dimensionsRobloxXYZ": [
+        37.40999984741211,
+        47.78950119018555,
+        43.66999816894531
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        23.894750595092773
+      ],
+      "triangles": 540,
+      "vertices": 1080
+    },
+    {
+      "id": "F03_City_224",
+      "dimensionsRobloxXYZ": [
+        59.810001373291016,
+        103.5,
+        52.09000015258789
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        51.75
+      ],
+      "triangles": 1568,
+      "vertices": 3136
+    },
+    {
+      "id": "F03_City_226",
+      "dimensionsRobloxXYZ": [
+        68.16000366210938,
+        134.0399932861328,
+        38.22999954223633
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        67.0199966430664
+      ],
+      "triangles": 1812,
+      "vertices": 3624
+    },
+    {
+      "id": "F03_City_228",
+      "dimensionsRobloxXYZ": [
+        39.66999816894531,
+        73.44999694824219,
+        54.709999084472656
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        36.724998474121094
+      ],
+      "triangles": 944,
+      "vertices": 1888
+    },
+    {
+      "id": "F03_City_230",
+      "dimensionsRobloxXYZ": [
+        92.8499984741211,
+        137.9499969482422,
+        93.11000061035156
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        68.9749984741211
+      ],
+      "triangles": 3432,
+      "vertices": 6864
+    },
+    {
+      "id": "F03_City_232",
+      "dimensionsRobloxXYZ": [
+        45.15999984741211,
+        74.94999694824219,
+        96.30999755859375
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        37.474998474121094
+      ],
+      "triangles": 1444,
+      "vertices": 2888
+    },
+    {
+      "id": "F03_City_234",
+      "dimensionsRobloxXYZ": [
+        31.459999084472656,
+        67.55000305175781,
+        43.650001525878906
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        33.775001525878906
+      ],
+      "triangles": 612,
+      "vertices": 1224
+    },
+    {
+      "id": "F03_City_236",
+      "dimensionsRobloxXYZ": [
+        174.14999389648438,
+        63.70000076293945,
+        36.31999969482422
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        31.850000381469727
+      ],
+      "triangles": 1732,
+      "vertices": 3464
+    },
+    {
+      "id": "F03_City_239",
+      "dimensionsRobloxXYZ": [
+        99.58999633789062,
+        141.80999755859375,
+        67.2699966430664
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        70.90499877929688
+      ],
+      "triangles": 3072,
+      "vertices": 6144
+    },
+    {
+      "id": "F03_City_241",
+      "dimensionsRobloxXYZ": [
+        38.29999923706055,
+        72.55000305175781,
+        46.29999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        36.275001525878906
+      ],
+      "triangles": 844,
+      "vertices": 1688
+    },
+    {
+      "id": "F03_City_244",
+      "dimensionsRobloxXYZ": [
+        94.33999633789062,
+        95.5,
+        46.72999954223633
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        47.75
+      ],
+      "triangles": 1716,
+      "vertices": 3432
+    },
+    {
+      "id": "F03_City_246",
+      "dimensionsRobloxXYZ": [
+        87.4800033569336,
+        92.98999786376953,
+        40.2400016784668
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        46.494998931884766
+      ],
+      "triangles": 1476,
+      "vertices": 2952
+    },
+    {
+      "id": "F03_City_248",
+      "dimensionsRobloxXYZ": [
+        54.279998779296875,
+        102.7300033569336,
+        87.93000030517578
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        51.3650016784668
+      ],
+      "triangles": 1988,
+      "vertices": 3976
+    },
+    {
+      "id": "F03_City_250",
+      "dimensionsRobloxXYZ": [
+        54.84000015258789,
+        50.289981842041016,
+        132.63999938964844
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        25.144990921020508
+      ],
+      "triangles": 1200,
+      "vertices": 2400
+    },
+    {
+      "id": "F03_City_252",
+      "dimensionsRobloxXYZ": [
+        32.150001525878906,
+        63.70000076293945,
+        86.5
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        31.850000381469727
+      ],
+      "triangles": 1012,
+      "vertices": 2024
+    },
+    {
+      "id": "F03_City_254",
+      "dimensionsRobloxXYZ": [
+        34.5,
+        108.94999694824219,
+        41.5
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        54.474998474121094
+      ],
+      "triangles": 1008,
+      "vertices": 2016
+    },
+    {
+      "id": "F03_City_256",
+      "dimensionsRobloxXYZ": [
+        30.8799991607666,
+        61.95000076293945,
+        51.2599983215332
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        30.975000381469727
+      ],
+      "triangles": 692,
+      "vertices": 1384
+    },
+    {
+      "id": "F03_City_258",
+      "dimensionsRobloxXYZ": [
+        38.5,
+        74.94999694824219,
+        45.5
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        37.474998474121094
+      ],
+      "triangles": 844,
+      "vertices": 1688
+    },
+    {
+      "id": "F03_City_260",
+      "dimensionsRobloxXYZ": [
+        47.09000015258789,
+        67.5,
+        71.30999755859375
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        33.75
+      ],
+      "triangles": 1012,
+      "vertices": 2024
+    },
+    {
+      "id": "F03_City_263",
+      "dimensionsRobloxXYZ": [
+        113.31999969482422,
+        55.70000076293945,
+        18.81999969482422
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        27.850000381469727
+      ],
+      "triangles": 1092,
+      "vertices": 2184
+    },
+    {
+      "id": "F03_City_265",
+      "dimensionsRobloxXYZ": [
+        40.349998474121094,
+        110.5999984741211,
+        34.470001220703125
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        55.29999923706055
+      ],
+      "triangles": 1008,
+      "vertices": 2016
+    },
+    {
+      "id": "F03_City_268",
+      "dimensionsRobloxXYZ": [
+        43.90999984741211,
+        76.94000244140625,
+        43.75
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        38.470001220703125
+      ],
+      "triangles": 944,
+      "vertices": 1888
+    },
+    {
+      "id": "F03_City_270",
+      "dimensionsRobloxXYZ": [
+        55.720001220703125,
+        86.5,
+        46.75
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        43.25
+      ],
+      "triangles": 1236,
+      "vertices": 2472
+    },
+    {
+      "id": "F03_City_272",
+      "dimensionsRobloxXYZ": [
+        51.68000030517578,
+        156.72999572753906,
+        72.5
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        78.36499786376953
+      ],
+      "triangles": 2604,
+      "vertices": 5208
+    },
+    {
+      "id": "F03_City_274",
+      "dimensionsRobloxXYZ": [
+        59.380001068115234,
+        132.5500030517578,
+        92.5199966430664
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        66.2750015258789
+      ],
+      "triangles": 2712,
+      "vertices": 5424
+    },
+    {
+      "id": "F03_City_276",
+      "dimensionsRobloxXYZ": [
+        41.29999923706055,
+        59.54999923706055,
+        43.29999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        29.774999618530273
+      ],
+      "triangles": 692,
+      "vertices": 1384
+    },
+    {
+      "id": "F03_City_278",
+      "dimensionsRobloxXYZ": [
+        85.19999694824219,
+        77.0999984741211,
+        93.4000015258789
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        38.54999923706055
+      ],
+      "triangles": 1844,
+      "vertices": 3688
+    },
+    {
+      "id": "F03_City_280",
+      "dimensionsRobloxXYZ": [
+        45.470001220703125,
+        56.95000076293945,
+        53.04999923706055
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        28.475000381469727
+      ],
+      "triangles": 852,
+      "vertices": 1704
+    },
+    {
+      "id": "F03_Backdrop_0",
+      "dimensionsRobloxXYZ": [
+        75.5,
+        138.5,
+        35.5
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        69.25
+      ],
+      "triangles": 1992,
+      "vertices": 3984
+    },
+    {
+      "id": "F03_Backdrop_1",
+      "dimensionsRobloxXYZ": [
+        65.5,
+        150.5,
+        38.5
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        75.25
+      ],
+      "triangles": 2004,
+      "vertices": 4008
+    },
+    {
+      "id": "F03_Backdrop_2",
+      "dimensionsRobloxXYZ": [
+        60.5,
+        165.5,
+        36.5
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        82.75
+      ],
+      "triangles": 2196,
+      "vertices": 4392
+    },
+    {
+      "id": "F03_Backdrop_3",
+      "dimensionsRobloxXYZ": [
+        65.5,
+        158.5,
+        36.5
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        79.25
+      ],
+      "triangles": 2004,
+      "vertices": 4008
+    }
+  ],
+  "totalTriangles": 196680,
+  "originalTerminalParts": 1111,
+  "terminalMeshes": 35,
+  "newCityMeshes": 78,
+  "colors": 22,
+  "placements": 190,
+  "restoredTrimLabels": [
+    "DistantBlock11__Cream__00",
+    "DistantBlock11__Skyline__00",
+    "DistantBlock11__Teal__00",
+    "DistantBlock7__Cream__00",
+    "DistantBlock7__Skyline__00",
+    "DistrictRoofs_00_01",
+    "DistrictRoofs_00_02",
+    "DistrictRoofs_00_03",
+    "DistrictRoofs_01_01",
+    "DistrictRoofs_01_02",
+    "DistrictRoofs_01_03",
+    "MarketBackdrop_A",
+    "MarketBackdrop_C",
+    "MarketFront"
+  ],
+  "texture": "palette.png"
+}

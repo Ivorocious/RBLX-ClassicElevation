@@ -1,0 +1,16 @@
+{
+  "sha256": "1766826e00ea04ab76e9faecae538578750c1a054718651c4f0acf4ef9b37b25",
+  "request": {
+    "assetType": "Model",
+    "displayName": "SC_WaterRipple30",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/ab511722-b4d3-4572-9de7-64beda647acc",
+  "assetId": "70457218272501"
+}

@@ -8,6 +8,7 @@ local Workspace = game:GetService("Workspace")
 
 local HazardConfig = require(ReplicatedStorage.Config.HazardConfig)
 local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
+local ManualObstacleMotion = require(game.ServerStorage.CourseBuilders.ManualObstacleMotion)
 
 type ServiceContext = {
 	Services: { [string]: any },
@@ -18,6 +19,11 @@ type PartVisual = {
 	transparency: number,
 	color: Color3,
 	material: Enum.Material,
+	cframe: CFrame,
+	anchored: boolean,
+	canCollide: boolean,
+	canTouch: boolean,
+	tween: Tween?,
 }
 
 type WarningVisual = {
@@ -41,14 +47,11 @@ type FallingRockRecord = {
 type CrumbleRecord = {
 	part: BasePart,
 	visuals: { PartVisual },
-	originalColor: Color3,
-	originalMaterial: Enum.Material,
-	originalCanCollide: boolean,
-	originalCanTouch: boolean,
 	phase: string,
 	nextPhaseAt: number,
 	warningDuration: number,
 	goneDuration: number,
+	fallDuration: number,
 }
 
 local CourseHazardService = {}
@@ -66,6 +69,8 @@ local crumbles: { CrumbleRecord } = {}
 local touchConnections: { RBXScriptConnection } = {}
 local overlapAccumulator = 0
 local wasRaceActive = false
+local manualMotion: any = nil
+local heartbeatConnection: RBXScriptConnection? = nil
 
 local attributes = HazardConfig.AttributeNames
 local phases = HazardConfig.Phases
@@ -97,7 +102,8 @@ end
 local function getPlayerFromPart(part: BasePart): Player?
 	local character = part:FindFirstAncestorWhichIsA("Model")
 
-	if character == nil then
+	-- Cosmetic accessories and the invisible root must not extend a lethal contact.
+	if character == nil or part.Parent ~= character or part.Name == "HumanoidRootPart" or part.Transparency >= 1 then
 		return nil
 	end
 
@@ -161,11 +167,24 @@ local function resetFallingRock(record: FallingRockRecord, restoreWarning: boole
 end
 
 local function restoreCrumble(record: CrumbleRecord, clearPhaseAttributes: boolean)
+	for _, visual in ipairs(record.visuals) do
+		if visual.part.Parent ~= nil then
+			if visual.tween ~= nil then
+				visual.tween:Cancel()
+				visual.tween = nil
+			end
+
+			visual.part.Transparency = visual.transparency
+			visual.part.Color = visual.color
+			visual.part.Material = visual.material
+			visual.part.CFrame = visual.cframe
+			visual.part.Anchored = visual.anchored
+			visual.part.CanCollide = visual.canCollide
+			visual.part.CanTouch = visual.canTouch
+		end
+	end
+
 	if record.part.Parent ~= nil then
-		record.part.Color = record.originalColor
-		record.part.Material = record.originalMaterial
-		record.part.CanCollide = record.originalCanCollide
-		record.part.CanTouch = record.originalCanTouch
 		record.phase = phases.Solid
 		record.nextPhaseAt = 0
 
@@ -176,17 +195,10 @@ local function restoreCrumble(record: CrumbleRecord, clearPhaseAttributes: boole
 			setPhase(record.part, phases.Solid, 0)
 		end
 	end
-
-	for _, visual in ipairs(record.visuals) do
-		if visual.part.Parent ~= nil then
-			visual.part.Transparency = visual.transparency
-			visual.part.Color = visual.color
-			visual.part.Material = visual.material
-		end
-	end
 end
 
 local function restoreBoundHazards()
+	if manualMotion then manualMotion.Reset() end
 	for _, record in ipairs(fallingRocks) do
 		resetFallingRock(record, true)
 
@@ -292,33 +304,85 @@ local function beginCrumbleWarning(record: CrumbleRecord)
 	end
 
 	for _, visual in ipairs(record.visuals) do
-		visual.part.Color = HazardConfig.Crumble.WarningColor
+		if visual.part.Parent ~= nil then
+			visual.part.Anchored = true
+		end
 	end
-	record.part.Color = HazardConfig.Crumble.WarningColor
-	record.part.Material = HazardConfig.Crumble.WarningMaterial
+
 	record.phase = phases.Warning
 	record.nextPhaseAt = getServerTime() + record.warningDuration
 	setPhase(record.part, record.phase, record.nextPhaseAt)
 end
 
+local function updateCrumbleWarningShake(record: CrumbleRecord, now: number)
+	local remaining = record.nextPhaseAt - now
+	local elapsed = record.warningDuration - math.max(0, remaining)
+	local distance = HazardConfig.Crumble.ShakeDistance
+	local frequency = HazardConfig.Crumble.ShakeFrequency
+	local offset = CFrame.new(
+		math.sin(elapsed * frequency) * distance,
+		math.cos(elapsed * frequency * 1.3) * distance * 0.35,
+		math.sin(elapsed * frequency * 0.7) * distance * 0.45
+	)
+
+	for _, visual in ipairs(record.visuals) do
+		if visual.part.Parent ~= nil then
+			visual.part.CFrame = visual.cframe * offset
+		end
+	end
+end
+
+local function beginCrumbleFall(record: CrumbleRecord, now: number)
+	if record.part.Parent == nil then
+		return
+	end
+
+	local fallOffset = Vector3.new(0, -HazardConfig.Crumble.FallDistance, 0)
+	local tweenInfo = TweenInfo.new(record.fallDuration, Enum.EasingStyle.Quad, Enum.EasingDirection.In)
+
+	for _, visual in ipairs(record.visuals) do
+		if visual.part.Parent ~= nil then
+			visual.part.CFrame = visual.cframe
+			visual.part.Anchored = true
+			visual.part.CanCollide = false
+			visual.part.CanTouch = false
+
+			if record.fallDuration > 0 then
+				visual.tween = TweenService:Create(visual.part, tweenInfo, { CFrame = visual.cframe + fallOffset })
+				visual.tween:Play()
+			else
+				visual.part.CFrame = visual.cframe + fallOffset
+			end
+		end
+	end
+
+	record.phase = phases.Falling
+	record.nextPhaseAt = now + record.fallDuration
+	setPhase(record.part, record.phase, record.nextPhaseAt)
+end
+
 local function updateCrumbles(now: number)
 	for _, record in ipairs(crumbles) do
+		if record.phase == phases.Warning then
+			updateCrumbleWarningShake(record, now)
+		end
+
 		if record.nextPhaseAt == 0 or now < record.nextPhaseAt then
 			continue
 		end
 
 		if record.phase == phases.Warning then
-			record.part.CanCollide = false
-			record.part.CanTouch = false
-
+			beginCrumbleFall(record, now)
+		elseif record.phase == phases.Falling then
 			for _, visual in ipairs(record.visuals) do
-				if visual.part.Parent ~= nil then
-					visual.part.Transparency = HazardConfig.Crumble.GoneTransparency
+				if visual.tween ~= nil then
+					visual.tween:Cancel()
+					visual.tween = nil
 				end
 			end
 
 			record.phase = phases.Gone
-			record.nextPhaseAt = now + record.goneDuration
+			record.nextPhaseAt = now + math.max(0, record.goneDuration - record.fallDuration)
 			setPhase(record.part, record.phase, record.nextPhaseAt)
 		elseif record.phase == phases.Gone then
 			restoreCrumble(record, false)
@@ -371,6 +435,7 @@ local function scanLethalOverlaps()
 end
 
 local function resetForInactiveRace()
+	if manualMotion then manualMotion.Reset() end
 	for _, record in ipairs(fallingRocks) do
 		resetFallingRock(record, false)
 	end
@@ -410,6 +475,16 @@ local function updateHazards(deltaTime: number)
 	end
 
 	wasRaceActive = true
+	if manualMotion then
+		local characters = buildOverlapFilter()
+		local overlap = nil
+		if #characters > 0 then
+			overlap = OverlapParams.new()
+			overlap.FilterType = Enum.RaycastFilterType.Include
+			overlap.FilterDescendantsInstances = characters
+		end
+		manualMotion.Step(deltaTime, overlap, recoverPlayerFromPart)
+	end
 	updateFallingRocks(now)
 	updateCrumbles(now)
 	overlapAccumulator += deltaTime
@@ -444,7 +519,14 @@ end
 
 local function bindKillPart(part: BasePart)
 	table.insert(killParts, part)
-	table.insert(touchConnections, part.Touched:Connect(recoverPlayerFromPart))
+	table.insert(touchConnections, part.Touched:Connect(function(touchedPart)
+		if getPlayerFromPart(touchedPart) == nil then return end
+		local overlap = OverlapParams.new()
+		overlap.FilterType = Enum.RaycastFilterType.Include
+		overlap.FilterDescendantsInstances = { touchedPart }
+		-- Touched can arrive at the physics contact margin; confirm the actual shapes overlap.
+		if #Workspace:GetPartsInPart(part, overlap) > 0 then recoverPlayerFromPart(touchedPart) end
+	end))
 end
 
 local function bindFallingRock(part: BasePart)
@@ -503,6 +585,11 @@ local function bindCrumble(part: BasePart)
 			transparency = part.Transparency,
 			color = part.Color,
 			material = part.Material,
+			cframe = part.CFrame,
+			anchored = part.Anchored,
+			canCollide = part.CanCollide,
+			canTouch = part.CanTouch,
+			tween = nil,
 		},
 	}
 
@@ -513,6 +600,11 @@ local function bindCrumble(part: BasePart)
 				transparency = descendant.Transparency,
 				color = descendant.Color,
 				material = descendant.Material,
+				cframe = descendant.CFrame,
+				anchored = descendant.Anchored,
+				canCollide = descendant.CanCollide,
+				canTouch = descendant.CanTouch,
+				tween = nil,
 			})
 		end
 	end
@@ -520,14 +612,11 @@ local function bindCrumble(part: BasePart)
 	local record: CrumbleRecord = {
 		part = part,
 		visuals = visuals,
-		originalColor = part.Color,
-		originalMaterial = part.Material,
-		originalCanCollide = part.CanCollide,
-		originalCanTouch = part.CanTouch,
 		phase = phases.Solid,
 		nextPhaseAt = 0,
 		warningDuration = warningDuration,
 		goneDuration = goneDuration,
+		fallDuration = math.min(goneDuration, HazardConfig.Crumble.FallDuration),
 	}
 
 	table.insert(crumbles, record)
@@ -575,6 +664,7 @@ end
 function CourseHazardService.BindActiveCourse()
 	disconnectTouchConnections()
 	restoreBoundHazards()
+	manualMotion = nil
 	table.clear(killParts)
 	table.clear(fallingRocks)
 	table.clear(crumbles)
@@ -591,6 +681,7 @@ function CourseHazardService.BindActiveCourse()
 	if course == nil then
 		return
 	end
+	manualMotion = ManualObstacleMotion.Create(course)
 
 	for _, descendant in ipairs(course:GetDescendants()) do
 		if not descendant:IsA("BasePart") then
@@ -630,7 +721,23 @@ function CourseHazardService.Start(_context: ServiceContext?)
 
 	isStarted = true
 	CourseHazardService.BindActiveCourse()
-	RunService.Heartbeat:Connect(updateHazards)
+	heartbeatConnection = RunService.Heartbeat:Connect(updateHazards)
 end
 
+function CourseHazardService.Stop()
+	if heartbeatConnection ~= nil then
+		heartbeatConnection:Disconnect()
+		heartbeatConnection = nil
+	end
+
+	disconnectTouchConnections()
+	restoreBoundHazards()
+	manualMotion = nil
+	table.clear(killParts)
+	table.clear(fallingRocks)
+	table.clear(crumbles)
+	wasRaceActive = false
+	overlapAccumulator = 0
+	isStarted = false
+end
 return CourseHazardService

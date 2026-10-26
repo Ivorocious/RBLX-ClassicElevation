@@ -223,8 +223,10 @@ local function bindActiveCourse()
 	local gateVisuals = startPen:FindFirstChild("GateVisuals")
 
 	if gateVisuals ~= nil then
+		local persistentLintel = if course:GetAttribute("CourseId") == "egg_rush_circuit"
+			then gateVisuals:FindFirstChild("GateLintel") else nil
 		for _, descendant in ipairs(gateVisuals:GetDescendants()) do
-			if descendant:IsA("BasePart") and gateVisualStates[descendant] == nil then
+			if descendant:IsA("BasePart") and descendant ~= persistentLintel and gateVisualStates[descendant] == nil then
 				gateVisualStates[descendant] = {
 					transparency = descendant.Transparency,
 					canCollide = descendant.CanCollide,
@@ -297,7 +299,9 @@ local function refreshStagedPlayers()
 	end
 
 	for _, player in ipairs(Players:GetPlayers()) do
-		if formationIndexByPlayer[player] == nil and isQueuedPlayer(player) then
+		if not isQueuedPlayer(player) then
+			formationIndexByPlayer[player], stagedCharacterByPlayer[player] = nil, nil
+		elseif formationIndexByPlayer[player] == nil then
 			addPlayerToStaging(player, "joined staging")
 		else
 			local _character, humanoid, humanoidRootPart = getCharacterParts(player)
@@ -321,7 +325,7 @@ local function handleCharacterAdded(player: Player, character: Model)
 			return
 		end
 
-		if formationIndexByPlayer[player] ~= nil or isQueuedPlayer(player) then
+		if isQueuedPlayer(player) then
 			stagedCharacterByPlayer[player] = nil
 			addPlayerToStaging(player, "staging respawn")
 		end
@@ -459,6 +463,8 @@ function StagingService.ReturnPlayersToLobby(players: { Player }, reason: string
 	end
 
 	for index, player in ipairs(players) do
+		formationIndexByPlayer[player] = nil
+		stagedCharacterByPlayer[player] = nil
 		movePlayerToPart(player, lobbyPart, RaceConfig.LobbyResetVerticalOffset, index, reason or "lobby")
 	end
 end
@@ -466,6 +472,16 @@ end
 function StagingService.ReturnAllPlayersToLobby(reason: string?)
 	StagingService.ClearStaging()
 	StagingService.ReturnPlayersToLobby(Players:GetPlayers(), reason)
+end
+
+function StagingService.IsPlayerDelivered(player: Player): boolean
+ local character,humanoid,root = getCharacterParts(player)
+ if activeStartPart == nil or not character or not humanoid or humanoid.Health <= 0 or not root
+  or root.Anchored or stagedCharacterByPlayer[player] ~= character or isOutsideStartBounds(root.Position) then return false end
+ local params=RaycastParams.new()
+ params.FilterType,params.FilterDescendantsInstances=Enum.RaycastFilterType.Include,{activeCourse}
+ params.RespectCanCollide=true
+ return Workspace:Raycast(root.Position,Vector3.new(0,-12,0),params) ~= nil
 end
 
 return StagingService

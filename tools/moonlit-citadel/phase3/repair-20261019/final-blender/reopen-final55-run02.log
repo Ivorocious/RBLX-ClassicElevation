@@ -1,0 +1,10 @@
+00:02.079  blend            | Read blend: "C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\final-blender\render01\MC_SOURCE55_FINAL_COMPOSITION.blend"
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+FINAL55_REOPEN_PASS {"counts": {"units": 315, "meshes": 868, "triangles": 259002}, "operations": 200, "supportProbes": 1341, "matrixError": 0}
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

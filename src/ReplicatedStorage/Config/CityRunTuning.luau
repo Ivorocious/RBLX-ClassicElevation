@@ -1,0 +1,3 @@
+--!strict
+-- Generated from assets/city_run/layout.py.
+return {["hazards"]={["cars"]={["crossing"]={-170,12,164},["size"]={16,6,7},["speed"]=56,["startX"]=-350,["endX"]=50,["intervals"]={4.6,5.4,6.1,4.9,5.8},["checkpoint"]=1},["balls"]={{["name"]="BallA",["pivot"]={-42,127,-244},["length"]=38,["radius"]=8,["amplitude"]=0.7,["period"]=6.4,["phase"]=0,["checkpoint"]=4},{["name"]="BallB",["pivot"]={42,127,-244},["length"]=38,["radius"]=8,["amplitude"]=0.7,["period"]=6.4,["phase"]=1.1,["checkpoint"]=4}},["train"]={["crossing"]={205,82,-12},["size"]={214.5,13.1,12},["bodyCenterY"]=87.2,["speed"]=105,["startX"]=-517.25,["endX"]=345,["openTime"]=2,["warningTime"]=2,["clearanceTime"]=3.8,["checkpoint"]=6}},["movement"]={["walkSpeed"]=16,["jumpHeight"]=7.2,["gravity"]=196.2}}

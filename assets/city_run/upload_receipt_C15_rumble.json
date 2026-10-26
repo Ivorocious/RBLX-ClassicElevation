@@ -1,0 +1,16 @@
+{
+  "sha256": "2c322f4a78582af4baa52421ed05d857a9c7178db2f8d664ff4b7bca91d606f4",
+  "request": {
+    "assetType": "Audio",
+    "displayName": "CityRun_C15_TrainRumble",
+    "description": "Original synthesized City Run hazard sound effect.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/24c76db5-a3de-444a-9566-aa21c183f5ac",
+  "assetId": "78959704238630"
+}

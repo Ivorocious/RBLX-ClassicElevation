@@ -1,0 +1,16 @@
+{
+  "sha256": "6ba13e7d217152a109bec0ee08f3eeff2a915692ed60ad4b9bfb37ac86e1019e",
+  "request": {
+    "assetType": "Model",
+    "displayName": "Moonlit Citadel Gardens and Hoists DG02 R01",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/7d64daaa-81f8-4e1b-9c54-1cb95493e796",
+  "assetId": "110920984523470"
+}

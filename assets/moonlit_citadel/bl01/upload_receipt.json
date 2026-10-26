@@ -1,0 +1,16 @@
+{
+  "sha256": "fb5346e7284001d1a0a854777b162993577c94ceda0d86b50e9378afe5caa30c",
+  "request": {
+    "assetType": "Model",
+    "displayName": "MoonlitCitadelBL01Library",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/5e507249-d468-4e88-8088-a99d82eb9cb3",
+  "assetId": "107285993331110"
+}

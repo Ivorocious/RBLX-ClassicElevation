@@ -1,0 +1,147 @@
+{
+  "pass": true,
+  "candidate": "MC_P3_GARDEN_DG01",
+  "assets": 1,
+  "meshParts": 3,
+  "triangles": 1662,
+  "materialPartsClosedManifoldOutward": true,
+  "source52Preserved": true,
+  "source52Inspection": {
+    "source": "tools\\moonlit-citadel\\phase3\\closeout-20261014\\drafts\\keep-surface52\\render01\\MC_KEEP_SURFACE52_CANDIDATE.blend",
+    "sha256": "d2bc244216110d37b14f44ea6ed053b44302a3b2a39a98d943ee4ef56849c175",
+    "objects": 1378,
+    "meshes": 1356,
+    "protectedVisibleMeshes": 717,
+    "worldMeshes": 639,
+    "keepRelief": [
+      1.0,
+      1.0,
+      1.04
+    ],
+    "readOnlyInspection": true
+  },
+  "studioTouched": false,
+  "liveBlenderTouched": false,
+  "uploaded": false,
+  "previews": [
+    {
+      "file": "01-supported-wall-garden.png",
+      "sha256": "97864456e8ec840abe3a7880e2bfcf0c24592c86f50d431131380e9dd4dec8bb",
+      "bytes": 1444660,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "camera": [
+        27,
+        -40,
+        20
+      ],
+      "target": [
+        0,
+        -1.95,
+        5
+      ],
+      "orthographicScale": 34,
+      "originalBlenderRender": true,
+      "boundary": "Kit geometry inspection only; not a route-height installed-map or native appearance result"
+    },
+    {
+      "file": "02-sloped-earth-and-rooting.png",
+      "sha256": "e4942347f297f6a9f5017dac3a2530ee575daf1aa07d804d07d761122deceb7a",
+      "bytes": 1448882,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "camera": [
+        27,
+        -21,
+        15
+      ],
+      "target": [
+        0,
+        -1.95,
+        5.3
+      ],
+      "orthographicScale": 29,
+      "originalBlenderRender": true,
+      "boundary": "Kit geometry inspection only; not a route-height installed-map or native appearance result"
+    },
+    {
+      "file": "03-planted-depth.png",
+      "sha256": "9929da059e2d7f2b857f0a7aaa03c73f5043362141b0f46a1654921081bfcb15",
+      "bytes": 1441340,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "camera": [
+        15,
+        -28,
+        13.5
+      ],
+      "target": [
+        0,
+        -1.95,
+        6.2
+      ],
+      "orthographicScale": 27,
+      "originalBlenderRender": true,
+      "boundary": "Kit geometry inspection only; not a route-height installed-map or native appearance result"
+    }
+  ],
+  "inputHashes": {
+    "tools/moonlit-citadel/phase3/detail-pass-20261014/drafts/correction54/assets/BuildGardenKit.py": "d497f0880a0611353ac57d5794937f50b5fd324e8be49984b063335072de3cd8",
+    "tools/moonlit-citadel/phase3/detail-pass-20261014/drafts/correction54/assets/GardenRecipe.py": "5a2d2dc6e5b34d7479689aee97878e9749e3c753786dc3a0a2e6ae8ab59f4943",
+    "assets/moonlit_citadel/bl02/architecture.py": "45518e507c45a3c461de249992b8195ce1e7301339df1cf59b1edbfeb7cf8296",
+    "assets/moonlit_citadel/phase3/drafts/world_kit.py": "7d4926c2cee83e4a6831b8400ac939dab187152f131e554799f93e9201822b58",
+    "tools/moonlit-citadel/phase3/closeout-20261014/drafts/keep-surface52/render01/MC_KEEP_SURFACE52_CANDIDATE.blend": "d2bc244216110d37b14f44ea6ed053b44302a3b2a39a98d943ee4ef56849c175",
+    "docs/artifacts/moonlit-citadel/phase3/closeout-20261014/combined-plan52.json": "3b0e592a6695e70a881d30daaa7bfb27915a60bec6acce75e685358b7a7266c2",
+    "docs/artifacts/moonlit-citadel/phase3/closeout-20261014/before/closeout_source52_packet.json": "80978718783aa23b70cd08d4edb240674ae3e53da827ab396f90ce5d67043617",
+    "docs/artifacts/moonlit-citadel/phase3/detail-pass-20261014/FINAL_FREEZE53.json": "c8fe2c28d91b28a838b0d46dbd28a9f0ec3be5f10638d6ce3c7702bdd15d4d08",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/r01/manifest.json": "f0da2fbcf1aed1c5651755086e443487ad39ca4c983b4f5ca650cceb1ef68eaa"
+  },
+  "files": {
+    "01-supported-wall-garden.png": {
+      "bytes": 1444660,
+      "sha256": "97864456e8ec840abe3a7880e2bfcf0c24592c86f50d431131380e9dd4dec8bb"
+    },
+    "02-sloped-earth-and-rooting.png": {
+      "bytes": 1448882,
+      "sha256": "e4942347f297f6a9f5017dac3a2530ee575daf1aa07d804d07d761122deceb7a"
+    },
+    "03-planted-depth.png": {
+      "bytes": 1441340,
+      "sha256": "9929da059e2d7f2b857f0a7aaa03c73f5043362141b0f46a1654921081bfcb15"
+    },
+    "authored-geometry.json": {
+      "bytes": 75758,
+      "sha256": "c0e74d516a2b33c2c08a7ba8dce17117a5fb74cf99ae22c38843eef65ee60c58"
+    },
+    "DetailGeometry.luau": {
+      "bytes": 6255,
+      "sha256": "8f43f5620ac6b2677bb922196e0d76a078543c08c0495ca9dfff83c4b841269a"
+    },
+    "manifest.json": {
+      "bytes": 22877,
+      "sha256": "37e19cfb7de8371f22931b6d93ded81d14a1e1c38c09bde194600cd073093f26"
+    },
+    "MC_WALL_GARDEN_DG01.blend": {
+      "bytes": 146321,
+      "sha256": "a50f7cb805113240fe4e457d54c8cfcc305e02a3aa80728624010e6165e48854"
+    },
+    "MC_WALL_GARDEN_DG01.fbx": {
+      "bytes": 65228,
+      "sha256": "8fb2d4892b488763c5d2bef5c9135dd329664b215a4774c976c3883e7deec900"
+    },
+    "occupied-geometry.json": {
+      "bytes": 33894,
+      "sha256": "1119809730a2f923d328f73e1be76faffef2805857bf5b7165a540012715fd88"
+    },
+    "source52-inspection.json": {
+      "bytes": 403,
+      "sha256": "e6793ed37604847700f4c527d5ff726a604d8c10760f01364afcfa1ca6c8073b"
+    }
+  }
+}

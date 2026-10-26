@@ -1,0 +1,16 @@
+{
+  "boundary": "Offline source/API check, not native game proof",
+  "build": "ER_CHICKEN_R04_A02",
+  "checks": [
+    "Luau compile",
+    "manifest transform and scale parity",
+    "native primitive sizes/colors/materials",
+    "visible red Beak is the only lethal piece",
+    "Head front and transformed BeakTip attachment parity",
+    "42-part A02 template and short-neck contract"
+  ],
+  "lethalPiecesChecked": 4,
+  "models": 12,
+  "partsChecked": 168,
+  "status": "passed"
+}

@@ -1,5 +1,9 @@
 # Classic Ascent v7
 
+**September 8 cleanup:** Historical Studio archives are now in verified local model backups; CourseLibrary contains one accepted Classic Ascent. See [cleanup and recovery](PRE_PHASE_CLEANUP_2026-09-08.md) for the current archive locations. The older history below is retained.
+
+**Current, September 7:** V7 has been restored after the owner rejected V8. The visible Workspace course is now the editing source, and Play uses its edits automatically. Follow the [fine-tuning guide](CLASSIC_ASCENT_EDITING.md); it supersedes the older library/preview instructions below. The original V7 implementation history follows.
+
 September 6, 2026. Installed in Studio after owner approval. Nothing was published.
 
 ## Changes

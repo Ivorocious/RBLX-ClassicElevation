@@ -1,0 +1,342 @@
+{
+  "candidate": "MC_P1_BL02",
+  "status": "passed local roundtrip",
+  "file_sha256": "f024757df1cdf28093bb155ae95a541e3845c1ff44b4c2d933b3126b5b301be9",
+  "fbx_meshes": 55,
+  "triangles": 26956,
+  "editable_units": 29,
+  "max_bounds_error": 1.0728836059570312e-05,
+  "parts": [
+    {
+      "name": "MC_BalustradeIron__Brass",
+      "triangles": 12,
+      "max_bounds_error": 4.6938657760620117e-07,
+      "material": "MC_BL02_Brass"
+    },
+    {
+      "name": "MC_BalustradeIron__Iron",
+      "triangles": 1256,
+      "max_bounds_error": 1.2293457984924316e-07,
+      "material": "MC_BL02_Iron"
+    },
+    {
+      "name": "MC_BalustradeStone__Stone",
+      "triangles": 132,
+      "max_bounds_error": 8.940696716308594e-08,
+      "material": "MC_BL02_Stone"
+    },
+    {
+      "name": "MC_BalustradeStone__StoneLight",
+      "triangles": 308,
+      "max_bounds_error": 3.5762786865234375e-07,
+      "material": "MC_BL02_StoneLight"
+    },
+    {
+      "name": "MC_Banner__Banner",
+      "triangles": 48,
+      "max_bounds_error": 1.341104507446289e-06,
+      "material": "MC_BL02_Banner"
+    },
+    {
+      "name": "MC_Banner__Brass",
+      "triangles": 664,
+      "max_bounds_error": 8.568167686462402e-07,
+      "material": "MC_BL02_Brass"
+    },
+    {
+      "name": "MC_CableReturnIron__Iron",
+      "triangles": 308,
+      "max_bounds_error": 3.501772880554199e-07,
+      "material": "MC_BL02_Iron"
+    },
+    {
+      "name": "MC_CarIronBrass__Brass",
+      "triangles": 144,
+      "max_bounds_error": 1.9371509552001953e-06,
+      "material": "MC_BL02_Brass"
+    },
+    {
+      "name": "MC_CarIronBrass__Iron",
+      "triangles": 792,
+      "max_bounds_error": 1.9073486328125e-06,
+      "material": "MC_BL02_Iron"
+    },
+    {
+      "name": "MC_CarStone__Stone",
+      "triangles": 140,
+      "max_bounds_error": 1.9301050997455604e-06,
+      "material": "MC_BL02_Stone"
+    },
+    {
+      "name": "MC_CarStone__StoneCarve",
+      "triangles": 1152,
+      "max_bounds_error": 1.9073486328125e-06,
+      "material": "MC_BL02_StoneCarve"
+    },
+    {
+      "name": "MC_CrownEmblem__Brass",
+      "triangles": 24,
+      "max_bounds_error": 7.748603820800781e-07,
+      "material": "MC_BL02_Brass"
+    },
+    {
+      "name": "MC_CrownEmblem__Iron",
+      "triangles": 12,
+      "max_bounds_error": 8.940696716308594e-08,
+      "material": "MC_BL02_Iron"
+    },
+    {
+      "name": "MC_ExpertCorbel__StoneDark",
+      "triangles": 44,
+      "max_bounds_error": 4.470348358154297e-07,
+      "material": "MC_BL02_StoneDark"
+    },
+    {
+      "name": "MC_FloorStone__Floor",
+      "triangles": 120,
+      "max_bounds_error": 1.9214231770092738e-06,
+      "material": "MC_BL02_Floor"
+    },
+    {
+      "name": "MC_FloorStone__StoneDark",
+      "triangles": 12,
+      "max_bounds_error": 1.9073486328125e-06,
+      "material": "MC_BL02_StoneDark"
+    },
+    {
+      "name": "MC_GuideIron__Brass",
+      "triangles": 220,
+      "max_bounds_error": 8.344650268554688e-06,
+      "material": "MC_BL02_Brass"
+    },
+    {
+      "name": "MC_GuideIron__Iron",
+      "triangles": 132,
+      "max_bounds_error": 8.463859558105469e-06,
+      "material": "MC_BL02_Iron"
+    },
+    {
+      "name": "MC_Ivy__Leaf",
+      "triangles": 304,
+      "max_bounds_error": 1.5050172805786133e-06,
+      "material": "MC_BL02_Leaf"
+    },
+    {
+      "name": "MC_KeepShell__Stone",
+      "triangles": 3696,
+      "max_bounds_error": 1.0728836059570312e-05,
+      "material": "MC_BL02_Stone"
+    },
+    {
+      "name": "MC_KeepShell__StoneDark",
+      "triangles": 44,
+      "max_bounds_error": 1.0728836059570312e-05,
+      "material": "MC_BL02_StoneDark"
+    },
+    {
+      "name": "MC_KeepShell__StoneLight",
+      "triangles": 748,
+      "max_bounds_error": 1.049041748046875e-05,
+      "material": "MC_BL02_StoneLight"
+    },
+    {
+      "name": "MC_KillCasing__Iron",
+      "triangles": 1292,
+      "max_bounds_error": 1.9073486328125e-06,
+      "material": "MC_BL02_Iron"
+    },
+    {
+      "name": "MC_KillCasing__Stone",
+      "triangles": 72,
+      "max_bounds_error": 1.9073486328125e-06,
+      "material": "MC_BL02_Stone"
+    },
+    {
+      "name": "MC_KillRed__Red",
+      "triangles": 88,
+      "max_bounds_error": 1.9073486328125e-06,
+      "material": "MC_BL02_Red"
+    },
+    {
+      "name": "MC_LanternCage__Brass",
+      "triangles": 860,
+      "max_bounds_error": 7.152557373046875e-07,
+      "material": "MC_BL02_Brass"
+    },
+    {
+      "name": "MC_LanternCage__Iron",
+      "triangles": 360,
+      "max_bounds_error": 2.384185791015625e-07,
+      "material": "MC_BL02_Iron"
+    },
+    {
+      "name": "MC_LanternCore__Amber",
+      "triangles": 60,
+      "max_bounds_error": 4.76837158203125e-07,
+      "material": "MC_BL02_Amber"
+    },
+    {
+      "name": "MC_PierStone__Stone",
+      "triangles": 204,
+      "max_bounds_error": 4.6350936599992565e-07,
+      "material": "MC_BL02_Stone"
+    },
+    {
+      "name": "MC_PierStone__StoneLight",
+      "triangles": 176,
+      "max_bounds_error": 8.344650268554688e-06,
+      "material": "MC_BL02_StoneLight"
+    },
+    {
+      "name": "MC_PulleyBrass__Brass",
+      "triangles": 836,
+      "max_bounds_error": 5.364418029785156e-07,
+      "material": "MC_BL02_Brass"
+    },
+    {
+      "name": "MC_PulleyIron__Iron",
+      "triangles": 496,
+      "max_bounds_error": 6.556510925292969e-07,
+      "material": "MC_BL02_Iron"
+    },
+    {
+      "name": "MC_RouteArrow__Brass",
+      "triangles": 24,
+      "max_bounds_error": 2.8312206268310547e-07,
+      "material": "MC_BL02_Brass"
+    },
+    {
+      "name": "MC_RouteArrow__Iron",
+      "triangles": 12,
+      "max_bounds_error": 4.023313522338867e-07,
+      "material": "MC_BL02_Iron"
+    },
+    {
+      "name": "MC_SlateSpire__Brass",
+      "triangles": 33,
+      "max_bounds_error": 2.823770046234131e-06,
+      "material": "MC_BL02_Brass"
+    },
+    {
+      "name": "MC_SlateSpire__Slate",
+      "triangles": 475,
+      "max_bounds_error": 6.499875553345191e-07,
+      "material": "MC_BL02_Slate"
+    },
+    {
+      "name": "MC_SlateSpire__SlateBand",
+      "triangles": 352,
+      "max_bounds_error": 4.76837158203125e-07,
+      "material": "MC_BL02_SlateBand"
+    },
+    {
+      "name": "MC_StoneArch__Stone",
+      "triangles": 668,
+      "max_bounds_error": 2.86102294921875e-06,
+      "material": "MC_BL02_Stone"
+    },
+    {
+      "name": "MC_StoneArch__StoneDark",
+      "triangles": 96,
+      "max_bounds_error": 1.6689300537109375e-06,
+      "material": "MC_BL02_StoneDark"
+    },
+    {
+      "name": "MC_StoneArch__StoneLight",
+      "triangles": 1336,
+      "max_bounds_error": 2.6226043701171875e-06,
+      "material": "MC_BL02_StoneLight"
+    },
+    {
+      "name": "MC_TurretAmber__Amber",
+      "triangles": 352,
+      "max_bounds_error": 3.2186508178710938e-06,
+      "material": "MC_BL02_Amber"
+    },
+    {
+      "name": "MC_TurretStone__Stone",
+      "triangles": 740,
+      "max_bounds_error": 4.5299530029296875e-06,
+      "material": "MC_BL02_Stone"
+    },
+    {
+      "name": "MC_TurretStone__StoneDark",
+      "triangles": 960,
+      "max_bounds_error": 3.0994415283203125e-06,
+      "material": "MC_BL02_StoneDark"
+    },
+    {
+      "name": "MC_TurretStone__StoneLight",
+      "triangles": 1512,
+      "max_bounds_error": 2.384185791015625e-06,
+      "material": "MC_BL02_StoneLight"
+    },
+    {
+      "name": "MC_WeightIron__Brass",
+      "triangles": 120,
+      "max_bounds_error": 7.152557373046875e-07,
+      "material": "MC_BL02_Brass"
+    },
+    {
+      "name": "MC_WeightIron__Iron",
+      "triangles": 48,
+      "max_bounds_error": 1.1920928955078125e-06,
+      "material": "MC_BL02_Iron"
+    },
+    {
+      "name": "MC_WeightStone__Stone",
+      "triangles": 56,
+      "max_bounds_error": 1.1920928955078125e-06,
+      "material": "MC_BL02_Stone"
+    },
+    {
+      "name": "MC_WeightStone__StoneCarve",
+      "triangles": 36,
+      "max_bounds_error": 7.152557373046875e-07,
+      "material": "MC_BL02_StoneCarve"
+    },
+    {
+      "name": "MC_WindowFrame__Stone",
+      "triangles": 712,
+      "max_bounds_error": 9.417533874511719e-06,
+      "material": "MC_BL02_Stone"
+    },
+    {
+      "name": "MC_WindowFrame__StoneDark",
+      "triangles": 936,
+      "max_bounds_error": 8.89599323272705e-06,
+      "material": "MC_BL02_StoneDark"
+    },
+    {
+      "name": "MC_WindowFrame__StoneLight",
+      "triangles": 2204,
+      "max_bounds_error": 2.384185791015625e-07,
+      "material": "MC_BL02_StoneLight"
+    },
+    {
+      "name": "MC_WindowGlass__Amber",
+      "triangles": 40,
+      "max_bounds_error": 6.16908073425293e-06,
+      "material": "MC_BL02_Amber"
+    },
+    {
+      "name": "MC_WindowGlass__AmberLight",
+      "triangles": 40,
+      "max_bounds_error": 6.16908073425293e-06,
+      "material": "MC_BL02_AmberLight"
+    },
+    {
+      "name": "MC_WindowGlass__AmberPale",
+      "triangles": 136,
+      "max_bounds_error": 7.718801498413086e-06,
+      "material": "MC_BL02_AmberPale"
+    },
+    {
+      "name": "MC_WindowTracery__Lead",
+      "triangles": 1312,
+      "max_bounds_error": 8.732080459594727e-06,
+      "material": "MC_BL02_Lead"
+    }
+  ],
+  "boundary": "Blender file checks only. Roblox import, colors, pivots and gameplay remain unverified."
+}

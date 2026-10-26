@@ -1,0 +1,17 @@
+00:01.843  blend            | Read blend: "C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\final-blender\render01\MC_SOURCE55_FINAL_COMPOSITION.blend"
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+Traceback (most recent call last):
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+  File "C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\final-blender\ReopenFinal55.py", line 113, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\final-blender\ReopenFinal55.py", line 91, in main
+    assert not failures,failures[:5]
+           ^^^^^^^^^^^^
+AssertionError: [{'unit': 'EastLowerCurtain', 'point': [246.0, 500.0, 114.0], 'before': [246.0, -130.00006103515625, 114.0], 'after': None}, {'unit': 'EastLowerCurtain', 'point': [246.0, 500.0, 162.0], 'before': [246.0, -130.00006103515625, 162.0], 'after': None}, {'unit': 'EastLowerCurtain', 'point': [246.0, 500.0, 111.0], 'before': [246.0, -129.99993896484375, 111.0], 'after': None}, {'unit': 'EastLowerCurtain', 'point': [246.0, 500.0, 114.0], 'before': [246.0, -130.00006103515625, 114.0], 'after': None}, {'unit': 'EastLowerCurtain', 'point': [246.0, 500.0, 117.0], 'before': [246.0, -130.0, 117.0], 'after': None}]
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

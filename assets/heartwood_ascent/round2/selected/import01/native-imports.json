@@ -1,0 +1,1082 @@
+[
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_00",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_00",
+    "position": [
+      1471.6795654296875,
+      527.248291015625,
+      -1484.4189453125
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://95148423584180",
+    "size": [
+      840.8084106445312,
+      1054.54833984375,
+      1087.4676513671875
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_01",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_01",
+    "position": [
+      1962.875244140625,
+      527.9990234375,
+      -2468.28515625
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://120025311382291",
+    "size": [
+      1167.4932861328125,
+      1054.0478515625,
+      1087.467529296875
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_02",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_02",
+    "position": [
+      2933.70556640625,
+      553.6146240234375,
+      -1819.254638671875
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://104821444336866",
+    "size": [
+      1167.493408203125,
+      1036.9708251953125,
+      1079.184326171875
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_03",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_03",
+    "position": [
+      2278.327880859375,
+      1085.07080078125,
+      -960.7824096679688
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://129953829069241",
+    "size": [
+      1081.3304443359375,
+      2047.9998779296875,
+      1079.1844482421875
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_04",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_04",
+    "position": [
+      1538.9083251953125,
+      1581.79638671875,
+      -1835.826416015625
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://140145369060369",
+    "size": [
+      1134.615966796875,
+      1054.54833984375,
+      435.006591796875
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_05",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_05",
+    "position": [
+      1806.3450927734375,
+      1582.046875,
+      -2193.656005859375
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://89550754369435",
+    "size": [
+      1108.0946044921875,
+      1054.0478515625,
+      458.0527648925781
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_06",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_06",
+    "position": [
+      2694.388671875,
+      1590.5853271484375,
+      -1593.3189697265625
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://81161357126317",
+    "size": [
+      1035.4229736328125,
+      1036.970947265625,
+      434.3319091796875
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_07",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_07",
+    "position": [
+      2488.06396484375,
+      2636.3447265625,
+      -1407.0888671875
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://140455943735333",
+    "size": [
+      1140.314453125,
+      1054.548583984375,
+      841.2416381835938
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_08",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_08",
+    "position": [
+      1696.06689453125,
+      2608.3125,
+      -2039.809814453125
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://99632627610836",
+    "size": [
+      883.2062377929688,
+      998.4835205078125,
+      785.1693115234375
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_09",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_09",
+    "position": [
+      1499.69384765625,
+      3606.79541015625,
+      -1983.839111328125
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://120133322457932",
+    "size": [
+      1140.314453125,
+      998.4832763671875,
+      620.6463012695312
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_structure.HA2_braided_windows_OrganicWoodCore_Chunk_10",
+    "package": "structure",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_OrganicWoodCore_Chunk_10",
+    "position": [
+      2424.884521484375,
+      3690.893310546875,
+      -1325.5909423828125
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://128501740147810",
+    "size": [
+      1130.5601806640625,
+      1054.5484619140625,
+      635.1015625
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_ContinuingCrownMass_Chunk_00",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_ContinuingCrownMass_Chunk_00",
+    "position": [
+      1879.5390625,
+      5359.634765625,
+      -1296.240478515625
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://98594351105519",
+    "size": [
+      2048,
+      725.1107177734375,
+      1166.6224365234375
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_ContinuingCrownMass_Chunk_01",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_ContinuingCrownMass_Chunk_01",
+    "position": [
+      1297.667724609375,
+      5107.07080078125,
+      -1556.054931640625
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://102057794656392",
+    "size": [
+      1051.05712890625,
+      222.16015625,
+      1006.8244018554688
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_EasternCrownMass_Chunk_00",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_EasternCrownMass_Chunk_00",
+    "position": [
+      847.057861328125,
+      4618.568359375,
+      -1936.471435546875
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://100881627440536",
+    "size": [
+      1667.7247314453125,
+      839.6185302734375,
+      1294.259765625
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_EasternCrownMass_Chunk_01",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_EasternCrownMass_Chunk_01",
+    "position": [
+      1092.9921875,
+      4415.392578125,
+      -1484.9407958984375
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://114451741521447",
+    "size": [
+      862.9923095703125,
+      198.6247100830078,
+      862.9921875
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_FlowerBoughFoliage",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_FlowerBoughFoliage",
+    "position": [
+      2907.057861328125,
+      3589.4111328125,
+      -482.6905517578125
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://119283967831335",
+    "size": [
+      731.15478515625,
+      272.69683837890625,
+      497.3538818359375
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_LowerEastFringe",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_LowerEastFringe",
+    "position": [
+      784.199462890625,
+      2084.349365234375,
+      -2008.4075927734375
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://89017955374773",
+    "size": [
+      822.9299926757812,
+      397.748779296875,
+      692.146484375
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_LowerWestFringe",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_LowerWestFringe",
+    "position": [
+      2984.923583984375,
+      1731.546142578125,
+      -503.7884521484375
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://95626669393603",
+    "size": [
+      701.0446166992188,
+      422.43853759765625,
+      704.3770751953125
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_NearLeafSpray_00",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_NearLeafSpray_00",
+    "position": [
+      3248.75439453125,
+      31.013916015625,
+      -2324.23095703125
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://84913857492825",
+    "size": [
+      101.39054870605469,
+      62.02733612060547,
+      100.45265197753906
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_NearLeafSpray_01",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_NearLeafSpray_01",
+    "position": [
+      2570.74609375,
+      30.818115234375,
+      -2751.661376953125
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://85039340702049",
+    "size": [
+      96.21022033691406,
+      61.63603210449219,
+      98.86397552490234
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_NearLeafSpray_02",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_NearLeafSpray_02",
+    "position": [
+      3079.05029296875,
+      152.365234375,
+      -1752.6207275390625
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://96809703844107",
+    "size": [
+      128.56724548339844,
+      78.74440002441406,
+      122.8289794921875
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_NearLeafSpray_03",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_NearLeafSpray_03",
+    "position": [
+      2092.237060546875,
+      97.48779296875,
+      -2343.300048828125
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://75992962933599",
+    "size": [
+      133.55784606933594,
+      77.18142700195312,
+      127.77362823486328
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_WesternCrownMass_Chunk_00",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_WesternCrownMass_Chunk_00",
+    "position": [
+      2727.6142578125,
+      4807.39501953125,
+      -618.1800537109375
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://88529733989052",
+    "size": [
+      1665.75,
+      761.52294921875,
+      1166.6224365234375
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_foliage.HA2_braided_windows_WesternCrownMass_Chunk_01",
+    "package": "foliage",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_WesternCrownMass_Chunk_01",
+    "position": [
+      2275.182861328125,
+      4582.5224609375,
+      -721.01611328125
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://100194392970422",
+    "size": [
+      834.225830078125,
+      189.35020446777344,
+      834.225830078125
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_branches.HA2_braided_windows_ContinuingCrownMass_FringeTwigs",
+    "package": "branches",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_ContinuingCrownMass_FringeTwigs",
+    "position": [
+      1775.358642578125,
+      5506.6044921875,
+      -1231.5087890625
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://77372760065227",
+    "size": [
+      2048,
+      340.34796142578125,
+      1025.0452880859375
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_branches.HA2_braided_windows_EasternCrownMass_FringeTwigs",
+    "package": "branches",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_EasternCrownMass_FringeTwigs",
+    "position": [
+      748.47998046875,
+      4716.8583984375,
+      -1878.364990234375
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://137949200365869",
+    "size": [
+      1614.943359375,
+      506.7852478027344,
+      1163.483642578125
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_branches.HA2_braided_windows_FlowerBoughFoliage_FringeTwigs",
+    "package": "branches",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_FlowerBoughFoliage_FringeTwigs",
+    "position": [
+      2942.1650390625,
+      3758.887451171875,
+      -352.6937255859375
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://92212656099871",
+    "size": [
+      675.7921142578125,
+      151.4513702392578,
+      430.381591796875
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_branches.HA2_braided_windows_LowerEastFringe_FringeTwigs",
+    "package": "branches",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_LowerEastFringe_FringeTwigs",
+    "position": [
+      658.222412109375,
+      2096.302978515625,
+      -1980.9017333984375
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://120197500379212",
+    "size": [
+      744.4708862304688,
+      198.08116149902344,
+      611.2698974609375
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_branches.HA2_braided_windows_LowerWestFringe_FringeTwigs",
+    "package": "branches",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_LowerWestFringe_FringeTwigs",
+    "position": [
+      3003.538818359375,
+      1713.90087890625,
+      -382.3250732421875
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://138071537350693",
+    "size": [
+      617.411376953125,
+      219.99111938476562,
+      631.6986083984375
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_branches.HA2_braided_windows_NearLeafSpray_00_Twigs",
+    "package": "branches",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_NearLeafSpray_00_Twigs",
+    "position": [
+      3307.181640625,
+      10.8798828125,
+      -2335.68310546875
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://81251336979254",
+    "size": [
+      69.56575012207031,
+      21.759716033935547,
+      67.00120544433594
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_branches.HA2_braided_windows_NearLeafSpray_01_Twigs",
+    "package": "branches",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_NearLeafSpray_01_Twigs",
+    "position": [
+      2578.5859375,
+      10.8798828125,
+      -2793.8310546875
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://103298891372211",
+    "size": [
+      69.56578063964844,
+      21.759716033935547,
+      67.00120544433594
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_branches.HA2_braided_windows_NearLeafSpray_02_Twigs",
+    "package": "branches",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_NearLeafSpray_02_Twigs",
+    "position": [
+      3122.0166015625,
+      138.255859375,
+      -1717.067626953125
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://118751364329508",
+    "size": [
+      86.19110107421875,
+      26.91205596923828,
+      82.88566589355469
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_branches.HA2_braided_windows_NearLeafSpray_03_Twigs",
+    "package": "branches",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_NearLeafSpray_03_Twigs",
+    "position": [
+      2058.2978515625,
+      79.980712890625,
+      -2357.10400390625
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://133495284209343",
+    "size": [
+      86.19102478027344,
+      26.912038803100586,
+      82.88551330566406
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_branches.HA2_braided_windows_WesternCrownMass_FringeTwigs",
+    "package": "branches",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_WesternCrownMass_FringeTwigs",
+    "position": [
+      2714.41162109375,
+      4913.9443359375,
+      -491.2171630859375
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://87812000553831",
+    "size": [
+      1583.227294921875,
+      389.3019104003906,
+      1011.905029296875
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_flowers.HA2_braided_windows_RootArchMaterialFlower",
+    "package": "flowers",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_RootArchMaterialFlower",
+    "position": [
+      2101.4208984375,
+      88.3642578125,
+      -7108.630859375
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://83656365445739",
+    "size": [
+      573.4400634765625,
+      176.73007202148438,
+      572.90771484375
+    ]
+  },
+  {
+    "path": "ServerStorage.AssetImports.HeartwoodR2M1_flowers.HA2_braided_windows_WesternFlower",
+    "package": "flowers",
+    "sa": [
+      {
+        "colorMap": "rbxassetid://94994019987536",
+        "roughnessMap": "rbxassetid://132833093568597",
+        "metalnessMap": ""
+      }
+    ],
+    "texture": "",
+    "name": "HA2_braided_windows_WesternFlower",
+    "position": [
+      1916.472412109375,
+      20271.609375,
+      2637.951171875
+    ],
+    "orientation": [
+      0,
+      -35.073001861572266,
+      0
+    ],
+    "material": "Enum.Material.Plastic",
+    "mesh": "rbxassetid://113746876580052",
+    "size": [
+      2048,
+      631.18017578125,
+      2046.1004638671875
+    ]
+  }
+]

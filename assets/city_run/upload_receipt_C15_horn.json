@@ -1,0 +1,16 @@
+{
+  "sha256": "63cf8d1a34339c2fe5339aa36c16f69f27949b79e33c5ec3d5bf24076c7386aa",
+  "request": {
+    "assetType": "Audio",
+    "displayName": "CityRun_C15_TrainHorn",
+    "description": "Original synthesized City Run hazard sound effect.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/46091172-4a05-47ed-9175-b18a203ab436",
+  "assetId": "120064366645170"
+}

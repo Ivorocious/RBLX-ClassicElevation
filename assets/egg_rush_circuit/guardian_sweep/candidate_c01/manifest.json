@@ -1,0 +1,113 @@
+{
+  "candidate": "ER_GUARDIAN_SWEEP_C01",
+  "units": "1unit=1intended stud",
+  "axes": "RobloxXYZ=(BlenderX,BlenderZ,-BlenderY)",
+  "palette": {
+    "Shell": "FFF0CA",
+    "Mint": "68CDB0",
+    "Coral": "F67D60",
+    "Lilac": "B688D8"
+  },
+  "shapeChecks": {
+    "boundsRoblox": [
+      [
+        0,
+        -1.5,
+        -4
+      ],
+      [
+        29.25,
+        3.5,
+        4
+      ]
+    ],
+    "northProjectionMinimum": -13.630415057766768,
+    "northProjectionLimit": -13.65,
+    "northProjectionMargin": 0.019584942233231928,
+    "statement": "Static vertex bound only; native full-cycle refuge/contact/traversal proof still required."
+  },
+  "assets": [
+    {
+      "name": "GuardianSweepTail",
+      "family": "GuardianSweepTail",
+      "boundsBlender": [
+        [
+          0.0,
+          -4.0,
+          -1.5
+        ],
+        [
+          29.25,
+          4.0,
+          3.5
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        29.25,
+        5.0,
+        8.0
+      ],
+      "pivot": "Root0; Roblox+X outward, +Y up; match existing tail mechanism pivot directly.",
+      "use": "Four stepped branches and longer central feather, authored to native envelope; no opaque beam or stretched source tail.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_GuardianSweepTail__Coral",
+          "role": "Coral",
+          "triangles": 6,
+          "nonManifoldEdges": 10
+        },
+        {
+          "name": "ER_GuardianSweepTail__Lilac",
+          "role": "Lilac",
+          "triangles": 4,
+          "nonManifoldEdges": 8
+        },
+        {
+          "name": "ER_GuardianSweepTail__Mint",
+          "role": "Mint",
+          "triangles": 4,
+          "nonManifoldEdges": 8
+        },
+        {
+          "name": "ER_GuardianSweepTail__Shell",
+          "role": "Shell",
+          "triangles": 276,
+          "nonManifoldEdges": 300
+        }
+      ],
+      "fbx": "ER_GuardianSweepTail.fbx"
+    }
+  ],
+  "assetCount": 1,
+  "partCount": 4,
+  "triangles": 290,
+  "blenderFbxRoundtrip": [
+    {
+      "file": "ER_GuardianSweepTail.fbx",
+      "parts": 4,
+      "boundsErrorStuds": 5e-07,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    }
+  ],
+  "builderSHA256": "45b3d44655c3bace4bc28ac3fd3b91e71021d477b57208e0989847d6308c7b48",
+  "helperSHA256": "2cb7246c0c82772914f09f138d98d4c67233bc1a77b61c91da705373301df060",
+  "buildSeconds": 9.303,
+  "files": {
+    "ER_GuardianSweepTail.fbx": "9897759857c1622ac16ad3257cb879b1a43a5fafb2d2730303ef427fbe34efc4",
+    "GuardianSweepTail.blend": "43725027629ae2899f7fcb89bd6c8c662b9346bf75cc2bc0b4c76ff5b884211b",
+    "GuardianSweepTail_oblique.png": "877b9fa5c181f5c39af8a19ed2d69c6ccb5a93f95bd348f10f1b35b6076ed420",
+    "GuardianSweepTail_plan.png": "01346eac9073beabd7a7a17f03f580c78f4319f5befe79bd26d097f4f8896dd9"
+  }
+}

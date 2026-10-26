@@ -1,0 +1,16 @@
+{
+  "sha256": "f024757df1cdf28093bb155ae95a541e3845c1ff44b4c2d933b3126b5b301be9",
+  "request": {
+    "assetType": "Model",
+    "displayName": "Moonlit Citadel Phase1 BL02 Optimized Library",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/5170fdc3-3699-45d9-a251-d7dd7568daee",
+  "assetId": "138009529483104"
+}

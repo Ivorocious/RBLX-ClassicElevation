@@ -1,0 +1,16 @@
+{
+  "sha256": "8910e3e6ef3a7d8287376fc1b21e3262820c6ae165ae99211fb703e7c762eb04",
+  "request": {
+    "assetType": "Model",
+    "displayName": "Moonlit Citadel Enclosure ER01",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/c87b9384-a155-4b78-a8ea-6f14fed8cf60",
+  "assetId": "83390081804897"
+}

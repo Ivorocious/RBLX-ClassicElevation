@@ -1,0 +1,154 @@
+{
+  "build": "SC_CAVE_KIT_26",
+  "assets": [
+    {
+      "id": "SC_R_CaveMouth26",
+      "family": "cave",
+      "triangles": 216,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        81.79332733154297,
+        63.60258483886719,
+        62.71877098083496
+      ],
+      "boundsBlender": {
+        "min": [
+          81.5310287475586,
+          -23.49297523498535,
+          -6.0
+        ],
+        "max": [
+          163.32435607910156,
+          39.22579574584961,
+          57.60258483886719
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Sealed thick rock shell; course-local coordinates. Shared end profiles; do not scale bays independently.",
+      "centerBlender": [
+        122.42769241333008,
+        7.866410255432129,
+        25.801292419433594
+      ]
+    },
+    {
+      "id": "SC_R_CaveVault26",
+      "family": "cave",
+      "triangles": 216,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        77.32896423339844,
+        64.74785232543945,
+        72.47257423400879
+      ],
+      "boundsBlender": {
+        "min": [
+          85.99539184570312,
+          -91.59615325927734,
+          -6.0
+        ],
+        "max": [
+          163.32435607910156,
+          -19.123579025268555,
+          58.74785232543945
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Sealed thick rock shell; course-local coordinates. Shared end profiles; do not scale bays independently.",
+      "centerBlender": [
+        124.65987396240234,
+        -55.35986614227295,
+        26.373926162719727
+      ]
+    },
+    {
+      "id": "SC_R_CaveSurge26",
+      "family": "cave",
+      "triangles": 216,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        59.46080017089844,
+        58.74615478515625,
+        69.05438613891602
+      ],
+      "boundsBlender": {
+        "min": [
+          39.0,
+          -92.1142578125,
+          -6.0
+        ],
+        "max": [
+          98.46080017089844,
+          -23.059871673583984,
+          52.74615478515625
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Sealed thick rock shell; course-local coordinates. Shared end profiles; do not scale bays independently.",
+      "centerBlender": [
+        68.73040008544922,
+        -57.58706474304199,
+        23.373077392578125
+      ]
+    },
+    {
+      "id": "SC_R_CrumbleStone26",
+      "family": "cave",
+      "triangles": 68,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 16,
+      "dimensionsRobloxXYZ": [
+        8.30642819404602,
+        16.0,
+        8.271459341049194
+      ],
+      "boundsBlender": {
+        "min": [
+          -3.906428098678589,
+          -3.9573705196380615,
+          0.0
+        ],
+        "max": [
+          4.400000095367432,
+          4.314088821411133,
+          16.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Flat irregular crown at Z16. Collider inscribed inside crown; bottom at water bed.",
+      "centerBlender": [
+        0.2467859983444214,
+        0.17835915088653564,
+        8.0
+      ]
+    }
+  ],
+  "libraryTriangles": 716,
+  "assetCeiling": 1500,
+  "kitCeiling": 5000,
+  "materialCount": 1,
+  "atlas": "palette.png"
+}

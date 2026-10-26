@@ -1,0 +1,574 @@
+{
+  "candidate": "ER_WORLD_KIT_C02",
+  "blender": "5.2.1 LTS",
+  "units": "1 Blender unit=1 intended stud",
+  "axes": "RobloxXYZ=(BlenderX,BlenderZ,-BlenderY)",
+  "palette": {
+    "Shell": "FFF0CA",
+    "ShellShade": "E8D4A8",
+    "Mint": "68CDB0",
+    "Coral": "F67D60",
+    "Lilac": "B688D8",
+    "Honey": "B97B43",
+    "Straw": "D89C53",
+    "Iron": "646A78",
+    "IronLight": "949BA9",
+    "Ink": "343744",
+    "Amber": "FFC04B",
+    "GlassBlue": "8CC7DA",
+    "Rock": "868993",
+    "RockShade": "707580",
+    "Green": "63C448",
+    "GreenShade": "4BA83B",
+    "Window": "4C9EC4"
+  },
+  "assetCount": 10,
+  "partCount": 21,
+  "triangles": 1352,
+  "assets": [
+    {
+      "name": "RockSupportLow",
+      "family": "Supports",
+      "boundsBlender": [
+        [
+          -5.0,
+          -3.0,
+          -10.0
+        ],
+        [
+          5.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        10.0,
+        6.0
+      ],
+      "pivot": "TOP CENTER at0. Rock extends down; green cap topBlenderZ0 =RobloxY0.",
+      "use": "One isolated support per cream pad; outer bottom footprint equals authored width/depth. Scale height about top pivot; cap narrower than pad.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_RockSupportLow__Green",
+          "role": "Green",
+          "triangles": 28,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_RockSupportLow__Rock",
+          "role": "Rock",
+          "triangles": 44,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Supports.fbx"
+    },
+    {
+      "name": "RockSupportStandard",
+      "family": "Supports",
+      "boundsBlender": [
+        [
+          -5.0,
+          -3.0,
+          -20.0
+        ],
+        [
+          5.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        20.0,
+        6.0
+      ],
+      "pivot": "TOP CENTER at0. Rock extends down; green cap topBlenderZ0 =RobloxY0.",
+      "use": "One isolated support per cream pad; outer bottom footprint equals authored width/depth. Scale height about top pivot; cap narrower than pad.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        28.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_RockSupportStandard__Green",
+          "role": "Green",
+          "triangles": 28,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_RockSupportStandard__Rock",
+          "role": "Rock",
+          "triangles": 44,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Supports.fbx"
+    },
+    {
+      "name": "RockSupportTall",
+      "family": "Supports",
+      "boundsBlender": [
+        [
+          -5.0,
+          -3.0,
+          -32.0
+        ],
+        [
+          5.0,
+          3.0,
+          0.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        32.0,
+        6.0
+      ],
+      "pivot": "TOP CENTER at0. Rock extends down; green cap topBlenderZ0 =RobloxY0.",
+      "use": "One isolated support per cream pad; outer bottom footprint equals authored width/depth. Scale height about top pivot; cap narrower than pad.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        56.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        56.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_RockSupportTall__Green",
+          "role": "Green",
+          "triangles": 28,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_RockSupportTall__Rock",
+          "role": "Rock",
+          "triangles": 44,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Supports.fbx"
+    },
+    {
+      "name": "BareRock",
+      "family": "Supports",
+      "boundsBlender": [
+        [
+          -3.5,
+          -2.700000047683716,
+          -7.0
+        ],
+        [
+          3.5,
+          2.700000047683716,
+          0.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        7.0,
+        7.0,
+        5.400000095367432
+      ],
+      "pivot": "TOP CENTER at0. Rock extends down; green cap topBlenderZ0 =RobloxY0.",
+      "use": "One isolated support per cream pad; outer bottom footprint equals authored width/depth. Scale height about top pivot; cap narrower than pad.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        84.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        84.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_BareRock__Rock",
+          "role": "Rock",
+          "triangles": 44,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Supports.fbx"
+    },
+    {
+      "name": "ShrubGroup",
+      "family": "Nature",
+      "boundsBlender": [
+        [
+          -4.349999904632568,
+          -1.7999999523162842,
+          0.0
+        ],
+        [
+          4.5,
+          2.549999952316284,
+          6.599999904632568
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        8.849999904632568,
+        6.599999904632568,
+        4.349999904632568
+      ],
+      "pivot": "Bottom center; authored width8.85,height6.6,depth4.2.",
+      "use": "Six large blocks in three connected crowns. Keep below route sightlines and away from jump gaps.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_ShrubGroup__Green",
+          "role": "Green",
+          "triangles": 36,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShrubGroup__GreenShade",
+          "role": "GreenShade",
+          "triangles": 36,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Nature.fbx"
+    },
+    {
+      "name": "NurseryWallBay",
+      "family": "Buildings",
+      "boundsBlender": [
+        [
+          -7.400000095367432,
+          -1.5499999523162842,
+          0.0
+        ],
+        [
+          7.400000095367432,
+          1.5499999523162842,
+          10.449999809265137
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        14.800000190734863,
+        10.449999809265137,
+        3.0999999046325684
+      ],
+      "pivot": "Bottom center; facade faces Blender-Y /Roblox+Z.",
+      "use": "Cream facade with actual arched opening and simple coral roofline; no paving lines, studs or small trim.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_NurseryWallBay__Coral",
+          "role": "Coral",
+          "triangles": 168,
+          "nonManifoldEdges": 44
+        },
+        {
+          "name": "ER_NurseryWallBay__Shell",
+          "role": "Shell",
+          "triangles": 36,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Buildings.fbx"
+    },
+    {
+      "name": "MintPipeArch",
+      "family": "Buildings",
+      "boundsBlender": [
+        [
+          -5.0,
+          -1.5,
+          0.0
+        ],
+        [
+          5.0,
+          1.5,
+          10.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        10.0,
+        3.0
+      ],
+      "pivot": "Bottom center; opening7.2 wide; springBlenderZ5,peak inner8.6.",
+      "use": "Thick mint arch for nursery pipe housing; ten broad arc segments; true opening.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        28.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_MintPipeArch__Mint",
+          "role": "Mint",
+          "triangles": 144,
+          "nonManifoldEdges": 44
+        }
+      ],
+      "fbx": "ER_Buildings.fbx"
+    },
+    {
+      "name": "MintArchWindow",
+      "family": "Buildings",
+      "boundsBlender": [
+        [
+          -4.0,
+          -0.6000000238418579,
+          0.0
+        ],
+        [
+          4.0,
+          0.6000000238418579,
+          8.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        8.0,
+        8.0,
+        1.2000000476837158
+      ],
+      "pivot": "Bottom center; opaque blue inset faces Blender-Y.",
+      "use": "Readable mint arched frame, broad blue window and cream sill; native glow optional and separate.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        56.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        56.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_MintArchWindow__Mint",
+          "role": "Mint",
+          "triangles": 144,
+          "nonManifoldEdges": 44
+        },
+        {
+          "name": "ER_MintArchWindow__Shell",
+          "role": "Shell",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_MintArchWindow__Window",
+          "role": "Window",
+          "triangles": 48,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Buildings.fbx"
+    },
+    {
+      "name": "IncubatorHousing",
+      "family": "Landmarks",
+      "boundsBlender": [
+        [
+          -7.0,
+          -7.25,
+          0.0
+        ],
+        [
+          7.0,
+          7.0,
+          17.700000762939453
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        14.0,
+        17.700000762939453,
+        14.25
+      ],
+      "pivot": "Bottom center; open chamberBlenderZ3..12,inner diameterabout9.",
+      "use": "Cream base/four supports and mint stepped dome. Put existing square-stepped egg inside; optional native transparent window remains separate.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_IncubatorHousing__Coral",
+          "role": "Coral",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_IncubatorHousing__Mint",
+          "role": "Mint",
+          "triangles": 324,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_IncubatorHousing__Shell",
+          "role": "Shell",
+          "triangles": 60,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Landmarks.fbx"
+    },
+    {
+      "name": "GateLintel",
+      "family": "Landmarks",
+      "boundsBlender": [
+        [
+          -12.0,
+          -2.0,
+          -1.399999976158142
+        ],
+        [
+          12.0,
+          2.0,
+          1.7999999523162842
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        3.1999999284744263,
+        4.0
+      ],
+      "pivot": "MIDPOINT at0; beam spansX\u00b112. Local clearance controlled by installation height.",
+      "use": "Simple cream/coral entry beam; separate posts/trigger stay native. No text or hazard-red emission.",
+      "contacts": [],
+      "packageOffsetBlender": [
+        28.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_GateLintel__Coral",
+          "role": "Coral",
+          "triangles": 24,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_GateLintel__Mint",
+          "role": "Mint",
+          "triangles": 36,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_GateLintel__Shell",
+          "role": "Shell",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_Landmarks.fbx"
+    }
+  ],
+  "builderSHA256": "03a34eeb7df7e49551c223c19f649df0a36e569db8b119cac10374dafda0cda4",
+  "helperSHA256": "2cb7246c0c82772914f09f138d98d4c67233bc1a77b61c91da705373301df060",
+  "parameters": {
+    "supportWidth": 10,
+    "supportDepth": 6,
+    "supportHeight": 20
+  },
+  "collision": "All art visual only. Pads and intentional gameplay contacts remain native.",
+  "warning": "Do not fill jump gaps with scenery or continuous banks. Top cap is smaller than authored pad footprint.",
+  "blenderFbxRoundtrip": [
+    {
+      "file": "ER_Buildings.fbx",
+      "parts": 6,
+      "boundsErrorStuds": 1.7e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    },
+    {
+      "file": "ER_Landmarks.fbx",
+      "parts": 6,
+      "boundsErrorStuds": 1.1e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    },
+    {
+      "file": "ER_Nature.fbx",
+      "parts": 2,
+      "boundsErrorStuds": 1e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    },
+    {
+      "file": "ER_Supports.fbx",
+      "parts": 7,
+      "boundsErrorStuds": 5.2e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    }
+  ],
+  "buildSeconds": 8.853,
+  "files": {
+    "ER_Buildings.fbx": "3edcd94389a4aec339150bc61fb7bdd372b6efcb963128502120897686012f0b",
+    "ER_Landmarks.fbx": "766b24285c501932e17ce7a60fb703fffefad131852f0edffb68a7129abb59f9",
+    "ER_Nature.fbx": "a3a8c290c9367a86f7680aac2b397c1176e367a9cb11e25cf1a60a7ef74e16ab",
+    "ER_Supports.fbx": "ce4f3a5955c4432cd3c24d8d08933c4aabdd0d33ad0bb8aaa62d866e55a3c171",
+    "ER_world_kit.blend": "0f3d3e2b2404e8eee0a6f0e33fdb8a235fce39f4913b34b84e13dbdea23bcda6",
+    "ER_world_kit_sheet.png": "0cdf5f82b63ef178455d3be2027f8117d1d62ce17264492eb918728c80a89c19"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "build": "ER_P2_R02_H02",
+  "checks": [
+    "Luau compilation",
+    "manifest parity",
+    "translated and rotated frame",
+    "default/numeric/vector scale",
+    "contact/query/material flags"
+  ],
+  "evidence": "Offline Lune API and part-data check; not a Studio movement, contact, appearance, or performance result.",
+  "lethalPartsChecked": 48,
+  "modelsCreated": 16,
+  "partsChecked": 128,
+  "status": "passed",
+  "templates": 4
+}

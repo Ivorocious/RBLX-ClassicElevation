@@ -1,0 +1,506 @@
+{
+  "candidate": "MC_P3_REWORK_KIT_RW01",
+  "units": "1 Blender unit = 1 intended stud",
+  "axes": "Roblox center=(X,Z,-Y); arrow tip=normalized imported Roblox +Z; Environment.PlaceSolidArrow aligns +Z toward the next landing",
+  "assets": [
+    {
+      "asset": "MC_P3_Rework_SolidArrow",
+      "bounds": [
+        [
+          -1.600000023841858,
+          -2.4000000953674316,
+          0.0
+        ],
+        [
+          1.600000023841858,
+          2.4000000953674316,
+          0.10000000149011612
+        ]
+      ],
+      "geometry": {
+        "vertices": 14,
+        "triangles": 24,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 1,
+        "minimum_island_volume": 0.6016000329206387,
+        "signed_volume": 0.6016000329206387,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding decoration",
+      "mounting_notes": "One closed, connected extruded arrow, 3.2x4.8 studs, normalized imported tip Roblox +Z.",
+      "occupied_boxes_blender": [],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_P3_Rework_ArrowMount",
+      "bounds": [
+        [
+          -2.0999999046325684,
+          -2.700000047683716,
+          0.0
+        ],
+        [
+          2.0999999046325684,
+          2.700000047683716,
+          0.11999999731779099
+        ]
+      ],
+      "geometry": {
+        "vertices": 16,
+        "triangles": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 1,
+        "minimum_island_volume": 2.706599917883674,
+        "signed_volume": 2.706599917883674,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding decoration",
+      "mounting_notes": "Physical dark mounting plate; top .12, arrow base must be .17; no coplanar faces.",
+      "occupied_boxes_blender": [],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_P3_Rework_FoundationPier",
+      "bounds": [
+        [
+          -3.799999952316284,
+          -3.9000000953674316,
+          0.0
+        ],
+        [
+          3.799999952316284,
+          3.9000000953674316,
+          28.0
+        ]
+      ],
+      "geometry": {
+        "vertices": 492,
+        "triangles": 948,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 9,
+        "minimum_island_volume": 0.5559079473217329,
+        "signed_volume": 932.9289064904054,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding decoration",
+      "mounting_notes": "Ground-origin 7.6x28x7.8 carved four-face foundation pier; scale to pad underside; never project above it.",
+      "occupied_boxes_blender": [],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_P3_Rework_GroundPlinth",
+      "bounds": [
+        [
+          -16.0,
+          -12.0,
+          -3.200000047683716
+        ],
+        [
+          16.0,
+          12.0,
+          0.11999999731779099
+        ]
+      ],
+      "geometry": {
+        "vertices": 16,
+        "triangles": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 1,
+        "minimum_island_volume": 2443.5200525919595,
+        "signed_volume": 2443.5200525919595,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding decoration",
+      "mounting_notes": "Low octagonal foundation/terrain plinth; 32x24, top+.12; noncolliding 30 studs beneath first route.",
+      "occupied_boxes_blender": [],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_P3_Rework_RockCluster",
+      "bounds": [
+        [
+          -4.6501665115356445,
+          -2.0517866611480713,
+          0.0
+        ],
+        [
+          4.198452472686768,
+          3.1869313716888428,
+          2.799999952316284
+        ]
+      ],
+      "geometry": {
+        "vertices": 84,
+        "triangles": 156,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 3,
+        "minimum_island_volume": 3.91144188400358,
+        "signed_volume": 52.301515689274915,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding decoration",
+      "mounting_notes": "Three faceted rocks in one material mesh; outer base only; no walkable contact.",
+      "occupied_boxes_blender": [],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    },
+    {
+      "asset": "MC_P3_Rework_FernCluster",
+      "bounds": [
+        [
+          -1.329142689704895,
+          -1.329142689704895,
+          0.0
+        ],
+        [
+          1.329142689704895,
+          1.329142689704895,
+          1.7599999904632568
+        ]
+      ],
+      "geometry": {
+        "vertices": 609,
+        "triangles": 934,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "zero_area_triangles": 0,
+        "closed_islands": 71,
+        "minimum_island_volume": 0.0040799907098213834,
+        "signed_volume": 0.8380677446087551,
+        "outward_island_winding": true
+      },
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "Noncolliding decoration",
+      "mounting_notes": "Opaque low fern and three restrained lavender flowers; two material meshes; no alpha cards.",
+      "occupied_boxes_blender": [],
+      "proxy_boundary": "Occupied structure only; hollow arch passages are excluded. Decoration remains noncolliding."
+    }
+  ],
+  "export_parts": [
+    {
+      "name": "MC_P3_Rework_SolidArrow__Arrow",
+      "asset": "MC_P3_Rework_SolidArrow",
+      "material": "Arrow",
+      "rgb": [
+        246,
+        228,
+        158
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.05000000074505806
+      ],
+      "size": [
+        3.200000047683716,
+        4.800000190734863,
+        0.10000000149011612
+      ],
+      "roblox_center": [
+        0.0,
+        0.05000000074505806,
+        -0.0
+      ],
+      "roblox_size": [
+        3.200000047683716,
+        0.10000000149011612,
+        4.800000190734863
+      ],
+      "triangles": 24
+    },
+    {
+      "name": "MC_P3_Rework_ArrowMount__Mount",
+      "asset": "MC_P3_Rework_ArrowMount",
+      "material": "Mount",
+      "rgb": [
+        27,
+        37,
+        57
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.05999999865889549
+      ],
+      "size": [
+        4.199999809265137,
+        5.400000095367432,
+        0.11999999731779099
+      ],
+      "roblox_center": [
+        0.0,
+        0.05999999865889549,
+        -0.0
+      ],
+      "roblox_size": [
+        4.199999809265137,
+        0.11999999731779099,
+        5.400000095367432
+      ],
+      "triangles": 28
+    },
+    {
+      "name": "MC_P3_Rework_FoundationPier__Stone",
+      "asset": "MC_P3_Rework_FoundationPier",
+      "material": "Stone",
+      "rgb": [
+        111,
+        122,
+        137
+      ],
+      "center": [
+        0.0,
+        0.0,
+        14.0
+      ],
+      "size": [
+        7.599999904632568,
+        7.800000190734863,
+        28.0
+      ],
+      "roblox_center": [
+        0.0,
+        14.0,
+        -0.0
+      ],
+      "roblox_size": [
+        7.599999904632568,
+        28.0,
+        7.800000190734863
+      ],
+      "triangles": 68
+    },
+    {
+      "name": "MC_P3_Rework_FoundationPier__StoneDark",
+      "asset": "MC_P3_Rework_FoundationPier",
+      "material": "StoneDark",
+      "rgb": [
+        77,
+        87,
+        103
+      ],
+      "center": [
+        0.0,
+        0.0,
+        13.399999618530273
+      ],
+      "size": [
+        5.869999885559082,
+        5.869999885559082,
+        18.799999237060547
+      ],
+      "roblox_center": [
+        0.0,
+        13.399999618530273,
+        -0.0
+      ],
+      "roblox_size": [
+        5.869999885559082,
+        18.799999237060547,
+        5.869999885559082
+      ],
+      "triangles": 288
+    },
+    {
+      "name": "MC_P3_Rework_FoundationPier__StoneLight",
+      "asset": "MC_P3_Rework_FoundationPier",
+      "material": "StoneLight",
+      "rgb": [
+        149,
+        157,
+        169
+      ],
+      "center": [
+        0.0,
+        0.0,
+        13.399999976158142
+      ],
+      "size": [
+        6.139999866485596,
+        6.139999866485596,
+        19.200000047683716
+      ],
+      "roblox_center": [
+        0.0,
+        13.399999976158142,
+        -0.0
+      ],
+      "roblox_size": [
+        6.139999866485596,
+        19.200000047683716,
+        6.139999866485596
+      ],
+      "triangles": 592
+    },
+    {
+      "name": "MC_P3_Rework_GroundPlinth__Rock",
+      "asset": "MC_P3_Rework_GroundPlinth",
+      "material": "Rock",
+      "rgb": [
+        64,
+        79,
+        108
+      ],
+      "center": [
+        0.0,
+        0.0,
+        -1.5400000251829624
+      ],
+      "size": [
+        32.0,
+        24.0,
+        3.320000045001507
+      ],
+      "roblox_center": [
+        0.0,
+        -1.5400000251829624,
+        -0.0
+      ],
+      "roblox_size": [
+        32.0,
+        3.320000045001507,
+        24.0
+      ],
+      "triangles": 28
+    },
+    {
+      "name": "MC_P3_Rework_RockCluster__Rock",
+      "asset": "MC_P3_Rework_RockCluster",
+      "material": "Rock",
+      "rgb": [
+        64,
+        79,
+        108
+      ],
+      "center": [
+        -0.22585701942443848,
+        0.5675723552703857,
+        1.399999976158142
+      ],
+      "size": [
+        8.848618984222412,
+        5.238718032836914,
+        2.799999952316284
+      ],
+      "roblox_center": [
+        -0.22585701942443848,
+        1.399999976158142,
+        -0.5675723552703857
+      ],
+      "roblox_size": [
+        8.848618984222412,
+        2.799999952316284,
+        5.238718032836914
+      ],
+      "triangles": 156
+    },
+    {
+      "name": "MC_P3_Rework_FernCluster__Leaf",
+      "asset": "MC_P3_Rework_FernCluster",
+      "material": "Leaf",
+      "rgb": [
+        54,
+        78,
+        63
+      ],
+      "center": [
+        0.0,
+        0.0,
+        0.8500000238418579
+      ],
+      "size": [
+        2.65828537940979,
+        2.65828537940979,
+        1.7000000476837158
+      ],
+      "roblox_center": [
+        0.0,
+        0.8500000238418579,
+        -0.0
+      ],
+      "roblox_size": [
+        2.65828537940979,
+        1.7000000476837158,
+        2.65828537940979
+      ],
+      "triangles": 544
+    },
+    {
+      "name": "MC_P3_Rework_FernCluster__Flower",
+      "asset": "MC_P3_Rework_FernCluster",
+      "material": "Flower",
+      "rgb": [
+        141,
+        132,
+        182
+      ],
+      "center": [
+        0.1480901539325714,
+        -0.04999998211860657,
+        1.3050000071525574
+      ],
+      "size": [
+        1.8788854479789734,
+        1.9086760878562927,
+        0.9099999666213989
+      ],
+      "roblox_center": [
+        0.1480901539325714,
+        1.3050000071525574,
+        0.04999998211860657
+      ],
+      "roblox_size": [
+        1.8788854479789734,
+        0.9099999666213989,
+        1.9086760878562927
+      ],
+      "triangles": 390
+    }
+  ],
+  "source_hashes": {
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\moonlit_citadel\\bl02\\architecture.py": "45518e507c45a3c461de249992b8195ce1e7301339df1cf59b1edbfeb7cf8296",
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\moonlit_citadel\\phase3\\drafts\\world_kit.py": "7d4926c2cee83e4a6831b8400ac939dab187152f131e554799f93e9201822b58"
+  },
+  "part_count": 9,
+  "export_triangles": 2118,
+  "boundary": "New-only static art. No imports, uploads, native changes, or collision.",
+  "preview_boundary": "Library geometry checks only; not installed-map or runtime proof."
+}

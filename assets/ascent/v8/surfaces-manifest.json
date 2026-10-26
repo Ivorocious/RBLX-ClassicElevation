@@ -1,0 +1,45 @@
+{
+  "props": [
+    {
+      "name": "GraniteLedge",
+      "height": 3.5,
+      "parts": [
+        "GraniteLedge__Granite"
+      ],
+      "triangles": 28
+    },
+    {
+      "name": "BasaltStep",
+      "height": 3.5,
+      "parts": [
+        "BasaltStep__Basalt"
+      ],
+      "triangles": 28
+    },
+    {
+      "name": "CausewaySlab",
+      "height": 3.5,
+      "parts": [
+        "CausewaySlab__Limestone"
+      ],
+      "triangles": 28
+    }
+  ],
+  "colors": {
+    "GraniteLedge__Granite": [
+      0.3100000023841858,
+      0.3400000035762787,
+      0.3400000035762787
+    ],
+    "BasaltStep__Basalt": [
+      0.10000000149011612,
+      0.14000000059604645,
+      0.1599999964237213
+    ],
+    "CausewaySlab__Limestone": [
+      0.47999998927116394,
+      0.44999998807907104,
+      0.3499999940395355
+    ]
+  }
+}

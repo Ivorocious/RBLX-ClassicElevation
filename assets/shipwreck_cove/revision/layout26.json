@@ -1,0 +1,10092 @@
+{
+  "build": "SC_CAVE_26",
+  "kitBuild": "SC_CAVE_KIT_26",
+  "origin": [
+    -1500,
+    80,
+    0
+  ],
+  "placements": [
+    {
+      "asset": "SC_DockRefuge",
+      "p": [
+        -108,
+        6.8,
+        128
+      ],
+      "yaw": 0,
+      "scale": [
+        2.0,
+        1,
+        2.5
+      ],
+      "section": "S01",
+      "name": "HarborAssembly"
+    },
+    {
+      "asset": "SC_DockRefuge",
+      "p": [
+        -108,
+        11.8,
+        8
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4444444444444444,
+        1,
+        1.25
+      ],
+      "section": "S01",
+      "name": "R1_Refuge"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -80,
+        11.8,
+        -7
+      ],
+      "yaw": 0,
+      "scale": [
+        1.0,
+        1,
+        1.2
+      ],
+      "section": "H01",
+      "name": "BatteryMount0"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -84,
+        -5,
+        -7
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "H01",
+      "name": "DockPost_025"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -76,
+        -5,
+        -7
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "H01",
+      "name": "DockPost_026"
+    },
+    {
+      "asset": "SC_R_NavalCannon25",
+      "p": [
+        -80,
+        13,
+        -7
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Cannon0"
+    },
+    {
+      "asset": "SC_Cannonball",
+      "p": [
+        -85,
+        16.1,
+        -7
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Ball0"
+    },
+    {
+      "asset": "SC_MuzzleCue",
+      "p": [
+        -85,
+        16.1,
+        -7
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Fuse0"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        -139,
+        -3.25,
+        -7
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Impact0"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -138,
+        11.8,
+        -23
+      ],
+      "yaw": 0,
+      "scale": [
+        1.0,
+        1,
+        1.2
+      ],
+      "section": "H01",
+      "name": "BatteryMount1"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -142,
+        -5,
+        -23
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "H01",
+      "name": "DockPost_038"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -134,
+        -5,
+        -23
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "H01",
+      "name": "DockPost_039"
+    },
+    {
+      "asset": "SC_R_NavalCannon25",
+      "p": [
+        -138,
+        13,
+        -23
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Cannon1"
+    },
+    {
+      "asset": "SC_Cannonball",
+      "p": [
+        -133,
+        16.1,
+        -23
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Ball1"
+    },
+    {
+      "asset": "SC_MuzzleCue",
+      "p": [
+        -133,
+        16.1,
+        -23
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Fuse1"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        -77,
+        -3.25,
+        -23
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Impact1"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -80,
+        11.8,
+        -39
+      ],
+      "yaw": 0,
+      "scale": [
+        1.0,
+        1,
+        1.2
+      ],
+      "section": "H01",
+      "name": "BatteryMount2"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -84,
+        -5,
+        -39
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "H01",
+      "name": "DockPost_051"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -76,
+        -5,
+        -39
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "H01",
+      "name": "DockPost_052"
+    },
+    {
+      "asset": "SC_R_NavalCannon25",
+      "p": [
+        -80,
+        13,
+        -39
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Cannon2"
+    },
+    {
+      "asset": "SC_Cannonball",
+      "p": [
+        -85,
+        16.1,
+        -39
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Ball2"
+    },
+    {
+      "asset": "SC_MuzzleCue",
+      "p": [
+        -85,
+        16.1,
+        -39
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Fuse2"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        -139,
+        -3.25,
+        -39
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Impact2"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -138,
+        11.8,
+        -55
+      ],
+      "yaw": 0,
+      "scale": [
+        1.0,
+        1,
+        1.2
+      ],
+      "section": "H01",
+      "name": "BatteryMount3"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -142,
+        -5,
+        -55
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "H01",
+      "name": "DockPost_064"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -134,
+        -5,
+        -55
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "H01",
+      "name": "DockPost_065"
+    },
+    {
+      "asset": "SC_R_NavalCannon25",
+      "p": [
+        -138,
+        13,
+        -55
+      ],
+      "yaw": 180,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Cannon3"
+    },
+    {
+      "asset": "SC_Cannonball",
+      "p": [
+        -133,
+        16.1,
+        -55
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Ball3"
+    },
+    {
+      "asset": "SC_MuzzleCue",
+      "p": [
+        -133,
+        16.1,
+        -55
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Fuse3"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        -77,
+        -3.25,
+        -55
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "H01",
+      "name": "Impact3"
+    },
+    {
+      "asset": "SC_DockRefuge",
+      "p": [
+        -108,
+        11.8,
+        -66
+      ],
+      "yaw": 0,
+      "scale": [
+        1.3333333333333333,
+        1,
+        1.25
+      ],
+      "section": "S01",
+      "name": "R2_Boarding"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        -108,
+        14.8,
+        -86
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9166666666666666,
+        1,
+        0.75
+      ],
+      "section": "S02",
+      "name": "S02_00"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        -108,
+        17.8,
+        -105
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9166666666666666,
+        1,
+        0.75
+      ],
+      "section": "S02",
+      "name": "S02_01"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        -91,
+        20.8,
+        -110
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9166666666666666,
+        1,
+        0.75
+      ],
+      "section": "S02",
+      "name": "S02_02"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        -74,
+        22.8,
+        -110
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9166666666666666,
+        1,
+        0.75
+      ],
+      "section": "S02",
+      "name": "S02_03"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        -74,
+        25.8,
+        -91
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9166666666666666,
+        1,
+        0.75
+      ],
+      "section": "S02",
+      "name": "S02_04"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        -57,
+        27.8,
+        -91
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9166666666666666,
+        1,
+        0.75
+      ],
+      "section": "S02",
+      "name": "S02_05"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        -57,
+        30.8,
+        -110
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9166666666666666,
+        1,
+        0.75
+      ],
+      "section": "S02",
+      "name": "S02_06"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        -40,
+        32.8,
+        -110
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9166666666666666,
+        1,
+        0.75
+      ],
+      "section": "S02",
+      "name": "S02_07"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        -40,
+        35.8,
+        -91
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9166666666666666,
+        1,
+        0.75
+      ],
+      "section": "S02",
+      "name": "S02_08"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        -22,
+        38.8,
+        -91
+      ],
+      "yaw": 0,
+      "scale": [
+        0.9166666666666666,
+        1,
+        0.75
+      ],
+      "section": "S02",
+      "name": "S02_09"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        0,
+        41.8,
+        -100
+      ],
+      "yaw": 0,
+      "scale": [
+        2.0,
+        1,
+        1.375
+      ],
+      "section": "S02",
+      "name": "R3_Stern"
+    },
+    {
+      "asset": "SC_MastYard",
+      "p": [
+        -86,
+        20,
+        -100
+      ],
+      "yaw": -10,
+      "scale": [
+        1.1,
+        1.25,
+        1.1
+      ],
+      "section": "S02",
+      "name": "MastYard_083"
+    },
+    {
+      "asset": "SC_TornSail",
+      "p": [
+        -86,
+        33,
+        -100
+      ],
+      "yaw": -10,
+      "scale": [
+        1.35,
+        1.25,
+        1
+      ],
+      "section": "S02",
+      "name": "TornSail_084"
+    },
+    {
+      "asset": "SC_MastYard",
+      "p": [
+        -27,
+        38,
+        -100
+      ],
+      "yaw": -10,
+      "scale": [
+        1.1,
+        1.25,
+        1.1
+      ],
+      "section": "S02",
+      "name": "MastYard_085"
+    },
+    {
+      "asset": "SC_TornSail",
+      "p": [
+        -27,
+        51,
+        -100
+      ],
+      "yaw": -10,
+      "scale": [
+        1.35,
+        1.25,
+        1
+      ],
+      "section": "S02",
+      "name": "TornSail_086"
+    },
+    {
+      "asset": "SC_PlayableRib",
+      "p": [
+        -93,
+        -2.6000000000000014,
+        -68.2
+      ],
+      "yaw": -90,
+      "scale": [
+        0.6,
+        1,
+        0.6
+      ],
+      "section": "X01",
+      "name": "Rib00"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -93,
+        -5,
+        -68.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        0.3,
+        0.8
+      ],
+      "section": "X01",
+      "name": "DockPost_088"
+    },
+    {
+      "asset": "SC_PlayableRib",
+      "p": [
+        -83,
+        0.3999999999999986,
+        -64.2
+      ],
+      "yaw": -90,
+      "scale": [
+        0.6,
+        1,
+        0.6
+      ],
+      "section": "X01",
+      "name": "Rib01"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -83,
+        -5,
+        -64.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        0.54,
+        0.8
+      ],
+      "section": "X01",
+      "name": "DockPost_090"
+    },
+    {
+      "asset": "SC_PlayableRib",
+      "p": [
+        -73,
+        3.3999999999999986,
+        -69.2
+      ],
+      "yaw": -90,
+      "scale": [
+        0.6,
+        1,
+        0.6
+      ],
+      "section": "X01",
+      "name": "Rib02"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -73,
+        -5,
+        -69.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        0.8400000000000001,
+        0.8
+      ],
+      "section": "X01",
+      "name": "DockPost_092"
+    },
+    {
+      "asset": "SC_PlayableRib",
+      "p": [
+        -63,
+        6.399999999999999,
+        -64.2
+      ],
+      "yaw": -90,
+      "scale": [
+        0.6,
+        1,
+        0.6
+      ],
+      "section": "X01",
+      "name": "Rib03"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -63,
+        -5,
+        -64.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        1.1400000000000001,
+        0.8
+      ],
+      "section": "X01",
+      "name": "DockPost_094"
+    },
+    {
+      "asset": "SC_PlayableRib",
+      "p": [
+        -53,
+        9.399999999999999,
+        -69.2
+      ],
+      "yaw": -90,
+      "scale": [
+        0.6,
+        1,
+        0.6
+      ],
+      "section": "X01",
+      "name": "Rib04"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -53,
+        -5,
+        -69.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        1.44,
+        0.8
+      ],
+      "section": "X01",
+      "name": "DockPost_096"
+    },
+    {
+      "asset": "SC_PlayableRib",
+      "p": [
+        -43,
+        12.399999999999999,
+        -64.2
+      ],
+      "yaw": -90,
+      "scale": [
+        0.6,
+        1,
+        0.6
+      ],
+      "section": "X01",
+      "name": "Rib05"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -43,
+        -5,
+        -64.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        1.7399999999999998,
+        0.8
+      ],
+      "section": "X01",
+      "name": "DockPost_098"
+    },
+    {
+      "asset": "SC_PlayableRib",
+      "p": [
+        -33,
+        15.399999999999999,
+        -69.2
+      ],
+      "yaw": -90,
+      "scale": [
+        0.6,
+        1,
+        0.6
+      ],
+      "section": "X01",
+      "name": "Rib06"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -33,
+        -5,
+        -69.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        2.04,
+        0.8
+      ],
+      "section": "X01",
+      "name": "DockPost_100"
+    },
+    {
+      "asset": "SC_PlayableRib",
+      "p": [
+        -23,
+        18.4,
+        -72.2
+      ],
+      "yaw": -90,
+      "scale": [
+        0.6,
+        1,
+        0.6
+      ],
+      "section": "X01",
+      "name": "Rib07"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -23,
+        -5,
+        -72.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        2.34,
+        0.8
+      ],
+      "section": "X01",
+      "name": "DockPost_102"
+    },
+    {
+      "asset": "SC_PlayableRib",
+      "p": [
+        -14,
+        21.4,
+        -78.2
+      ],
+      "yaw": -90,
+      "scale": [
+        0.6,
+        1,
+        0.6
+      ],
+      "section": "X01",
+      "name": "Rib08"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -14,
+        -5,
+        -78.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        2.6399999999999997,
+        0.8
+      ],
+      "section": "X01",
+      "name": "DockPost_104"
+    },
+    {
+      "asset": "SC_PlayableRib",
+      "p": [
+        -6,
+        23.4,
+        -86.2
+      ],
+      "yaw": -90,
+      "scale": [
+        0.6,
+        1,
+        0.6
+      ],
+      "section": "X01",
+      "name": "Rib09"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -6,
+        -5,
+        -86.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        2.84,
+        0.8
+      ],
+      "section": "X01",
+      "name": "DockPost_106"
+    },
+    {
+      "asset": "SC_RockLedge",
+      "p": [
+        20,
+        42,
+        -106
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1764705882352942,
+        1,
+        1.639344262295082
+      ],
+      "section": "S03",
+      "name": "S03_00"
+    },
+    {
+      "asset": "SC_RockLedge",
+      "p": [
+        34,
+        45,
+        -120
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1764705882352942,
+        1,
+        1.639344262295082
+      ],
+      "section": "S03",
+      "name": "S03_01"
+    },
+    {
+      "asset": "SC_RockLedge",
+      "p": [
+        50,
+        48,
+        -130
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1764705882352942,
+        1,
+        1.639344262295082
+      ],
+      "section": "S03",
+      "name": "S03_02"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        67,
+        52.8,
+        -137
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1666666666666667,
+        1,
+        0.5
+      ],
+      "section": "S03",
+      "name": "S03_03"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        63,
+        -5,
+        -137
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        5.8,
+        1
+      ],
+      "section": "S03",
+      "name": "DockPost_111"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        71,
+        -5,
+        -137
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        5.8,
+        1
+      ],
+      "section": "S03",
+      "name": "DockPost_112"
+    },
+    {
+      "asset": "SC_RockLedge",
+      "p": [
+        84,
+        52,
+        -130
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1764705882352942,
+        1,
+        1.639344262295082
+      ],
+      "section": "S03",
+      "name": "S03_04"
+    },
+    {
+      "asset": "SC_RockLedge",
+      "p": [
+        101,
+        50,
+        -116
+      ],
+      "yaw": 0,
+      "scale": [
+        1.6470588235294117,
+        1,
+        1.9672131147540985
+      ],
+      "section": "S03",
+      "name": "S03_05"
+    },
+    {
+      "asset": "SC_RockLedge",
+      "p": [
+        116,
+        46,
+        -101
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1764705882352942,
+        1,
+        1.639344262295082
+      ],
+      "section": "S03",
+      "name": "S03_06"
+    },
+    {
+      "asset": "SC_ShipDeck",
+      "p": [
+        129,
+        42.8,
+        -85
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1666666666666667,
+        1,
+        0.5
+      ],
+      "section": "S03",
+      "name": "S03_07"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        125,
+        -5,
+        -85
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        4.8,
+        1
+      ],
+      "section": "S03",
+      "name": "DockPost_117"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        133,
+        -5,
+        -85
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        4.8,
+        1
+      ],
+      "section": "S03",
+      "name": "DockPost_118"
+    },
+    {
+      "asset": "SC_RockLedge",
+      "p": [
+        134,
+        36,
+        -66
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1764705882352942,
+        1,
+        1.639344262295082
+      ],
+      "section": "S03",
+      "name": "S03_08"
+    },
+    {
+      "asset": "SC_RockLedge",
+      "p": [
+        127,
+        30,
+        -48
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1764705882352942,
+        1,
+        1.639344262295082
+      ],
+      "section": "S03",
+      "name": "S03_09"
+    },
+    {
+      "asset": "SC_RockLedge",
+      "p": [
+        119,
+        23,
+        -33
+      ],
+      "yaw": 0,
+      "scale": [
+        1.6470588235294117,
+        1,
+        1.9672131147540985
+      ],
+      "section": "S03",
+      "name": "S03_10"
+    },
+    {
+      "asset": "SC_R_CaveRefuge",
+      "p": [
+        108,
+        -4,
+        -18
+      ],
+      "yaw": 0,
+      "scale": [
+        2.0,
+        1.9,
+        2.2
+      ],
+      "section": "S03",
+      "name": "R4_CaveEntry"
+    },
+    {
+      "asset": "SC_R_HeadlandRidge",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "ConnectedHeadland"
+    },
+    {
+      "asset": "SC_CavePortal",
+      "p": [
+        67,
+        40,
+        -137
+      ],
+      "yaw": 90,
+      "scale": [
+        1,
+        1.2,
+        1
+      ],
+      "section": "Scenery",
+      "name": "HeadlandArch"
+    },
+    {
+      "asset": "SC_BrokenSpar",
+      "p": [
+        18,
+        38.12,
+        -87
+      ],
+      "yaw": -46,
+      "scale": [
+        0.56,
+        1,
+        0.64
+      ],
+      "section": "X02",
+      "name": "Spar00"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        18,
+        -6,
+        -87
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        4.5,
+        1.4
+      ],
+      "section": "X02",
+      "name": "DockPost_126"
+    },
+    {
+      "asset": "SC_BrokenSpar",
+      "p": [
+        28,
+        34.12,
+        -79
+      ],
+      "yaw": -22,
+      "scale": [
+        0.56,
+        1,
+        0.64
+      ],
+      "section": "X02",
+      "name": "Spar01"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        28,
+        -6,
+        -79
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        4.1,
+        1.4
+      ],
+      "section": "X02",
+      "name": "DockPost_128"
+    },
+    {
+      "asset": "SC_BrokenSpar",
+      "p": [
+        41,
+        30.12,
+        -69
+      ],
+      "yaw": -46,
+      "scale": [
+        0.56,
+        1,
+        0.64
+      ],
+      "section": "X02",
+      "name": "Spar02"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        41,
+        -6,
+        -69
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        3.7,
+        1.4
+      ],
+      "section": "X02",
+      "name": "DockPost_130"
+    },
+    {
+      "asset": "SC_BrokenSpar",
+      "p": [
+        54,
+        26.12,
+        -59
+      ],
+      "yaw": -22,
+      "scale": [
+        0.56,
+        1,
+        0.64
+      ],
+      "section": "X02",
+      "name": "Spar03"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        54,
+        -6,
+        -59
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        3.3,
+        1.4
+      ],
+      "section": "X02",
+      "name": "DockPost_132"
+    },
+    {
+      "asset": "SC_BrokenSpar",
+      "p": [
+        67,
+        22.12,
+        -49
+      ],
+      "yaw": -46,
+      "scale": [
+        0.56,
+        1,
+        0.64
+      ],
+      "section": "X02",
+      "name": "Spar04"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        67,
+        -6,
+        -49
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        2.9,
+        1.4
+      ],
+      "section": "X02",
+      "name": "DockPost_134"
+    },
+    {
+      "asset": "SC_BrokenSpar",
+      "p": [
+        80,
+        19.12,
+        -39
+      ],
+      "yaw": -22,
+      "scale": [
+        0.56,
+        1,
+        0.64
+      ],
+      "section": "X02",
+      "name": "Spar05"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        80,
+        -6,
+        -39
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        2.6,
+        1.4
+      ],
+      "section": "X02",
+      "name": "DockPost_136"
+    },
+    {
+      "asset": "SC_BrokenSpar",
+      "p": [
+        93,
+        16.12,
+        -29
+      ],
+      "yaw": -46,
+      "scale": [
+        0.56,
+        1,
+        0.64
+      ],
+      "section": "X02",
+      "name": "Spar06"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        93,
+        -6,
+        -29
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        2.3,
+        1.4
+      ],
+      "section": "X02",
+      "name": "DockPost_138"
+    },
+    {
+      "asset": "SC_R_CaveRefuge",
+      "p": [
+        91,
+        -4,
+        58
+      ],
+      "yaw": 0,
+      "scale": [
+        1.8333333333333333,
+        1.4,
+        2.0
+      ],
+      "section": "H02",
+      "name": "SurgeEastRefuge"
+    },
+    {
+      "asset": "SC_SurgeCrossing",
+      "p": [
+        69,
+        -4,
+        58
+      ],
+      "yaw": 0,
+      "scale": [
+        1.125,
+        9,
+        1.0
+      ],
+      "section": "H02",
+      "name": "SurgePassage",
+      "tint": [
+        204,
+        218,
+        210
+      ]
+    },
+    {
+      "asset": "SC_R_CaveRefuge",
+      "p": [
+        46,
+        -4,
+        58
+      ],
+      "yaw": 0,
+      "scale": [
+        2.0,
+        1.4,
+        2.0
+      ],
+      "section": "H02",
+      "name": "SurgeWestRefuge"
+    },
+    {
+      "asset": "SC_LocalSurge",
+      "p": [
+        69,
+        1.5,
+        58
+      ],
+      "yaw": 0,
+      "scale": [
+        1.5,
+        1,
+        0.7272727272727273
+      ],
+      "section": "H02",
+      "name": "SurgeWater"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        69,
+        1.9,
+        68
+      ],
+      "yaw": 0,
+      "scale": [
+        1.5,
+        1,
+        2
+      ],
+      "section": "H02",
+      "name": "SurgeFoam"
+    },
+    {
+      "asset": "SC_DangerStripe",
+      "p": [
+        61,
+        5.13,
+        58
+      ],
+      "yaw": 90,
+      "scale": [
+        1.5,
+        0.5,
+        2
+      ],
+      "section": "H02",
+      "name": "DangerStripe_148"
+    },
+    {
+      "asset": "SC_DangerStripe",
+      "p": [
+        77,
+        5.13,
+        58
+      ],
+      "yaw": 90,
+      "scale": [
+        1.5,
+        0.5,
+        2
+      ],
+      "section": "H02",
+      "name": "DangerStripe_149"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -159,
+        -6,
+        62
+      ],
+      "yaw": 0,
+      "scale": [
+        6.359999999999999,
+        3.4285714285714284,
+        6.720000000000001
+      ],
+      "section": "Scenery",
+      "name": "CoastBank00",
+      "tint": [
+        232,
+        222,
+        201
+      ]
+    },
+    {
+      "asset": "SC_CliffMass",
+      "p": [
+        -169,
+        -6,
+        -21
+      ],
+      "yaw": 29,
+      "scale": [
+        2.3,
+        1.9,
+        3
+      ],
+      "section": "Scenery",
+      "name": "CoastBank01",
+      "tint": [
+        211,
+        226,
+        221
+      ]
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -162,
+        -6,
+        -115
+      ],
+      "yaw": 58,
+      "scale": [
+        5.565,
+        3.6571428571428575,
+        5.88
+      ],
+      "section": "Scenery",
+      "name": "CoastBank02",
+      "tint": [
+        226,
+        235,
+        214
+      ]
+    },
+    {
+      "asset": "SC_CliffMass",
+      "p": [
+        -95,
+        -6,
+        -158
+      ],
+      "yaw": 87,
+      "scale": [
+        2.8,
+        1.8,
+        2
+      ],
+      "section": "Scenery",
+      "name": "CoastBank03",
+      "tint": [
+        232,
+        222,
+        201
+      ]
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -18,
+        -6,
+        -161
+      ],
+      "yaw": 116,
+      "scale": [
+        7.419999999999999,
+        4.8,
+        5.25
+      ],
+      "section": "Scenery",
+      "name": "CoastBank04",
+      "tint": [
+        211,
+        226,
+        221
+      ]
+    },
+    {
+      "asset": "SC_CliffMass",
+      "p": [
+        68,
+        -6,
+        -177
+      ],
+      "yaw": 145,
+      "scale": [
+        3.1,
+        2.2,
+        2.2
+      ],
+      "section": "Scenery",
+      "name": "CoastBank05",
+      "tint": [
+        226,
+        235,
+        214
+      ]
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        144,
+        -6,
+        -144
+      ],
+      "yaw": 174,
+      "scale": [
+        6.095,
+        4.571428571428571,
+        5.04
+      ],
+      "section": "Scenery",
+      "name": "CoastBank06",
+      "tint": [
+        232,
+        222,
+        201
+      ]
+    },
+    {
+      "asset": "SC_CliffMass",
+      "p": [
+        177,
+        -6,
+        -72
+      ],
+      "yaw": 203,
+      "scale": [
+        2,
+        2.1,
+        3
+      ],
+      "section": "Scenery",
+      "name": "CoastBank07",
+      "tint": [
+        211,
+        226,
+        221
+      ]
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        174,
+        -6,
+        4
+      ],
+      "yaw": 232,
+      "scale": [
+        5.565,
+        3.8857142857142857,
+        5.460000000000001
+      ],
+      "section": "Scenery",
+      "name": "CoastBank08",
+      "tint": [
+        226,
+        235,
+        214
+      ]
+    },
+    {
+      "asset": "SC_CliffMass",
+      "p": [
+        153,
+        -6,
+        72
+      ],
+      "yaw": 261,
+      "scale": [
+        2,
+        1.4,
+        2
+      ],
+      "section": "Scenery",
+      "name": "CoastBank09",
+      "tint": [
+        232,
+        222,
+        201
+      ]
+    },
+    {
+      "asset": "SC_CoveWater",
+      "p": [
+        0,
+        -3.5,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        20.4,
+        1,
+        20.4
+      ],
+      "section": "Scenery",
+      "name": "CoveWater_167"
+    },
+    {
+      "asset": "SC_CargoBarrel",
+      "p": [
+        -120,
+        8,
+        135
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "CargoBarrel_168"
+    },
+    {
+      "asset": "SC_CargoBarrel",
+      "p": [
+        -93,
+        8,
+        138
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "CargoBarrel_169"
+    },
+    {
+      "asset": "SC_CargoBarrel",
+      "p": [
+        -120,
+        13,
+        8
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "CargoBarrel_170"
+    },
+    {
+      "asset": "SC_CargoBarrel",
+      "p": [
+        -118,
+        13,
+        -68
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "CargoBarrel_171"
+    },
+    {
+      "asset": "SC_R_GroundedHullUnderbody",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "S02",
+      "name": "GroundedHullUnderbody"
+    },
+    {
+      "asset": "SC_R_HullBow",
+      "p": [
+        -104,
+        3,
+        -100
+      ],
+      "yaw": -90,
+      "scale": [
+        1.55,
+        1.25,
+        2
+      ],
+      "section": "S02",
+      "name": "R_HullBow_179",
+      "pitch": 15
+    },
+    {
+      "asset": "SC_R_HullMid",
+      "p": [
+        -65.36,
+        13.35,
+        -100
+      ],
+      "yaw": -90,
+      "scale": [
+        1.55,
+        1.25,
+        2
+      ],
+      "section": "S02",
+      "name": "R_HullMid_180",
+      "pitch": 15
+    },
+    {
+      "asset": "SC_R_HullStern",
+      "p": [
+        -26.72,
+        23.7,
+        -100
+      ],
+      "yaw": -90,
+      "scale": [
+        1.55,
+        1.25,
+        2
+      ],
+      "section": "S02",
+      "name": "R_HullStern_181",
+      "pitch": 15
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        -107,
+        -6,
+        -105
+      ],
+      "yaw": 0,
+      "scale": [
+        2.7,
+        1.8333333333333333,
+        3.2
+      ],
+      "section": "Scenery",
+      "name": "KeelReef0"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -107,
+        -6,
+        -120
+      ],
+      "yaw": 0,
+      "scale": [
+        1.9,
+        0.7222222222222222,
+        1.8
+      ],
+      "section": "Scenery",
+      "name": "KeelCrag0"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        -69,
+        -6,
+        -105
+      ],
+      "yaw": 47,
+      "scale": [
+        2.7,
+        3.5,
+        3.2
+      ],
+      "section": "Scenery",
+      "name": "KeelReef1"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -69,
+        -6,
+        -120
+      ],
+      "yaw": 37,
+      "scale": [
+        1.9,
+        1.2777777777777777,
+        1.8
+      ],
+      "section": "Scenery",
+      "name": "KeelCrag1"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        -28,
+        -6,
+        -105
+      ],
+      "yaw": 94,
+      "scale": [
+        2.7,
+        5.166666666666667,
+        3.2
+      ],
+      "section": "Scenery",
+      "name": "KeelReef2"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -28,
+        -6,
+        -120
+      ],
+      "yaw": 74,
+      "scale": [
+        1.9,
+        1.8333333333333333,
+        1.8
+      ],
+      "section": "Scenery",
+      "name": "KeelCrag2"
+    },
+    {
+      "asset": "SC_R_CheckpointBeacon",
+      "p": [
+        -108,
+        8,
+        110
+      ],
+      "yaw": 0,
+      "scale": [
+        1.6,
+        1.2,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "CheckpointBeacon0"
+    },
+    {
+      "asset": "SC_R_CheckpointBeacon",
+      "p": [
+        -108,
+        13,
+        16
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "CheckpointBeacon1"
+    },
+    {
+      "asset": "SC_R_CheckpointBeacon",
+      "p": [
+        -108,
+        13,
+        -58
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "CheckpointBeacon2"
+    },
+    {
+      "asset": "SC_R_CheckpointBeacon",
+      "p": [
+        0,
+        43,
+        -108
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "CheckpointBeacon3"
+    },
+    {
+      "asset": "SC_R_CheckpointBeacon",
+      "p": [
+        108,
+        15,
+        -10
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "CheckpointBeacon4"
+    },
+    {
+      "asset": "SC_R_PirateSignboard",
+      "p": [
+        -122,
+        12,
+        5
+      ],
+      "yaw": 0,
+      "scale": [
+        1.25,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "R_PirateSignboard_193"
+    },
+    {
+      "asset": "SC_R_PirateSignboard",
+      "p": [
+        -120,
+        15,
+        -68
+      ],
+      "yaw": 0,
+      "scale": [
+        1.25,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "R_PirateSignboard_194"
+    },
+    {
+      "asset": "SC_R_PirateSignboard",
+      "p": [
+        -120,
+        14,
+        -60
+      ],
+      "yaw": 0,
+      "scale": [
+        1.25,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "R_PirateSignboard_195"
+    },
+    {
+      "asset": "SC_R_PirateSignboard",
+      "p": [
+        6,
+        41,
+        -112
+      ],
+      "yaw": 0,
+      "scale": [
+        1.25,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "R_PirateSignboard_196"
+    },
+    {
+      "asset": "SC_R_PirateSignboard",
+      "p": [
+        -5,
+        41,
+        -87
+      ],
+      "yaw": 0,
+      "scale": [
+        1.25,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "R_PirateSignboard_197"
+    },
+    {
+      "asset": "SC_R_PirateSignboard",
+      "p": [
+        102,
+        14,
+        -14
+      ],
+      "yaw": 0,
+      "scale": [
+        1.25,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "R_PirateSignboard_198"
+    },
+    {
+      "asset": "SC_R_PirateSignboard",
+      "p": [
+        82,
+        10,
+        48
+      ],
+      "yaw": 90,
+      "scale": [
+        1.25,
+        1,
+        1
+      ],
+      "section": "Wayfinding",
+      "name": "R_PirateSignboard_199"
+    },
+    {
+      "asset": "SC_R_CurlingWave",
+      "p": [
+        69,
+        -2,
+        66
+      ],
+      "yaw": 90,
+      "scale": [
+        0.48,
+        0.85,
+        1.1
+      ],
+      "section": "H02",
+      "name": "SurgeWave"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        -157,
+        -5,
+        70
+      ],
+      "yaw": 0,
+      "scale": [
+        3.2,
+        2.1,
+        2.8
+      ],
+      "section": "Scenery",
+      "name": "CoastFoot0"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        -164,
+        -5,
+        -13
+      ],
+      "yaw": 19,
+      "scale": [
+        3.2,
+        2.1,
+        2.8
+      ],
+      "section": "Scenery",
+      "name": "CoastFoot1"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        -157,
+        -5,
+        -108
+      ],
+      "yaw": 38,
+      "scale": [
+        3.2,
+        2.1,
+        2.8
+      ],
+      "section": "Scenery",
+      "name": "CoastFoot2"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        -85,
+        -5,
+        -160
+      ],
+      "yaw": 57,
+      "scale": [
+        3.2,
+        2.1,
+        2.8
+      ],
+      "section": "Scenery",
+      "name": "CoastFoot3"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        -6,
+        -5,
+        -160
+      ],
+      "yaw": 76,
+      "scale": [
+        3.2,
+        2.1,
+        2.8
+      ],
+      "section": "Scenery",
+      "name": "CoastFoot4"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        76,
+        -5,
+        -166
+      ],
+      "yaw": 95,
+      "scale": [
+        3.2,
+        2.1,
+        2.8
+      ],
+      "section": "Scenery",
+      "name": "CoastFoot5"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        167,
+        -5,
+        -118
+      ],
+      "yaw": 114,
+      "scale": [
+        3.2,
+        2.1,
+        2.8
+      ],
+      "section": "Scenery",
+      "name": "CoastFoot6"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        178,
+        -5,
+        -51
+      ],
+      "yaw": 133,
+      "scale": [
+        3.2,
+        2.1,
+        2.8
+      ],
+      "section": "Scenery",
+      "name": "CoastFoot7"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        169,
+        -5,
+        24
+      ],
+      "yaw": 152,
+      "scale": [
+        3.2,
+        2.1,
+        2.8
+      ],
+      "section": "Scenery",
+      "name": "CoastFoot8"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        39,
+        46,
+        -128
+      ],
+      "yaw": 23,
+      "scale": [
+        1.2,
+        0.8,
+        1.1
+      ],
+      "section": "Scenery",
+      "name": "CliffGrowth1"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        39,
+        41,
+        -128
+      ],
+      "yaw": 19,
+      "scale": [
+        1.5,
+        1,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "CliffGrowthShelf1"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        89,
+        53,
+        -138
+      ],
+      "yaw": 92,
+      "scale": [
+        1.2,
+        0.8,
+        1.1
+      ],
+      "section": "Scenery",
+      "name": "CliffGrowth4"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        89,
+        48,
+        -138
+      ],
+      "yaw": 76,
+      "scale": [
+        1.5,
+        1,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "CliffGrowthShelf4"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        121,
+        47,
+        -109
+      ],
+      "yaw": 138,
+      "scale": [
+        1.2,
+        0.8,
+        1.1
+      ],
+      "section": "Scenery",
+      "name": "CliffGrowth6"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        121,
+        42,
+        -109
+      ],
+      "yaw": 114,
+      "scale": [
+        1.5,
+        1,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "CliffGrowthShelf6"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        132,
+        31,
+        -56
+      ],
+      "yaw": 207,
+      "scale": [
+        1.2,
+        0.8,
+        1.1
+      ],
+      "section": "Scenery",
+      "name": "CliffGrowth9"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        132,
+        26,
+        -56
+      ],
+      "yaw": 171,
+      "scale": [
+        1.5,
+        1,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "CliffGrowthShelf9"
+    },
+    {
+      "asset": "SC_R_ShoreBank",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "ConnectedShoreBank"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        -131,
+        -4,
+        128
+      ],
+      "yaw": 0,
+      "scale": [
+        1.8,
+        2,
+        1.8
+      ],
+      "section": "Scenery",
+      "name": "Beach0"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -131,
+        3.32,
+        128
+      ],
+      "yaw": 110,
+      "scale": [
+        1.05,
+        1.3,
+        1.05
+      ],
+      "section": "Scenery",
+      "name": "BeachPalm0"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        -135,
+        3,
+        131
+      ],
+      "yaw": 0,
+      "scale": [
+        1.5,
+        1.1,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_Shrub_219"
+    },
+    {
+      "asset": "SC_R_GrassClump",
+      "p": [
+        -126,
+        3,
+        130
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "R_GrassClump_220"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        -140,
+        -4,
+        64
+      ],
+      "yaw": 23,
+      "scale": [
+        1,
+        2,
+        1
+      ],
+      "section": "Scenery",
+      "name": "Beach1"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -140,
+        41.88,
+        64
+      ],
+      "yaw": 41,
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "BeachPalm1"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        -144,
+        3,
+        67
+      ],
+      "yaw": 19,
+      "scale": [
+        1.5,
+        1.1,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_Shrub_223"
+    },
+    {
+      "asset": "SC_R_GrassClump",
+      "p": [
+        -135,
+        3,
+        66
+      ],
+      "yaw": 61,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "R_GrassClump_224"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        -136,
+        -4,
+        33
+      ],
+      "yaw": 46,
+      "scale": [
+        0.8,
+        2,
+        0.8
+      ],
+      "section": "Scenery",
+      "name": "Beach2"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -136,
+        3.32,
+        33
+      ],
+      "yaw": 82,
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "BeachPalm2"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        -140,
+        3,
+        36
+      ],
+      "yaw": 38,
+      "scale": [
+        1.5,
+        1.1,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_Shrub_227"
+    },
+    {
+      "asset": "SC_R_GrassClump",
+      "p": [
+        -131,
+        3,
+        35
+      ],
+      "yaw": 122,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "R_GrassClump_228"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        23,
+        -4,
+        92
+      ],
+      "yaw": 69,
+      "scale": [
+        1.3,
+        2,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "Beach3"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        23,
+        6.709,
+        92
+      ],
+      "yaw": 123,
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "BeachPalm3"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        19,
+        3,
+        95
+      ],
+      "yaw": 57,
+      "scale": [
+        1.5,
+        1.1,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_Shrub_231"
+    },
+    {
+      "asset": "SC_R_GrassClump",
+      "p": [
+        28,
+        3,
+        94
+      ],
+      "yaw": 183,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "R_GrassClump_232"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        60,
+        -4,
+        88
+      ],
+      "yaw": 92,
+      "scale": [
+        1.3,
+        2,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "Beach4"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        60,
+        13.064,
+        88
+      ],
+      "yaw": 164,
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "BeachPalm4"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        56,
+        3,
+        91
+      ],
+      "yaw": 76,
+      "scale": [
+        1.5,
+        1.1,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_Shrub_235"
+    },
+    {
+      "asset": "SC_R_GrassClump",
+      "p": [
+        65,
+        3,
+        90
+      ],
+      "yaw": 244,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "R_GrassClump_236"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        130,
+        -4,
+        75
+      ],
+      "yaw": 115,
+      "scale": [
+        1.6,
+        2,
+        1.6
+      ],
+      "section": "Scenery",
+      "name": "Beach5"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        158,
+        38.68,
+        83
+      ],
+      "yaw": 205,
+      "scale": [
+        1.3,
+        1.3,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "BeachPalm5"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        126,
+        3,
+        78
+      ],
+      "yaw": 95,
+      "scale": [
+        1.5,
+        1.1,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_Shrub_239"
+    },
+    {
+      "asset": "SC_R_GrassClump",
+      "p": [
+        135,
+        3,
+        77
+      ],
+      "yaw": 305,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "R_GrassClump_240"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -140,
+        -4.044,
+        112
+      ],
+      "yaw": 0,
+      "scale": [
+        1.5,
+        1.1,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "LeaningPalm0"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -148,
+        41.88,
+        52
+      ],
+      "yaw": 57,
+      "scale": [
+        1.5,
+        1.2200000000000002,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "LeaningPalm1"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        37,
+        4.773,
+        84
+      ],
+      "yaw": 114,
+      "scale": [
+        1.5,
+        1.34,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "LeaningPalm2"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        138,
+        36.756,
+        71
+      ],
+      "yaw": 171,
+      "scale": [
+        1.5,
+        1.46,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "LeaningPalm3"
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        18,
+        -1,
+        103
+      ],
+      "yaw": -153,
+      "scale": [
+        1.1,
+        2,
+        0.65
+      ],
+      "section": "Scenery",
+      "name": "ShoreDuneFacet0",
+      "tint": [
+        224,
+        199,
+        156
+      ]
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        -24,
+        -1,
+        122
+      ],
+      "yaw": -146,
+      "scale": [
+        1.1,
+        2,
+        0.65
+      ],
+      "section": "Scenery",
+      "name": "ShoreDuneFacet1",
+      "tint": [
+        224,
+        199,
+        156
+      ]
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        -62,
+        -1,
+        137
+      ],
+      "yaw": -139,
+      "scale": [
+        1.1,
+        2,
+        0.65
+      ],
+      "section": "Scenery",
+      "name": "ShoreDuneFacet2",
+      "tint": [
+        224,
+        199,
+        156
+      ]
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        26,
+        -4,
+        109
+      ],
+      "yaw": -151,
+      "scale": [
+        1.05,
+        1.3,
+        0.7
+      ],
+      "section": "Scenery",
+      "name": "WetSandEdge0",
+      "tint": [
+        185,
+        156,
+        115
+      ]
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        -33,
+        -4,
+        138
+      ],
+      "yaw": -138,
+      "scale": [
+        1.05,
+        1.3,
+        0.7
+      ],
+      "section": "Scenery",
+      "name": "WetSandEdge1",
+      "tint": [
+        185,
+        156,
+        115
+      ]
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -17,
+        -1.386,
+        126
+      ],
+      "yaw": 31,
+      "scale": [
+        0.72,
+        0.9,
+        0.72
+      ],
+      "section": "Scenery",
+      "name": "ShorePalmCluster"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        -57,
+        3,
+        136
+      ],
+      "yaw": 24,
+      "scale": [
+        1.1,
+        0.8,
+        1
+      ],
+      "section": "Scenery",
+      "name": "ShoreShrubCluster"
+    },
+    {
+      "asset": "SC_R_GrassClump",
+      "p": [
+        21,
+        4,
+        99
+      ],
+      "yaw": -21,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "Scenery",
+      "name": "ShoreGrassCluster"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        67,
+        -4,
+        -123
+      ],
+      "yaw": 11,
+      "scale": [
+        1.8,
+        3.2,
+        1.2
+      ],
+      "section": "Scenery",
+      "name": "ArchSeaStack"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        67,
+        28,
+        -130
+      ],
+      "yaw": -17,
+      "scale": [
+        1.7,
+        2.2,
+        1.8
+      ],
+      "section": "Scenery",
+      "name": "ArchSlopeJoin"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -162,
+        45.08,
+        -115
+      ],
+      "yaw": 0,
+      "scale": [
+        1.3,
+        1.5,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "CoastPalm0"
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        -162,
+        42.400000000000006,
+        -115
+      ],
+      "yaw": 0,
+      "scale": [
+        0.8,
+        1,
+        0.8
+      ],
+      "section": "Scenery",
+      "name": "R_SandWedge_260"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -95,
+        51.48,
+        -158
+      ],
+      "yaw": 31,
+      "scale": [
+        1.3,
+        1.5,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "CoastPalm1"
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        -95,
+        48.800000000000004,
+        -158
+      ],
+      "yaw": 22,
+      "scale": [
+        0.8,
+        1,
+        0.8
+      ],
+      "section": "Scenery",
+      "name": "R_SandWedge_262"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        68,
+        64.28,
+        -177
+      ],
+      "yaw": 62,
+      "scale": [
+        1.3,
+        1.5,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "CoastPalm2"
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        68,
+        61.60000000000001,
+        -177
+      ],
+      "yaw": 44,
+      "scale": [
+        0.8,
+        1,
+        0.8
+      ],
+      "section": "Scenery",
+      "name": "R_SandWedge_264"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        144,
+        57.88,
+        -144
+      ],
+      "yaw": 93,
+      "scale": [
+        1.3,
+        1.5,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "CoastPalm3"
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        144,
+        55.2,
+        -144
+      ],
+      "yaw": 66,
+      "scale": [
+        0.8,
+        1,
+        0.8
+      ],
+      "section": "Scenery",
+      "name": "R_SandWedge_266"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        177,
+        61.08,
+        -72
+      ],
+      "yaw": 124,
+      "scale": [
+        1.3,
+        1.5,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "CoastPalm4"
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        177,
+        58.400000000000006,
+        -72
+      ],
+      "yaw": 88,
+      "scale": [
+        0.8,
+        1,
+        0.8
+      ],
+      "section": "Scenery",
+      "name": "R_SandWedge_268"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        174,
+        48.28,
+        4
+      ],
+      "yaw": 155,
+      "scale": [
+        1.3,
+        1.5,
+        1.3
+      ],
+      "section": "Scenery",
+      "name": "CoastPalm5"
+    },
+    {
+      "asset": "SC_R_SandWedge",
+      "p": [
+        174,
+        45.6,
+        4
+      ],
+      "yaw": 110,
+      "scale": [
+        0.8,
+        1,
+        0.8
+      ],
+      "section": "Scenery",
+      "name": "R_SandWedge_270"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        33,
+        10,
+        -117
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        1.8,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockSpire_271"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        63,
+        16,
+        -141
+      ],
+      "yaw": 62,
+      "scale": [
+        1.4,
+        1.8,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockSpire_272"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        97,
+        20,
+        -141
+      ],
+      "yaw": 124,
+      "scale": [
+        1.4,
+        1.8,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockSpire_273"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        129,
+        14,
+        -112
+      ],
+      "yaw": 186,
+      "scale": [
+        1.4,
+        1.8,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockSpire_274"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        147,
+        4,
+        -77
+      ],
+      "yaw": 248,
+      "scale": [
+        1.4,
+        1.8,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockSpire_275"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        132,
+        -9,
+        -44
+      ],
+      "yaw": 310,
+      "scale": [
+        1.4,
+        1.8,
+        1.5
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockSpire_276"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -133,
+        -5,
+        15
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        1.8,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockTall_277"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -141,
+        -5,
+        -37
+      ],
+      "yaw": 21,
+      "scale": [
+        1.4,
+        1.8,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockTall_278"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -142,
+        -5,
+        -77
+      ],
+      "yaw": 42,
+      "scale": [
+        1.4,
+        1.8,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockTall_279"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -121,
+        -5,
+        -124
+      ],
+      "yaw": 63,
+      "scale": [
+        1.4,
+        1.8,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockTall_280"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -62,
+        -5,
+        -136
+      ],
+      "yaw": 84,
+      "scale": [
+        1.4,
+        1.8,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockTall_281"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        13,
+        -5,
+        -125
+      ],
+      "yaw": 105,
+      "scale": [
+        1.4,
+        1.8,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockTall_282"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        148,
+        -5,
+        -29
+      ],
+      "yaw": 126,
+      "scale": [
+        1.4,
+        1.8,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockTall_283"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        145,
+        -5,
+        29
+      ],
+      "yaw": 147,
+      "scale": [
+        1.4,
+        1.8,
+        1.4
+      ],
+      "section": "Scenery",
+      "name": "R_SeaRockTall_284"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        -350,
+        -6,
+        -220
+      ],
+      "yaw": 0,
+      "scale": [
+        6.8,
+        2,
+        6.8
+      ],
+      "section": "DistantIsland0",
+      "name": "DistantIsland0"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -350,
+        -5,
+        -220
+      ],
+      "yaw": 0,
+      "scale": [
+        10.2,
+        2.805,
+        10.2
+      ],
+      "section": "DistantIsland0",
+      "name": "DistantPeak0"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -309.2,
+        -5,
+        -206
+      ],
+      "yaw": 0,
+      "scale": [
+        6.8,
+        3.06,
+        6.8
+      ],
+      "section": "DistantIsland0",
+      "name": "R_SeaRockSpire_287"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -387,
+        -2.908,
+        -172
+      ],
+      "yaw": -38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland0",
+      "name": "IslandPalm0_-1"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -313,
+        -4.031,
+        -172
+      ],
+      "yaw": 38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland0",
+      "name": "IslandPalm0_1"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        270,
+        -6,
+        -290
+      ],
+      "yaw": 42,
+      "scale": [
+        8.4,
+        2,
+        8.4
+      ],
+      "section": "DistantIsland1",
+      "name": "DistantIsland1"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        270,
+        -5,
+        -290
+      ],
+      "yaw": 51,
+      "scale": [
+        12.600000000000001,
+        6.300000000000001,
+        12.600000000000001
+      ],
+      "section": "DistantIsland1",
+      "name": "DistantPeak1"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        320.4,
+        -5,
+        -276
+      ],
+      "yaw": 22,
+      "scale": [
+        8.4,
+        3.7800000000000002,
+        8.4
+      ],
+      "section": "DistantIsland1",
+      "name": "R_SeaRockSpire_292"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        233,
+        0.856,
+        -242
+      ],
+      "yaw": -38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland1",
+      "name": "IslandPalm1_-1"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        307,
+        -3.228,
+        -242
+      ],
+      "yaw": 38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland1",
+      "name": "IslandPalm1_1"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        310,
+        -6,
+        220
+      ],
+      "yaw": 84,
+      "scale": [
+        6.4,
+        2,
+        6.4
+      ],
+      "section": "DistantIsland2",
+      "name": "DistantIsland2"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        310,
+        -5,
+        220
+      ],
+      "yaw": 102,
+      "scale": [
+        6.240000000000001,
+        6.240000000000001,
+        9.600000000000001
+      ],
+      "section": "DistantIsland2",
+      "name": "DistantPeak2"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        348.4,
+        -5,
+        234
+      ],
+      "yaw": 44,
+      "scale": [
+        6.4,
+        2.8800000000000003,
+        6.4
+      ],
+      "section": "DistantIsland2",
+      "name": "R_SeaRockSpire_297"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        273,
+        -2.193,
+        268
+      ],
+      "yaw": -38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland2",
+      "name": "IslandPalm2_-1"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        347,
+        -2.101,
+        268
+      ],
+      "yaw": 38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland2",
+      "name": "IslandPalm2_1"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        -320,
+        -6,
+        100
+      ],
+      "yaw": 126,
+      "scale": [
+        5.2,
+        2,
+        5.2
+      ],
+      "section": "DistantIsland3",
+      "name": "DistantIsland3"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -320,
+        -5,
+        100
+      ],
+      "yaw": 153,
+      "scale": [
+        7.800000000000001,
+        3.9000000000000004,
+        7.800000000000001
+      ],
+      "section": "DistantIsland3",
+      "name": "DistantPeak3"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -288.8,
+        -5,
+        114
+      ],
+      "yaw": 66,
+      "scale": [
+        5.2,
+        2.3400000000000003,
+        5.2
+      ],
+      "section": "DistantIsland3",
+      "name": "R_SeaRockSpire_302"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -340,
+        38.185,
+        119
+      ],
+      "yaw": -38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland3",
+      "name": "IslandPalm3_-1"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -283,
+        -1.354,
+        148
+      ],
+      "yaw": 38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland3",
+      "name": "IslandPalm3_1"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        60,
+        -6,
+        -350
+      ],
+      "yaw": 168,
+      "scale": [
+        7.0,
+        2,
+        7.0
+      ],
+      "section": "DistantIsland4",
+      "name": "DistantIsland4"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        60,
+        -5,
+        -350
+      ],
+      "yaw": 204,
+      "scale": [
+        13.125,
+        3.675,
+        10.5
+      ],
+      "section": "DistantIsland4",
+      "name": "DistantPeak4"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        102.0,
+        -5,
+        -336
+      ],
+      "yaw": 88,
+      "scale": [
+        7.0,
+        3.15,
+        7.0
+      ],
+      "section": "DistantIsland4",
+      "name": "R_SeaRockSpire_307"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        23,
+        -4.4,
+        -302
+      ],
+      "yaw": -38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland4",
+      "name": "IslandPalm4_-1"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        97,
+        -2.269,
+        -302
+      ],
+      "yaw": 38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland4",
+      "name": "IslandPalm4_1"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        -260,
+        -6,
+        280
+      ],
+      "yaw": 210,
+      "scale": [
+        6.2,
+        2,
+        6.2
+      ],
+      "section": "DistantIsland5",
+      "name": "DistantIsland5"
+    },
+    {
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        -260,
+        -5,
+        280
+      ],
+      "yaw": 255,
+      "scale": [
+        9.3,
+        4.65,
+        9.3
+      ],
+      "section": "DistantIsland5",
+      "name": "DistantPeak5"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -222.8,
+        -5,
+        294
+      ],
+      "yaw": 110,
+      "scale": [
+        6.2,
+        2.79,
+        6.2
+      ],
+      "section": "DistantIsland5",
+      "name": "R_SeaRockSpire_312"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -297,
+        -0.726,
+        328
+      ],
+      "yaw": -38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland5",
+      "name": "IslandPalm5_-1"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -245,
+        59.98,
+        294
+      ],
+      "yaw": 38,
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "section": "DistantIsland5",
+      "name": "IslandPalm5_1"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        -40,
+        -3.1,
+        40
+      ],
+      "yaw": 0,
+      "scale": [
+        1.5,
+        0.4,
+        0.5
+      ],
+      "section": "Scenery",
+      "name": "SeaGlint0"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        15,
+        -3.1,
+        10
+      ],
+      "yaw": 29,
+      "scale": [
+        1.5,
+        0.4,
+        0.5
+      ],
+      "section": "Scenery",
+      "name": "SeaGlint1"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        30,
+        -3.1,
+        53
+      ],
+      "yaw": 58,
+      "scale": [
+        1.5,
+        0.4,
+        0.5
+      ],
+      "section": "Scenery",
+      "name": "SeaGlint2"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        -64,
+        -3.1,
+        78
+      ],
+      "yaw": 87,
+      "scale": [
+        1.5,
+        0.4,
+        0.5
+      ],
+      "section": "Scenery",
+      "name": "SeaGlint3"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        -12,
+        -3.1,
+        -18
+      ],
+      "yaw": 116,
+      "scale": [
+        1.5,
+        0.4,
+        0.5
+      ],
+      "section": "Scenery",
+      "name": "SeaGlint4"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        70,
+        -3.1,
+        12
+      ],
+      "yaw": 145,
+      "scale": [
+        1.5,
+        0.4,
+        0.5
+      ],
+      "section": "Scenery",
+      "name": "SeaGlint5"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        -210,
+        -3.1,
+        40
+      ],
+      "yaw": 174,
+      "scale": [
+        1.5,
+        0.4,
+        0.5
+      ],
+      "section": "Scenery",
+      "name": "SeaGlint6"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        215,
+        -3.1,
+        110
+      ],
+      "yaw": 203,
+      "scale": [
+        1.5,
+        0.4,
+        0.5
+      ],
+      "section": "Scenery",
+      "name": "SeaGlint7"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        180,
+        -3.1,
+        -220
+      ],
+      "yaw": 232,
+      "scale": [
+        1.5,
+        0.4,
+        0.5
+      ],
+      "section": "Scenery",
+      "name": "SeaGlint8"
+    },
+    {
+      "asset": "SC_FoamRibbon",
+      "p": [
+        -320,
+        -3.1,
+        185
+      ],
+      "yaw": 261,
+      "scale": [
+        1.5,
+        0.4,
+        0.5
+      ],
+      "section": "Scenery",
+      "name": "SeaGlint9"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -116,
+        8.8,
+        100.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster0_0"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -116,
+        -5,
+        100.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.3800000000000001,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_273"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -108,
+        9.100000000000001,
+        99
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "S01_00"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -108,
+        -5,
+        99
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.4100000000000001,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_275"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -100,
+        8.8,
+        98
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster0_2"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -100,
+        -5,
+        98
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.3800000000000001,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_277"
+    },
+    {
+      "asset": "SC_R_DockBrace25",
+      "p": [
+        -108,
+        -3,
+        99
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.2421052631578948,
+        1
+      ],
+      "section": "S01",
+      "name": "R_DockBrace25_278"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -117.5,
+        10.8,
+        85.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster1_0"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -117.5,
+        -5,
+        85.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.58,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_280"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -110,
+        11.100000000000001,
+        84
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "S01_01"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -110,
+        -5,
+        84
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.61,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_282"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -103,
+        10.8,
+        83
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster1_2"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -103,
+        -5,
+        83
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.58,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_284"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -96,
+        11.100000000000001,
+        84.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster1_3"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -96,
+        -5,
+        84.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.61,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_286"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -116,
+        12.8,
+        70.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster2_0"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -116,
+        -5,
+        70.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.78,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_288"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -108,
+        13.100000000000001,
+        69
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "S01_02"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -108,
+        -5,
+        69
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.81,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_290"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -100,
+        12.8,
+        68
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster2_2"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -100,
+        -5,
+        68
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.78,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_292"
+    },
+    {
+      "asset": "SC_R_DockBrace25",
+      "p": [
+        -108,
+        -3,
+        69
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.6631578947368422,
+        1
+      ],
+      "section": "S01",
+      "name": "R_DockBrace25_293"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -118.5,
+        14.8,
+        55.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster3_0"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -118.5,
+        -5,
+        55.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.98,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_295"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -111,
+        15.100000000000001,
+        54
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "S01_03"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -111,
+        -5,
+        54
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        2.0100000000000002,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_297"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -104,
+        14.8,
+        53
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster3_2"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -104,
+        -5,
+        53
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.98,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_299"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -97,
+        15.100000000000001,
+        54.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster3_3"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -97,
+        -5,
+        54.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        2.0100000000000002,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_301"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -116,
+        15.8,
+        40.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster4_0"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -116,
+        -5,
+        40.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        2.08,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_303"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -108,
+        16.1,
+        39
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "S01_04"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -108,
+        -5,
+        39
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        2.1100000000000003,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_305"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -100,
+        15.8,
+        38
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster4_2"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -100,
+        -5,
+        38
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        2.08,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_307"
+    },
+    {
+      "asset": "SC_R_DockBrace25",
+      "p": [
+        -108,
+        -3,
+        39
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.9789473684210528,
+        1
+      ],
+      "section": "S01",
+      "name": "R_DockBrace25_308"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -117.5,
+        14.8,
+        25.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster5_0"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -117.5,
+        -5,
+        25.2
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.98,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_310"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -110,
+        15.100000000000001,
+        24
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "S01_05"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -110,
+        -5,
+        24
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        2.0100000000000002,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_312"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -103,
+        14.8,
+        23
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster5_2"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -103,
+        -5,
+        23
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        1.98,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_314"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -96,
+        15.100000000000001,
+        24.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.43333333333333335,
+        1,
+        0.8
+      ],
+      "section": "S01",
+      "name": "DockCluster5_3"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -96,
+        -5,
+        24.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.65,
+        2.0100000000000002,
+        0.65
+      ],
+      "section": "S01",
+      "name": "DockPost_316"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -116,
+        11.8,
+        -5.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster0_0",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -116,
+        -5,
+        -5.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.6800000000000002,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_318"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -108,
+        12.15,
+        -7.8
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryDeck0"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -108,
+        -5,
+        -7.8
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.7149999999999999,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_320"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -100,
+        11.8,
+        -6.6
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster0_2",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -100,
+        -5,
+        -6.6
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.6800000000000002,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_322"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -118,
+        11.8,
+        -21.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster1_0",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -118,
+        -5,
+        -21.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.6800000000000002,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_324"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -111.2,
+        12.15,
+        -23.8
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster1_1",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -111.2,
+        -5,
+        -23.8
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.7149999999999999,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_326"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -104.3,
+        11.8,
+        -22.6
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryDeck1"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -104.3,
+        -5,
+        -22.6
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.6800000000000002,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_328"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -97.6,
+        12.15,
+        -24.4
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster1_3",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -97.6,
+        -5,
+        -24.4
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.7149999999999999,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_330"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -120,
+        11.8,
+        -37.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster2_0",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -120,
+        -5,
+        -37.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.6800000000000002,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_332"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -114,
+        12.15,
+        -39.8
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster2_1",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -114,
+        -5,
+        -39.8
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.7149999999999999,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_334"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -108,
+        11.8,
+        -38.6
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryDeck2"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -108,
+        -5,
+        -38.6
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.6800000000000002,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_336"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -102,
+        12.15,
+        -40.4
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster2_3",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -102,
+        -5,
+        -40.4
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.7149999999999999,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_338"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -96,
+        11.8,
+        -38
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster2_4",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -96,
+        -5,
+        -38
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.6800000000000002,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_340"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -118,
+        11.8,
+        -53.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster3_0",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -118,
+        -5,
+        -53.7
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.6800000000000002,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_342"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -111.2,
+        12.15,
+        -55.8
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster3_1",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -111.2,
+        -5,
+        -55.8
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.7149999999999999,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_344"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -104.3,
+        11.8,
+        -54.6
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryDeck3"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -104.3,
+        -5,
+        -54.6
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.6800000000000002,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_346"
+    },
+    {
+      "asset": "SC_DockDeck",
+      "p": [
+        -97.6,
+        12.15,
+        -56.4
+      ],
+      "yaw": 0,
+      "scale": [
+        0.3833333333333333,
+        1,
+        0.7
+      ],
+      "section": "S01",
+      "name": "BatteryCluster3_3",
+      "tint": [
+        230,
+        218,
+        190
+      ]
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -97.6,
+        -5,
+        -56.4
+      ],
+      "yaw": 0,
+      "scale": [
+        0.7,
+        1.7149999999999999,
+        0.7
+      ],
+      "section": "S01",
+      "name": "DockPost_348"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -122,
+        -5,
+        132
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        1.18,
+        1.4
+      ],
+      "section": "S01",
+      "name": "DockPost_349"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -94,
+        -5,
+        132
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        1.18,
+        1.4
+      ],
+      "section": "S01",
+      "name": "DockPost_350"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -122,
+        -5,
+        116
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        1.18,
+        1.4
+      ],
+      "section": "S01",
+      "name": "DockPost_351"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -94,
+        -5,
+        116
+      ],
+      "yaw": 0,
+      "scale": [
+        1.4,
+        1.18,
+        1.4
+      ],
+      "section": "S01",
+      "name": "DockPost_352"
+    },
+    {
+      "asset": "SC_R_DockBrace25",
+      "p": [
+        -108,
+        -3,
+        118
+      ],
+      "yaw": 0,
+      "scale": [
+        2.6,
+        1,
+        1
+      ],
+      "section": "S01",
+      "name": "R_DockBrace25_353"
+    },
+    {
+      "asset": "SC_R_DockBrace25",
+      "p": [
+        -108,
+        -3,
+        136
+      ],
+      "yaw": 0,
+      "scale": [
+        2.6,
+        1,
+        1
+      ],
+      "section": "S01",
+      "name": "R_DockBrace25_354"
+    },
+    {
+      "asset": "SC_CargoCrate",
+      "p": [
+        -123,
+        8,
+        124
+      ],
+      "yaw": 20,
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "section": "S01",
+      "name": "CargoCrate_355"
+    },
+    {
+      "asset": "SC_CargoBarrel",
+      "p": [
+        -121,
+        8,
+        127
+      ],
+      "yaw": 20,
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "section": "S01",
+      "name": "CargoBarrel_356"
+    },
+    {
+      "asset": "SC_CargoCrate",
+      "p": [
+        -96,
+        8,
+        140
+      ],
+      "yaw": -12,
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ],
+      "section": "S01",
+      "name": "CargoCrate_357"
+    },
+    {
+      "asset": "SC_CargoBarrel",
+      "p": [
+        -94,
+        8,
+        143
+      ],
+      "yaw": -12,
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "section": "S01",
+      "name": "CargoBarrel_358"
+    },
+    {
+      "asset": "SC_R_Lantern25",
+      "p": [
+        -122,
+        10,
+        113
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "S01",
+      "name": "R_Lantern25_359"
+    },
+    {
+      "asset": "SC_R_Lantern25",
+      "p": [
+        -94,
+        10,
+        113
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "section": "S01",
+      "name": "R_Lantern25_360"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -112,
+        -5,
+        8
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "S01",
+      "name": "DockPost_361"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -104,
+        -5,
+        8
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "S01",
+      "name": "DockPost_362"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -112,
+        -5,
+        -66
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "S01",
+      "name": "DockPost_363"
+    },
+    {
+      "asset": "SC_DockPost",
+      "p": [
+        -104,
+        -5,
+        -66
+      ],
+      "yaw": 0,
+      "scale": [
+        1,
+        1.7,
+        1
+      ],
+      "section": "S01",
+      "name": "DockPost_364"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        -450,
+        -6,
+        -40
+      ],
+      "yaw": 17,
+      "scale": [
+        4.4,
+        2,
+        3.5200000000000005
+      ],
+      "section": "DistantIsland6",
+      "name": "R_SandIsland_412"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -468,
+        -5,
+        -50
+      ],
+      "yaw": 17,
+      "scale": [
+        1.8,
+        1.3,
+        1.8
+      ],
+      "section": "DistantIsland6",
+      "name": "R_SeaRockSpire_413"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -448,
+        -5,
+        -43
+      ],
+      "yaw": 64,
+      "scale": [
+        1.8,
+        1.7000000000000002,
+        1.8
+      ],
+      "section": "DistantIsland6",
+      "name": "R_SeaRockSpire_414"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -440,
+        0.798,
+        -29
+      ],
+      "yaw": 17,
+      "scale": [
+        1.5,
+        1.7,
+        1.5
+      ],
+      "section": "DistantIsland6",
+      "name": "R_FanPalm_415"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        -430,
+        1,
+        -14
+      ],
+      "yaw": 17,
+      "scale": [
+        2,
+        1.2,
+        2
+      ],
+      "section": "DistantIsland6",
+      "name": "R_Shrub_416"
+    },
+    {
+      "asset": "SC_R_HullBow",
+      "p": [
+        -472,
+        -5,
+        -8
+      ],
+      "yaw": 17,
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "section": "DistantIsland6",
+      "name": "R_HullBow_417"
+    },
+    {
+      "asset": "SC_MastYard",
+      "p": [
+        -472,
+        1,
+        -8
+      ],
+      "yaw": 17,
+      "scale": [
+        0.65,
+        0.75,
+        0.65
+      ],
+      "section": "DistantIsland6",
+      "name": "MastYard_418"
+    },
+    {
+      "asset": "SC_TornSail",
+      "p": [
+        -472,
+        10,
+        -8
+      ],
+      "yaw": 17,
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "section": "DistantIsland6",
+      "name": "TornSail_419"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        420,
+        -6,
+        -90
+      ],
+      "yaw": 45,
+      "scale": [
+        5.6,
+        2,
+        4.4799999999999995
+      ],
+      "section": "DistantIsland7",
+      "name": "R_SandIsland_420"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        402,
+        -5,
+        -100
+      ],
+      "yaw": 45,
+      "scale": [
+        1.8,
+        1.3,
+        1.8
+      ],
+      "section": "DistantIsland7",
+      "name": "R_SeaRockSpire_421"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        422,
+        -5,
+        -93
+      ],
+      "yaw": 92,
+      "scale": [
+        1.8,
+        1.7000000000000002,
+        1.8
+      ],
+      "section": "DistantIsland7",
+      "name": "R_SeaRockSpire_422"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        442,
+        -5,
+        -86
+      ],
+      "yaw": 139,
+      "scale": [
+        1.8,
+        2.1,
+        1.8
+      ],
+      "section": "DistantIsland7",
+      "name": "R_SeaRockSpire_423"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        443,
+        -4.656,
+        -62
+      ],
+      "yaw": 45,
+      "scale": [
+        1.5,
+        1.7,
+        1.5
+      ],
+      "section": "DistantIsland7",
+      "name": "R_FanPalm_424"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        440,
+        1,
+        -64
+      ],
+      "yaw": 45,
+      "scale": [
+        2,
+        1.2,
+        2
+      ],
+      "section": "DistantIsland7",
+      "name": "R_Shrub_425"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        90,
+        -6,
+        360
+      ],
+      "yaw": 91,
+      "scale": [
+        6.2,
+        2,
+        4.960000000000001
+      ],
+      "section": "DistantIsland8",
+      "name": "R_SandIsland_426"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        72,
+        -5,
+        350
+      ],
+      "yaw": 91,
+      "scale": [
+        1.8,
+        1.3,
+        1.8
+      ],
+      "section": "DistantIsland8",
+      "name": "R_SeaRockSpire_427"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        92,
+        -5,
+        357
+      ],
+      "yaw": 138,
+      "scale": [
+        1.8,
+        1.7000000000000002,
+        1.8
+      ],
+      "section": "DistantIsland8",
+      "name": "R_SeaRockSpire_428"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        113,
+        0.336,
+        388
+      ],
+      "yaw": 91,
+      "scale": [
+        1.5,
+        1.7,
+        1.5
+      ],
+      "section": "DistantIsland8",
+      "name": "R_FanPalm_429"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        110,
+        1,
+        386
+      ],
+      "yaw": 91,
+      "scale": [
+        2,
+        1.2,
+        2
+      ],
+      "section": "DistantIsland8",
+      "name": "R_Shrub_430"
+    },
+    {
+      "asset": "SC_R_HullBow",
+      "p": [
+        68,
+        -5,
+        392
+      ],
+      "yaw": 91,
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ],
+      "section": "DistantIsland8",
+      "name": "R_HullBow_431"
+    },
+    {
+      "asset": "SC_MastYard",
+      "p": [
+        68,
+        1,
+        392
+      ],
+      "yaw": 91,
+      "scale": [
+        0.65,
+        0.75,
+        0.65
+      ],
+      "section": "DistantIsland8",
+      "name": "MastYard_432"
+    },
+    {
+      "asset": "SC_TornSail",
+      "p": [
+        68,
+        10,
+        392
+      ],
+      "yaw": 91,
+      "scale": [
+        0.65,
+        0.65,
+        0.65
+      ],
+      "section": "DistantIsland8",
+      "name": "TornSail_433"
+    },
+    {
+      "asset": "SC_R_SandIsland",
+      "p": [
+        -100,
+        -6,
+        -420
+      ],
+      "yaw": 130,
+      "scale": [
+        4.2,
+        2,
+        3.3600000000000003
+      ],
+      "section": "DistantIsland9",
+      "name": "R_SandIsland_434"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -118,
+        -5,
+        -430
+      ],
+      "yaw": 130,
+      "scale": [
+        1.8,
+        1.3,
+        1.8
+      ],
+      "section": "DistantIsland9",
+      "name": "R_SeaRockSpire_435"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -98,
+        -5,
+        -423
+      ],
+      "yaw": 177,
+      "scale": [
+        1.8,
+        1.7000000000000002,
+        1.8
+      ],
+      "section": "DistantIsland9",
+      "name": "R_SeaRockSpire_436"
+    },
+    {
+      "asset": "SC_R_SeaRockSpire",
+      "p": [
+        -78,
+        -5,
+        -416
+      ],
+      "yaw": 224,
+      "scale": [
+        1.8,
+        2.1,
+        1.8
+      ],
+      "section": "DistantIsland9",
+      "name": "R_SeaRockSpire_437"
+    },
+    {
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -77,
+        0.354,
+        -392
+      ],
+      "yaw": 130,
+      "scale": [
+        1.5,
+        1.7,
+        1.5
+      ],
+      "section": "DistantIsland9",
+      "name": "R_FanPalm_438"
+    },
+    {
+      "asset": "SC_R_Shrub",
+      "p": [
+        -80,
+        1,
+        -394
+      ],
+      "yaw": 130,
+      "scale": [
+        2,
+        1.2,
+        2
+      ],
+      "section": "DistantIsland9",
+      "name": "R_Shrub_439"
+    },
+    {
+      "asset": "SC_R_CaveMouth26",
+      "name": "CaveMouth26",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_CaveVault26",
+      "name": "CaveVault26",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_CaveSurge26",
+      "name": "CaveSurge26",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone00",
+      "p": [
+        110,
+        -4,
+        -3
+      ],
+      "scale": [
+        1.0869565217391306,
+        1.0625,
+        1.1162790697674418
+      ],
+      "yaw": 13,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone01",
+      "p": [
+        116,
+        -4,
+        7
+      ],
+      "scale": [
+        1.0869565217391306,
+        1.1875,
+        1.1162790697674418
+      ],
+      "yaw": -9,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone02",
+      "p": [
+        125,
+        -4,
+        18
+      ],
+      "scale": [
+        1.565217391304348,
+        1.0,
+        1.488372093023256
+      ],
+      "yaw": 24,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone03",
+      "p": [
+        121,
+        -4,
+        29
+      ],
+      "scale": [
+        1.0869565217391306,
+        1.125,
+        1.1162790697674418
+      ],
+      "yaw": -18,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone04",
+      "p": [
+        125,
+        -4,
+        40
+      ],
+      "scale": [
+        1.0869565217391306,
+        0.9375,
+        1.1162790697674418
+      ],
+      "yaw": 7,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone05",
+      "p": [
+        116,
+        -4,
+        48
+      ],
+      "scale": [
+        1.565217391304348,
+        1.0,
+        1.488372093023256
+      ],
+      "yaw": -22,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone06",
+      "p": [
+        106,
+        -4,
+        55
+      ],
+      "scale": [
+        1.0869565217391306,
+        0.875,
+        1.1162790697674418
+      ],
+      "yaw": 19,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone07",
+      "p": [
+        104,
+        -4,
+        2
+      ],
+      "scale": [
+        1.0869565217391306,
+        0.9375,
+        1.1162790697674418
+      ],
+      "yaw": 13,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone08",
+      "p": [
+        109,
+        -4,
+        13
+      ],
+      "scale": [
+        1.0869565217391306,
+        1.125,
+        1.1162790697674418
+      ],
+      "yaw": -9,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone09",
+      "p": [
+        137,
+        -4,
+        17
+      ],
+      "scale": [
+        1.0869565217391306,
+        1.0625,
+        1.1162790697674418
+      ],
+      "yaw": 24,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone10",
+      "p": [
+        136,
+        -4,
+        29
+      ],
+      "scale": [
+        1.0869565217391306,
+        1.125,
+        1.1162790697674418
+      ],
+      "yaw": -18,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone11",
+      "p": [
+        113,
+        -4,
+        38
+      ],
+      "scale": [
+        1.0869565217391306,
+        1.0,
+        1.1162790697674418
+      ],
+      "yaw": 7,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone12",
+      "p": [
+        135,
+        -4,
+        49
+      ],
+      "scale": [
+        1.0869565217391306,
+        0.875,
+        1.1162790697674418
+      ],
+      "yaw": -22,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone13",
+      "p": [
+        118,
+        -4,
+        59
+      ],
+      "scale": [
+        1.0869565217391306,
+        0.9375,
+        1.1162790697674418
+      ],
+      "yaw": 19,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone14",
+      "p": [
+        111,
+        -4,
+        25
+      ],
+      "scale": [
+        1.565217391304348,
+        1.0,
+        1.488372093023256
+      ],
+      "yaw": 13,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_CrumbleStone26",
+      "name": "Cave26Stone15",
+      "p": [
+        139,
+        -4,
+        38
+      ],
+      "scale": [
+        1.565217391304348,
+        0.9375,
+        1.488372093023256
+      ],
+      "yaw": -9,
+      "section": "S04_Entry"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "LampShelf26_0",
+      "p": [
+        98,
+        -4,
+        -2
+      ],
+      "scale": [
+        0.55,
+        3.5,
+        0.55
+      ],
+      "yaw": 0,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_Lantern25",
+      "name": "CaveLamp26_0",
+      "p": [
+        98,
+        17,
+        -2
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "LampShelf26_1",
+      "p": [
+        142,
+        -4,
+        18
+      ],
+      "scale": [
+        0.55,
+        3.5,
+        0.55
+      ],
+      "yaw": 29,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_Lantern25",
+      "name": "CaveLamp26_1",
+      "p": [
+        142,
+        17,
+        18
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "LampShelf26_2",
+      "p": [
+        105,
+        -4,
+        39
+      ],
+      "scale": [
+        0.55,
+        3.5,
+        0.55
+      ],
+      "yaw": 58,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_Lantern25",
+      "name": "CaveLamp26_2",
+      "p": [
+        105,
+        17,
+        39
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "LampShelf26_3",
+      "p": [
+        91,
+        -4,
+        76
+      ],
+      "scale": [
+        0.55,
+        2.8333333333333335,
+        0.55
+      ],
+      "yaw": 87,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_Lantern25",
+      "name": "CaveLamp26_3",
+      "p": [
+        91,
+        13,
+        76
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "LampShelf26_4",
+      "p": [
+        47,
+        -4,
+        76
+      ],
+      "scale": [
+        0.55,
+        2.8333333333333335,
+        0.55
+      ],
+      "yaw": 116,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_Lantern25",
+      "name": "CaveLamp26_4",
+      "p": [
+        47,
+        13,
+        76
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": 0,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "Cave26Outcrop0",
+      "p": [
+        88,
+        -5,
+        0
+      ],
+      "scale": [
+        1.2,
+        2.6,
+        1.2
+      ],
+      "yaw": 0,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "Cave26Outcrop1",
+      "p": [
+        154,
+        -5,
+        15
+      ],
+      "scale": [
+        1.6,
+        2.9,
+        1.2
+      ],
+      "yaw": 47,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "Cave26Outcrop2",
+      "p": [
+        159,
+        -5,
+        40
+      ],
+      "scale": [
+        1.6,
+        2.4,
+        1.2
+      ],
+      "yaw": 94,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "Cave26Outcrop3",
+      "p": [
+        120,
+        -5,
+        83
+      ],
+      "scale": [
+        1.3,
+        2.8,
+        1.2
+      ],
+      "yaw": 141,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "Cave26Outcrop4",
+      "p": [
+        82,
+        -5,
+        91
+      ],
+      "scale": [
+        1.5,
+        2.1,
+        1.3
+      ],
+      "yaw": 188,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "Cave26Outcrop5",
+      "p": [
+        56,
+        -5,
+        89
+      ],
+      "scale": [
+        1.4,
+        2.4,
+        1.4
+      ],
+      "yaw": 235,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "Cave26Outcrop6",
+      "p": [
+        101,
+        42,
+        5
+      ],
+      "scale": [
+        1.5,
+        2.1,
+        1.5
+      ],
+      "yaw": 282,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "Cave26Outcrop7",
+      "p": [
+        132,
+        44,
+        29
+      ],
+      "scale": [
+        1.4,
+        2.4,
+        1.5
+      ],
+      "yaw": 329,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "Cave26Outcrop8",
+      "p": [
+        111,
+        43,
+        54
+      ],
+      "scale": [
+        1.6,
+        2.2,
+        1.5
+      ],
+      "yaw": 376,
+      "section": "S04"
+    },
+    {
+      "asset": "SC_R_SeaRockFlat",
+      "name": "Cave26Outcrop9",
+      "p": [
+        75,
+        37,
+        60
+      ],
+      "scale": [
+        1.8,
+        2.0,
+        1.5
+      ],
+      "yaw": 423,
+      "section": "S04"
+    }
+  ],
+  "surfaces": [
+    {
+      "name": "HarborAssembly",
+      "p": [
+        -108,
+        8,
+        128
+      ],
+      "size": [
+        36,
+        1,
+        40
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "R1_Refuge",
+      "p": [
+        -108,
+        13,
+        8
+      ],
+      "size": [
+        26,
+        1,
+        20
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryMount0",
+      "p": [
+        -80,
+        13,
+        -7
+      ],
+      "size": [
+        12,
+        1,
+        12
+      ],
+      "section": "H01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryMount1",
+      "p": [
+        -138,
+        13,
+        -23
+      ],
+      "size": [
+        12,
+        1,
+        12
+      ],
+      "section": "H01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryMount2",
+      "p": [
+        -80,
+        13,
+        -39
+      ],
+      "size": [
+        12,
+        1,
+        12
+      ],
+      "section": "H01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryMount3",
+      "p": [
+        -138,
+        13,
+        -55
+      ],
+      "size": [
+        12,
+        1,
+        12
+      ],
+      "section": "H01",
+      "yaw": 0
+    },
+    {
+      "name": "R2_Boarding",
+      "p": [
+        -108,
+        13,
+        -66
+      ],
+      "size": [
+        24,
+        1,
+        20
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "S02_00",
+      "p": [
+        -108,
+        16,
+        -86
+      ],
+      "size": [
+        11,
+        1,
+        12
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "S02_01",
+      "p": [
+        -108,
+        19,
+        -105
+      ],
+      "size": [
+        11,
+        1,
+        12
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "S02_02",
+      "p": [
+        -91,
+        22,
+        -110
+      ],
+      "size": [
+        11,
+        1,
+        12
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "S02_03",
+      "p": [
+        -74,
+        24,
+        -110
+      ],
+      "size": [
+        11,
+        1,
+        12
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "S02_04",
+      "p": [
+        -74,
+        27,
+        -91
+      ],
+      "size": [
+        11,
+        1,
+        12
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "S02_05",
+      "p": [
+        -57,
+        29,
+        -91
+      ],
+      "size": [
+        11,
+        1,
+        12
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "S02_06",
+      "p": [
+        -57,
+        32,
+        -110
+      ],
+      "size": [
+        11,
+        1,
+        12
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "S02_07",
+      "p": [
+        -40,
+        34,
+        -110
+      ],
+      "size": [
+        11,
+        1,
+        12
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "S02_08",
+      "p": [
+        -40,
+        37,
+        -91
+      ],
+      "size": [
+        11,
+        1,
+        12
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "S02_09",
+      "p": [
+        -22,
+        40,
+        -91
+      ],
+      "size": [
+        11,
+        1,
+        12
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "R3_Stern",
+      "p": [
+        0,
+        43,
+        -100
+      ],
+      "size": [
+        24,
+        1,
+        22
+      ],
+      "section": "S02",
+      "yaw": 0
+    },
+    {
+      "name": "Rib00",
+      "p": [
+        -93,
+        16,
+        -61
+      ],
+      "size": [
+        2.15,
+        0.6,
+        2
+      ],
+      "section": "X01",
+      "yaw": 0
+    },
+    {
+      "name": "Rib01",
+      "p": [
+        -83,
+        19,
+        -57
+      ],
+      "size": [
+        2.15,
+        0.6,
+        2
+      ],
+      "section": "X01",
+      "yaw": 0
+    },
+    {
+      "name": "Rib02",
+      "p": [
+        -73,
+        22,
+        -62
+      ],
+      "size": [
+        2.15,
+        0.6,
+        2
+      ],
+      "section": "X01",
+      "yaw": 0
+    },
+    {
+      "name": "Rib03",
+      "p": [
+        -63,
+        25,
+        -57
+      ],
+      "size": [
+        2.15,
+        0.6,
+        2
+      ],
+      "section": "X01",
+      "yaw": 0
+    },
+    {
+      "name": "Rib04",
+      "p": [
+        -53,
+        28,
+        -62
+      ],
+      "size": [
+        2.15,
+        0.6,
+        2
+      ],
+      "section": "X01",
+      "yaw": 0
+    },
+    {
+      "name": "Rib05",
+      "p": [
+        -43,
+        31,
+        -57
+      ],
+      "size": [
+        2.15,
+        0.6,
+        2
+      ],
+      "section": "X01",
+      "yaw": 0
+    },
+    {
+      "name": "Rib06",
+      "p": [
+        -33,
+        34,
+        -62
+      ],
+      "size": [
+        2.15,
+        0.6,
+        2
+      ],
+      "section": "X01",
+      "yaw": 0
+    },
+    {
+      "name": "Rib07",
+      "p": [
+        -23,
+        37,
+        -65
+      ],
+      "size": [
+        2.15,
+        0.6,
+        2
+      ],
+      "section": "X01",
+      "yaw": 0
+    },
+    {
+      "name": "Rib08",
+      "p": [
+        -14,
+        40,
+        -71
+      ],
+      "size": [
+        2.15,
+        0.6,
+        2
+      ],
+      "section": "X01",
+      "yaw": 0
+    },
+    {
+      "name": "Rib09",
+      "p": [
+        -6,
+        42,
+        -79
+      ],
+      "size": [
+        2.15,
+        0.6,
+        2
+      ],
+      "section": "X01",
+      "yaw": 0
+    },
+    {
+      "name": "S03_00",
+      "p": [
+        20,
+        45,
+        -106
+      ],
+      "size": [
+        10,
+        1,
+        10
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "S03_01",
+      "p": [
+        34,
+        48,
+        -120
+      ],
+      "size": [
+        10,
+        1,
+        10
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "S03_02",
+      "p": [
+        50,
+        51,
+        -130
+      ],
+      "size": [
+        10,
+        1,
+        10
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "S03_03",
+      "p": [
+        67,
+        54,
+        -137
+      ],
+      "size": [
+        14,
+        1,
+        8
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "S03_04",
+      "p": [
+        84,
+        55,
+        -130
+      ],
+      "size": [
+        10,
+        1,
+        10
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "S03_05",
+      "p": [
+        101,
+        53,
+        -116
+      ],
+      "size": [
+        14,
+        1,
+        12
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "S03_06",
+      "p": [
+        116,
+        49,
+        -101
+      ],
+      "size": [
+        10,
+        1,
+        10
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "S03_07",
+      "p": [
+        129,
+        44,
+        -85
+      ],
+      "size": [
+        14,
+        1,
+        8
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "S03_08",
+      "p": [
+        134,
+        39,
+        -66
+      ],
+      "size": [
+        10,
+        1,
+        10
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "S03_09",
+      "p": [
+        127,
+        33,
+        -48
+      ],
+      "size": [
+        10,
+        1,
+        10
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "S03_10",
+      "p": [
+        119,
+        26,
+        -33
+      ],
+      "size": [
+        14,
+        1,
+        12
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "R4_CaveEntry",
+      "p": [
+        108,
+        15,
+        -18
+      ],
+      "size": [
+        24,
+        1,
+        22
+      ],
+      "section": "S03",
+      "yaw": 0
+    },
+    {
+      "name": "Spar00",
+      "p": [
+        18,
+        40,
+        -87
+      ],
+      "size": [
+        8.96,
+        1.88,
+        1.79
+      ],
+      "section": "X02",
+      "yaw": -46
+    },
+    {
+      "name": "Spar01",
+      "p": [
+        28,
+        36,
+        -79
+      ],
+      "size": [
+        8.96,
+        1.88,
+        1.79
+      ],
+      "section": "X02",
+      "yaw": -22
+    },
+    {
+      "name": "Spar02",
+      "p": [
+        41,
+        32,
+        -69
+      ],
+      "size": [
+        8.96,
+        1.88,
+        1.79
+      ],
+      "section": "X02",
+      "yaw": -46
+    },
+    {
+      "name": "Spar03",
+      "p": [
+        54,
+        28,
+        -59
+      ],
+      "size": [
+        8.96,
+        1.88,
+        1.79
+      ],
+      "section": "X02",
+      "yaw": -22
+    },
+    {
+      "name": "Spar04",
+      "p": [
+        67,
+        24,
+        -49
+      ],
+      "size": [
+        8.96,
+        1.88,
+        1.79
+      ],
+      "section": "X02",
+      "yaw": -46
+    },
+    {
+      "name": "Spar05",
+      "p": [
+        80,
+        21,
+        -39
+      ],
+      "size": [
+        8.96,
+        1.88,
+        1.79
+      ],
+      "section": "X02",
+      "yaw": -22
+    },
+    {
+      "name": "Spar06",
+      "p": [
+        93,
+        18,
+        -29
+      ],
+      "size": [
+        8.96,
+        1.88,
+        1.79
+      ],
+      "section": "X02",
+      "yaw": -46
+    },
+    {
+      "name": "SurgeEastRefuge",
+      "p": [
+        91,
+        10,
+        58
+      ],
+      "size": [
+        22,
+        1,
+        20
+      ],
+      "section": "H02",
+      "yaw": 0
+    },
+    {
+      "name": "SurgePassage",
+      "p": [
+        69,
+        5,
+        58
+      ],
+      "size": [
+        18,
+        1,
+        12
+      ],
+      "section": "H02",
+      "yaw": 0
+    },
+    {
+      "name": "SurgeWestRefuge",
+      "p": [
+        46,
+        10,
+        58
+      ],
+      "size": [
+        24,
+        1,
+        20
+      ],
+      "section": "H02",
+      "yaw": 0
+    },
+    {
+      "name": "S04_Shore_00",
+      "p": [
+        27,
+        8,
+        72
+      ],
+      "size": [
+        12,
+        1,
+        11
+      ],
+      "section": "S04_Shore",
+      "yaw": 0
+    },
+    {
+      "name": "S04_Shore_01",
+      "p": [
+        10,
+        8,
+        86
+      ],
+      "size": [
+        12,
+        1,
+        11
+      ],
+      "section": "S04_Shore",
+      "yaw": 0
+    },
+    {
+      "name": "S04_Shore_02",
+      "p": [
+        -8,
+        8,
+        95
+      ],
+      "size": [
+        12,
+        1,
+        11
+      ],
+      "section": "S04_Shore",
+      "yaw": 0
+    },
+    {
+      "name": "S04_Shore_03",
+      "p": [
+        -27,
+        8,
+        103
+      ],
+      "size": [
+        12,
+        1,
+        11
+      ],
+      "section": "S04_Shore",
+      "yaw": 0
+    },
+    {
+      "name": "S04_Shore_04",
+      "p": [
+        -46,
+        8,
+        112
+      ],
+      "size": [
+        12,
+        1,
+        11
+      ],
+      "section": "S04_Shore",
+      "yaw": 0
+    },
+    {
+      "name": "S04_Shore_05",
+      "p": [
+        -66,
+        8,
+        121
+      ],
+      "size": [
+        12,
+        1,
+        11
+      ],
+      "section": "S04_Shore",
+      "yaw": 0
+    },
+    {
+      "name": "S04_Shore_06",
+      "p": [
+        -85,
+        8,
+        129
+      ],
+      "size": [
+        12,
+        1,
+        11
+      ],
+      "section": "S04_Shore",
+      "yaw": 0
+    },
+    {
+      "name": "ShoreWalk0",
+      "p": [
+        18.5,
+        8,
+        79.0
+      ],
+      "size": [
+        23.02271554554524,
+        1,
+        12
+      ],
+      "section": "S04_Shore",
+      "yaw": -140.52754015165618
+    },
+    {
+      "name": "ShoreWalk1",
+      "p": [
+        1.0,
+        8,
+        90.5
+      ],
+      "size": [
+        21.12461179749811,
+        1,
+        12
+      ],
+      "section": "S04_Shore",
+      "yaw": -153.434948822922
+    },
+    {
+      "name": "ShoreWalk2",
+      "p": [
+        -17.5,
+        8,
+        99.0
+      ],
+      "size": [
+        21.615528128088304,
+        1,
+        12
+      ],
+      "section": "S04_Shore",
+      "yaw": -157.16634582208246
+    },
+    {
+      "name": "ShoreWalk3",
+      "p": [
+        -36.5,
+        8,
+        107.5
+      ],
+      "size": [
+        22.02379604162864,
+        1,
+        12
+      ],
+      "section": "S04_Shore",
+      "yaw": -154.65382405805332
+    },
+    {
+      "name": "ShoreWalk4",
+      "p": [
+        -56.0,
+        8,
+        116.5
+      ],
+      "size": [
+        22.93171219946131,
+        1,
+        12
+      ],
+      "section": "S04_Shore",
+      "yaw": -155.77225468204585
+    },
+    {
+      "name": "ShoreWalk5",
+      "p": [
+        -75.5,
+        8,
+        125.0
+      ],
+      "size": [
+        21.615528128088304,
+        1,
+        12
+      ],
+      "section": "S04_Shore",
+      "yaw": -157.16634582208246
+    },
+    {
+      "name": "DockCluster0_0",
+      "p": [
+        -116,
+        10,
+        100.2
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "S01_00",
+      "p": [
+        -108,
+        10.3,
+        99
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster0_2",
+      "p": [
+        -100,
+        10,
+        98
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster1_0",
+      "p": [
+        -117.5,
+        12,
+        85.2
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "S01_01",
+      "p": [
+        -110,
+        12.3,
+        84
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster1_2",
+      "p": [
+        -103,
+        12,
+        83
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster1_3",
+      "p": [
+        -96,
+        12.3,
+        84.7
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster2_0",
+      "p": [
+        -116,
+        14,
+        70.2
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "S01_02",
+      "p": [
+        -108,
+        14.3,
+        69
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster2_2",
+      "p": [
+        -100,
+        14,
+        68
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster3_0",
+      "p": [
+        -118.5,
+        16,
+        55.2
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "S01_03",
+      "p": [
+        -111,
+        16.3,
+        54
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster3_2",
+      "p": [
+        -104,
+        16,
+        53
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster3_3",
+      "p": [
+        -97,
+        16.3,
+        54.7
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster4_0",
+      "p": [
+        -116,
+        17,
+        40.2
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "S01_04",
+      "p": [
+        -108,
+        17.3,
+        39
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster4_2",
+      "p": [
+        -100,
+        17,
+        38
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster5_0",
+      "p": [
+        -117.5,
+        16,
+        25.2
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "S01_05",
+      "p": [
+        -110,
+        16.3,
+        24
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster5_2",
+      "p": [
+        -103,
+        16,
+        23
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "DockCluster5_3",
+      "p": [
+        -96,
+        16.3,
+        24.7
+      ],
+      "size": [
+        5.2,
+        1,
+        8
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster0_0",
+      "p": [
+        -116,
+        13,
+        -5.7
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryDeck0",
+      "p": [
+        -108,
+        13.35,
+        -7.8
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster0_2",
+      "p": [
+        -100,
+        13,
+        -6.6
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster1_0",
+      "p": [
+        -118,
+        13,
+        -21.7
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster1_1",
+      "p": [
+        -111.2,
+        13.35,
+        -23.8
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryDeck1",
+      "p": [
+        -104.3,
+        13,
+        -22.6
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster1_3",
+      "p": [
+        -97.6,
+        13.35,
+        -24.4
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster2_0",
+      "p": [
+        -120,
+        13,
+        -37.7
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster2_1",
+      "p": [
+        -114,
+        13.35,
+        -39.8
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryDeck2",
+      "p": [
+        -108,
+        13,
+        -38.6
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster2_3",
+      "p": [
+        -102,
+        13.35,
+        -40.4
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster2_4",
+      "p": [
+        -96,
+        13,
+        -38
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster3_0",
+      "p": [
+        -118,
+        13,
+        -53.7
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster3_1",
+      "p": [
+        -111.2,
+        13.35,
+        -55.8
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryDeck3",
+      "p": [
+        -104.3,
+        13,
+        -54.6
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "BatteryCluster3_3",
+      "p": [
+        -97.6,
+        13.35,
+        -56.4
+      ],
+      "size": [
+        4.6,
+        1,
+        7
+      ],
+      "section": "S01",
+      "yaw": 0
+    },
+    {
+      "name": "Cave26Stone00",
+      "p": [
+        110,
+        13,
+        -3
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": 13
+    },
+    {
+      "name": "Cave26Stone01",
+      "p": [
+        116,
+        15,
+        7
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": -9
+    },
+    {
+      "name": "Cave26Stone02",
+      "p": [
+        125,
+        12,
+        18
+      ],
+      "size": [
+        7.2,
+        1,
+        6.4
+      ],
+      "section": "S04_Entry",
+      "yaw": 24
+    },
+    {
+      "name": "Cave26Stone03",
+      "p": [
+        121,
+        14,
+        29
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": -18
+    },
+    {
+      "name": "Cave26Stone04",
+      "p": [
+        125,
+        11,
+        40
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": 7
+    },
+    {
+      "name": "Cave26Stone05",
+      "p": [
+        116,
+        12,
+        48
+      ],
+      "size": [
+        7.2,
+        1,
+        6.4
+      ],
+      "section": "S04_Entry",
+      "yaw": -22
+    },
+    {
+      "name": "Cave26Stone06",
+      "p": [
+        106,
+        10,
+        55
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": 19
+    },
+    {
+      "name": "Cave26Stone07",
+      "p": [
+        104,
+        11,
+        2
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": 13
+    },
+    {
+      "name": "Cave26Stone08",
+      "p": [
+        109,
+        14,
+        13
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": -9
+    },
+    {
+      "name": "Cave26Stone09",
+      "p": [
+        137,
+        13,
+        17
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": 24
+    },
+    {
+      "name": "Cave26Stone10",
+      "p": [
+        136,
+        14,
+        29
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": -18
+    },
+    {
+      "name": "Cave26Stone11",
+      "p": [
+        113,
+        12,
+        38
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": 7
+    },
+    {
+      "name": "Cave26Stone12",
+      "p": [
+        135,
+        10,
+        49
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": -22
+    },
+    {
+      "name": "Cave26Stone13",
+      "p": [
+        118,
+        11,
+        59
+      ],
+      "size": [
+        5.0,
+        1,
+        4.8
+      ],
+      "section": "S04_Entry",
+      "yaw": 19
+    },
+    {
+      "name": "Cave26Stone14",
+      "p": [
+        111,
+        12,
+        25
+      ],
+      "size": [
+        7.2,
+        1,
+        6.4
+      ],
+      "section": "S04_Entry",
+      "yaw": 13
+    },
+    {
+      "name": "Cave26Stone15",
+      "p": [
+        139,
+        11,
+        38
+      ],
+      "size": [
+        7.2,
+        1,
+        6.4
+      ],
+      "section": "S04_Entry",
+      "yaw": -9
+    }
+  ],
+  "paths": {
+    "S01": [
+      [
+        -108,
+        10,
+        99
+      ],
+      [
+        -110,
+        12,
+        84
+      ],
+      [
+        -108,
+        14,
+        69
+      ],
+      [
+        -111,
+        16,
+        54
+      ],
+      [
+        -108,
+        17,
+        39
+      ],
+      [
+        -110,
+        16,
+        24
+      ]
+    ],
+    "S02": [
+      [
+        -108,
+        16,
+        -86
+      ],
+      [
+        -108,
+        19,
+        -105
+      ],
+      [
+        -91,
+        22,
+        -110
+      ],
+      [
+        -74,
+        24,
+        -110
+      ],
+      [
+        -74,
+        27,
+        -91
+      ],
+      [
+        -57,
+        29,
+        -91
+      ],
+      [
+        -57,
+        32,
+        -110
+      ],
+      [
+        -40,
+        34,
+        -110
+      ],
+      [
+        -40,
+        37,
+        -91
+      ],
+      [
+        -22,
+        40,
+        -91
+      ]
+    ],
+    "X01": [
+      [
+        -108,
+        13,
+        -66
+      ],
+      [
+        -93,
+        16,
+        -61
+      ],
+      [
+        -83,
+        19,
+        -57
+      ],
+      [
+        -73,
+        22,
+        -62
+      ],
+      [
+        -63,
+        25,
+        -57
+      ],
+      [
+        -53,
+        28,
+        -62
+      ],
+      [
+        -43,
+        31,
+        -57
+      ],
+      [
+        -33,
+        34,
+        -62
+      ],
+      [
+        -23,
+        37,
+        -65
+      ],
+      [
+        -14,
+        40,
+        -71
+      ],
+      [
+        -6,
+        42,
+        -79
+      ],
+      [
+        0,
+        43,
+        -100
+      ]
+    ],
+    "S03": [
+      [
+        20,
+        45,
+        -106
+      ],
+      [
+        34,
+        48,
+        -120
+      ],
+      [
+        50,
+        51,
+        -130
+      ],
+      [
+        67,
+        54,
+        -137
+      ],
+      [
+        84,
+        55,
+        -130
+      ],
+      [
+        101,
+        53,
+        -116
+      ],
+      [
+        116,
+        49,
+        -101
+      ],
+      [
+        129,
+        44,
+        -85
+      ],
+      [
+        134,
+        39,
+        -66
+      ],
+      [
+        127,
+        33,
+        -48
+      ],
+      [
+        119,
+        26,
+        -33
+      ]
+    ],
+    "X02": [
+      [
+        0,
+        43,
+        -100
+      ],
+      [
+        18,
+        40,
+        -87
+      ],
+      [
+        28,
+        36,
+        -79
+      ],
+      [
+        41,
+        32,
+        -69
+      ],
+      [
+        54,
+        28,
+        -59
+      ],
+      [
+        67,
+        24,
+        -49
+      ],
+      [
+        80,
+        21,
+        -39
+      ],
+      [
+        93,
+        18,
+        -29
+      ],
+      [
+        108,
+        15,
+        -18
+      ]
+    ],
+    "S04_Entry": [
+      [
+        113,
+        13,
+        1
+      ],
+      [
+        120,
+        11,
+        21
+      ],
+      [
+        120,
+        10,
+        40
+      ],
+      [
+        113,
+        10,
+        58
+      ]
+    ],
+    "H02": [
+      [
+        91,
+        10,
+        58
+      ],
+      [
+        69,
+        5,
+        58
+      ],
+      [
+        46,
+        10,
+        58
+      ]
+    ],
+    "S04_Shore": [
+      [
+        27,
+        8,
+        72
+      ],
+      [
+        10,
+        8,
+        86
+      ],
+      [
+        -8,
+        8,
+        95
+      ],
+      [
+        -27,
+        8,
+        103
+      ],
+      [
+        -46,
+        8,
+        112
+      ],
+      [
+        -66,
+        8,
+        121
+      ],
+      [
+        -85,
+        8,
+        129
+      ]
+    ]
+  },
+  "links": [
+    [
+      "R2_Boarding",
+      "S02_00"
+    ],
+    [
+      "S02_00",
+      "S02_01"
+    ],
+    [
+      "S02_01",
+      "S02_02"
+    ],
+    [
+      "S02_02",
+      "S02_03"
+    ],
+    [
+      "S02_03",
+      "S02_04"
+    ],
+    [
+      "S02_04",
+      "S02_05"
+    ],
+    [
+      "S02_05",
+      "S02_06"
+    ],
+    [
+      "S02_06",
+      "S02_07"
+    ],
+    [
+      "S02_07",
+      "S02_08"
+    ],
+    [
+      "S02_08",
+      "S02_09"
+    ],
+    [
+      "S02_09",
+      "R3_Stern"
+    ],
+    [
+      "R2_Boarding",
+      "Rib00"
+    ],
+    [
+      "Rib00",
+      "Rib01"
+    ],
+    [
+      "Rib01",
+      "Rib02"
+    ],
+    [
+      "Rib02",
+      "Rib03"
+    ],
+    [
+      "Rib03",
+      "Rib04"
+    ],
+    [
+      "Rib04",
+      "Rib05"
+    ],
+    [
+      "Rib05",
+      "Rib06"
+    ],
+    [
+      "Rib06",
+      "Rib07"
+    ],
+    [
+      "Rib07",
+      "Rib08"
+    ],
+    [
+      "Rib08",
+      "Rib09"
+    ],
+    [
+      "Rib09",
+      "R3_Stern"
+    ],
+    [
+      "R3_Stern",
+      "S03_00"
+    ],
+    [
+      "S03_00",
+      "S03_01"
+    ],
+    [
+      "S03_01",
+      "S03_02"
+    ],
+    [
+      "S03_02",
+      "S03_03"
+    ],
+    [
+      "S03_03",
+      "S03_04"
+    ],
+    [
+      "S03_04",
+      "S03_05"
+    ],
+    [
+      "S03_05",
+      "S03_06"
+    ],
+    [
+      "S03_06",
+      "S03_07"
+    ],
+    [
+      "S03_07",
+      "S03_08"
+    ],
+    [
+      "S03_08",
+      "S03_09"
+    ],
+    [
+      "S03_09",
+      "S03_10"
+    ],
+    [
+      "S03_10",
+      "R4_CaveEntry"
+    ],
+    [
+      "R3_Stern",
+      "Spar00"
+    ],
+    [
+      "Spar00",
+      "Spar01"
+    ],
+    [
+      "Spar01",
+      "Spar02"
+    ],
+    [
+      "Spar02",
+      "Spar03"
+    ],
+    [
+      "Spar03",
+      "Spar04"
+    ],
+    [
+      "Spar04",
+      "Spar05"
+    ],
+    [
+      "Spar05",
+      "Spar06"
+    ],
+    [
+      "Spar06",
+      "R4_CaveEntry"
+    ],
+    [
+      "SurgeEastRefuge",
+      "SurgePassage"
+    ],
+    [
+      "SurgePassage",
+      "SurgeWestRefuge"
+    ],
+    [
+      "SurgeWestRefuge",
+      "S04_Shore_00"
+    ],
+    [
+      "S04_Shore_00",
+      "S04_Shore_01"
+    ],
+    [
+      "S04_Shore_01",
+      "S04_Shore_02"
+    ],
+    [
+      "S04_Shore_02",
+      "S04_Shore_03"
+    ],
+    [
+      "S04_Shore_03",
+      "S04_Shore_04"
+    ],
+    [
+      "S04_Shore_04",
+      "S04_Shore_05"
+    ],
+    [
+      "S04_Shore_05",
+      "S04_Shore_06"
+    ],
+    [
+      "S04_Shore_06",
+      "HarborAssembly"
+    ],
+    [
+      "HarborAssembly",
+      "S01_00"
+    ],
+    [
+      "S01_00",
+      "S01_01"
+    ],
+    [
+      "S01_01",
+      "S01_02"
+    ],
+    [
+      "S01_02",
+      "S01_03"
+    ],
+    [
+      "S01_03",
+      "S01_04"
+    ],
+    [
+      "S01_04",
+      "S01_05"
+    ],
+    [
+      "S01_05",
+      "R1_Refuge"
+    ],
+    [
+      "R1_Refuge",
+      "BatteryDeck0"
+    ],
+    [
+      "BatteryDeck0",
+      "BatteryDeck1"
+    ],
+    [
+      "BatteryDeck1",
+      "BatteryDeck2"
+    ],
+    [
+      "BatteryDeck2",
+      "BatteryDeck3"
+    ],
+    [
+      "BatteryDeck3",
+      "R2_Boarding"
+    ],
+    [
+      "R4_CaveEntry",
+      "Cave26Stone00"
+    ],
+    [
+      "Cave26Stone00",
+      "Cave26Stone01"
+    ],
+    [
+      "Cave26Stone01",
+      "Cave26Stone02"
+    ],
+    [
+      "Cave26Stone02",
+      "Cave26Stone03"
+    ],
+    [
+      "Cave26Stone03",
+      "Cave26Stone04"
+    ],
+    [
+      "Cave26Stone04",
+      "Cave26Stone05"
+    ],
+    [
+      "Cave26Stone05",
+      "Cave26Stone06"
+    ],
+    [
+      "Cave26Stone06",
+      "SurgeEastRefuge"
+    ]
+  ],
+  "checkpoints": [
+    [
+      -108,
+      8,
+      128
+    ],
+    [
+      -108,
+      13,
+      8
+    ],
+    [
+      -108,
+      13,
+      -66
+    ],
+    [
+      0,
+      43,
+      -100
+    ],
+    [
+      108,
+      15,
+      -18
+    ]
+  ],
+  "signs": [
+    {
+      "text": "CANNON RUN",
+      "sub": "Watch the fuse  /  jump or wait",
+      "p": [
+        -122,
+        20,
+        5
+      ],
+      "yaw": 0
+    },
+    {
+      "text": "THE WRECK",
+      "sub": "Climb through the broken decks",
+      "p": [
+        -120,
+        23,
+        -68
+      ],
+      "yaw": 0
+    },
+    {
+      "text": "HULL RIBS",
+      "sub": "Hard jumps  /  gold tips",
+      "p": [
+        -120,
+        22,
+        -60
+      ],
+      "yaw": 0
+    },
+    {
+      "text": "HIGH TIDE CLIFFS",
+      "sub": "Follow the ledges",
+      "p": [
+        6,
+        49,
+        -112
+      ],
+      "yaw": 0
+    },
+    {
+      "text": "BROKEN SPARS",
+      "sub": "Expert shortcut",
+      "p": [
+        -5,
+        49,
+        -87
+      ],
+      "yaw": 0
+    },
+    {
+      "text": "TIDE CAVE",
+      "sub": "High rock is safe",
+      "p": [
+        102,
+        22,
+        -14
+      ],
+      "yaw": 0
+    },
+    {
+      "text": "WAIT FOR LOW TIDE",
+      "sub": "Teal shelves are safe",
+      "p": [
+        82,
+        18,
+        48
+      ],
+      "yaw": 90
+    }
+  ],
+  "shots": [
+    {
+      "name": "Ball0",
+      "cue": "Fuse0",
+      "impact": "Impact0",
+      "start": [
+        -85,
+        16.1,
+        -7
+      ],
+      "finish": [
+        -139,
+        -3.3,
+        -7
+      ],
+      "phase": 0
+    },
+    {
+      "name": "Ball1",
+      "cue": "Fuse1",
+      "impact": "Impact1",
+      "start": [
+        -133,
+        16.1,
+        -23
+      ],
+      "finish": [
+        -77,
+        -3.3,
+        -23
+      ],
+      "phase": 1.3
+    },
+    {
+      "name": "Ball2",
+      "cue": "Fuse2",
+      "impact": "Impact2",
+      "start": [
+        -85,
+        16.1,
+        -39
+      ],
+      "finish": [
+        -139,
+        -3.3,
+        -39
+      ],
+      "phase": 3.8
+    },
+    {
+      "name": "Ball3",
+      "cue": "Fuse3",
+      "impact": "Impact3",
+      "start": [
+        -133,
+        16.1,
+        -55
+      ],
+      "finish": [
+        -77,
+        -3.3,
+        -55
+      ],
+      "phase": 5.1
+    }
+  ],
+  "hazards": [
+    {
+      "name": "DeckBurn2",
+      "p": [
+        -91,
+        22.45,
+        -110
+      ],
+      "size": [
+        9,
+        0.8,
+        1.1
+      ],
+      "section": "S02",
+      "kind": "static",
+      "period": 4,
+      "amplitude": 0,
+      "axis": "X",
+      "phase": 0
+    },
+    {
+      "name": "DeckBurn5",
+      "p": [
+        -57,
+        29.45,
+        -91
+      ],
+      "size": [
+        9,
+        0.8,
+        1.1
+      ],
+      "section": "S02",
+      "kind": "static",
+      "period": 4,
+      "amplitude": 0,
+      "axis": "X",
+      "phase": 0
+    },
+    {
+      "name": "DeckBurn8",
+      "p": [
+        -40,
+        37.45,
+        -91
+      ],
+      "size": [
+        9,
+        0.8,
+        1.1
+      ],
+      "section": "S02",
+      "kind": "static",
+      "period": 4,
+      "amplitude": 0,
+      "axis": "X",
+      "phase": 0
+    },
+    {
+      "name": "ShipSweep3",
+      "p": [
+        -74,
+        25.2,
+        -110
+      ],
+      "size": [
+        8,
+        0.65,
+        0.65
+      ],
+      "section": "S02",
+      "kind": "sweep",
+      "period": 4.5,
+      "amplitude": 3,
+      "axis": "Z",
+      "phase": 1.2000000000000002
+    },
+    {
+      "name": "ShipSweep7",
+      "p": [
+        -40,
+        35.2,
+        -110
+      ],
+      "size": [
+        8,
+        0.65,
+        0.65
+      ],
+      "section": "S02",
+      "kind": "sweep",
+      "period": 4.5,
+      "amplitude": 3,
+      "axis": "Z",
+      "phase": 2.8000000000000003
+    },
+    {
+      "name": "CliffSweep2",
+      "p": [
+        50,
+        52,
+        -130
+      ],
+      "size": [
+        8,
+        0.65,
+        0.65
+      ],
+      "section": "S03",
+      "kind": "sweep",
+      "period": 4.2,
+      "amplitude": 3,
+      "axis": "Z",
+      "phase": 0.4
+    },
+    {
+      "name": "CliffDanger4",
+      "p": [
+        84,
+        55.4,
+        -130
+      ],
+      "size": [
+        8,
+        0.7,
+        1
+      ],
+      "section": "S03",
+      "kind": "static",
+      "period": 4,
+      "amplitude": 0,
+      "axis": "X",
+      "phase": 0
+    },
+    {
+      "name": "CliffSweep6",
+      "p": [
+        116,
+        50,
+        -101
+      ],
+      "size": [
+        8,
+        0.65,
+        0.65
+      ],
+      "section": "S03",
+      "kind": "sweep",
+      "period": 4.2,
+      "amplitude": 3,
+      "axis": "Z",
+      "phase": 1.2000000000000002
+    },
+    {
+      "name": "CliffDanger8",
+      "p": [
+        134,
+        39.4,
+        -66
+      ],
+      "size": [
+        8,
+        0.7,
+        1
+      ],
+      "section": "S03",
+      "kind": "static",
+      "period": 4,
+      "amplitude": 0,
+      "axis": "X",
+      "phase": 0
+    },
+    {
+      "name": "CliffSweep9",
+      "p": [
+        127,
+        34,
+        -48
+      ],
+      "size": [
+        8,
+        0.65,
+        0.65
+      ],
+      "section": "S03",
+      "kind": "sweep",
+      "period": 4.2,
+      "amplitude": 3,
+      "axis": "Z",
+      "phase": 1.8
+    },
+    {
+      "name": "ShoreTimber2",
+      "p": [
+        -8,
+        8.45,
+        95
+      ],
+      "size": [
+        1,
+        0.8,
+        10
+      ],
+      "section": "S04_Shore",
+      "kind": "static",
+      "period": 4,
+      "amplitude": 0,
+      "axis": "X",
+      "phase": 0
+    },
+    {
+      "name": "ShoreTimber5",
+      "p": [
+        -66,
+        8.45,
+        121
+      ],
+      "size": [
+        1,
+        0.8,
+        10
+      ],
+      "section": "S04_Shore",
+      "kind": "static",
+      "period": 4,
+      "amplitude": 0,
+      "axis": "X",
+      "phase": 0
+    },
+    {
+      "name": "RedCargo1_0",
+      "p": [
+        -117.5,
+        13.5,
+        85.2
+      ],
+      "size": [
+        2.8,
+        3,
+        2.8
+      ],
+      "section": "S01",
+      "kind": "static",
+      "period": 4,
+      "amplitude": 0,
+      "axis": "X",
+      "phase": 0
+    },
+    {
+      "name": "RedCargo3_3",
+      "p": [
+        -97,
+        17.8,
+        54.7
+      ],
+      "size": [
+        2.8,
+        3,
+        2.8
+      ],
+      "section": "S01",
+      "kind": "static",
+      "period": 4,
+      "amplitude": 0,
+      "axis": "X",
+      "phase": 0
+    },
+    {
+      "name": "RedCargo4_0",
+      "p": [
+        -116,
+        18.5,
+        40.2
+      ],
+      "size": [
+        2.8,
+        3,
+        2.8
+      ],
+      "section": "S01",
+      "kind": "static",
+      "period": 4,
+      "amplitude": 0,
+      "axis": "X",
+      "phase": 0
+    }
+  ],
+  "crumble": [
+    "Cave26Stone00",
+    "Cave26Stone01",
+    "Cave26Stone03",
+    "Cave26Stone04",
+    "Cave26Stone06",
+    "Cave26Stone07",
+    "Cave26Stone08",
+    "Cave26Stone09",
+    "Cave26Stone10",
+    "Cave26Stone11",
+    "Cave26Stone12",
+    "Cave26Stone13"
+  ],
+  "gate": [
+    -108,
+    8,
+    110
+  ],
+  "surge": {
+    "center": [
+      69,
+      6,
+      58
+    ],
+    "size": [
+      18,
+      8,
+      16
+    ]
+  },
+  "resource": {
+    "visuals": 425,
+    "visualTriangles": 25749,
+    "colliders": 116
+  },
+  "caveWalls": [
+    {
+      "a": [
+        122.33728171791374,
+        8,
+        -32.60236903074824
+      ],
+      "b": [
+        130.37016677197727,
+        8,
+        -22.574849261511908
+      ]
+    },
+    {
+      "a": [
+        130.37016677197727,
+        8,
+        -22.574849261511908
+      ],
+      "b": [
+        137.2591966459055,
+        8,
+        -11.732659265433059
+      ]
+    },
+    {
+      "a": [
+        137.2591966459055,
+        8,
+        -11.732659265433059
+      ],
+      "b": [
+        145.3378000963635,
+        8,
+        3.3054159730182144
+      ]
+    },
+    {
+      "a": [
+        145.3378000963635,
+        8,
+        3.3054159730182144
+      ],
+      "b": [
+        147.10312424820418,
+        8,
+        22.844124969928167
+      ]
+    },
+    {
+      "a": [
+        147.10312424820418,
+        8,
+        22.844124969928167
+      ],
+      "b": [
+        143.66784750738552,
+        8,
+        41.69611424202042
+      ]
+    },
+    {
+      "a": [
+        143.66784750738552,
+        8,
+        41.69611424202042
+      ],
+      "b": [
+        131.93409521865988,
+        8,
+        59.934095218659884
+      ]
+    },
+    {
+      "a": [
+        131.93409521865988,
+        8,
+        59.934095218659884
+      ],
+      "b": [
+        114.33777938963387,
+        8,
+        70.9572680569882
+      ]
+    },
+    {
+      "a": [
+        114.33777938963387,
+        8,
+        70.9572680569882
+      ],
+      "b": [
+        95.6560855410664,
+        8,
+        77.01164481354533
+      ]
+    },
+    {
+      "a": [
+        95.6560855410664,
+        8,
+        77.01164481354533
+      ],
+      "b": [
+        79.0,
+        8,
+        76.48
+      ]
+    },
+    {
+      "a": [
+        79.0,
+        8,
+        76.48
+      ],
+      "b": [
+        66.0,
+        8,
+        76.48
+      ]
+    },
+    {
+      "a": [
+        66.0,
+        8,
+        76.48
+      ],
+      "b": [
+        53.0,
+        8,
+        75.6
+      ]
+    },
+    {
+      "a": [
+        53.0,
+        8,
+        75.6
+      ],
+      "b": [
+        39.0,
+        8,
+        72.96000000000001
+      ]
+    },
+    {
+      "a": [
+        93.66271828208626,
+        8,
+        -15.397630969251757
+      ],
+      "b": [
+        97.62983322802273,
+        8,
+        -5.425150738488094
+      ]
+    },
+    {
+      "a": [
+        97.62983322802273,
+        8,
+        -5.425150738488094
+      ],
+      "b": [
+        100.74080335409451,
+        8,
+        5.732659265433059
+      ]
+    },
+    {
+      "a": [
+        100.74080335409451,
+        8,
+        5.732659265433059
+      ],
+      "b": [
+        104.66219990363649,
+        8,
+        14.694584026981786
+      ]
+    },
+    {
+      "a": [
+        104.66219990363649,
+        8,
+        14.694584026981786
+      ],
+      "b": [
+        104.8968757517958,
+        8,
+        21.155875030071833
+      ]
+    },
+    {
+      "a": [
+        104.8968757517958,
+        8,
+        21.155875030071833
+      ],
+      "b": [
+        104.33215249261448,
+        8,
+        26.303885757979582
+      ]
+    },
+    {
+      "a": [
+        104.33215249261448,
+        8,
+        26.303885757979582
+      ],
+      "b": [
+        102.06590478134012,
+        8,
+        30.065904781340116
+      ]
+    },
+    {
+      "a": [
+        102.06590478134012,
+        8,
+        30.065904781340116
+      ],
+      "b": [
+        95.66222061036613,
+        8,
+        35.042731943011795
+      ]
+    },
+    {
+      "a": [
+        95.66222061036613,
+        8,
+        35.042731943011795
+      ],
+      "b": [
+        88.3439144589336,
+        8,
+        38.98835518645467
+      ]
+    },
+    {
+      "a": [
+        88.3439144589336,
+        8,
+        38.98835518645467
+      ],
+      "b": [
+        79.0,
+        8,
+        39.519999999999996
+      ]
+    },
+    {
+      "a": [
+        79.0,
+        8,
+        39.519999999999996
+      ],
+      "b": [
+        66.0,
+        8,
+        39.519999999999996
+      ]
+    },
+    {
+      "a": [
+        66.0,
+        8,
+        39.519999999999996
+      ],
+      "b": [
+        53.0,
+        8,
+        40.4
+      ]
+    },
+    {
+      "a": [
+        53.0,
+        8,
+        40.4
+      ],
+      "b": [
+        39.0,
+        8,
+        43.04
+      ]
+    }
+  ]
+}

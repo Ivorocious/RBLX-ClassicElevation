@@ -1,0 +1,137 @@
+{
+  "build": "SC_KIT_31C",
+  "assets": [
+    {
+      "id": "SC_HullClear31Bow",
+      "family": "hull",
+      "triangles": 464,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        26.649999618530273,
+        12.372422575950623,
+        27.169330596923828
+      ],
+      "boundsBlender": {
+        "min": [
+          -13.324999809265137,
+          -16.8193302154541,
+          0.6275774240493774
+        ],
+        "max": [
+          13.324999809265137,
+          10.350000381469727,
+          13.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Original hull shell and rails with nine disconnected inner rib cuboids removed; same local bounds and kept face UVs.",
+      "vertices": 336,
+      "faces": 232,
+      "sourceAsset": "SC_R_HullBow",
+      "sourceFile": "SC_HullClear31Bow.fbx",
+      "centerBlender": [
+        0.0,
+        -3.2346649169921875,
+        6.813788712024689
+      ],
+      "assetId": "133845278809230",
+      "uploadState": "complete",
+      "uploadReceipt": "upload-receipt31c-bow.json"
+    },
+    {
+      "id": "SC_HullClear31Mid",
+      "family": "hull",
+      "triangles": 436,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        26.649999618530273,
+        10.399999976158142,
+        20.700000762939453
+      ],
+      "boundsBlender": {
+        "min": [
+          -13.324999809265137,
+          -10.350000381469727,
+          1.600000023841858
+        ],
+        "max": [
+          13.324999809265137,
+          10.350000381469727,
+          12.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Original hull shell and rails with nine disconnected inner rib cuboids removed; same local bounds and kept face UVs.",
+      "vertices": 312,
+      "faces": 218,
+      "sourceAsset": "SC_R_HullMid",
+      "sourceFile": "SC_HullClear31Mid.fbx",
+      "centerBlender": [
+        0.0,
+        0.0,
+        6.800000011920929
+      ],
+      "assetId": "126954399416529",
+      "uploadState": "complete",
+      "uploadReceipt": "upload-receipt31c-mid.json"
+    },
+    {
+      "id": "SC_HullClear31Stern",
+      "family": "hull",
+      "triangles": 544,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        26.75074863433838,
+        21.149999976158142,
+        20.975000381469727
+      ],
+      "boundsBlender": {
+        "min": [
+          -13.324999809265137,
+          -10.350000381469727,
+          1.600000023841858
+        ],
+        "max": [
+          13.425748825073242,
+          10.625,
+          22.75
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Original hull shell and rails with nine disconnected inner rib cuboids removed; same local bounds and kept face UVs.",
+      "vertices": 384,
+      "faces": 272,
+      "sourceAsset": "SC_R_HullStern",
+      "sourceFile": "SC_HullClear31Stern.fbx",
+      "centerBlender": [
+        0.050374507904052734,
+        0.13749980926513672,
+        12.175000011920929
+      ],
+      "assetId": "84659531108870",
+      "uploadState": "complete",
+      "uploadReceipt": "upload-receipt31c-stern.json"
+    }
+  ],
+  "libraryTriangles": 1444,
+  "source": "ShipwreckCove_Revision13.blend",
+  "removedInnerRibs": 27
+}

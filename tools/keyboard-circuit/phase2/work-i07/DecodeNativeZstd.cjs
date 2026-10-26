@@ -1,0 +1,11 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { zstdDecompressSync } = require('node:zlib');
+const root = process.cwd();
+const input = path.resolve(process.argv[2]);
+const output = path.resolve(process.argv[3]);
+if (![input, output].every(value => value.startsWith(root + path.sep))) throw new Error('Workspace paths required');
+const decoded = zstdDecompressSync(Buffer.from(fs.readFileSync(input, 'utf8').trim(), 'base64'));
+if (output.endsWith('.json')) JSON.parse(decoded.toString('utf8'));
+fs.writeFileSync(output, decoded);
+process.stdout.write(JSON.stringify({ output, bytes: decoded.length }));

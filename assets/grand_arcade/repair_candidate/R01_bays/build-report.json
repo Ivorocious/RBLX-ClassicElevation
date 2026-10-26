@@ -1,0 +1,42 @@
+{
+  "state": "center_bay_ready_for_review",
+  "meshes": 10,
+  "triangles": 2324,
+  "closedOutwardComponents": 35,
+  "preservedComponents": 22,
+  "elapsedSeconds": 3.7,
+  "files": {
+    "bay-manifest.json": {
+      "bytes": 57877,
+      "sha256": "34733e189181e17cf3e02eda868af10d97aacf851f498b6bbb7638677cc85ac2"
+    },
+    "fbx-validation.json": {
+      "bytes": 7334,
+      "sha256": "1a6e517ddac5030ecfdfba3dc81ba160964907c05075da0ff37b86ac40bec86a"
+    },
+    "front.png": {
+      "bytes": 1440236,
+      "sha256": "c4e9123e26ed2f46270d84e7ca649af70114bd7230232521f2f8fc41e2b36db3"
+    },
+    "GrandArcade_R01_Bay3.blend": {
+      "bytes": 185989,
+      "sha256": "186141fa962a4c03c08621cc39e648dbd5351d588d83bef721935a8aeeffa362"
+    },
+    "GrandArcade_R01_Bay3.fbx": {
+      "bytes": 60572,
+      "sha256": "718fb1253ae5cea2301de6cc73ccd211c36a1843dea4b9dfe7ad013db25f37e2"
+    },
+    "left-quarter.png": {
+      "bytes": 1582644,
+      "sha256": "84894d8321048ee1695740e9132848fcca77c931b65cedb055485fb783893dc3"
+    },
+    "rear.png": {
+      "bytes": 1463665,
+      "sha256": "acd25b4db2a43d5052fd90a31a7ecb1eb94b89e5d105cc068837e4a5aef7b5ef"
+    },
+    "right-quarter.png": {
+      "bytes": 1613790,
+      "sha256": "45672eb7a5d6376333416c0e78337e32ce7c065e5a092cd1310da6066858b20e"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# Shipwreck hazards 27 runtime
+
+`Runtime` expects `Decoration.H02.SurgeWave` to be the approved `SC_R_Wave27` mesh, with its crest toward local `-Z`. It clones that part for the second crest. Both mesh positions come from `SurgeBounds`, whose floor places the crest base three studs above its bottom. `SurgeWater` grows only behind the first moving crest; the server contact box follows the same front. The visible flood height and contact are clipped by the top of `SurgeBounds`. The tide keeps the 6 second dry, 2.5 second warning, 4 second surge, and 1.5 second drain cycle.
+
+`Layout.falling` may contain up to nine entries. Each needs `name`, `kind`, `top`, `bottom`, `radius`, `period`, `warning`, `fallTime`, `hold`, and `phase`. An approved visual with the matching name must exist under `Decoration.Falling`. Both positions are local to `CourseOrigin` and identify the visual's center. The controller adds one matte red ground marker per visual, exposes `State` and `Warning` attributes, uses the existing recovery callback, and ignores stalled frames over 0.5 seconds. Stalactite contact samples the visible shaft and tip; coconut contact is limited to its visual width. A warning shorter than 1.2 seconds is extended to 1.2 seconds.
+
+Studio checks remain necessary: confirm each marker sits below its dropper, no fall can strike a spawn point without a visible warning, both wave crests read clearly at avatar height, and elevated refuges remain above the clipped contact volume. This file records runtime behavior only; it is not a playtest result.

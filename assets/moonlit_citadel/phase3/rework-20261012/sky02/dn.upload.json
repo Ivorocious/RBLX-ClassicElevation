@@ -1,0 +1,16 @@
+{
+  "sha256": "fd24f076780fb837a2aabecfb10f1ef70ff790a5574eafe6c1c3c455c95013d1",
+  "request": {
+    "assetType": "Image",
+    "displayName": "Moonlit Citadel RW02 SkyboxDn",
+    "description": "Original quiet night cubemap texture for Moonlit Citadel.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/d2af027d-0f9b-465f-bd5e-268afc53d882",
+  "assetId": "109848772232046"
+}

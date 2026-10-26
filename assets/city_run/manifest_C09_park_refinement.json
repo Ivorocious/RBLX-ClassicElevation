@@ -1,0 +1,773 @@
+{
+  "meshes": {
+    "ParkDetail_TreeBed1__Soil__00": {
+      "component": "ParkDetail_TreeBed1",
+      "material": "Soil",
+      "triangles": 44
+    },
+    "ParkDetail_TreeBed1__Terracotta__00": {
+      "component": "ParkDetail_TreeBed1",
+      "material": "Terracotta",
+      "triangles": 144
+    },
+    "ParkDetail_TreeBed2__Soil__00": {
+      "component": "ParkDetail_TreeBed2",
+      "material": "Soil",
+      "triangles": 44
+    },
+    "ParkDetail_TreeBed2__Terracotta__00": {
+      "component": "ParkDetail_TreeBed2",
+      "material": "Terracotta",
+      "triangles": 144
+    },
+    "ParkDetail_TreeBed3__Soil__00": {
+      "component": "ParkDetail_TreeBed3",
+      "material": "Soil",
+      "triangles": 44
+    },
+    "ParkDetail_TreeBed3__Terracotta__00": {
+      "component": "ParkDetail_TreeBed3",
+      "material": "Terracotta",
+      "triangles": 144
+    },
+    "ParkDetail_TreeBed4__Soil__00": {
+      "component": "ParkDetail_TreeBed4",
+      "material": "Soil",
+      "triangles": 44
+    },
+    "ParkDetail_TreeBed4__Terracotta__00": {
+      "component": "ParkDetail_TreeBed4",
+      "material": "Terracotta",
+      "triangles": 144
+    },
+    "ParkDetail_Planter1__Terracotta__00": {
+      "component": "ParkDetail_Planter1",
+      "material": "Terracotta",
+      "triangles": 12
+    },
+    "ParkDetail_Planter1__Soil__00": {
+      "component": "ParkDetail_Planter1",
+      "material": "Soil",
+      "triangles": 12
+    },
+    "ParkDetail_Planter1__LeafLight__00": {
+      "component": "ParkDetail_Planter1",
+      "material": "LeafLight",
+      "triangles": 128
+    },
+    "ParkDetail_Planter1__Yellow__00": {
+      "component": "ParkDetail_Planter1",
+      "material": "Yellow",
+      "triangles": 72
+    },
+    "ParkDetail_Planter1__Leaf__00": {
+      "component": "ParkDetail_Planter1",
+      "material": "Leaf",
+      "triangles": 64
+    },
+    "ParkDetail_Planter1__Coral__00": {
+      "component": "ParkDetail_Planter1",
+      "material": "Coral",
+      "triangles": 36
+    },
+    "ParkDetail_Planter2__Terracotta__00": {
+      "component": "ParkDetail_Planter2",
+      "material": "Terracotta",
+      "triangles": 12
+    },
+    "ParkDetail_Planter2__Soil__00": {
+      "component": "ParkDetail_Planter2",
+      "material": "Soil",
+      "triangles": 12
+    },
+    "ParkDetail_Planter2__LeafLight__00": {
+      "component": "ParkDetail_Planter2",
+      "material": "LeafLight",
+      "triangles": 128
+    },
+    "ParkDetail_Planter2__Yellow__00": {
+      "component": "ParkDetail_Planter2",
+      "material": "Yellow",
+      "triangles": 72
+    },
+    "ParkDetail_Planter2__Leaf__00": {
+      "component": "ParkDetail_Planter2",
+      "material": "Leaf",
+      "triangles": 64
+    },
+    "ParkDetail_Planter2__Coral__00": {
+      "component": "ParkDetail_Planter2",
+      "material": "Coral",
+      "triangles": 36
+    },
+    "ParkDetail_Planter3__Terracotta__00": {
+      "component": "ParkDetail_Planter3",
+      "material": "Terracotta",
+      "triangles": 12
+    },
+    "ParkDetail_Planter3__Soil__00": {
+      "component": "ParkDetail_Planter3",
+      "material": "Soil",
+      "triangles": 12
+    },
+    "ParkDetail_Planter3__LeafLight__00": {
+      "component": "ParkDetail_Planter3",
+      "material": "LeafLight",
+      "triangles": 128
+    },
+    "ParkDetail_Planter3__Yellow__00": {
+      "component": "ParkDetail_Planter3",
+      "material": "Yellow",
+      "triangles": 72
+    },
+    "ParkDetail_Planter3__Leaf__00": {
+      "component": "ParkDetail_Planter3",
+      "material": "Leaf",
+      "triangles": 64
+    },
+    "ParkDetail_Planter3__Coral__00": {
+      "component": "ParkDetail_Planter3",
+      "material": "Coral",
+      "triangles": 36
+    },
+    "ParkDetail_Planter4__Terracotta__00": {
+      "component": "ParkDetail_Planter4",
+      "material": "Terracotta",
+      "triangles": 12
+    },
+    "ParkDetail_Planter4__Soil__00": {
+      "component": "ParkDetail_Planter4",
+      "material": "Soil",
+      "triangles": 12
+    },
+    "ParkDetail_Planter4__LeafLight__00": {
+      "component": "ParkDetail_Planter4",
+      "material": "LeafLight",
+      "triangles": 128
+    },
+    "ParkDetail_Planter4__Yellow__00": {
+      "component": "ParkDetail_Planter4",
+      "material": "Yellow",
+      "triangles": 72
+    },
+    "ParkDetail_Planter4__Leaf__00": {
+      "component": "ParkDetail_Planter4",
+      "material": "Leaf",
+      "triangles": 64
+    },
+    "ParkDetail_Planter4__Coral__00": {
+      "component": "ParkDetail_Planter4",
+      "material": "Coral",
+      "triangles": 36
+    },
+    "ParkDetail_Planter5__Terracotta__00": {
+      "component": "ParkDetail_Planter5",
+      "material": "Terracotta",
+      "triangles": 12
+    },
+    "ParkDetail_Planter5__Soil__00": {
+      "component": "ParkDetail_Planter5",
+      "material": "Soil",
+      "triangles": 12
+    },
+    "ParkDetail_Planter5__LeafLight__00": {
+      "component": "ParkDetail_Planter5",
+      "material": "LeafLight",
+      "triangles": 128
+    },
+    "ParkDetail_Planter5__Yellow__00": {
+      "component": "ParkDetail_Planter5",
+      "material": "Yellow",
+      "triangles": 72
+    },
+    "ParkDetail_Planter5__Leaf__00": {
+      "component": "ParkDetail_Planter5",
+      "material": "Leaf",
+      "triangles": 64
+    },
+    "ParkDetail_Planter5__Coral__00": {
+      "component": "ParkDetail_Planter5",
+      "material": "Coral",
+      "triangles": 36
+    },
+    "ParkDetail_Planter6__Terracotta__00": {
+      "component": "ParkDetail_Planter6",
+      "material": "Terracotta",
+      "triangles": 12
+    },
+    "ParkDetail_Planter6__Soil__00": {
+      "component": "ParkDetail_Planter6",
+      "material": "Soil",
+      "triangles": 12
+    },
+    "ParkDetail_Planter6__LeafLight__00": {
+      "component": "ParkDetail_Planter6",
+      "material": "LeafLight",
+      "triangles": 128
+    },
+    "ParkDetail_Planter6__Yellow__00": {
+      "component": "ParkDetail_Planter6",
+      "material": "Yellow",
+      "triangles": 72
+    },
+    "ParkDetail_Planter6__Leaf__00": {
+      "component": "ParkDetail_Planter6",
+      "material": "Leaf",
+      "triangles": 64
+    },
+    "ParkDetail_Planter6__Coral__00": {
+      "component": "ParkDetail_Planter6",
+      "material": "Coral",
+      "triangles": 36
+    },
+    "ParkDetail_Lamp1__Iron__00": {
+      "component": "ParkDetail_Lamp1",
+      "material": "Iron",
+      "triangles": 72
+    },
+    "ParkDetail_Lamp1__Light__00": {
+      "component": "ParkDetail_Lamp1",
+      "material": "Light",
+      "triangles": 12
+    },
+    "ParkDetail_Lamp2__Iron__00": {
+      "component": "ParkDetail_Lamp2",
+      "material": "Iron",
+      "triangles": 72
+    },
+    "ParkDetail_Lamp2__Light__00": {
+      "component": "ParkDetail_Lamp2",
+      "material": "Light",
+      "triangles": 12
+    },
+    "ParkDetail_Lamp3__Iron__00": {
+      "component": "ParkDetail_Lamp3",
+      "material": "Iron",
+      "triangles": 72
+    },
+    "ParkDetail_Lamp3__Light__00": {
+      "component": "ParkDetail_Lamp3",
+      "material": "Light",
+      "triangles": 12
+    },
+    "ParkDetail_Lamp4__Iron__00": {
+      "component": "ParkDetail_Lamp4",
+      "material": "Iron",
+      "triangles": 72
+    },
+    "ParkDetail_Lamp4__Light__00": {
+      "component": "ParkDetail_Lamp4",
+      "material": "Light",
+      "triangles": 12
+    },
+    "ParkFront_Window1_1__Cream__00": {
+      "component": "ParkFront_Window1_1",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "ParkFront_Window1_1__Glass__00": {
+      "component": "ParkFront_Window1_1",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "ParkFront_Window1_2__Cream__00": {
+      "component": "ParkFront_Window1_2",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "ParkFront_Window1_2__Glass__00": {
+      "component": "ParkFront_Window1_2",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "ParkFront_Awning1__Teal__00": {
+      "component": "ParkFront_Awning1",
+      "material": "Teal",
+      "triangles": 60
+    },
+    "ParkFront_Awning1__Cream__00": {
+      "component": "ParkFront_Awning1",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "ParkFront_Window2_1__Cream__00": {
+      "component": "ParkFront_Window2_1",
+      "material": "Cream",
+      "triangles": 24
+    },
+    "ParkFront_Window2_1__Iron__00": {
+      "component": "ParkFront_Window2_1",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "ParkFront_Window2_1__Glass__00": {
+      "component": "ParkFront_Window2_1",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "ParkFront_Window2_2__Cream__00": {
+      "component": "ParkFront_Window2_2",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "ParkFront_Window2_2__Glass__00": {
+      "component": "ParkFront_Window2_2",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "ParkFront_Awning2__Teal__00": {
+      "component": "ParkFront_Awning2",
+      "material": "Teal",
+      "triangles": 60
+    },
+    "ParkFront_Awning2__Cream__00": {
+      "component": "ParkFront_Awning2",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "ParkFront_Window3_1__Cream__00": {
+      "component": "ParkFront_Window3_1",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "ParkFront_Window3_1__Glass__00": {
+      "component": "ParkFront_Window3_1",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "ParkFront_Window3_2__Cream__00": {
+      "component": "ParkFront_Window3_2",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "ParkFront_Window3_2__Glass__00": {
+      "component": "ParkFront_Window3_2",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "ParkFront_Awning3__Teal__00": {
+      "component": "ParkFront_Awning3",
+      "material": "Teal",
+      "triangles": 60
+    },
+    "ParkFront_Awning3__Cream__00": {
+      "component": "ParkFront_Awning3",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "ParkFront_Window4_1__Cream__00": {
+      "component": "ParkFront_Window4_1",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "ParkFront_Window4_1__Glass__00": {
+      "component": "ParkFront_Window4_1",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "ParkFront_Window4_2__Cream__00": {
+      "component": "ParkFront_Window4_2",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "ParkFront_Window4_2__Glass__00": {
+      "component": "ParkFront_Window4_2",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "ParkFront_Awning4__Teal__00": {
+      "component": "ParkFront_Awning4",
+      "material": "Teal",
+      "triangles": 60
+    },
+    "ParkFront_Awning4__Cream__00": {
+      "component": "ParkFront_Awning4",
+      "material": "Cream",
+      "triangles": 48
+    },
+    "MarkerOrigin__Iron__00": {
+      "component": "MarkerOrigin",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerRight__Iron__00": {
+      "component": "MarkerRight",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerUp__Iron__00": {
+      "component": "MarkerUp",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerForward__Iron__00": {
+      "component": "MarkerForward",
+      "material": "Iron",
+      "triangles": 12
+    }
+  },
+  "components": {
+    "ParkDetail_TreeBed1": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_TreeBed2": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_TreeBed3": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_TreeBed4": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_Planter1": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_Planter2": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_Planter3": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_Planter4": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_Planter5": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_Planter6": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_Lamp1": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_Lamp2": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_Lamp3": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkDetail_Lamp4": {
+      "section": "Park",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Window1_1": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Window1_2": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Awning1": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Window2_1": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Window2_2": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Awning2": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Window3_1": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Window3_2": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Awning3": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Window4_1": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Window4_2": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "ParkFront_Awning4": {
+      "section": "Frontage",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarkerOrigin": {
+      "section": "Calibration",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarkerRight": {
+      "section": "Calibration",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarkerUp": {
+      "section": "Calibration",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    "MarkerForward": {
+      "section": "Calibration",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "colors": {
+    "Brick": [
+      0.66,
+      0.26,
+      0.16
+    ],
+    "Terracotta": [
+      0.79,
+      0.37,
+      0.23
+    ],
+    "Plaster": [
+      0.93,
+      0.76,
+      0.48
+    ],
+    "Cream": [
+      0.93,
+      0.87,
+      0.72
+    ],
+    "Stone": [
+      0.64,
+      0.65,
+      0.61
+    ],
+    "Roof": [
+      0.24,
+      0.3,
+      0.32
+    ],
+    "Teal": [
+      0.035,
+      0.49,
+      0.48
+    ],
+    "Coral": [
+      0.89,
+      0.24,
+      0.2
+    ],
+    "Yellow": [
+      0.99,
+      0.66,
+      0.1
+    ],
+    "Blue": [
+      0.08,
+      0.3,
+      0.58
+    ],
+    "Iron": [
+      0.095,
+      0.14,
+      0.18
+    ],
+    "Glass": [
+      0.16,
+      0.27,
+      0.31
+    ],
+    "Wood": [
+      0.43,
+      0.26,
+      0.13
+    ],
+    "Leaf": [
+      0.22,
+      0.42,
+      0.14
+    ],
+    "LeafLight": [
+      0.45,
+      0.6,
+      0.19
+    ],
+    "Soil": [
+      0.22,
+      0.17,
+      0.12
+    ],
+    "Red": [
+      0.96,
+      0.055,
+      0.035
+    ],
+    "White": [
+      0.96,
+      0.95,
+      0.85
+    ],
+    "Rail": [
+      0.37,
+      0.43,
+      0.46
+    ],
+    "Skyline": [
+      0.4,
+      0.52,
+      0.57
+    ],
+    "Light": [
+      1,
+      0.86,
+      0.48
+    ],
+    "WoodLight": [
+      0.59,
+      0.4,
+      0.23
+    ],
+    "WoodDark": [
+      0.3,
+      0.18,
+      0.1
+    ],
+    "WindowGlow": [
+      0.96,
+      0.72,
+      0.34
+    ]
+  }
+}

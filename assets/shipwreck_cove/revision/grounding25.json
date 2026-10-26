@@ -1,0 +1,372 @@
+{
+  "adjustments": [
+    {
+      "name": "BeachPalm0",
+      "oldY": 3.32,
+      "y": 3.32,
+      "support": "Beach0"
+    },
+    {
+      "name": "BeachPalm1",
+      "oldY": 41.88,
+      "y": 41.88,
+      "support": "CoastBank00"
+    },
+    {
+      "name": "BeachPalm2",
+      "oldY": 3.32,
+      "y": 3.32,
+      "support": "Beach2"
+    },
+    {
+      "name": "BeachPalm3",
+      "oldY": 6.709,
+      "y": 6.709,
+      "support": "ConnectedShoreBank"
+    },
+    {
+      "name": "BeachPalm4",
+      "oldY": 3.32,
+      "y": 3.32,
+      "support": "Beach4"
+    },
+    {
+      "name": "BeachPalm5",
+      "oldY": 3.32,
+      "y": 3.32,
+      "support": "Beach5"
+    },
+    {
+      "name": "LeaningPalm0",
+      "oldY": 3,
+      "y": -4.044,
+      "support": "Beach0"
+    },
+    {
+      "name": "LeaningPalm1",
+      "oldY": 41.88,
+      "y": 41.88,
+      "support": "CoastBank00"
+    },
+    {
+      "name": "LeaningPalm2",
+      "oldY": 4.773,
+      "y": 4.773,
+      "support": "ConnectedShoreBank"
+    },
+    {
+      "name": "LeaningPalm3",
+      "oldY": 36.756,
+      "y": 36.756,
+      "support": "CoastBank09"
+    },
+    {
+      "name": "ShorePalmCluster",
+      "oldY": -1.386,
+      "y": -1.386,
+      "support": "ConnectedShoreBank"
+    },
+    {
+      "name": "CoastPalm0",
+      "oldY": 45.08,
+      "y": 45.08,
+      "support": "CoastBank02"
+    },
+    {
+      "name": "CoastPalm1",
+      "oldY": 51.48,
+      "y": 51.48,
+      "support": "CoastBank03"
+    },
+    {
+      "name": "CoastPalm2",
+      "oldY": 64.28,
+      "y": 64.28,
+      "support": "CoastBank05"
+    },
+    {
+      "name": "CoastPalm3",
+      "oldY": 57.88,
+      "y": 57.88,
+      "support": "CoastBank06"
+    },
+    {
+      "name": "CoastPalm4",
+      "oldY": 61.08,
+      "y": 61.08,
+      "support": "CoastBank07"
+    },
+    {
+      "name": "CoastPalm5",
+      "oldY": 48.28,
+      "y": 48.28,
+      "support": "CoastBank08"
+    },
+    {
+      "name": "IslandPalm0_-1",
+      "oldY": -2.908,
+      "y": -2.908,
+      "support": "DistantIsland0"
+    },
+    {
+      "name": "IslandPalm0_1",
+      "oldY": -4.031,
+      "y": -4.031,
+      "support": "DistantIsland0"
+    },
+    {
+      "name": "IslandPalm1_-1",
+      "oldY": 0.856,
+      "y": 0.856,
+      "support": "DistantIsland1"
+    },
+    {
+      "name": "IslandPalm1_1",
+      "oldY": -3.228,
+      "y": -3.228,
+      "support": "DistantIsland1"
+    },
+    {
+      "name": "IslandPalm2_-1",
+      "oldY": -2.193,
+      "y": -2.193,
+      "support": "DistantIsland2"
+    },
+    {
+      "name": "IslandPalm2_1",
+      "oldY": -2.101,
+      "y": -2.101,
+      "support": "DistantIsland2"
+    },
+    {
+      "name": "IslandPalm3_-1",
+      "oldY": 1,
+      "y": 38.185,
+      "support": "DistantPeak3"
+    },
+    {
+      "name": "IslandPalm3_1",
+      "oldY": -1.354,
+      "y": -1.354,
+      "support": "DistantIsland3"
+    },
+    {
+      "name": "IslandPalm4_-1",
+      "oldY": -4.4,
+      "y": -4.4,
+      "support": "DistantIsland4"
+    },
+    {
+      "name": "IslandPalm4_1",
+      "oldY": -2.269,
+      "y": -2.269,
+      "support": "DistantIsland4"
+    },
+    {
+      "name": "IslandPalm5_-1",
+      "oldY": -0.726,
+      "y": -0.726,
+      "support": "DistantIsland5"
+    },
+    {
+      "name": "IslandPalm5_1",
+      "oldY": 1,
+      "y": 59.98,
+      "support": "DistantPeak5"
+    },
+    {
+      "name": "CaveVine0",
+      "oldY": 34.574,
+      "y": 34.574,
+      "support": "R_CaveMouth25_398"
+    },
+    {
+      "name": "CaveVine1",
+      "oldY": 37.581,
+      "y": 37.581,
+      "support": "R_CaveMouth25_398"
+    },
+    {
+      "name": "CaveVine2",
+      "oldY": 32.998,
+      "y": 32.998,
+      "support": "R_CaveVault25_399"
+    },
+    {
+      "name": "CaveVine3",
+      "oldY": 39.749,
+      "y": 39.749,
+      "support": "R_CaveVault25_399"
+    },
+    {
+      "name": "CaveVine4",
+      "oldY": 31.293,
+      "y": 31.293,
+      "support": "R_CaveSurge25_400"
+    },
+    {
+      "name": "CaveVine5",
+      "oldY": 29.289,
+      "y": 29.289,
+      "support": "R_CaveSurge25_400"
+    },
+    {
+      "name": "R_FanPalm_415",
+      "oldY": 1,
+      "y": 0.798,
+      "support": "R_SandIsland_412"
+    },
+    {
+      "name": "R_FanPalm_424",
+      "oldY": -4.656,
+      "y": -4.656,
+      "support": "R_SandIsland_420"
+    },
+    {
+      "name": "R_FanPalm_429",
+      "oldY": 0.336,
+      "y": 0.336,
+      "support": "R_SandIsland_426"
+    },
+    {
+      "name": "R_FanPalm_438",
+      "oldY": 0.354,
+      "y": 0.354,
+      "support": "R_SandIsland_434"
+    }
+  ],
+  "headroom": [
+    {
+      "name": "CaveStone_0_0",
+      "clearance": 19.75
+    },
+    {
+      "name": "CaveStone_0_1",
+      "clearance": 22.69
+    },
+    {
+      "name": "CaveStone_0_2",
+      "clearance": 25.55
+    },
+    {
+      "name": "CaveStone_0_3",
+      "clearance": 28.06
+    },
+    {
+      "name": "CaveStone_0_4",
+      "clearance": 28.05
+    },
+    {
+      "name": "CaveStone_1_0",
+      "clearance": 22.73
+    },
+    {
+      "name": "CaveStone_1_1",
+      "clearance": 26.85
+    },
+    {
+      "name": "CaveStone_1_2",
+      "clearance": 29.86
+    },
+    {
+      "name": "CaveStone_1_3",
+      "clearance": 32.57
+    },
+    {
+      "name": "CaveStone_1_4",
+      "clearance": 31.84
+    },
+    {
+      "name": "CaveStone_1_5",
+      "clearance": 30.88
+    },
+    {
+      "name": "CaveStone_2_0",
+      "clearance": 26.96
+    },
+    {
+      "name": "CaveStone_2_1",
+      "clearance": 30.33
+    },
+    {
+      "name": "CaveStone_2_2",
+      "clearance": 31.78
+    },
+    {
+      "name": "CaveStone_2_3",
+      "clearance": 31.04
+    },
+    {
+      "name": "CaveStone_2_4",
+      "clearance": 29.65
+    },
+    {
+      "name": "CaveStone_3_0",
+      "clearance": 30.67
+    },
+    {
+      "name": "CaveStone_3_1",
+      "clearance": 31.38
+    },
+    {
+      "name": "CaveStone_3_2",
+      "clearance": 32.6
+    },
+    {
+      "name": "CaveStone_3_3",
+      "clearance": 31.1
+    },
+    {
+      "name": "CaveStone_3_4",
+      "clearance": 30.05
+    },
+    {
+      "name": "CaveStone_3_5",
+      "clearance": 27.24
+    },
+    {
+      "name": "CaveStone_4_0",
+      "clearance": 34.31
+    },
+    {
+      "name": "CaveStone_4_1",
+      "clearance": 35.38
+    },
+    {
+      "name": "CaveStone_4_2",
+      "clearance": 35.14
+    },
+    {
+      "name": "CaveStone_4_3",
+      "clearance": 33.35
+    },
+    {
+      "name": "CaveStone_4_4",
+      "clearance": 31.98
+    },
+    {
+      "name": "CaveStone_5_0",
+      "clearance": 31.86
+    },
+    {
+      "name": "CaveStone_5_1",
+      "clearance": 32.86
+    },
+    {
+      "name": "CaveStone_5_2",
+      "clearance": 32.98
+    },
+    {
+      "name": "CaveStone_5_3",
+      "clearance": 33.43
+    },
+    {
+      "name": "CaveStone_5_4",
+      "clearance": 32.96
+    },
+    {
+      "name": "CaveStone_5_5",
+      "clearance": 33.32
+    }
+  ]
+}

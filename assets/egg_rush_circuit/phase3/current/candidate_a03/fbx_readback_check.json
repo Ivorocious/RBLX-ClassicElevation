@@ -1,0 +1,57 @@
+{
+  "build": "ER_P3_WORLD_KIT_A03",
+  "exactExport": "ER_WorldMeshLibrary.fbx",
+  "meshCount": 8,
+  "geometryAndAxisRoundtrip": true,
+  "records": {
+    "ERW_ArchBand": {
+      "vertices": 68,
+      "maximumVertexError": 7.6e-07,
+      "materialSlots": 1,
+      "axisAndPivotParity": true
+    },
+    "ERW_ArchSpandrels": {
+      "vertices": 40,
+      "maximumVertexError": 7e-07,
+      "materialSlots": 1,
+      "axisAndPivotParity": true
+    },
+    "ERW_VaultRoof": {
+      "vertices": 36,
+      "maximumVertexError": 2.57e-06,
+      "materialSlots": 1,
+      "axisAndPivotParity": true
+    },
+    "ERW_TankDome": {
+      "vertices": 80,
+      "maximumVertexError": 1.67e-06,
+      "materialSlots": 1,
+      "axisAndPivotParity": true
+    },
+    "ERW_TankDrum": {
+      "vertices": 32,
+      "maximumVertexError": 2.13e-06,
+      "materialSlots": 1,
+      "axisAndPivotParity": true
+    },
+    "ERW_RockLobe": {
+      "vertices": 30,
+      "maximumVertexError": 3.84e-06,
+      "materialSlots": 1,
+      "axisAndPivotParity": true
+    },
+    "ERW_PipeElbow": {
+      "vertices": 156,
+      "maximumVertexError": 1.07e-06,
+      "materialSlots": 1,
+      "axisAndPivotParity": true
+    },
+    "ERW_LeafCrown": {
+      "vertices": 40,
+      "maximumVertexError": 1.72e-06,
+      "materialSlots": 1,
+      "axisAndPivotParity": true
+    }
+  },
+  "proofBoundary": "Blender FBX readback only; Roblox import orientation and size remain native checks."
+}

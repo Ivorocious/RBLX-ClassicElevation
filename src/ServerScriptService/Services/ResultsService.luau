@@ -17,6 +17,8 @@ type ServiceContext = {
 
 local ResultsService = {}
 
+local playerRaceService: any
+local raceService: any
 local isInitialized = false
 local isStarted = false
 local currentRaceResult: RaceResult? = nil
@@ -105,6 +107,7 @@ local function applyDnfResult(dnfResult: PlayerRaceResult): boolean
 	end
 
 	local playerResult = playerResultsByUserId[dnfResult.userId]
+	if playerResult == nil then return false end
 
 	if playerResult ~= nil then
 		if playerResult.status == RaceConstants.PlayerRaceStatus.Finished then
@@ -121,7 +124,9 @@ local function applyDnfResult(dnfResult: PlayerRaceResult): boolean
 	end
 
 	dnfUserIds[dnfResult.userId] = true
-	return true
+ local player=Players:GetPlayerByUserId(dnfResult.userId)
+ if player and playerRaceService then playerRaceService.OnRaceResolved(player,playerResult,currentRaceResult) end
+ return true
 end
 
 local function handlePlayerRemoving(player: Player)
@@ -164,7 +169,8 @@ local function handlePlayerRemoving(player: Player)
 	print(string.format("[ResultsService] %s marked DNF after leaving.", player.Name))
 end
 
-function ResultsService.Init(_context: ServiceContext?)
+function ResultsService.Init(context: ServiceContext?)
+	if context then playerRaceService=context.Services.PlayerRaceService;raceService=context.Services.RaceService end
 	if isInitialized then
 		return
 	end
@@ -256,11 +262,13 @@ function ResultsService.UpdateCheckpointProgress(
 		return false
 	end
 
-	local playerResult = getOrCreatePlayerResult(player)
+	local playerResult = playerResultsByUserId[player.UserId]
+ if playerResult == nil or finishedUserIds[player.UserId] or dnfUserIds[player.UserId] then return false end
 
 	playerResult.currentLap = currentLap
 	playerResult.requiredLaps = requiredLaps
 	playerResult.nextCheckpointIndex = nextCheckpointIndex
+	if playerRaceService then playerRaceService.TouchActivity(player) end
 	playerResult.checkpointCount = checkpointCount
 
 	syncActiveRacers()
@@ -284,7 +292,8 @@ function ResultsService.RecordCheckpointSplit(
 		return false
 	end
 
-	local playerResult = getOrCreatePlayerResult(player)
+	local playerResult = playerResultsByUserId[player.UserId]
+ if playerResult == nil or finishedUserIds[player.UserId] or dnfUserIds[player.UserId] then return false end
 
 	if findCheckpointSplit(playerResult, checkpointIndex, lap) ~= nil then
 		return false
@@ -328,7 +337,8 @@ function ResultsService.RecordLapComplete(
 		return false
 	end
 
-	local playerResult = getOrCreatePlayerResult(player)
+	local playerResult = playerResultsByUserId[player.UserId]
+ if playerResult == nil or finishedUserIds[player.UserId] or dnfUserIds[player.UserId] then return false end
 	local lapTimes = playerResult.lapTimes
 
 	if lapTimes == nil then
@@ -368,7 +378,8 @@ function ResultsService.RecordFall(player: Player): number?
 		return nil
 	end
 
-	local playerResult = getOrCreatePlayerResult(player)
+	local playerResult = playerResultsByUserId[player.UserId]
+ if playerResult == nil or finishedUserIds[player.UserId] or dnfUserIds[player.UserId] then return nil end
 
 	if playerResult.status == RaceConstants.PlayerRaceStatus.Finished
 		or playerResult.status == RaceConstants.PlayerRaceStatus.DNF
@@ -377,6 +388,7 @@ function ResultsService.RecordFall(player: Player): number?
 	end
 
 	playerResult.falls += 1
+	if playerRaceService then playerRaceService.TouchActivity(player) end
 	syncActiveRacers()
 	ResultsService.BroadcastCurrentRaceResults()
 	print(string.format("[ResultsService] %s fall count -> %d.", player.Name, playerResult.falls))
@@ -385,6 +397,8 @@ function ResultsService.RecordFall(player: Player): number?
 end
 
 function ResultsService.RecordFinish(player: Player, elapsedTime: number): PlayerRaceResult?
+ if typeof(elapsedTime) ~= "number" or elapsedTime < 0 or elapsedTime ~= elapsedTime or elapsedTime == math.huge
+  or not raceService or not raceService.IsRaceActive() or not playerRaceService.IsOfficialRacer(player) then return nil end
 	if currentRaceResult == nil then
 		warn("[ResultsService] RecordFinish called before StartRace.")
 		return nil
@@ -394,7 +408,8 @@ function ResultsService.RecordFinish(player: Player, elapsedTime: number): Playe
 		return nil
 	end
 
-	local playerResult = getOrCreatePlayerResult(player)
+	local playerResult = playerResultsByUserId[player.UserId]
+ if playerResult == nil or finishedUserIds[player.UserId] or dnfUserIds[player.UserId] then return nil end
 
 	if playerResult.status == RaceConstants.PlayerRaceStatus.Finished then
 		finishedUserIds[player.UserId] = true
@@ -412,7 +427,8 @@ function ResultsService.RecordFinish(player: Player, elapsedTime: number): Playe
 
 	syncActiveRacers()
 	table.insert(currentRaceResult.placements, playerResult)
-	ResultsService.BroadcastCurrentRaceResults()
+ if playerRaceService then playerRaceService.OnRaceResolved(player,playerResult,currentRaceResult) end
+ 	ResultsService.BroadcastCurrentRaceResults()
 
 	print(
 		string.format(
@@ -460,6 +476,26 @@ function ResultsService.BroadcastCurrentRaceResults()
 
 	raceResultsUpdatedRemote:FireAllClients(currentRaceResult)
 	print(string.format("[ResultsService] Broadcast results for %s.", currentRaceResult.raceId))
+end
+
+function ResultsService.GetPlayerResult(player: Player): PlayerRaceResult?
+ return playerResultsByUserId[player.UserId]
+end
+
+function ResultsService.SetCourseIdentity(info: any)
+ if not currentRaceResult then return end
+ local result: any=currentRaceResult
+ result.variant,result.sourceRevision,result.route=info.variant,info.sourceRevision,info.route
+ result.fallsSupported=info.fallsSupported
+end
+
+function ResultsService.WithdrawPlayer(player: Player,reason: string): boolean
+ local result=playerResultsByUserId[player.UserId]
+ if not result then return false end
+ local record=table.clone(result);record.status="DNF";record.dnfReason=reason
+ local applied=applyDnfResult(record)
+ if applied then syncActiveRacers();ResultsService.BroadcastCurrentRaceResults() end
+ return applied
 end
 
 return ResultsService

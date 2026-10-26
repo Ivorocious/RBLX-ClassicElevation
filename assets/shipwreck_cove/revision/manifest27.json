@@ -1,0 +1,190 @@
+{
+  "build": "SC_KIT_27",
+  "assets": [
+    {
+      "id": "SC_R_Stalactite27",
+      "family": "rock",
+      "triangles": 61,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 25,
+      "dimensionsRobloxXYZ": [
+        2.69104266166687,
+        7.0,
+        2.355712413787842
+      ],
+      "boundsBlender": {
+        "min": [
+          -1.3410426378250122,
+          -1.1784974336624146,
+          -7.0
+        ],
+        "max": [
+          1.350000023841858,
+          1.1772149801254272,
+          0.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ceiling",
+      "notes": "Ceiling anchor0. Tip -7 RobloxY. Attach broad shoulder inside roof.",
+      "centerBlender": [
+        0.0044786930084228516,
+        -0.0006412267684936523,
+        -3.5
+      ]
+    },
+    {
+      "id": "SC_R_Coconut27",
+      "family": "prop",
+      "triangles": 92,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 15,
+      "dimensionsRobloxXYZ": [
+        1.5199999809265137,
+        1.600000023841858,
+        1.5199999809265137
+      ],
+      "boundsBlender": {
+        "min": [
+          -0.7599999904632568,
+          -0.7599999904632568,
+          -0.800000011920929
+        ],
+        "max": [
+          0.7599999904632568,
+          0.7599999904632568,
+          0.800000011920929
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Center pivot. 1.6 stud diameter. Visual falls use predictable server clock.",
+      "centerBlender": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "SC_R_Grass27",
+      "family": "vegetation",
+      "triangles": 128,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 26,
+      "dimensionsRobloxXYZ": [
+        4.038808584213257,
+        1.3700000047683716,
+        4.035449147224426
+      ],
+      "boundsBlender": {
+        "min": [
+          -2.0200233459472656,
+          -2.3912103176116943,
+          0.0
+        ],
+        "max": [
+          2.018785238265991,
+          1.644238829612732,
+          1.3700000047683716
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Opaque curved sea-grass clump. Base0, max height about1.6.",
+      "centerBlender": [
+        -0.000619053840637207,
+        -0.3734857439994812,
+        0.6850000023841858
+      ]
+    },
+    {
+      "id": "SC_R_Palm27",
+      "family": "vegetation",
+      "triangles": 230,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 7,
+      "dimensionsRobloxXYZ": [
+        17.8135404586792,
+        25.119041442871094,
+        18.09950542449951
+      ],
+      "boundsBlender": {
+        "min": [
+          -6.665471076965332,
+          -9.634472846984863,
+          0.0
+        ],
+        "max": [
+          11.148069381713867,
+          8.465032577514648,
+          25.119041442871094
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Root0; crown offset Roblox(2.4,24,-.73). Fronds droop below crown; keeprootgrounded.",
+      "centerBlender": [
+        2.2412991523742676,
+        -0.5847201347351074,
+        12.559520721435547
+      ]
+    },
+    {
+      "id": "SC_R_Wave27",
+      "family": "water",
+      "triangles": 240,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 2,
+      "dimensionsRobloxXYZ": [
+        18.0,
+        5.738405227661133,
+        4.099999904632568
+      ],
+      "boundsBlender": {
+        "min": [
+          -9.0,
+          -2.0,
+          0.0
+        ],
+        "max": [
+          9.0,
+          2.0999999046325684,
+          5.738405227661133
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Width18,depth4,baseY0; curled front points Roblox -Z; +Z trailing pool. No physics collider.",
+      "centerBlender": [
+        0.0,
+        0.04999995231628418,
+        2.8692026138305664
+      ]
+    }
+  ],
+  "libraryTriangles": 751,
+  "assetCeiling": 1500,
+  "kitCeiling": 5000,
+  "materialCount": 1,
+  "atlas": "palette.png"
+}

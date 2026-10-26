@@ -1,0 +1,1602 @@
+{
+  "revision": "M01",
+  "palette": {
+    "WoodDark": [
+      72,
+      43,
+      29
+    ],
+    "Wood": [
+      121,
+      77,
+      44
+    ],
+    "WoodLight": [
+      161,
+      111,
+      63
+    ],
+    "WoodWarm": [
+      144,
+      90,
+      46
+    ],
+    "WoodEnd": [
+      181,
+      134,
+      79
+    ],
+    "IronDark": [
+      37,
+      49,
+      63
+    ],
+    "Iron": [
+      65,
+      83,
+      104
+    ],
+    "IronLight": [
+      98,
+      121,
+      141
+    ],
+    "StoneDark": [
+      78,
+      93,
+      105
+    ],
+    "Stone": [
+      111,
+      128,
+      141
+    ],
+    "StoneLight": [
+      143,
+      159,
+      166
+    ],
+    "GoldDark": [
+      160,
+      127,
+      55
+    ],
+    "Gold": [
+      208,
+      172,
+      76
+    ],
+    "GoldLight": [
+      239,
+      212,
+      129
+    ],
+    "Ivory": [
+      234,
+      224,
+      177
+    ],
+    "Paper": [
+      223,
+      209,
+      163
+    ],
+    "Burgundy": [
+      110,
+      31,
+      66
+    ],
+    "BurgundyLight": [
+      139,
+      43,
+      84
+    ],
+    "Teal": [
+      36,
+      112,
+      115
+    ],
+    "Silver": [
+      180,
+      200,
+      209
+    ],
+    "SilverLight": [
+      225,
+      235,
+      221
+    ],
+    "Hay": [
+      190,
+      161,
+      80
+    ],
+    "HayLight": [
+      223,
+      199,
+      115
+    ],
+    "HayDark": [
+      157,
+      126,
+      61
+    ],
+    "FireOrange": [
+      245,
+      112,
+      24
+    ],
+    "FireGold": [
+      255,
+      177,
+      35
+    ],
+    "FireLight": [
+      255,
+      223,
+      97
+    ],
+    "Water": [
+      42,
+      85,
+      111
+    ],
+    "Ink": [
+      74,
+      57,
+      38
+    ]
+  },
+  "props": {
+    "CandleCabinet": {
+      "position": [
+        -22,
+        -1,
+        0
+      ],
+      "angle": -4,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            4.45
+          ],
+          "size": [
+            4.0,
+            2.5,
+            8.9
+          ]
+        }
+      ]
+    },
+    "RoyalBanner": {
+      "position": [
+        -17,
+        12,
+        0
+      ],
+      "angle": -3,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0.4,
+            5.5
+          ],
+          "size": [
+            0.55,
+            0.65,
+            11
+          ]
+        }
+      ]
+    },
+    "BrewersBarrel": {
+      "position": [
+        -12,
+        -0.4,
+        0
+      ],
+      "angle": -4,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            2.4
+          ],
+          "size": [
+            3.9,
+            3.85,
+            4.5
+          ]
+        }
+      ]
+    },
+    "ArcheryTarget": {
+      "position": [
+        -2,
+        1,
+        0
+      ],
+      "angle": 2,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            3.8
+          ],
+          "size": [
+            5.5,
+            0.85,
+            5.45
+          ]
+        }
+      ]
+    },
+    "ShieldRack": {
+      "position": [
+        -5.5,
+        11.2,
+        0
+      ],
+      "angle": 0,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            3.5
+          ],
+          "size": [
+            5.8,
+            0.7,
+            7
+          ]
+        }
+      ]
+    },
+    "QuestBoard": {
+      "position": [
+        5.4,
+        16.9,
+        0
+      ],
+      "angle": 0,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            4.5
+          ],
+          "size": [
+            5.8,
+            1.1,
+            9
+          ]
+        }
+      ]
+    },
+    "RoofedWell": {
+      "position": [
+        16.2,
+        18,
+        0
+      ],
+      "angle": 0,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            1.4
+          ],
+          "size": [
+            6.5,
+            4.5,
+            2.8
+          ]
+        },
+        {
+          "center": [
+            -2.4,
+            0,
+            6
+          ],
+          "size": [
+            0.6,
+            0.7,
+            6.3
+          ]
+        },
+        {
+          "center": [
+            2.4,
+            0,
+            6
+          ],
+          "size": [
+            0.6,
+            0.7,
+            6.3
+          ]
+        }
+      ]
+    },
+    "TavernTable": {
+      "position": [
+        6.8,
+        1.2,
+        0
+      ],
+      "angle": 0,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            1.4
+          ],
+          "size": [
+            3.3,
+            3.3,
+            2.8
+          ]
+        }
+      ]
+    },
+    "CandlePedestal": {
+      "position": [
+        14.1,
+        1.8,
+        0
+      ],
+      "angle": 0,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            1.35
+          ],
+          "size": [
+            3.5,
+            2.9,
+            2.7
+          ]
+        }
+      ]
+    },
+    "AlchemyBench": {
+      "position": [
+        22.5,
+        8.5,
+        0
+      ],
+      "angle": 0,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            1.3
+          ],
+          "size": [
+            3.5,
+            2.1,
+            2.6
+          ]
+        }
+      ]
+    },
+    "StoneGate": {
+      "position": [
+        28.4,
+        21.5,
+        0
+      ],
+      "angle": 0,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            2.7
+          ],
+          "size": [
+            3.9,
+            1.3,
+            5.4
+          ]
+        }
+      ]
+    },
+    "BrokenStoneWall": {
+      "position": [
+        31.8,
+        1.15,
+        0
+      ],
+      "angle": -5,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            2.4
+          ],
+          "size": [
+            5.5,
+            1.6,
+            4.8
+          ]
+        }
+      ]
+    },
+    "Catapult": {
+      "position": [
+        30,
+        12.1,
+        0
+      ],
+      "angle": -7,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            1.1
+          ],
+          "size": [
+            3.3,
+            4,
+            2.2
+          ]
+        }
+      ]
+    },
+    "SwordRack": {
+      "position": [
+        17,
+        -8.0,
+        0
+      ],
+      "angle": 0,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0.2,
+            2.3
+          ],
+          "size": [
+            3.8,
+            0.8,
+            4.6
+          ]
+        }
+      ]
+    },
+    "LargeChest": {
+      "position": [
+        25.2,
+        -6.9,
+        0
+      ],
+      "angle": 0,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            1.4
+          ],
+          "size": [
+            4.25,
+            2.8,
+            2.8
+          ]
+        }
+      ]
+    },
+    "SmallChest": {
+      "position": [
+        0.0,
+        -17.0,
+        0
+      ],
+      "angle": -5,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            0.95
+          ],
+          "size": [
+            2.8,
+            1.9,
+            1.9
+          ]
+        }
+      ]
+    },
+    "ArrowBundle": {
+      "position": [
+        31.15,
+        -5.1,
+        0
+      ],
+      "angle": 4,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            1.8
+          ],
+          "size": [
+            1.5,
+            1.5,
+            3.6
+          ]
+        }
+      ]
+    },
+    "HayBales": {
+      "position": [
+        8.4,
+        -12.6,
+        0
+      ],
+      "angle": 0,
+      "colliders": [
+        {
+          "center": [
+            -1.2,
+            0,
+            0.77
+          ],
+          "size": [
+            2.25,
+            1.9,
+            1.5
+          ]
+        },
+        {
+          "center": [
+            1.15,
+            0,
+            0.77
+          ],
+          "size": [
+            2.3,
+            1.9,
+            1.5
+          ]
+        },
+        {
+          "center": [
+            0,
+            0.25,
+            2.24
+          ],
+          "size": [
+            2.1,
+            1.8,
+            1.42
+          ]
+        }
+      ]
+    },
+    "Anvil": {
+      "position": [
+        -9.65,
+        -15.5,
+        0
+      ],
+      "angle": -3,
+      "colliders": [
+        {
+          "center": [
+            -0.24,
+            0,
+            2.2
+          ],
+          "size": [
+            4.2,
+            2.3,
+            4.4
+          ]
+        }
+      ]
+    },
+    "Brazier": {
+      "position": [
+        -22,
+        -17,
+        0
+      ],
+      "angle": -5,
+      "colliders": [
+        {
+          "center": [
+            0,
+            0,
+            1.4
+          ],
+          "size": [
+            3.3,
+            2.6,
+            2.8
+          ]
+        }
+      ]
+    }
+  },
+  "meshes": {
+    "CandleCabinet__WoodDark": {
+      "prop": "CandleCabinet",
+      "material": "WoodDark",
+      "triangles": 228
+    },
+    "CandleCabinet__WoodLight": {
+      "prop": "CandleCabinet",
+      "material": "WoodLight",
+      "triangles": 204
+    },
+    "CandleCabinet__Wood": {
+      "prop": "CandleCabinet",
+      "material": "Wood",
+      "triangles": 180
+    },
+    "CandleCabinet__WoodEnd": {
+      "prop": "CandleCabinet",
+      "material": "WoodEnd",
+      "triangles": 180
+    },
+    "CandleCabinet__GoldDark": {
+      "prop": "CandleCabinet",
+      "material": "GoldDark",
+      "triangles": 228
+    },
+    "CandleCabinet__GoldLight": {
+      "prop": "CandleCabinet",
+      "material": "GoldLight",
+      "triangles": 180
+    },
+    "CandleCabinet__WoodWarm": {
+      "prop": "CandleCabinet",
+      "material": "WoodWarm",
+      "triangles": 48
+    },
+    "CandleCabinet__Gold": {
+      "prop": "CandleCabinet",
+      "material": "Gold",
+      "triangles": 60
+    },
+    "CandleCabinet__Ivory": {
+      "prop": "CandleCabinet",
+      "material": "Ivory",
+      "triangles": 48
+    },
+    "CandleCabinet__Paper": {
+      "prop": "CandleCabinet",
+      "material": "Paper",
+      "triangles": 48
+    },
+    "CandleCabinet__Ink": {
+      "prop": "CandleCabinet",
+      "material": "Ink",
+      "triangles": 48
+    },
+    "CandleCabinet__FireLight": {
+      "prop": "CandleCabinet",
+      "material": "FireLight",
+      "triangles": 48
+    },
+    "CandleCabinet__IronDark": {
+      "prop": "CandleCabinet",
+      "material": "IronDark",
+      "triangles": 36
+    },
+    "CandleCabinet__IronLight": {
+      "prop": "CandleCabinet",
+      "material": "IronLight",
+      "triangles": 24
+    },
+    "CandleCabinet__Iron": {
+      "prop": "CandleCabinet",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "RoyalBanner__WoodDark": {
+      "prop": "RoyalBanner",
+      "material": "WoodDark",
+      "triangles": 72
+    },
+    "RoyalBanner__WoodLight": {
+      "prop": "RoyalBanner",
+      "material": "WoodLight",
+      "triangles": 24
+    },
+    "RoyalBanner__Wood": {
+      "prop": "RoyalBanner",
+      "material": "Wood",
+      "triangles": 72
+    },
+    "RoyalBanner__WoodWarm": {
+      "prop": "RoyalBanner",
+      "material": "WoodWarm",
+      "triangles": 12
+    },
+    "RoyalBanner__WoodEnd": {
+      "prop": "RoyalBanner",
+      "material": "WoodEnd",
+      "triangles": 24
+    },
+    "RoyalBanner__GoldDark": {
+      "prop": "RoyalBanner",
+      "material": "GoldDark",
+      "triangles": 12
+    },
+    "RoyalBanner__Gold": {
+      "prop": "RoyalBanner",
+      "material": "Gold",
+      "triangles": 1104
+    },
+    "RoyalBanner__Iron": {
+      "prop": "RoyalBanner",
+      "material": "Iron",
+      "triangles": 24
+    },
+    "RoyalBanner__BurgundyLight": {
+      "prop": "RoyalBanner",
+      "material": "BurgundyLight",
+      "triangles": 1110
+    },
+    "RoyalBanner__Burgundy": {
+      "prop": "RoyalBanner",
+      "material": "Burgundy",
+      "triangles": 4056
+    },
+    "RoyalBanner__GoldLight": {
+      "prop": "RoyalBanner",
+      "material": "GoldLight",
+      "triangles": 444
+    },
+    "BrewersBarrel__WoodDark": {
+      "prop": "BrewersBarrel",
+      "material": "WoodDark",
+      "triangles": 120
+    },
+    "BrewersBarrel__WoodLight": {
+      "prop": "BrewersBarrel",
+      "material": "WoodLight",
+      "triangles": 444
+    },
+    "BrewersBarrel__Wood": {
+      "prop": "BrewersBarrel",
+      "material": "Wood",
+      "triangles": 96
+    },
+    "BrewersBarrel__WoodWarm": {
+      "prop": "BrewersBarrel",
+      "material": "WoodWarm",
+      "triangles": 72
+    },
+    "BrewersBarrel__Iron": {
+      "prop": "BrewersBarrel",
+      "material": "Iron",
+      "triangles": 288
+    },
+    "BrewersBarrel__IronLight": {
+      "prop": "BrewersBarrel",
+      "material": "IronLight",
+      "triangles": 288
+    },
+    "BrewersBarrel__WoodEnd": {
+      "prop": "BrewersBarrel",
+      "material": "WoodEnd",
+      "triangles": 3744
+    },
+    "BrewersBarrel__GoldDark": {
+      "prop": "BrewersBarrel",
+      "material": "GoldDark",
+      "triangles": 12
+    },
+    "BrewersBarrel__Gold": {
+      "prop": "BrewersBarrel",
+      "material": "Gold",
+      "triangles": 12
+    },
+    "BrewersBarrel__GoldLight": {
+      "prop": "BrewersBarrel",
+      "material": "GoldLight",
+      "triangles": 12
+    },
+    "ArcheryTarget__WoodDark": {
+      "prop": "ArcheryTarget",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "ArcheryTarget__WoodLight": {
+      "prop": "ArcheryTarget",
+      "material": "WoodLight",
+      "triangles": 36
+    },
+    "ArcheryTarget__Wood": {
+      "prop": "ArcheryTarget",
+      "material": "Wood",
+      "triangles": 4992
+    },
+    "ArcheryTarget__WoodWarm": {
+      "prop": "ArcheryTarget",
+      "material": "WoodWarm",
+      "triangles": 12
+    },
+    "ArcheryTarget__GoldLight": {
+      "prop": "ArcheryTarget",
+      "material": "GoldLight",
+      "triangles": 1632
+    },
+    "ArcheryTarget__Ivory": {
+      "prop": "ArcheryTarget",
+      "material": "Ivory",
+      "triangles": 1728
+    },
+    "ArcheryTarget__Burgundy": {
+      "prop": "ArcheryTarget",
+      "material": "Burgundy",
+      "triangles": 1344
+    },
+    "ArcheryTarget__Gold": {
+      "prop": "ArcheryTarget",
+      "material": "Gold",
+      "triangles": 336
+    },
+    "ArcheryTarget__GoldDark": {
+      "prop": "ArcheryTarget",
+      "material": "GoldDark",
+      "triangles": 24
+    },
+    "ShieldRack__WoodDark": {
+      "prop": "ShieldRack",
+      "material": "WoodDark",
+      "triangles": 108
+    },
+    "ShieldRack__WoodLight": {
+      "prop": "ShieldRack",
+      "material": "WoodLight",
+      "triangles": 48
+    },
+    "ShieldRack__Wood": {
+      "prop": "ShieldRack",
+      "material": "Wood",
+      "triangles": 552
+    },
+    "ShieldRack__WoodEnd": {
+      "prop": "ShieldRack",
+      "material": "WoodEnd",
+      "triangles": 84
+    },
+    "ShieldRack__WoodWarm": {
+      "prop": "ShieldRack",
+      "material": "WoodWarm",
+      "triangles": 24
+    },
+    "ShieldRack__IronDark": {
+      "prop": "ShieldRack",
+      "material": "IronDark",
+      "triangles": 96
+    },
+    "ShieldRack__IronLight": {
+      "prop": "ShieldRack",
+      "material": "IronLight",
+      "triangles": 48
+    },
+    "ShieldRack__Gold": {
+      "prop": "ShieldRack",
+      "material": "Gold",
+      "triangles": 360
+    },
+    "ShieldRack__Burgundy": {
+      "prop": "ShieldRack",
+      "material": "Burgundy",
+      "triangles": 24
+    },
+    "ShieldRack__GoldLight": {
+      "prop": "ShieldRack",
+      "material": "GoldLight",
+      "triangles": 168
+    },
+    "ShieldRack__Iron": {
+      "prop": "ShieldRack",
+      "material": "Iron",
+      "triangles": 480
+    },
+    "QuestBoard__WoodDark": {
+      "prop": "QuestBoard",
+      "material": "WoodDark",
+      "triangles": 432
+    },
+    "QuestBoard__WoodLight": {
+      "prop": "QuestBoard",
+      "material": "WoodLight",
+      "triangles": 192
+    },
+    "QuestBoard__Wood": {
+      "prop": "QuestBoard",
+      "material": "Wood",
+      "triangles": 108
+    },
+    "QuestBoard__WoodEnd": {
+      "prop": "QuestBoard",
+      "material": "WoodEnd",
+      "triangles": 168
+    },
+    "QuestBoard__WoodWarm": {
+      "prop": "QuestBoard",
+      "material": "WoodWarm",
+      "triangles": 36
+    },
+    "QuestBoard__Paper": {
+      "prop": "QuestBoard",
+      "material": "Paper",
+      "triangles": 36
+    },
+    "QuestBoard__Ivory": {
+      "prop": "QuestBoard",
+      "material": "Ivory",
+      "triangles": 36
+    },
+    "QuestBoard__GoldDark": {
+      "prop": "QuestBoard",
+      "material": "GoldDark",
+      "triangles": 72
+    },
+    "QuestBoard__GoldLight": {
+      "prop": "QuestBoard",
+      "material": "GoldLight",
+      "triangles": 72
+    },
+    "QuestBoard__Ink": {
+      "prop": "QuestBoard",
+      "material": "Ink",
+      "triangles": 444
+    },
+    "RoofedWell__StoneDark": {
+      "prop": "RoofedWell",
+      "material": "StoneDark",
+      "triangles": 96
+    },
+    "RoofedWell__StoneLight": {
+      "prop": "RoofedWell",
+      "material": "StoneLight",
+      "triangles": 1776
+    },
+    "RoofedWell__Stone": {
+      "prop": "RoofedWell",
+      "material": "Stone",
+      "triangles": 2040
+    },
+    "RoofedWell__Water": {
+      "prop": "RoofedWell",
+      "material": "Water",
+      "triangles": 12
+    },
+    "RoofedWell__WoodWarm": {
+      "prop": "RoofedWell",
+      "material": "WoodWarm",
+      "triangles": 348
+    },
+    "RoofedWell__WoodDark": {
+      "prop": "RoofedWell",
+      "material": "WoodDark",
+      "triangles": 432
+    },
+    "RoofedWell__WoodEnd": {
+      "prop": "RoofedWell",
+      "material": "WoodEnd",
+      "triangles": 24
+    },
+    "RoofedWell__WoodLight": {
+      "prop": "RoofedWell",
+      "material": "WoodLight",
+      "triangles": 408
+    },
+    "RoofedWell__Iron": {
+      "prop": "RoofedWell",
+      "material": "Iron",
+      "triangles": 144
+    },
+    "RoofedWell__Wood": {
+      "prop": "RoofedWell",
+      "material": "Wood",
+      "triangles": 384
+    },
+    "RoofedWell__GoldDark": {
+      "prop": "RoofedWell",
+      "material": "GoldDark",
+      "triangles": 12
+    },
+    "RoofedWell__IronDark": {
+      "prop": "RoofedWell",
+      "material": "IronDark",
+      "triangles": 108
+    },
+    "RoofedWell__GoldLight": {
+      "prop": "RoofedWell",
+      "material": "GoldLight",
+      "triangles": 36
+    },
+    "TavernTable__Wood": {
+      "prop": "TavernTable",
+      "material": "Wood",
+      "triangles": 84
+    },
+    "TavernTable__WoodWarm": {
+      "prop": "TavernTable",
+      "material": "WoodWarm",
+      "triangles": 28
+    },
+    "TavernTable__WoodDark": {
+      "prop": "TavernTable",
+      "material": "WoodDark",
+      "triangles": 60
+    },
+    "TavernTable__WoodLight": {
+      "prop": "TavernTable",
+      "material": "WoodLight",
+      "triangles": 288
+    },
+    "TavernTable__GoldDark": {
+      "prop": "TavernTable",
+      "material": "GoldDark",
+      "triangles": 24
+    },
+    "TavernTable__Gold": {
+      "prop": "TavernTable",
+      "material": "Gold",
+      "triangles": 24
+    },
+    "TavernTable__Ivory": {
+      "prop": "TavernTable",
+      "material": "Ivory",
+      "triangles": 48
+    },
+    "TavernTable__Paper": {
+      "prop": "TavernTable",
+      "material": "Paper",
+      "triangles": 12
+    },
+    "TavernTable__Ink": {
+      "prop": "TavernTable",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "TavernTable__FireLight": {
+      "prop": "TavernTable",
+      "material": "FireLight",
+      "triangles": 12
+    },
+    "TavernTable__GoldLight": {
+      "prop": "TavernTable",
+      "material": "GoldLight",
+      "triangles": 48
+    },
+    "TavernTable__WoodEnd": {
+      "prop": "TavernTable",
+      "material": "WoodEnd",
+      "triangles": 12
+    },
+    "CandlePedestal__StoneDark": {
+      "prop": "CandlePedestal",
+      "material": "StoneDark",
+      "triangles": 36
+    },
+    "CandlePedestal__Stone": {
+      "prop": "CandlePedestal",
+      "material": "Stone",
+      "triangles": 528
+    },
+    "CandlePedestal__StoneLight": {
+      "prop": "CandlePedestal",
+      "material": "StoneLight",
+      "triangles": 1056
+    },
+    "CandlePedestal__Burgundy": {
+      "prop": "CandlePedestal",
+      "material": "Burgundy",
+      "triangles": 12
+    },
+    "CandlePedestal__BurgundyLight": {
+      "prop": "CandlePedestal",
+      "material": "BurgundyLight",
+      "triangles": 12
+    },
+    "CandlePedestal__Gold": {
+      "prop": "CandlePedestal",
+      "material": "Gold",
+      "triangles": 60
+    },
+    "CandlePedestal__GoldDark": {
+      "prop": "CandlePedestal",
+      "material": "GoldDark",
+      "triangles": 36
+    },
+    "CandlePedestal__Ivory": {
+      "prop": "CandlePedestal",
+      "material": "Ivory",
+      "triangles": 36
+    },
+    "CandlePedestal__Paper": {
+      "prop": "CandlePedestal",
+      "material": "Paper",
+      "triangles": 36
+    },
+    "CandlePedestal__Ink": {
+      "prop": "CandlePedestal",
+      "material": "Ink",
+      "triangles": 36
+    },
+    "CandlePedestal__FireLight": {
+      "prop": "CandlePedestal",
+      "material": "FireLight",
+      "triangles": 36
+    },
+    "AlchemyBench__Wood": {
+      "prop": "AlchemyBench",
+      "material": "Wood",
+      "triangles": 108
+    },
+    "AlchemyBench__WoodEnd": {
+      "prop": "AlchemyBench",
+      "material": "WoodEnd",
+      "triangles": 24
+    },
+    "AlchemyBench__WoodDark": {
+      "prop": "AlchemyBench",
+      "material": "WoodDark",
+      "triangles": 60
+    },
+    "AlchemyBench__WoodLight": {
+      "prop": "AlchemyBench",
+      "material": "WoodLight",
+      "triangles": 36
+    },
+    "AlchemyBench__IronLight": {
+      "prop": "AlchemyBench",
+      "material": "IronLight",
+      "triangles": 24
+    },
+    "AlchemyBench__SilverLight": {
+      "prop": "AlchemyBench",
+      "material": "SilverLight",
+      "triangles": 36
+    },
+    "AlchemyBench__StoneLight": {
+      "prop": "AlchemyBench",
+      "material": "StoneLight",
+      "triangles": 24
+    },
+    "AlchemyBench__Teal": {
+      "prop": "AlchemyBench",
+      "material": "Teal",
+      "triangles": 24
+    },
+    "AlchemyBench__Paper": {
+      "prop": "AlchemyBench",
+      "material": "Paper",
+      "triangles": 12
+    },
+    "StoneGate__StoneDark": {
+      "prop": "StoneGate",
+      "material": "StoneDark",
+      "triangles": 48
+    },
+    "StoneGate__Stone": {
+      "prop": "StoneGate",
+      "material": "Stone",
+      "triangles": 540
+    },
+    "StoneGate__StoneLight": {
+      "prop": "StoneGate",
+      "material": "StoneLight",
+      "triangles": 456
+    },
+    "StoneGate__WoodLight": {
+      "prop": "StoneGate",
+      "material": "WoodLight",
+      "triangles": 60
+    },
+    "StoneGate__WoodDark": {
+      "prop": "StoneGate",
+      "material": "WoodDark",
+      "triangles": 120
+    },
+    "StoneGate__WoodEnd": {
+      "prop": "StoneGate",
+      "material": "WoodEnd",
+      "triangles": 60
+    },
+    "StoneGate__Iron": {
+      "prop": "StoneGate",
+      "material": "Iron",
+      "triangles": 36
+    },
+    "StoneGate__IronDark": {
+      "prop": "StoneGate",
+      "material": "IronDark",
+      "triangles": 72
+    },
+    "StoneGate__IronLight": {
+      "prop": "StoneGate",
+      "material": "IronLight",
+      "triangles": 72
+    },
+    "StoneGate__Gold": {
+      "prop": "StoneGate",
+      "material": "Gold",
+      "triangles": 12
+    },
+    "BrokenStoneWall__StoneDark": {
+      "prop": "BrokenStoneWall",
+      "material": "StoneDark",
+      "triangles": 132
+    },
+    "BrokenStoneWall__StoneLight": {
+      "prop": "BrokenStoneWall",
+      "material": "StoneLight",
+      "triangles": 1356
+    },
+    "BrokenStoneWall__Stone": {
+      "prop": "BrokenStoneWall",
+      "material": "Stone",
+      "triangles": 1128
+    },
+    "Catapult__WoodDark": {
+      "prop": "Catapult",
+      "material": "WoodDark",
+      "triangles": 48
+    },
+    "Catapult__Wood": {
+      "prop": "Catapult",
+      "material": "Wood",
+      "triangles": 84
+    },
+    "Catapult__Iron": {
+      "prop": "Catapult",
+      "material": "Iron",
+      "triangles": 48
+    },
+    "Catapult__WoodEnd": {
+      "prop": "Catapult",
+      "material": "WoodEnd",
+      "triangles": 12
+    },
+    "Catapult__WoodLight": {
+      "prop": "Catapult",
+      "material": "WoodLight",
+      "triangles": 48
+    },
+    "Catapult__WoodWarm": {
+      "prop": "Catapult",
+      "material": "WoodWarm",
+      "triangles": 24
+    },
+    "Catapult__IronDark": {
+      "prop": "Catapult",
+      "material": "IronDark",
+      "triangles": 12
+    },
+    "Catapult__StoneDark": {
+      "prop": "Catapult",
+      "material": "StoneDark",
+      "triangles": 12
+    },
+    "Catapult__GoldDark": {
+      "prop": "Catapult",
+      "material": "GoldDark",
+      "triangles": 24
+    },
+    "SwordRack__WoodDark": {
+      "prop": "SwordRack",
+      "material": "WoodDark",
+      "triangles": 96
+    },
+    "SwordRack__WoodLight": {
+      "prop": "SwordRack",
+      "material": "WoodLight",
+      "triangles": 48
+    },
+    "SwordRack__Wood": {
+      "prop": "SwordRack",
+      "material": "Wood",
+      "triangles": 72
+    },
+    "SwordRack__WoodEnd": {
+      "prop": "SwordRack",
+      "material": "WoodEnd",
+      "triangles": 36
+    },
+    "SwordRack__WoodWarm": {
+      "prop": "SwordRack",
+      "material": "WoodWarm",
+      "triangles": 24
+    },
+    "SwordRack__Silver": {
+      "prop": "SwordRack",
+      "material": "Silver",
+      "triangles": 64
+    },
+    "SwordRack__SilverLight": {
+      "prop": "SwordRack",
+      "material": "SilverLight",
+      "triangles": 48
+    },
+    "SwordRack__IronDark": {
+      "prop": "SwordRack",
+      "material": "IronDark",
+      "triangles": 192
+    },
+    "SwordRack__Gold": {
+      "prop": "SwordRack",
+      "material": "Gold",
+      "triangles": 96
+    },
+    "SwordRack__Teal": {
+      "prop": "SwordRack",
+      "material": "Teal",
+      "triangles": 24
+    },
+    "SwordRack__Iron": {
+      "prop": "SwordRack",
+      "material": "Iron",
+      "triangles": 48
+    },
+    "SwordRack__Burgundy": {
+      "prop": "SwordRack",
+      "material": "Burgundy",
+      "triangles": 12
+    },
+    "LargeChest__WoodDark": {
+      "prop": "LargeChest",
+      "material": "WoodDark",
+      "triangles": 72
+    },
+    "LargeChest__WoodLight": {
+      "prop": "LargeChest",
+      "material": "WoodLight",
+      "triangles": 24
+    },
+    "LargeChest__WoodWarm": {
+      "prop": "LargeChest",
+      "material": "WoodWarm",
+      "triangles": 60
+    },
+    "LargeChest__Wood": {
+      "prop": "LargeChest",
+      "material": "Wood",
+      "triangles": 48
+    },
+    "LargeChest__WoodEnd": {
+      "prop": "LargeChest",
+      "material": "WoodEnd",
+      "triangles": 72
+    },
+    "LargeChest__Iron": {
+      "prop": "LargeChest",
+      "material": "Iron",
+      "triangles": 192
+    },
+    "LargeChest__IronDark": {
+      "prop": "LargeChest",
+      "material": "IronDark",
+      "triangles": 120
+    },
+    "LargeChest__IronLight": {
+      "prop": "LargeChest",
+      "material": "IronLight",
+      "triangles": 96
+    },
+    "LargeChest__GoldDark": {
+      "prop": "LargeChest",
+      "material": "GoldDark",
+      "triangles": 12
+    },
+    "LargeChest__Gold": {
+      "prop": "LargeChest",
+      "material": "Gold",
+      "triangles": 12
+    },
+    "LargeChest__Ink": {
+      "prop": "LargeChest",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "SmallChest__WoodDark": {
+      "prop": "SmallChest",
+      "material": "WoodDark",
+      "triangles": 36
+    },
+    "SmallChest__WoodWarm": {
+      "prop": "SmallChest",
+      "material": "WoodWarm",
+      "triangles": 36
+    },
+    "SmallChest__Wood": {
+      "prop": "SmallChest",
+      "material": "Wood",
+      "triangles": 72
+    },
+    "SmallChest__WoodLight": {
+      "prop": "SmallChest",
+      "material": "WoodLight",
+      "triangles": 24
+    },
+    "SmallChest__WoodEnd": {
+      "prop": "SmallChest",
+      "material": "WoodEnd",
+      "triangles": 48
+    },
+    "SmallChest__Iron": {
+      "prop": "SmallChest",
+      "material": "Iron",
+      "triangles": 192
+    },
+    "SmallChest__IronDark": {
+      "prop": "SmallChest",
+      "material": "IronDark",
+      "triangles": 120
+    },
+    "SmallChest__IronLight": {
+      "prop": "SmallChest",
+      "material": "IronLight",
+      "triangles": 96
+    },
+    "SmallChest__GoldDark": {
+      "prop": "SmallChest",
+      "material": "GoldDark",
+      "triangles": 12
+    },
+    "SmallChest__Gold": {
+      "prop": "SmallChest",
+      "material": "Gold",
+      "triangles": 12
+    },
+    "SmallChest__Ink": {
+      "prop": "SmallChest",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "ArrowBundle__Wood": {
+      "prop": "ArrowBundle",
+      "material": "Wood",
+      "triangles": 48
+    },
+    "ArrowBundle__WoodEnd": {
+      "prop": "ArrowBundle",
+      "material": "WoodEnd",
+      "triangles": 36
+    },
+    "ArrowBundle__WoodDark": {
+      "prop": "ArrowBundle",
+      "material": "WoodDark",
+      "triangles": 84
+    },
+    "ArrowBundle__WoodLight": {
+      "prop": "ArrowBundle",
+      "material": "WoodLight",
+      "triangles": 12
+    },
+    "ArrowBundle__GoldDark": {
+      "prop": "ArrowBundle",
+      "material": "GoldDark",
+      "triangles": 24
+    },
+    "ArrowBundle__Gold": {
+      "prop": "ArrowBundle",
+      "material": "Gold",
+      "triangles": 72
+    },
+    "HayBales__Hay": {
+      "prop": "HayBales",
+      "material": "Hay",
+      "triangles": 240
+    },
+    "HayBales__HayLight": {
+      "prop": "HayBales",
+      "material": "HayLight",
+      "triangles": 288
+    },
+    "HayBales__HayDark": {
+      "prop": "HayBales",
+      "material": "HayDark",
+      "triangles": 84
+    },
+    "HayBales__WoodDark": {
+      "prop": "HayBales",
+      "material": "WoodDark",
+      "triangles": 216
+    },
+    "Anvil__WoodDark": {
+      "prop": "Anvil",
+      "material": "WoodDark",
+      "triangles": 36
+    },
+    "Anvil__WoodLight": {
+      "prop": "Anvil",
+      "material": "WoodLight",
+      "triangles": 36
+    },
+    "Anvil__Wood": {
+      "prop": "Anvil",
+      "material": "Wood",
+      "triangles": 216
+    },
+    "Anvil__WoodEnd": {
+      "prop": "Anvil",
+      "material": "WoodEnd",
+      "triangles": 12
+    },
+    "Anvil__WoodWarm": {
+      "prop": "Anvil",
+      "material": "WoodWarm",
+      "triangles": 24
+    },
+    "Anvil__IronDark": {
+      "prop": "Anvil",
+      "material": "IronDark",
+      "triangles": 60
+    },
+    "Anvil__Iron": {
+      "prop": "Anvil",
+      "material": "Iron",
+      "triangles": 72
+    },
+    "Anvil__IronLight": {
+      "prop": "Anvil",
+      "material": "IronLight",
+      "triangles": 36
+    },
+    "Brazier__IronDark": {
+      "prop": "Brazier",
+      "material": "IronDark",
+      "triangles": 108
+    },
+    "Brazier__Iron": {
+      "prop": "Brazier",
+      "material": "Iron",
+      "triangles": 96
+    },
+    "Brazier__IronLight": {
+      "prop": "Brazier",
+      "material": "IronLight",
+      "triangles": 96
+    },
+    "Brazier__FireOrange": {
+      "prop": "Brazier",
+      "material": "FireOrange",
+      "triangles": 60
+    },
+    "Brazier__FireGold": {
+      "prop": "Brazier",
+      "material": "FireGold",
+      "triangles": 60
+    },
+    "Brazier__FireLight": {
+      "prop": "Brazier",
+      "material": "FireLight",
+      "triangles": 60
+    }
+  },
+  "units": "studs",
+  "authorAxes": "X right, Y depth, Z up",
+  "geometryCount": 191,
+  "triangles": 44654,
+  "propCount": 20
+}

@@ -1,0 +1,147 @@
+{
+  "candidate": "KC_P3_M04_01",
+  "purpose": "Distinguish image availability from incorrect bare-string preload result",
+  "nativeDatamodel": "Client",
+  "placeId": 85558151074819,
+  "universeId": 10191126818,
+  "ownerId": 86069177,
+  "metadata": [
+    {
+      "assetTypeId": 1,
+      "name": "Assistant_bf661ee6748a7ef2060bb04844240fdc.png",
+      "id": 135284146028712,
+      "updated": "2026-10-08T17:59:55.117Z",
+      "created": "2026-10-08T17:59:55.054Z",
+      "creator": {
+        "Name": "ThisisIvorrovI",
+        "CreatorTargetId": 86069177,
+        "Id": 86069177,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      }
+    },
+    {
+      "assetTypeId": 1,
+      "name": "Assistant_d0f30abcc951d614757dfbb900a20516.png",
+      "id": 80816315379134,
+      "updated": "2026-10-08T18:00:05.398Z",
+      "created": "2026-10-08T18:00:05.336Z",
+      "creator": {
+        "Name": "ThisisIvorrovI",
+        "CreatorTargetId": 86069177,
+        "Id": 86069177,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      }
+    },
+    {
+      "assetTypeId": 1,
+      "name": "Assistant_0dbe6f8b183e7f619f06ab6ac5f9c7dd.png",
+      "id": 127191104998913,
+      "updated": "2026-10-08T18:00:15.395Z",
+      "created": "2026-10-08T18:00:15.335Z",
+      "creator": {
+        "Name": "ThisisIvorrovI",
+        "CreatorTargetId": 86069177,
+        "Id": 86069177,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      }
+    },
+    {
+      "assetTypeId": 1,
+      "name": "Assistant_e1b8f0e327f393e5b49c5abb685239ae.png",
+      "id": 108685301499016,
+      "updated": "2026-10-08T18:00:25.048Z",
+      "created": "2026-10-08T18:00:24.99Z",
+      "creator": {
+        "Name": "ThisisIvorrovI",
+        "CreatorTargetId": 86069177,
+        "Id": 86069177,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      }
+    },
+    {
+      "assetTypeId": 1,
+      "name": "Assistant_c01d3e1e7d147a627094a26e51c7df34.png",
+      "id": 109248728511991,
+      "updated": "2026-10-08T18:00:34.399Z",
+      "created": "2026-10-08T18:00:34.338Z",
+      "creator": {
+        "Name": "ThisisIvorrovI",
+        "CreatorTargetId": 86069177,
+        "Id": 86069177,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      }
+    },
+    {
+      "assetTypeId": 1,
+      "name": "Assistant_6612d6cbea56ba619913fd4c1606bc30.png",
+      "id": 96062275999034,
+      "updated": "2026-10-08T18:00:44.273Z",
+      "created": "2026-10-08T18:00:44.208Z",
+      "creator": {
+        "Name": "ThisisIvorrovI",
+        "CreatorTargetId": 86069177,
+        "Id": 86069177,
+        "HasVerifiedBadge": false,
+        "CreatorType": "User"
+      }
+    }
+  ],
+  "controls": {
+    "imageIsLoaded": false,
+    "tests": [
+      {
+        "callOk": true,
+        "name": "known existing sky string",
+        "statuses": [
+          {
+            "id": "rbxassetid://110937313651057",
+            "status": "Failure"
+          }
+        ]
+      },
+      {
+        "callOk": true,
+        "name": "new sky string",
+        "statuses": [
+          {
+            "id": "rbxassetid://135284146028712",
+            "status": "Failure"
+          }
+        ]
+      },
+      {
+        "callOk": true,
+        "name": "new image through unparented ImageLabel",
+        "statuses": [
+          {
+            "id": "rbxassetid://135284146028712",
+            "status": "Success"
+          }
+        ]
+      }
+    ]
+  },
+  "typedSky": {
+    "success": 6,
+    "statuses": {
+      "rbxassetid://109248728511991": "Success",
+      "rbxassetid://80816315379134": "Success",
+      "rbxassetid://127191104998913": "Success",
+      "rbxassetid://108685301499016": "Success",
+      "rbxassetid://135284146028712": "Success",
+      "rbxassetid://96062275999034": "Success"
+    },
+    "callOk": true,
+    "expected": 6,
+    "failed": 0,
+    "sceneUntouched": true
+  },
+  "conclusion": "All six existing uploaded image IDs loaded successfully through a temporary unparented Sky. Bare-string preloading failed for both an existing working image and a new image. Apply and restore behavior still requires the corrected course lifecycle checks.",
+  "noLiveSkyMutation": true,
+  "noReupload": true
+}

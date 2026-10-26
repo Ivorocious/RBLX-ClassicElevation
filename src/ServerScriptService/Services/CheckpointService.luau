@@ -2,6 +2,8 @@
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local ForwardGate = require(ReplicatedStorage.Shared.ForwardGate)
 
 local CheckpointConfig = require(ReplicatedStorage.Config.CheckpointConfig)
 local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
@@ -29,6 +31,7 @@ type PlayerCheckpointProgress = {
 	nextCheckpointIndex: number,
 	finished: boolean,
 	completedCheckpointIndexes: { [number]: boolean },
+	lastCheckpointPart: BasePart?,
 }
 
 local CheckpointService = {}
@@ -170,8 +173,8 @@ local function getCheckpointDefinitionByIndex(checkpointIndex: number): Checkpoi
 	return nil
 end
 
-local function bindCheckpointPart(checkpointDefinition: CheckpointDefinition)
-	local connection = checkpointDefinition.part.Touched:Connect(function(touchedPart)
+local function bindCheckpointPart(checkpointDefinition: CheckpointDefinition, triggerPart: BasePart)
+	local connection = triggerPart.Touched:Connect(function(touchedPart)
 		local player = getPlayerFromTouchedPart(touchedPart)
 
 		if player == nil or not isValidOfficialRacer(player) then
@@ -205,6 +208,7 @@ local function bindCheckpointPart(checkpointDefinition: CheckpointDefinition)
 		end
 
 		playerProgress.completedCheckpointIndexes[checkpointDefinition.index] = true
+		playerProgress.lastCheckpointPart = triggerPart
 		playerProgress.nextCheckpointIndex += 1
 
 		if resultsService ~= nil and resultsService.RecordCheckpointSplit ~= nil then
@@ -232,8 +236,7 @@ local function bindCheckpointPart(checkpointDefinition: CheckpointDefinition)
 end
 
 local function bindFinishPart(part: BasePart)
-	local connection = part.Touched:Connect(function(touchedPart)
-		local player = getPlayerFromTouchedPart(touchedPart)
+	local function acceptFinish(player: Player?)
 
 		if player == nil or not isValidOfficialRacer(player) then
 			return
@@ -289,6 +292,7 @@ local function bindFinishPart(part: BasePart)
 				playerProgress.lapStartedAt = elapsedRaceTime
 				playerProgress.nextCheckpointIndex = CheckpointConfig.StartingCheckpointIndex + 1
 				playerProgress.completedCheckpointIndexes = {}
+				playerProgress.lastCheckpointPart = nil
 				updateResultCheckpointProgress(player, playerProgress)
 				return
 			end
@@ -314,7 +318,33 @@ local function bindFinishPart(part: BasePart)
 				elapsedRaceTime
 			)
 		)
-	end)
+	end
+	local connection
+	if part:GetAttribute("RequireForwardCrossing") == true then
+		local samples = {}
+		connection = RunService.Heartbeat:Connect(function(dt)
+			for _, player in Players:GetPlayers() do
+				local character = player.Character
+				local root = if character then character:FindFirstChild("HumanoidRootPart") else nil
+				local humanoid = if character then character:FindFirstChildOfClass("Humanoid") else nil
+				local immune = character and (character:GetAttribute("RecoveryUntil") or 0) > workspace:GetServerTimeNow()
+				local old = samples[player.UserId]
+				if root and root:IsA("BasePart") and humanoid and humanoid.Health > 0 and not immune and isValidOfficialRacer(player) then
+					if old and old.character == character and old.raceId == getCurrentRaceId()
+						and ForwardGate.Crossed(part.CFrame, part.Size, old.position, root.Position, dt) then
+						acceptFinish(player)
+					end
+					samples[player.UserId] = {position=root.Position, character=character, raceId=getCurrentRaceId()}
+				else
+					samples[player.UserId] = nil
+				end
+			end
+		end)
+	else
+		connection = part.Touched:Connect(function(touchedPart)
+			acceptFinish(getPlayerFromTouchedPart(touchedPart))
+		end)
+	end
 
 	table.insert(touchConnections, connection)
 end
@@ -374,7 +404,13 @@ local function bindCourse()
 			)
 		end
 
-		bindCheckpointPart(checkpointDefinition)
+		bindCheckpointPart(checkpointDefinition, checkpointDefinition.part)
+		local alternatives = checkpointDefinition.part:FindFirstChild("AlternateTriggers")
+		if alternatives then
+			for _, trigger in alternatives:GetChildren() do
+				if trigger:IsA("BasePart") then bindCheckpointPart(checkpointDefinition, trigger) end
+			end
+		end
 	end
 
 	bindFinishPart(finishInstance)
@@ -410,6 +446,55 @@ function CheckpointService.SkipCheckpointForStudio(player: Player)
 	-- Landing uses the normal checkpoint touch validation and saves recovery progress.
 end
 
+function CheckpointService.SetInspectionCheckpointForStudio(player: Player, checkpointIndex: number): BasePart?
+	if not game:GetService("RunService"):IsStudio()
+		or courseService == nil
+		or playerRaceService == nil
+		or playerRaceService.GetPlayerStatus == nil
+		or playerRaceService.IsOfficialRacer == nil
+	then
+		return nil
+	end
+
+	local status = playerRaceService.GetPlayerStatus(player)
+	if (status ~= RaceConstants.PlayerRaceStatus.Racing and status ~= RaceConstants.PlayerRaceStatus.Finished)
+		or playerRaceService.IsOfficialRacer(player) ~= true
+	then
+		return nil
+	end
+
+	local raceId = getCurrentRaceId()
+	if raceId == "" then return nil end
+	local targetPart = startPart
+	if checkpointIndex ~= CheckpointConfig.StartingCheckpointIndex then
+		local definition = getCheckpointDefinitionByIndex(checkpointIndex)
+		targetPart = if definition ~= nil then definition.part else nil
+	end
+	if targetPart == nil then return nil end
+
+	if status == RaceConstants.PlayerRaceStatus.Finished and playerRaceService.SetPlayerStatus ~= nil then
+		playerRaceService.SetPlayerStatus(player, RaceConstants.PlayerRaceStatus.Racing, "Inspection checkpoint jump")
+		if playerRaceService.GetPlayerStatus(player) ~= RaceConstants.PlayerRaceStatus.Racing then return nil end
+	end
+
+	local progress = getOrCreatePlayerProgress(player, raceId)
+	progress.currentLap = CheckpointConfig.DefaultLapNumber
+	progress.finished = false
+	progress.completedCheckpointIndexes = {}
+	if checkpointIndex == CheckpointConfig.StartingCheckpointIndex then
+		progress.nextCheckpointIndex = CheckpointConfig.StartingCheckpointIndex + 1
+		progress.lastCheckpointPart = nil
+	else
+		for _, definition in ipairs(checkpointDefinitions) do
+			if definition.index <= checkpointIndex then progress.completedCheckpointIndexes[definition.index] = true end
+		end
+		progress.nextCheckpointIndex = checkpointIndex + 1
+		progress.lastCheckpointPart = targetPart
+	end
+	updateResultCheckpointProgress(player, progress)
+	return targetPart
+end
+
 function CheckpointService.GetCheckpointRespawnCFrame(player: Player): CFrame?
 	local latestCheckpointIndex = CheckpointService.GetLatestCheckpointIndex(player)
 	local respawnPart = startPart
@@ -419,11 +504,52 @@ function CheckpointService.GetCheckpointRespawnCFrame(player: Player): CFrame?
 
 		if checkpointDefinition ~= nil then
 			respawnPart = checkpointDefinition.part
+			local progress = playerProgressByUserId[player.UserId]
+			local lastPart = progress and progress.lastCheckpointPart
+			if lastPart and (lastPart == respawnPart or lastPart:IsDescendantOf(respawnPart)) then
+				respawnPart = lastPart
+			end
 		end
 	end
 
 	if respawnPart == nil then
 		return nil
+	end
+
+	local authoredRespawn = respawnPart:GetAttribute("RespawnCFrame")
+	if typeof(authoredRespawn) == "CFrame" then
+		local area = respawnPart:GetAttribute("RespawnAreaSize")
+		if typeof(area) == "Vector3" and area.X >= 6 and area.Z >= 6 then
+			local racers = game:GetService("Players"):GetPlayers()
+			table.sort(racers, function(left, right) return left.UserId < right.UserId end)
+			local index = table.find(racers, player) or 1
+			local columns = math.max(1, 1 + math.floor((area.X - 3) / 4.5))
+			local rows = math.max(1, 1 + math.floor((area.Z - 3) / 4.5))
+			local capacity = columns * rows
+			local fallback: CFrame? = nil
+			for attempt = 0, capacity - 1 do
+				local slot = (index - 1 + attempt) % capacity
+				local x = (slot % columns - (columns - 1) / 2) * 4.5
+				local z = (math.floor(slot / columns) - (rows - 1) / 2) * 4.5
+				local candidate = authoredRespawn * CFrame.new(x, 0, z)
+				fallback = fallback or candidate
+				local occupied = false
+				for _, racer in ipairs(racers) do
+					local character = racer.Character
+					local root = character and character:FindFirstChild("HumanoidRootPart")
+					if racer ~= player and root and root:IsA("BasePart") then
+						local delta = root.Position - candidate.Position
+						if math.abs(delta.Y) < 8 and Vector3.new(delta.X, 0, delta.Z).Magnitude < 4 then
+							occupied = true
+							break
+						end
+					end
+				end
+				if not occupied then return candidate end
+			end
+			return fallback
+		end
+		return authoredRespawn
 	end
 
 	return respawnPart.CFrame + Vector3.new(0, RESPAWN_VERTICAL_OFFSET, 0)

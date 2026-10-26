@@ -1,0 +1,16 @@
+{
+  "sha256": "fe9c13d085a41d5b8dc04d5eca5000d511bc8a56445756d0c8bbae8b8b5eb0a1",
+  "request": {
+    "assetType": "Model",
+    "displayName": "SC_HullClear31Stern",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/c50c0969-562d-4634-a80f-20030a93db6a",
+  "assetId": "84659531108870"
+}

@@ -1,0 +1,60 @@
+{
+  "build": "SC_REV_03",
+  "placements": [
+    {
+      "asset": "SC_R_CaveChamber",
+      "p": [
+        120,
+        0,
+        22
+      ],
+      "yaw": 0,
+      "scale": [
+        1.15,
+        1.6,
+        1.6
+      ]
+    },
+    {
+      "asset": "SC_R_CaveTideBend",
+      "p": [
+        79,
+        0,
+        58
+      ],
+      "yaw": -90,
+      "scale": [
+        1.1,
+        1.65,
+        2.25
+      ]
+    }
+  ],
+  "checks": {
+    "cameraSightline": true,
+    "routeSegment0": true,
+    "routeSegment0Side-1": true,
+    "routeSegment0Side1": true,
+    "routeSegment1": true,
+    "routeSegment1Side-1": true,
+    "routeSegment1Side1": true,
+    "routeSegment2": true,
+    "routeSegment2Side-1": true,
+    "routeSegment2Side1": true,
+    "routeSegment3": true,
+    "routeSegment3Side-1": true,
+    "routeSegment3Side1": true,
+    "routeSegment4": true,
+    "routeSegment4Side-1": true,
+    "routeSegment4Side1": true
+  },
+  "roofHeightsAtRoute": {
+    "120,40": 38.4,
+    "118,46": 31.97,
+    "115,52": 37.67,
+    "113,58": 39.6,
+    "101,58": 39.6,
+    "91,58": 39.6
+  },
+  "method": "World-space BVH rays through both uncollidable visual meshes; camera sightline, center/10-stud-wide route and vertical headroom"
+}

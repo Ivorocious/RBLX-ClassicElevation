@@ -1,0 +1,14 @@
+{
+  "source": "tools\\moonlit-citadel\\phase3\\closeout-20261014\\drafts\\keep-surface52\\render01\\MC_KEEP_SURFACE52_CANDIDATE.blend",
+  "sha256": "d2bc244216110d37b14f44ea6ed053b44302a3b2a39a98d943ee4ef56849c175",
+  "objects": 1378,
+  "meshes": 1356,
+  "protectedVisibleMeshes": 717,
+  "worldMeshes": 639,
+  "keepRelief": [
+    1.0,
+    1.0,
+    1.04
+  ],
+  "readOnlyInspection": true
+}

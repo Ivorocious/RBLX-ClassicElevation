@@ -1,0 +1,55 @@
+{
+  "status": "Working limits; not owner-approved device limits or measured readiness",
+  "placedSceneryTargetTriangles": 115000,
+  "placedSceneryHardCeilingTriangles": 140000,
+  "estimatedMapBasePartsCeiling": 1200,
+  "uniqueVisualMeshCeiling": 48,
+  "opaqueAtlasCountCeiling": 1,
+  "atlasSidePixelsCeiling": 128,
+  "simultaneousTransparentEffectObjectsCeiling": 4,
+  "dynamicLightCeiling": 0,
+  "perAssetTriangles": {
+    "dock": 120,
+    "post": 60,
+    "crate": 100,
+    "barrel": 180,
+    "hull": 900,
+    "deck": 350,
+    "rib": 100,
+    "spar": 180,
+    "sail": 40,
+    "cliff": 1200,
+    "cave": 2400,
+    "palm": 350,
+    "cannon": 450,
+    "foam": 80,
+    "gate": 240,
+    "water": 24,
+    "cover": 120,
+    "mast": 120,
+    "cue": 80
+  },
+  "studyLimits": {
+    "dock_wreck": {
+      "triangles": 9000,
+      "instances": 95
+    },
+    "cave": {
+      "triangles": 6000,
+      "instances": 45
+    },
+    "ribs_spars": {
+      "triangles": 6000,
+      "instances": 60
+    }
+  },
+  "assumptions": [
+    "Counts include every placed copy; working full-map estimate is not a route layout.",
+    "No subdivision, displacement, cloth or ocean simulation.",
+    "Visuals use simple independent colliders; no decorative touch/query participation.",
+    "One fixture controller with batched hazard updates; no per-prop scripts.",
+    "Later measurement goal: stable 30 FPS minimum and 60 FPS preferred on agreed target devices; presently unverified."
+  ],
+  "establishedAtBuild": "SC_P1_01",
+  "appliesTo": "SC_KIT_04 / SC_P1_07; original numeric ceilings unchanged"
+}

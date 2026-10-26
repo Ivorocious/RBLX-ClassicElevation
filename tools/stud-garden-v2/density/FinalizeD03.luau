@@ -1,0 +1,18 @@
+return function(root, fingerprint)
+    assert(game.PlaceId==85558151074819 and not game:GetService("RunService"):IsRunning())
+    assert(root:GetAttribute("CandidateId")=="SGV2_Density_D03")
+    local before=fingerprint(root)
+    assert(before.geometry.hash=="21dba2d5" and before.parts==7833 and before.scripts==0)
+    assert(root.CourseInfo:GetAttribute("Enabled")==false)
+    for _,p in root:GetDescendants() do if p:IsA("BasePart") then assert(p.Anchored) end end
+    root:SetAttribute("Phase","Garden density pass installed; three scoped reviews passed")
+    root:SetAttribute("RuntimeStatus","D03: 11 connected movement steps and 2 declared fall recoveries passed; full-race, crowd and device checks remain")
+    root:SetAttribute("VerifiedGeometryFingerprint","21dba2d5")
+    root:SetAttribute("DensityArtScore",8.5)
+    root:SetAttribute("DensityRouteScore",8.6)
+    root:SetAttribute("DensityContactScore",8.5)
+    root:SetAttribute("DensityReviewDate","2026-10-06")
+    root:SetAttribute("DensityNewParts",1351)
+    root:SetAttribute("DensityNewLowColliders",142)
+    return fingerprint(root)
+end

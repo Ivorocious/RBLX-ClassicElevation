@@ -1,0 +1,162 @@
+{
+  "state": "passed",
+  "groups": [
+    {
+      "group": "Bay3__Navy",
+      "components": 6,
+      "maxVertexDeviation": 0.0
+    },
+    {
+      "group": "Bay3__Ivory",
+      "components": 4,
+      "maxVertexDeviation": 0.0
+    },
+    {
+      "group": "Bay3__Gold",
+      "components": 3,
+      "maxVertexDeviation": 0.0
+    },
+    {
+      "group": "Bay3__Pale",
+      "components": 8,
+      "maxVertexDeviation": 0.0
+    },
+    {
+      "group": "Bay3Trim__Pale",
+      "components": 8,
+      "maxVertexDeviation": 0.0
+    },
+    {
+      "group": "Bay3Trim__Gold",
+      "components": 6,
+      "maxVertexDeviation": 0.0
+    },
+    {
+      "group": "Bay1__Navy",
+      "components": 6,
+      "maxVertexDeviation": 3.932099843950709e-06
+    },
+    {
+      "group": "Bay1__Ivory",
+      "components": 4,
+      "maxVertexDeviation": 3.84438408218557e-06
+    },
+    {
+      "group": "Bay1__Gold",
+      "components": 3,
+      "maxVertexDeviation": 3.84438408218557e-06
+    },
+    {
+      "group": "Bay1__Pale",
+      "components": 8,
+      "maxVertexDeviation": 3.84438408218557e-06
+    },
+    {
+      "group": "Bay1Trim__Pale",
+      "components": 8,
+      "maxVertexDeviation": 3.84438408218557e-06
+    },
+    {
+      "group": "Bay1Trim__Gold",
+      "components": 6,
+      "maxVertexDeviation": 3.82214057026431e-06
+    },
+    {
+      "group": "Bay2__Navy",
+      "components": 6,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay2__Ivory",
+      "components": 4,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay2__Gold",
+      "components": 3,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay2__Pale",
+      "components": 8,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay2Trim__Pale",
+      "components": 8,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay2Trim__Gold",
+      "components": 6,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay4__Navy",
+      "components": 6,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay4__Ivory",
+      "components": 4,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay4__Gold",
+      "components": 3,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay4__Pale",
+      "components": 8,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay4Trim__Pale",
+      "components": 8,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay4Trim__Gold",
+      "components": 6,
+      "maxVertexDeviation": 2.1324806311895372e-06
+    },
+    {
+      "group": "Bay5__Navy",
+      "components": 6,
+      "maxVertexDeviation": 3.932099843950709e-06
+    },
+    {
+      "group": "Bay5__Ivory",
+      "components": 4,
+      "maxVertexDeviation": 3.84438408218557e-06
+    },
+    {
+      "group": "Bay5__Gold",
+      "components": 3,
+      "maxVertexDeviation": 3.84438408218557e-06
+    },
+    {
+      "group": "Bay5__Pale",
+      "components": 8,
+      "maxVertexDeviation": 3.84438408218557e-06
+    },
+    {
+      "group": "Bay5Trim__Pale",
+      "components": 8,
+      "maxVertexDeviation": 3.84438408218557e-06
+    },
+    {
+      "group": "Bay5Trim__Gold",
+      "components": 6,
+      "maxVertexDeviation": 3.82214057026431e-06
+    }
+  ],
+  "bayCount": 5,
+  "rankSlots": 15,
+  "verifiedComponents": 175,
+  "maxVertexDeviation": 3.932099843950709e-06,
+  "method": "Executed only bay constants, helpers and bay loops in an isolated Blender process. Compared closed geometry, bounds, vertices, surface area and signed volume with center and remaining candidates.",
+  "preservedOutputs": "No original builder output, manifest, .blend or .fbx was rewritten.",
+  "nativeLimit": "Does not verify Roblox import or native display rendering."
+}

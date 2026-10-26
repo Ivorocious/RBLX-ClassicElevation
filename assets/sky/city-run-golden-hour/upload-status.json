@@ -1,0 +1,22 @@
+{
+  "state": "complete",
+  "studioId": "93dea81b-045d-4de3-bbc9-ccef9dab42d7",
+  "placeId": 85558151074819,
+  "method": "Roblox Studio upload_image",
+  "uploaded": {
+    "http://127.0.0.1:8770/golden-hour-lf.png": "rbxassetid://112078473274944",
+    "http://127.0.0.1:8770/golden-hour-dn-roblox-final.png": "rbxassetid://77265981493578",
+    "http://127.0.0.1:8770/golden-hour-rt.png": "rbxassetid://100023227808303",
+    "http://127.0.0.1:8770/golden-hour-bk.png": "rbxassetid://101590100389932",
+    "http://127.0.0.1:8770/golden-hour-ft.png": "rbxassetid://103969206026906",
+    "http://127.0.0.1:8770/golden-hour-up-roblox.png": "rbxassetid://93036780813806"
+  },
+  "skyProperties": {
+    "SkyboxFt": "rbxassetid://101590100389932",
+    "SkyboxBk": "rbxassetid://103969206026906",
+    "SkyboxLf": "rbxassetid://112078473274944",
+    "SkyboxRt": "rbxassetid://100023227808303",
+    "SkyboxUp": "rbxassetid://93036780813806",
+    "SkyboxDn": "rbxassetid://77265981493578"
+  }
+}

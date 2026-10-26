@@ -1,0 +1,253 @@
+{
+  "created": "2026-10-27",
+  "zip": "source.zip",
+  "zipSha256": "3c084d7292956d729c69e2f3d3a41c97eca1f6945f83adea1bde41ffdd741099",
+  "note": "Edited files are stored as they were before the shelving edits.",
+  "files": [
+    {
+      "path": "src/ReplicatedStorage/Config/AscentMotionConfig.luau",
+      "action": "removed",
+      "bytes": 1414,
+      "sha256": "3fc1230fe7c66ef7493b2e0963120deb9fe0fac147ef94deac0f843dde532686",
+      "git": "modified"
+    },
+    {
+      "path": "src/ReplicatedStorage/Config/ClassicAscentAmbienceConfig.luau",
+      "action": "removed",
+      "bytes": 955,
+      "sha256": "688c93e9df573798eb78af89fdf531ce6598be39ccdbe86895a732ee981311c8",
+      "git": "modified"
+    },
+    {
+      "path": "src/ServerScriptService/Services/CourseMotionService.luau",
+      "action": "removed",
+      "bytes": 30103,
+      "sha256": "d3a478a1feca883defa4763106647cd121295e71fbe17c2c65a3191cb39c17db",
+      "git": "modified"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentDepthPass.luau",
+      "action": "removed",
+      "bytes": 6135,
+      "sha256": "a1e8552a2fe5b8a3b7709414e03fa9a52d20be07220334f907befc2e26da1d5b",
+      "git": "committed"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentDetails.luau",
+      "action": "removed",
+      "bytes": 5118,
+      "sha256": "287b1715972a5785c368a6dac49b858dc9062a9906dea6930f453b6c0311bf9b",
+      "git": "committed"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentEditing.luau",
+      "action": "removed",
+      "bytes": 2407,
+      "sha256": "b9c017228fd60a3dfdacf220c5b1a12687c6e7117cc33bfeb3c56b2cfe30bbd8",
+      "git": "untracked"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentEnvironment.luau",
+      "action": "removed",
+      "bytes": 12127,
+      "sha256": "32901bd1d1c293617536cd638fdef1ff9ae1276392b7b56146dc87e378197a3d",
+      "git": "committed"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentLayout.luau",
+      "action": "removed",
+      "bytes": 1606,
+      "sha256": "ca3f16af9140b203b4d1ccb455cefa853a067efd8a2fe172ddc8b0e87d247bac",
+      "git": "committed"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentObstacles.luau",
+      "action": "removed",
+      "bytes": 15200,
+      "sha256": "44c2d71784d788c8e8c8a86cd01f3428b4dcc973b4dce5bbf445ebfffef8836a",
+      "git": "committed"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentPropManifest.luau",
+      "action": "removed",
+      "bytes": 3092,
+      "sha256": "1109646445e1a7460e99aca1e3c13e09bb776176cb56c3d1f6302ba5e28f2d67",
+      "git": "committed"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentProps.luau",
+      "action": "removed",
+      "bytes": 3145,
+      "sha256": "cf731b8a795c58f0acc4039e415f1af921aca3cc1f0943afb960c9d92bdbf492",
+      "git": "modified"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentRiverFinishPass.luau",
+      "action": "removed",
+      "bytes": 10229,
+      "sha256": "268323f6820a3880c7501697082edead370936fe0b9a4a90aaf328232c848391",
+      "git": "committed"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentSignAdjustments.luau",
+      "action": "removed",
+      "bytes": 548,
+      "sha256": "efa8803c11ed2d944c54603130286e066ad5785649931b3b8fe81bc3ff7de4cf",
+      "git": "committed"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentV7PropManifest.luau",
+      "action": "removed",
+      "bytes": 589,
+      "sha256": "f7f0b13775eb7c6a084feb2b2187a3df7adef54ad1b77d4f19659a21005bb8da",
+      "git": "committed"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/AscentWorld.luau",
+      "action": "removed",
+      "bytes": 9791,
+      "sha256": "dc01ecb331a45c04940572752a7006126cab592398dfc73944c313b33a8d78c3",
+      "git": "committed"
+    },
+    {
+      "path": "src/ServerStorage/CourseBuilders/ClassicAscentPointToPoint.luau",
+      "action": "removed",
+      "bytes": 10906,
+      "sha256": "80ce73c4ce40877ff890e5a63651e3719801dc08ab555d86f57663833c5757f4",
+      "git": "modified"
+    },
+    {
+      "path": "src/StarterPlayer/StarterPlayerScripts/AscentWater.client.luau",
+      "action": "removed",
+      "bytes": 1656,
+      "sha256": "70445671abec3441e4df56d9b85f0323f2e21711e112594dc2a88e128ab46804",
+      "git": "committed"
+    },
+    {
+      "path": "tests/studio/ClassicAscentCheckpoints.server.luau",
+      "action": "removed",
+      "bytes": 1658,
+      "sha256": "7ab8b43f2cc9ac989650315c41d4d52ae0b77f5040b0344a75ff9dc433839234",
+      "git": "untracked"
+    },
+    {
+      "path": "tests/studio/ClassicAscentEditing.luau",
+      "action": "removed",
+      "bytes": 6731,
+      "sha256": "e729bb6875aeccad556075f41632b6f975337bce21c418a3878264952a1e70ff",
+      "git": "untracked"
+    },
+    {
+      "path": "tests/studio/ClassicAscentHazards.luau",
+      "action": "removed",
+      "bytes": 9317,
+      "sha256": "752330021fd79aedf577200aa10a4ded5b63be3180acf9d5dec8c5f1995da05c",
+      "git": "modified"
+    },
+    {
+      "path": "tests/studio/ClassicAscentRecovery.luau",
+      "action": "removed",
+      "bytes": 3616,
+      "sha256": "3a1a62c8a00182278c624275ebfe3292bfc744aa1c0576a424a2a0dc7aca5f6a",
+      "git": "committed"
+    },
+    {
+      "path": "tests/studio/ClassicAscentRiverFinish.luau",
+      "action": "removed",
+      "bytes": 5860,
+      "sha256": "c0eff5b62a3b43c4cb530f85c05760a1576014e31b80f69bc41d5f8f0054cf66",
+      "git": "committed"
+    },
+    {
+      "path": "tests/studio/ClassicAscentRiverMotion.luau",
+      "action": "removed",
+      "bytes": 1989,
+      "sha256": "0a23c74b36715ba0d3415624d8141b916d6b5c43b65caaf991dd1ef0ef5a31f9",
+      "git": "committed"
+    },
+    {
+      "path": "tests/studio/ClassicAscentSkylineJump.client.luau",
+      "action": "removed",
+      "bytes": 2513,
+      "sha256": "0c7a626b3f58ff1515e809077ec37e5dd978f9dcd62460b116d335e9caf3d271",
+      "git": "committed"
+    },
+    {
+      "path": "tests/studio/ClassicAscentSmoke.luau",
+      "action": "removed",
+      "bytes": 6200,
+      "sha256": "13c7bde8f682995ed1a2cad3fa8bd88e8b21b95adfcf8628e4b5edea5f69c844",
+      "git": "modified"
+    },
+    {
+      "path": "tests/studio/ClassicAscentStaging.luau",
+      "action": "removed",
+      "bytes": 6330,
+      "sha256": "501b947421da265892b99a5f183fe2b2aec816664f9107651d0d8ebfa483075c",
+      "git": "committed"
+    },
+    {
+      "path": "tests/studio/ClassicAscentV4QuickCheck.luau",
+      "action": "removed",
+      "bytes": 3574,
+      "sha256": "f88ed15368310898d987a37c46eb4b7a703e92c1c74a318bf712765568afce94",
+      "git": "committed"
+    },
+    {
+      "path": "src/ReplicatedStorage/Config/CourseConfig.luau",
+      "action": "edited",
+      "bytes": 1748,
+      "sha256": "2ece4a2271c32e79ee433301d8f4e7344b96893ea8201a6a7962e29fdadee05a",
+      "git": "modified"
+    },
+    {
+      "path": "src/ReplicatedStorage/Config/RaceConfig.luau",
+      "action": "edited",
+      "bytes": 2452,
+      "sha256": "d8eeccc48c957d4df09249519d04b00bd65a4da817eb0459a8b4109ad8bc729f",
+      "git": "modified"
+    },
+    {
+      "path": "src/ReplicatedStorage/Config/VotingArtwork.luau",
+      "action": "edited",
+      "bytes": 1942,
+      "sha256": "3ced7a91b80d98b22165e517c169b5813806da5805abef70c7f89f2ded1b5d6e",
+      "git": "untracked"
+    },
+    {
+      "path": "src/ServerScriptService/Main.server.luau",
+      "action": "edited",
+      "bytes": 2745,
+      "sha256": "6c0cfe98e9831d2083135d45e599b685b68af084ede88523dac771c479dda225",
+      "git": "modified"
+    },
+    {
+      "path": "src/ServerScriptService/Services/CourseService.luau",
+      "action": "edited",
+      "bytes": 27856,
+      "sha256": "2cecd13737799b658dc0d5c542890c2880a163bbe7b25e610d6c26a6bcf2b4aa",
+      "git": "modified"
+    },
+    {
+      "path": "src/StarterPlayer/StarterPlayerScripts/ClassicAscentAmbience.client.luau",
+      "action": "edited",
+      "bytes": 9937,
+      "sha256": "55abb316c75b3d25f4e29bb7429970c072dc1c5669ad18694a14f07038317cd2",
+      "git": "modified"
+    },
+    {
+      "path": "tests/studio/CourseAmbience.luau",
+      "action": "edited",
+      "bytes": 6311,
+      "sha256": "585cdb093cc15c5116caec14ee30df20b3695d058bf673e10bca024adf5e5061",
+      "git": "untracked"
+    },
+    {
+      "path": "tests/studio/CourseLifecycle.luau",
+      "action": "edited",
+      "bytes": 1603,
+      "sha256": "e750c08aa6a1c6aae6bd9ebe72350d25c064ae815cd74fb56a7a6a6904275eaa",
+      "git": "committed"
+    }
+  ]
+}

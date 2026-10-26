@@ -1,0 +1,16 @@
+{
+  "sha256": "8561690d30fa9a81e43d72bef5e8518dd0a07fedf75346b2e0a451556231ab91",
+  "request": {
+    "assetType": "Model",
+    "displayName": "SC_CliffLedge30A",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/46717cd5-7111-4a57-81b7-00e6b1a3bb5d",
+  "assetId": "112321221154627"
+}

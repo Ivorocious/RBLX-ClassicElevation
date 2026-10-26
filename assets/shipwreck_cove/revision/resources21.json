@@ -1,0 +1,16 @@
+{
+  "lights": 0,
+  "touch": 8,
+  "meshParts": 322,
+  "baseParts": 589,
+  "textureIDs": 1,
+  "runtimeSourceIdentical20": true,
+  "sounds": 10,
+  "descendants": 685,
+  "collidable": 77,
+  "query": 79,
+  "colliderParityWith20": 77,
+  "partialTransparency": 0,
+  "meshIDs": 42,
+  "build": "SC_MAP_21"
+}

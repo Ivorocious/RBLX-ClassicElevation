@@ -1,0 +1,5872 @@
+{
+  "build": "V3_STAGE2_02",
+  "source": "Original footprint inventory; Optimized gameplay clone",
+  "placements": [
+    {
+      "asset": "V3_Skyline_1",
+      "pos": [
+        3738.0,
+        0,
+        -557.0
+      ],
+      "size": [
+        62,
+        165,
+        37.0
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_1_10",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_2",
+      "pos": [
+        3800.0,
+        0,
+        -469.0
+      ],
+      "size": [
+        48,
+        133,
+        41.0
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_15",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Sage_Wide",
+      "pos": [
+        3532.0,
+        0,
+        -138.775
+      ],
+      "size": [
+        34.8,
+        56.8974,
+        33.25
+      ],
+      "yaw": 0,
+      "label": "CityInfill_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3532.0,
+        56.8974,
+        -138.775
+      ],
+      "size": [
+        35.0,
+        4.2826,
+        33.45
+      ],
+      "yaw": 0,
+      "label": "CityInfill_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Skyline_1",
+      "pos": [
+        3627.565,
+        0,
+        -379.2
+      ],
+      "size": [
+        60.48999999999978,
+        155,
+        51.65999999999997
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_11",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_2",
+      "pos": [
+        3896.0,
+        0,
+        -483.0
+      ],
+      "size": [
+        48,
+        163.05,
+        41.0
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_17",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_3",
+      "pos": [
+        3482.0,
+        0,
+        -400.0
+      ],
+      "size": [
+        61.19999999999982,
+        157.45,
+        36.200000000000045
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_1_06",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Sage_Wide",
+      "pos": [
+        3520.245,
+        0,
+        49.785000000000004
+      ],
+      "size": [
+        100.91000000000012,
+        137.47,
+        100.91
+      ],
+      "yaw": 0,
+      "label": "CityInfill_10",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3520.245,
+        137.47,
+        49.785000000000004
+      ],
+      "size": [
+        101.11000000000013,
+        6,
+        101.11
+      ],
+      "yaw": 0,
+      "label": "CityInfill_10_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3453.955,
+        0,
+        59.225
+      ],
+      "size": [
+        32.89000000000014,
+        53.0565,
+        33.25
+      ],
+      "yaw": 0,
+      "label": "CityInfill_08",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3453.955,
+        53.0565,
+        59.225
+      ],
+      "size": [
+        33.090000000000146,
+        3.9935,
+        33.45
+      ],
+      "yaw": 0,
+      "label": "CityInfill_08_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Skyline_4",
+      "pos": [
+        3418.0,
+        0,
+        -414.0
+      ],
+      "size": [
+        64,
+        182,
+        37.0
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_1_05",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Sage_Wide",
+      "pos": [
+        3606.265,
+        0,
+        56.44
+      ],
+      "size": [
+        64.20999999999985,
+        91.45,
+        67.32000000000001
+      ],
+      "yaw": 0,
+      "label": "CityInfill_07",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3606.265,
+        91.45,
+        56.44
+      ],
+      "size": [
+        64.40999999999985,
+        6,
+        67.52000000000001
+      ],
+      "yaw": 0,
+      "label": "CityInfill_07_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3546.935,
+        0,
+        -166.25
+      ],
+      "size": [
+        58.32999999999974,
+        89.12,
+        55.540000000000006
+      ],
+      "yaw": 0,
+      "label": "CityInfill_03",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3546.935,
+        89.12,
+        -166.25
+      ],
+      "size": [
+        58.529999999999745,
+        6,
+        55.74000000000001
+      ],
+      "yaw": 0,
+      "label": "CityInfill_03_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3461.375,
+        0,
+        96.0
+      ],
+      "size": [
+        37.249999999999815,
+        61.38,
+        37.999999999999986
+      ],
+      "yaw": 0,
+      "label": "CityInfill_09",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3461.375,
+        61.38,
+        96.0
+      ],
+      "size": [
+        37.44999999999982,
+        4.62,
+        38.19999999999999
+      ],
+      "yaw": 0,
+      "label": "CityInfill_09_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Skyline_3",
+      "pos": [
+        3366.865,
+        0,
+        -366.27
+      ],
+      "size": [
+        65.12999999999965,
+        164,
+        63.78000000000003
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_06",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3490.0,
+        0,
+        -163.79000000000002
+      ],
+      "size": [
+        29.99999999999982,
+        68.82,
+        36.08
+      ],
+      "yaw": 0,
+      "label": "CityInfill_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3490.0,
+        68.82,
+        -163.79000000000002
+      ],
+      "size": [
+        30.199999999999818,
+        5.180000000000001,
+        36.28
+      ],
+      "yaw": 0,
+      "label": "CityInfill_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Skyline_2",
+      "pos": [
+        3866.0,
+        0,
+        -550.0
+      ],
+      "size": [
+        62,
+        163.05,
+        37.0
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_1_12",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Sage_Wide",
+      "pos": [
+        3452.755,
+        0,
+        -97.375
+      ],
+      "size": [
+        32.49000000000005,
+        50.22,
+        38.249999999999986
+      ],
+      "yaw": 0,
+      "label": "CityInfill_05",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3452.755,
+        50.22,
+        -97.375
+      ],
+      "size": [
+        32.690000000000055,
+        3.7800000000000002,
+        38.44999999999999
+      ],
+      "yaw": 0,
+      "label": "CityInfill_05_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Skyline_1",
+      "pos": [
+        3930.0,
+        0,
+        -557.0
+      ],
+      "size": [
+        63.19999999999982,
+        186,
+        36.200000000000045
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_1_13",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_2",
+      "pos": [
+        3555.5699999999997,
+        0,
+        -402.20000000000005
+      ],
+      "size": [
+        45.20000000000027,
+        160,
+        40.19999999999999
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_10",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_3",
+      "pos": [
+        3848.0,
+        0,
+        -476.0
+      ],
+      "size": [
+        45.19999999999982,
+        146.45,
+        40.200000000000045
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_16",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_4",
+      "pos": [
+        3802.0,
+        0,
+        -564.0
+      ],
+      "size": [
+        63.19999999999982,
+        184.45,
+        36.200000000000045
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_1_11",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_1",
+      "pos": [
+        3704.0,
+        0,
+        -476.0
+      ],
+      "size": [
+        48,
+        153.05,
+        41.0
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_13",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_2",
+      "pos": [
+        3752.0,
+        0,
+        -483.0
+      ],
+      "size": [
+        45.19999999999982,
+        112,
+        40.200000000000045
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_14",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Ochre_Narrow",
+      "pos": [
+        3618.21,
+        0,
+        -132.775
+      ],
+      "size": [
+        36.22000000000007,
+        59.5665,
+        32.25
+      ],
+      "yaw": 0,
+      "label": "CityInfill_04",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3618.21,
+        59.5665,
+        -132.775
+      ],
+      "size": [
+        36.42000000000007,
+        4.4835,
+        32.45
+      ],
+      "yaw": 0,
+      "label": "CityInfill_04_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Skyline_1",
+      "pos": [
+        3674.0,
+        0,
+        -550.0
+      ],
+      "size": [
+        64,
+        186,
+        37.0
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_1_09",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_2",
+      "pos": [
+        3656.0,
+        0,
+        -469.0
+      ],
+      "size": [
+        45.19999999999982,
+        136.45,
+        40.200000000000045
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_12",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3450.0,
+        0,
+        -174.035
+      ],
+      "size": [
+        75.53999999999978,
+        134.05,
+        77.50999999999998
+      ],
+      "yaw": 0,
+      "label": "CityInfill_00",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3450.0,
+        134.05,
+        -174.035
+      ],
+      "size": [
+        75.73999999999978,
+        6,
+        77.70999999999998
+      ],
+      "yaw": 0,
+      "label": "CityInfill_00_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3457.7700000000004,
+        0,
+        -39.0
+      ],
+      "size": [
+        39.780000000000015,
+        71.61,
+        39.31999999999999
+      ],
+      "yaw": 0,
+      "label": "CityInfill_06",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3457.7700000000004,
+        71.61,
+        -39.0
+      ],
+      "size": [
+        39.98000000000002,
+        5.390000000000001,
+        39.519999999999996
+      ],
+      "yaw": 0,
+      "label": "CityInfill_06_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3599.335,
+        60,
+        -305.935
+      ],
+      "size": [
+        10.069999999999983,
+        21.111000000000004,
+        8.829999999999973
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_01_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3599.335,
+        81.111,
+        -305.935
+      ],
+      "size": [
+        10.269999999999982,
+        1.5890000000000004,
+        9.029999999999973
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_01_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3280.0,
+        60,
+        -182.685
+      ],
+      "size": [
+        8.699999999999637,
+        14.368500000000003,
+        12.569999999999983
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_01_03",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3280.0,
+        74.3685,
+        -182.685
+      ],
+      "size": [
+        8.899999999999636,
+        1.0815000000000003,
+        12.769999999999982
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_01_03_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3323.335,
+        60,
+        -201.935
+      ],
+      "size": [
+        14.86999999999971,
+        18.014100000000003,
+        8.830000000000002
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_02_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3323.335,
+        78.0141,
+        -201.935
+      ],
+      "size": [
+        15.069999999999709,
+        1.3559000000000005,
+        9.030000000000001
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_02_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3345.0,
+        60,
+        -222.935
+      ],
+      "size": [
+        8.699999999999637,
+        19.251,
+        14.330000000000002
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_03_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3345.0,
+        79.251,
+        -222.935
+      ],
+      "size": [
+        8.899999999999636,
+        1.4490000000000003,
+        14.530000000000001
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_03_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3301.665,
+        60,
+        -201.935
+      ],
+      "size": [
+        14.86999999999971,
+        16.7679,
+        8.830000000000002
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_02_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3301.665,
+        76.7679,
+        -201.935
+      ],
+      "size": [
+        15.069999999999709,
+        1.2621000000000002,
+        9.030000000000001
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_02_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3303.335,
+        58.44,
+        -125.0
+      ],
+      "size": [
+        16.53000000000002,
+        11.094900000000006,
+        8.699999999999992
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_00_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3303.335,
+        69.53490000000001,
+        -125.0
+      ],
+      "size": [
+        16.730000000000018,
+        0.8351000000000005,
+        8.899999999999991
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_00_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3582.665,
+        60,
+        -305.935
+      ],
+      "size": [
+        10.069999999999983,
+        21.111000000000004,
+        8.829999999999973
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_01_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3582.665,
+        81.111,
+        -305.935
+      ],
+      "size": [
+        10.269999999999982,
+        1.5890000000000004,
+        9.029999999999973
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_01_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3280.0,
+        60,
+        -201.935
+      ],
+      "size": [
+        14.860000000000401,
+        15.531000000000002,
+        12.569999999999983
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_01_04",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3280.0,
+        75.531,
+        -201.935
+      ],
+      "size": [
+        15.0600000000004,
+        1.1690000000000003,
+        12.769999999999982
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_01_04_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3345.0,
+        60,
+        -201.935
+      ],
+      "size": [
+        14.860000000000401,
+        19.251,
+        14.330000000000002
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_02_03",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3345.0,
+        79.251,
+        -201.935
+      ],
+      "size": [
+        15.0600000000004,
+        1.4490000000000003,
+        14.530000000000001
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_02_03_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3616.0,
+        60,
+        -305.935
+      ],
+      "size": [
+        10.060000000000219,
+        21.111000000000004,
+        14.189999999999987
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_01_03",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3616.0,
+        81.111,
+        -305.935
+      ],
+      "size": [
+        10.260000000000218,
+        1.5890000000000004,
+        14.389999999999986
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_01_03_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3566.0,
+        60,
+        -305.94000000000005
+      ],
+      "size": [
+        10.060000000000219,
+        21.111000000000004,
+        9.860000000000003
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_00_03",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3566.0,
+        81.111,
+        -305.94000000000005
+      ],
+      "size": [
+        10.260000000000218,
+        1.5890000000000004,
+        10.060000000000002
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_00_03_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3280.0,
+        60,
+        -163.435
+      ],
+      "size": [
+        8.699999999999637,
+        13.206000000000003,
+        12.569999999999983
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_01_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3280.0,
+        73.206,
+        -163.435
+      ],
+      "size": [
+        8.899999999999636,
+        0.9940000000000003,
+        12.769999999999982
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_01_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3616.0,
+        60,
+        -285.275
+      ],
+      "size": [
+        8.699999999999637,
+        20.4879,
+        14.190000000000044
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_02_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3616.0,
+        80.4879,
+        -285.275
+      ],
+      "size": [
+        8.899999999999636,
+        1.5421000000000002,
+        14.390000000000043
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_02_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3326.665,
+        60,
+        -125.0
+      ],
+      "size": [
+        16.53000000000002,
+        8.397900000000002,
+        8.699999999999992
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_00_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3326.665,
+        68.3979,
+        -125.0
+      ],
+      "size": [
+        16.730000000000018,
+        0.6321000000000001,
+        8.899999999999991
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_00_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3566.0,
+        60,
+        -289.605
+      ],
+      "size": [
+        8.699999999999637,
+        20.4879,
+        9.850000000000012
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_00_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3566.0,
+        80.4879,
+        -289.605
+      ],
+      "size": [
+        8.899999999999636,
+        1.5421000000000002,
+        10.050000000000011
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_00_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3566.0,
+        60,
+        -273.27
+      ],
+      "size": [
+        8.699999999999637,
+        19.874100000000006,
+        9.860000000000003
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_00_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3566.0,
+        79.8741,
+        -273.27
+      ],
+      "size": [
+        8.899999999999636,
+        1.4959000000000005,
+        10.060000000000002
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_00_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3366.0,
+        60,
+        -243.935
+      ],
+      "size": [
+        14.199999999999637,
+        19.251,
+        8.830000000000002
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_04_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3366.0,
+        79.251,
+        -243.935
+      ],
+      "size": [
+        14.399999999999636,
+        1.4490000000000003,
+        9.030000000000001
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_04_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3616.0,
+        60,
+        -264.605
+      ],
+      "size": [
+        8.699999999999637,
+        19.874100000000006,
+        14.189999999999987
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_02_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3616.0,
+        79.8741,
+        -264.605
+      ],
+      "size": [
+        8.899999999999636,
+        1.4959000000000005,
+        14.389999999999986
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_02_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3345.0,
+        60,
+        -243.935
+      ],
+      "size": [
+        14.199999999999637,
+        19.251,
+        14.330000000000002
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_03_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3345.0,
+        79.251,
+        -243.935
+      ],
+      "size": [
+        14.399999999999636,
+        1.4490000000000003,
+        14.530000000000001
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_03_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3616.0,
+        60,
+        -243.94
+      ],
+      "size": [
+        8.720000000000073,
+        19.269599999999997,
+        14.199999999999978
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_02_03",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3616.0,
+        79.2696,
+        -243.94
+      ],
+      "size": [
+        8.920000000000073,
+        1.4504000000000001,
+        14.399999999999977
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_02_03_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3566.0,
+        60,
+        -256.94
+      ],
+      "size": [
+        8.720000000000073,
+        19.2975,
+        9.880000000000013
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_00_00",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3566.0,
+        79.2975,
+        -256.94
+      ],
+      "size": [
+        8.920000000000073,
+        1.4525000000000001,
+        10.080000000000013
+      ],
+      "yaw": 0,
+      "label": "RoofGarden_00_00_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3280.0,
+        60,
+        -144.185
+      ],
+      "size": [
+        8.699999999999637,
+        12.043500000000002,
+        12.569999999999983
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_01_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3280.0,
+        72.04350000000001,
+        -144.185
+      ],
+      "size": [
+        8.899999999999636,
+        0.9065000000000003,
+        12.769999999999982
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_01_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_ShopBase",
+      "pos": [
+        3280.0,
+        58.63,
+        -124.935
+      ],
+      "size": [
+        16.539999999999782,
+        12.155100000000001,
+        12.569999999999997
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_00_03",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3280.0,
+        70.7851,
+        -124.935
+      ],
+      "size": [
+        16.73999999999978,
+        0.9149000000000002,
+        12.769999999999996
+      ],
+      "yaw": 0,
+      "label": "DistrictRoofs_00_03_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_TrainCar",
+      "pos": [
+        3665.0,
+        73.92,
+        -96.0
+      ],
+      "size": [
+        10.0600000000004,
+        6.920000000000002,
+        25.599999999999994
+      ],
+      "yaw": 0,
+      "label": "Depot_Parked4",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_TrainCar",
+      "pos": [
+        3665.0,
+        73.92,
+        -181.5
+      ],
+      "size": [
+        10.0600000000004,
+        6.920000000000002,
+        25.600000000000023
+      ],
+      "yaw": 0,
+      "label": "Depot_Parked1",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_TrainCar",
+      "pos": [
+        3665.0,
+        73.92,
+        -210.0
+      ],
+      "size": [
+        10.0600000000004,
+        6.920000000000002,
+        25.600000000000023
+      ],
+      "yaw": 0,
+      "label": "Depot_Parked0",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_TrainCar",
+      "pos": [
+        3665.0,
+        73.92,
+        -124.5
+      ],
+      "size": [
+        10.0600000000004,
+        6.920000000000002,
+        25.60000000000001
+      ],
+      "yaw": 0,
+      "label": "Depot_Parked3",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_TrainCar",
+      "pos": [
+        3665.0,
+        73.92,
+        -153.0
+      ],
+      "size": [
+        10.0600000000004,
+        6.920000000000002,
+        25.600000000000023
+      ],
+      "yaw": 0,
+      "label": "Depot_Parked2",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_AtelierHall",
+      "pos": [
+        3615.385,
+        0,
+        -190.47
+      ],
+      "size": [
+        43.030000000000015,
+        126.94999999999999,
+        56.480000000000004
+      ],
+      "yaw": 0,
+      "label": "CityC10_Depot_WestArrival",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3615.385,
+        126.94999999999999,
+        -190.47
+      ],
+      "size": [
+        43.23000000000002,
+        6,
+        56.68000000000001
+      ],
+      "yaw": 0,
+      "label": "CityC10_Depot_WestArrival_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3622.255,
+        0,
+        -72.16
+      ],
+      "size": [
+        53.910000000000124,
+        125.61000000000001,
+        49.459999999999994
+      ],
+      "yaw": 0,
+      "label": "CityC10_Depot_WestYard",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3622.255,
+        125.61000000000001,
+        -72.16
+      ],
+      "size": [
+        54.11000000000013,
+        6,
+        49.66
+      ],
+      "yaw": 0,
+      "label": "CityC10_Depot_WestYard_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Brick_Broad",
+      "pos": [
+        3758.925,
+        0,
+        -44.730000000000004
+      ],
+      "size": [
+        50.210000000000306,
+        121.75,
+        40.339999999999996
+      ],
+      "yaw": 0,
+      "label": "CityC10_Depot_EastRefuge",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3758.925,
+        121.75,
+        -44.730000000000004
+      ],
+      "size": [
+        50.41000000000031,
+        6,
+        40.54
+      ],
+      "yaw": 0,
+      "label": "CityC10_Depot_EastRefuge_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_MaterialsStock",
+      "pos": [
+        3377.0,
+        60,
+        -244.0
+      ],
+      "size": [
+        6,
+        4.299999999999997,
+        4.5
+      ],
+      "yaw": 0,
+      "label": "Roof_ServiceBox3",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3391.925,
+        0,
+        -198.345
+      ],
+      "size": [
+        49.149999999999906,
+        141.51,
+        48.59000000000002
+      ],
+      "yaw": 0,
+      "label": "CityC10_Roof_InnerCorner",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3391.925,
+        141.51,
+        -198.345
+      ],
+      "size": [
+        49.34999999999991,
+        6,
+        48.79000000000002
+      ],
+      "yaw": 0,
+      "label": "CityC10_Roof_InnerCorner_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_AtelierHall",
+      "pos": [
+        3749.01,
+        0,
+        -90.225
+      ],
+      "size": [
+        38.780000000000015,
+        131.72,
+        46.489999999999995
+      ],
+      "yaw": 0,
+      "label": "CityC10_Depot_EastHotel",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3749.01,
+        131.72,
+        -90.225
+      ],
+      "size": [
+        38.98000000000002,
+        6,
+        46.69
+      ],
+      "yaw": 0,
+      "label": "CityC10_Depot_EastHotel_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Planter",
+      "pos": [
+        3830.0699999999997,
+        75,
+        203.0
+      ],
+      "size": [
+        6.660000000000309,
+        3.6200000000000045,
+        3.5
+      ],
+      "yaw": 0,
+      "label": "Station_ServicePlanter1",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_AtelierHall",
+      "pos": [
+        3748.125,
+        0,
+        -170.935
+      ],
+      "size": [
+        32.55,
+        119.05,
+        50.290000000000006
+      ],
+      "yaw": 0,
+      "label": "CityC10_Depot_EastWorks",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3748.125,
+        119.05,
+        -170.935
+      ],
+      "size": [
+        32.75,
+        6,
+        50.49000000000001
+      ],
+      "yaw": 0,
+      "label": "CityC10_Depot_EastWorks_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Cream_Tall",
+      "pos": [
+        3431.5,
+        0,
+        -346.375
+      ],
+      "size": [
+        48.999999999999815,
+        160.19,
+        47.92999999999999
+      ],
+      "yaw": 0,
+      "label": "CityC10_Roof_NorthFrame",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3431.5,
+        160.19,
+        -346.375
+      ],
+      "size": [
+        49.19999999999982,
+        6,
+        48.129999999999995
+      ],
+      "yaw": 0,
+      "label": "CityC10_Roof_NorthFrame_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Planter",
+      "pos": [
+        3810.0699999999997,
+        75,
+        230.0
+      ],
+      "size": [
+        6.660000000000309,
+        3.6200000000000045,
+        3.5
+      ],
+      "yaw": 0,
+      "label": "Station_ServicePlanter2",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Planter",
+      "pos": [
+        3738.0699999999997,
+        104,
+        184.0
+      ],
+      "size": [
+        6.660000000000309,
+        3.6200000000000045,
+        3.5
+      ],
+      "yaw": 0,
+      "label": "Station_ServicePlanter3",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Sage_Wide",
+      "pos": [
+        3713.88,
+        0,
+        -242.375
+      ],
+      "size": [
+        47.72000000000007,
+        151.15,
+        47.39
+      ],
+      "yaw": 0,
+      "label": "CityC10_Roof_GardenFrame",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3713.88,
+        151.15,
+        -242.375
+      ],
+      "size": [
+        47.92000000000007,
+        6,
+        47.59
+      ],
+      "yaw": 0,
+      "label": "CityC10_Roof_GardenFrame_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_CourtyardGallery",
+      "pos": [
+        3408.795,
+        0,
+        -156.51999999999998
+      ],
+      "size": [
+        34.410000000000124,
+        111,
+        40.53999999999998
+      ],
+      "yaw": 0,
+      "label": "CityC10_Roof_EastCourt",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3408.795,
+        111,
+        -156.51999999999998
+      ],
+      "size": [
+        34.61000000000013,
+        6,
+        40.73999999999998
+      ],
+      "yaw": 0,
+      "label": "CityC10_Roof_EastCourt_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3247.29,
+        0,
+        -175.695
+      ],
+      "size": [
+        30.579999999999746,
+        105.45,
+        47.63000000000001
+      ],
+      "yaw": 0,
+      "label": "CityC10_Roof_WestCorner",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3247.29,
+        105.45,
+        -175.695
+      ],
+      "size": [
+        30.779999999999745,
+        6,
+        47.83000000000001
+      ],
+      "yaw": 0,
+      "label": "CityC10_Roof_WestCorner_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_MaterialsStock",
+      "pos": [
+        3358.0,
+        59,
+        -182.0
+      ],
+      "size": [
+        6,
+        4.299999999999997,
+        4.5
+      ],
+      "yaw": 0,
+      "label": "Roof_ServiceBox2",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_MaterialsStock",
+      "pos": [
+        3290.0,
+        59,
+        -168.0
+      ],
+      "size": [
+        6,
+        4.299999999999997,
+        4.5
+      ],
+      "yaw": 0,
+      "label": "Roof_ServiceBox1",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3884.0,
+        0,
+        60.0
+      ],
+      "size": [
+        37.65999999999967,
+        110.35,
+        38.660000000000004
+      ],
+      "yaw": 0,
+      "label": "C13_EastArrival",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3884.0,
+        110.35,
+        60.0
+      ],
+      "size": [
+        37.85999999999967,
+        6,
+        38.86000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_EastArrival_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3886.0,
+        0,
+        89.0
+      ],
+      "size": [
+        39.65999999999967,
+        108.7,
+        17.660000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_EastLink01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3886.0,
+        108.7,
+        89.0
+      ],
+      "size": [
+        39.85999999999967,
+        6,
+        17.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_EastLink01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3886.0,
+        0,
+        150.0
+      ],
+      "size": [
+        39.65999999999967,
+        123.69999999999999,
+        19.660000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_EastLink02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3886.0,
+        123.69999999999999,
+        150.0
+      ],
+      "size": [
+        39.85999999999967,
+        6,
+        19.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_EastLink02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3828.0,
+        0,
+        274.0
+      ],
+      "size": [
+        41.65999999999967,
+        134.35,
+        34.66000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_SouthCourt",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3828.0,
+        134.35,
+        274.0
+      ],
+      "size": [
+        41.85999999999967,
+        6,
+        34.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_SouthCourt_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3745.0,
+        103,
+        184.0
+      ],
+      "size": [
+        11.060000000000219,
+        19.157999999999994,
+        12.400000000000023
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_03_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3745.0,
+        122.158,
+        184.0
+      ],
+      "size": [
+        11.260000000000218,
+        1.4419999999999997,
+        12.600000000000023
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_03_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3619.0,
+        0,
+        210.0
+      ],
+      "size": [
+        41.65999999999967,
+        137.7,
+        39.66000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertBack03",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3619.0,
+        137.7,
+        210.0
+      ],
+      "size": [
+        41.85999999999967,
+        6,
+        39.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertBack03_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3796.0,
+        0,
+        22.0
+      ],
+      "size": [
+        45.65999999999967,
+        112.35,
+        23.66
+      ],
+      "yaw": 0,
+      "label": "C13_TrackOffice",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3796.0,
+        112.35,
+        22.0
+      ],
+      "size": [
+        45.85999999999967,
+        6,
+        23.86
+      ],
+      "yaw": 0,
+      "label": "C13_TrackOffice_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3660.635,
+        0,
+        207.0
+      ],
+      "size": [
+        28.929999999999655,
+        130.7,
+        17.660000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertService04",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3660.635,
+        130.7,
+        207.0
+      ],
+      "size": [
+        29.129999999999654,
+        6,
+        17.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertService04_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3695.0,
+        0,
+        274.0
+      ],
+      "size": [
+        37.65999999999967,
+        126,
+        33.66000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_TowerFoundation",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3695.0,
+        126,
+        274.0
+      ],
+      "size": [
+        37.85999999999967,
+        6,
+        33.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_TowerFoundation_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3889.0,
+        0,
+        119.0
+      ],
+      "size": [
+        41.65999999999967,
+        128.35,
+        41.66000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_EastArcade",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3889.0,
+        128.35,
+        119.0
+      ],
+      "size": [
+        41.85999999999967,
+        6,
+        41.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_EastArcade_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3619.0,
+        0,
+        167.0
+      ],
+      "size": [
+        41.65999999999967,
+        144.7,
+        39.66000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertBack02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3619.0,
+        144.7,
+        167.0
+      ],
+      "size": [
+        41.85999999999967,
+        6,
+        39.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertBack02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3883.0,
+        0,
+        183.0
+      ],
+      "size": [
+        39.65999999999967,
+        139.35,
+        45.66000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_EastCorner",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3883.0,
+        139.35,
+        183.0
+      ],
+      "size": [
+        39.85999999999967,
+        6,
+        45.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_EastCorner_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3728.335,
+        75,
+        184.0
+      ],
+      "size": [
+        11.069999999999983,
+        47.3680023651123,
+        8.8
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_04_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3728.335,
+        122.3680023651123,
+        184.0
+      ],
+      "size": [
+        11.269999999999982,
+        3.565333511352539,
+        9.0
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_04_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3720.0,
+        0,
+        165.0
+      ],
+      "size": [
+        31.659999999999673,
+        97.35,
+        90.66000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_WestWing",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3720.0,
+        97.35,
+        165.0
+      ],
+      "size": [
+        31.859999999999673,
+        6,
+        90.86000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_WestWing_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3705.0,
+        75,
+        57.0
+      ],
+      "size": [
+        15.140000000000146,
+        8.927999999999994,
+        8.700000000000006
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_00_00",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3705.0,
+        83.928,
+        57.0
+      ],
+      "size": [
+        15.340000000000146,
+        0.6719999999999997,
+        8.900000000000006
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_00_00_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3695.0,
+        0,
+        239.0
+      ],
+      "size": [
+        77.65999999999967,
+        124.6,
+        39.66000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_TerraceFoundation",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3695.0,
+        124.6,
+        239.0
+      ],
+      "size": [
+        77.85999999999967,
+        6,
+        39.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_TerraceFoundation_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3660.635,
+        0,
+        181.0
+      ],
+      "size": [
+        28.929999999999655,
+        141.7,
+        31.660000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertService03",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3660.635,
+        141.7,
+        181.0
+      ],
+      "size": [
+        29.129999999999654,
+        6,
+        31.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertService03_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3772.0,
+        0,
+        276.0
+      ],
+      "size": [
+        38.65999999999967,
+        128.35,
+        27.660000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_SouthHotel",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3772.0,
+        128.35,
+        276.0
+      ],
+      "size": [
+        38.85999999999967,
+        6,
+        27.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_SouthHotel_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3799.0,
+        0,
+        276.0
+      ],
+      "size": [
+        14.659999999999673,
+        119.7,
+        27.660000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_SouthLink01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3799.0,
+        119.7,
+        276.0
+      ],
+      "size": [
+        14.859999999999673,
+        6,
+        27.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_SouthLink01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3766.25,
+        103,
+        220.0
+      ],
+      "size": [
+        15.659999999999673,
+        8.462999999999994,
+        8.8
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_02_03",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3766.25,
+        111.463,
+        220.0
+      ],
+      "size": [
+        15.859999999999673,
+        0.6369999999999997,
+        9.0
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_02_03_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3619.0,
+        0,
+        124.0
+      ],
+      "size": [
+        41.65999999999967,
+        136.7,
+        39.66000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertBack01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3619.0,
+        136.7,
+        124.0
+      ],
+      "size": [
+        41.85999999999967,
+        6,
+        39.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertBack01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3871.0,
+        0,
+        231.0
+      ],
+      "size": [
+        55.65999999999967,
+        128.7,
+        37.66000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_EastReturn",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3871.0,
+        128.7,
+        231.0
+      ],
+      "size": [
+        55.85999999999967,
+        6,
+        37.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_EastReturn_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3737.0,
+        0,
+        100.0
+      ],
+      "size": [
+        24.8,
+        96.6,
+        38.8
+      ],
+      "yaw": 0,
+      "label": "C13_NorthGallery",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3737.0,
+        96.6,
+        100.0
+      ],
+      "size": [
+        25.0,
+        6,
+        39.0
+      ],
+      "yaw": 0,
+      "label": "C13_NorthGallery_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3743.0,
+        0,
+        276.0
+      ],
+      "size": [
+        16.659999999999673,
+        122.69999999999999,
+        27.660000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_SouthLink02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3743.0,
+        122.69999999999999,
+        276.0
+      ],
+      "size": [
+        16.859999999999673,
+        6,
+        27.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_SouthLink02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3660.635,
+        0,
+        148.0
+      ],
+      "size": [
+        28.929999999999655,
+        136.7,
+        29.660000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertService02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3660.635,
+        136.7,
+        148.0
+      ],
+      "size": [
+        29.129999999999654,
+        6,
+        29.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertService02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3808.75,
+        103,
+        220.0
+      ],
+      "size": [
+        15.659999999999673,
+        3.812999999999995,
+        8.8
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_02_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3808.75,
+        106.81299999999999,
+        220.0
+      ],
+      "size": [
+        15.859999999999673,
+        0.28699999999999964,
+        9.0
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_02_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3787.5,
+        103,
+        220.0
+      ],
+      "size": [
+        15.659999999999673,
+        6.137999999999995,
+        8.8
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_02_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3787.5,
+        109.13799999999999,
+        220.0
+      ],
+      "size": [
+        15.859999999999673,
+        0.46199999999999963,
+        9.0
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_02_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3660.635,
+        0,
+        116.0
+      ],
+      "size": [
+        28.929999999999655,
+        117.7,
+        29.660000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertService01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3660.635,
+        117.7,
+        116.0
+      ],
+      "size": [
+        29.129999999999654,
+        6,
+        29.860000000000014
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertService01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3745.0,
+        103,
+        202.0
+      ],
+      "size": [
+        8.8,
+        14.972999999999995,
+        12.400000000000023
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_03_01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3745.0,
+        117.973,
+        202.0
+      ],
+      "size": [
+        9.0,
+        1.1269999999999998,
+        12.600000000000023
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_03_01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3711.665,
+        75,
+        184.0
+      ],
+      "size": [
+        11.069999999999983,
+        49.53800473022461,
+        8.8
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_04_02",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3711.665,
+        124.5380047302246,
+        184.0
+      ],
+      "size": [
+        11.269999999999982,
+        3.728667022705078,
+        9.0
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_04_02_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3830.0,
+        75,
+        57.0
+      ],
+      "size": [
+        15.2399999999996,
+        16.86916493225097,
+        14.779999999999998
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_00_06",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3830.0,
+        91.86916493225097,
+        57.0
+      ],
+      "size": [
+        15.4399999999996,
+        1.2697220916748044,
+        14.979999999999997
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_00_06_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3745.0,
+        103,
+        220.0
+      ],
+      "size": [
+        15.659999999999673,
+        10.787999999999995,
+        12.400000000000023
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_02_04",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3745.0,
+        113.788,
+        220.0
+      ],
+      "size": [
+        15.859999999999673,
+        0.8119999999999997,
+        12.600000000000023
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_02_04_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3830.0,
+        103,
+        220.0
+      ],
+      "size": [
+        15.659999999999673,
+        2.79,
+        14.780000000000019
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_01_08",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3830.0,
+        105.79,
+        220.0
+      ],
+      "size": [
+        15.859999999999673,
+        0.21000000000000002,
+        14.980000000000018
+      ],
+      "yaw": 0,
+      "label": "C13_Surface_StationMain_01_08_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Lamp",
+      "pos": [
+        3271.0,
+        68,
+        183.0
+      ],
+      "size": [
+        1.8999999999996362,
+        10.25,
+        1.8999999999999773
+      ],
+      "yaw": 0,
+      "label": "MarketLamp_05",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Lamp",
+      "pos": [
+        3317.1000000000004,
+        7.5,
+        235.33999999999997
+      ],
+      "size": [
+        1.900000000000091,
+        10.25,
+        1.9000000000000057
+      ],
+      "yaw": 0,
+      "label": "MarketLamp_01",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Lamp",
+      "pos": [
+        3312.0,
+        0,
+        202.0
+      ],
+      "size": [
+        1.8999999999996362,
+        10.25,
+        1.8999999999999773
+      ],
+      "yaw": 0,
+      "label": "MarketLamp_03",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Lamp",
+      "pos": [
+        3348.0,
+        0,
+        202.0
+      ],
+      "size": [
+        1.8999999999996362,
+        10.25,
+        1.8999999999999773
+      ],
+      "yaw": 0,
+      "label": "MarketLamp_04",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Lamp",
+      "pos": [
+        3342.92,
+        7.5,
+        235.35000000000002
+      ],
+      "size": [
+        1.900000000000091,
+        10.25,
+        1.9000000000000057
+      ],
+      "yaw": 0,
+      "label": "MarketLamp_02",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3292.63,
+        0,
+        291.545
+      ],
+      "size": [
+        43.160000000000124,
+        6.790205142974854,
+        44.55
+      ],
+      "yaw": 0,
+      "label": "MarketBackdrop_A",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3292.63,
+        6.790205142974854,
+        291.545
+      ],
+      "size": [
+        43.36000000000013,
+        0.5110907096862793,
+        44.75
+      ],
+      "yaw": 0,
+      "label": "MarketBackdrop_A_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Cream_Tall",
+      "pos": [
+        3362.295,
+        0,
+        292.03
+      ],
+      "size": [
+        49.06999999999998,
+        6.790205142974854,
+        50.61999999999999
+      ],
+      "yaw": 0,
+      "label": "MarketBackdrop_C",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3362.295,
+        6.790205142974854,
+        292.03
+      ],
+      "size": [
+        49.26999999999998,
+        0.5110907096862793,
+        50.81999999999999
+      ],
+      "yaw": 0,
+      "label": "MarketBackdrop_C_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Ochre_Narrow",
+      "pos": [
+        3388.0,
+        0,
+        294.225
+      ],
+      "size": [
+        22.8,
+        55.8465,
+        26.24999999999999
+      ],
+      "yaw": 0,
+      "label": "MarketBackdrop_E",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3388.0,
+        55.8465,
+        294.225
+      ],
+      "size": [
+        23.0,
+        4.2035,
+        26.44999999999999
+      ],
+      "yaw": 0,
+      "label": "MarketBackdrop_E_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Sage_Wide",
+      "pos": [
+        3249.0,
+        0,
+        249.625
+      ],
+      "size": [
+        26.99999999999982,
+        63.658500000000004,
+        34.250000000000014
+      ],
+      "yaw": 0,
+      "label": "MarketBackdrop_D",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3249.0,
+        63.658500000000004,
+        249.625
+      ],
+      "size": [
+        27.199999999999818,
+        4.791500000000001,
+        34.45000000000002
+      ],
+      "yaw": 0,
+      "label": "MarketBackdrop_D_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3326.0,
+        0,
+        310.475
+      ],
+      "size": [
+        29.99999999999982,
+        58.59,
+        29.55
+      ],
+      "yaw": 0,
+      "label": "MarketBackdrop_B",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3326.0,
+        58.59,
+        310.475
+      ],
+      "size": [
+        30.199999999999818,
+        4.41,
+        29.75
+      ],
+      "yaw": 0,
+      "label": "MarketBackdrop_B_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Planter",
+      "pos": [
+        3286.0,
+        0.24,
+        -38.0
+      ],
+      "size": [
+        7.0,
+        3.4000000000000004,
+        2.5999999999999943
+      ],
+      "yaw": 0,
+      "label": "Planter1",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Lamp",
+      "pos": [
+        3383.0,
+        0.02,
+        -48.0
+      ],
+      "size": [
+        2,
+        9.6,
+        2
+      ],
+      "yaw": 0,
+      "label": "Lamp2",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Lamp",
+      "pos": [
+        3383.0,
+        0.03,
+        14.0
+      ],
+      "size": [
+        2,
+        9.600000000000001,
+        2
+      ],
+      "yaw": 0,
+      "label": "Lamp4",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Planter",
+      "pos": [
+        3365.0,
+        0.24,
+        -38.0
+      ],
+      "size": [
+        7.0,
+        3.4000000000000004,
+        2.5999999999999943
+      ],
+      "yaw": 0,
+      "label": "Planter2",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Lamp",
+      "pos": [
+        3268.0,
+        0.03,
+        14.0
+      ],
+      "size": [
+        2,
+        9.600000000000001,
+        2
+      ],
+      "yaw": 0,
+      "label": "Lamp3",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Planter",
+      "pos": [
+        3366.0,
+        0.24,
+        -7.0
+      ],
+      "size": [
+        7.0,
+        3.4000000000000004,
+        2.6000000000000005
+      ],
+      "yaw": 0,
+      "label": "Planter4",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Lamp",
+      "pos": [
+        3268.0,
+        0.02,
+        -48.0
+      ],
+      "size": [
+        2,
+        9.6,
+        2
+      ],
+      "yaw": 0,
+      "label": "Lamp1",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Planter",
+      "pos": [
+        3285.0,
+        0.24,
+        -7.0
+      ],
+      "size": [
+        7.0,
+        3.4000000000000004,
+        2.6000000000000005
+      ],
+      "yaw": 0,
+      "label": "Planter3",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Tree",
+      "pos": [
+        3286.25,
+        0.24,
+        46.989999999999995
+      ],
+      "size": [
+        10.319999999999709,
+        16.34,
+        9.32
+      ],
+      "yaw": 0,
+      "label": "Tree3",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Bench",
+      "pos": [
+        3268.94,
+        0,
+        -83.0
+      ],
+      "size": [
+        1.9200000000000728,
+        3.5,
+        7.5
+      ],
+      "yaw": 0,
+      "label": "Bench1",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Bench",
+      "pos": [
+        3382.065,
+        0,
+        -83.0
+      ],
+      "size": [
+        1.930000000000291,
+        3.5,
+        7.5
+      ],
+      "yaw": 0,
+      "label": "Bench3",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Tree",
+      "pos": [
+        3284.25,
+        0.24,
+        -95.00999999999999
+      ],
+      "size": [
+        10.319999999999709,
+        15.34,
+        9.320000000000007
+      ],
+      "yaw": 0,
+      "label": "Tree1",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Tree",
+      "pos": [
+        3363.25,
+        0.24,
+        -93.00999999999999
+      ],
+      "size": [
+        10.319999999999709,
+        17.34,
+        9.320000000000007
+      ],
+      "yaw": 0,
+      "label": "Tree2",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Bench",
+      "pos": [
+        3382.06,
+        0,
+        35.0
+      ],
+      "size": [
+        1.9200000000000728,
+        3.5,
+        7.5
+      ],
+      "yaw": 0,
+      "label": "Bench4",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Bench",
+      "pos": [
+        3268.935,
+        0,
+        35.0
+      ],
+      "size": [
+        1.930000000000291,
+        3.5,
+        7.5
+      ],
+      "yaw": 0,
+      "label": "Bench2",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Tree",
+      "pos": [
+        3366.25,
+        0.24,
+        44.989999999999995
+      ],
+      "size": [
+        10.319999999999709,
+        14.34,
+        9.32
+      ],
+      "yaw": 0,
+      "label": "Tree4",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_AtelierHall",
+      "pos": [
+        3507.165,
+        0,
+        -207.845
+      ],
+      "size": [
+        38.97000000000007,
+        116.05,
+        33.38999999999997
+      ],
+      "yaw": 0,
+      "label": "Construction_RenovationBlock",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3507.165,
+        116.05,
+        -207.845
+      ],
+      "size": [
+        39.17000000000007,
+        6,
+        33.589999999999975
+      ],
+      "yaw": 0,
+      "label": "Construction_RenovationBlock_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3290.25,
+        0,
+        203.795
+      ],
+      "size": [
+        36.999999999999815,
+        61.18470000000001,
+        52.11
+      ],
+      "yaw": 0,
+      "label": "MarketHouse0",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3290.25,
+        61.18470000000001,
+        203.795
+      ],
+      "size": [
+        37.19999999999982,
+        4.605300000000001,
+        52.31
+      ],
+      "yaw": 0,
+      "label": "MarketHouse0_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3473.83,
+        0,
+        -338.99
+      ],
+      "size": [
+        36.45999999999985,
+        109.18,
+        29.819999999999983
+      ],
+      "yaw": 0,
+      "label": "NorthRoofFrame",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3473.83,
+        109.18,
+        -338.99
+      ],
+      "size": [
+        36.659999999999854,
+        6,
+        30.019999999999982
+      ],
+      "yaw": 0,
+      "label": "NorthRoofFrame_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Cream_Tall",
+      "pos": [
+        3371.815,
+        0,
+        202.445
+      ],
+      "size": [
+        31.36999999999971,
+        52.08,
+        34.61
+      ],
+      "yaw": 0,
+      "label": "MarketHouse3",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3371.815,
+        52.08,
+        202.445
+      ],
+      "size": [
+        31.56999999999971,
+        3.9200000000000004,
+        34.81
+      ],
+      "yaw": 0,
+      "label": "MarketHouse3_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3598.995,
+        0,
+        -272.0
+      ],
+      "size": [
+        45.649999999999906,
+        58.776,
+        88.00000000000001
+      ],
+      "yaw": 0,
+      "label": "RenovationEast",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3598.995,
+        58.776,
+        -272.0
+      ],
+      "size": [
+        45.84999999999991,
+        4.424,
+        88.20000000000002
+      ],
+      "yaw": 0,
+      "label": "RenovationEast_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Sage_Wide",
+      "pos": [
+        3368.755,
+        0,
+        248.16500000000002
+      ],
+      "size": [
+        36.910000000000124,
+        43.338,
+        43.17000000000003
+      ],
+      "yaw": 0,
+      "label": "MarketHouse1",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3368.755,
+        43.338,
+        248.16500000000002
+      ],
+      "size": [
+        37.11000000000013,
+        3.2620000000000005,
+        43.37000000000003
+      ],
+      "yaw": 0,
+      "label": "MarketHouse1_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3502.005,
+        0,
+        165.005
+      ],
+      "size": [
+        59.310000000000215,
+        97,
+        51.58999999999999
+      ],
+      "yaw": 0,
+      "label": "DistantBlock11",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3502.005,
+        97,
+        165.005
+      ],
+      "size": [
+        59.51000000000022,
+        6,
+        51.78999999999999
+      ],
+      "yaw": 0,
+      "label": "DistantBlock11_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3587.46,
+        0,
+        -341.395
+      ],
+      "size": [
+        67.65999999999967,
+        127.53999999999999,
+        37.730000000000004
+      ],
+      "yaw": 0,
+      "label": "RoofHouse3",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3587.46,
+        127.53999999999999,
+        -341.395
+      ],
+      "size": [
+        67.85999999999967,
+        6,
+        37.93000000000001
+      ],
+      "yaw": 0,
+      "label": "RoofHouse3_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Cream_Tall",
+      "pos": [
+        3274.085,
+        0,
+        120.745
+      ],
+      "size": [
+        39.16999999999989,
+        67.8435,
+        54.20999999999998
+      ],
+      "yaw": 0,
+      "label": "MarketHouse4",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3274.085,
+        67.8435,
+        120.745
+      ],
+      "size": [
+        39.36999999999989,
+        5.1065000000000005,
+        54.40999999999998
+      ],
+      "yaw": 0,
+      "label": "MarketHouse4_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Ochre_Narrow",
+      "pos": [
+        3549.6949999999997,
+        0,
+        -72.55499999999999
+      ],
+      "size": [
+        92.34999999999972,
+        131.45,
+        92.61
+      ],
+      "yaw": 0,
+      "label": "RailwayHotel",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3549.6949999999997,
+        131.45,
+        -72.55499999999999
+      ],
+      "size": [
+        92.54999999999973,
+        6,
+        92.81
+      ],
+      "yaw": 0,
+      "label": "RailwayHotel_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_LoggiaResidence",
+      "pos": [
+        3237.33,
+        0,
+        53.345
+      ],
+      "size": [
+        44.660000000000124,
+        69.2385,
+        95.80999999999999
+      ],
+      "yaw": 0,
+      "label": "CourtHouse0",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3237.33,
+        69.2385,
+        53.345
+      ],
+      "size": [
+        44.86000000000013,
+        5.211500000000001,
+        96.00999999999999
+      ],
+      "yaw": 0,
+      "label": "CourtHouse0_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3435.92,
+        0,
+        76.065
+      ],
+      "size": [
+        30.959999999999855,
+        62.3565,
+        43.14999999999999
+      ],
+      "yaw": 0,
+      "label": "MarketHouse6",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3435.92,
+        62.3565,
+        76.065
+      ],
+      "size": [
+        31.159999999999854,
+        4.6935,
+        43.349999999999994
+      ],
+      "yaw": 0,
+      "label": "MarketHouse6_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_AtelierHall",
+      "pos": [
+        3499.995,
+        0,
+        -301.59000000000003
+      ],
+      "size": [
+        173.64999999999992,
+        58.776,
+        35.820000000000036
+      ],
+      "yaw": 0,
+      "label": "RenovationNorth",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3499.995,
+        58.776,
+        -301.59000000000003
+      ],
+      "size": [
+        173.8499999999999,
+        4.424,
+        36.02000000000004
+      ],
+      "yaw": 0,
+      "label": "RenovationNorth_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Planter",
+      "pos": [
+        3320.0,
+        77,
+        -158.0
+      ],
+      "size": [
+        10,
+        3.6200000000000045,
+        3.5
+      ],
+      "yaw": 0,
+      "label": "CourtPlanter2",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3336.545,
+        0,
+        -297.655
+      ],
+      "size": [
+        99.08999999999996,
+        135.31,
+        66.76999999999997
+      ],
+      "yaw": 0,
+      "label": "RoofHouse1",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3336.545,
+        135.31,
+        -297.655
+      ],
+      "size": [
+        99.28999999999996,
+        6,
+        66.96999999999997
+      ],
+      "yaw": 0,
+      "label": "RoofHouse1_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3200.0,
+        0,
+        -20.0
+      ],
+      "size": [
+        37.8,
+        67.0065,
+        45.8
+      ],
+      "yaw": 0,
+      "label": "OuterBlock13",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3200.0,
+        67.0065,
+        -20.0
+      ],
+      "size": [
+        38.0,
+        5.0435,
+        46.0
+      ],
+      "yaw": 0,
+      "label": "OuterBlock13_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Planter",
+      "pos": [
+        3418.0,
+        61,
+        14.0
+      ],
+      "size": [
+        10,
+        3.6200000000000045,
+        3.5
+      ],
+      "yaw": 0,
+      "label": "CourtPlanter1",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3517.89,
+        0,
+        -345.995
+      ],
+      "size": [
+        93.83999999999996,
+        89,
+        46.230000000000004
+      ],
+      "yaw": 0,
+      "label": "RoofHouse5",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3517.89,
+        89,
+        -345.995
+      ],
+      "size": [
+        94.03999999999996,
+        6,
+        46.43000000000001
+      ],
+      "yaw": 0,
+      "label": "RoofHouse5_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_LoggiaResidence",
+      "pos": [
+        3337.62,
+        0,
+        -161.24
+      ],
+      "size": [
+        86.97999999999983,
+        86.49,
+        39.739999999999995
+      ],
+      "yaw": 0,
+      "label": "CourtHouse4",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3337.62,
+        86.49,
+        -161.24
+      ],
+      "size": [
+        87.17999999999984,
+        6,
+        39.94
+      ],
+      "yaw": 0,
+      "label": "CourtHouse4_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_LoggiaResidence",
+      "pos": [
+        3428.91,
+        0,
+        -92.86500000000001
+      ],
+      "size": [
+        53.780000000000015,
+        96.23,
+        87.43
+      ],
+      "yaw": 0,
+      "label": "CourtHouse3",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3428.91,
+        96.23,
+        -92.86500000000001
+      ],
+      "size": [
+        53.98000000000002,
+        6,
+        87.63000000000001
+      ],
+      "yaw": 0,
+      "label": "CourtHouse3_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_LoggiaResidence",
+      "pos": [
+        3237.35,
+        0,
+        -90.27
+      ],
+      "size": [
+        54.33999999999996,
+        46.30468453216553,
+        132.14000000000001
+      ],
+      "yaw": 0,
+      "label": "CourtHouse1",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3237.35,
+        46.30468453216553,
+        -90.27
+      ],
+      "size": [
+        54.539999999999964,
+        3.485298835754395,
+        132.34
+      ],
+      "yaw": 0,
+      "label": "CourtHouse1_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Brick_Broad",
+      "pos": [
+        3411.995,
+        0,
+        -271.0
+      ],
+      "size": [
+        31.64999999999991,
+        58.776,
+        86.00000000000001
+      ],
+      "yaw": 0,
+      "label": "RenovationWest",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3411.995,
+        58.776,
+        -271.0
+      ],
+      "size": [
+        31.84999999999991,
+        4.424,
+        86.20000000000002
+      ],
+      "yaw": 0,
+      "label": "RenovationWest_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3180.0,
+        0,
+        197.0
+      ],
+      "size": [
+        33.999999999999815,
+        102.45,
+        40.999999999999986
+      ],
+      "yaw": 0,
+      "label": "OuterBlock7",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3180.0,
+        102.45,
+        197.0
+      ],
+      "size": [
+        34.19999999999982,
+        6,
+        41.19999999999999
+      ],
+      "yaw": 0,
+      "label": "OuterBlock7_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3434.81,
+        0,
+        126.37
+      ],
+      "size": [
+        30.379999999999928,
+        57.1485,
+        50.75999999999999
+      ],
+      "yaw": 0,
+      "label": "MarketHouse5",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3434.81,
+        57.1485,
+        126.37
+      ],
+      "size": [
+        30.579999999999927,
+        4.301500000000001,
+        50.959999999999994
+      ],
+      "yaw": 0,
+      "label": "MarketHouse5_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Cream_Tall",
+      "pos": [
+        3255.0,
+        0,
+        202.0
+      ],
+      "size": [
+        37.999999999999815,
+        69.2385,
+        44.999999999999986
+      ],
+      "yaw": 0,
+      "label": "OuterBlock16",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3255.0,
+        69.2385,
+        202.0
+      ],
+      "size": [
+        38.19999999999982,
+        5.211500000000001,
+        45.19999999999999
+      ],
+      "yaw": 0,
+      "label": "OuterBlock16_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_LoggiaResidence",
+      "pos": [
+        3426.445,
+        0,
+        14.345
+      ],
+      "size": [
+        46.58999999999996,
+        62.31,
+        70.81
+      ],
+      "yaw": 0,
+      "label": "CourtHouse2",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3426.445,
+        62.31,
+        14.345
+      ],
+      "size": [
+        46.789999999999964,
+        4.69,
+        71.01
+      ],
+      "yaw": 0,
+      "label": "CourtHouse2_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_WaterTank",
+      "pos": [
+        3551.0,
+        79.93,
+        -175.0
+      ],
+      "size": [
+        13.199999999999818,
+        26.419999999999987,
+        13.199999999999989
+      ],
+      "yaw": 0,
+      "label": "WaterTankB",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_CourtyardGallery",
+      "pos": [
+        3332.41,
+        0,
+        -133.17000000000002
+      ],
+      "size": [
+        112.81999999999998,
+        51.336,
+        18.32000000000001
+      ],
+      "yaw": 0,
+      "label": "CourtUpperGallery",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3332.41,
+        51.336,
+        -133.17000000000002
+      ],
+      "size": [
+        113.01999999999998,
+        3.8640000000000008,
+        18.52000000000001
+      ],
+      "yaw": 0,
+      "label": "CourtUpperGallery_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Ochre_Narrow",
+      "pos": [
+        3573.995,
+        0,
+        -201.775
+      ],
+      "size": [
+        39.85000000000018,
+        104.1,
+        33.97000000000001
+      ],
+      "yaw": 0,
+      "label": "SouthRoofWaterHouse",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3573.995,
+        104.1,
+        -201.775
+      ],
+      "size": [
+        40.05000000000018,
+        6,
+        34.170000000000016
+      ],
+      "yaw": 0,
+      "label": "SouthRoofWaterHouse_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Planter",
+      "pos": [
+        3238.0,
+        68,
+        53.0
+      ],
+      "size": [
+        10,
+        3.6200000000000045,
+        3.5
+      ],
+      "yaw": 0,
+      "label": "CourtPlanter0",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Cream_Tall",
+      "pos": [
+        3286.145,
+        0,
+        250.225
+      ],
+      "size": [
+        43.40999999999967,
+        71.08919999999999,
+        43.249999999999986
+      ],
+      "yaw": 0,
+      "label": "MarketHouse2",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3286.145,
+        71.08919999999999,
+        250.225
+      ],
+      "size": [
+        43.60999999999967,
+        5.3508000000000004,
+        43.44999999999999
+      ],
+      "yaw": 0,
+      "label": "MarketHouse2_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Ochre_Narrow",
+      "pos": [
+        3374.21,
+        0,
+        -346.775
+      ],
+      "size": [
+        55.22000000000007,
+        80,
+        46.249999999999986
+      ],
+      "yaw": 0,
+      "label": "RoofHouse2",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3374.21,
+        80,
+        -346.775
+      ],
+      "size": [
+        55.42000000000007,
+        6,
+        46.44999999999999
+      ],
+      "yaw": 0,
+      "label": "RoofHouse2_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Sage_Wide",
+      "pos": [
+        3150.0,
+        0,
+        48.0
+      ],
+      "size": [
+        51.180000000000106,
+        150.23,
+        71.99999999999999
+      ],
+      "yaw": 0,
+      "label": "OuterBlock5",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3150.0,
+        150.23,
+        48.0
+      ],
+      "size": [
+        51.38000000000011,
+        6,
+        72.19999999999999
+      ],
+      "yaw": 0,
+      "label": "OuterBlock5_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3658.55,
+        0,
+        -303.15
+      ],
+      "size": [
+        58.879999999999924,
+        126.05000000000001,
+        92.01999999999997
+      ],
+      "yaw": 0,
+      "label": "RoofHouse4",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3658.55,
+        126.05000000000001,
+        -303.15
+      ],
+      "size": [
+        59.07999999999993,
+        6,
+        92.21999999999997
+      ],
+      "yaw": 0,
+      "label": "RoofHouse4_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3150.0,
+        0,
+        -20.0
+      ],
+      "size": [
+        40.8,
+        54.9165,
+        42.8
+      ],
+      "yaw": 0,
+      "label": "OuterBlock4",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3150.0,
+        54.9165,
+        -20.0
+      ],
+      "size": [
+        41.0,
+        4.133500000000001,
+        43.0
+      ],
+      "yaw": 0,
+      "label": "OuterBlock4_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Cream_Tall",
+      "pos": [
+        3242.1499999999996,
+        0,
+        -247.66
+      ],
+      "size": [
+        84.70000000000009,
+        71.238,
+        92.89999999999996
+      ],
+      "yaw": 0,
+      "label": "RoofHouse0",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3242.1499999999996,
+        71.238,
+        -247.66
+      ],
+      "size": [
+        84.90000000000009,
+        5.362,
+        93.09999999999997
+      ],
+      "yaw": 0,
+      "label": "RoofHouse0_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Ochre_Narrow",
+      "pos": [
+        3409.035,
+        0.12,
+        205.315
+      ],
+      "size": [
+        44.97000000000007,
+        52.4985,
+        52.55
+      ],
+      "yaw": 0,
+      "label": "MarketHouse1",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3409.035,
+        52.6185,
+        205.315
+      ],
+      "size": [
+        45.17000000000007,
+        3.9515000000000007,
+        52.75
+      ],
+      "yaw": 0,
+      "label": "MarketHouse1_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3752.0,
+        0,
+        22.0
+      ],
+      "size": [
+        45.65999999999967,
+        112.35,
+        23.66
+      ],
+      "yaw": 0,
+      "label": "C13_TrackOffice",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3752.0,
+        112.35,
+        22.0
+      ],
+      "size": [
+        45.85999999999967,
+        6,
+        23.86
+      ],
+      "yaw": 0,
+      "label": "C13_TrackOffice_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3855.76,
+        0,
+        15.344999999999999
+      ],
+      "size": [
+        70.0800000000002,
+        135.44,
+        69.69
+      ],
+      "yaw": 0,
+      "label": "C13_EastArrival",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_GableRoof_Wide",
+      "pos": [
+        3855.76,
+        135.44,
+        15.344999999999999
+      ],
+      "size": [
+        70.2800000000002,
+        6,
+        69.89
+      ],
+      "yaw": 0,
+      "label": "C13_EastArrival_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3646.505,
+        0,
+        67.26
+      ],
+      "size": [
+        58.649999999999906,
+        157.9,
+        55.86000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertBack01",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3646.505,
+        157.9,
+        67.26
+      ],
+      "size": [
+        58.84999999999991,
+        6,
+        56.06000000000001
+      ],
+      "yaw": 0,
+      "label": "C13_ExpertBack01_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Lamp",
+      "pos": [
+        3340.25,
+        11.66,
+        190.31
+      ],
+      "size": [
+        1.8999999999996362,
+        10.25,
+        1.8999999999999773
+      ],
+      "yaw": 0,
+      "label": "MarketLamp_02",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_2",
+      "pos": [
+        3276.1549999999997,
+        0.95,
+        -314.255
+      ],
+      "size": [
+        58.4699999999998,
+        154.0,
+        55.85000000000002
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_06",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_3",
+      "pos": [
+        3512.0,
+        33.9,
+        -380.0
+      ],
+      "size": [
+        47.19999999999982,
+        143.0,
+        40.200000000000045
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_09",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_4",
+      "pos": [
+        3202.885,
+        0,
+        -204.0
+      ],
+      "size": [
+        41.99000000000024,
+        162.35,
+        49.30000000000001
+      ],
+      "yaw": 0,
+      "label": "CitySkyline_0_03",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Sage_Wide",
+      "pos": [
+        3454.25,
+        0,
+        209.71
+      ],
+      "size": [
+        43.8,
+        64.635,
+        37.8
+      ],
+      "yaw": 0,
+      "label": "DistantBlock11__Skyline__00",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3454.25,
+        64.635,
+        209.71
+      ],
+      "size": [
+        44.0,
+        4.865,
+        38.0
+      ],
+      "yaw": 0,
+      "label": "DistantBlock11__Skyline__00_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Blue_Narrow",
+      "pos": [
+        3454.25,
+        68,
+        209.71
+      ],
+      "size": [
+        44.999999999999815,
+        2.79,
+        38.999999999999986
+      ],
+      "yaw": 0,
+      "label": "DistantBlock11__Cream__00",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3454.25,
+        70.79,
+        209.71
+      ],
+      "size": [
+        45.19999999999982,
+        0.21000000000000002,
+        39.19999999999999
+      ],
+      "yaw": 0,
+      "label": "DistantBlock11__Cream__00_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Coral_Wide",
+      "pos": [
+        3418.7200000000003,
+        111.45,
+        273.54999999999995
+      ],
+      "size": [
+        68.13999999999969,
+        4.371000000000002,
+        62.87999999999998
+      ],
+      "yaw": 0,
+      "label": "DistantBlock7__Cream__00",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3418.7200000000003,
+        115.82100000000001,
+        273.54999999999995
+      ],
+      "size": [
+        68.33999999999969,
+        0.32900000000000024,
+        63.079999999999984
+      ],
+      "yaw": 0,
+      "label": "DistantBlock7__Cream__00_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Cream_Tall",
+      "pos": [
+        3418.7200000000003,
+        2.95,
+        273.555
+      ],
+      "size": [
+        66.50000000000027,
+        104.0,
+        61.229999999999976
+      ],
+      "yaw": 0,
+      "label": "DistantBlock7__Skyline__00",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_MansardRoof",
+      "pos": [
+        3418.7200000000003,
+        106.95,
+        273.555
+      ],
+      "size": [
+        66.70000000000027,
+        6,
+        61.42999999999998
+      ],
+      "yaw": 0,
+      "label": "DistantBlock7__Skyline__00_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Ochre_Narrow",
+      "pos": [
+        3454.25,
+        69.5,
+        209.71
+      ],
+      "size": [
+        45.8,
+        9.3,
+        39.8
+      ],
+      "yaw": 0,
+      "label": "DistantBlock11__Teal__00",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3454.25,
+        78.8,
+        209.71
+      ],
+      "size": [
+        46.0,
+        0.7000000000000001,
+        40.0
+      ],
+      "yaw": 0,
+      "label": "DistantBlock11__Teal__00_roof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_AtelierHall",
+      "pos": [
+        3785,
+        74.5,
+        92
+      ],
+      "size": [
+        64,
+        24.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "MainHall",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_AtelierHall",
+      "pos": [
+        3785,
+        74.5,
+        122
+      ],
+      "size": [
+        64,
+        24.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "MainHall",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_AtelierHall",
+      "pos": [
+        3785,
+        74.5,
+        152
+      ],
+      "size": [
+        64,
+        24.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "MainHall",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_AtelierHall",
+      "pos": [
+        3785,
+        74.5,
+        182
+      ],
+      "size": [
+        64,
+        24.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "MainHall",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_BarrelRoof",
+      "pos": [
+        3785,
+        99,
+        137
+      ],
+      "size": [
+        66,
+        8,
+        122
+      ],
+      "yaw": 0,
+      "label": "MainHallRoof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3715,
+        0,
+        68
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_0_0",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3715,
+        0,
+        98
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_0_1",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3715,
+        0,
+        128
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_0_2",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3715,
+        0,
+        158
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_0_3",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3715,
+        0,
+        188
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_0_4",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3715,
+        0,
+        218
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_0_5",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3745,
+        0,
+        68
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_1_0",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3745,
+        0,
+        218
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_1_5",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3775,
+        0,
+        68
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_2_0",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3775,
+        0,
+        218
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_2_5",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3805,
+        0,
+        68
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_3_0",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3805,
+        0,
+        218
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_3_5",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3835,
+        0,
+        68
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_4_0",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3835,
+        0,
+        98
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_4_1",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3835,
+        0,
+        128
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_4_2",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3835,
+        0,
+        158
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_4_3",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3835,
+        0,
+        188
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_4_4",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Terminal_Wing",
+      "pos": [
+        3835,
+        0,
+        218
+      ],
+      "size": [
+        30,
+        74.5,
+        30
+      ],
+      "yaw": 0,
+      "label": "TerminalBase_4_5",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_FlatRoof_Broad",
+      "pos": [
+        3775,
+        72.5,
+        143
+      ],
+      "size": [
+        150,
+        2.5,
+        180
+      ],
+      "yaw": 0,
+      "label": "TerminalBaseRoof",
+      "category": "Roofs"
+    },
+    {
+      "asset": "V3_Shopfront",
+      "pos": [
+        3297,
+        0,
+        224
+      ],
+      "size": [
+        16,
+        12,
+        2.5
+      ],
+      "yaw": 90,
+      "label": "MarketFront",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Awning_12",
+      "pos": [
+        3300.3,
+        10,
+        224
+      ],
+      "size": [
+        12.0,
+        2.9821219444274902,
+        8.0
+      ],
+      "yaw": 90,
+      "label": "MarketAwning",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Shopfront",
+      "pos": [
+        3297,
+        0,
+        202
+      ],
+      "size": [
+        16,
+        12,
+        2.5
+      ],
+      "yaw": 90,
+      "label": "MarketFront",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Awning_12",
+      "pos": [
+        3300.3,
+        10,
+        202
+      ],
+      "size": [
+        12.0,
+        2.9821219444274902,
+        8.0
+      ],
+      "yaw": 90,
+      "label": "MarketAwning",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Shopfront",
+      "pos": [
+        3297,
+        0,
+        119
+      ],
+      "size": [
+        16,
+        12,
+        2.5
+      ],
+      "yaw": 90,
+      "label": "MarketFront",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Awning_12",
+      "pos": [
+        3300.3,
+        10,
+        119
+      ],
+      "size": [
+        12.0,
+        2.9821219444274902,
+        8.0
+      ],
+      "yaw": 90,
+      "label": "MarketAwning",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_WorksiteHoarding",
+      "pos": [
+        3400,
+        64,
+        -293
+      ],
+      "size": [
+        17.0,
+        8.0,
+        2.5999999046325684
+      ],
+      "yaw": 90,
+      "label": "WorksiteEdge",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_WorksiteHoarding",
+      "pos": [
+        3587,
+        64,
+        -293
+      ],
+      "size": [
+        17.0,
+        8.0,
+        2.5999999046325684
+      ],
+      "yaw": 90,
+      "label": "WorksiteEdge",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_MaterialsStock",
+      "pos": [
+        3430,
+        64,
+        -290
+      ],
+      "size": [
+        10.5,
+        5.099999904632568,
+        8.0
+      ],
+      "yaw": 0,
+      "label": "WorksiteStock",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_MaterialsStock",
+      "pos": [
+        3600,
+        64,
+        -285
+      ],
+      "size": [
+        10.5,
+        5.099999904632568,
+        8.0
+      ],
+      "yaw": 0,
+      "label": "WorksiteStock",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_MuralPanel",
+      "pos": [
+        3260,
+        27,
+        -48
+      ],
+      "size": [
+        30,
+        18,
+        1.06
+      ],
+      "yaw": 90,
+      "label": "CourtyardMural",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_ServiceStock",
+      "pos": [
+        3719,
+        74,
+        -190
+      ],
+      "size": [
+        12.75,
+        4.5,
+        4.550000190734863
+      ],
+      "yaw": 180,
+      "label": "DepotStock",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_MuralPanel",
+      "pos": [
+        3401.7,
+        55,
+        -95
+      ],
+      "size": [
+        26,
+        16,
+        1.06
+      ],
+      "yaw": 270,
+      "label": "CourtEastMural",
+      "category": "Props"
+    },
+    {
+      "asset": "V3_Skyline_1",
+      "pos": [
+        3210,
+        0,
+        -170
+      ],
+      "size": [
+        70,
+        95,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_0",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Skyline_2",
+      "pos": [
+        3210,
+        0,
+        0
+      ],
+      "size": [
+        70,
+        85,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_1",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Skyline_3",
+      "pos": [
+        3170,
+        0,
+        170
+      ],
+      "size": [
+        70,
+        80,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_2",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Skyline_4",
+      "pos": [
+        3380,
+        0,
+        335
+      ],
+      "size": [
+        70,
+        80,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_3",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Skyline_1",
+      "pos": [
+        3600,
+        0,
+        335
+      ],
+      "size": [
+        70,
+        100,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_4",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Skyline_2",
+      "pos": [
+        3900,
+        0,
+        300
+      ],
+      "size": [
+        70,
+        110,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_5",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Skyline_3",
+      "pos": [
+        3960,
+        0,
+        125
+      ],
+      "size": [
+        70,
+        120,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_6",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Skyline_4",
+      "pos": [
+        3930,
+        0,
+        -90
+      ],
+      "size": [
+        70,
+        100,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_7",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Skyline_1",
+      "pos": [
+        3810,
+        0,
+        -355
+      ],
+      "size": [
+        70,
+        115,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_8",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Skyline_2",
+      "pos": [
+        3510,
+        0,
+        -388
+      ],
+      "size": [
+        70,
+        115,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_9",
+      "category": "Architecture"
+    },
+    {
+      "asset": "V3_Skyline_3",
+      "pos": [
+        3270,
+        0,
+        -330
+      ],
+      "size": [
+        70,
+        100,
+        45
+      ],
+      "yaw": 0,
+      "label": "Perimeter_10",
+      "category": "Architecture"
+    }
+  ],
+  "replacePaths": [
+    "Context.C13_EastArrival",
+    "Context.C13_ExpertBack01",
+    "Context.C13_TrackOffice",
+    "Context.CitySkyline_0_03",
+    "Context.CitySkyline_0_06",
+    "Context.CitySkyline_0_09",
+    "Context.DistantBlock11__Cream__00",
+    "Context.DistantBlock11__Skyline__00",
+    "Context.DistantBlock11__Teal__00",
+    "Context.DistantBlock7__Cream__00",
+    "Context.DistantBlock7__Skyline__00",
+    "Context.MarketHouse1",
+    "Context.MarketLamp_02",
+    "RaceCourse.Decoration.C10Refinements.Construction_RenovationBlock",
+    "RaceCourse.Decoration.C10Streets.CityC10_Depot_EastHotel",
+    "RaceCourse.Decoration.C10Streets.CityC10_Depot_EastRefuge",
+    "RaceCourse.Decoration.C10Streets.CityC10_Depot_EastWorks",
+    "RaceCourse.Decoration.C10Streets.CityC10_Depot_WestArrival",
+    "RaceCourse.Decoration.C10Streets.CityC10_Depot_WestYard",
+    "RaceCourse.Decoration.C10Streets.CityC10_Roof_EastCourt",
+    "RaceCourse.Decoration.C10Streets.CityC10_Roof_GardenFrame",
+    "RaceCourse.Decoration.C10Streets.CityC10_Roof_InnerCorner",
+    "RaceCourse.Decoration.C10Streets.CityC10_Roof_NorthFrame",
+    "RaceCourse.Decoration.C10Streets.CityC10_Roof_WestCorner",
+    "RaceCourse.Decoration.C10Streets.Roof_ServiceBox1",
+    "RaceCourse.Decoration.C10Streets.Roof_ServiceBox2",
+    "RaceCourse.Decoration.C10Streets.Roof_ServiceBox3",
+    "RaceCourse.Decoration.C10Streets.Station_ServicePlanter1",
+    "RaceCourse.Decoration.C10Streets.Station_ServicePlanter2",
+    "RaceCourse.Decoration.C10Streets.Station_ServicePlanter3",
+    "RaceCourse.Decoration.C13Terminal.C13_EastArcade",
+    "RaceCourse.Decoration.C13Terminal.C13_EastArrival",
+    "RaceCourse.Decoration.C13Terminal.C13_EastCorner",
+    "RaceCourse.Decoration.C13Terminal.C13_EastLink01",
+    "RaceCourse.Decoration.C13Terminal.C13_EastLink02",
+    "RaceCourse.Decoration.C13Terminal.C13_EastReturn",
+    "RaceCourse.Decoration.C13Terminal.C13_ExpertBack01",
+    "RaceCourse.Decoration.C13Terminal.C13_ExpertBack02",
+    "RaceCourse.Decoration.C13Terminal.C13_ExpertBack03",
+    "RaceCourse.Decoration.C13Terminal.C13_ExpertService01",
+    "RaceCourse.Decoration.C13Terminal.C13_ExpertService02",
+    "RaceCourse.Decoration.C13Terminal.C13_ExpertService03",
+    "RaceCourse.Decoration.C13Terminal.C13_ExpertService04",
+    "RaceCourse.Decoration.C13Terminal.C13_MainHall",
+    "RaceCourse.Decoration.C13Terminal.C13_NorthGallery",
+    "RaceCourse.Decoration.C13Terminal.C13_SouthCourt",
+    "RaceCourse.Decoration.C13Terminal.C13_SouthHotel",
+    "RaceCourse.Decoration.C13Terminal.C13_SouthLink01",
+    "RaceCourse.Decoration.C13Terminal.C13_SouthLink02",
+    "RaceCourse.Decoration.C13Terminal.C13_StationBase",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_00_00",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_00_06",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_01_08",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_02_01",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_02_02",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_02_03",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_02_04",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_03_01",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_03_02",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_04_01",
+    "RaceCourse.Decoration.C13Terminal.C13_Surface_StationMain_04_02",
+    "RaceCourse.Decoration.C13Terminal.C13_TerraceFoundation",
+    "RaceCourse.Decoration.C13Terminal.C13_TowerFoundation",
+    "RaceCourse.Decoration.C13Terminal.C13_TrackOffice",
+    "RaceCourse.Decoration.C13Terminal.C13_WestWing",
+    "RaceCourse.Decoration.C14Scenery.ParkedTrains.Depot_Parked0",
+    "RaceCourse.Decoration.C14Scenery.ParkedTrains.Depot_Parked1",
+    "RaceCourse.Decoration.C14Scenery.ParkedTrains.Depot_Parked2",
+    "RaceCourse.Decoration.C14Scenery.ParkedTrains.Depot_Parked3",
+    "RaceCourse.Decoration.C14Scenery.ParkedTrains.Depot_Parked4",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_00_01",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_00_02",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_00_03",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_01_01",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_01_02",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_01_03",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_01_04",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_02_01",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_02_02",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_02_03",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_03_01",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_03_02",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.DistrictRoofs_04_01",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.RoofGarden_00_00",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.RoofGarden_00_01",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.RoofGarden_00_02",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.RoofGarden_00_03",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.RoofGarden_01_01",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.RoofGarden_01_02",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.RoofGarden_01_03",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.RoofGarden_02_01",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.RoofGarden_02_02",
+    "RaceCourse.Decoration.C14Scenery.RetainedBuildingSupports.RoofGarden_02_03",
+    "RaceCourse.Decoration.CityDepth.CityInfill_00",
+    "RaceCourse.Decoration.CityDepth.CityInfill_01",
+    "RaceCourse.Decoration.CityDepth.CityInfill_02",
+    "RaceCourse.Decoration.CityDepth.CityInfill_03",
+    "RaceCourse.Decoration.CityDepth.CityInfill_04",
+    "RaceCourse.Decoration.CityDepth.CityInfill_05",
+    "RaceCourse.Decoration.CityDepth.CityInfill_06",
+    "RaceCourse.Decoration.CityDepth.CityInfill_07",
+    "RaceCourse.Decoration.CityDepth.CityInfill_08",
+    "RaceCourse.Decoration.CityDepth.CityInfill_09",
+    "RaceCourse.Decoration.CityDepth.CityInfill_10",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_0_06",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_0_10",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_0_11",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_0_12",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_0_13",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_0_14",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_0_15",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_0_16",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_0_17",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_1_05",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_1_06",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_1_09",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_1_10",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_1_11",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_1_12",
+    "RaceCourse.Decoration.CityDepth.CitySkyline_1_13",
+    "RaceCourse.Decoration.CourtHouse0",
+    "RaceCourse.Decoration.CourtHouse1",
+    "RaceCourse.Decoration.CourtHouse2",
+    "RaceCourse.Decoration.CourtHouse3",
+    "RaceCourse.Decoration.CourtHouse4",
+    "RaceCourse.Decoration.CourtPlanter0",
+    "RaceCourse.Decoration.CourtPlanter1",
+    "RaceCourse.Decoration.CourtPlanter2",
+    "RaceCourse.Decoration.CourtUpperGallery",
+    "RaceCourse.Decoration.CourtyardPark.Bench1",
+    "RaceCourse.Decoration.CourtyardPark.Bench2",
+    "RaceCourse.Decoration.CourtyardPark.Bench3",
+    "RaceCourse.Decoration.CourtyardPark.Bench4",
+    "RaceCourse.Decoration.CourtyardPark.Details.Lamp1",
+    "RaceCourse.Decoration.CourtyardPark.Details.Lamp2",
+    "RaceCourse.Decoration.CourtyardPark.Details.Lamp3",
+    "RaceCourse.Decoration.CourtyardPark.Details.Lamp4",
+    "RaceCourse.Decoration.CourtyardPark.Details.Planter1",
+    "RaceCourse.Decoration.CourtyardPark.Details.Planter2",
+    "RaceCourse.Decoration.CourtyardPark.Details.Planter3",
+    "RaceCourse.Decoration.CourtyardPark.Details.Planter4",
+    "RaceCourse.Decoration.CourtyardPark.Tree1",
+    "RaceCourse.Decoration.CourtyardPark.Tree2",
+    "RaceCourse.Decoration.CourtyardPark.Tree3",
+    "RaceCourse.Decoration.CourtyardPark.Tree4",
+    "RaceCourse.Decoration.DistantBlock11",
+    "RaceCourse.Decoration.MarketBackdrop.MarketBackdrop_A",
+    "RaceCourse.Decoration.MarketBackdrop.MarketBackdrop_B",
+    "RaceCourse.Decoration.MarketBackdrop.MarketBackdrop_C",
+    "RaceCourse.Decoration.MarketBackdrop.MarketBackdrop_D",
+    "RaceCourse.Decoration.MarketBackdrop.MarketBackdrop_E",
+    "RaceCourse.Decoration.MarketEditableProps.MarketLamp_01",
+    "RaceCourse.Decoration.MarketEditableProps.MarketLamp_02",
+    "RaceCourse.Decoration.MarketEditableProps.MarketLamp_03",
+    "RaceCourse.Decoration.MarketEditableProps.MarketLamp_04",
+    "RaceCourse.Decoration.MarketEditableProps.MarketLamp_05",
+    "RaceCourse.Decoration.MarketHouse0",
+    "RaceCourse.Decoration.MarketHouse1",
+    "RaceCourse.Decoration.MarketHouse2",
+    "RaceCourse.Decoration.MarketHouse3",
+    "RaceCourse.Decoration.MarketHouse4",
+    "RaceCourse.Decoration.MarketHouse5",
+    "RaceCourse.Decoration.MarketHouse6",
+    "RaceCourse.Decoration.NorthRoofFrame",
+    "RaceCourse.Decoration.OuterBlock13",
+    "RaceCourse.Decoration.OuterBlock16",
+    "RaceCourse.Decoration.OuterBlock4",
+    "RaceCourse.Decoration.OuterBlock5",
+    "RaceCourse.Decoration.OuterBlock7",
+    "RaceCourse.Decoration.RailwayHotel",
+    "RaceCourse.Decoration.RenovationEast",
+    "RaceCourse.Decoration.RenovationNorth",
+    "RaceCourse.Decoration.RenovationWest",
+    "RaceCourse.Decoration.RoofHouse0",
+    "RaceCourse.Decoration.RoofHouse1",
+    "RaceCourse.Decoration.RoofHouse2",
+    "RaceCourse.Decoration.RoofHouse3",
+    "RaceCourse.Decoration.RoofHouse4",
+    "RaceCourse.Decoration.RoofHouse5",
+    "RaceCourse.Decoration.SouthRoofWaterHouse",
+    "RaceCourse.Decoration.WaterTankB"
+  ],
+  "heightCaps": [
+    {
+      "name": "C13_Surface_StationMain_03_02",
+      "oldTop": 125.06,
+      "newTop": 123.6
+    },
+    {
+      "name": "C13_Surface_StationMain_04_01",
+      "oldTop": 127.4,
+      "newTop": 125.93333587646484
+    },
+    {
+      "name": "C13_Surface_StationMain_00_00",
+      "oldTop": 86.07,
+      "newTop": 84.6
+    },
+    {
+      "name": "C13_TerraceFoundation",
+      "oldTop": 131.7,
+      "newTop": 130.6
+    },
+    {
+      "name": "C13_Surface_StationMain_02_03",
+      "oldTop": 113.57,
+      "newTop": 112.1
+    },
+    {
+      "name": "C13_Surface_StationMain_02_01",
+      "oldTop": 108.57,
+      "newTop": 107.1
+    },
+    {
+      "name": "C13_Surface_StationMain_02_02",
+      "oldTop": 111.07,
+      "newTop": 109.6
+    },
+    {
+      "name": "C13_Surface_StationMain_03_01",
+      "oldTop": 120.56,
+      "newTop": 119.1
+    },
+    {
+      "name": "C13_Surface_StationMain_04_02",
+      "oldTop": 129.73,
+      "newTop": 128.26667175292968
+    },
+    {
+      "name": "C13_Surface_StationMain_00_06",
+      "oldTop": 95.07,
+      "newTop": 93.13888702392578
+    },
+    {
+      "name": "C13_Surface_StationMain_02_04",
+      "oldTop": 116.07,
+      "newTop": 114.6
+    },
+    {
+      "name": "C13_Surface_StationMain_01_08",
+      "oldTop": 106.07,
+      "newTop": 104.6
+    },
+    {
+      "name": "MarketBackdrop_A",
+      "oldTop": 65.23,
+      "newTop": 7.3012958526611325
+    },
+    {
+      "name": "MarketBackdrop_C",
+      "oldTop": 67.23,
+      "newTop": 7.3012958526611325
+    },
+    {
+      "name": "CourtHouse1",
+      "oldTop": 100.92,
+      "newTop": 49.78998336791992
+    },
+    {
+      "name": "RoofHouse0",
+      "oldTop": 129.05,
+      "newTop": 76.6
+    }
+  ],
+  "scope": "Scenery only; dynamic gameplay and route markers retained"
+}

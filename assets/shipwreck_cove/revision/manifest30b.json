@@ -1,0 +1,361 @@
+{
+  "build": "SC_CLIFF_LEDGE_30B",
+  "sourceBuild": "SC_CAVE_KIT_26 / SC_R_CrumbleStone26 landing-stone scale review",
+  "assetOrder": [
+    "SC_CliffLedge30A",
+    "SC_CliffLedge30B",
+    "SC_CliffLedge30C"
+  ],
+  "modelRoot": "SC_R_CliffLedges30bModelRoot",
+  "units": "1 Blender unit = 1 intended Roblox stud",
+  "coordinates": "Blender local XYZ maps to Roblox XYZ as [x, z, -y] with -Z forward and Y up FBX axes.",
+  "assetCeiling": 300,
+  "libraryTriangles": 564,
+  "materialCount": 1,
+  "atlas": "palette.png",
+  "colliderTopFootprintRobloxXZ": [
+    5.2,
+    4.8
+  ],
+  "topCornerMismatchStuds": 0.0,
+  "assets": [
+    {
+      "id": "SC_CliffLedge30A",
+      "family": "cliff",
+      "role": "walkable_landing_ledge_visual",
+      "triangles": 188,
+      "triangleCeiling": 300,
+      "vertices": 96,
+      "faces": 82,
+      "dimensionsRobloxXYZ": [
+        5.800000190734863,
+        4.400000095367432,
+        5.300000190734863
+      ],
+      "boundsBlender": {
+        "min": [
+          -2.9000000953674316,
+          -2.6500000953674316,
+          0.0
+        ],
+        "max": [
+          2.9000000953674316,
+          2.6500000953674316,
+          4.400000095367432
+        ]
+      },
+      "centerBlender": [
+        0.0,
+        0.0,
+        2.200000047683716
+      ],
+      "centerRobloxXYZ": [
+        0.0,
+        2.200000047683716,
+        -0.0
+      ],
+      "localPivotBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objectLocationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mount": "ground",
+      "topY": 4.4,
+      "topYRoblox": 4.4,
+      "topFootprintRobloxXZ": [
+        5.800000190734863,
+        5.300000190734863
+      ],
+      "flatTop": true,
+      "topCoversColliderFootprintRobloxXZ": [
+        5.2,
+        4.8
+      ],
+      "topCornerMismatchStuds": 0.0,
+      "meshComponents": 1,
+      "watertight": true,
+      "atlas": "palette.png",
+      "atlasUVAudit": {
+        "facesChecked": 82,
+        "allFacesStayWithinOnePaletteTile": true
+      },
+      "material": "SC_RevisionOpaquePalette",
+      "notes": "Low asymmetric ledge with a broad square landing top and a compact broken-rock base.",
+      "sourceFile": "SC_CliffLedge30A.fbx",
+      "robloxModelAssetId": "112321221154627",
+      "uploadReceipt": "upload-receipt30b-ledge-a.json",
+      "uploadedFbxSha256": "8561690d30fa9a81e43d72bef5e8518dd0a07fedf75346b2e0a451556231ab91",
+      "uploadStatus": "complete"
+    },
+    {
+      "id": "SC_CliffLedge30B",
+      "family": "cliff",
+      "role": "walkable_landing_ledge_visual",
+      "triangles": 188,
+      "triangleCeiling": 300,
+      "vertices": 96,
+      "faces": 82,
+      "dimensionsRobloxXYZ": [
+        5.800000190734863,
+        5.099999904632568,
+        5.300000190734863
+      ],
+      "boundsBlender": {
+        "min": [
+          -2.9000000953674316,
+          -2.6500000953674316,
+          0.0
+        ],
+        "max": [
+          2.9000000953674316,
+          2.6500000953674316,
+          5.099999904632568
+        ]
+      },
+      "centerBlender": [
+        0.0,
+        0.0,
+        2.549999952316284
+      ],
+      "centerRobloxXYZ": [
+        0.0,
+        2.549999952316284,
+        -0.0
+      ],
+      "localPivotBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objectLocationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mount": "ground",
+      "topY": 5.1,
+      "topYRoblox": 5.1,
+      "topFootprintRobloxXZ": [
+        5.800000190734863,
+        5.300000190734863
+      ],
+      "flatTop": true,
+      "topCoversColliderFootprintRobloxXZ": [
+        5.2,
+        4.8
+      ],
+      "topCornerMismatchStuds": 0.0,
+      "meshComponents": 1,
+      "watertight": true,
+      "atlas": "palette.png",
+      "atlasUVAudit": {
+        "facesChecked": 82,
+        "allFacesStayWithinOnePaletteTile": true
+      },
+      "material": "SC_RevisionOpaquePalette",
+      "notes": "Offset limestone body with an uneven lower taper and the same full walkable top outline.",
+      "sourceFile": "SC_CliffLedge30B.fbx",
+      "uploadStatus": "local_only",
+      "localOnlyReason": "Kept local by integration scope; not uploaded."
+    },
+    {
+      "id": "SC_CliffLedge30C",
+      "family": "cliff",
+      "role": "walkable_landing_ledge_visual",
+      "triangles": 188,
+      "triangleCeiling": 300,
+      "vertices": 96,
+      "faces": 82,
+      "dimensionsRobloxXYZ": [
+        5.800000190734863,
+        5.800000190734863,
+        5.300000190734863
+      ],
+      "boundsBlender": {
+        "min": [
+          -2.9000000953674316,
+          -2.6500000953674316,
+          0.0
+        ],
+        "max": [
+          2.9000000953674316,
+          2.6500000953674316,
+          5.800000190734863
+        ]
+      },
+      "centerBlender": [
+        0.0,
+        0.0,
+        2.9000000953674316
+      ],
+      "centerRobloxXYZ": [
+        0.0,
+        2.9000000953674316,
+        -0.0
+      ],
+      "localPivotBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objectLocationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mount": "ground",
+      "topY": 5.8,
+      "topYRoblox": 5.8,
+      "topFootprintRobloxXZ": [
+        5.800000190734863,
+        5.300000190734863
+      ],
+      "flatTop": true,
+      "topCoversColliderFootprintRobloxXZ": [
+        5.2,
+        4.8
+      ],
+      "topCornerMismatchStuds": 0.0,
+      "meshComponents": 1,
+      "watertight": true,
+      "atlas": "palette.png",
+      "atlasUVAudit": {
+        "facesChecked": 82,
+        "allFacesStayWithinOnePaletteTile": true
+      },
+      "material": "SC_RevisionOpaquePalette",
+      "notes": "Tallest ledge with a shifted lower silhouette, pale stone facets, and a full rectangular top.",
+      "sourceFile": "SC_CliffLedge30C.fbx",
+      "robloxModelAssetId": "133427687233446",
+      "uploadReceipt": "upload-receipt30b-ledge-c.json",
+      "uploadedFbxSha256": "49760de6f6f8107263b9a3a15e0e9d4fe02f525fe36ca84ac94ce3d31c562f97",
+      "uploadStatus": "complete"
+    }
+  ],
+  "export": {
+    "unitScaleApplied": true,
+    "axisForward": "-Z",
+    "axisUp": "Y",
+    "oneEditableMeshPerFBX": true,
+    "topSurface": "Single flat rectangular face spanning the full manifest XZ footprint.",
+    "fbxTexture": "The existing 128x128 palette atlas is embedded in each FBX.",
+    "sourceToRoblox": "Roblox XYZ = Blender XZY with Roblox Z = -Blender Y"
+  },
+  "fbxReimportVerification": {
+    "SC_CliffLedge30A": {
+      "fbxReimportPassed": true,
+      "triangles": 188,
+      "vertices": 96,
+      "connectedComponents": 1,
+      "materials": 1,
+      "uvLayers": 1,
+      "atlasTexturePresent": true,
+      "atlasUVAudit": {
+        "facesChecked": 82,
+        "allFacesStayWithinOnePaletteTile": true
+      },
+      "dimensionsBlender": [
+        5.8,
+        5.3,
+        4.4
+      ],
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "SC_CliffLedge30B": {
+      "fbxReimportPassed": true,
+      "triangles": 188,
+      "vertices": 96,
+      "connectedComponents": 1,
+      "materials": 1,
+      "uvLayers": 1,
+      "atlasTexturePresent": true,
+      "atlasUVAudit": {
+        "facesChecked": 82,
+        "allFacesStayWithinOnePaletteTile": true
+      },
+      "dimensionsBlender": [
+        5.8,
+        5.3,
+        5.1
+      ],
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "SC_CliffLedge30C": {
+      "fbxReimportPassed": true,
+      "triangles": 188,
+      "vertices": 96,
+      "connectedComponents": 1,
+      "materials": 1,
+      "uvLayers": 1,
+      "atlasTexturePresent": true,
+      "atlasUVAudit": {
+        "facesChecked": 82,
+        "allFacesStayWithinOnePaletteTile": true
+      },
+      "dimensionsBlender": [
+        5.8,
+        5.3,
+        5.8
+      ],
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "files": {
+    "build_cliff30b.py": {
+      "bytes": 18439,
+      "sha256": "49cf27299672961ee72e948f318a71666352d9fcf122773fb1de0c62f8d6e046"
+    },
+    "ShipwreckCove_CliffLedges30b.blend": {
+      "bytes": 94439,
+      "sha256": "f33651a44bb55c2c7f4a8cf8857eca0cdc02c7be3f64fa03009c75782a3ad1b3"
+    },
+    "SC_CliffLedge30A.fbx": {
+      "bytes": 22988,
+      "sha256": "8561690d30fa9a81e43d72bef5e8518dd0a07fedf75346b2e0a451556231ab91"
+    },
+    "SC_CliffLedge30B.fbx": {
+      "bytes": 22972,
+      "sha256": "da22da72e4711d0e2d009cf4f07d5223ea3df2cb09db289be1bcceea4a670c96"
+    },
+    "SC_CliffLedge30C.fbx": {
+      "bytes": 23020,
+      "sha256": "49760de6f6f8107263b9a3a15e0e9d4fe02f525fe36ca84ac94ce3d31c562f97"
+    },
+    "upload-receipt30b-ledge-a.json": {
+      "bytes": 491,
+      "sha256": "8d71331d8a91c2ee3944f414952c6153bb96070402cfa4b9a50539c0e58c522e"
+    },
+    "upload-receipt30b-ledge-c.json": {
+      "bytes": 491,
+      "sha256": "09da3037443791c181124f5e8c7151b51ba6c7aa47aae9d9729ba3feb21039bb"
+    }
+  },
+  "upload": {
+    "creatorUserId": "86069177",
+    "uploadedCount": 2,
+    "uploadedAssets": {
+      "SC_CliffLedge30A": "112321221154627",
+      "SC_CliffLedge30C": "133427687233446"
+    },
+    "localOnlyAssets": [
+      "SC_CliffLedge30B"
+    ]
+  }
+}

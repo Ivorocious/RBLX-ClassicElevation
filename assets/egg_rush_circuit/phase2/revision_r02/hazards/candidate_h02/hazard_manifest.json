@@ -1,0 +1,1437 @@
+{
+  "build": "ER_P2_R02_H02",
+  "blenderVersion": "5.2.1 LTS",
+  "units": "Roblox studs",
+  "axes": "Roblox X,Y,Z -> Blender X,-Z,Y",
+  "primitives": "Native Roblox Block Parts, no mesh upload",
+  "palette": {
+    "Cream": [
+      255,
+      240,
+      202
+    ],
+    "Coral": [
+      246,
+      125,
+      96
+    ],
+    "Mint": [
+      104,
+      205,
+      176
+    ],
+    "Honey": [
+      185,
+      123,
+      67
+    ],
+    "Iron": [
+      100,
+      106,
+      120
+    ],
+    "Hot": [
+      255,
+      20,
+      35
+    ]
+  },
+  "templates": {
+    "ScorchedShell": {
+      "partCount": 8,
+      "lethalPartCount": 3,
+      "boundsRoblox": [
+        [
+          -3.32821,
+          0,
+          -1.25
+        ],
+        [
+          3.32821,
+          2.62627,
+          1.25
+        ]
+      ],
+      "pivot": "Local base center, Y up",
+      "parts": [
+        {
+          "name": "IronCradle",
+          "primitive": "Block",
+          "size": [
+            6.6,
+            0.4,
+            2.4
+          ],
+          "position": [
+            0,
+            0.2,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Iron",
+          "color": [
+            100,
+            106,
+            120
+          ],
+          "material": "Metal",
+          "lethal": false,
+          "volume": 6.336,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "ShellLeft",
+          "primitive": "Block",
+          "size": [
+            1.25,
+            2.15,
+            2.45
+          ],
+          "position": [
+            -2.32,
+            1.39,
+            0
+          ],
+          "rotationMatrix": [
+            0.91355,
+            -0.40674,
+            0,
+            0.40674,
+            0.91355,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            24.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            240,
+            202
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 6.584375,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "ShellRight",
+          "primitive": "Block",
+          "size": [
+            1.25,
+            2.15,
+            2.45
+          ],
+          "position": [
+            2.32,
+            1.39,
+            0
+          ],
+          "rotationMatrix": [
+            0.91355,
+            0.40674,
+            0,
+            -0.40674,
+            0.91355,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            -24.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            240,
+            202
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 6.584375,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "BrokenRimLeft",
+          "primitive": "Block",
+          "size": [
+            1.8,
+            0.6,
+            2.5
+          ],
+          "position": [
+            -1.54,
+            0.65,
+            0
+          ],
+          "rotationMatrix": [
+            0.93358,
+            -0.35837,
+            0,
+            0.35837,
+            0.93358,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            21.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            240,
+            202
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 2.7,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "BrokenRimRight",
+          "primitive": "Block",
+          "size": [
+            1.8,
+            0.6,
+            2.5
+          ],
+          "position": [
+            1.54,
+            0.65,
+            0
+          ],
+          "rotationMatrix": [
+            0.93358,
+            0.35837,
+            0,
+            -0.35837,
+            0.93358,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            -21.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            240,
+            202
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 2.7,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotToothLeft",
+          "primitive": "Block",
+          "size": [
+            0.85,
+            1.65,
+            2.1
+          ],
+          "position": [
+            -1.15,
+            1.28,
+            0
+          ],
+          "rotationMatrix": [
+            0.97437,
+            0.22495,
+            0,
+            -0.22495,
+            0.97437,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            -13.0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 2.94525,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotToothCenter",
+          "primitive": "Block",
+          "size": [
+            1.0,
+            2.05,
+            2.1
+          ],
+          "position": [
+            0,
+            1.45,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 4.305,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotToothRight",
+          "primitive": "Block",
+          "size": [
+            0.85,
+            1.5,
+            2.1
+          ],
+          "position": [
+            1.15,
+            1.2,
+            0
+          ],
+          "rotationMatrix": [
+            0.97437,
+            -0.22495,
+            0,
+            0.22495,
+            0.97437,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            13.0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 2.6775,
+          "vertices": 8,
+          "triangles": 12
+        }
+      ]
+    },
+    "FeederPaddle": {
+      "partCount": 7,
+      "lethalPartCount": 1,
+      "boundsRoblox": [
+        [
+          -2.995,
+          0,
+          -1.5
+        ],
+        [
+          2.855,
+          2.325,
+          1.5
+        ]
+      ],
+      "pivot": "Local base center, Y up",
+      "parts": [
+        {
+          "name": "IronFoot",
+          "primitive": "Block",
+          "size": [
+            1.55,
+            0.4,
+            2.35
+          ],
+          "position": [
+            -2.22,
+            0.2,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Iron",
+          "color": [
+            100,
+            106,
+            120
+          ],
+          "material": "Metal",
+          "lethal": false,
+          "volume": 1.457,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "MintStem",
+          "primitive": "Block",
+          "size": [
+            0.85,
+            1.9,
+            1.6
+          ],
+          "position": [
+            -2.22,
+            1.3,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Mint",
+          "color": [
+            104,
+            205,
+            176
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 2.584,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "IronHub",
+          "primitive": "Block",
+          "size": [
+            1.25,
+            0.85,
+            2.1
+          ],
+          "position": [
+            -2.22,
+            1.65,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Iron",
+          "color": [
+            100,
+            106,
+            120
+          ],
+          "material": "Metal",
+          "lethal": false,
+          "volume": 2.23125,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "MintArm",
+          "primitive": "Block",
+          "size": [
+            4.3,
+            0.7,
+            1.5
+          ],
+          "position": [
+            -0.25,
+            1.65,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Mint",
+          "color": [
+            104,
+            205,
+            176
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 4.515,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HoneyBrace",
+          "primitive": "Block",
+          "size": [
+            2.4,
+            0.35,
+            1.45
+          ],
+          "position": [
+            -0.95,
+            1.18,
+            0
+          ],
+          "rotationMatrix": [
+            0.97815,
+            -0.20791,
+            0,
+            0.20791,
+            0.97815,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            12.0
+          ],
+          "paletteRole": "Honey",
+          "color": [
+            185,
+            123,
+            67
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 1.218,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "CoralCollar",
+          "primitive": "Block",
+          "size": [
+            0.55,
+            1.05,
+            2.1
+          ],
+          "position": [
+            1.45,
+            1.65,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            125,
+            96
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 1.21275,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotPaddle",
+          "primitive": "Block",
+          "size": [
+            1.25,
+            1.35,
+            3.0
+          ],
+          "position": [
+            2.23,
+            1.65,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 5.0625,
+          "vertices": 8,
+          "triangles": 12
+        }
+      ]
+    },
+    "HeatGrate": {
+      "partCount": 8,
+      "lethalPartCount": 4,
+      "boundsRoblox": [
+        [
+          -3.4,
+          0,
+          -1.5
+        ],
+        [
+          3.4,
+          0.91,
+          1.5
+        ]
+      ],
+      "pivot": "Local base center, Y up",
+      "parts": [
+        {
+          "name": "CoralFrontRail",
+          "primitive": "Block",
+          "size": [
+            6.8,
+            0.55,
+            0.5
+          ],
+          "position": [
+            0,
+            0.275,
+            -1.25
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            125,
+            96
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 1.87,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "CoralBackRail",
+          "primitive": "Block",
+          "size": [
+            6.8,
+            0.55,
+            0.5
+          ],
+          "position": [
+            0,
+            0.275,
+            1.25
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            125,
+            96
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 1.87,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "IronLeftRail",
+          "primitive": "Block",
+          "size": [
+            0.5,
+            0.5,
+            2.1
+          ],
+          "position": [
+            -3.12,
+            0.25,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Iron",
+          "color": [
+            100,
+            106,
+            120
+          ],
+          "material": "Metal",
+          "lethal": false,
+          "volume": 0.525,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "IronRightRail",
+          "primitive": "Block",
+          "size": [
+            0.5,
+            0.5,
+            2.1
+          ],
+          "position": [
+            3.12,
+            0.25,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Iron",
+          "color": [
+            100,
+            106,
+            120
+          ],
+          "material": "Metal",
+          "lethal": false,
+          "volume": 0.525,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotBar1",
+          "primitive": "Block",
+          "size": [
+            0.72,
+            0.7,
+            2.45
+          ],
+          "position": [
+            -2.17,
+            0.56,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 1.2348,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotBar2",
+          "primitive": "Block",
+          "size": [
+            0.72,
+            0.7,
+            2.45
+          ],
+          "position": [
+            -0.72,
+            0.56,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 1.2348,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotBar3",
+          "primitive": "Block",
+          "size": [
+            0.72,
+            0.7,
+            2.45
+          ],
+          "position": [
+            0.72,
+            0.56,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 1.2348,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotBar4",
+          "primitive": "Block",
+          "size": [
+            0.72,
+            0.7,
+            2.45
+          ],
+          "position": [
+            2.17,
+            0.56,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 1.2348,
+          "vertices": 8,
+          "triangles": 12
+        }
+      ]
+    },
+    "FeatherPinch": {
+      "partCount": 9,
+      "lethalPartCount": 4,
+      "boundsRoblox": [
+        [
+          -3.4293,
+          0,
+          -1.2
+        ],
+        [
+          3.4293,
+          2.9414,
+          1.2
+        ]
+      ],
+      "pivot": "Local base center, Y up",
+      "parts": [
+        {
+          "name": "IronFoot",
+          "primitive": "Block",
+          "size": [
+            6.7,
+            0.4,
+            2.4
+          ],
+          "position": [
+            0,
+            0.2,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Iron",
+          "color": [
+            100,
+            106,
+            120
+          ],
+          "material": "Metal",
+          "lethal": false,
+          "volume": 6.432,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "CreamFeatherLeft",
+          "primitive": "Block",
+          "size": [
+            1.3,
+            2.15,
+            2.25
+          ],
+          "position": [
+            -2.57,
+            1.4,
+            0
+          ],
+          "rotationMatrix": [
+            0.97815,
+            0.20791,
+            0,
+            -0.20791,
+            0.97815,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            -12.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            240,
+            202
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 6.28875,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "CreamFeatherRight",
+          "primitive": "Block",
+          "size": [
+            1.3,
+            2.15,
+            2.25
+          ],
+          "position": [
+            2.57,
+            1.4,
+            0
+          ],
+          "rotationMatrix": [
+            0.97815,
+            -0.20791,
+            0,
+            0.20791,
+            0.97815,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            12.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            240,
+            202
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 6.28875,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "CreamTipLeft",
+          "primitive": "Block",
+          "size": [
+            2.15,
+            0.65,
+            2.25
+          ],
+          "position": [
+            -1.66,
+            2.4,
+            0
+          ],
+          "rotationMatrix": [
+            0.97815,
+            -0.20791,
+            0,
+            0.20791,
+            0.97815,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            12.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            240,
+            202
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 3.144375,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "CreamTipRight",
+          "primitive": "Block",
+          "size": [
+            2.15,
+            0.65,
+            2.25
+          ],
+          "position": [
+            1.66,
+            2.4,
+            0
+          ],
+          "rotationMatrix": [
+            0.97815,
+            0.20791,
+            0,
+            -0.20791,
+            0.97815,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            -12.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            240,
+            202
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 3.144375,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotLowerFingerLeft",
+          "primitive": "Block",
+          "size": [
+            1.65,
+            0.65,
+            1.9
+          ],
+          "position": [
+            -1.36,
+            1.15,
+            0
+          ],
+          "rotationMatrix": [
+            0.93969,
+            -0.34202,
+            0,
+            0.34202,
+            0.93969,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            20.0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 2.03775,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotLowerFingerRight",
+          "primitive": "Block",
+          "size": [
+            1.65,
+            0.65,
+            1.9
+          ],
+          "position": [
+            1.36,
+            1.15,
+            0
+          ],
+          "rotationMatrix": [
+            0.93969,
+            0.34202,
+            0,
+            -0.34202,
+            0.93969,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            -20.0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 2.03775,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotUpperFingerLeft",
+          "primitive": "Block",
+          "size": [
+            1.3,
+            0.55,
+            1.9
+          ],
+          "position": [
+            -0.96,
+            2.03,
+            0
+          ],
+          "rotationMatrix": [
+            0.97815,
+            -0.20791,
+            0,
+            0.20791,
+            0.97815,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            12.0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 1.3585,
+          "vertices": 8,
+          "triangles": 12
+        },
+        {
+          "name": "HotUpperFingerRight",
+          "primitive": "Block",
+          "size": [
+            1.3,
+            0.55,
+            1.9
+          ],
+          "position": [
+            0.96,
+            2.03,
+            0
+          ],
+          "rotationMatrix": [
+            0.97815,
+            0.20791,
+            0,
+            -0.20791,
+            0.97815,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            -12.0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 1.3585,
+          "vertices": 8,
+          "triangles": 12
+        }
+      ]
+    }
+  },
+  "checks": {
+    "finite": true,
+    "closedManifold": true,
+    "positiveVolume": true,
+    "nondegenerateFaces": true,
+    "orthonormalFrames": true
+  },
+  "nativeProof": "Not installed or playtested in Roblox Studio."
+}

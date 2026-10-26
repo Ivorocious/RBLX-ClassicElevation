@@ -1,0 +1,16 @@
+{
+  "sha256": "d965f749bf14ae8d2909da3ebc38e532c3c357a4557bb1175e000ef2e0643421",
+  "request": {
+    "assetType": "Audio",
+    "displayName": "Classic Elevation - Quiet Orbit",
+    "description": "Original synthesized 32-second seamless ambient pad for the arrival screen.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/36802ba0-6752-4a5c-a59b-473fd78cdf33",
+  "assetId": "83623533219361"
+}

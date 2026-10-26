@@ -1,0 +1,6760 @@
+{
+  "revision": "C15_03",
+  "components": {
+    "C15_Expert_Start": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3408,
+        81.5,
+        -231
+      ],
+      "size": [
+        6.6,
+        1,
+        6.6
+      ],
+      "top": [
+        3408,
+        82,
+        -231
+      ]
+    },
+    "C15_Expert_Start_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_01": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3417.4545454545455,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3417.4545454545455,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_01_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_02": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3426.909090909091,
+        81.5,
+        -229.15
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3426.909090909091,
+        82,
+        -229.15
+      ]
+    },
+    "C15_Expert_02_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_03": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3436.3636363636365,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3436.3636363636365,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_03_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_04": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3445.818181818182,
+        81.5,
+        -229.15
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3445.818181818182,
+        82,
+        -229.15
+      ]
+    },
+    "C15_Expert_04_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_05": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3455.2727272727275,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3455.2727272727275,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_05_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_06": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3464.7272727272725,
+        81.5,
+        -229.15
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3464.7272727272725,
+        82,
+        -229.15
+      ]
+    },
+    "C15_Expert_06_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_07": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3474.181818181818,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3474.181818181818,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_07_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_08": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3483.6363636363635,
+        81.5,
+        -229.15
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3483.6363636363635,
+        82,
+        -229.15
+      ]
+    },
+    "C15_Expert_08_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_09": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3493.090909090909,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3493.090909090909,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_09_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_10": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3502.5454545454545,
+        81.5,
+        -229.15
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3502.5454545454545,
+        82,
+        -229.15
+      ]
+    },
+    "C15_Expert_10_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_11": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3512.0,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3512.0,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_11_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_12": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3521.4545454545455,
+        81.5,
+        -229.15
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3521.4545454545455,
+        82,
+        -229.15
+      ]
+    },
+    "C15_Expert_12_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_13": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3530.909090909091,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3530.909090909091,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_13_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_14": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3540.3636363636365,
+        81.5,
+        -229.15
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3540.3636363636365,
+        82,
+        -229.15
+      ]
+    },
+    "C15_Expert_14_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_15": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3549.818181818182,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3549.818181818182,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_15_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_16": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3559.2727272727275,
+        81.5,
+        -229.15
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3559.2727272727275,
+        82,
+        -229.15
+      ]
+    },
+    "C15_Expert_16_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_17": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3568.7272727272725,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3568.7272727272725,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_17_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_18": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3578.181818181818,
+        81.5,
+        -229.15
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3578.181818181818,
+        82,
+        -229.15
+      ]
+    },
+    "C15_Expert_18_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_19": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3587.6363636363635,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3587.6363636363635,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_19_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_20": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3597.090909090909,
+        81.5,
+        -229.15
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3597.090909090909,
+        82,
+        -229.15
+      ]
+    },
+    "C15_Expert_20_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_21": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3606.5454545454545,
+        81.5,
+        -232.85
+      ],
+      "size": [
+        2.15,
+        1,
+        2.15
+      ],
+      "top": [
+        3606.5454545454545,
+        82,
+        -232.85
+      ]
+    },
+    "C15_Expert_21_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_Expert_End": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3616,
+        81.5,
+        -231
+      ],
+      "size": [
+        6.6,
+        1,
+        6.6
+      ],
+      "top": [
+        3616,
+        82,
+        -231
+      ]
+    },
+    "C15_Expert_End_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_ExpertLowGirder": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C15_CrossingHurdle_0": {
+      "section": "BallApproaches",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3440,
+        82.6,
+        -257
+      ],
+      "size": [
+        0.7,
+        0.7,
+        10.4
+      ]
+    },
+    "C15_CrossingFeet_0": {
+      "section": "BallApproaches",
+      "role": "Scenery"
+    },
+    "C15_CrossingHurdle_1": {
+      "section": "BallApproaches",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3476,
+        82.6,
+        -257
+      ],
+      "size": [
+        0.7,
+        0.7,
+        10.4
+      ]
+    },
+    "C15_CrossingFeet_1": {
+      "section": "BallApproaches",
+      "role": "Scenery"
+    },
+    "C15_CrossingHurdle_2": {
+      "section": "BallApproaches",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3520,
+        82.6,
+        -257
+      ],
+      "size": [
+        0.7,
+        0.7,
+        10.4
+      ]
+    },
+    "C15_CrossingFeet_2": {
+      "section": "BallApproaches",
+      "role": "Scenery"
+    },
+    "C15_CrossingHurdle_3": {
+      "section": "BallApproaches",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3560,
+        82.6,
+        -257
+      ],
+      "size": [
+        0.7,
+        0.7,
+        10.4
+      ]
+    },
+    "C15_CrossingFeet_3": {
+      "section": "BallApproaches",
+      "role": "Scenery"
+    },
+    "C15_Corner_00": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        82.5,
+        -263
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3480.5,
+        83.0,
+        -263
+      ]
+    },
+    "C15_Corner_00_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_01": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        83.99783314005872,
+        -268
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3480.5,
+        84.49783314005872,
+        -268
+      ]
+    },
+    "C15_Corner_01_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_02": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        85.46776448272726,
+        -273
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3480.5,
+        85.96776448272726,
+        -273
+      ]
+    },
+    "C15_Corner_02_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_03": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        86.88241198830866,
+        -278
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3480.5,
+        87.38241198830866,
+        -278
+      ]
+    },
+    "C15_Corner_03_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_04": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        88.21542345038976,
+        -283
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3480.5,
+        88.71542345038976,
+        -283
+      ]
+    },
+    "C15_Corner_04_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_05": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        89.44196738758659,
+        -288
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3480.5,
+        89.94196738758659,
+        -288
+      ]
+    },
+    "C15_Corner_05_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_06": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        90.53919560705937,
+        -293
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3480.5,
+        91.03919560705937,
+        -293
+      ]
+    },
+    "C15_Corner_06_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_07": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        91.48666882311485,
+        -298
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3480.5,
+        91.98666882311485,
+        -298
+      ]
+    },
+    "C15_Corner_07_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_08": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        92.26673740242613,
+        -303
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3480.5,
+        92.76673740242613,
+        -303
+      ]
+    },
+    "C15_Corner_08_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_09": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3485.9285714285716,
+        92.86487014330703,
+        -303
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3485.9285714285716,
+        93.36487014330703,
+        -303
+      ]
+    },
+    "C15_Corner_09_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_10": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3491.3571428571427,
+        93.26992496450555,
+        -303
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3491.3571428571427,
+        93.76992496450555,
+        -303
+      ]
+    },
+    "C15_Corner_10_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_11": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3496.785714285714,
+        93.47435646109594,
+        -303
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3496.785714285714,
+        93.97435646109594,
+        -303
+      ]
+    },
+    "C15_Corner_11_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_12": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3502.214285714286,
+        93.47435646109594,
+        -303
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3502.214285714286,
+        93.97435646109594,
+        -303
+      ]
+    },
+    "C15_Corner_12_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_13": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3507.6428571428573,
+        93.26992496450555,
+        -303
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3507.6428571428573,
+        93.76992496450555,
+        -303
+      ]
+    },
+    "C15_Corner_13_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_14": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3513.0714285714284,
+        92.86487014330703,
+        -303
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3513.0714285714284,
+        93.36487014330703,
+        -303
+      ]
+    },
+    "C15_Corner_14_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_15": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        92.26673740242613,
+        -303
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3518.5,
+        92.76673740242613,
+        -303
+      ]
+    },
+    "C15_Corner_15_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_16": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        91.48666882311487,
+        -298
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3518.5,
+        91.98666882311487,
+        -298
+      ]
+    },
+    "C15_Corner_16_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_17": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        90.53919560705936,
+        -293
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3518.5,
+        91.03919560705936,
+        -293
+      ]
+    },
+    "C15_Corner_17_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_18": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        89.44196738758659,
+        -288
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3518.5,
+        89.94196738758659,
+        -288
+      ]
+    },
+    "C15_Corner_18_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_19": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        88.21542345038978,
+        -283
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3518.5,
+        88.71542345038978,
+        -283
+      ]
+    },
+    "C15_Corner_19_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_20": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        86.88241198830866,
+        -278
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3518.5,
+        87.38241198830866,
+        -278
+      ]
+    },
+    "C15_Corner_20_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_21": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        85.46776448272726,
+        -273
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3518.5,
+        85.96776448272726,
+        -273
+      ]
+    },
+    "C15_Corner_21_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_22": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        83.99783314005872,
+        -268
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3518.5,
+        84.49783314005872,
+        -268
+      ]
+    },
+    "C15_Corner_22_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Corner_23": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        82.5,
+        -263
+      ],
+      "size": [
+        4,
+        1,
+        4
+      ],
+      "top": [
+        3518.5,
+        83.0,
+        -263
+      ]
+    },
+    "C15_Corner_23_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C15_Post_01": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3693.85,
+        88.16666666666667,
+        64.05555555555556
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3693.85,
+        88.66666666666667,
+        64.05555555555556
+      ]
+    },
+    "C15_Post_01_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_02": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3696.15,
+        90.83333333333333,
+        71.11111111111111
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3696.15,
+        91.33333333333333,
+        71.11111111111111
+      ]
+    },
+    "C15_Post_02_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_03": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3693.85,
+        93.5,
+        78.16666666666666
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3693.85,
+        94.0,
+        78.16666666666666
+      ]
+    },
+    "C15_Post_03_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_04": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3696.15,
+        96.16666666666667,
+        85.22222222222223
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3696.15,
+        96.66666666666667,
+        85.22222222222223
+      ]
+    },
+    "C15_Post_04_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_05": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3693.85,
+        98.83333333333333,
+        92.27777777777777
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3693.85,
+        99.33333333333333,
+        92.27777777777777
+      ]
+    },
+    "C15_Post_05_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_06": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3696.15,
+        101.5,
+        99.33333333333333
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3696.15,
+        102.0,
+        99.33333333333333
+      ]
+    },
+    "C15_Post_06_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_07": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3693.85,
+        104.16666666666667,
+        106.38888888888889
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3693.85,
+        104.66666666666667,
+        106.38888888888889
+      ]
+    },
+    "C15_Post_07_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_08": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3696.15,
+        106.83333333333333,
+        113.44444444444444
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3696.15,
+        107.33333333333333,
+        113.44444444444444
+      ]
+    },
+    "C15_Post_08_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_09": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3693.85,
+        109.5,
+        120.5
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3693.85,
+        110.0,
+        120.5
+      ]
+    },
+    "C15_Post_09_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_10": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3696.15,
+        112.16666666666667,
+        127.55555555555556
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3696.15,
+        112.66666666666667,
+        127.55555555555556
+      ]
+    },
+    "C15_Post_10_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_11": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3693.85,
+        114.83333333333334,
+        134.61111111111111
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3693.85,
+        115.33333333333334,
+        134.61111111111111
+      ]
+    },
+    "C15_Post_11_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_12": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3696.15,
+        117.5,
+        141.66666666666666
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3696.15,
+        118.0,
+        141.66666666666666
+      ]
+    },
+    "C15_Post_12_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_13": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3693.85,
+        120.16666666666666,
+        148.72222222222223
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3693.85,
+        120.66666666666666,
+        148.72222222222223
+      ]
+    },
+    "C15_Post_13_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_14": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3696.15,
+        122.83333333333334,
+        155.77777777777777
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3696.15,
+        123.33333333333334,
+        155.77777777777777
+      ]
+    },
+    "C15_Post_14_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_15": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3693.85,
+        125.5,
+        162.83333333333334
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3693.85,
+        126.0,
+        162.83333333333334
+      ]
+    },
+    "C15_Post_15_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Post_16": {
+      "section": "TerminalPosts",
+      "role": "Surface",
+      "position": [
+        3696.15,
+        128.16666666666666,
+        169.88888888888889
+      ],
+      "size": [
+        1.6,
+        1,
+        1.6
+      ],
+      "top": [
+        3696.15,
+        128.66666666666666,
+        169.88888888888889
+      ]
+    },
+    "C15_Post_16_Stem": {
+      "section": "TerminalPosts",
+      "role": "Scenery"
+    },
+    "C15_Zigzag_00": {
+      "section": "ZigzagBeams",
+      "role": "Surface",
+      "position": [
+        3720.4444444444443,
+        86.66111111111111,
+        57.0
+      ],
+      "size": [
+        15.48047429873191,
+        1,
+        3.2
+      ],
+      "yaw": 0.47325515083654957,
+      "top": [
+        3720.4444444444443,
+        87.16111111111111,
+        57.0
+      ]
+    },
+    "C15_Zigzag_01": {
+      "section": "ZigzagBeams",
+      "role": "Surface",
+      "position": [
+        3733.333333333333,
+        87.58333333333334,
+        57.0
+      ],
+      "size": [
+        15.48047429873191,
+        1,
+        3.2
+      ],
+      "yaw": -0.47325515083654957,
+      "top": [
+        3733.333333333333,
+        88.08333333333334,
+        57.0
+      ]
+    },
+    "C15_Zigzag_02": {
+      "section": "ZigzagBeams",
+      "role": "Surface",
+      "position": [
+        3746.222222222222,
+        88.50555555555556,
+        57.0
+      ],
+      "size": [
+        15.48047429873191,
+        1,
+        3.2
+      ],
+      "yaw": 0.47325515083654957,
+      "top": [
+        3746.222222222222,
+        89.00555555555556,
+        57.0
+      ]
+    },
+    "C15_Zigzag_03": {
+      "section": "ZigzagBeams",
+      "role": "Surface",
+      "position": [
+        3759.1111111111113,
+        89.42777777777778,
+        57.0
+      ],
+      "size": [
+        15.48047429873191,
+        1,
+        3.2
+      ],
+      "yaw": -0.47325515083654957,
+      "top": [
+        3759.1111111111113,
+        89.92777777777778,
+        57.0
+      ]
+    },
+    "C15_Zigzag_04": {
+      "section": "ZigzagBeams",
+      "role": "Surface",
+      "position": [
+        3772.0,
+        90.35,
+        57.0
+      ],
+      "size": [
+        15.480256992188252,
+        1,
+        3.2
+      ],
+      "yaw": 0.47326283549961096,
+      "top": [
+        3772.0,
+        90.85,
+        57.0
+      ]
+    },
+    "C15_Zigzag_05": {
+      "section": "ZigzagBeams",
+      "role": "Surface",
+      "position": [
+        3784.8888888888887,
+        91.27222222222223,
+        57.0
+      ],
+      "size": [
+        15.48047429873191,
+        1,
+        3.2
+      ],
+      "yaw": -0.47325515083654957,
+      "top": [
+        3784.8888888888887,
+        91.77222222222223,
+        57.0
+      ]
+    },
+    "C15_Zigzag_06": {
+      "section": "ZigzagBeams",
+      "role": "Surface",
+      "position": [
+        3797.777777777778,
+        92.19444444444446,
+        57.0
+      ],
+      "size": [
+        15.48047429873191,
+        1,
+        3.2
+      ],
+      "yaw": 0.47325515083654957,
+      "top": [
+        3797.777777777778,
+        92.69444444444446,
+        57.0
+      ]
+    },
+    "C15_Zigzag_07": {
+      "section": "ZigzagBeams",
+      "role": "Surface",
+      "position": [
+        3810.666666666667,
+        93.11666666666667,
+        57.0
+      ],
+      "size": [
+        15.48047429873191,
+        1,
+        3.2
+      ],
+      "yaw": -0.47325515083654957,
+      "top": [
+        3810.666666666667,
+        93.61666666666667,
+        57.0
+      ]
+    },
+    "C15_Zigzag_08": {
+      "section": "ZigzagBeams",
+      "role": "Surface",
+      "position": [
+        3823.5555555555557,
+        94.03888888888889,
+        57.0
+      ],
+      "size": [
+        15.48047429873191,
+        1,
+        3.2
+      ],
+      "yaw": 0.47325515083654957,
+      "top": [
+        3823.5555555555557,
+        94.53888888888889,
+        57.0
+      ]
+    },
+    "C15_Crumble_00_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        95.5,
+        77.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        96.0,
+        77.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_00_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        95.5,
+        77.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        96.0,
+        77.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_00_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        95.5,
+        77.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        96.0,
+        77.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_00_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        95.5,
+        77.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        96.0,
+        77.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_01_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        96.25,
+        87.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        96.75,
+        87.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_01_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        96.25,
+        87.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        96.75,
+        87.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_01_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        96.25,
+        87.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        96.75,
+        87.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_01_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        96.25,
+        87.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        96.75,
+        87.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_02_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        97.0,
+        98.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        97.5,
+        98.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_02_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        97.0,
+        98.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        97.5,
+        98.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_02_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        97.0,
+        98.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        97.5,
+        98.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_02_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        97.0,
+        98.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        97.5,
+        98.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_03_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        97.75,
+        108.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        98.25,
+        108.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_03_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        97.75,
+        108.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        98.25,
+        108.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_03_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        97.75,
+        108.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        98.25,
+        108.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_03_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        97.75,
+        108.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        98.25,
+        108.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Rotor_3": {
+      "section": "CrumbleRotors",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Spin",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 7.5,
+        "MotionDistance": 0,
+        "MotionPhase": 57
+      },
+      "position": [
+        3833.5,
+        98.95,
+        108.5
+      ],
+      "size": [
+        18,
+        0.6,
+        0.65
+      ]
+    },
+    "C15_RotorHub_3": {
+      "section": "CrumbleRotors",
+      "role": "Scenery"
+    },
+    "C15_Crumble_04_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        98.5,
+        119.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        99.0,
+        119.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_04_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        98.5,
+        119.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        99.0,
+        119.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_04_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        98.5,
+        119.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        99.0,
+        119.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_04_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        98.5,
+        119.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        99.0,
+        119.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_05_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        99.25,
+        129.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        99.75,
+        129.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_05_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        99.25,
+        129.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        99.75,
+        129.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_05_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        99.25,
+        129.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        99.75,
+        129.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_05_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        99.25,
+        129.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        99.75,
+        129.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_06_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        100.0,
+        140.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        100.5,
+        140.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_06_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        100.0,
+        140.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        100.5,
+        140.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_06_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        100.0,
+        140.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        100.5,
+        140.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_06_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        100.0,
+        140.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        100.5,
+        140.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_07_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        100.75,
+        150.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        101.25,
+        150.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_07_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        100.75,
+        150.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        101.25,
+        150.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_07_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        100.75,
+        150.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        101.25,
+        150.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_07_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        100.75,
+        150.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        101.25,
+        150.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Rotor_7": {
+      "section": "CrumbleRotors",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Spin",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 7.5,
+        "MotionDistance": 0,
+        "MotionPhase": 133
+      },
+      "position": [
+        3833.5,
+        101.95,
+        150.5
+      ],
+      "size": [
+        18,
+        0.6,
+        0.65
+      ]
+    },
+    "C15_RotorHub_7": {
+      "section": "CrumbleRotors",
+      "role": "Scenery"
+    },
+    "C15_Crumble_08_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        101.5,
+        161.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        102.0,
+        161.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_08_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        101.5,
+        161.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        102.0,
+        161.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_08_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        101.5,
+        161.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        102.0,
+        161.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_08_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        101.5,
+        161.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        102.0,
+        161.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_09_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        102.25,
+        171.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        102.75,
+        171.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_09_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        102.25,
+        171.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        102.75,
+        171.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_09_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        102.25,
+        171.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        102.75,
+        171.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_09_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        102.25,
+        171.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        102.75,
+        171.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_10_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        103.0,
+        182.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        103.5,
+        182.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_10_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        103.0,
+        182.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        103.5,
+        182.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_10_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        103.0,
+        182.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        103.5,
+        182.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_10_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        103.0,
+        182.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        103.5,
+        182.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_11_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        103.75,
+        192.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        104.25,
+        192.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_11_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        103.75,
+        192.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        104.25,
+        192.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_11_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        103.75,
+        192.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        104.25,
+        192.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_11_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        103.75,
+        192.5
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        104.25,
+        192.5
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Rotor_11": {
+      "section": "CrumbleRotors",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Spin",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 7.5,
+        "MotionDistance": 0,
+        "MotionPhase": 209
+      },
+      "position": [
+        3833.5,
+        104.95,
+        192.5
+      ],
+      "size": [
+        18,
+        0.6,
+        0.65
+      ]
+    },
+    "C15_RotorHub_11": {
+      "section": "CrumbleRotors",
+      "role": "Scenery"
+    },
+    "C15_Crumble_12_0": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3825.7,
+        104.5,
+        203.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3825.7,
+        105.0,
+        203.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_12_1": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3830.9,
+        104.5,
+        203.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3830.9,
+        105.0,
+        203.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_12_2": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3836.1,
+        104.5,
+        203.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3836.1,
+        105.0,
+        203.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Crumble_12_3": {
+      "section": "CrumbleRotors",
+      "role": "Crumble",
+      "position": [
+        3841.3,
+        104.5,
+        203.0
+      ],
+      "size": [
+        4.7,
+        1,
+        7.7
+      ],
+      "top": [
+        3841.3,
+        105.0,
+        203.0
+      ],
+      "attrs": {
+        "HazardType": "Crumble",
+        "CrumbleDelay": 0.95,
+        "CrumbleResetTime": 3.5
+      }
+    },
+    "C15_Swing_StationMain_04_01": {
+      "section": "SwingingBars",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Swing",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 0,
+        "MotionPhase": 0,
+        "MotionAngle": 65
+      },
+      "position": [
+        3728.333251953125,
+        128.33333587646484,
+        184
+      ],
+      "size": [
+        10,
+        0.7,
+        0.65
+      ]
+    },
+    "C15_SwingFrame_StationMain_04_01": {
+      "section": "SwingingBars",
+      "role": "Scenery"
+    },
+    "C15_Swing_StationMain_02_04": {
+      "section": "SwingingBars",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Swing",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 0,
+        "MotionPhase": 0,
+        "MotionAngle": 65
+      },
+      "position": [
+        3745,
+        117.0,
+        220
+      ],
+      "size": [
+        10,
+        0.7,
+        0.65
+      ]
+    },
+    "C15_SwingFrame_StationMain_02_04": {
+      "section": "SwingingBars",
+      "role": "Scenery"
+    },
+    "C15_Swing_StationMain_02_03": {
+      "section": "SwingingBars",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Swing",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 0,
+        "MotionPhase": 0,
+        "MotionAngle": 65
+      },
+      "position": [
+        3766.25,
+        114.5,
+        220
+      ],
+      "size": [
+        10,
+        0.7,
+        0.65
+      ]
+    },
+    "C15_SwingFrame_StationMain_02_03": {
+      "section": "SwingingBars",
+      "role": "Scenery"
+    },
+    "C15_Swing_StationMain_02_02": {
+      "section": "SwingingBars",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Swing",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 0,
+        "MotionPhase": 0,
+        "MotionAngle": 65
+      },
+      "position": [
+        3787.5,
+        112.0,
+        220
+      ],
+      "size": [
+        10,
+        0.7,
+        0.65
+      ]
+    },
+    "C15_SwingFrame_StationMain_02_02": {
+      "section": "SwingingBars",
+      "role": "Scenery"
+    },
+    "C15_Swing_StationMain_02_01": {
+      "section": "SwingingBars",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Swing",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 0,
+        "MotionPhase": 0,
+        "MotionAngle": 65
+      },
+      "position": [
+        3808.75,
+        109.5,
+        220
+      ],
+      "size": [
+        10,
+        0.7,
+        0.65
+      ]
+    },
+    "C15_SwingFrame_StationMain_02_01": {
+      "section": "SwingingBars",
+      "role": "Scenery"
+    },
+    "C15_Swing_StationMain_04_02": {
+      "section": "SwingingBars",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Swing",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 0,
+        "MotionPhase": 0,
+        "MotionAngle": 65
+      },
+      "position": [
+        3711.666748046875,
+        130.6666717529297,
+        184
+      ],
+      "size": [
+        10,
+        0.7,
+        0.65
+      ]
+    },
+    "C15_SwingFrame_StationMain_04_02": {
+      "section": "SwingingBars",
+      "role": "Scenery"
+    },
+    "C15_Swing_StationMain_03_02": {
+      "section": "SwingingBars",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Swing",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 0,
+        "MotionPhase": 0,
+        "MotionAngle": 65
+      },
+      "position": [
+        3745,
+        126.0,
+        184
+      ],
+      "size": [
+        10,
+        0.7,
+        0.65
+      ]
+    },
+    "C15_SwingFrame_StationMain_03_02": {
+      "section": "SwingingBars",
+      "role": "Scenery"
+    },
+    "C15_Swing_StationMain_03_01": {
+      "section": "SwingingBars",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Swing",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 0,
+        "MotionPhase": 0,
+        "MotionAngle": 65
+      },
+      "position": [
+        3745,
+        121.5,
+        202
+      ],
+      "size": [
+        9.2,
+        0.7,
+        0.65
+      ]
+    },
+    "C15_SwingFrame_StationMain_03_01": {
+      "section": "SwingingBars",
+      "role": "Scenery"
+    },
+    "ActiveTrain0": {
+      "section": "Train",
+      "role": "Train",
+      "pivot": [
+        3504,
+        89,
+        -12
+      ]
+    },
+    "ActiveTrain1": {
+      "section": "Train",
+      "role": "Train",
+      "pivot": [
+        3547,
+        89,
+        -12
+      ]
+    },
+    "ActiveTrain2": {
+      "section": "Train",
+      "role": "Train",
+      "pivot": [
+        3590,
+        89,
+        -12
+      ]
+    },
+    "ActiveTrain3": {
+      "section": "Train",
+      "role": "Train",
+      "pivot": [
+        3633,
+        89,
+        -12
+      ]
+    },
+    "ActiveTrain4": {
+      "section": "Train",
+      "role": "Train",
+      "pivot": [
+        3676,
+        89,
+        -12
+      ]
+    },
+    "MarkerOrigin": {
+      "section": "Calibration",
+      "role": "Scenery"
+    },
+    "MarkerRight": {
+      "section": "Calibration",
+      "role": "Scenery"
+    },
+    "MarkerUp": {
+      "section": "Calibration",
+      "role": "Scenery"
+    },
+    "MarkerForward": {
+      "section": "Calibration",
+      "role": "Scenery"
+    }
+  },
+  "meshes": {
+    "C15_Expert_Start__Stone__00": {
+      "component": "C15_Expert_Start",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_Start__Ink__00": {
+      "component": "C15_Expert_Start",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_Start__Edge__00": {
+      "component": "C15_Expert_Start",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_Start_Brackets__Stone__00": {
+      "component": "C15_Expert_Start_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_01__Stone__00": {
+      "component": "C15_Expert_01",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_01__Ink__00": {
+      "component": "C15_Expert_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_01__Edge__00": {
+      "component": "C15_Expert_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_01_Brackets__Stone__00": {
+      "component": "C15_Expert_01_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_02__Stone__00": {
+      "component": "C15_Expert_02",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_02__Ink__00": {
+      "component": "C15_Expert_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_02__Edge__00": {
+      "component": "C15_Expert_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_02_Brackets__Stone__00": {
+      "component": "C15_Expert_02_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_03__Stone__00": {
+      "component": "C15_Expert_03",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_03__Ink__00": {
+      "component": "C15_Expert_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_03__Edge__00": {
+      "component": "C15_Expert_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_03_Brackets__Stone__00": {
+      "component": "C15_Expert_03_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_04__Stone__00": {
+      "component": "C15_Expert_04",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_04__Ink__00": {
+      "component": "C15_Expert_04",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_04__Edge__00": {
+      "component": "C15_Expert_04",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_04_Brackets__Stone__00": {
+      "component": "C15_Expert_04_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_05__Stone__00": {
+      "component": "C15_Expert_05",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_05__Ink__00": {
+      "component": "C15_Expert_05",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_05__Edge__00": {
+      "component": "C15_Expert_05",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_05_Brackets__Stone__00": {
+      "component": "C15_Expert_05_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_06__Stone__00": {
+      "component": "C15_Expert_06",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_06__Ink__00": {
+      "component": "C15_Expert_06",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_06__Edge__00": {
+      "component": "C15_Expert_06",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_06_Brackets__Stone__00": {
+      "component": "C15_Expert_06_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_07__Stone__00": {
+      "component": "C15_Expert_07",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_07__Ink__00": {
+      "component": "C15_Expert_07",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_07__Edge__00": {
+      "component": "C15_Expert_07",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_07_Brackets__Stone__00": {
+      "component": "C15_Expert_07_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_08__Stone__00": {
+      "component": "C15_Expert_08",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_08__Ink__00": {
+      "component": "C15_Expert_08",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_08__Edge__00": {
+      "component": "C15_Expert_08",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_08_Brackets__Stone__00": {
+      "component": "C15_Expert_08_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_09__Stone__00": {
+      "component": "C15_Expert_09",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_09__Ink__00": {
+      "component": "C15_Expert_09",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_09__Edge__00": {
+      "component": "C15_Expert_09",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_09_Brackets__Stone__00": {
+      "component": "C15_Expert_09_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_10__Stone__00": {
+      "component": "C15_Expert_10",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_10__Ink__00": {
+      "component": "C15_Expert_10",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_10__Edge__00": {
+      "component": "C15_Expert_10",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_10_Brackets__Stone__00": {
+      "component": "C15_Expert_10_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_11__Stone__00": {
+      "component": "C15_Expert_11",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_11__Ink__00": {
+      "component": "C15_Expert_11",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_11__Edge__00": {
+      "component": "C15_Expert_11",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_11_Brackets__Stone__00": {
+      "component": "C15_Expert_11_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_12__Stone__00": {
+      "component": "C15_Expert_12",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_12__Ink__00": {
+      "component": "C15_Expert_12",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_12__Edge__00": {
+      "component": "C15_Expert_12",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_12_Brackets__Stone__00": {
+      "component": "C15_Expert_12_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_13__Stone__00": {
+      "component": "C15_Expert_13",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_13__Ink__00": {
+      "component": "C15_Expert_13",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_13__Edge__00": {
+      "component": "C15_Expert_13",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_13_Brackets__Stone__00": {
+      "component": "C15_Expert_13_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_14__Stone__00": {
+      "component": "C15_Expert_14",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_14__Ink__00": {
+      "component": "C15_Expert_14",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_14__Edge__00": {
+      "component": "C15_Expert_14",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_14_Brackets__Stone__00": {
+      "component": "C15_Expert_14_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_15__Stone__00": {
+      "component": "C15_Expert_15",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_15__Ink__00": {
+      "component": "C15_Expert_15",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_15__Edge__00": {
+      "component": "C15_Expert_15",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_15_Brackets__Stone__00": {
+      "component": "C15_Expert_15_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_16__Stone__00": {
+      "component": "C15_Expert_16",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_16__Ink__00": {
+      "component": "C15_Expert_16",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_16__Edge__00": {
+      "component": "C15_Expert_16",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_16_Brackets__Stone__00": {
+      "component": "C15_Expert_16_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_17__Stone__00": {
+      "component": "C15_Expert_17",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_17__Ink__00": {
+      "component": "C15_Expert_17",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_17__Edge__00": {
+      "component": "C15_Expert_17",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_17_Brackets__Stone__00": {
+      "component": "C15_Expert_17_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_18__Stone__00": {
+      "component": "C15_Expert_18",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_18__Ink__00": {
+      "component": "C15_Expert_18",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_18__Edge__00": {
+      "component": "C15_Expert_18",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_18_Brackets__Stone__00": {
+      "component": "C15_Expert_18_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_19__Stone__00": {
+      "component": "C15_Expert_19",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_19__Ink__00": {
+      "component": "C15_Expert_19",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_19__Edge__00": {
+      "component": "C15_Expert_19",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_19_Brackets__Stone__00": {
+      "component": "C15_Expert_19_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_20__Stone__00": {
+      "component": "C15_Expert_20",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_20__Ink__00": {
+      "component": "C15_Expert_20",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_20__Edge__00": {
+      "component": "C15_Expert_20",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_20_Brackets__Stone__00": {
+      "component": "C15_Expert_20_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_21__Stone__00": {
+      "component": "C15_Expert_21",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_21__Ink__00": {
+      "component": "C15_Expert_21",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_21__Edge__00": {
+      "component": "C15_Expert_21",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_21_Brackets__Stone__00": {
+      "component": "C15_Expert_21_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_End__Stone__00": {
+      "component": "C15_Expert_End",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Expert_End__Ink__00": {
+      "component": "C15_Expert_End",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Expert_End__Edge__00": {
+      "component": "C15_Expert_End",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Expert_End_Brackets__Stone__00": {
+      "component": "C15_Expert_End_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_ExpertLowGirder__Ink__00": {
+      "component": "C15_ExpertLowGirder",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_CrossingHurdle_0__Danger__00": {
+      "component": "C15_CrossingHurdle_0",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_CrossingFeet_0__Copper__00": {
+      "component": "C15_CrossingFeet_0",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C15_CrossingHurdle_1__Danger__00": {
+      "component": "C15_CrossingHurdle_1",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_CrossingFeet_1__Copper__00": {
+      "component": "C15_CrossingFeet_1",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C15_CrossingHurdle_2__Danger__00": {
+      "component": "C15_CrossingHurdle_2",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_CrossingFeet_2__Copper__00": {
+      "component": "C15_CrossingFeet_2",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C15_CrossingHurdle_3__Danger__00": {
+      "component": "C15_CrossingHurdle_3",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_CrossingFeet_3__Copper__00": {
+      "component": "C15_CrossingFeet_3",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C15_Corner_00__Stone__00": {
+      "component": "C15_Corner_00",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_00__Ink__00": {
+      "component": "C15_Corner_00",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_00__Edge__00": {
+      "component": "C15_Corner_00",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_00_Brackets__Ink__00": {
+      "component": "C15_Corner_00_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_01__Stone__00": {
+      "component": "C15_Corner_01",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_01__Ink__00": {
+      "component": "C15_Corner_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_01__Edge__00": {
+      "component": "C15_Corner_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_01_Brackets__Ink__00": {
+      "component": "C15_Corner_01_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_02__Stone__00": {
+      "component": "C15_Corner_02",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_02__Ink__00": {
+      "component": "C15_Corner_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_02__Edge__00": {
+      "component": "C15_Corner_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_02_Brackets__Ink__00": {
+      "component": "C15_Corner_02_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_03__Stone__00": {
+      "component": "C15_Corner_03",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_03__Ink__00": {
+      "component": "C15_Corner_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_03__Edge__00": {
+      "component": "C15_Corner_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_03_Brackets__Ink__00": {
+      "component": "C15_Corner_03_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_04__Stone__00": {
+      "component": "C15_Corner_04",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_04__Ink__00": {
+      "component": "C15_Corner_04",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_04__Edge__00": {
+      "component": "C15_Corner_04",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_04_Brackets__Ink__00": {
+      "component": "C15_Corner_04_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_05__Stone__00": {
+      "component": "C15_Corner_05",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_05__Ink__00": {
+      "component": "C15_Corner_05",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_05__Edge__00": {
+      "component": "C15_Corner_05",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_05_Brackets__Ink__00": {
+      "component": "C15_Corner_05_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_06__Stone__00": {
+      "component": "C15_Corner_06",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_06__Ink__00": {
+      "component": "C15_Corner_06",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_06__Edge__00": {
+      "component": "C15_Corner_06",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_06_Brackets__Ink__00": {
+      "component": "C15_Corner_06_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_07__Stone__00": {
+      "component": "C15_Corner_07",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_07__Ink__00": {
+      "component": "C15_Corner_07",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_07__Edge__00": {
+      "component": "C15_Corner_07",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_07_Brackets__Ink__00": {
+      "component": "C15_Corner_07_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_08__Stone__00": {
+      "component": "C15_Corner_08",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_08__Ink__00": {
+      "component": "C15_Corner_08",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_08__Edge__00": {
+      "component": "C15_Corner_08",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_08_Brackets__Ink__00": {
+      "component": "C15_Corner_08_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_09__Stone__00": {
+      "component": "C15_Corner_09",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_09__Ink__00": {
+      "component": "C15_Corner_09",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_09__Edge__00": {
+      "component": "C15_Corner_09",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_09_Brackets__Ink__00": {
+      "component": "C15_Corner_09_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_10__Stone__00": {
+      "component": "C15_Corner_10",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_10__Ink__00": {
+      "component": "C15_Corner_10",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_10__Edge__00": {
+      "component": "C15_Corner_10",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_10_Brackets__Ink__00": {
+      "component": "C15_Corner_10_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_11__Stone__00": {
+      "component": "C15_Corner_11",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_11__Ink__00": {
+      "component": "C15_Corner_11",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_11__Edge__00": {
+      "component": "C15_Corner_11",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_11_Brackets__Ink__00": {
+      "component": "C15_Corner_11_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_12__Stone__00": {
+      "component": "C15_Corner_12",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_12__Ink__00": {
+      "component": "C15_Corner_12",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_12__Edge__00": {
+      "component": "C15_Corner_12",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_12_Brackets__Ink__00": {
+      "component": "C15_Corner_12_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_13__Stone__00": {
+      "component": "C15_Corner_13",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_13__Ink__00": {
+      "component": "C15_Corner_13",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_13__Edge__00": {
+      "component": "C15_Corner_13",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_13_Brackets__Ink__00": {
+      "component": "C15_Corner_13_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_14__Stone__00": {
+      "component": "C15_Corner_14",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_14__Ink__00": {
+      "component": "C15_Corner_14",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_14__Edge__00": {
+      "component": "C15_Corner_14",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_14_Brackets__Ink__00": {
+      "component": "C15_Corner_14_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_15__Stone__00": {
+      "component": "C15_Corner_15",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_15__Ink__00": {
+      "component": "C15_Corner_15",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_15__Edge__00": {
+      "component": "C15_Corner_15",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_15_Brackets__Ink__00": {
+      "component": "C15_Corner_15_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_16__Stone__00": {
+      "component": "C15_Corner_16",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_16__Ink__00": {
+      "component": "C15_Corner_16",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_16__Edge__00": {
+      "component": "C15_Corner_16",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_16_Brackets__Ink__00": {
+      "component": "C15_Corner_16_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_17__Stone__00": {
+      "component": "C15_Corner_17",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_17__Ink__00": {
+      "component": "C15_Corner_17",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_17__Edge__00": {
+      "component": "C15_Corner_17",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_17_Brackets__Ink__00": {
+      "component": "C15_Corner_17_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_18__Stone__00": {
+      "component": "C15_Corner_18",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_18__Ink__00": {
+      "component": "C15_Corner_18",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_18__Edge__00": {
+      "component": "C15_Corner_18",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_18_Brackets__Ink__00": {
+      "component": "C15_Corner_18_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_19__Stone__00": {
+      "component": "C15_Corner_19",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_19__Ink__00": {
+      "component": "C15_Corner_19",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_19__Edge__00": {
+      "component": "C15_Corner_19",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_19_Brackets__Ink__00": {
+      "component": "C15_Corner_19_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_20__Stone__00": {
+      "component": "C15_Corner_20",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_20__Ink__00": {
+      "component": "C15_Corner_20",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_20__Edge__00": {
+      "component": "C15_Corner_20",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_20_Brackets__Ink__00": {
+      "component": "C15_Corner_20_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_21__Stone__00": {
+      "component": "C15_Corner_21",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_21__Ink__00": {
+      "component": "C15_Corner_21",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_21__Edge__00": {
+      "component": "C15_Corner_21",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_21_Brackets__Ink__00": {
+      "component": "C15_Corner_21_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_22__Stone__00": {
+      "component": "C15_Corner_22",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_22__Ink__00": {
+      "component": "C15_Corner_22",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_22__Edge__00": {
+      "component": "C15_Corner_22",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_22_Brackets__Ink__00": {
+      "component": "C15_Corner_22_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Corner_23__Stone__00": {
+      "component": "C15_Corner_23",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C15_Corner_23__Ink__00": {
+      "component": "C15_Corner_23",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Corner_23__Edge__00": {
+      "component": "C15_Corner_23",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Corner_23_Brackets__Ink__00": {
+      "component": "C15_Corner_23_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C15_Post_01__Copper__00": {
+      "component": "C15_Post_01",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_01__Ink__00": {
+      "component": "C15_Post_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_01__Edge__00": {
+      "component": "C15_Post_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_01_Stem__Ink__00": {
+      "component": "C15_Post_01_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_01_Stem__Pale__00": {
+      "component": "C15_Post_01_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_02__Copper__00": {
+      "component": "C15_Post_02",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_02__Ink__00": {
+      "component": "C15_Post_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_02__Edge__00": {
+      "component": "C15_Post_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_02_Stem__Ink__00": {
+      "component": "C15_Post_02_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_02_Stem__Pale__00": {
+      "component": "C15_Post_02_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_03__Copper__00": {
+      "component": "C15_Post_03",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_03__Ink__00": {
+      "component": "C15_Post_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_03__Edge__00": {
+      "component": "C15_Post_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_03_Stem__Ink__00": {
+      "component": "C15_Post_03_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_03_Stem__Pale__00": {
+      "component": "C15_Post_03_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_04__Copper__00": {
+      "component": "C15_Post_04",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_04__Ink__00": {
+      "component": "C15_Post_04",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_04__Edge__00": {
+      "component": "C15_Post_04",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_04_Stem__Ink__00": {
+      "component": "C15_Post_04_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_04_Stem__Pale__00": {
+      "component": "C15_Post_04_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_05__Copper__00": {
+      "component": "C15_Post_05",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_05__Ink__00": {
+      "component": "C15_Post_05",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_05__Edge__00": {
+      "component": "C15_Post_05",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_05_Stem__Ink__00": {
+      "component": "C15_Post_05_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_05_Stem__Pale__00": {
+      "component": "C15_Post_05_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_06__Copper__00": {
+      "component": "C15_Post_06",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_06__Ink__00": {
+      "component": "C15_Post_06",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_06__Edge__00": {
+      "component": "C15_Post_06",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_06_Stem__Ink__00": {
+      "component": "C15_Post_06_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_06_Stem__Pale__00": {
+      "component": "C15_Post_06_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_07__Copper__00": {
+      "component": "C15_Post_07",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_07__Ink__00": {
+      "component": "C15_Post_07",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_07__Edge__00": {
+      "component": "C15_Post_07",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_07_Stem__Ink__00": {
+      "component": "C15_Post_07_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_07_Stem__Pale__00": {
+      "component": "C15_Post_07_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_08__Copper__00": {
+      "component": "C15_Post_08",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_08__Ink__00": {
+      "component": "C15_Post_08",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_08__Edge__00": {
+      "component": "C15_Post_08",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_08_Stem__Ink__00": {
+      "component": "C15_Post_08_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_08_Stem__Pale__00": {
+      "component": "C15_Post_08_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_09__Copper__00": {
+      "component": "C15_Post_09",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_09__Ink__00": {
+      "component": "C15_Post_09",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_09__Edge__00": {
+      "component": "C15_Post_09",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_09_Stem__Ink__00": {
+      "component": "C15_Post_09_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_09_Stem__Pale__00": {
+      "component": "C15_Post_09_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_10__Copper__00": {
+      "component": "C15_Post_10",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_10__Ink__00": {
+      "component": "C15_Post_10",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_10__Edge__00": {
+      "component": "C15_Post_10",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_10_Stem__Ink__00": {
+      "component": "C15_Post_10_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_10_Stem__Pale__00": {
+      "component": "C15_Post_10_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_11__Copper__00": {
+      "component": "C15_Post_11",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_11__Ink__00": {
+      "component": "C15_Post_11",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_11__Edge__00": {
+      "component": "C15_Post_11",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_11_Stem__Ink__00": {
+      "component": "C15_Post_11_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_11_Stem__Pale__00": {
+      "component": "C15_Post_11_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_12__Copper__00": {
+      "component": "C15_Post_12",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_12__Ink__00": {
+      "component": "C15_Post_12",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_12__Edge__00": {
+      "component": "C15_Post_12",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_12_Stem__Ink__00": {
+      "component": "C15_Post_12_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_12_Stem__Pale__00": {
+      "component": "C15_Post_12_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_13__Copper__00": {
+      "component": "C15_Post_13",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_13__Ink__00": {
+      "component": "C15_Post_13",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_13__Edge__00": {
+      "component": "C15_Post_13",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_13_Stem__Ink__00": {
+      "component": "C15_Post_13_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_13_Stem__Pale__00": {
+      "component": "C15_Post_13_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_14__Copper__00": {
+      "component": "C15_Post_14",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_14__Ink__00": {
+      "component": "C15_Post_14",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_14__Edge__00": {
+      "component": "C15_Post_14",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_14_Stem__Ink__00": {
+      "component": "C15_Post_14_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_14_Stem__Pale__00": {
+      "component": "C15_Post_14_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_15__Copper__00": {
+      "component": "C15_Post_15",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_15__Ink__00": {
+      "component": "C15_Post_15",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_15__Edge__00": {
+      "component": "C15_Post_15",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_15_Stem__Ink__00": {
+      "component": "C15_Post_15_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_15_Stem__Pale__00": {
+      "component": "C15_Post_15_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Post_16__Copper__00": {
+      "component": "C15_Post_16",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Post_16__Ink__00": {
+      "component": "C15_Post_16",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_16__Edge__00": {
+      "component": "C15_Post_16",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C15_Post_16_Stem__Ink__00": {
+      "component": "C15_Post_16_Stem",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Post_16_Stem__Pale__00": {
+      "component": "C15_Post_16_Stem",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C15_Zigzag_00__Ink__00": {
+      "component": "C15_Zigzag_00",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Zigzag_00__Edge__00": {
+      "component": "C15_Zigzag_00",
+      "material": "Edge",
+      "triangles": 12
+    },
+    "C15_Zigzag_01__Ink__00": {
+      "component": "C15_Zigzag_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Zigzag_01__Edge__00": {
+      "component": "C15_Zigzag_01",
+      "material": "Edge",
+      "triangles": 12
+    },
+    "C15_Zigzag_02__Ink__00": {
+      "component": "C15_Zigzag_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Zigzag_02__Edge__00": {
+      "component": "C15_Zigzag_02",
+      "material": "Edge",
+      "triangles": 12
+    },
+    "C15_Zigzag_03__Ink__00": {
+      "component": "C15_Zigzag_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Zigzag_03__Edge__00": {
+      "component": "C15_Zigzag_03",
+      "material": "Edge",
+      "triangles": 12
+    },
+    "C15_Zigzag_04__Ink__00": {
+      "component": "C15_Zigzag_04",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Zigzag_04__Edge__00": {
+      "component": "C15_Zigzag_04",
+      "material": "Edge",
+      "triangles": 12
+    },
+    "C15_Zigzag_05__Ink__00": {
+      "component": "C15_Zigzag_05",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Zigzag_05__Edge__00": {
+      "component": "C15_Zigzag_05",
+      "material": "Edge",
+      "triangles": 12
+    },
+    "C15_Zigzag_06__Ink__00": {
+      "component": "C15_Zigzag_06",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Zigzag_06__Edge__00": {
+      "component": "C15_Zigzag_06",
+      "material": "Edge",
+      "triangles": 12
+    },
+    "C15_Zigzag_07__Ink__00": {
+      "component": "C15_Zigzag_07",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Zigzag_07__Edge__00": {
+      "component": "C15_Zigzag_07",
+      "material": "Edge",
+      "triangles": 12
+    },
+    "C15_Zigzag_08__Ink__00": {
+      "component": "C15_Zigzag_08",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Zigzag_08__Edge__00": {
+      "component": "C15_Zigzag_08",
+      "material": "Edge",
+      "triangles": 12
+    },
+    "C15_Crumble_00_0__Edge__00": {
+      "component": "C15_Crumble_00_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_00_0__Ink__00": {
+      "component": "C15_Crumble_00_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_00_1__Edge__00": {
+      "component": "C15_Crumble_00_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_00_1__Ink__00": {
+      "component": "C15_Crumble_00_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_00_2__Edge__00": {
+      "component": "C15_Crumble_00_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_00_2__Ink__00": {
+      "component": "C15_Crumble_00_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_00_3__Edge__00": {
+      "component": "C15_Crumble_00_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_00_3__Ink__00": {
+      "component": "C15_Crumble_00_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_01_0__Edge__00": {
+      "component": "C15_Crumble_01_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_01_0__Ink__00": {
+      "component": "C15_Crumble_01_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_01_1__Edge__00": {
+      "component": "C15_Crumble_01_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_01_1__Ink__00": {
+      "component": "C15_Crumble_01_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_01_2__Edge__00": {
+      "component": "C15_Crumble_01_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_01_2__Ink__00": {
+      "component": "C15_Crumble_01_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_01_3__Edge__00": {
+      "component": "C15_Crumble_01_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_01_3__Ink__00": {
+      "component": "C15_Crumble_01_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_02_0__Edge__00": {
+      "component": "C15_Crumble_02_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_02_0__Ink__00": {
+      "component": "C15_Crumble_02_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_02_1__Edge__00": {
+      "component": "C15_Crumble_02_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_02_1__Ink__00": {
+      "component": "C15_Crumble_02_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_02_2__Edge__00": {
+      "component": "C15_Crumble_02_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_02_2__Ink__00": {
+      "component": "C15_Crumble_02_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_02_3__Edge__00": {
+      "component": "C15_Crumble_02_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_02_3__Ink__00": {
+      "component": "C15_Crumble_02_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_03_0__Edge__00": {
+      "component": "C15_Crumble_03_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_03_0__Ink__00": {
+      "component": "C15_Crumble_03_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_03_1__Edge__00": {
+      "component": "C15_Crumble_03_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_03_1__Ink__00": {
+      "component": "C15_Crumble_03_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_03_2__Edge__00": {
+      "component": "C15_Crumble_03_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_03_2__Ink__00": {
+      "component": "C15_Crumble_03_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_03_3__Edge__00": {
+      "component": "C15_Crumble_03_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_03_3__Ink__00": {
+      "component": "C15_Crumble_03_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Rotor_3__Danger__00": {
+      "component": "C15_Rotor_3",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_RotorHub_3__Copper__00": {
+      "component": "C15_RotorHub_3",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Crumble_04_0__Edge__00": {
+      "component": "C15_Crumble_04_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_04_0__Ink__00": {
+      "component": "C15_Crumble_04_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_04_1__Edge__00": {
+      "component": "C15_Crumble_04_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_04_1__Ink__00": {
+      "component": "C15_Crumble_04_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_04_2__Edge__00": {
+      "component": "C15_Crumble_04_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_04_2__Ink__00": {
+      "component": "C15_Crumble_04_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_04_3__Edge__00": {
+      "component": "C15_Crumble_04_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_04_3__Ink__00": {
+      "component": "C15_Crumble_04_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_05_0__Edge__00": {
+      "component": "C15_Crumble_05_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_05_0__Ink__00": {
+      "component": "C15_Crumble_05_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_05_1__Edge__00": {
+      "component": "C15_Crumble_05_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_05_1__Ink__00": {
+      "component": "C15_Crumble_05_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_05_2__Edge__00": {
+      "component": "C15_Crumble_05_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_05_2__Ink__00": {
+      "component": "C15_Crumble_05_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_05_3__Edge__00": {
+      "component": "C15_Crumble_05_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_05_3__Ink__00": {
+      "component": "C15_Crumble_05_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_06_0__Edge__00": {
+      "component": "C15_Crumble_06_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_06_0__Ink__00": {
+      "component": "C15_Crumble_06_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_06_1__Edge__00": {
+      "component": "C15_Crumble_06_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_06_1__Ink__00": {
+      "component": "C15_Crumble_06_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_06_2__Edge__00": {
+      "component": "C15_Crumble_06_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_06_2__Ink__00": {
+      "component": "C15_Crumble_06_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_06_3__Edge__00": {
+      "component": "C15_Crumble_06_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_06_3__Ink__00": {
+      "component": "C15_Crumble_06_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_07_0__Edge__00": {
+      "component": "C15_Crumble_07_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_07_0__Ink__00": {
+      "component": "C15_Crumble_07_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_07_1__Edge__00": {
+      "component": "C15_Crumble_07_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_07_1__Ink__00": {
+      "component": "C15_Crumble_07_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_07_2__Edge__00": {
+      "component": "C15_Crumble_07_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_07_2__Ink__00": {
+      "component": "C15_Crumble_07_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_07_3__Edge__00": {
+      "component": "C15_Crumble_07_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_07_3__Ink__00": {
+      "component": "C15_Crumble_07_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Rotor_7__Danger__00": {
+      "component": "C15_Rotor_7",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_RotorHub_7__Copper__00": {
+      "component": "C15_RotorHub_7",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Crumble_08_0__Edge__00": {
+      "component": "C15_Crumble_08_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_08_0__Ink__00": {
+      "component": "C15_Crumble_08_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_08_1__Edge__00": {
+      "component": "C15_Crumble_08_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_08_1__Ink__00": {
+      "component": "C15_Crumble_08_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_08_2__Edge__00": {
+      "component": "C15_Crumble_08_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_08_2__Ink__00": {
+      "component": "C15_Crumble_08_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_08_3__Edge__00": {
+      "component": "C15_Crumble_08_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_08_3__Ink__00": {
+      "component": "C15_Crumble_08_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_09_0__Edge__00": {
+      "component": "C15_Crumble_09_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_09_0__Ink__00": {
+      "component": "C15_Crumble_09_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_09_1__Edge__00": {
+      "component": "C15_Crumble_09_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_09_1__Ink__00": {
+      "component": "C15_Crumble_09_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_09_2__Edge__00": {
+      "component": "C15_Crumble_09_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_09_2__Ink__00": {
+      "component": "C15_Crumble_09_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_09_3__Edge__00": {
+      "component": "C15_Crumble_09_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_09_3__Ink__00": {
+      "component": "C15_Crumble_09_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_10_0__Edge__00": {
+      "component": "C15_Crumble_10_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_10_0__Ink__00": {
+      "component": "C15_Crumble_10_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_10_1__Edge__00": {
+      "component": "C15_Crumble_10_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_10_1__Ink__00": {
+      "component": "C15_Crumble_10_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_10_2__Edge__00": {
+      "component": "C15_Crumble_10_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_10_2__Ink__00": {
+      "component": "C15_Crumble_10_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_10_3__Edge__00": {
+      "component": "C15_Crumble_10_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_10_3__Ink__00": {
+      "component": "C15_Crumble_10_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_11_0__Edge__00": {
+      "component": "C15_Crumble_11_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_11_0__Ink__00": {
+      "component": "C15_Crumble_11_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_11_1__Edge__00": {
+      "component": "C15_Crumble_11_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_11_1__Ink__00": {
+      "component": "C15_Crumble_11_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_11_2__Edge__00": {
+      "component": "C15_Crumble_11_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_11_2__Ink__00": {
+      "component": "C15_Crumble_11_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_11_3__Edge__00": {
+      "component": "C15_Crumble_11_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_11_3__Ink__00": {
+      "component": "C15_Crumble_11_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Rotor_11__Danger__00": {
+      "component": "C15_Rotor_11",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_RotorHub_11__Copper__00": {
+      "component": "C15_RotorHub_11",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Crumble_12_0__Edge__00": {
+      "component": "C15_Crumble_12_0",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_12_0__Ink__00": {
+      "component": "C15_Crumble_12_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_12_1__Edge__00": {
+      "component": "C15_Crumble_12_1",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_12_1__Ink__00": {
+      "component": "C15_Crumble_12_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_12_2__Edge__00": {
+      "component": "C15_Crumble_12_2",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_12_2__Ink__00": {
+      "component": "C15_Crumble_12_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Crumble_12_3__Edge__00": {
+      "component": "C15_Crumble_12_3",
+      "material": "Edge",
+      "triangles": 36
+    },
+    "C15_Crumble_12_3__Ink__00": {
+      "component": "C15_Crumble_12_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C15_Swing_StationMain_04_01__Danger__00": {
+      "component": "C15_Swing_StationMain_04_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_SwingFrame_StationMain_04_01__Ink__00": {
+      "component": "C15_SwingFrame_StationMain_04_01",
+      "material": "Ink",
+      "triangles": 44
+    },
+    "C15_SwingFrame_StationMain_04_01__Copper__00": {
+      "component": "C15_SwingFrame_StationMain_04_01",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Swing_StationMain_02_04__Danger__00": {
+      "component": "C15_Swing_StationMain_02_04",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_SwingFrame_StationMain_02_04__Ink__00": {
+      "component": "C15_SwingFrame_StationMain_02_04",
+      "material": "Ink",
+      "triangles": 44
+    },
+    "C15_SwingFrame_StationMain_02_04__Copper__00": {
+      "component": "C15_SwingFrame_StationMain_02_04",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Swing_StationMain_02_03__Danger__00": {
+      "component": "C15_Swing_StationMain_02_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_SwingFrame_StationMain_02_03__Ink__00": {
+      "component": "C15_SwingFrame_StationMain_02_03",
+      "material": "Ink",
+      "triangles": 44
+    },
+    "C15_SwingFrame_StationMain_02_03__Copper__00": {
+      "component": "C15_SwingFrame_StationMain_02_03",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Swing_StationMain_02_02__Danger__00": {
+      "component": "C15_Swing_StationMain_02_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_SwingFrame_StationMain_02_02__Ink__00": {
+      "component": "C15_SwingFrame_StationMain_02_02",
+      "material": "Ink",
+      "triangles": 44
+    },
+    "C15_SwingFrame_StationMain_02_02__Copper__00": {
+      "component": "C15_SwingFrame_StationMain_02_02",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Swing_StationMain_02_01__Danger__00": {
+      "component": "C15_Swing_StationMain_02_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_SwingFrame_StationMain_02_01__Ink__00": {
+      "component": "C15_SwingFrame_StationMain_02_01",
+      "material": "Ink",
+      "triangles": 44
+    },
+    "C15_SwingFrame_StationMain_02_01__Copper__00": {
+      "component": "C15_SwingFrame_StationMain_02_01",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Swing_StationMain_04_02__Danger__00": {
+      "component": "C15_Swing_StationMain_04_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_SwingFrame_StationMain_04_02__Ink__00": {
+      "component": "C15_SwingFrame_StationMain_04_02",
+      "material": "Ink",
+      "triangles": 44
+    },
+    "C15_SwingFrame_StationMain_04_02__Copper__00": {
+      "component": "C15_SwingFrame_StationMain_04_02",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Swing_StationMain_03_02__Danger__00": {
+      "component": "C15_Swing_StationMain_03_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_SwingFrame_StationMain_03_02__Ink__00": {
+      "component": "C15_SwingFrame_StationMain_03_02",
+      "material": "Ink",
+      "triangles": 44
+    },
+    "C15_SwingFrame_StationMain_03_02__Copper__00": {
+      "component": "C15_SwingFrame_StationMain_03_02",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C15_Swing_StationMain_03_01__Danger__00": {
+      "component": "C15_Swing_StationMain_03_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C15_SwingFrame_StationMain_03_01__Ink__00": {
+      "component": "C15_SwingFrame_StationMain_03_01",
+      "material": "Ink",
+      "triangles": 44
+    },
+    "C15_SwingFrame_StationMain_03_01__Copper__00": {
+      "component": "C15_SwingFrame_StationMain_03_01",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "ActiveTrain0__Yellow__00": {
+      "component": "ActiveTrain0",
+      "material": "Yellow",
+      "triangles": 24
+    },
+    "ActiveTrain0__Roof__00": {
+      "component": "ActiveTrain0",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "ActiveTrain0__Red__00": {
+      "component": "ActiveTrain0",
+      "material": "Red",
+      "triangles": 24
+    },
+    "ActiveTrain0__Rail__00": {
+      "component": "ActiveTrain0",
+      "material": "Rail",
+      "triangles": 708
+    },
+    "ActiveTrain0__Iron__00": {
+      "component": "ActiveTrain0",
+      "material": "Iron",
+      "triangles": 664
+    },
+    "ActiveTrain0__Ink__00": {
+      "component": "ActiveTrain0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "ActiveTrain0__Glass__00": {
+      "component": "ActiveTrain0",
+      "material": "Glass",
+      "triangles": 228
+    },
+    "ActiveTrain1__Yellow__00": {
+      "component": "ActiveTrain1",
+      "material": "Yellow",
+      "triangles": 24
+    },
+    "ActiveTrain1__Roof__00": {
+      "component": "ActiveTrain1",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "ActiveTrain1__Rail__00": {
+      "component": "ActiveTrain1",
+      "material": "Rail",
+      "triangles": 672
+    },
+    "ActiveTrain1__Iron__00": {
+      "component": "ActiveTrain1",
+      "material": "Iron",
+      "triangles": 652
+    },
+    "ActiveTrain1__Ink__00": {
+      "component": "ActiveTrain1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "ActiveTrain1__Glass__00": {
+      "component": "ActiveTrain1",
+      "material": "Glass",
+      "triangles": 216
+    },
+    "ActiveTrain2__Yellow__00": {
+      "component": "ActiveTrain2",
+      "material": "Yellow",
+      "triangles": 24
+    },
+    "ActiveTrain2__Roof__00": {
+      "component": "ActiveTrain2",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "ActiveTrain2__Rail__00": {
+      "component": "ActiveTrain2",
+      "material": "Rail",
+      "triangles": 672
+    },
+    "ActiveTrain2__Iron__00": {
+      "component": "ActiveTrain2",
+      "material": "Iron",
+      "triangles": 652
+    },
+    "ActiveTrain2__Ink__00": {
+      "component": "ActiveTrain2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "ActiveTrain2__Glass__00": {
+      "component": "ActiveTrain2",
+      "material": "Glass",
+      "triangles": 216
+    },
+    "ActiveTrain3__Yellow__00": {
+      "component": "ActiveTrain3",
+      "material": "Yellow",
+      "triangles": 24
+    },
+    "ActiveTrain3__Roof__00": {
+      "component": "ActiveTrain3",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "ActiveTrain3__Rail__00": {
+      "component": "ActiveTrain3",
+      "material": "Rail",
+      "triangles": 672
+    },
+    "ActiveTrain3__Iron__00": {
+      "component": "ActiveTrain3",
+      "material": "Iron",
+      "triangles": 652
+    },
+    "ActiveTrain3__Ink__00": {
+      "component": "ActiveTrain3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "ActiveTrain3__Glass__00": {
+      "component": "ActiveTrain3",
+      "material": "Glass",
+      "triangles": 216
+    },
+    "ActiveTrain4__Yellow__00": {
+      "component": "ActiveTrain4",
+      "material": "Yellow",
+      "triangles": 48
+    },
+    "ActiveTrain4__Roof__00": {
+      "component": "ActiveTrain4",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "ActiveTrain4__Rail__00": {
+      "component": "ActiveTrain4",
+      "material": "Rail",
+      "triangles": 672
+    },
+    "ActiveTrain4__Light__00": {
+      "component": "ActiveTrain4",
+      "material": "Light",
+      "triangles": 24
+    },
+    "ActiveTrain4__Iron__00": {
+      "component": "ActiveTrain4",
+      "material": "Iron",
+      "triangles": 664
+    },
+    "ActiveTrain4__Ink__00": {
+      "component": "ActiveTrain4",
+      "material": "Ink",
+      "triangles": 28
+    },
+    "ActiveTrain4__Glass__00": {
+      "component": "ActiveTrain4",
+      "material": "Glass",
+      "triangles": 240
+    },
+    "MarkerOrigin__Iron__00": {
+      "component": "MarkerOrigin",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerRight__Iron__00": {
+      "component": "MarkerRight",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerUp__Iron__00": {
+      "component": "MarkerUp",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerForward__Iron__00": {
+      "component": "MarkerForward",
+      "material": "Iron",
+      "triangles": 12
+    }
+  },
+  "colors": {
+    "Brick": [
+      0.66,
+      0.26,
+      0.16
+    ],
+    "Terracotta": [
+      0.79,
+      0.37,
+      0.23
+    ],
+    "Plaster": [
+      0.93,
+      0.76,
+      0.48
+    ],
+    "Cream": [
+      0.93,
+      0.87,
+      0.72
+    ],
+    "Stone": [
+      0.78,
+      0.78,
+      0.7
+    ],
+    "Roof": [
+      0.24,
+      0.3,
+      0.32
+    ],
+    "Teal": [
+      0.035,
+      0.49,
+      0.48
+    ],
+    "Coral": [
+      0.89,
+      0.24,
+      0.2
+    ],
+    "Yellow": [
+      0.99,
+      0.66,
+      0.1
+    ],
+    "Blue": [
+      0.08,
+      0.3,
+      0.58
+    ],
+    "Iron": [
+      0.095,
+      0.14,
+      0.18
+    ],
+    "Glass": [
+      0.1,
+      0.26,
+      0.33
+    ],
+    "Wood": [
+      0.43,
+      0.26,
+      0.13
+    ],
+    "Leaf": [
+      0.22,
+      0.42,
+      0.14
+    ],
+    "LeafLight": [
+      0.45,
+      0.6,
+      0.19
+    ],
+    "Soil": [
+      0.22,
+      0.17,
+      0.12
+    ],
+    "Red": [
+      0.96,
+      0.055,
+      0.035
+    ],
+    "White": [
+      0.96,
+      0.95,
+      0.85
+    ],
+    "Rail": [
+      0.37,
+      0.43,
+      0.46
+    ],
+    "Skyline": [
+      0.4,
+      0.52,
+      0.57
+    ],
+    "Light": [
+      1,
+      0.86,
+      0.48
+    ],
+    "WoodLight": [
+      0.59,
+      0.4,
+      0.23
+    ],
+    "WoodDark": [
+      0.3,
+      0.18,
+      0.1
+    ],
+    "WindowGlow": [
+      0.96,
+      0.72,
+      0.34
+    ],
+    "Deck": [
+      0.24,
+      0.31,
+      0.34
+    ],
+    "Ink": [
+      0.065,
+      0.12,
+      0.17
+    ],
+    "Danger": [
+      1,
+      0.025,
+      0.015
+    ],
+    "Edge": [
+      0.98,
+      0.72,
+      0.16
+    ],
+    "Copper": [
+      0.58,
+      0.36,
+      0.2
+    ],
+    "Pale": [
+      0.87,
+      0.83,
+      0.7
+    ]
+  },
+  "replacements": [],
+  "routes": {
+    "ExpertOffsets": [
+      {
+        "center": [
+          3408,
+          82,
+          -231
+        ],
+        "size": [
+          6.6,
+          1,
+          6.6
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_Start/Collider"
+      },
+      {
+        "center": [
+          3417.4545454545455,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_01/Collider"
+      },
+      {
+        "center": [
+          3426.909090909091,
+          82,
+          -229.15
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_02/Collider"
+      },
+      {
+        "center": [
+          3436.3636363636365,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_03/Collider"
+      },
+      {
+        "center": [
+          3445.818181818182,
+          82,
+          -229.15
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_04/Collider"
+      },
+      {
+        "center": [
+          3455.2727272727275,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_05/Collider"
+      },
+      {
+        "center": [
+          3464.7272727272725,
+          82,
+          -229.15
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_06/Collider"
+      },
+      {
+        "center": [
+          3474.181818181818,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_07/Collider"
+      },
+      {
+        "center": [
+          3483.6363636363635,
+          82,
+          -229.15
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_08/Collider"
+      },
+      {
+        "center": [
+          3493.090909090909,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_09/Collider"
+      },
+      {
+        "center": [
+          3502.5454545454545,
+          82,
+          -229.15
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_10/Collider"
+      },
+      {
+        "center": [
+          3512.0,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_11/Collider"
+      },
+      {
+        "center": [
+          3521.4545454545455,
+          82,
+          -229.15
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_12/Collider"
+      },
+      {
+        "center": [
+          3530.909090909091,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_13/Collider"
+      },
+      {
+        "center": [
+          3540.3636363636365,
+          82,
+          -229.15
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_14/Collider"
+      },
+      {
+        "center": [
+          3549.818181818182,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_15/Collider"
+      },
+      {
+        "center": [
+          3559.2727272727275,
+          82,
+          -229.15
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_16/Collider"
+      },
+      {
+        "center": [
+          3568.7272727272725,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_17/Collider"
+      },
+      {
+        "center": [
+          3578.181818181818,
+          82,
+          -229.15
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_18/Collider"
+      },
+      {
+        "center": [
+          3587.6363636363635,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_19/Collider"
+      },
+      {
+        "center": [
+          3597.090909090909,
+          82,
+          -229.15
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_20/Collider"
+      },
+      {
+        "center": [
+          3606.5454545454545,
+          82,
+          -232.85
+        ],
+        "size": [
+          2.15,
+          1,
+          2.15
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_21/Collider"
+      },
+      {
+        "center": [
+          3616,
+          82,
+          -231
+        ],
+        "size": [
+          6.6,
+          1,
+          6.6
+        ],
+        "part": "Obstacles/C15Routes/ExpertOffsets/C15_Expert_End/Collider"
+      }
+    ],
+    "CornerLedges": [
+      {
+        "center": [
+          3480.5,
+          83.0,
+          -263
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_00/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          84.49783314005872,
+          -268
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_01/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          85.96776448272726,
+          -273
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_02/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          87.38241198830866,
+          -278
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_03/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          88.71542345038976,
+          -283
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_04/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          89.94196738758659,
+          -288
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_05/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          91.03919560705937,
+          -293
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_06/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          91.98666882311485,
+          -298
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_07/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          92.76673740242613,
+          -303
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_08/Collider"
+      },
+      {
+        "center": [
+          3485.9285714285716,
+          93.36487014330703,
+          -303
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_09/Collider"
+      },
+      {
+        "center": [
+          3491.3571428571427,
+          93.76992496450555,
+          -303
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_10/Collider"
+      },
+      {
+        "center": [
+          3496.785714285714,
+          93.97435646109594,
+          -303
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_11/Collider"
+      },
+      {
+        "center": [
+          3502.214285714286,
+          93.97435646109594,
+          -303
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_12/Collider"
+      },
+      {
+        "center": [
+          3507.6428571428573,
+          93.76992496450555,
+          -303
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_13/Collider"
+      },
+      {
+        "center": [
+          3513.0714285714284,
+          93.36487014330703,
+          -303
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_14/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          92.76673740242613,
+          -303
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_15/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          91.98666882311487,
+          -298
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_16/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          91.03919560705936,
+          -293
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_17/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          89.94196738758659,
+          -288
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_18/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          88.71542345038978,
+          -283
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_19/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          87.38241198830866,
+          -278
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_20/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          85.96776448272726,
+          -273
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_21/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          84.49783314005872,
+          -268
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_22/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          83.0,
+          -263
+        ],
+        "size": [
+          4,
+          1,
+          4
+        ],
+        "part": "Obstacles/C15Routes/CornerLedges/C15_Corner_23/Collider"
+      }
+    ],
+    "TerminalPosts": [
+      {
+        "center": [
+          3693.85,
+          88.66666666666667,
+          64.05555555555556
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_01/Collider"
+      },
+      {
+        "center": [
+          3696.15,
+          91.33333333333333,
+          71.11111111111111
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_02/Collider"
+      },
+      {
+        "center": [
+          3693.85,
+          94.0,
+          78.16666666666666
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_03/Collider"
+      },
+      {
+        "center": [
+          3696.15,
+          96.66666666666667,
+          85.22222222222223
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_04/Collider"
+      },
+      {
+        "center": [
+          3693.85,
+          99.33333333333333,
+          92.27777777777777
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_05/Collider"
+      },
+      {
+        "center": [
+          3696.15,
+          102.0,
+          99.33333333333333
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_06/Collider"
+      },
+      {
+        "center": [
+          3693.85,
+          104.66666666666667,
+          106.38888888888889
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_07/Collider"
+      },
+      {
+        "center": [
+          3696.15,
+          107.33333333333333,
+          113.44444444444444
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_08/Collider"
+      },
+      {
+        "center": [
+          3693.85,
+          110.0,
+          120.5
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_09/Collider"
+      },
+      {
+        "center": [
+          3696.15,
+          112.66666666666667,
+          127.55555555555556
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_10/Collider"
+      },
+      {
+        "center": [
+          3693.85,
+          115.33333333333334,
+          134.61111111111111
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_11/Collider"
+      },
+      {
+        "center": [
+          3696.15,
+          118.0,
+          141.66666666666666
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_12/Collider"
+      },
+      {
+        "center": [
+          3693.85,
+          120.66666666666666,
+          148.72222222222223
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_13/Collider"
+      },
+      {
+        "center": [
+          3696.15,
+          123.33333333333334,
+          155.77777777777777
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_14/Collider"
+      },
+      {
+        "center": [
+          3693.85,
+          126.0,
+          162.83333333333334
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_15/Collider"
+      },
+      {
+        "center": [
+          3696.15,
+          128.66666666666666,
+          169.88888888888889
+        ],
+        "size": [
+          1.6,
+          1,
+          1.6
+        ],
+        "part": "Obstacles/C15Routes/TerminalPosts/C15_Post_16/Collider"
+      }
+    ],
+    "ZigzagBeams": [
+      {
+        "center": [
+          3720.4444444444443,
+          87.16111111111111,
+          57.0
+        ],
+        "size": [
+          15.48047429873191,
+          1,
+          3.2
+        ],
+        "yaw": 0.47325515083654957,
+        "part": "Obstacles/C15Routes/ZigzagBeams/C15_Zigzag_00/Collider"
+      },
+      {
+        "center": [
+          3733.333333333333,
+          88.08333333333334,
+          57.0
+        ],
+        "size": [
+          15.48047429873191,
+          1,
+          3.2
+        ],
+        "yaw": -0.47325515083654957,
+        "part": "Obstacles/C15Routes/ZigzagBeams/C15_Zigzag_01/Collider"
+      },
+      {
+        "center": [
+          3746.222222222222,
+          89.00555555555556,
+          57.0
+        ],
+        "size": [
+          15.48047429873191,
+          1,
+          3.2
+        ],
+        "yaw": 0.47325515083654957,
+        "part": "Obstacles/C15Routes/ZigzagBeams/C15_Zigzag_02/Collider"
+      },
+      {
+        "center": [
+          3759.1111111111113,
+          89.92777777777778,
+          57.0
+        ],
+        "size": [
+          15.48047429873191,
+          1,
+          3.2
+        ],
+        "yaw": -0.47325515083654957,
+        "part": "Obstacles/C15Routes/ZigzagBeams/C15_Zigzag_03/Collider"
+      },
+      {
+        "center": [
+          3772.0,
+          90.85,
+          57.0
+        ],
+        "size": [
+          15.480256992188252,
+          1,
+          3.2
+        ],
+        "yaw": 0.47326283549961096,
+        "part": "Obstacles/C15Routes/ZigzagBeams/C15_Zigzag_04/Collider"
+      },
+      {
+        "center": [
+          3784.8888888888887,
+          91.77222222222223,
+          57.0
+        ],
+        "size": [
+          15.48047429873191,
+          1,
+          3.2
+        ],
+        "yaw": -0.47325515083654957,
+        "part": "Obstacles/C15Routes/ZigzagBeams/C15_Zigzag_05/Collider"
+      },
+      {
+        "center": [
+          3797.777777777778,
+          92.69444444444446,
+          57.0
+        ],
+        "size": [
+          15.48047429873191,
+          1,
+          3.2
+        ],
+        "yaw": 0.47325515083654957,
+        "part": "Obstacles/C15Routes/ZigzagBeams/C15_Zigzag_06/Collider"
+      },
+      {
+        "center": [
+          3810.666666666667,
+          93.61666666666667,
+          57.0
+        ],
+        "size": [
+          15.48047429873191,
+          1,
+          3.2
+        ],
+        "yaw": -0.47325515083654957,
+        "part": "Obstacles/C15Routes/ZigzagBeams/C15_Zigzag_07/Collider"
+      },
+      {
+        "center": [
+          3823.5555555555557,
+          94.53888888888889,
+          57.0
+        ],
+        "size": [
+          15.48047429873191,
+          1,
+          3.2
+        ],
+        "yaw": 0.47325515083654957,
+        "part": "Obstacles/C15Routes/ZigzagBeams/C15_Zigzag_08/Collider"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "sha256": "a996011e6bca20afd014310b19f19193ef9d99b4e6ce55aa2149d37031bb3540",
+  "request": {
+    "assetType": "Model",
+    "displayName": "City Run C13 closed depot roof ends",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/376f764a-7701-4658-a366-e9e77108a15c",
+  "assetId": "105786567253034"
+}

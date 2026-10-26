@@ -1,0 +1,16 @@
+{
+  "sha256": "31cb8cc42b89a6f96dcf68de0bcf71a3df6410488a05da6005e7e6080dee373f",
+  "request": {
+    "assetType": "Model",
+    "displayName": "Shipwreck Cove Wave28B",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/05241a0e-fb80-4077-88d2-f68f0205067b",
+  "assetId": "113618317966084"
+}

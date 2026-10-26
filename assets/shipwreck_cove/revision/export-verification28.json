@@ -1,0 +1,187 @@
+{
+  "build": "SC_KIT_28",
+  "method": "Blender 5.2 FBX re-import; evaluated meshes, per-face atlas tile padding, object scale, and loop triangles",
+  "fbxReimportPassed": true,
+  "uniqueTriangles": 4148,
+  "libraryTriangleCeiling": 6000,
+  "assets": {
+    "SC_R_Horizon28": {
+      "vertices": 492,
+      "triangles": 900,
+      "materials": 1,
+      "uvLayers": 1,
+      "locationBlender": [
+        360.0,
+        0.0,
+        0.0
+      ],
+      "dimensionsBlender": [
+        148.0,
+        60.0,
+        52.208858
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atlasUVAudit": {
+        "facesChecked": 442,
+        "allFaceUVsStayWithinOneAtlasTile": true,
+        "minimumTileEdgePaddingPixels": 6.0
+      }
+    },
+    "SC_R_NavalCannon28": {
+      "vertices": 380,
+      "triangles": 544,
+      "materials": 1,
+      "uvLayers": 1,
+      "locationBlender": [
+        720.0,
+        0.0,
+        0.0
+      ],
+      "dimensionsBlender": [
+        8.143904,
+        4.71,
+        6.874956
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atlasUVAudit": {
+        "facesChecked": 240,
+        "allFaceUVsStayWithinOneAtlasTile": true,
+        "minimumTileEdgePaddingPixels": 6.0
+      }
+    },
+    "SC_R_Palm28": {
+      "vertices": 909,
+      "triangles": 1496,
+      "materials": 1,
+      "uvLayers": 1,
+      "locationBlender": [
+        180.0,
+        0.0,
+        0.0
+      ],
+      "dimensionsBlender": [
+        21.331249,
+        25.032701,
+        26.032446
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atlasUVAudit": {
+        "facesChecked": 728,
+        "allFaceUVsStayWithinOneAtlasTile": true,
+        "minimumTileEdgePaddingPixels": 6.0
+      }
+    },
+    "SC_R_Stalactite28": {
+      "vertices": 208,
+      "triangles": 412,
+      "materials": 1,
+      "uvLayers": 1,
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensionsBlender": [
+        3.010706,
+        2.989765,
+        7.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atlasUVAudit": {
+        "facesChecked": 194,
+        "allFaceUVsStayWithinOneAtlasTile": true,
+        "minimumTileEdgePaddingPixels": 6.0
+      }
+    },
+    "SC_R_Wave28": {
+      "vertices": 420,
+      "triangles": 796,
+      "materials": 1,
+      "uvLayers": 1,
+      "locationBlender": [
+        540.0,
+        0.0,
+        0.0
+      ],
+      "dimensionsBlender": [
+        28.0,
+        8.273429,
+        8.865757
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atlasUVAudit": {
+        "facesChecked": 382,
+        "allFaceUVsStayWithinOneAtlasTile": true,
+        "minimumTileEdgePaddingPixels": 6.0
+      }
+    }
+  },
+  "axisConvention": {
+    "unitScaleApplied": true,
+    "axisForward": "-Z",
+    "axisUp": "Y",
+    "sourceToRoblox": "Roblox XYZ = Blender XZY with Roblox Z = -Blender Y"
+  },
+  "cannonAim": {
+    "muzzleLocalRobloxXYZ": [
+      -3.9892024535478896,
+      5.981579464923485,
+      -0.0
+    ],
+    "muzzleTangentAxisRoblox": [
+      -0.8191520442889918,
+      0.573576436351046,
+      0.0
+    ],
+    "trunnionAxisRoblox": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "barrelElevationDegrees": 35.0,
+    "recommendedRootRobloxY": 7.0,
+    "carriageElevationDegrees": 0.0
+  },
+  "files": {
+    "build_kit28.py": {
+      "bytes": 19924,
+      "sha256": "b575147679a9ff637889952bf7ea4f6a436702e88d0eb093fafdeb64b87482db"
+    },
+    "ShipwreckCove_Kit28.blend": {
+      "bytes": 142763,
+      "sha256": "cc44be67cbe247838d61bfbb978b24acf5a7be72ac6607a452b694924283f250"
+    },
+    "ShipwreckCove_Kit28.fbx": {
+      "bytes": 118796,
+      "sha256": "b6e08499c24e01c685bd6b5cfec0215ae061d0f5983f783c4d120d840dad07df"
+    },
+    "manifest28.json": {
+      "bytes": 8295,
+      "sha256": "9b9585e3f961c1d7024aedad875a5725e3ecdb4417b5bafe3fe655d787d23b58"
+    },
+    "palette.png": {
+      "bytes": 545,
+      "sha256": "7ada08dfd92d972bd66e2b973f4c11bbb3a55625ea7efa4dcbed70e308483766"
+    }
+  }
+}

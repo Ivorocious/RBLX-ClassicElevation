@@ -1,0 +1,173 @@
+{
+  "taskId": "moonlit-citadel-skybox-20261021",
+  "candidate": "D/S04-C01 Violet Veil",
+  "source": "assets/sky/moonlit-citadel-20261021/source-panorama-S04.png",
+  "sourceSha256": "4027ef3ae74f31cf91c7af2d7109a0fbdf262b290ccf88668ae36fa6a11b961f",
+  "sourceResolution": [
+    1774,
+    887
+  ],
+  "resolution": 512,
+  "faces": [
+    {
+      "property": "SkyboxBk",
+      "file": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/bk.png",
+      "sha256": "e6a1b0f43037f8f4a421978f46b5ad7b990d358b9faa87d1868ac785a4a1401c",
+      "bytes": 200417,
+      "assetId": "135426015815482",
+      "receipt": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/bk.upload.json",
+      "operation": "operations/78d08758-dcb0-4f78-b800-550809db8cc7"
+    },
+    {
+      "property": "SkyboxDn",
+      "file": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/dn.png",
+      "sha256": "af44a4744f8a90abd611d277ce9fe0a8a4669e82dbba01fe4f590d0d0f06535d",
+      "bytes": 167195,
+      "assetId": "108672079716623",
+      "receipt": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/dn.upload.json",
+      "operation": "operations/f8698909-808f-4198-abe8-f327d53ee216"
+    },
+    {
+      "property": "SkyboxFt",
+      "file": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/ft.png",
+      "sha256": "ae21c654058de7076b5385e777f426be937e2e8f91be043456e5e22353bdfdb0",
+      "bytes": 186501,
+      "assetId": "115800001981482",
+      "receipt": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/ft.upload.json",
+      "operation": "operations/00d89816-ef12-43fa-8b7b-60bc5c3d4eef"
+    },
+    {
+      "property": "SkyboxLf",
+      "file": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/lf.png",
+      "sha256": "50025f848c46d625a5b3c23fc8b5b123be72be886e6d33b01eab0803730ce511",
+      "bytes": 204110,
+      "assetId": "114319877535550",
+      "receipt": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/lf.upload.json",
+      "operation": "operations/3ce04757-4fef-48ff-ba45-1559037c751a"
+    },
+    {
+      "property": "SkyboxRt",
+      "file": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/rt.png",
+      "sha256": "2b7a0c0a82725795859a562ab5b940dc402e2239be497e98548d0f3ff8c56cd3",
+      "bytes": 200741,
+      "assetId": "113875409362906",
+      "receipt": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/rt.upload.json",
+      "operation": "operations/a9faa4f6-1216-462b-b24a-2eccf9ede358"
+    },
+    {
+      "property": "SkyboxUp",
+      "file": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/up.png",
+      "sha256": "5faa60d547686389d25d5e36975fb12a08c2fc7cd3a6e12d9316df264be7098c",
+      "bytes": 236982,
+      "assetId": "78695454799024",
+      "receipt": "assets/sky/moonlit-citadel-20261021/violet-veil-S04-C01/up.upload.json",
+      "operation": "operations/f69e4c1a-9fb0-416f-a5ae-9a34dc95b92f"
+    }
+  ],
+  "normalization": {
+    "wrapFeatherPixelsPerSide": 71,
+    "poleCapRows": 35,
+    "originalWrapMaxChannelDifference": 24.0,
+    "normalizedWrapMaxChannelDifference": 0.0
+  },
+  "edgeChecks": [
+    {
+      "edges": [
+        "Bk.top",
+        "Up.bottom"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Bk.bottom",
+        "Dn.top"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Bk.left",
+        "Rt.right"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Bk.right",
+        "Lf.left"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Dn.bottom",
+        "Ft.bottom"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Dn.left",
+        "Lf.bottom"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Dn.right",
+        "Rt.bottom"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Ft.top",
+        "Up.top"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Ft.left",
+        "Lf.right"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Ft.right",
+        "Rt.left"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Lf.top",
+        "Up.left"
+      ],
+      "maxChannelDifference": 0
+    },
+    {
+      "edges": [
+        "Rt.top",
+        "Up.right"
+      ],
+      "maxChannelDifference": 0
+    }
+  ],
+  "projection": "Bilinear latitude-longitude sample of unit rays; inclusive shared edge rays.",
+  "directions": {
+    "Ft": "(u,v,-1)",
+    "Bk": "(-u,v,1)",
+    "Rt": "(1,v,u)",
+    "Lf": "(-1,v,-u)",
+    "Up": "(u,1,-v)",
+    "Dn": "(u,-1,v)"
+  },
+  "uv": "u left=-1 right=1; v top=1 bottom=-1; panorama center faces -Z, seam +Z.",
+  "engineMoon": true,
+  "engineStars": 0,
+  "rotationDegreesPerSecond": 0.2,
+  "boundary": "Preserved selected source; spherical wrap/pole normalization and projection only."
+}

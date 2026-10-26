@@ -1,0 +1,299 @@
+{
+  "build": "SC_MAP_24",
+  "newPlacements": [
+    "ArchSeaStack",
+    "ArchSlopeJoin",
+    "CaveFootSeam0",
+    "CaveFootSeam1",
+    "CaveFootSeam2",
+    "CaveFootSeam3",
+    "ShoreDuneFacet0",
+    "ShoreDuneFacet1",
+    "ShoreDuneFacet2",
+    "ShoreGrassCluster",
+    "ShorePalmCluster",
+    "ShoreShrubCluster",
+    "WetSandEdge0",
+    "WetSandEdge1"
+  ],
+  "count": 14,
+  "newTriangles": 705,
+  "colliderIntersections": {},
+  "shoreGrounding": {
+    "ShoreDuneFacet0": {
+      "bankHeight": 2.53,
+      "pivotHeight": -1.0,
+      "embed": 3.53
+    },
+    "ShoreDuneFacet1": {
+      "bankHeight": 3.63,
+      "pivotHeight": -1.0,
+      "embed": 4.63
+    },
+    "ShoreDuneFacet2": {
+      "bankHeight": 4.24,
+      "pivotHeight": -1.0,
+      "embed": 5.24
+    },
+    "ShoreGrassCluster": {
+      "bankHeight": 4.38,
+      "pivotHeight": 4.0,
+      "embed": 0.38
+    },
+    "ShorePalmCluster": {
+      "bankHeight": -1.27,
+      "pivotHeight": -1.5,
+      "embed": 0.23
+    },
+    "ShoreShrubCluster": {
+      "bankHeight": 3.59,
+      "pivotHeight": 3.0,
+      "embed": 0.59
+    },
+    "WetSandEdge0": {
+      "bankHeight": -3.04,
+      "pivotHeight": -4.0,
+      "embed": 0.96
+    },
+    "WetSandEdge1": {
+      "bankHeight": -3.16,
+      "pivotHeight": -4.0,
+      "embed": 0.84
+    }
+  },
+  "archStackTop": 40.8,
+  "archJoinTop": 41.2,
+  "note": "Visual-only BVH surface checks in editable Blender assembly; not a Studio screenshot or movement test.",
+  "additions": [
+    {
+      "name": "ShoreDuneFacet0",
+      "asset": "SC_R_SandWedge",
+      "p": [
+        18,
+        -1,
+        103
+      ],
+      "yaw": -153,
+      "scale": [
+        1.1,
+        2,
+        0.65
+      ],
+      "triangles": 77
+    },
+    {
+      "name": "ShoreDuneFacet1",
+      "asset": "SC_R_SandWedge",
+      "p": [
+        -24,
+        -1,
+        122
+      ],
+      "yaw": -146,
+      "scale": [
+        1.1,
+        2,
+        0.65
+      ],
+      "triangles": 77
+    },
+    {
+      "name": "ShoreDuneFacet2",
+      "asset": "SC_R_SandWedge",
+      "p": [
+        -62,
+        -1,
+        137
+      ],
+      "yaw": -139,
+      "scale": [
+        1.1,
+        2,
+        0.65
+      ],
+      "triangles": 77
+    },
+    {
+      "name": "WetSandEdge0",
+      "asset": "SC_R_SandWedge",
+      "p": [
+        26,
+        -4,
+        109
+      ],
+      "yaw": -151,
+      "scale": [
+        1.05,
+        1.3,
+        0.7
+      ],
+      "triangles": 77
+    },
+    {
+      "name": "WetSandEdge1",
+      "asset": "SC_R_SandWedge",
+      "p": [
+        -33,
+        -4,
+        138
+      ],
+      "yaw": -138,
+      "scale": [
+        1.05,
+        1.3,
+        0.7
+      ],
+      "triangles": 77
+    },
+    {
+      "name": "ShorePalmCluster",
+      "asset": "SC_R_FanPalm",
+      "p": [
+        -17,
+        -1.5,
+        126
+      ],
+      "yaw": 31,
+      "scale": [
+        0.72,
+        0.9,
+        0.72
+      ],
+      "triangles": 72
+    },
+    {
+      "name": "ShoreShrubCluster",
+      "asset": "SC_R_Shrub",
+      "p": [
+        -57,
+        3,
+        136
+      ],
+      "yaw": 24,
+      "scale": [
+        1.1,
+        0.8,
+        1
+      ],
+      "triangles": 15
+    },
+    {
+      "name": "ShoreGrassCluster",
+      "asset": "SC_R_GrassClump",
+      "p": [
+        21,
+        4,
+        99
+      ],
+      "yaw": -21,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "triangles": 5
+    },
+    {
+      "name": "CaveFootSeam0",
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        100,
+        -4,
+        29
+      ],
+      "yaw": 0,
+      "scale": [
+        1.1,
+        1.5,
+        0.8
+      ],
+      "triangles": 38
+    },
+    {
+      "name": "CaveFootSeam1",
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        139,
+        -4,
+        39
+      ],
+      "yaw": 23,
+      "scale": [
+        1.1,
+        1.5,
+        0.8
+      ],
+      "triangles": 38
+    },
+    {
+      "name": "CaveFootSeam2",
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        75,
+        -4,
+        77
+      ],
+      "yaw": 46,
+      "scale": [
+        1.1,
+        1.5,
+        0.8
+      ],
+      "triangles": 38
+    },
+    {
+      "name": "CaveFootSeam3",
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        60,
+        -4,
+        39
+      ],
+      "yaw": 69,
+      "scale": [
+        1.1,
+        1.5,
+        0.8
+      ],
+      "triangles": 38
+    },
+    {
+      "name": "ArchSeaStack",
+      "asset": "SC_R_SeaRockTall",
+      "p": [
+        67,
+        -4,
+        -123
+      ],
+      "yaw": 11,
+      "scale": [
+        1.8,
+        3.2,
+        1.2
+      ],
+      "triangles": 38
+    },
+    {
+      "name": "ArchSlopeJoin",
+      "asset": "SC_R_SeaRockFlat",
+      "p": [
+        67,
+        28,
+        -130
+      ],
+      "yaw": -17,
+      "scale": [
+        1.7,
+        2.2,
+        1.8
+      ],
+      "triangles": 38
+    }
+  ],
+  "archSurfaceIntersections": {
+    "stackToJoin": 20,
+    "joinToRidge": 16,
+    "stackToPortal": 8,
+    "joinToPortal": 8
+  }
+}

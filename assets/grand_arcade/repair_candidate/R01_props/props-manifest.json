@@ -1,0 +1,187 @@
+{
+  "revision": "R01-props",
+  "source": "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\grand_arcade\\A01\\GrandArcade_A01.blend",
+  "meshes": {
+    "Lamp1__Gold": {
+      "triangles": 64,
+      "closedComponents": 3,
+      "positiveVolumes": [
+        0.01041380564371746,
+        0.767969767252604,
+        1.5199629465738909
+      ],
+      "bounds": [
+        [
+          -47.0,
+          -7.949999809265137,
+          5.150000095367432
+        ],
+        [
+          -45.0,
+          -6.050000190734863,
+          7.820000171661377
+        ]
+      ]
+    },
+    "Lamp2__Gold": {
+      "triangles": 64,
+      "closedComponents": 3,
+      "positiveVolumes": [
+        0.010568847258885709,
+        0.7679875691731777,
+        1.5200049082438145
+      ],
+      "bounds": [
+        [
+          -10.0,
+          -17.950000762939453,
+          3.6500000953674316
+        ],
+        [
+          -8.0,
+          -16.049999237060547,
+          6.320000171661377
+        ]
+      ]
+    },
+    "Lamp3__Gold": {
+      "triangles": 64,
+      "closedComponents": 3,
+      "positiveVolumes": [
+        0.010571440060933445,
+        0.7680346171061203,
+        1.5200217564900713
+      ],
+      "bounds": [
+        [
+          8.0,
+          -17.950000762939453,
+          3.6500000953674316
+        ],
+        [
+          10.0,
+          -16.049999237060547,
+          6.320000171661377
+        ]
+      ]
+    },
+    "Lamp4__Gold": {
+      "triangles": 64,
+      "closedComponents": 3,
+      "positiveVolumes": [
+        0.01061201095581047,
+        0.7680002848307306,
+        1.5199629465738926
+      ],
+      "bounds": [
+        [
+          45.0,
+          -7.949999809265137,
+          5.150000095367432
+        ],
+        [
+          47.0,
+          -6.050000190734863,
+          7.820000171661377
+        ]
+      ]
+    },
+    "Lamp5__Gold": {
+      "triangles": 64,
+      "closedComponents": 3,
+      "positiveVolumes": [
+        0.7680026690165191,
+        1.5200099945068366,
+        0.010603723426659967
+      ],
+      "bounds": [
+        [
+          -10.0,
+          -42.95000076293945,
+          0.8500000238418579
+        ],
+        [
+          -8.0,
+          -41.04999923706055,
+          3.5199999809265137
+        ]
+      ]
+    },
+    "Lamp6__Gold": {
+      "triangles": 64,
+      "closedComponents": 3,
+      "positiveVolumes": [
+        0.010491309066613552,
+        0.7680220603942852,
+        1.5199909210205078
+      ],
+      "bounds": [
+        [
+          8.0,
+          -42.95000076293945,
+          0.8500000238418579
+        ],
+        [
+          10.0,
+          -41.04999923706055,
+          3.5199999809265137
+        ]
+      ]
+    }
+  },
+  "calibrationPrefix": "R01Marker",
+  "fbxSha256": "2dcbcc3c3fe28aa76d487c02d59c350078b3476b48785aea88890ff6ea87e2aa",
+  "planterRelocation": {
+    "sourceCenters": [
+      [
+        -46,
+        -7,
+        0
+      ],
+      [
+        46,
+        -7,
+        0
+      ]
+    ],
+    "targetCenters": [
+      [
+        -40,
+        -7,
+        0
+      ],
+      [
+        40,
+        -7,
+        0
+      ]
+    ]
+  },
+  "outerLampRelocation": {
+    "sourceCenters": [
+      [
+        -46,
+        -7,
+        1.5
+      ],
+      [
+        46,
+        -7,
+        1.5
+      ]
+    ],
+    "targetCenters": [
+      [
+        -45,
+        0,
+        0
+      ],
+      [
+        45,
+        0,
+        0
+      ]
+    ]
+  },
+  "preservation": "Only normals change in exported Gold meshes; install uses current placement deltas for retained bridge lamps."
+}

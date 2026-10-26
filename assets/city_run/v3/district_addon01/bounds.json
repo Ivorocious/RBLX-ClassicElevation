@@ -1,0 +1,62 @@
+{
+  "V3_LoadingFacade": {
+    "centerBlender": [
+      0.0,
+      -0.9125000238418579,
+      7.0
+    ],
+    "dimensions": [
+      24.0,
+      2.825000047683716,
+      14.0
+    ]
+  },
+  "V3_ServiceStock": {
+    "centerBlender": [
+      2.625,
+      -0.02499997615814209,
+      2.25
+    ],
+    "dimensions": [
+      12.75,
+      4.549999952316284,
+      4.5
+    ]
+  },
+  "V3_WorksiteHoarding": {
+    "centerBlender": [
+      0.0,
+      0.0,
+      4.0
+    ],
+    "dimensions": [
+      17.0,
+      2.5999999046325684,
+      8.0
+    ]
+  },
+  "V3_MaterialsStock": {
+    "centerBlender": [
+      -0.25,
+      0.0,
+      2.549999952316284
+    ],
+    "dimensions": [
+      10.5,
+      8.0,
+      5.099999904632568
+    ]
+  },
+  "V3_ServiceCanopy": {
+    "centerBlender": [
+      0.0,
+      -0.06999993324279785,
+      5.625
+    ],
+    "dimensions": [
+      24.0,
+      12.440000057220459,
+      11.25
+    ]
+  }
+}

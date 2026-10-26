@@ -1,0 +1,110 @@
+{
+  "build": "SC_WAVE_28B",
+  "assetOrder": [
+    "SC_R_Wave28B"
+  ],
+  "assets": [
+    {
+      "id": "SC_R_Wave28B",
+      "family": "water",
+      "triangles": 1736,
+      "triangleCeiling": 1800,
+      "estimatedPlacements": 2,
+      "dimensionsRobloxXYZ": [
+        18.0,
+        14.0,
+        9.0
+      ],
+      "boundsBlender": {
+        "min": [
+          -9.0,
+          -4.5,
+          0.0
+        ],
+        "max": [
+          9.0,
+          4.5,
+          14.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Ground pivot at Blender (0,0,0); 18 x 14 x 9 studs. The section forms a steep outside face, forward-projecting lip, and deep hollow underside. Continuous atlas foam bands follow the curled crest; Roblox front is -Z.",
+      "triangleTarget": 1800,
+      "localScaleBlender": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "centerBlender": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "frontDirectionRobloxXYZ": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "crestFoamProfileSegments": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "innerCurlFoamProfileSegments": [
+        19
+      ],
+      "atlasUVAudit": {
+        "facesChecked": 842,
+        "allFaceUVsStayWithinOneAtlasTile": true,
+        "minimumTileEdgePaddingPixels": 6.0
+      },
+      "axisConvention": {
+        "blenderX": "Roblox +X",
+        "blenderZ": "Roblox +Y",
+        "blenderNegativeY": "Roblox +Z"
+      }
+    }
+  ],
+  "libraryTriangles": 1736,
+  "placedTrianglesAtEstimatedPlacements": 3472,
+  "assetCeilings": {
+    "SC_R_Wave28B": 1800
+  },
+  "materialCount": 1,
+  "atlas": "palette.png",
+  "atlasDimensions": [
+    128,
+    128
+  ],
+  "export": {
+    "unitScaleApplied": true,
+    "axisForward": "-Z",
+    "axisUp": "Y",
+    "sourceToRoblox": "Roblox XYZ = Blender XZY with Roblox Z = -Blender Y"
+  },
+  "integration": {
+    "runtimeDimensionsRobloxXYZ": [
+      18.0,
+      14.0,
+      9.0
+    ],
+    "frontDirectionRobloxXYZ": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "rootAtRobloxXYZ": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "topHeightAboveRootStuds": 14.0
+  }
+}

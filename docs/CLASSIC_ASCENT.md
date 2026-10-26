@@ -2,7 +2,7 @@
 
 ## Current status: passed for manual fine-tuning
 
-September 6, 2026: the accepted course is builder version 7, `AltitudeRevision = 2`. See the [current v7 handoff](CLASSIC_ASCENT_V7.md), [level-design guide](LEVEL_DESIGN_GUIDE.md) and [reusable chat brief](LEVEL_DESIGN_CHAT_STARTER.md). Preserve accepted geometry and manual edits; do not regenerate this course without a new request.
+September 7, 2026: the owner rejected V8 after exhaustive visual review and requested restoration of V7. The preserved V7, with `AltitudeRevision = 2` and `RiverFinishRevision = 1`, is restored. Use the [editing guide](CLASSIC_ASCENT_EDITING.md) for the current Studio workflow. Preserve geometry and manual edits; do not regenerate this course without a new request.
 
 ## Historical version 4 reference
 

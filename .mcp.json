@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "Roblox_Studio": {
+      "command": "cmd",
+      "args": ["/c", "C:\\Users\\ivorr\\AppData\\Local\\Roblox\\mcp.bat"]
+    },
+    "Roblox_Studio_Chrrxs": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\.tools\\robloxstudio-mcp\\node_modules\\@chrrxs\\robloxstudio-mcp\\dist\\index.js",
+        "--auto-install-plugin"
+      ],
+      "env": {
+        "ROBLOX_STUDIO_HOST": "127.0.0.1",
+        "ROBLOX_STUDIO_PORT": "58741"
+      }
+    },
+    "blender": {
+      "command": "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\.tools\\blender-mcp-env\\Scripts\\blender-mcp.exe",
+      "env": {
+        "BLENDER_HOST": "127.0.0.1",
+        "BLENDER_PORT": "9876"
+      }
+    },
+    "drawio": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\.tools\\drawio-mcp\\node_modules\\@drawio\\mcp\\src\\index.js"
+      ]
+    }
+  }
+}

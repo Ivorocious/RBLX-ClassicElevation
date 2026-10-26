@@ -1,0 +1,22 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "reference": "docs/artifacts/keyboard-circuit/skybox-studies/20261009-v07/37-keycap-archive.png",
+  "source": "panorama-source.png",
+  "sourceResolution": [
+    1774,
+    887
+  ],
+  "iterations": [
+    {
+      "file": "panorama-source-r01.png",
+      "selected": false,
+      "reason": "Close edge shelving produced a visible longitude join and identifiable geometry near the poles.",
+      "prompt": "Use case: precise-object-edit / stylized-concept. Production asset: an actual Roblox SKYBOX environment texture. Reinterpret the approved Keycap Archive reference as ONE seamless full-sphere 360-degree by 180-degree EQUIRECTANGULAR panorama, 2:1 image aspect ratio, preferably 3840x1920. The input is an appearance reference, not a map to keep. REMOVE THE ENTIRE FLOATING COURSE, all playable platforms, obstacles, start arch, small nearby landmarks, characters, signs and UI. Output ONLY the surrounding distant archival room environment: enormous tall dark teal/slate shelving on every side, organized trays of cream, mint, pale pink and cobalt keyboard keycaps and switches, some plain brown storage boxes, sparse gentle warm shelf lights, calm shadowy blue-gray depth. Match the restrained matte low-poly 3D visual style and palette of the reference. Viewpoint floats centrally in a very large open archive hall, with shelves far away in all horizontal directions, distant dim floor far below, dark ceiling above. The central hall is completely empty so the real game course can be drawn on top. This image is a background only, not a designed course or an isometric diorama. Strict spherical projection: 360 longitude spans exactly left to right, 180 latitude spans exactly top to bottom, horizon at vertical midpoint, zenith at the entire upper edge, nadir at the entire lower edge. Correct lat-long polar stretching; no framed picture, no split panels, no fisheye circles, no cubemap cross, no borders. Make left and right edges join seamlessly, with the same exposure and continuous shelves. Avoid prominent lights or geometric discontinuities at the horizontal wrap. Keep enough ambient fill to read the teal shelves; preserve quiet warm practical lighting without luminous white areas or heavy bloom. No outdoor sky, clouds, sun, moon, vegetation, modern computers, logos, readable text, maps, platforms or people. One continuous environment-only equirectangular panorama."
+    },
+    {
+      "file": "panorama-source.png",
+      "selected": true,
+      "prompt": "Edit this environment-only panorama for production spherical SKYBOX use. Keep the exact restrained Keycap Archive art direction, dark teal shelving, ivory/mint/pink/cobalt key parts, quiet warm lights and calm readable exposure. Fix only its spherical projection and depth: ALL shelving must be far away at a similar apparent distance around the viewer, with no foreground shelves or close keycaps at the left or right edge. This is a seamless 360 by 180 degree EQUIRECTANGULAR UV TEXTURE, NOT a normal wide-angle room photograph. In the middle band between 32% and 65% image height, show a continuous distant ring of archive shelving spanning the entire 360-degree longitude with a level horizon and consistent shelf scale. At the horizontal wrap, make the leftmost and rightmost 6% of the image join through the same quiet broad dark teal open aisle/structural bay with continuous tones and no clipped objects or bright lights. The TOP 30% must be a very simple dim slate ceiling fading smoothly to almost uniform dark blue-gray at the upper edge: no rafters, lamps, shelves, sharp lines or identifiable objects near the zenith. The BOTTOM 35% must be a very simple distant dim floor fading into diffuse blue-gray depth at the bottom edge: no floor grid, tile lines, reflections, shelves, boxes or keycaps near the nadir. This deliberate quiet pole treatment is essential to avoid radial pinching when mapped to a sphere. Ceiling and floor remain an indoor archive background, never an outdoor cloud sky. Correct equirectangular polar stretching and a truly continuous 360-degree horizontal wrap. No map or floating course, no nearby geometry, platforms, characters, labels, UI, text or watermark. One continuous 2:1 panorama."
+    }
+  ]
+}

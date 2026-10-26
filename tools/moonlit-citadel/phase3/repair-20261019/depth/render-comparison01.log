@@ -1,0 +1,36 @@
+00:02.344  blend            | Read blend: "C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\detail-pass-20261014\drafts\correction54\render03\MC_CORRECTION54_CANDIDATE.blend"
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+DEPTH_RENDER_START before54-gate-edge
+00:27.109  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\depth\comparison01\before54-gate-edge.png'
+DEPTH_RENDER_DONE before54-gate-edge
+DEPTH_RENDER_START before54-cp01-edge
+00:47.391  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\depth\comparison01\before54-cp01-edge.png'
+DEPTH_RENDER_DONE before54-cp01-edge
+DEPTH_RENDER_START before54-crown-edge
+01:06.484  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\depth\comparison01\before54-crown-edge.png'
+DEPTH_RENDER_DONE before54-crown-edge
+DEPTH_RENDER_START before54-owner-overall
+01:24.187  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\depth\comparison01\before54-owner-overall.png'
+DEPTH_RENDER_DONE before54-owner-overall
+DEPTH_RENDER_START afterDP01-gate-edge
+01:48.922  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\depth\comparison01\afterDP01-gate-edge.png'
+DEPTH_RENDER_DONE afterDP01-gate-edge
+DEPTH_RENDER_START afterDP01-cp01-edge
+02:09.687  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\depth\comparison01\afterDP01-cp01-edge.png'
+DEPTH_RENDER_DONE afterDP01-cp01-edge
+DEPTH_RENDER_START afterDP01-crown-edge
+02:28.609  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\depth\comparison01\afterDP01-crown-edge.png'
+DEPTH_RENDER_DONE afterDP01-crown-edge
+DEPTH_RENDER_START afterDP01-owner-overall
+02:46.875  render           | Saved: 'C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\depth\comparison01\afterDP01-owner-overall.png'
+DEPTH_RENDER_DONE afterDP01-owner-overall
+02:46.953  image.write      | ERROR OpenImageIO write failed: Could not open file "C:\Users\ivorr\.thumbnails\large\blender_8312_be3cab77a4fdd6899102f2670fe8aabc.png.png"
+Info: Saved as "MC_DEPTH_DP01_COMPARISON.blend"
+DEPTH_COMPARISON_PASS {"views": 8, "preserved": 1845, "budget": {"units": 320, "meshes": 880, "triangles": 270288}}
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

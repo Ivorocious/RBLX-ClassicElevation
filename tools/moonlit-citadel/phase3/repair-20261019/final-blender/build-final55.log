@@ -1,0 +1,17 @@
+00:02.110  blend            | Read blend: "C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\art\proposal03\MC_ART_REPAIR55_PROPOSAL.blend"
+Traceback (most recent call last):
+  File "C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\final-blender\BuildFinal55.py", line 258, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\ivorr\RobloxDevelopment\ProjectClassicElevation\tools\moonlit-citadel\phase3\repair-20261019\final-blender\BuildFinal55.py", line 173, in main
+    scale=Vector(row['afterSize'])/before_size
+          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+TypeError: Vector division: Vector must be divided by a float
+BlenderMCP: cannot start server in background mode (blender -b) - commands would never execute
+BlenderMCP: run Blender with a GUI, or use a virtual display: xvfb-run -a blender
+BlenderMCP addon registered
+BlenderMCP server stopped
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

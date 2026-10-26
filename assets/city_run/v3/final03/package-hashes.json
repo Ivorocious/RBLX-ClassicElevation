@@ -1,0 +1,225 @@
+{
+  "build": "V3_FINAL_03C",
+  "files": [
+    {
+      "file": "assemble_blender.py",
+      "bytes": 4069,
+      "sha256": "da84289657966f5c47442375756bba5555a201da7ff3f3994fac416d8ecdca36"
+    },
+    {
+      "file": "audit.luau",
+      "bytes": 3399,
+      "sha256": "e9e6e29226c09ab3227a252f8b6fb86680164c90c7711b7cd7fd02223a1a48e3"
+    },
+    {
+      "file": "blender-audit.json",
+      "bytes": 231,
+      "sha256": "d4cd6fd22791f6246a8e4345d97551c9e8a3c2499e5f7b9f51116064c4a5f043"
+    },
+    {
+      "file": "build_final03.py",
+      "bytes": 9941,
+      "sha256": "007a5b03f83b3a4e0636914610604d6eade7937cc1465982e575f0eb844f2bee"
+    },
+    {
+      "file": "CityRun_Final03.fbx",
+      "bytes": 3982236,
+      "sha256": "4b7f5480c93fc757daa119b31aa2e7c4a78b83ce670085b704e3a5cfd1cc4a87"
+    },
+    {
+      "file": "CityRun_Final03_Assembly.blend",
+      "bytes": 3293134,
+      "sha256": "9689216038a563958ecbc3d78ba93373db6c152802050e7c6177448646790154"
+    },
+    {
+      "file": "CityRun_Final03_Assets.blend",
+      "bytes": 2483491,
+      "sha256": "0a3a8c864dc8ee4ada0db040c2266cd84a310e12869792a722d73d58c46568d0"
+    },
+    {
+      "file": "CityRun_V3_Final03C.rbxm",
+      "bytes": 1517068,
+      "sha256": "034116081c93d816764d94ce9fea7d0546e864b4086efb61a480e09ac57914e3"
+    },
+    {
+      "file": "clearance-geometry.json",
+      "bytes": 381,
+      "sha256": "ffeb92d3ebe00ec1824227ebbcc7780b4c67dc5e6cfcc5bc64b4a1b5301989d1"
+    },
+    {
+      "file": "dress_final.py",
+      "bytes": 2487,
+      "sha256": "84a3bbc79e5181d39a2be6fc5138b012aa26dc9f1fb38bef233c802e0ed6dae0"
+    },
+    {
+      "file": "import.luau",
+      "bytes": 19857,
+      "sha256": "8c2e43aa05e04a663fe681bbd3cbed2f7128163cbd8e820bbaca75a7b195e85c"
+    },
+    {
+      "file": "install.luau",
+      "bytes": 49943,
+      "sha256": "c3f7d6a7ba5664ebfecfd0f876c995a649c0e8a827c91588b3896beb0aeaa076"
+    },
+    {
+      "file": "layout.json",
+      "bytes": 79413,
+      "sha256": "a5c0572304e38bdb60d17412c5c83110aa072c66828c6facd349f65781bddbdb"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 35062,
+      "sha256": "a1847b079060e810f4602c8eea7575c4a83820df8263d944283bbdf5459cc9e1"
+    },
+    {
+      "file": "native-export-receipt.json",
+      "bytes": 213,
+      "sha256": "5c947e08b27fa93086bf5fed7d4805694011478ce40f6d80d67ebea6de3fa5b3"
+    },
+    {
+      "file": "palette.png",
+      "bytes": 493,
+      "sha256": "786374fde777e5f69dd466a8e66ef4a02f84f14cebe5ae7cf2519f76295bc61a"
+    },
+    {
+      "file": "prepare_installer.py",
+      "bytes": 1492,
+      "sha256": "63bc060c368fd4efc750368c5d9047763489dff382add34be1cc68f48c969cae"
+    },
+    {
+      "file": "source-match.json",
+      "bytes": 39,
+      "sha256": "44fd7ce0d700100ae904161b00f94c1d123010dd62b11a1066aa4a1b4a0b84ae"
+    },
+    {
+      "file": "terminal-live.json",
+      "bytes": 324185,
+      "sha256": "90dc569e2fe09140573db48d5adc09fab1a24b8cb16efc3dbc6140e4e4f28862"
+    },
+    {
+      "file": "terminal-page0.json",
+      "bytes": 13058,
+      "sha256": "e557a9abe83a8a16f7f6edb480025613a48bd1d2cfaf2b69be64bd58507d4d19"
+    },
+    {
+      "file": "terminal-page1.json",
+      "bytes": 13530,
+      "sha256": "1c2d1002f21466e311aaacf47b5226a9400085e9e8fee192f308c1f28899852c"
+    },
+    {
+      "file": "terminal-page10.json",
+      "bytes": 13346,
+      "sha256": "4615fa164a38a066b943d4478f03a206d0b47b64cfe0db2c8e7fd398087f183b"
+    },
+    {
+      "file": "terminal-page11.json",
+      "bytes": 12773,
+      "sha256": "1444660f6911399e66fdedcdc93407648a3954ee6fac34d6b12ecea3a87c35c5"
+    },
+    {
+      "file": "terminal-page12.json",
+      "bytes": 13381,
+      "sha256": "5669cd7e679e1188266ba7343ceeb4b6402ac75c1d8f03094332f7be9c79373e"
+    },
+    {
+      "file": "terminal-page13.json",
+      "bytes": 13040,
+      "sha256": "7dba5356ca4f0705f12412f44b236e914ea42bbca02e47c3dbfc61ce5c952eae"
+    },
+    {
+      "file": "terminal-page14.json",
+      "bytes": 13241,
+      "sha256": "83205c4de53b18aa97f125c04a4120dd0b006db0f3cf97f9fc78a435e72b1c85"
+    },
+    {
+      "file": "terminal-page15.json",
+      "bytes": 14053,
+      "sha256": "1b6c2eed275843b27f23f8a8e22ca07eea7c17ad742b0d69c8eb842117aa378e"
+    },
+    {
+      "file": "terminal-page16.json",
+      "bytes": 13173,
+      "sha256": "4622f59516a496d6b2a17b53a84dc75fa968611d9746c4ef09b0ab6449f7d0a1"
+    },
+    {
+      "file": "terminal-page17.json",
+      "bytes": 13449,
+      "sha256": "33d47eac4c7d42c483d87e4242ae45290c33ecfba02a6cd29b6c10d9cfc65ca2"
+    },
+    {
+      "file": "terminal-page18.json",
+      "bytes": 14212,
+      "sha256": "8eabad8f86fcaac77ecf4591d8bdae142740d82b2ed05a3cefd1fab45c18417a"
+    },
+    {
+      "file": "terminal-page19.json",
+      "bytes": 14123,
+      "sha256": "5ebbded50c255649e1d324724920bc8fad742a9da01a30bb8fedc630d7779242"
+    },
+    {
+      "file": "terminal-page2.json",
+      "bytes": 12586,
+      "sha256": "0fe5c17489e2acad7a202a72e6941a59f093171d8a1cd4ad6f08ab4e0cc01be8"
+    },
+    {
+      "file": "terminal-page20.json",
+      "bytes": 13450,
+      "sha256": "91474c03e67850e0d6d23344225cc7c14e9f7780cd140bae3e034162254520b5"
+    },
+    {
+      "file": "terminal-page21.json",
+      "bytes": 13435,
+      "sha256": "2ba6762e30f624d7ce3c1446051ed46e683b15774d617c16751cbb133163001a"
+    },
+    {
+      "file": "terminal-page22.json",
+      "bytes": 2757,
+      "sha256": "c1802d047d7191281166f16b8d58201b0c86f9ad6223bb98c4a957706fcb9d5e"
+    },
+    {
+      "file": "terminal-page3.json",
+      "bytes": 13009,
+      "sha256": "020b63d047ea7cc3ef7cd4d28f65b8f6b228b82172fe9b537cb4d1363460477c"
+    },
+    {
+      "file": "terminal-page4.json",
+      "bytes": 13109,
+      "sha256": "c066b3b31e5c7f95b048b7a3d4d78032a406e0fbc3ea7156eabf430f3160f5fa"
+    },
+    {
+      "file": "terminal-page5.json",
+      "bytes": 13274,
+      "sha256": "d94787f900a06161d14c4eab078bcec772bc1c3123b787f2f0a4f69cb1f2c208"
+    },
+    {
+      "file": "terminal-page6.json",
+      "bytes": 13277,
+      "sha256": "5ba098c94b2543a9282055e01579ab559f1c81a786ed5e29db9f29789eed4b84"
+    },
+    {
+      "file": "terminal-page7.json",
+      "bytes": 13152,
+      "sha256": "9d7c27344c4489689549837698998e08df0925924384b39641df991743504a95"
+    },
+    {
+      "file": "terminal-page8.json",
+      "bytes": 13800,
+      "sha256": "fa4792b0fc37eeb1ebf328efea115ef4f78b7576e85a4716723d88d76f4be3a6"
+    },
+    {
+      "file": "terminal-page9.json",
+      "bytes": 13205,
+      "sha256": "e248565220f8659a3a48863573597ccfa00711734edfda4359fa93c0c21fa6d6"
+    },
+    {
+      "file": "upload-receipt.json",
+      "bytes": 508,
+      "sha256": "0af2b2fe31db496716db464479efcdb131d3acfad768e3db628c641600f7cef5"
+    },
+    {
+      "file": "write_evidence.py",
+      "bytes": 465,
+      "sha256": "73757242c2974dcfd22a7b805f119a1c1958c13b84388904411f45f4098e44e3"
+    }
+  ]
+}

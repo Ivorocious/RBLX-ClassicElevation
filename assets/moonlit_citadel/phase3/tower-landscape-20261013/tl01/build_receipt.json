@@ -1,0 +1,14 @@
+{
+  "MC_TOWER_LANDSCAPE_KIT.fbx": {
+    "bytes": 121388,
+    "sha256": "6e1b9fa5101fa072aad5919c3f632b180719c343b48999bb1bb230e9742eaddb"
+  },
+  "MC_TOWER_LANDSCAPE_KIT.blend": {
+    "bytes": 182062,
+    "sha256": "7336d98af6692205190862e51b5884cb7280012a7a499629ab884e90098ac727"
+  },
+  "manifest.json": {
+    "bytes": 19204,
+    "sha256": "ebec83588ea6c33979cbb5e5218d963b108a857bc27dc1d1c53b735296b782b4"
+  }
+}

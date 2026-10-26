@@ -1,0 +1,226 @@
+{
+  "revision": "C01",
+  "floorOrigin": [
+    1552,
+    370,
+    -892.5
+  ],
+  "stagePivot": [
+    1552,
+    374.2,
+    -942
+  ],
+  "rampRunStuds": 16,
+  "rampRiseStuds": 4.2,
+  "slopeDegrees": 14.708303899682749,
+  "floorWidthStuds": 18,
+  "parapetClearWidthStuds": 17.8,
+  "railOpeningStuds": 20,
+  "sourceRail": "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\lobby_blender\\Skycourt_B10.blend",
+  "preservedSideGeometry": [
+    {
+      "material": "Stone",
+      "source": "Guardrails_Rail_01__Stone__00",
+      "side": -1,
+      "vertices": 24
+    },
+    {
+      "material": "Stone",
+      "source": "Guardrails_Rail_01__Stone__00",
+      "side": 1,
+      "vertices": 24
+    },
+    {
+      "material": "Gold",
+      "source": "Guardrails_Rail_01__Gold__00",
+      "side": -1,
+      "vertices": 16
+    },
+    {
+      "material": "Gold",
+      "source": "Guardrails_Rail_01__Gold__00",
+      "side": 1,
+      "vertices": 16
+    },
+    {
+      "material": "DeepBlue",
+      "source": "Guardrails_Rail_01__DeepBlue__00",
+      "side": -1,
+      "vertices": 384
+    },
+    {
+      "material": "DeepBlue",
+      "source": "Guardrails_Rail_01__DeepBlue__00",
+      "side": 1,
+      "vertices": 384
+    },
+    {
+      "material": "Cream",
+      "source": "Guardrails_Rail_01__Cream__00",
+      "side": -1,
+      "vertices": 32
+    },
+    {
+      "material": "Cream",
+      "source": "Guardrails_Rail_01__Cream__00",
+      "side": 1,
+      "vertices": 32
+    }
+  ],
+  "meshes": {
+    "LobbyRailRight__Stone": {
+      "material": "Stone",
+      "triangles": 44
+    },
+    "LobbyRailLeft__Stone": {
+      "material": "Stone",
+      "triangles": 44
+    },
+    "LobbyRailRight__Gold": {
+      "material": "Gold",
+      "triangles": 28
+    },
+    "LobbyRailLeft__Gold": {
+      "material": "Gold",
+      "triangles": 28
+    },
+    "LobbyRailRight__DeepBlue": {
+      "material": "DeepBlue",
+      "triangles": 640
+    },
+    "LobbyRailLeft__DeepBlue": {
+      "material": "DeepBlue",
+      "triangles": 640
+    },
+    "LobbyRailRight__Cream": {
+      "material": "Cream",
+      "triangles": 60
+    },
+    "LobbyRailLeft__Cream": {
+      "material": "Cream",
+      "triangles": 60
+    },
+    "LowerLanding__Cream": {
+      "material": "Cream",
+      "triangles": 36
+    },
+    "LowerLanding__FloorA": {
+      "material": "FloorA",
+      "triangles": 24
+    },
+    "LowerLanding__FloorB": {
+      "material": "FloorB",
+      "triangles": 24
+    },
+    "LowerLanding__Pale": {
+      "material": "Pale",
+      "triangles": 24
+    },
+    "LowerLanding__Gold": {
+      "material": "Gold",
+      "triangles": 24
+    },
+    "LowerLanding__Stone": {
+      "material": "Stone",
+      "triangles": 24
+    },
+    "LowerLanding__DeepBlue": {
+      "material": "DeepBlue",
+      "triangles": 48
+    },
+    "Ramp__Cream": {
+      "material": "Cream",
+      "triangles": 36
+    },
+    "Ramp__FloorA": {
+      "material": "FloorA",
+      "triangles": 96
+    },
+    "Ramp__FloorB": {
+      "material": "FloorB",
+      "triangles": 96
+    },
+    "Ramp__Pale": {
+      "material": "Pale",
+      "triangles": 24
+    },
+    "Ramp__Gold": {
+      "material": "Gold",
+      "triangles": 24
+    },
+    "Ramp__Stone": {
+      "material": "Stone",
+      "triangles": 24
+    },
+    "Ramp__DeepBlue": {
+      "material": "DeepBlue",
+      "triangles": 48
+    },
+    "UpperLanding__Cream": {
+      "material": "Cream",
+      "triangles": 36
+    },
+    "UpperLanding__FloorA": {
+      "material": "FloorA",
+      "triangles": 72
+    },
+    "UpperLanding__FloorB": {
+      "material": "FloorB",
+      "triangles": 72
+    },
+    "UpperLanding__Pale": {
+      "material": "Pale",
+      "triangles": 24
+    },
+    "UpperLanding__Gold": {
+      "material": "Gold",
+      "triangles": 24
+    },
+    "UpperLanding__Stone": {
+      "material": "Stone",
+      "triangles": 24
+    },
+    "UpperLanding__DeepBlue": {
+      "material": "DeepBlue",
+      "triangles": 48
+    },
+    "PortalPosts__Cream": {
+      "material": "Cream",
+      "triangles": 864
+    },
+    "PortalPosts__Pale": {
+      "material": "Pale",
+      "triangles": 864
+    },
+    "PortalPosts__Gold": {
+      "material": "Gold",
+      "triangles": 864
+    },
+    "RampFascia__Stone": {
+      "material": "Stone",
+      "triangles": 24
+    },
+    "BridgePlinth__Stone": {
+      "material": "Stone",
+      "triangles": 108
+    },
+    "MarkerOrigin__DeepBlue": {
+      "material": "DeepBlue",
+      "triangles": 12
+    },
+    "MarkerRight__DeepBlue": {
+      "material": "DeepBlue",
+      "triangles": 12
+    },
+    "MarkerUp__DeepBlue": {
+      "material": "DeepBlue",
+      "triangles": 12
+    },
+    "MarkerForward__DeepBlue": {
+      "material": "DeepBlue",
+      "triangles": 12
+    }
+  },
+  "triangles": 5168,
+  "nativeProof": "Pending lead installation and two-way walking checks; Blender views do not establish traversal."
+}

@@ -1,0 +1,146 @@
+{
+ "date": "2026-10-14",
+ "task": "UI-OVERHAUL-20261014",
+ "method": "Studio MCP upload_image from a local http server",
+ "placeId": 85558151074819,
+ "images": [
+  {
+   "name": "sky-key",
+   "source": "assets/ui/race/svg/sky-key.svg",
+   "file": "assets/ui/race/png/sky-key.png",
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "fb5405f2b4cc87528ba50b1320d785d781abce0f51a1607f0239db334ba5714b",
+   "assetId": "rbxassetid://89555402381692"
+  },
+  {
+   "name": "crown",
+   "source": "assets/ui/race/svg/crown.svg",
+   "file": "assets/ui/race/png/crown.png",
+   "size": [
+    160,
+    128
+   ],
+   "sha256": "788e0171541c42b45831e8184035c0dc7e969a61bba5d1bd574887601f873433",
+   "assetId": "rbxassetid://81890458189578"
+  },
+  {
+   "name": "checkpoint-flag",
+   "source": "assets/ui/race/svg/checkpoint-flag.svg",
+   "file": "assets/ui/race/png/checkpoint-flag.png",
+   "size": [
+    64,
+    64
+   ],
+   "sha256": "c7ae303104d20eaa98e078bf1c41a18b44b494c415054c6d762b4ac2f341ab80",
+   "assetId": "rbxassetid://79812203026303"
+  },
+  {
+   "name": "halftone-dot",
+   "source": "assets/ui/race/svg/halftone-dot.svg",
+   "file": "assets/ui/race/png/halftone-dot.png",
+   "size": [
+    36,
+    36
+   ],
+   "sha256": "e42baa388583bf05fd71a869a5769ef722e52b7aca8082bc8d212341287fe34c",
+   "assetId": "rbxassetid://137293337307005"
+  },
+  {
+   "name": "star-coin",
+   "source": "assets/ui/race/svg/star-coin.svg",
+   "file": "assets/ui/race/png/star-coin.png",
+   "size": [
+    256,
+    256
+   ],
+   "sha256": "49485470fedfe2cd7f5d3dd349fccf76d4726cb2d0eec238ac20b86f8ac72965",
+   "assetId": "rbxassetid://111271063911292"
+  },
+  {
+   "name": "finish-flag",
+   "source": "assets/ui/race/svg/finish-flag.svg",
+   "file": "assets/ui/race/png/finish-flag.png",
+   "size": [
+    128,
+    128
+   ],
+   "sha256": "8b83aa2cc2fb375e23fd18407d6e2b941a933e4c12eff90a8d32f3dce751cbfa",
+   "assetId": "rbxassetid://83888567636514"
+  },
+  {
+   "name": "fall-arrow",
+   "source": "assets/ui/race/svg/fall-arrow.svg",
+   "file": "assets/ui/race/png/fall-arrow.png",
+   "size": [
+    64,
+    64
+   ],
+   "sha256": "75a49c65e1f282bc90437de29dd737696245540b7152abb55c5b830e75e7524f",
+   "assetId": "rbxassetid://84291893920447"
+  },
+  {
+   "name": "rays",
+   "source": "assets/ui/race/svg/rays.svg",
+   "file": "assets/ui/race/png/rays.png",
+   "size": [
+    512,
+    512
+   ],
+   "sha256": "3dc62971db37d16ceb3af43d4b33f9b3a1797db8ec33bceaeb68250a201a30e9",
+   "assetId": "rbxassetid://115097695717750",
+   "note": "Re-uploaded 2026-10-26 with white under the transparency (black transparent pixels drew grey fringes when scaled up)."
+  },
+  {
+   "name": "sky-plate-m",
+   "source": "assets/ui/race/svg/sky-plate-m.svg",
+   "builder": "assets/ui/race/make_sky_plates.py",
+   "file": "assets/ui/race/png/sky-plate-m.png",
+   "size": [
+    400,
+    192
+   ],
+   "sha256": "e2ee3799f31d8ac5802411567a5674519e1ee41ff7ee8ad130b6318903230320",
+   "assetId": "rbxassetid://82691346329497"
+  },
+  {
+   "name": "speed-stripes",
+   "source": "assets/ui/race/svg/speed-stripes.svg",
+   "builder": "assets/ui/race/make_sky_plates.py",
+   "file": "assets/ui/race/png/speed-stripes.png",
+   "size": [
+    88,
+    88
+   ],
+   "sha256": "cfde192870589e2cdd8cf874dad80b2e3d24b0453a865c6ade84d358599351c9",
+   "assetId": "rbxassetid://131279099037009",
+   "note": "Re-uploaded 2026-10-26 with white under the transparency (black transparent pixels drew grey fringes when scaled up)."
+  },
+  {
+   "name": "sky-plate-l",
+   "source": "assets/ui/race/svg/sky-plate-l.svg",
+   "builder": "assets/ui/race/make_sky_plates.py",
+   "file": "assets/ui/race/png/sky-plate-l.png",
+   "size": [
+    520,
+    640
+   ],
+   "sha256": "7cf8da05930dd4bc8f252549a7f2857395231a2e7f47ac4a09d694062caab344",
+   "assetId": "rbxassetid://97526701549272"
+  },
+  {
+   "name": "sky-plate-s",
+   "source": "assets/ui/race/svg/sky-plate-s.svg",
+   "builder": "assets/ui/race/make_sky_plates.py",
+   "file": "assets/ui/race/png/sky-plate-s.png",
+   "size": [
+    320,
+    112
+   ],
+   "sha256": "0868dcc3c53c8c3e19adf8c41efff7e4ccd5cc8dd51d8bc002ab4a9291b2cf6b",
+   "assetId": "rbxassetid://104246302106349"
+  }
+ ]
+}

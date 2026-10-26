@@ -1,0 +1,13 @@
+{
+  "build": "ER_P2_R03_A01",
+  "templates": 6,
+  "parts": 49,
+  "lethalParts": 12,
+  "seconds": 20.054,
+  "sha256": {
+    "src\\ServerStorage\\CourseBuilders\\EggRush\\RestartP2\\ReadableKit.luau": "ff867d0c0bab826a164635e999ae99ae13aae36cfef40a98ff765fd568dea858",
+    "assets\\egg_rush_circuit\\phase2\\revision_r03\\candidate_a01\\manifest.json": "d23d1a45d5d7dd5846f78d0f169404a2ad6525483cca20ff197a78a66a27e5b7",
+    "assets\\egg_rush_circuit\\phase2\\revision_r03\\candidate_a01\\readable_kit.blend": "c4503cd882ce8ad557c165d74302d57b252176e2a8cae283fa4d972ae4ce6c8c",
+    "assets\\egg_rush_circuit\\phase2\\revision_r03\\candidate_a01\\hazard_board.png": "d629a79a27961a5447deb8cd877c6607fa27d5e2f9bbcdb541645d98a7c2b355"
+  }
+}

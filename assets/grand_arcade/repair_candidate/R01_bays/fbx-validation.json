@@ -1,0 +1,301 @@
+{
+  "state": "passed",
+  "meshes": 10,
+  "checks": "Finite vertices, nondegenerate triangles, closed manifold components and positive signed volumes after FBX reimport.",
+  "components": {
+    "R01_Bay3__Gold.001": [
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 34.807496761083485
+      },
+      {
+        "vertices": 88,
+        "faces": 86,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.40553885151409325
+      },
+      {
+        "vertices": 88,
+        "faces": 86,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.4055388515140963
+      }
+    ],
+    "R01_Bay3__Ivory.001": [
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 51.119985580444336
+      },
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 51.119985580444336
+      },
+      {
+        "vertices": 88,
+        "faces": 86,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 28.937352982794685
+      },
+      {
+        "vertices": 88,
+        "faces": 86,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 28.937352982794664
+      }
+    ],
+    "R01_Bay3__Navy.001": [
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.5700022284688622
+      },
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.8835033390222825
+      },
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.47025180217627105
+      },
+      {
+        "vertices": 102,
+        "faces": 53,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 142.66597543962789
+      },
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 36.673299624123956
+      },
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 6.610554319457495
+      }
+    ],
+    "R01_Bay3__Pale.001": [
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 8.554000762224133
+      },
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 4.19999246597399
+      },
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 8.554000762224135
+      },
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 4.199992465973989
+      },
+      {
+        "vertices": 64,
+        "faces": 34,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.9177054752076463
+      },
+      {
+        "vertices": 64,
+        "faces": 34,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.9177040260945546
+      },
+      {
+        "vertices": 64,
+        "faces": 34,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.9177040165550019
+      },
+      {
+        "vertices": 20,
+        "faces": 18,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 5.107535397063776
+      }
+    ],
+    "R01_Bay3Trim__Gold.001": [
+      {
+        "vertices": 24,
+        "faces": 44,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.048989027430513844
+      },
+      {
+        "vertices": 24,
+        "faces": 44,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.048989027430513844
+      },
+      {
+        "vertices": 24,
+        "faces": 44,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.03757743321217345
+      },
+      {
+        "vertices": 24,
+        "faces": 44,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.037577383334461395
+      },
+      {
+        "vertices": 16,
+        "faces": 16,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.1334030334059172
+      },
+      {
+        "vertices": 16,
+        "faces": 16,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.4374761755445427
+      }
+    ],
+    "R01_Bay3Trim__Pale.001": [
+      {
+        "vertices": 24,
+        "faces": 44,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 2.5557793841839533
+      },
+      {
+        "vertices": 24,
+        "faces": 44,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 2.5557793841839533
+      },
+      {
+        "vertices": 24,
+        "faces": 44,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 1.6188700140715007
+      },
+      {
+        "vertices": 24,
+        "faces": 44,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 1.6188727797919906
+      },
+      {
+        "vertices": 24,
+        "faces": 44,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 1.618871488088176
+      },
+      {
+        "vertices": 88,
+        "faces": 86,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.6505631675982312
+      },
+      {
+        "vertices": 88,
+        "faces": 86,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.65056316759824
+      },
+      {
+        "vertices": 16,
+        "faces": 16,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 5.297142362873639
+      }
+    ],
+    "R01MarkerForward__Navy.001": [
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.0017279845418937
+      }
+    ],
+    "R01MarkerOrigin__Navy.001": [
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.001728012007712778
+      }
+    ],
+    "R01MarkerRight__Navy.001": [
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.0017280241313820527
+      }
+    ],
+    "R01MarkerUp__Navy.001": [
+      {
+        "vertices": 8,
+        "faces": 6,
+        "boundaryEdges": 0,
+        "nonManifoldEdges": 0,
+        "signedVolume": 0.001728024131382064
+      }
+    ]
+  },
+  "limitation": "Blender FBX round trip only; actual Roblox import still requires native views."
+}

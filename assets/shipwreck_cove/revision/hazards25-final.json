@@ -1,0 +1,38 @@
+{
+  "records": [
+    {
+      "name": "Four cannon arcs hit grounded R15 at central deck",
+      "passed": true
+    },
+    {
+      "name": "Normal jump clears arc Ball0",
+      "passed": true
+    },
+    {
+      "name": "Normal jump clears arc Ball1",
+      "passed": true
+    },
+    {
+      "name": "Normal jump clears arc Ball2",
+      "passed": true
+    },
+    {
+      "name": "Normal jump clears arc Ball3",
+      "passed": true
+    },
+    {
+      "name": "Arc endpoints, phase, and burst emitters match authored shots",
+      "passed": true
+    },
+    {
+      "name": "Standing racer arms, drops, and restores a cave stone",
+      "passed": true
+    },
+    {
+      "name": "Stop restores an active crumble stone and removes bursts",
+      "passed": true
+    }
+  ],
+  "limits": "Controlled clock and teleported actual R15 in translated production Runtime fixture; particle objects and phases checked, not rendered burst appearance, full route playthrough, or multiplayer load.",
+  "build": "SC_MAP_25"
+}

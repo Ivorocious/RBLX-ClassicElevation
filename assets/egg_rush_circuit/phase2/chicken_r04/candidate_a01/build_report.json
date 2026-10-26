@@ -1,0 +1,14 @@
+{
+  "build": "ER_CHICKEN_R04_A01",
+  "parts": 44,
+  "templates": 3,
+  "seconds": 29.033,
+  "hashes": {
+    "src\\ServerStorage\\CourseBuilders\\EggRush\\RestartP2\\ChickenKit.luau": "13b947d5e3f1a39295ca24f2c8bd6c2377d8e161919b3d2c9a52566714de5624",
+    "assets\\egg_rush_circuit\\phase2\\chicken_r04\\candidate_a01\\manifest.json": "d42eeb40993523fd9717d395e70d8ddf900d04f30d9717bd3e0171a52d9fc327",
+    "assets\\egg_rush_circuit\\phase2\\chicken_r04\\candidate_a01\\chicken_kit.blend": "15fcba4f4eb0abde781252b7b3b24debab3c95df6b9420de8d27c419a00b7ea0",
+    "assets\\egg_rush_circuit\\phase2\\chicken_r04\\candidate_a01\\chicken_three_quarter.png": "2fc50e398e19bf357c431410960bd8d7e2dc25bb30e64405f1a367334a33cc05",
+    "assets\\egg_rush_circuit\\phase2\\chicken_r04\\candidate_a01\\chicken_profile.png": "65b34c442c4ebaf606c6f28de46544ece0fcdde9afdf1324c80cfe311eacc56f",
+    "assets\\egg_rush_circuit\\phase2\\chicken_r04\\candidate_a01\\chicken_front.png": "2a6294bbe8427f8ec88ae95a5b96f6c6b279d8b197441a0f51ffc76b8f1d577a"
+  }
+}

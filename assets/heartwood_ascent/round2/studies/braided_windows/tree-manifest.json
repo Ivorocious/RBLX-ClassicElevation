@@ -1,0 +1,2063 @@
+{
+  "build": "HA_R2_TREE_STUDY_01",
+  "variant": "braided_windows",
+  "detail": "study",
+  "units": "one Blender unit = one Roblox stud before import normalization",
+  "coordinate_mapping": "Blender (x,y,z) -> Roblox (x,z,-y)",
+  "design": "Two stems exchange sides twice. Lower, middle and upper windows remain separate, with alternating asymmetrical side crowns.",
+  "tree_bounds": {
+    "min_blender": [
+      -136.48849487304688,
+      -92.12115478515625,
+      -10.623695373535156
+    ],
+    "max_blender": [
+      148.6003875732422,
+      85.5147705078125,
+      405.2818298339844
+    ],
+    "height_studs": 415.90552520751953
+  },
+  "objects": [
+    {
+      "name": "HA2_braided_windows_PrimaryStem_00",
+      "package": "structure",
+      "vertices": 656,
+      "triangles": 1308,
+      "bounds_min_blender": [
+        -66.69683837890625,
+        -37.782379150390625,
+        -1.9199938774108887
+      ],
+      "bounds_max_blender": [
+        56.436317443847656,
+        28.246475219726562,
+        372.2483825683594
+      ],
+      "center_blender": [
+        -5.130260467529297,
+        -4.767951965332031,
+        185.16419434547424
+      ],
+      "size_blender": [
+        123.1331558227539,
+        66.02885437011719,
+        374.16837644577026
+      ],
+      "center_roblox": [
+        -5.130260467529297,
+        185.16419434547424,
+        4.767951965332031
+      ],
+      "size_roblox": [
+        123.1331558227539,
+        374.16837644577026,
+        66.02885437011719
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_PrimaryStem_01",
+      "package": "structure",
+      "vertices": 656,
+      "triangles": 1308,
+      "bounds_min_blender": [
+        -53.18488311767578,
+        -14.320587158203125,
+        -1.2213397026062012
+      ],
+      "bounds_max_blender": [
+        65.33728790283203,
+        41.62576675415039,
+        368.53875732421875
+      ],
+      "center_blender": [
+        6.076202392578125,
+        13.652589797973633,
+        183.65870881080627
+      ],
+      "size_blender": [
+        118.52217102050781,
+        55.946353912353516,
+        369.76009702682495
+      ],
+      "center_roblox": [
+        6.076202392578125,
+        183.65870881080627,
+        -13.652589797973633
+      ],
+      "size_roblox": [
+        118.52217102050781,
+        369.76009702682495,
+        55.946353912353516
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_MajorBough_00",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -98.37013244628906,
+        -26.35106658935547,
+        55.59111022949219
+      ],
+      "bounds_max_blender": [
+        -28.548213958740234,
+        5.680302619934082,
+        128.85728454589844
+      ],
+      "center_blender": [
+        -63.45917320251465,
+        -10.335381984710693,
+        92.22419738769531
+      ],
+      "size_blender": [
+        69.82191848754883,
+        32.03136920928955,
+        73.26617431640625
+      ],
+      "center_roblox": [
+        -63.45917320251465,
+        92.22419738769531,
+        10.335381984710693
+      ],
+      "size_roblox": [
+        69.82191848754883,
+        73.26617431640625,
+        32.03136920928955
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_MajorBough_01",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        29.60352325439453,
+        -7.329293251037598,
+        82.92035675048828
+      ],
+      "bounds_max_blender": [
+        100.59730529785156,
+        28.38492202758789,
+        146.6107635498047
+      ],
+      "center_blender": [
+        65.10041427612305,
+        10.527814388275146,
+        114.76556015014648
+      ],
+      "size_blender": [
+        70.99378204345703,
+        35.71421527862549,
+        63.690406799316406
+      ],
+      "center_roblox": [
+        65.10041427612305,
+        114.76556015014648,
+        -10.527814388275146
+      ],
+      "size_roblox": [
+        70.99378204345703,
+        63.690406799316406,
+        35.71421527862549
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_MajorBough_02",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -94.86817932128906,
+        -8.068232536315918,
+        186.04393005371094
+      ],
+      "bounds_max_blender": [
+        -0.23962974548339844,
+        35.74162292480469,
+        260.0709228515625
+      ],
+      "center_blender": [
+        -47.55390453338623,
+        13.836695194244385,
+        223.05742645263672
+      ],
+      "size_blender": [
+        94.62854957580566,
+        43.809855461120605,
+        74.02699279785156
+      ],
+      "center_roblox": [
+        -47.55390453338623,
+        223.05742645263672,
+        -13.836695194244385
+      ],
+      "size_roblox": [
+        94.62854957580566,
+        74.02699279785156,
+        43.809855461120605
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_MajorBough_03",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        23.064102172851562,
+        -13.66622543334961,
+        225.1190185546875
+      ],
+      "bounds_max_blender": [
+        115.2977294921875,
+        28.656307220458984,
+        306.4236755371094
+      ],
+      "center_blender": [
+        69.18091583251953,
+        7.4950408935546875,
+        265.77134704589844
+      ],
+      "size_blender": [
+        92.23362731933594,
+        42.322532653808594,
+        81.30465698242188
+      ],
+      "center_roblox": [
+        69.18091583251953,
+        265.77134704589844,
+        -7.4950408935546875
+      ],
+      "size_roblox": [
+        92.23362731933594,
+        81.30465698242188,
+        42.322532653808594
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_MajorBough_04",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -105.2286376953125,
+        -7.618408203125,
+        271.5181579589844
+      ],
+      "bounds_max_blender": [
+        3.496462821960449,
+        32.01616287231445,
+        343.884521484375
+      ],
+      "center_blender": [
+        -50.866087436676025,
+        12.198877334594727,
+        307.7013397216797
+      ],
+      "size_blender": [
+        108.72510051727295,
+        39.63457107543945,
+        72.36636352539062
+      ],
+      "center_roblox": [
+        -50.866087436676025,
+        307.7013397216797,
+        -12.198877334594727
+      ],
+      "size_roblox": [
+        108.72510051727295,
+        72.36636352539062,
+        39.63457107543945
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_MajorBough_05",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -54.58771514892578,
+        -12.879036903381348,
+        320.00469970703125
+      ],
+      "bounds_max_blender": [
+        -6.174988746643066,
+        20.207435607910156,
+        386.6099853515625
+      ],
+      "center_blender": [
+        -30.381351947784424,
+        3.6641993522644043,
+        353.3073425292969
+      ],
+      "size_blender": [
+        48.412726402282715,
+        33.086472511291504,
+        66.60528564453125
+      ],
+      "center_roblox": [
+        -30.381351947784424,
+        353.3073425292969,
+        -3.6641993522644043
+      ],
+      "size_roblox": [
+        48.412726402282715,
+        66.60528564453125,
+        33.086472511291504
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_MajorBough_06",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        13.096844673156738,
+        -5.063747406005859,
+        314.5447692871094
+      ],
+      "bounds_max_blender": [
+        76.73515319824219,
+        25.327896118164062,
+        381.2171325683594
+      ],
+      "center_blender": [
+        44.91599893569946,
+        10.132074356079102,
+        347.8809509277344
+      ],
+      "size_blender": [
+        63.63830852508545,
+        30.391643524169922,
+        66.67236328125
+      ],
+      "center_roblox": [
+        44.91599893569946,
+        347.8809509277344,
+        -10.132074356079102
+      ],
+      "size_roblox": [
+        63.63830852508545,
+        66.67236328125,
+        30.391643524169922
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_MajorBough_07",
+      "package": "structure",
+      "vertices": 176,
+      "triangles": 348,
+      "bounds_min_blender": [
+        -24.39189910888672,
+        -4.070250511169434,
+        352.4284973144531
+      ],
+      "bounds_max_blender": [
+        8.190766334533691,
+        19.778106689453125,
+        390.6146545410156
+      ],
+      "center_blender": [
+        -8.100566387176514,
+        7.853928089141846,
+        371.5215759277344
+      ],
+      "size_blender": [
+        32.58266544342041,
+        23.84835720062256,
+        38.1861572265625
+      ],
+      "center_roblox": [
+        -8.100566387176514,
+        371.5215759277344,
+        -7.853928089141846
+      ],
+      "size_roblox": [
+        32.58266544342041,
+        38.1861572265625,
+        23.84835720062256
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_Root_00",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        18.755062103271484,
+        -17.145002365112305,
+        -9.886922836303711
+      ],
+      "bounds_max_blender": [
+        104.07132720947266,
+        32.376800537109375,
+        33.98737335205078
+      ],
+      "center_blender": [
+        61.41319465637207,
+        7.615899085998535,
+        12.050225257873535
+      ],
+      "size_blender": [
+        85.31626510620117,
+        49.52180290222168,
+        43.87429618835449
+      ],
+      "center_roblox": [
+        61.41319465637207,
+        12.050225257873535,
+        -7.615899085998535
+      ],
+      "size_roblox": [
+        85.31626510620117,
+        43.87429618835449,
+        49.52180290222168
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_Root_01",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        16.109472274780273,
+        9.843420028686523,
+        -8.812433242797852
+      ],
+      "bounds_max_blender": [
+        59.0206413269043,
+        85.04755401611328,
+        33.578941345214844
+      ],
+      "center_blender": [
+        37.565056800842285,
+        47.4454870223999,
+        12.383254051208496
+      ],
+      "size_blender": [
+        42.91116905212402,
+        75.20413398742676,
+        42.391374588012695
+      ],
+      "center_roblox": [
+        37.565056800842285,
+        12.383254051208496,
+        -47.4454870223999
+      ],
+      "size_roblox": [
+        42.91116905212402,
+        42.391374588012695,
+        75.20413398742676
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_Root_02",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -28.4971866607666,
+        1.9933052062988281,
+        -10.623695373535156
+      ],
+      "bounds_max_blender": [
+        47.27010726928711,
+        85.5147705078125,
+        33.093589782714844
+      ],
+      "center_blender": [
+        9.386460304260254,
+        43.754037857055664,
+        11.234947204589844
+      ],
+      "size_blender": [
+        75.76729393005371,
+        83.52146530151367,
+        43.71728515625
+      ],
+      "center_roblox": [
+        9.386460304260254,
+        11.234947204589844,
+        -43.754037857055664
+      ],
+      "size_roblox": [
+        75.76729393005371,
+        43.71728515625,
+        83.52146530151367
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_Root_03",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -99.33518981933594,
+        -13.07490062713623,
+        -7.640600204467773
+      ],
+      "bounds_max_blender": [
+        -13.682746887207031,
+        54.540164947509766,
+        45.00697326660156
+      ],
+      "center_blender": [
+        -56.508968353271484,
+        20.732632160186768,
+        18.683186531066895
+      ],
+      "size_blender": [
+        85.6524429321289,
+        67.615065574646,
+        52.647573471069336
+      ],
+      "center_roblox": [
+        -56.508968353271484,
+        18.683186531066895,
+        -20.732632160186768
+      ],
+      "size_roblox": [
+        85.6524429321289,
+        52.647573471069336,
+        67.615065574646
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_Root_04",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -105.04027557373047,
+        -32.455909729003906,
+        -8.491653442382812
+      ],
+      "bounds_max_blender": [
+        -19.370065689086914,
+        17.58871078491211,
+        32.928863525390625
+      ],
+      "center_blender": [
+        -62.20517063140869,
+        -7.433599472045898,
+        12.218605041503906
+      ],
+      "size_blender": [
+        85.67020988464355,
+        50.044620513916016,
+        41.42051696777344
+      ],
+      "center_roblox": [
+        -62.20517063140869,
+        12.218605041503906,
+        7.433599472045898
+      ],
+      "size_roblox": [
+        85.67020988464355,
+        41.42051696777344,
+        50.044620513916016
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_Root_05",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -56.72019958496094,
+        -92.12115478515625,
+        -10.323307037353516
+      ],
+      "bounds_max_blender": [
+        -12.920473098754883,
+        -9.388688087463379,
+        33.613033294677734
+      ],
+      "center_blender": [
+        -34.82033634185791,
+        -50.754921436309814,
+        11.64486312866211
+      ],
+      "size_blender": [
+        43.799726486206055,
+        82.73246669769287,
+        43.93634033203125
+      ],
+      "center_roblox": [
+        -34.82033634185791,
+        11.64486312866211,
+        50.754921436309814
+      ],
+      "size_roblox": [
+        43.799726486206055,
+        43.93634033203125,
+        82.73246669769287
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_Root_06",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        -48.22475814819336,
+        -88.35083770751953,
+        -8.664819717407227
+      ],
+      "bounds_max_blender": [
+        29.318267822265625,
+        2.6519927978515625,
+        45.09705352783203
+      ],
+      "center_blender": [
+        -9.453245162963867,
+        -42.849422454833984,
+        18.216116905212402
+      ],
+      "size_blender": [
+        77.54302597045898,
+        91.0028305053711,
+        53.76187324523926
+      ],
+      "center_roblox": [
+        -9.453245162963867,
+        18.216116905212402,
+        42.849422454833984
+      ],
+      "size_roblox": [
+        77.54302597045898,
+        53.76187324523926,
+        91.0028305053711
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_Root_07",
+      "package": "structure",
+      "vertices": 256,
+      "triangles": 508,
+      "bounds_min_blender": [
+        14.860733032226562,
+        -54.021217346191406,
+        -9.695268630981445
+      ],
+      "bounds_max_blender": [
+        98.2550277709961,
+        13.682123184204102,
+        34.059776306152344
+      ],
+      "center_blender": [
+        56.55788040161133,
+        -20.169547080993652,
+        12.18225383758545
+      ],
+      "size_blender": [
+        83.39429473876953,
+        67.70334053039551,
+        43.75504493713379
+      ],
+      "center_roblox": [
+        56.55788040161133,
+        12.18225383758545,
+        20.169547080993652
+      ],
+      "size_roblox": [
+        83.39429473876953,
+        43.75504493713379,
+        67.70334053039551
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "visible mesh only; route clearance/collision remains untested"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_00",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -119.75148010253906,
+        -30.271718978881836,
+        119.05546569824219
+      ],
+      "bounds_max_blender": [
+        -70.49066925048828,
+        21.771175384521484,
+        144.22808837890625
+      ],
+      "center_blender": [
+        -95.12107467651367,
+        -4.250271797180176,
+        131.64177703857422
+      ],
+      "size_blender": [
+        49.26081085205078,
+        52.04289436340332,
+        25.172622680664062
+      ],
+      "center_roblox": [
+        -95.12107467651367,
+        131.64177703857422,
+        4.250271797180176
+      ],
+      "size_roblox": [
+        49.26081085205078,
+        25.172622680664062,
+        52.04289436340332
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_00_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -109.3046646118164,
+        -18.41202163696289,
+        121.1562728881836
+      ],
+      "bounds_max_blender": [
+        -80.56544494628906,
+        9.083133697509766,
+        130.15353393554688
+      ],
+      "center_blender": [
+        -94.93505477905273,
+        -4.6644439697265625,
+        125.65490341186523
+      ],
+      "size_blender": [
+        28.739219665527344,
+        27.495155334472656,
+        8.997261047363281
+      ],
+      "center_roblox": [
+        -94.93505477905273,
+        125.65490341186523,
+        4.6644439697265625
+      ],
+      "size_roblox": [
+        28.739219665527344,
+        8.997261047363281,
+        27.495155334472656
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_01",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        72.25823974609375,
+        -19.346933364868164,
+        135.01991271972656
+      ],
+      "bounds_max_blender": [
+        125.47222900390625,
+        35.44225311279297,
+        162.29763793945312
+      ],
+      "center_blender": [
+        98.865234375,
+        8.047659873962402,
+        148.65877532958984
+      ],
+      "size_blender": [
+        53.2139892578125,
+        54.78918647766113,
+        27.277725219726562
+      ],
+      "center_roblox": [
+        98.865234375,
+        148.65877532958984,
+        -8.047659873962402
+      ],
+      "size_roblox": [
+        53.2139892578125,
+        27.277725219726562,
+        54.78918647766113
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_01_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        82.55943298339844,
+        -6.392731666564941,
+        137.2887725830078
+      ],
+      "bounds_max_blender": [
+        113.5809555053711,
+        23.28301239013672,
+        147.0058135986328
+      ],
+      "center_blender": [
+        98.07019424438477,
+        8.445140361785889,
+        142.1472930908203
+      ],
+      "size_blender": [
+        31.021522521972656,
+        29.67574405670166,
+        9.717041015625
+      ],
+      "center_roblox": [
+        98.07019424438477,
+        142.1472930908203,
+        -8.445140361785889
+      ],
+      "size_roblox": [
+        31.021522521972656,
+        9.717041015625,
+        29.67574405670166
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_02",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -108.41803741455078,
+        -12.603023529052734,
+        241.0554656982422
+      ],
+      "bounds_max_blender": [
+        -57.490665435791016,
+        38.016632080078125,
+        266.4081726074219
+      ],
+      "center_blender": [
+        -82.9543514251709,
+        12.706804275512695,
+        253.73181915283203
+      ],
+      "size_blender": [
+        50.927371978759766,
+        50.61965560913086,
+        25.352706909179688
+      ],
+      "center_roblox": [
+        -82.9543514251709,
+        253.73181915283203,
+        -12.706804275512695
+      ],
+      "size_roblox": [
+        50.927371978759766,
+        25.352706909179688,
+        50.61965560913086
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_02_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -96.3046646118164,
+        0.5879784822463989,
+        243.15628051757812
+      ],
+      "bounds_max_blender": [
+        -67.56544494628906,
+        28.083133697509766,
+        252.15353393554688
+      ],
+      "center_blender": [
+        -81.93505477905273,
+        14.335556089878082,
+        247.6549072265625
+      ],
+      "size_blender": [
+        28.739219665527344,
+        27.495155215263367,
+        8.99725341796875
+      ],
+      "center_roblox": [
+        -81.93505477905273,
+        247.6549072265625,
+        -14.335556089878082
+      ],
+      "size_roblox": [
+        28.739219665527344,
+        8.99725341796875,
+        27.495155215263367
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_03",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        80.75088500976562,
+        -27.040050506591797,
+        288.8776550292969
+      ],
+      "bounds_max_blender": [
+        148.6003875732422,
+        44.35215377807617,
+        323.1438903808594
+      ],
+      "center_blender": [
+        114.6756362915039,
+        8.656051635742188,
+        306.0107727050781
+      ],
+      "size_blender": [
+        67.84950256347656,
+        71.39220428466797,
+        34.2662353515625
+      ],
+      "center_roblox": [
+        114.6756362915039,
+        306.0107727050781,
+        -8.656051635742188
+      ],
+      "size_roblox": [
+        67.84950256347656,
+        34.2662353515625,
+        71.39220428466797
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_03_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        93.01582336425781,
+        -8.315569877624512,
+        291.81878662109375
+      ],
+      "bounds_max_blender": [
+        133.1665802001953,
+        30.082530975341797,
+        304.4149475097656
+      ],
+      "center_blender": [
+        113.09120178222656,
+        10.883480548858643,
+        298.1168670654297
+      ],
+      "size_blender": [
+        40.1507568359375,
+        38.39810085296631,
+        12.596160888671875
+      ],
+      "center_roblox": [
+        113.09120178222656,
+        298.1168670654297,
+        -10.883480548858643
+      ],
+      "size_roblox": [
+        40.1507568359375,
+        12.596160888671875,
+        38.39810085296631
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_04",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        56.100650787353516,
+        0.17095518112182617,
+        271.05548095703125
+      ],
+      "bounds_max_blender": [
+        106.30178833007812,
+        47.78622817993164,
+        295.5882873535156
+      ],
+      "center_blender": [
+        81.20121955871582,
+        23.978591680526733,
+        283.32188415527344
+      ],
+      "size_blender": [
+        50.20113754272461,
+        47.615272998809814,
+        24.532806396484375
+      ],
+      "center_roblox": [
+        81.20121955871582,
+        283.32188415527344,
+        -23.978591680526733
+      ],
+      "size_roblox": [
+        50.20113754272461,
+        24.532806396484375,
+        47.615272998809814
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_04_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        66.6953353881836,
+        10.58797836303711,
+        273.1562805175781
+      ],
+      "bounds_max_blender": [
+        95.43455505371094,
+        38.083133697509766,
+        282.1535339355469
+      ],
+      "center_blender": [
+        81.06494522094727,
+        24.335556030273438,
+        277.6549072265625
+      ],
+      "size_blender": [
+        28.739219665527344,
+        27.495155334472656,
+        8.99725341796875
+      ],
+      "center_roblox": [
+        81.06494522094727,
+        277.6549072265625,
+        -24.335556030273438
+      ],
+      "size_roblox": [
+        28.739219665527344,
+        8.99725341796875,
+        27.495155334472656
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_05",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -136.48849487304688,
+        -30.52248191833496,
+        326.8776550292969
+      ],
+      "bounds_max_blender": [
+        -68.6224136352539,
+        40.59022903442383,
+        361.3362731933594
+      ],
+      "center_blender": [
+        -102.55545425415039,
+        5.033873558044434,
+        344.1069641113281
+      ],
+      "size_blender": [
+        67.86608123779297,
+        71.11271095275879,
+        34.4586181640625
+      ],
+      "center_roblox": [
+        -102.55545425415039,
+        344.1069641113281,
+        -5.033873558044434
+      ],
+      "size_roblox": [
+        67.86608123779297,
+        34.4586181640625,
+        71.11271095275879
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_05_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -123.98417663574219,
+        -12.315570831298828,
+        329.81878662109375
+      ],
+      "bounds_max_blender": [
+        -83.83342742919922,
+        26.082530975341797,
+        342.4149475097656
+      ],
+      "center_blender": [
+        -103.9088020324707,
+        6.883480072021484,
+        336.1168670654297
+      ],
+      "size_blender": [
+        40.15074920654297,
+        38.398101806640625,
+        12.596160888671875
+      ],
+      "center_roblox": [
+        -103.9088020324707,
+        336.1168670654297,
+        -6.883480072021484
+      ],
+      "size_roblox": [
+        40.15074920654297,
+        12.596160888671875,
+        38.398101806640625
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_06",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -91.90655517578125,
+        -5.818106174468994,
+        312.0198669433594
+      ],
+      "bounds_max_blender": [
+        -40.52992630004883,
+        48.75782012939453,
+        338.8060302734375
+      ],
+      "center_blender": [
+        -66.21824073791504,
+        21.46985697746277,
+        325.41294860839844
+      ],
+      "size_blender": [
+        51.37662887573242,
+        54.575926303863525,
+        26.786163330078125
+      ],
+      "center_roblox": [
+        -66.21824073791504,
+        325.41294860839844,
+        -21.46985697746277
+      ],
+      "size_roblox": [
+        51.37662887573242,
+        26.786163330078125,
+        54.575926303863525
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_06_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -82.44056701660156,
+        7.6072678565979,
+        314.2887878417969
+      ],
+      "bounds_max_blender": [
+        -51.41904067993164,
+        37.283016204833984,
+        324.00579833984375
+      ],
+      "center_blender": [
+        -66.9298038482666,
+        22.445142030715942,
+        319.1472930908203
+      ],
+      "size_blender": [
+        31.021526336669922,
+        29.675748348236084,
+        9.717010498046875
+      ],
+      "center_roblox": [
+        -66.9298038482666,
+        319.1472930908203,
+        -22.445142030715942
+      ],
+      "size_roblox": [
+        31.021526336669922,
+        9.717010498046875,
+        29.675748348236084
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_07",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -77.72068786621094,
+        -30.59397315979004,
+        373.9843444824219
+      ],
+      "bounds_max_blender": [
+        -19.801570892333984,
+        24.75201988220215,
+        403.2149353027344
+      ],
+      "center_blender": [
+        -48.76112937927246,
+        -2.9209766387939453,
+        388.5996398925781
+      ],
+      "size_blender": [
+        57.91911697387695,
+        55.34599304199219,
+        29.2305908203125
+      ],
+      "center_roblox": [
+        -48.76112937927246,
+        388.5996398925781,
+        2.9209766387939453
+      ],
+      "size_roblox": [
+        57.91911697387695,
+        29.2305908203125,
+        55.34599304199219
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_07_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -67.57646942138672,
+        -18.373443603515625,
+        376.4212646484375
+      ],
+      "bounds_max_blender": [
+        -34.27263641357422,
+        13.48289680480957,
+        386.85809326171875
+      ],
+      "center_blender": [
+        -50.92455291748047,
+        -2.4452733993530273,
+        381.6396789550781
+      ],
+      "size_blender": [
+        33.3038330078125,
+        31.856340408325195,
+        10.43682861328125
+      ],
+      "center_roblox": [
+        -50.92455291748047,
+        381.6396789550781,
+        2.4452733993530273
+      ],
+      "size_roblox": [
+        33.3038330078125,
+        10.43682861328125,
+        31.856340408325195
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_08",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        45.835052490234375,
+        -22.40799331665039,
+        366.9487609863281
+      ],
+      "bounds_max_blender": [
+        105.39156341552734,
+        37.73491668701172,
+        398.1510925292969
+      ],
+      "center_blender": [
+        75.61330795288086,
+        7.663461685180664,
+        382.5499267578125
+      ],
+      "size_blender": [
+        59.55651092529297,
+        60.14291000366211,
+        31.20233154296875
+      ],
+      "center_roblox": [
+        75.61330795288086,
+        382.5499267578125,
+        -7.663461685180664
+      ],
+      "size_roblox": [
+        59.55651092529297,
+        31.20233154296875,
+        60.14291000366211
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_08_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        57.28763198852539,
+        -8.35414981842041,
+        369.55377197265625
+      ],
+      "bounds_max_blender": [
+        92.87376403808594,
+        25.682769775390625,
+        380.71038818359375
+      ],
+      "center_blender": [
+        75.08069801330566,
+        8.664309978485107,
+        375.132080078125
+      ],
+      "size_blender": [
+        35.58613204956055,
+        34.036919593811035,
+        11.1566162109375
+      ],
+      "center_roblox": [
+        75.08069801330566,
+        375.132080078125,
+        -8.664309978485107
+      ],
+      "size_roblox": [
+        35.58613204956055,
+        11.1566162109375,
+        34.036919593811035
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_09",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        -21.527873992919922,
+        -19.183284759521484,
+        375.9843444824219
+      ],
+      "bounds_max_blender": [
+        35.43082046508789,
+        36.752017974853516,
+        405.2818298339844
+      ],
+      "center_blender": [
+        6.951473236083984,
+        8.784366607666016,
+        390.6330871582031
+      ],
+      "size_blender": [
+        56.95869445800781,
+        55.935302734375,
+        29.2974853515625
+      ],
+      "center_roblox": [
+        6.951473236083984,
+        390.6330871582031,
+        -8.784366607666016
+      ],
+      "size_roblox": [
+        56.95869445800781,
+        29.2974853515625,
+        55.935302734375
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_09_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -9.576468467712402,
+        -6.373442649841309,
+        378.4212646484375
+      ],
+      "bounds_max_blender": [
+        23.72736358642578,
+        25.48289680480957,
+        388.85809326171875
+      ],
+      "center_blender": [
+        7.0754475593566895,
+        9.55472707748413,
+        383.6396789550781
+      ],
+      "size_blender": [
+        33.303832054138184,
+        31.85633945465088,
+        10.43682861328125
+      ],
+      "center_roblox": [
+        7.0754475593566895,
+        383.6396789550781,
+        -9.55472707748413
+      ],
+      "size_roblox": [
+        33.303832054138184,
+        10.43682861328125,
+        31.85633945465088
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_10",
+      "package": "foliage",
+      "vertices": 2520,
+      "triangles": 4760,
+      "bounds_min_blender": [
+        2.950113534927368,
+        8.101685523986816,
+        340.05548095703125
+      ],
+      "bounds_max_blender": [
+        51.50933074951172,
+        58.78622817993164,
+        364.6820983886719
+      ],
+      "center_blender": [
+        27.229722142219543,
+        33.44395685195923,
+        352.36878967285156
+      ],
+      "size_blender": [
+        48.55921721458435,
+        50.684542655944824,
+        24.626617431640625
+      ],
+      "center_roblox": [
+        27.229722142219543,
+        352.36878967285156,
+        -33.44395685195923
+      ],
+      "size_roblox": [
+        48.55921721458435,
+        24.626617431640625,
+        50.684542655944824
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_Crown_10_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        12.695341110229492,
+        21.58797836303711,
+        342.1562805175781
+      ],
+      "bounds_max_blender": [
+        41.43455505371094,
+        49.083133697509766,
+        351.1535339355469
+      ],
+      "center_blender": [
+        27.064948081970215,
+        35.33555603027344,
+        346.6549072265625
+      ],
+      "size_blender": [
+        28.739213943481445,
+        27.495155334472656,
+        8.99725341796875
+      ],
+      "center_roblox": [
+        27.064948081970215,
+        346.6549072265625,
+        -35.33555603027344
+      ],
+      "size_roblox": [
+        28.739213943481445,
+        8.99725341796875,
+        27.495155334472656
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_NearLeafSpray_00",
+      "package": "foliage",
+      "vertices": 1152,
+      "triangles": 2176,
+      "bounds_min_blender": [
+        -100.90498352050781,
+        -4.6128058433532715,
+        255.32249450683594
+      ],
+      "bounds_max_blender": [
+        -88.13739013671875,
+        7.2985639572143555,
+        262.3049011230469
+      ],
+      "center_blender": [
+        -94.52118682861328,
+        1.342879056930542,
+        258.8136978149414
+      ],
+      "size_blender": [
+        12.767593383789062,
+        11.911369800567627,
+        6.9824066162109375
+      ],
+      "center_roblox": [
+        -94.52118682861328,
+        258.8136978149414,
+        -1.342879056930542
+      ],
+      "size_roblox": [
+        12.767593383789062,
+        6.9824066162109375,
+        11.911369800567627
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_NearLeafSpray_00_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -99.08152770996094,
+        -1.585628867149353,
+        255.96377563476562
+      ],
+      "bounds_max_blender": [
+        -90.88308715820312,
+        6.284205436706543,
+        258.518310546875
+      ],
+      "center_blender": [
+        -94.98230743408203,
+        2.349288284778595,
+        257.2410430908203
+      ],
+      "size_blender": [
+        8.198440551757812,
+        7.869834303855896,
+        2.554534912109375
+      ],
+      "center_roblox": [
+        -94.98230743408203,
+        257.2410430908203,
+        -2.349288284778595
+      ],
+      "size_roblox": [
+        8.198440551757812,
+        2.554534912109375,
+        7.869834303855896
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_NearLeafSpray_01",
+      "package": "foliage",
+      "vertices": 1152,
+      "triangles": 2176,
+      "bounds_min_blender": [
+        -82.26692199707031,
+        -0.6128057837486267,
+        256.3224792480469
+      ],
+      "bounds_max_blender": [
+        -69.13739013671875,
+        12.710807800292969,
+        263.34881591796875
+      ],
+      "center_blender": [
+        -75.70215606689453,
+        6.049001008272171,
+        259.8356475830078
+      ],
+      "size_blender": [
+        13.129531860351562,
+        13.323613584041595,
+        7.026336669921875
+      ],
+      "center_roblox": [
+        -75.70215606689453,
+        259.8356475830078,
+        -6.049001008272171
+      ],
+      "size_roblox": [
+        13.129531860351562,
+        7.026336669921875,
+        13.323613584041595
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_NearLeafSpray_01_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -80.08152770996094,
+        2.4143710136413574,
+        256.9637756347656
+      ],
+      "bounds_max_blender": [
+        -71.88308715820312,
+        10.28420639038086,
+        259.518310546875
+      ],
+      "center_blender": [
+        -75.98230743408203,
+        6.349288702011108,
+        258.2410430908203
+      ],
+      "size_blender": [
+        8.198440551757812,
+        7.869835376739502,
+        2.554534912109375
+      ],
+      "center_roblox": [
+        -75.98230743408203,
+        258.2410430908203,
+        -6.349288702011108
+      ],
+      "size_roblox": [
+        8.198440551757812,
+        2.554534912109375,
+        7.869835376739502
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_NearLeafSpray_02",
+      "package": "foliage",
+      "vertices": 1152,
+      "triangles": 2176,
+      "bounds_min_blender": [
+        -54.97385025024414,
+        -31.502178192138672,
+        26.297500610351562
+      ],
+      "bounds_max_blender": [
+        -38.17664337158203,
+        -15.371461868286133,
+        35.19001770019531
+      ],
+      "center_blender": [
+        -46.575246810913086,
+        -23.436820030212402,
+        30.743759155273438
+      ],
+      "size_blender": [
+        16.79720687866211,
+        16.13071632385254,
+        8.89251708984375
+      ],
+      "center_roblox": [
+        -46.575246810913086,
+        30.743759155273438,
+        23.436820030212402
+      ],
+      "size_roblox": [
+        16.79720687866211,
+        8.89251708984375,
+        16.13071632385254
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_NearLeafSpray_02_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        -52.217437744140625,
+        -27.566343307495117,
+        27.09625816345215
+      ],
+      "bounds_max_blender": [
+        -41.73667526245117,
+        -17.515901565551758,
+        30.358118057250977
+      ],
+      "center_blender": [
+        -46.9770565032959,
+        -22.541122436523438,
+        28.727188110351562
+      ],
+      "size_blender": [
+        10.480762481689453,
+        10.05044174194336,
+        3.261859893798828
+      ],
+      "center_roblox": [
+        -46.9770565032959,
+        28.727188110351562,
+        22.541122436523438
+      ],
+      "size_roblox": [
+        10.480762481689453,
+        3.261859893798828,
+        10.05044174194336
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_NearLeafSpray_03",
+      "package": "foliage",
+      "vertices": 1152,
+      "triangles": 2176,
+      "bounds_min_blender": [
+        39.3719367980957,
+        -28.502178192138672,
+        19.297500610351562
+      ],
+      "bounds_max_blender": [
+        55.82335662841797,
+        -12.930867195129395,
+        28.213327407836914
+      ],
+      "center_blender": [
+        47.597646713256836,
+        -20.716522693634033,
+        23.75541400909424
+      ],
+      "size_blender": [
+        16.451419830322266,
+        15.571310997009277,
+        8.915826797485352
+      ],
+      "center_roblox": [
+        47.597646713256836,
+        23.75541400909424,
+        20.716522693634033
+      ],
+      "size_roblox": [
+        16.451419830322266,
+        8.915826797485352,
+        15.571310997009277
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_NearLeafSpray_03_Twigs",
+      "package": "branches",
+      "vertices": 280,
+      "triangles": 540,
+      "bounds_min_blender": [
+        41.782562255859375,
+        -24.566343307495117,
+        20.09625816345215
+      ],
+      "bounds_max_blender": [
+        52.26332473754883,
+        -14.515902519226074,
+        23.358118057250977
+      ],
+      "center_blender": [
+        47.0229434967041,
+        -19.541122913360596,
+        21.727188110351562
+      ],
+      "size_blender": [
+        10.480762481689453,
+        10.050440788269043,
+        3.261859893798828
+      ],
+      "center_roblox": [
+        47.0229434967041,
+        21.727188110351562,
+        19.541122913360596
+      ],
+      "size_roblox": [
+        10.480762481689453,
+        3.261859893798828,
+        10.050440788269043
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    },
+    {
+      "name": "HA2_braided_windows_WesternFlower",
+      "package": "flowers",
+      "vertices": 936,
+      "triangles": 1740,
+      "bounds_min_blender": [
+        -109.27967071533203,
+        -24.831510543823242,
+        259.79998779296875
+      ],
+      "bounds_max_blender": [
+        -72.0,
+        12.831512451171875,
+        268.7876892089844
+      ],
+      "center_blender": [
+        -90.63983535766602,
+        -5.999999046325684,
+        264.29383850097656
+      ],
+      "size_blender": [
+        37.27967071533203,
+        37.66302299499512,
+        8.987701416015625
+      ],
+      "center_roblox": [
+        -90.63983535766602,
+        264.29383850097656,
+        5.999999046325684
+      ],
+      "size_roblox": [
+        37.27967071533203,
+        8.987701416015625,
+        37.66302299499512
+      ],
+      "open_or_nonmanifold_edges": 0,
+      "collision_intent": "decorative; CanCollide=false"
+    }
+  ],
+  "editable_growth_sources": [],
+  "wood_fusion": {
+    "enabled": false,
+    "voxel_size": 2.2,
+    "triangle_ceiling": 150000
+  },
+  "triangles": 81488,
+  "packages": {},
+  "colour_texture": "heartwood-colour.png",
+  "roughness_texture": "heartwood-roughness.png",
+  "palette": [
+    {
+      "tile": 0,
+      "name": "cedar",
+      "rgb": [
+        145,
+        86,
+        48
+      ],
+      "roughness": 0.91
+    },
+    {
+      "tile": 1,
+      "name": "sienna_shadow",
+      "rgb": [
+        103,
+        61,
+        39
+      ],
+      "roughness": 0.94
+    },
+    {
+      "tile": 2,
+      "name": "amber_wood",
+      "rgb": [
+        181,
+        113,
+        59
+      ],
+      "roughness": 0.89
+    },
+    {
+      "tile": 3,
+      "name": "olive_leaf",
+      "rgb": [
+        79,
+        108,
+        43
+      ],
+      "roughness": 0.94
+    },
+    {
+      "tile": 4,
+      "name": "moss_leaf",
+      "rgb": [
+        48,
+        86,
+        46
+      ],
+      "roughness": 0.96
+    },
+    {
+      "tile": 5,
+      "name": "young_leaf",
+      "rgb": [
+        126,
+        153,
+        61
+      ],
+      "roughness": 0.91
+    },
+    {
+      "tile": 6,
+      "name": "peach_petal",
+      "rgb": [
+        243,
+        172,
+        119
+      ],
+      "roughness": 0.88
+    },
+    {
+      "tile": 7,
+      "name": "gold_petal",
+      "rgb": [
+        255,
+        218,
+        143
+      ],
+      "roughness": 0.86
+    },
+    {
+      "tile": 8,
+      "name": "pollen",
+      "rgb": [
+        220,
+        150,
+        45
+      ],
+      "roughness": 0.89
+    },
+    {
+      "tile": 9,
+      "name": "wood_edge",
+      "rgb": [
+        204,
+        149,
+        87
+      ],
+      "roughness": 0.92
+    },
+    {
+      "tile": 10,
+      "name": "fern",
+      "rgb": [
+        74,
+        121,
+        57
+      ],
+      "roughness": 0.95
+    },
+    {
+      "tile": 11,
+      "name": "leaf_shadow",
+      "rgb": [
+        33,
+        62,
+        37
+      ],
+      "roughness": 0.97
+    },
+    {
+      "tile": 12,
+      "name": "petal_tip",
+      "rgb": [
+        255,
+        236,
+        182
+      ],
+      "roughness": 0.88
+    },
+    {
+      "tile": 13,
+      "name": "scale_avatar_blue",
+      "rgb": [
+        40,
+        106,
+        166
+      ],
+      "roughness": 0.93
+    },
+    {
+      "tile": 14,
+      "name": "scale_avatar_head",
+      "rgb": [
+        240,
+        184,
+        62
+      ],
+      "roughness": 0.93
+    },
+    {
+      "tile": 15,
+      "name": "study_ground",
+      "rgb": [
+        107,
+        105,
+        83
+      ],
+      "roughness": 0.97
+    }
+  ],
+  "preview_only": "Ground, lighting, cameras and six-stud mannequin are excluded from all FBX packages.",
+  "evidence_limits": [
+    "A saved Blender render is not imported Roblox material proof.",
+    "Closed meshes do not establish route collision, camera clearance or human playability.",
+    "No device, 20-player, performance, route or owner acceptance claim is made."
+  ]
+}

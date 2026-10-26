@@ -1,0 +1,16 @@
+{
+  "sha256": "5f4a935e31bc873c027e5b54d64cf9ce71b00490d02cfe3bb5f5141f2f285f2d",
+  "request": {
+    "assetType": "Audio",
+    "displayName": "CityRun_C17_CarTireRoll",
+    "description": "Original synthesized City Run C17 market-car tire and road loop.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/590a9e68-4e34-4ae7-a557-e06855618f35",
+  "assetId": "85943066947156"
+}

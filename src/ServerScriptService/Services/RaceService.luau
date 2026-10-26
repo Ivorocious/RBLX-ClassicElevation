@@ -7,6 +7,8 @@ local Workspace = game:GetService("Workspace")
 local RaceConfig = require(ReplicatedStorage.Config.RaceConfig)
 local RaceConstants = require(ReplicatedStorage.Shared.RaceConstants)
 local RaceTypes = require(ReplicatedStorage.Shared.RaceTypes)
+local Deadline = require(ReplicatedStorage.Shared.RaceDeadline)
+local Identity = require(ReplicatedStorage.Shared.CourseVisitIdentity)
 
 type RaceState = RaceTypes.RaceState
 type RaceFormat = RaceTypes.RaceFormat
@@ -31,11 +33,18 @@ local roundLoopStarted = false
 
 local playerRaceService: any = nil
 local resultsService: any = nil
+local lobbyActivityService: any = nil
 local stagingService: any = nil
 local courseHazardService: any = nil
 local courseService: any = nil
+local tournamentService: any = nil
+local studioStandalone = false
 local checkpointService: any = nil
 local respawnService: any = nil
+local visitProgressService: any = nil
+local standalonePreparation: any = nil
+local cachedCourseModel: Model? = nil
+local cachedCourseInfo: any = nil
 
 local remotesFolder = ReplicatedStorage:WaitForChild("Remotes")
 local raceStateChangedRemote = remotesFolder:WaitForChild(RaceConstants.RemoteNames.RaceStateChanged) :: RemoteEvent
@@ -49,6 +58,10 @@ local stateStartedAt = 0
 local stateEndsAt: number? = nil
 local raceCounter = 0
 local devStartRaceNowRequested = false
+local inspectionRestartRequested = false
+local inspectionUnlimitedTime = false
+local studioHoldInLobby = false
+local devStateEndRequested = false
 local devRemoteConnection: RBXScriptConnection? = nil
 
 local function getServerTime(): number
@@ -69,8 +82,14 @@ local function getStateDuration(): number?
 	return stateEndsAt - stateStartedAt
 end
 
+local function isUnlimitedInspectionRace(): boolean
+	return RunService:IsStudio()
+		and inspectionUnlimitedTime
+		and currentRaceState == RaceConstants.RaceState.Racing
+end
+
 local function getRemainingTime(): number?
-	if stateEndsAt == nil then
+	if stateEndsAt == nil or isUnlimitedInspectionRace() then
 		return nil
 	end
 
@@ -207,6 +226,7 @@ local function haveAllOfficialRacersResolved(): boolean
 end
 
 local function runTimedState(nextRaceState: RaceState, duration: number, onEntered: (() -> ())?)
+	devStateEndRequested = false
 	setRaceState(nextRaceState, duration)
 
 	if onEntered ~= nil then
@@ -218,13 +238,14 @@ local function runTimedState(nextRaceState: RaceState, duration: number, onEnter
 	end
 
 	while true do
+		if inspectionRestartRequested or devStateEndRequested then break end
 		if nextRaceState == RaceConstants.RaceState.Racing and haveAllOfficialRacersResolved() then
 			print("[RaceService] All official racers finished or left; ending the race early.")
 			break
 		end
 
 		local remainingTime = getRemainingTime()
-
+		if nextRaceState == RaceConstants.RaceState.Racing and inspectionUnlimitedTime and RunService:IsStudio() then remainingTime = 1 end
 		if remainingTime == nil or remainingTime <= 0 then
 			break
 		end
@@ -242,6 +263,7 @@ local function endCurrentTimedStateNow(reason: string)
 		return
 	end
 
+	devStateEndRequested = true
 	stateEndsAt = getServerTime()
 	broadcastTimerUpdate()
 	print(string.format("[RaceService] Dev control ended %s: %s.", currentRaceState, reason))
@@ -256,9 +278,15 @@ local function getEligiblePlayerCount(): number
 end
 
 local function resetPlayersForNextRound(reason: string)
-	if stagingService ~= nil and stagingService.ReturnAllPlayersToLobby ~= nil then
-		stagingService.ReturnAllPlayersToLobby(reason)
-	end
+	if tournamentService then tournamentService.AbortPreparation() end
+ if stagingService and playerRaceService then
+  local returning={}
+  for _,player in game:GetService("Players"):GetPlayers() do
+   if playerRaceService.GetPlayerStatus(player) ~= "Lobby" then table.insert(returning,player) end
+  end
+  stagingService.ClearStaging()
+  stagingService.ReturnPlayersToLobby(returning,reason)
+ end
 
 	if playerRaceService ~= nil and playerRaceService.ResetPlayersForNextRound ~= nil then
 		playerRaceService.ResetPlayersForNextRound(reason)
@@ -301,8 +329,8 @@ local function openStartForRace()
 	end
 end
 
-local function bindActiveCourseReferences(reason: string)
-	if courseService ~= nil and courseService.EnsureActiveCourse ~= nil then
+local function bindActiveCourseReferences(reason: string, alreadyLoaded: boolean?)
+	if not alreadyLoaded and courseService ~= nil and courseService.EnsureActiveCourse ~= nil then
 		courseService.EnsureActiveCourse()
 	end
 
@@ -336,125 +364,153 @@ local function waitForMinimumPlayers()
 	currentRaceId = ""
 	currentRaceStartedAt = nil
 	setRaceState(RaceConstants.RaceState.WaitingForPlayers, nil)
-	returnAllPlayersToLobby("Waiting for players")
 
-	while getEligiblePlayerCount() < RaceConfig.MinPlayers do
+
+	while getEligiblePlayerCount() < RaceConfig.MinPlayers or (RunService:IsStudio() and studioHoldInLobby) do
 		broadcastTimerUpdate()
 		task.wait(1)
 	end
 end
 
+local function stagePreparedPlayers()
+ bindActiveCourseReferences("prepared course",true)
+ playerRaceService.PreparePlayersForCourse()
+ stagingService.MovePlayersToRaceStart(playerRaceService.GetQueuedPlayers(),"Course delivery")
+ return true
+end
+
+local function abandonPreparation(message: string)
+ for _,player in playerRaceService.GetEnrolledPlayers() do
+  playerRaceService.FailPreparation(player,message)
+ end
+ if tournamentService then tournamentService.Cancel() end
+ resetPlayersForNextRound(message)
+ standalonePreparation = nil
+ devStartRaceNowRequested = false
+end
+
 local function runRoundLoop()
-	while true do
-		waitForMinimumPlayers()
-
-		currentRaceId = buildRaceId()
-		bindActiveCourseReferences("round start")
-
-		if playerRaceService ~= nil and playerRaceService.QueueEligiblePlayers ~= nil then
-			playerRaceService.QueueEligiblePlayers()
-		end
-
-		local intermissionDuration = RaceConfig.IntermissionDuration
-
-		if devStartRaceNowRequested then
-			intermissionDuration = 0
-		end
-
-		runTimedState(RaceConstants.RaceState.Intermission, intermissionDuration, function()
-			beginStagingQueuedPlayers("intermission staging")
-		end)
-
-		if getEligiblePlayerCount() < RaceConfig.MinPlayers then
-			print("[RaceService] Not enough players after Intermission; resetting to wait for players.")
-			runTimedState(RaceConstants.RaceState.Resetting, RaceConfig.ResettingDuration, function()
-				resetPlayersForNextRound("Not enough players")
-			end)
-			devStartRaceNowRequested = false
-			continue
-		end
-
-		if playerRaceService ~= nil and playerRaceService.QueueEligiblePlayers ~= nil then
-			playerRaceService.QueueEligiblePlayers()
-		end
-
-		local shouldSkipCountdown = devStartRaceNowRequested
-		devStartRaceNowRequested = false
-
-		if not shouldSkipCountdown then
-			runTimedState(RaceConstants.RaceState.Countdown, RaceConfig.CountdownDuration, function()
-				stageQueuedPlayersAtStart("countdown staging")
-			end)
-		else
-			stageQueuedPlayersAtStart("countdown skipped staging")
-		end
-
-		if getEligiblePlayerCount() < RaceConfig.MinPlayers then
-			print("[RaceService] Not enough players after Countdown; resetting to wait for players.")
-			runTimedState(RaceConstants.RaceState.Resetting, RaceConfig.ResettingDuration, function()
-				resetPlayersForNextRound("Not enough players")
-			end)
-			devStartRaceNowRequested = false
-			continue
-		end
-
-		devStartRaceNowRequested = false
-
-		local raceStartedAt = getServerTime()
-		currentRaceStartedAt = raceStartedAt
-		local activeCourse = getActiveCoursePayload()
-
-		if resultsService ~= nil and resultsService.StartRace ~= nil then
-			resultsService.StartRace(
-				currentRaceId,
-				activeCourse.courseId,
-				activeCourse.raceFormat,
-				raceStartedAt,
-				activeCourse.courseDisplayName,
-				activeCourse.lapCount,
-				activeCourse.checkpointCount
-			)
-		end
-
-		local startedPlayers: { Player } = {}
-
-		if playerRaceService ~= nil and playerRaceService.StartQueuedPlayers ~= nil then
-			startedPlayers = playerRaceService.StartQueuedPlayers()
-		end
-
-		if resultsService ~= nil and resultsService.RegisterActiveRacers ~= nil then
-			resultsService.RegisterActiveRacers(startedPlayers)
-		end
-
-		runTimedState(RaceConstants.RaceState.Racing, RaceConfig.RaceDuration, openStartForRace)
-
-		local raceDuration = getServerTime() - raceStartedAt
-		local dnfResults = {}
-
-		if playerRaceService ~= nil and playerRaceService.MarkUnfinishedRacersDNF ~= nil then
-			dnfResults = playerRaceService.MarkUnfinishedRacersDNF("Race timer ended")
-		end
-
-		if resultsService ~= nil then
-			if resultsService.SetRaceDuration ~= nil then
-				resultsService.SetRaceDuration(raceDuration)
-			end
-
-			if resultsService.RecordDNFs ~= nil then
-				resultsService.RecordDNFs(dnfResults)
-			end
-		end
-
-		runTimedState(RaceConstants.RaceState.RaceEnding, RaceConfig.RaceEndingDuration, nil)
-		runTimedState(RaceConstants.RaceState.Results, RaceConfig.ResultsDuration, function()
-			if resultsService ~= nil and resultsService.BroadcastCurrentRaceResults ~= nil then
-				resultsService.BroadcastCurrentRaceResults()
-			end
-		end)
-		runTimedState(RaceConstants.RaceState.Resetting, RaceConfig.ResettingDuration, function()
-			resetPlayersForNextRound("Round reset")
-		end)
-	end
+ local transitionStartedAt: number? = nil
+ while true do
+  inspectionRestartRequested = false
+  if getEligiblePlayerCount() < RaceConfig.MinPlayers or (RunService:IsStudio() and studioHoldInLobby) then
+   transitionStartedAt = nil
+   if tournamentService then tournamentService.Cancel() end
+   waitForMinimumPlayers()
+  end
+  currentRaceId = buildRaceId()
+  currentRaceStartedAt = nil
+  cachedCourseModel,cachedCourseInfo = nil,nil
+  setRaceState(RaceConstants.RaceState.Intermission,nil)
+  playerRaceService.OpenAdmission()
+  local selected: string? = nil
+  local devBypass = RunService:IsStudio() and (devStartRaceNowRequested or studioStandalone)
+  if tournamentService and not devBypass then
+   local ok,courseOrMessage = tournamentService.PrepareNextCourse({
+    transitionStartedAt=transitionStartedAt,onCourseLoaded=stagePreparedPlayers,
+   })
+   if not ok then
+    if inspectionRestartRequested or devStartRaceNowRequested or studioStandalone then
+     resetPlayersForNextRound("Studio preparation cancelled")
+     transitionStartedAt=nil
+     continue
+    end
+    abandonPreparation(courseOrMessage or "Course delivery failed")
+    transitionStartedAt = nil
+    continue
+   end
+   selected = courseOrMessage
+  end
+  if not selected then
+   bindActiveCourseReferences("ordinary round",false)
+   local active = courseService.GetActiveCourse()
+   local start = courseService.GetStartPart()
+   if not active or not start then
+    abandonPreparation("No playable course could be delivered")
+    transitionStartedAt = nil
+    continue
+   end
+   local partCount=0
+   for _,part in active:GetDescendants() do if part:IsA("BasePart") then partCount+=1 end end
+   standalonePreparation={token=currentRaceId,courseId=getActiveCoursePayload().courseId,status="Ready",
+    startedAt=getServerTime(),previewAt=getServerTime(),handoffAt=getServerTime(),
+    delivery={modelName=active.Name,startPosition=start.Position,expectedParts=partCount,
+     bounds={center=start.Position,size=Vector3.new(64,64,64)}}}
+   for _,player in playerRaceService.GetEnrolledPlayers() do player:SetAttribute("TournamentCourseReady",false) end
+   stagePreparedPlayers()
+   playerRaceService.PublishFlow()
+  end
+  if inspectionRestartRequested then
+   resetPlayersForNextRound("Inspection map switch")
+   transitionStartedAt=nil
+   continue
+  end
+  local token = tournamentService and tournamentService.GetCourseToken() or nil
+  token = token or (standalonePreparation and standalonePreparation.token) or currentRaceId
+  local currentPrep=tournamentService and tournamentService.GetPreparation() or standalonePreparation
+  local deadline=(currentPrep and currentPrep.readyUntil) or (getServerTime()+RaceConfig.CameraReadyTimeout)
+  while not devBypass and getServerTime()<deadline and not inspectionRestartRequested
+   and (playerRaceService.ReadyToAdmitCount(token)==0 or playerRaceService.ReadyToAdmitCount(token)<#getQueuedPlayers()) do
+   if getEligiblePlayerCount()==0 then break end
+   stagePreparedPlayers()
+   task.wait(.1)
+  end
+  if inspectionRestartRequested then
+   resetPlayersForNextRound("Inspection map switch");transitionStartedAt=nil;continue
+  end
+  local admitted = playerRaceService.CloseAdmission(token,devBypass)
+  if #admitted==0 then
+   abandonPreparation("Course or camera delivery was not ready. Stay in the lobby and retry.")
+   transitionStartedAt=nil
+   continue
+  end
+  devStartRaceNowRequested=false
+  runTimedState(RaceConstants.RaceState.Countdown,RaceConfig.CountdownDuration,nil)
+  if inspectionRestartRequested then resetPlayersForNextRound("Inspection map switch");transitionStartedAt=nil;continue end
+  local startedPlayers=playerRaceService.StartQueuedPlayers()
+  if #startedPlayers==0 then
+   resetPlayersForNextRound("No ready characters remained at start")
+   if tournamentService then tournamentService.Cancel() end
+   transitionStartedAt=nil
+   continue
+  end
+  local startedAt=getServerTime()
+  currentRaceStartedAt=startedAt
+  local info=RaceService.GetCourseInfo()
+  if selected then tournamentService.BindRace(currentRaceId,info.courseId) end
+  resultsService.StartRace(currentRaceId,info.courseId,info.raceFormat,startedAt,info.displayName,info.lapCount,info.checkpointCount)
+  resultsService.SetCourseIdentity(info)
+  resultsService.RegisterActiveRacers(startedPlayers)
+  for _,player in startedPlayers do
+   if visitProgressService then visitProgressService.EnterRace(player,currentRaceId,info) end
+  end
+  playerRaceService.PublishFlow()
+  runTimedState(RaceConstants.RaceState.Racing,Deadline.Seconds(info,RaceConfig),openStartForRace)
+  if inspectionRestartRequested then
+   for _,player in playerRaceService.GetRacingPlayers() do resultsService.WithdrawPlayer(player,"Studio inspection restarted") end
+   resetPlayersForNextRound("Inspection map switch");transitionStartedAt=nil;continue
+  end
+  local dnfs=playerRaceService.MarkUnfinishedRacersDNF("Time expired")
+  resultsService.SetRaceDuration(getServerTime()-startedAt)
+  resultsService.RecordDNFs(dnfs)
+  transitionStartedAt=getServerTime()
+  if lobbyActivityService then lobbyActivityService.RecordCompletedRace() end
+  if selected then tournamentService.CaptureRace(resultsService.GetCurrentRaceResult()) end
+  runTimedState(RaceConstants.RaceState.Results,RaceConfig.ResultsDuration,function()
+   resultsService.BroadcastCurrentRaceResults()
+  end)
+  if selected and not inspectionRestartRequested then tournamentService.CompleteRace() end
+  local complete = selected and tournamentService.IsEventComplete()
+  resetPlayersForNextRound("Next race preparation")
+  standalonePreparation=nil
+  if complete then
+   local snapshot=tournamentService.GetSnapshot(nil)
+   if snapshot.finaleUntil then
+    runTimedState(RaceConstants.RaceState.RaceEnding,math.max(0,snapshot.finaleUntil-getServerTime()),nil)
+   end
+   transitionStartedAt=nil
+  end
+ end
 end
 
 local function handleDevRaceStateRequest(player: Player, payload)
@@ -480,6 +536,8 @@ local function handleDevRaceStateRequest(player: Player, payload)
 			or currentRaceState == RaceConstants.RaceState.Countdown
 		then
 			devStartRaceNowRequested = true
+   studioHoldInLobby = false
+   playerRaceService.ForceEnrollReadyPlayersForStudio()
 			endCurrentTimedStateNow("StartRaceNow")
 		else
 			print(string.format("[RaceService] Dev StartRaceNow ignored in state %s.", currentRaceState))
@@ -507,11 +565,14 @@ function RaceService.Init(context: ServiceContext?)
 	if context ~= nil then
 		playerRaceService = context.Services.PlayerRaceService
 		resultsService = context.Services.ResultsService
+		lobbyActivityService = context.Services.LobbyActivityService
 		stagingService = context.Services.StagingService
 		courseHazardService = context.Services.CourseHazardService
 		courseService = context.Services.CourseService
+		tournamentService = context.Services.TournamentService
 		checkpointService = context.Services.CheckpointService
 		respawnService = context.Services.RespawnService
+		visitProgressService = context.Services.VisitProgressService
 	end
 
 	if playerRaceService == nil then
@@ -554,6 +615,11 @@ function RaceService.Start(_context: ServiceContext?)
 
 	isStarted = true
 
+	if RunService:IsStudio() and RaceConfig.StudioLobbyPreview then
+		studioHoldInLobby = true
+		print("[RaceService] Starting in lobby; use Studio developer controls to begin a race.")
+	end
+
 	if RunService:IsStudio() and devRemoteConnection == nil then
 		devRemoteConnection = requestDevRaceStateRemote.OnServerEvent:Connect(handleDevRaceStateRequest)
 		print("[RaceService] Studio-only dev race controls enabled.")
@@ -565,6 +631,64 @@ function RaceService.Start(_context: ServiceContext?)
 
 	roundLoopStarted = true
 	task.spawn(runRoundLoop)
+end
+
+function RaceService.RestartInspectionRound()
+	if not RunService:IsStudio() then return end
+	studioStandalone = true
+	if tournamentService then tournamentService.Cancel() end
+	inspectionRestartRequested = true
+	devStartRaceNowRequested = true
+	endCurrentTimedStateNow("inspection map switch")
+end
+
+function RaceService.SetInspectionUnlimitedTime(value: boolean)
+	if not RunService:IsStudio() then return end
+	inspectionUnlimitedTime = value
+	if currentRaceState == RaceConstants.RaceState.Racing then broadcastTimerUpdate() end
+end
+
+function RaceService.IsInspectionUnlimitedTime(): boolean
+	return RunService:IsStudio() and inspectionUnlimitedTime
+end
+function RaceService.ApplyStudioAction(action: string): boolean
+    if not RunService:IsStudio() then return false end
+    if action == "StartEvent" then
+        if currentRaceState ~= RaceConstants.RaceState.WaitingForPlayers then return false end
+        studioHoldInLobby,studioStandalone,devStartRaceNowRequested = false,false,false
+        return true
+    end
+    if action == "StartRace" or action == "RestartRace" or action == "HoldLobby" then
+        studioStandalone = true
+        if action ~= "HoldLobby" then playerRaceService.ForceEnrollReadyPlayersForStudio() end
+        if tournamentService then tournamentService.Cancel() end
+    end
+    if action == "HoldLobby" then
+        studioHoldInLobby = true
+        RaceService.RestartInspectionRound()
+    elseif action == "RestartRace" then
+        studioHoldInLobby = false
+        RaceService.RestartInspectionRound()
+    elseif action == "StartRace" then
+        studioHoldInLobby = false
+        if currentRaceState == RaceConstants.RaceState.WaitingForPlayers
+            or currentRaceState == RaceConstants.RaceState.Intermission
+            or currentRaceState == RaceConstants.RaceState.Countdown then
+            devStartRaceNowRequested = true
+            endCurrentTimedStateNow("Studio start")
+        else return false end
+    elseif action == "NextState" then
+        if currentRaceState == RaceConstants.RaceState.WaitingForPlayers then return false end
+        endCurrentTimedStateNow("Studio next state")
+    elseif action == "EndRace" then
+        if currentRaceState ~= RaceConstants.RaceState.Racing then return false end
+        endCurrentTimedStateNow("Studio end race")
+    else return false end
+    return true
+end
+
+function RaceService.IsStudioHoldingLobby(): boolean
+    return RunService:IsStudio() and studioHoldInLobby
 end
 
 function RaceService.GetRaceState(): RaceState
@@ -593,6 +717,17 @@ function RaceService.GetElapsedRaceTime(): number?
 	end
 
 	return getServerTime() - currentRaceStartedAt
+end
+
+function RaceService.GetPreparation() return standalonePreparation end
+function RaceService.GetCourseInfo(): any
+ local model=courseService and courseService.GetActiveCourse()
+ if model and model==cachedCourseModel and cachedCourseInfo then return table.clone(cachedCourseInfo) end
+ local info=courseService and courseService.GetActiveCourseInfo() or {}
+ if courseService then info=table.clone(info);info.checkpointCount=#courseService.GetOrderedCheckpoints() end
+ cachedCourseModel=model
+ cachedCourseInfo=Identity.Read(model,info)
+ return table.clone(cachedCourseInfo)
 end
 
 return RaceService

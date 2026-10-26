@@ -1,0 +1,1426 @@
+{
+  "schemaVersion": 1,
+  "candidate": "HA_V1_03",
+  "scope": "Bounded solo Studio physics probes using existing Verification actions; no source/gameplay/lifecycle edits. Initial from/checkpoint is setup only. No test reposition occurs inside sequences.",
+  "usage": "Submit commands[name] as the bridge Job with a fresh JobId. Require outer ok=true. Read result.passed plus each case manualChecks; the negative skip intentionally expects passed=false, and the pulse probe requires manual classification. Use the current official-racer setup before each independent initial-position probe. Only catch_skip_recovery_continue intentionally omits setup and follows the previous miss.",
+  "priorities": [
+    "late_warning_leaf_1",
+    "late_warning_leaf_2",
+    "late_warning_leaf_3",
+    "b2_inward_edge",
+    "xb_edge_receiver",
+    "petal_no_ack_release_broad",
+    "petal_no_ack_release_small",
+    "catch_walk_repeat_b0",
+    "catch_direct_skip_attempt",
+    "catch_skip_recovery_continue"
+  ],
+  "safeCycleMethod": "Two fullCycle pulse/pod waits: the first synchronizes to Clear; the second spans a complete period back to Clear. Leaf perch checks synchronize near local 0, wait to late Open, then next local 0, covering a full nine-second period. Compare grounded support and no-hit/recovery diagnostics, not just the outer command ok.",
+  "driverLimits": [
+    "Pulse jump timing cannot be expressed by current JSON actions; jump=true is only the gap/step scanner.",
+    "Late-leaf departure phase does not prove entry phase: require actual firstLeafContact == Warning, or label the real observed phase.",
+    "Bloom edge proof requires entry.reason == arrived at entryPoint before release; a premature release is a different takeoff.",
+    "Petal counters do not capture begin messages/rendered cues; a native-rim support is not a visible-petal support pass.",
+    "All results are solo server-driven Studio observations, not human/device/multiplayer/network acceptance."
+  ],
+  "cases": [
+    {
+      "id": "late_warning_leaf_1",
+      "command": "late_warning_leaf_1",
+      "purpose": "Leaf 1 (offset 0): depart a permanent perch late in Open and record actual first grounded leaf contact.",
+      "expected": "passed",
+      "manualChecks": [
+        "before and phase-wait support remain inside Decoration.S03_HangingGardens.P0; the initial point is three studs toward the next perch.",
+        "crossing.firstLeafContact exists, phase == Warning, and localPhase >= 4 and < 6.8; if it says Open, report late-Open instead of claiming Warning.",
+        "Crossing arrives on the next permanent perch, checkpoint remains 2, no recovery or hazard hit increments."
+      ],
+      "limits": [
+        "The driver observes first support contact, not client cue readability or full-body trailing-edge clearance."
+      ]
+    },
+    {
+      "id": "late_warning_leaf_2",
+      "command": "late_warning_leaf_2",
+      "purpose": "Leaf 2 (offset 2.4): depart a permanent perch late in Open and record actual first grounded leaf contact.",
+      "expected": "passed",
+      "manualChecks": [
+        "before and phase-wait support remain inside Decoration.S03_HangingGardens.P1; the initial point is three studs toward the next perch.",
+        "crossing.firstLeafContact exists, phase == Warning, and localPhase >= 4 and < 6.8; if it says Open, report late-Open instead of claiming Warning.",
+        "Crossing arrives on the next permanent perch, checkpoint remains 2, no recovery or hazard hit increments."
+      ],
+      "limits": [
+        "The driver observes first support contact, not client cue readability or full-body trailing-edge clearance."
+      ]
+    },
+    {
+      "id": "late_warning_leaf_3",
+      "command": "late_warning_leaf_3",
+      "purpose": "Leaf 3 (offset 4.8): depart a permanent perch late in Open and record actual first grounded leaf contact.",
+      "expected": "passed",
+      "manualChecks": [
+        "before and phase-wait support remain inside Decoration.S03_HangingGardens.P2; the initial point is three studs toward the next perch.",
+        "crossing.firstLeafContact exists, phase == Warning, and localPhase >= 4 and < 6.8; if it says Open, report late-Open instead of claiming Warning.",
+        "Crossing arrives on the next permanent perch, checkpoint remains 2, no recovery or hazard hit increments."
+      ],
+      "limits": [
+        "The driver observes first support contact, not client cue readability or full-body trailing-edge clearance."
+      ]
+    },
+    {
+      "id": "safe_cycle_j1",
+      "command": "safe_cycle_j1",
+      "purpose": "Hold J1 through one complete pulse cycle after synchronization.",
+      "expected": "passed",
+      "manualChecks": [
+        "Both wait steps remain grounded with no hits/recovery; the second wait lasts about six seconds.",
+        "Initial and final X/Z stay at the chosen point, final support matches the specific station/ramp list, checkpoint stays unchanged."
+      ],
+      "limits": [
+        "This tests one stationary server-driven avatar; it does not establish crowd flow or mobile controls."
+      ]
+    },
+    {
+      "id": "safe_cycle_j2",
+      "command": "safe_cycle_j2",
+      "purpose": "Hold J2 through one complete pulse cycle after synchronization.",
+      "expected": "passed",
+      "manualChecks": [
+        "Both wait steps remain grounded with no hits/recovery; the second wait lasts about six seconds.",
+        "Initial and final X/Z stay at the chosen point, final support matches the specific station/ramp list, checkpoint stays unchanged."
+      ],
+      "limits": [
+        "This tests one stationary server-driven avatar; it does not establish crowd flow or mobile controls."
+      ]
+    },
+    {
+      "id": "safe_cycle_refuge",
+      "command": "safe_cycle_refuge",
+      "purpose": "Hold refuge through one complete pulse cycle after synchronization.",
+      "expected": "passed",
+      "manualChecks": [
+        "Both wait steps remain grounded with no hits/recovery; the second wait lasts about six seconds.",
+        "Initial and final X/Z stay at the chosen point, final support matches the specific station/ramp list, checkpoint stays unchanged."
+      ],
+      "limits": [
+        "This tests one stationary server-driven avatar; it does not establish crowd flow or mobile controls."
+      ]
+    },
+    {
+      "id": "safe_cycle_j3",
+      "command": "safe_cycle_j3",
+      "purpose": "Hold J3 through one complete pulse cycle after synchronization.",
+      "expected": "passed",
+      "manualChecks": [
+        "Both wait steps remain grounded with no hits/recovery; the second wait lasts about six seconds.",
+        "Initial and final X/Z stay at the chosen point, final support matches the specific station/ramp list, checkpoint stays unchanged."
+      ],
+      "limits": [
+        "This tests one stationary server-driven avatar; it does not establish crowd flow or mobile controls."
+      ]
+    },
+    {
+      "id": "safe_cycle_j4",
+      "command": "safe_cycle_j4",
+      "purpose": "Hold J4 through one complete pulse cycle after synchronization.",
+      "expected": "passed",
+      "manualChecks": [
+        "Both wait steps remain grounded with no hits/recovery; the second wait lasts about six seconds.",
+        "Initial and final X/Z stay at the chosen point, final support matches the specific station/ramp list, checkpoint stays unchanged."
+      ],
+      "limits": [
+        "This tests one stationary server-driven avatar; it does not establish crowd flow or mobile controls."
+      ]
+    },
+    {
+      "id": "safe_cycle_p0",
+      "command": "safe_cycle_p0",
+      "purpose": "Hold permanent P0 through a full nine-second leaf period.",
+      "expected": "passed",
+      "manualChecks": [
+        "All wait supports remain inside Decoration.S03_HangingGardens.P0, with no recovery/hit increment.",
+        "From the first fresh Open sample to the next fresh Open sample, elapsed time is approximately nine seconds; all three leaves share that period with different offsets.",
+        "Final grounded support and checkpoint 2 remain unchanged."
+      ],
+      "limits": []
+    },
+    {
+      "id": "safe_cycle_p1",
+      "command": "safe_cycle_p1",
+      "purpose": "Hold permanent P1 through a full nine-second leaf period.",
+      "expected": "passed",
+      "manualChecks": [
+        "All wait supports remain inside Decoration.S03_HangingGardens.P1, with no recovery/hit increment.",
+        "From the first fresh Open sample to the next fresh Open sample, elapsed time is approximately nine seconds; all three leaves share that period with different offsets.",
+        "Final grounded support and checkpoint 2 remain unchanged."
+      ],
+      "limits": []
+    },
+    {
+      "id": "safe_cycle_p2",
+      "command": "safe_cycle_p2",
+      "purpose": "Hold permanent P2 through a full nine-second leaf period.",
+      "expected": "passed",
+      "manualChecks": [
+        "All wait supports remain inside Decoration.S03_HangingGardens.P2, with no recovery/hit increment.",
+        "From the first fresh Open sample to the next fresh Open sample, elapsed time is approximately nine seconds; all three leaves share that period with different offsets.",
+        "Final grounded support and checkpoint 2 remain unchanged."
+      ],
+      "limits": []
+    },
+    {
+      "id": "safe_cycle_p3",
+      "command": "safe_cycle_p3",
+      "purpose": "Hold permanent P3 through a full nine-second leaf period.",
+      "expected": "passed",
+      "manualChecks": [
+        "All wait supports remain inside Decoration.S03_HangingGardens.P3, with no recovery/hit increment.",
+        "From the first fresh Open sample to the next fresh Open sample, elapsed time is approximately nine seconds; all three leaves share that period with different offsets.",
+        "Final grounded support and checkpoint 2 remain unchanged."
+      ],
+      "limits": []
+    },
+    {
+      "id": "safe_cycle_pod_entry",
+      "command": "safe_cycle_pod_entry",
+      "purpose": "Hold the pod entry pocket through a complete seedpod cycle.",
+      "expected": "passed",
+      "manualChecks": [
+        "The second synchronized wait covers about six seconds; no hits/recovery increments.",
+        "Avatar remains on the specified root pocket and checkpoint remains 0."
+      ],
+      "limits": []
+    },
+    {
+      "id": "safe_cycle_pod_middle",
+      "command": "safe_cycle_pod_middle",
+      "purpose": "Hold the pod middle pocket through a complete seedpod cycle.",
+      "expected": "passed",
+      "manualChecks": [
+        "The second synchronized wait covers about six seconds; no hits/recovery increments.",
+        "Avatar remains on the specified root pocket and checkpoint remains 0."
+      ],
+      "limits": []
+    },
+    {
+      "id": "safe_cycle_pod_exit",
+      "command": "safe_cycle_pod_exit",
+      "purpose": "Hold the pod exit pocket through a complete seedpod cycle.",
+      "expected": "passed",
+      "manualChecks": [
+        "The second synchronized wait covers about six seconds; no hits/recovery increments.",
+        "Avatar remains on the specified root pocket and checkpoint remains 0."
+      ],
+      "limits": []
+    },
+    {
+      "id": "b2_inward_edge",
+      "command": "b2_inward_edge",
+      "purpose": "Start on the inward +X outer petal, walk to the near-center edge, then steer B2 toward J4.",
+      "expected": "passed",
+      "manualChecks": [
+        "Initial radial distance from B2 center (-62,140,60) is 14, outside the launch radius; actual initial support is FlowerSurface.",
+        "entry.reason == arrived and entry.distance <= .4 at (-53,140,60); if released before arrival, this is not proof of the intended edge takeoff.",
+        "Exactly one release, at least one acknowledgement, no recovery/hit increment, actual grounded J4 receiver.",
+        "Inspect highestY and actual flight/collision view for the inner canopy opening."
+      ],
+      "limits": [
+        "A landing result alone does not show roof clearance along the whole avatar; the parent should retain the actual flight observation."
+      ]
+    },
+    {
+      "id": "xb_edge_receiver",
+      "command": "xb_edge_receiver",
+      "purpose": "Enter XB from the confirmed outer rim and land on the new J4 front-edge aim.",
+      "expected": "passed",
+      "manualChecks": [
+        "Initial support is within XB and horizontal distance from XB center is 4.5, outside the active 2.85 radius.",
+        "Exactly one release; actual grounded support is specifically J4.Top at (-48,150,45), not merely the joining ramp.",
+        "No recovery or hazard-hit increment."
+      ],
+      "limits": []
+    },
+    {
+      "id": "petal_no_ack_release_broad",
+      "command": "petal_no_ack_release_broad",
+      "purpose": "Stand on the visible B0 petal outside Center while the real cue client remains enabled.",
+      "expected": "passed",
+      "manualChecks": [
+        "Initial and final grounded support is specifically Blooms.B0.FlowerSurface; if it is only the native rim, report a rim check instead.",
+        "From sequence.before to after: acknowledgements, releases, cancels and hits all have delta 0.",
+        "The two pulse waits include at least one full six-second stationary observation; X/Z stay outside the launch radius."
+      ],
+      "limits": [
+        "The driver does not capture begin messages or rendered cue frames. Counter deltas prove no acknowledgements/releases during the recorded interval, not a client screenshot claim."
+      ]
+    },
+    {
+      "id": "petal_no_ack_release_small",
+      "command": "petal_no_ack_release_small",
+      "purpose": "Stand on the visible XB petal outside Center while the real cue client remains enabled.",
+      "expected": "passed",
+      "manualChecks": [
+        "Initial and final grounded support is specifically Blooms.XB.FlowerSurface; if it is only the native rim, report a rim check instead.",
+        "From sequence.before to after: acknowledgements, releases, cancels and hits all have delta 0.",
+        "The two pulse waits include at least one full six-second stationary observation; X/Z stay outside the launch radius."
+      ],
+      "limits": [
+        "The driver does not capture begin messages or rendered cue frames. Counter deltas prove no acknowledgements/releases during the recorded interval, not a client screenshot claim."
+      ]
+    },
+    {
+      "id": "pulse_jump_enabled_probe",
+      "command": "pulse_jump_enabled_probe",
+      "purpose": "A supported jump-enabled lane crossing probe; the current driver cannot schedule an active-ribbon jump.",
+      "expected": "manual classification; not automatically a jump pass",
+      "manualChecks": [
+        "Require crossing.jumps >= 1 plus separate native observation of active Travel and body clearance before calling this a pulse-jump pass.",
+        "A zero-jump or Clear-phase success is only a walking crossing; any recovery is a failed attempt."
+      ],
+      "limits": [
+        "jump=true only responds to forward ground gaps/steps. The non-collidable ribbon does not trigger that scan. A timed active-ribbon jump requires a small explicit jump driver change or the parent\u2019s previously used native test script; no unsupported jumpAt field is supplied."
+      ]
+    },
+    {
+      "id": "catch_walk_repeat_b0",
+      "command": "catch_walk_repeat_b0",
+      "purpose": "Walk the Catch return to R3 and legitimately repeat B0 before J3.",
+      "expected": "passed",
+      "manualChecks": [
+        "Catch and every return step retain checkpoint 3; no extra checkpoint or finish is awarded.",
+        "R3 is reached on its exact protected platform/joining ramps before the B0 entry.",
+        "B0 has releaseDelta == 1, acknowledgementDelta >= 1 and a grounded J3 receiver; no recovery/hits during the walking return."
+      ],
+      "limits": [
+        "Initial checkpoint 3 is test setup. Acquisition of R1/R2/R3 remains covered by the separate full continuous runs."
+      ]
+    },
+    {
+      "id": "catch_direct_skip_attempt",
+      "command": "catch_direct_skip_attempt",
+      "purpose": "Attempt a direct ordinary-jump Catch-to-J3 bypass.",
+      "expected": "expected negative: passed == false",
+      "manualChecks": [
+        "Expected sequence.passed == false; a true grounded J3 arrival is a bypass defect.",
+        "Record reason, minimumY, jumps and recovery diagnostics; require unchanged checkpoint 3 and Racing status.",
+        "A recovered reason should identify HeartwoodLocalFall and the R3 return."
+      ],
+      "limits": [
+        "One failed scripted direction does not prove every imaginable catch skip is impossible."
+      ]
+    },
+    {
+      "id": "catch_skip_recovery_continue",
+      "command": "catch_skip_recovery_continue",
+      "purpose": "After the direct skip misses and Runtime returns the racer to R3, continue through B0 without test repositioning.",
+      "expected": "passed",
+      "manualChecks": [
+        "Run immediately after catch_direct_skip_attempt only when its recovery is confirmed; this command has no from or checkpoint write.",
+        "First step settles on the authentic R3 recovery position; B0 then earns one actual boost before grounded J3 arrival.",
+        "Checkpoint remains 3."
+      ],
+      "limits": []
+    }
+  ],
+  "commands": {
+    "late_warning_leaf_1": {
+      "action": "sequence",
+      "checkpoint": 2,
+      "steps": [
+        {
+          "id": "late-open-departure-1",
+          "waitLeaf": 1,
+          "leafPhaseMinimum": 3.75,
+          "leafPhaseMaximum": 3.95,
+          "waitSeconds": 10
+        },
+        {
+          "id": "late-warning-crossing-1",
+          "to": [
+            89,
+            86,
+            65
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P1"
+          ],
+          "expectCheckpoint": 2,
+          "seconds": 4.5,
+          "jump": true,
+          "observeLeaf": 1
+        }
+      ],
+      "expectCheckpoint": 2,
+      "expectStatus": "Racing",
+      "finishTo": [
+        89,
+        86,
+        65
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        95.53888,
+        82,
+        22.96435
+      ]
+    },
+    "late_warning_leaf_2": {
+      "action": "sequence",
+      "checkpoint": 2,
+      "steps": [
+        {
+          "id": "late-open-departure-2",
+          "waitLeaf": 2,
+          "leafPhaseMinimum": 3.75,
+          "leafPhaseMaximum": 3.95,
+          "waitSeconds": 10
+        },
+        {
+          "id": "late-warning-crossing-2",
+          "to": [
+            61,
+            91,
+            98
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P2"
+          ],
+          "expectCheckpoint": 2,
+          "seconds": 4.5,
+          "jump": true,
+          "observeLeaf": 2
+        }
+      ],
+      "expectCheckpoint": 2,
+      "expectStatus": "Racing",
+      "finishTo": [
+        61,
+        91,
+        98
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        87.05907,
+        86,
+        67.28753
+      ]
+    },
+    "late_warning_leaf_3": {
+      "action": "sequence",
+      "checkpoint": 2,
+      "steps": [
+        {
+          "id": "late-open-departure-3",
+          "waitLeaf": 3,
+          "leafPhaseMinimum": 3.75,
+          "leafPhaseMaximum": 3.95,
+          "waitSeconds": 10
+        },
+        {
+          "id": "late-warning-crossing-3",
+          "to": [
+            20,
+            96,
+            101
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P3"
+          ],
+          "expectCheckpoint": 2,
+          "seconds": 4.5,
+          "jump": true,
+          "observeLeaf": 3
+        }
+      ],
+      "expectCheckpoint": 2,
+      "expectStatus": "Racing",
+      "finishTo": [
+        20,
+        96,
+        101
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        58.008,
+        91,
+        98.21893
+      ]
+    },
+    "safe_cycle_j1": {
+      "action": "sequence",
+      "checkpoint": 1,
+      "steps": [
+        {
+          "id": "synchronize-pulse-clear",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "complete-pulse-cycle",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "verify-stationary-support",
+          "to": [
+            -34,
+            27,
+            -1
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.J1"
+          ],
+          "expectCheckpoint": 1,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 1,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -34,
+        27,
+        -1
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -34,
+        27,
+        -1
+      ]
+    },
+    "safe_cycle_j2": {
+      "action": "sequence",
+      "checkpoint": 1,
+      "steps": [
+        {
+          "id": "synchronize-pulse-clear",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "complete-pulse-cycle",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "verify-stationary-support",
+          "to": [
+            26,
+            60,
+            -20
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.J2",
+            "Decoration.S02_LivingHeartwood.PulseLane"
+          ],
+          "expectCheckpoint": 1,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 1,
+      "expectStatus": "Racing",
+      "finishTo": [
+        26,
+        60,
+        -20
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        26,
+        60,
+        -20
+      ]
+    },
+    "safe_cycle_refuge": {
+      "action": "sequence",
+      "checkpoint": 1,
+      "steps": [
+        {
+          "id": "synchronize-pulse-clear",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "complete-pulse-cycle",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "verify-stationary-support",
+          "to": [
+            22,
+            64,
+            -38
+          ],
+          "supports": [
+            "Decoration.S02_LivingHeartwood.PulseRefuge",
+            "Decoration.S02_LivingHeartwood.RefugeConnection"
+          ],
+          "expectCheckpoint": 1,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 1,
+      "expectStatus": "Racing",
+      "finishTo": [
+        22,
+        64,
+        -38
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        22,
+        64,
+        -38
+      ]
+    },
+    "safe_cycle_j3": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "synchronize-pulse-clear",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "complete-pulse-cycle",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "verify-stationary-support",
+          "to": [
+            -30,
+            122,
+            78
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J3"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -30,
+        122,
+        78
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -30,
+        122,
+        78
+      ]
+    },
+    "safe_cycle_j4": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "synchronize-pulse-clear",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "complete-pulse-cycle",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "verify-stationary-support",
+          "to": [
+            -54,
+            150,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -54,
+        150,
+        37
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -54,
+        150,
+        37
+      ]
+    },
+    "safe_cycle_p0": {
+      "action": "sequence",
+      "checkpoint": 2,
+      "steps": [
+        {
+          "id": "synchronize-leaf-open",
+          "waitLeaf": 1,
+          "leafPhaseMinimum": 0,
+          "leafPhaseMaximum": 0.15,
+          "waitSeconds": 10
+        },
+        {
+          "id": "reach-late-open",
+          "waitLeaf": 1,
+          "leafPhaseMinimum": 3.75,
+          "leafPhaseMaximum": 3.95,
+          "waitSeconds": 10
+        },
+        {
+          "id": "complete-leaf-cycle",
+          "waitLeaf": 1,
+          "leafPhaseMinimum": 0,
+          "leafPhaseMaximum": 0.15,
+          "waitSeconds": 10
+        },
+        {
+          "id": "verify-perch-support",
+          "to": [
+            96,
+            82,
+            20
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P0"
+          ],
+          "expectCheckpoint": 2,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 2,
+      "expectStatus": "Racing",
+      "finishTo": [
+        96,
+        82,
+        20
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        96,
+        82,
+        20
+      ]
+    },
+    "safe_cycle_p1": {
+      "action": "sequence",
+      "checkpoint": 2,
+      "steps": [
+        {
+          "id": "synchronize-leaf-open",
+          "waitLeaf": 1,
+          "leafPhaseMinimum": 0,
+          "leafPhaseMaximum": 0.15,
+          "waitSeconds": 10
+        },
+        {
+          "id": "reach-late-open",
+          "waitLeaf": 1,
+          "leafPhaseMinimum": 3.75,
+          "leafPhaseMaximum": 3.95,
+          "waitSeconds": 10
+        },
+        {
+          "id": "complete-leaf-cycle",
+          "waitLeaf": 1,
+          "leafPhaseMinimum": 0,
+          "leafPhaseMaximum": 0.15,
+          "waitSeconds": 10
+        },
+        {
+          "id": "verify-perch-support",
+          "to": [
+            89,
+            86,
+            65
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P1"
+          ],
+          "expectCheckpoint": 2,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 2,
+      "expectStatus": "Racing",
+      "finishTo": [
+        89,
+        86,
+        65
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        89,
+        86,
+        65
+      ]
+    },
+    "safe_cycle_p2": {
+      "action": "sequence",
+      "checkpoint": 2,
+      "steps": [
+        {
+          "id": "synchronize-leaf-open",
+          "waitLeaf": 2,
+          "leafPhaseMinimum": 0,
+          "leafPhaseMaximum": 0.15,
+          "waitSeconds": 10
+        },
+        {
+          "id": "reach-late-open",
+          "waitLeaf": 2,
+          "leafPhaseMinimum": 3.75,
+          "leafPhaseMaximum": 3.95,
+          "waitSeconds": 10
+        },
+        {
+          "id": "complete-leaf-cycle",
+          "waitLeaf": 2,
+          "leafPhaseMinimum": 0,
+          "leafPhaseMaximum": 0.15,
+          "waitSeconds": 10
+        },
+        {
+          "id": "verify-perch-support",
+          "to": [
+            61,
+            91,
+            98
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P2"
+          ],
+          "expectCheckpoint": 2,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 2,
+      "expectStatus": "Racing",
+      "finishTo": [
+        61,
+        91,
+        98
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        61,
+        91,
+        98
+      ]
+    },
+    "safe_cycle_p3": {
+      "action": "sequence",
+      "checkpoint": 2,
+      "steps": [
+        {
+          "id": "synchronize-leaf-open",
+          "waitLeaf": 3,
+          "leafPhaseMinimum": 0,
+          "leafPhaseMaximum": 0.15,
+          "waitSeconds": 10
+        },
+        {
+          "id": "reach-late-open",
+          "waitLeaf": 3,
+          "leafPhaseMinimum": 3.75,
+          "leafPhaseMaximum": 3.95,
+          "waitSeconds": 10
+        },
+        {
+          "id": "complete-leaf-cycle",
+          "waitLeaf": 3,
+          "leafPhaseMinimum": 0,
+          "leafPhaseMaximum": 0.15,
+          "waitSeconds": 10
+        },
+        {
+          "id": "verify-perch-support",
+          "to": [
+            20,
+            96,
+            101
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.P3"
+          ],
+          "expectCheckpoint": 2,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 2,
+      "expectStatus": "Racing",
+      "finishTo": [
+        20,
+        96,
+        101
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        20,
+        96,
+        101
+      ]
+    },
+    "safe_cycle_pod_entry": {
+      "action": "sequence",
+      "checkpoint": 0,
+      "steps": [
+        {
+          "id": "synchronize-pod-clear",
+          "waitPod": 1,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "complete-pod-cycle",
+          "waitPod": 1,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "verify-pocket-support",
+          "to": [
+            -122,
+            10,
+            64
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_6"
+          ],
+          "expectCheckpoint": 0,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 0,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -122,
+        10,
+        64
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -122,
+        10,
+        64
+      ]
+    },
+    "safe_cycle_pod_middle": {
+      "action": "sequence",
+      "checkpoint": 0,
+      "steps": [
+        {
+          "id": "synchronize-pod-clear",
+          "waitPod": 2,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "complete-pod-cycle",
+          "waitPod": 2,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "verify-pocket-support",
+          "to": [
+            -85,
+            10,
+            64
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_8"
+          ],
+          "expectCheckpoint": 0,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 0,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -85,
+        10,
+        64
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -85,
+        10,
+        64
+      ]
+    },
+    "safe_cycle_pod_exit": {
+      "action": "sequence",
+      "checkpoint": 0,
+      "steps": [
+        {
+          "id": "synchronize-pod-clear",
+          "waitPod": 2,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "complete-pod-cycle",
+          "waitPod": 2,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "verify-pocket-support",
+          "to": [
+            -85,
+            12,
+            25
+          ],
+          "supports": [
+            "Decoration.S01_AncientRoots.Root_10"
+          ],
+          "expectCheckpoint": 0,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 0,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -85,
+        12,
+        25
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -85,
+        12,
+        25
+      ]
+    },
+    "b2_inward_edge": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "B2-inward-edge",
+          "bloom": "B2",
+          "entryPoint": [
+            -53,
+            140,
+            60
+          ],
+          "to": [
+            -54,
+            150,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 3,
+          "enterSeconds": 4
+        }
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -54,
+        150,
+        37
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -48,
+        144,
+        60
+      ]
+    },
+    "xb_edge_receiver": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "XB-edge-receiver",
+          "bloom": "XB",
+          "to": [
+            -48,
+            150,
+            45
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4.Top"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 3,
+          "enterSeconds": 4
+        }
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -48,
+        150,
+        45
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -40,
+        136,
+        62.5
+      ]
+    },
+    "petal_no_ack_release_broad": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "confirm-visible-petal-support",
+          "to": [
+            12,
+            116,
+            86
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Blooms.B0.FlowerSurface"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": false
+        },
+        {
+          "id": "synchronize-pulse-clear",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "complete-pulse-cycle",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "confirm-petal-still-supported",
+          "to": [
+            12,
+            116,
+            86
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Blooms.B0.FlowerSurface"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Racing",
+      "finishTo": [
+        12,
+        116,
+        86
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        12,
+        116,
+        86
+      ]
+    },
+    "petal_no_ack_release_small": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "confirm-visible-petal-support",
+          "to": [
+            -36,
+            137,
+            58
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Blooms.XB.FlowerSurface"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": false
+        },
+        {
+          "id": "synchronize-pulse-clear",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "complete-pulse-cycle",
+          "waitPulseClear": true,
+          "fullCycle": true,
+          "waitSeconds": 7
+        },
+        {
+          "id": "confirm-petal-still-supported",
+          "to": [
+            -36,
+            137,
+            58
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Blooms.XB.FlowerSurface"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": false
+        }
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -36,
+        137,
+        58
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -36,
+        137,
+        58
+      ]
+    },
+    "pulse_jump_enabled_probe": {
+      "action": "sequence",
+      "checkpoint": 1,
+      "steps": [
+        {
+          "id": "jump-enabled-pulse-crossing",
+          "to": [
+            52,
+            68,
+            -50
+          ],
+          "supports": [
+            "Decoration.S03_HangingGardens.R2",
+            "Decoration.S02_LivingHeartwood.PulseLane"
+          ],
+          "expectCheckpoint": 2,
+          "seconds": 3,
+          "jump": true
+        }
+      ],
+      "expectCheckpoint": 2,
+      "expectStatus": "Racing",
+      "finishTo": [
+        52,
+        68,
+        -50
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        35,
+        63.5,
+        -30.3846
+      ]
+    },
+    "catch_walk_repeat_b0": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "catch-return-1",
+          "to": [
+            12,
+            102,
+            115
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.CatchReturn_1",
+            "Decoration.S04_SanctuaryBough.CatchReturn_2"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": true
+        },
+        {
+          "id": "catch-return-2",
+          "to": [
+            36,
+            106,
+            115
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.CatchReturn_2",
+            "Decoration.S04_SanctuaryBough.CatchReturn_3",
+            "Decoration.S03_HangingGardens.Fork_3"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": true
+        },
+        {
+          "id": "catch-return-3",
+          "to": [
+            36,
+            112,
+            90
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.CatchReturn_3",
+            "Decoration.S04_SanctuaryBough.CatchReturn_4",
+            "Decoration.S04_SanctuaryBough.R3"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": true
+        },
+        {
+          "id": "R3",
+          "to": [
+            26,
+            112,
+            90
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.R3",
+            "Decoration.S04_SanctuaryBough.CatchReturn_4",
+            "Decoration.S04_SanctuaryBough.CatchReturn_5"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": false
+        },
+        {
+          "id": "B0-after-catch",
+          "bloom": "B0",
+          "to": [
+            -30,
+            122,
+            78
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J3"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 3,
+          "enterSeconds": 4
+        }
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -30,
+        122,
+        78
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -18,
+        101,
+        86
+      ]
+    },
+    "catch_direct_skip_attempt": {
+      "action": "sequence",
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "attempt-catch-direct-J3",
+          "to": [
+            -30,
+            122,
+            78
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J3"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 4,
+          "jump": true
+        }
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -30,
+        122,
+        78
+      ],
+      "maximumDistance": 0.8,
+      "from": [
+        -18,
+        101,
+        86
+      ]
+    },
+    "catch_skip_recovery_continue": {
+      "action": "sequence",
+      "steps": [
+        {
+          "id": "settle-authentic-R3-after-miss",
+          "to": [
+            26,
+            112,
+            90
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.R3",
+            "Decoration.S04_SanctuaryBough.CatchReturn_4",
+            "Decoration.S04_SanctuaryBough.CatchReturn_5"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 3,
+          "jump": false
+        },
+        {
+          "id": "legitimate-B0-after-miss",
+          "bloom": "B0",
+          "to": [
+            -30,
+            122,
+            78
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J3"
+          ],
+          "expectCheckpoint": 3,
+          "seconds": 3,
+          "enterSeconds": 4
+        }
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Racing",
+      "finishTo": [
+        -30,
+        122,
+        78
+      ],
+      "maximumDistance": 0.8
+    }
+  }
+}

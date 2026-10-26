@@ -1,0 +1,41 @@
+{
+  "action": "sequence",
+  "from": [
+    96,
+    82,
+    20
+  ],
+  "checkpoint": 2,
+  "steps": [
+    {
+      "id": "fresh-open",
+      "waitLeaf": 1,
+      "leafPhaseMinimum": 0,
+      "leafPhaseMaximum": 0.15,
+      "waitSeconds": 10
+    },
+    {
+      "id": "stand-on-leaf",
+      "to": [
+        92.5,
+        84,
+        42.5
+      ],
+      "supports": [
+        "Decoration.S03_HangingGardens.Leaves.Leaf_1"
+      ],
+      "jump": true,
+      "observeLeaf": 1,
+      "seconds": 3
+    },
+    {
+      "id": "remain-through-closure",
+      "waitLeaf": 1,
+      "leafPhaseMinimum": 0,
+      "leafPhaseMaximum": 0.15,
+      "waitSeconds": 10
+    }
+  ],
+  "expectCheckpoint": 2,
+  "expectStatus": "Racing"
+}

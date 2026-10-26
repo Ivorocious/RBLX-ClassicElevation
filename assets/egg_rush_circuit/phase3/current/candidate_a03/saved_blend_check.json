@@ -1,0 +1,22 @@
+{
+  "build": "ER_P3_WORLD_KIT_A03",
+  "savedReadback": true,
+  "exactRecipeParity": true,
+  "checkedPieces": 151,
+  "closedManifold": true,
+  "positiveVolume": true,
+  "nondegenerateFaces": true,
+  "actualDimensionsAndFrames": true,
+  "totalSourceVolume": 202751.7899,
+  "bottomCenteredArchetypePivots": true,
+  "meshTemplateNames": [
+    "ERW_ArchBand",
+    "ERW_ArchSpandrels",
+    "ERW_VaultRoof",
+    "ERW_TankDome",
+    "ERW_TankDrum",
+    "ERW_RockLobe",
+    "ERW_PipeElbow",
+    "ERW_LeafCrown"
+  ]
+}

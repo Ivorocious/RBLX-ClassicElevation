@@ -1,0 +1,25 @@
+{
+  "revision": "K01",
+  "source": "Original mesh, Keyboard Circuit",
+  "dimensions_studs": [
+    1.15,
+    0.85,
+    1.15
+  ],
+  "pivot": "bottom center",
+  "axes_blender": "Z up",
+  "runtime_axes": "Y up; verify after insertion",
+  "vertices": 16,
+  "triangles": 28,
+  "elapsed_seconds": 1.505,
+  "files": {
+    "KC_OrdinaryKey.blend": {
+      "bytes": 97959,
+      "sha256": "cb987ed2b29f6279f182f51fae9b531b3112486f0a70cd7ab432adee565429ca"
+    },
+    "KC_OrdinaryKey.fbx": {
+      "bytes": 18188,
+      "sha256": "588338c77c802e9532b4ea8c0c3b95bf5a5176fb5c81a57a5277dc9b8b7d18ea"
+    }
+  }
+}

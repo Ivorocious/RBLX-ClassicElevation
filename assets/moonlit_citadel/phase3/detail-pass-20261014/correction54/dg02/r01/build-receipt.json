@@ -1,0 +1,158 @@
+{
+  "pass": true,
+  "candidate": "MC_P3_GARDEN_HOIST_DG02_R01",
+  "assets": 2,
+  "meshParts": 6,
+  "triangles": 3258,
+  "materialPartsClosedManifoldOutward": true,
+  "source52Preserved": true,
+  "source52Inspection": {
+    "source": "tools\\moonlit-citadel\\phase3\\closeout-20261014\\drafts\\keep-surface52\\render01\\MC_KEEP_SURFACE52_CANDIDATE.blend",
+    "sha256": "d2bc244216110d37b14f44ea6ed053b44302a3b2a39a98d943ee4ef56849c175",
+    "objects": 1378,
+    "meshes": 1356,
+    "protectedVisibleMeshes": 717,
+    "worldMeshes": 639,
+    "keepRelief": [
+      1.0,
+      1.0,
+      1.04
+    ],
+    "readOnlyInspection": true
+  },
+  "studioTouched": false,
+  "liveBlenderTouched": false,
+  "uploaded": false,
+  "previews": [
+    {
+      "file": "01-supported-garden.png",
+      "asset": "MC_DG_WallGarden24",
+      "sha256": "1771ad49ff559b27ed25196c6b8128c009f17f0025a4224fe96c9da1901d6c45",
+      "bytes": 1428719,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "camera": [
+        27,
+        -40,
+        20
+      ],
+      "target": [
+        0,
+        -1.95,
+        5
+      ],
+      "orthographicScale": 34,
+      "originalBlenderRender": true,
+      "boundary": "Kit geometry inspection only; not installed-map or native appearance proof"
+    },
+    {
+      "file": "02-wall-hoist-front.png",
+      "asset": "MC_DG_WallHoist",
+      "sha256": "ca051ad83d5b4076410b996cbe88b4b766dc7e05f62e7ec994fcc2b2252b33fd",
+      "bytes": 1444995,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "camera": [
+        18,
+        -24,
+        10
+      ],
+      "target": [
+        0,
+        -2.6,
+        -0.2
+      ],
+      "orthographicScale": 14,
+      "originalBlenderRender": true,
+      "boundary": "Kit geometry inspection only; not installed-map or native appearance proof"
+    },
+    {
+      "file": "03-wall-hoist-rooting.png",
+      "asset": "MC_DG_WallHoist",
+      "sha256": "d6b1ba6072e23ea6f3bea76c1ee587292d028bd8e99f251a157a3d1fd7b8e584",
+      "bytes": 1517255,
+      "dimensions": [
+        1440,
+        960
+      ],
+      "camera": [
+        13,
+        -8,
+        4
+      ],
+      "target": [
+        0,
+        -2.8,
+        -0.4
+      ],
+      "orthographicScale": 12,
+      "originalBlenderRender": true,
+      "boundary": "Kit geometry inspection only; not installed-map or native appearance proof"
+    }
+  ],
+  "inputHashes": {
+    "tools/moonlit-citadel/phase3/detail-pass-20261014/drafts/correction54/assets/BuildStableGardenHoistKit.py": "fcf6d9e5d24082282c759f28abe880e310e011a9da17a0bce65fedd58b3479ef",
+    "tools/moonlit-citadel/phase3/detail-pass-20261014/drafts/correction54/assets/StableGardenHoistRecipe.py": "6cec9ee681d3ca2a2a70460a30a2fbb35656ff8c349f1755babfb48131859fde",
+    "assets/moonlit_citadel/bl02/architecture.py": "45518e507c45a3c461de249992b8195ce1e7301339df1cf59b1edbfeb7cf8296",
+    "assets/moonlit_citadel/phase3/drafts/world_kit.py": "7d4926c2cee83e4a6831b8400ac939dab187152f131e554799f93e9201822b58",
+    "tools/moonlit-citadel/phase3/closeout-20261014/drafts/keep-surface52/render01/MC_KEEP_SURFACE52_CANDIDATE.blend": "d2bc244216110d37b14f44ea6ed053b44302a3b2a39a98d943ee4ef56849c175",
+    "docs/artifacts/moonlit-citadel/phase3/closeout-20261014/combined-plan52.json": "3b0e592a6695e70a881d30daaa7bfb27915a60bec6acce75e685358b7a7266c2",
+    "docs/artifacts/moonlit-citadel/phase3/closeout-20261014/before/closeout_source52_packet.json": "80978718783aa23b70cd08d4edb240674ae3e53da827ab396f90ce5d67043617",
+    "tools/moonlit-citadel/phase3/detail-pass-20261014/drafts/correction54/assets/GardenHoistRecipe.py": "9ed0104f18db4adddedc3b3f545e17e2021192cf4892209de6b4a05ffe19f9c1",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/correction54/dg02/manifest.json": "673ca05f99614a66d1e1f89df89dc4b03ce7a5ec323b759da30e86e28f6de16c",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/correction54/dg02/MC_GARDEN_HOIST_DG02.fbx": "322358895de60b50fffca6d0a237eca21025f0830cb4cd4d114644272d513c86",
+    "tools/moonlit-citadel/phase3/detail-pass-20261014/drafts/correction54/assets/garden-hoist-final-freeze.json": "13f81397232fb54d6fe8b45e5aec8df2c69b6ebefa43270bf9b92c32cb2193f4",
+    "tools/moonlit-citadel/phase3/detail-pass-20261014/drafts/correction54/assets/GardenRecipe.py": "5a2d2dc6e5b34d7479689aee97878e9749e3c753786dc3a0a2e6ae8ab59f4943",
+    "tools/moonlit-citadel/phase3/detail-pass-20261014/drafts/assets/r01/DetailRecipes.py": "4e6c16734aa7f13b92809bcea6a9f1c3af7aca677c59ca6c7951aff5ee9e50d1",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/correction54/dg01/manifest.json": "37e19cfb7de8371f22931b6d93ded81d14a1e1c38c09bde194600cd073093f26",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/correction54/dg01/authored-geometry.json": "c0e74d516a2b33c2c08a7ba8dce17117a5fb74cf99ae22c38843eef65ee60c58",
+    "docs/artifacts/moonlit-citadel/phase3/detail-pass-20261014/FINAL_FREEZE53.json": "c8fe2c28d91b28a838b0d46dbd28a9f0ec3be5f10638d6ce3c7702bdd15d4d08",
+    "assets/moonlit_citadel/phase3/detail-pass-20261014/dt01/r01/manifest.json": "f0da2fbcf1aed1c5651755086e443487ad39ca4c983b4f5ca650cceb1ef68eaa"
+  },
+  "files": {
+    "01-supported-garden.png": {
+      "bytes": 1428719,
+      "sha256": "1771ad49ff559b27ed25196c6b8128c009f17f0025a4224fe96c9da1901d6c45"
+    },
+    "02-wall-hoist-front.png": {
+      "bytes": 1444995,
+      "sha256": "ca051ad83d5b4076410b996cbe88b4b766dc7e05f62e7ec994fcc2b2252b33fd"
+    },
+    "03-wall-hoist-rooting.png": {
+      "bytes": 1517255,
+      "sha256": "d6b1ba6072e23ea6f3bea76c1ee587292d028bd8e99f251a157a3d1fd7b8e584"
+    },
+    "authored-geometry.json": {
+      "bytes": 145796,
+      "sha256": "4a8fe7ff347f99c2323d6fdd3ea898a9f5c282e0d2aae7625b5cbfd77d5becb5"
+    },
+    "DetailGeometry.luau": {
+      "bytes": 8853,
+      "sha256": "dcacf0711b1028efee92b8101ca2579d13776118f8a65a60e8ffa9f164d9bc24"
+    },
+    "manifest.json": {
+      "bytes": 35928,
+      "sha256": "84c1f739d1c360ab628e13120650a49da2025a659c04dfeefcc1c72999f58006"
+    },
+    "MC_GARDEN_HOIST_DG02_R01.blend": {
+      "bytes": 220789,
+      "sha256": "b82565862f6e6f251e7beac8e9a781c0e818329b5661edf604ddfccb580a115b"
+    },
+    "MC_GARDEN_HOIST_DG02_R01.fbx": {
+      "bytes": 119516,
+      "sha256": "94c4dce84e81195d48f020a773c2b789bff23c7a0ac50034dd66b1cdf0d40245"
+    },
+    "occupied-geometry.json": {
+      "bytes": 49061,
+      "sha256": "8bfeaa3cfcc7111e18c8634deb96d6212bfdc53377ad5d04408420b9b58d9510"
+    },
+    "source52-inspection.json": {
+      "bytes": 403,
+      "sha256": "e6793ed37604847700f4c527d5ff726a604d8c10760f01364afcfa1ca6c8073b"
+    }
+  }
+}

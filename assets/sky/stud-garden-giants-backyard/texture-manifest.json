@@ -1,0 +1,74 @@
+{
+  "size": 1024,
+  "source_size": [
+    1774,
+    887
+  ],
+  "faces": {
+    "ft": {
+      "file": "giants-backyard-ft.png",
+      "sha256": "51a5cef7eafdb0dd553696c9b8325fe3bc28d62769ffff4691fbfc275b4be818"
+    },
+    "bk": {
+      "file": "giants-backyard-bk.png",
+      "sha256": "60b4f4b0881389db8be0bea3f4c734a622fb5cf5b40db681b7257f57ff5539ab"
+    },
+    "rt": {
+      "file": "giants-backyard-rt.png",
+      "sha256": "4879c0d99f4943bdb0eb08527d5c253264ac300fd32f1dee1843b4d89128d7f8"
+    },
+    "lf": {
+      "file": "giants-backyard-lf.png",
+      "sha256": "37609dddd719afb05a3d7b51e5ec7b6ae3705da0440704d383241cad22803f3a"
+    },
+    "up": {
+      "file": "giants-backyard-up.png",
+      "sha256": "dac09f9d4e085ace6fe6628035393ed49aa38252a10ccfbd5d3a3b343ef2100e"
+    },
+    "dn": {
+      "file": "giants-backyard-dn.png",
+      "sha256": "a2abda89eb117af2dce28c2f61c18c4cbf563749baa9beb6e2f262d71420468e"
+    }
+  },
+  "roblox_faces": {
+    "SkyboxFt": {
+      "file": "giants-backyard-bk.png",
+      "sha256": "60b4f4b0881389db8be0bea3f4c734a622fb5cf5b40db681b7257f57ff5539ab"
+    },
+    "SkyboxBk": {
+      "file": "giants-backyard-ft.png",
+      "sha256": "51a5cef7eafdb0dd553696c9b8325fe3bc28d62769ffff4691fbfc275b4be818"
+    },
+    "SkyboxRt": {
+      "file": "giants-backyard-rt.png",
+      "sha256": "4879c0d99f4943bdb0eb08527d5c253264ac300fd32f1dee1843b4d89128d7f8"
+    },
+    "SkyboxLf": {
+      "file": "giants-backyard-lf.png",
+      "sha256": "37609dddd719afb05a3d7b51e5ec7b6ae3705da0440704d383241cad22803f3a"
+    },
+    "SkyboxUp": {
+      "file": "giants-backyard-up-roblox.png",
+      "sha256": "ade26240f7be300df180c0e19e5168873ec4bd2560caa8e4fc919d5d298c0662"
+    },
+    "SkyboxDn": {
+      "file": "giants-backyard-dn-roblox-final.png",
+      "sha256": "12fe2ba7577675c899814c8997911640f70a2bec25ea75b6cce30e7d61605801"
+    }
+  },
+  "edge_max_channel_error": {
+    "ft-right/rt-left": 0,
+    "rt-right/bk-left": 0,
+    "bk-right/lf-left": 0,
+    "lf-right/ft-left": 0,
+    "ft-top/up-top": 0,
+    "bk-top/up-bottom": 0,
+    "rt-top/up-right": 0,
+    "lf-top/up-left": 0,
+    "ft-bottom/dn-bottom": 0,
+    "bk-bottom/dn-top": 0,
+    "rt-bottom/dn-right": 0,
+    "lf-bottom/dn-left": 0
+  },
+  "note": "Technical spherical seam/pole normalization and bilinear cube projection; sky art generated with ImageGen."
+}

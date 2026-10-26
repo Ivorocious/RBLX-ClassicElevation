@@ -1,0 +1,2840 @@
+{
+  "revision": "C10_01",
+  "components": {
+    "Hurdle_DistrictRoofs_00_01": {
+      "section": "Roof",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_DistrictRoofs_00_03": {
+      "section": "Roof",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Weave_DistrictRoofs_01_01": {
+      "section": "Roof",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Weave_DistrictRoofs_01_02": {
+      "section": "Roof",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Weave_DistrictRoofs_01_03": {
+      "section": "Roof",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hub_DistrictRoofs_02_01": {
+      "section": "Roof",
+      "role": "Scenery"
+    },
+    "Spinner_DistrictRoofs_02_01": {
+      "section": "Roof",
+      "role": "Kill",
+      "attrs": {
+        "KitMotion": "Spin",
+        "MotionAxis": "Y",
+        "MotionPeriod": 8
+      }
+    },
+    "Hub_DistrictRoofs_02_03": {
+      "section": "Roof",
+      "role": "Scenery"
+    },
+    "Spinner_DistrictRoofs_02_03": {
+      "section": "Roof",
+      "role": "Kill",
+      "attrs": {
+        "KitMotion": "Spin",
+        "MotionAxis": "Y",
+        "MotionPeriod": 9
+      }
+    },
+    "SpinnerCross_DistrictRoofs_02_03": {
+      "section": "Roof",
+      "role": "Kill",
+      "attrs": {
+        "KitMotion": "Spin",
+        "MotionAxis": "Y",
+        "MotionPeriod": 9
+      }
+    },
+    "Hurdle_DistrictRoofs_04_01": {
+      "section": "Roof",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_RoofMainEntry_00_01": {
+      "section": "Construction",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_RoofMainEntry_01_01": {
+      "section": "Construction",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_RoofMainMiddle_00_02": {
+      "section": "Construction",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_RoofMainMiddle_02_01": {
+      "section": "Construction",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Weave_RoofGarden_00_01": {
+      "section": "RoofGarden",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Weave_RoofGarden_01_01": {
+      "section": "RoofGarden",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_DepotAccess_00_01": {
+      "section": "Depot",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Weave_StationaryTrains_00_01": {
+      "section": "Depot",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Weave_StationaryTrains_00_02": {
+      "section": "Depot",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Weave_StationaryTrains_00_03": {
+      "section": "Depot",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_StationaryTrains_00_02": {
+      "section": "Depot",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_DepotExit_00_01": {
+      "section": "Depot",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_StationEntry_02": {
+      "section": "Station",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_StationEntry_05": {
+      "section": "Station",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_StationMain_00_01": {
+      "section": "Station",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Weave_StationMain_00_02": {
+      "section": "Station",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hub_StationMain_00_03": {
+      "section": "Station",
+      "role": "Scenery"
+    },
+    "Spinner_StationMain_00_03": {
+      "section": "Station",
+      "role": "Kill",
+      "attrs": {
+        "KitMotion": "Spin",
+        "MotionAxis": "Y",
+        "MotionPeriod": 8.5
+      }
+    },
+    "Hurdle_StationMain_00_05": {
+      "section": "Station",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Weave_StationMain_01_08": {
+      "section": "Station",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hurdle_StationMain_02_01": {
+      "section": "Station",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "Hub_StationMain_02_03": {
+      "section": "Station",
+      "role": "Scenery"
+    },
+    "Spinner_StationMain_02_03": {
+      "section": "Station",
+      "role": "Kill",
+      "attrs": {
+        "KitMotion": "Spin",
+        "MotionAxis": "Y",
+        "MotionPeriod": 9
+      }
+    },
+    "ExpertEdge_X03_01_02": {
+      "section": "StationExpert",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "ExpertEdge_X03_01_04": {
+      "section": "StationExpert",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "ExpertEdge_X03_01_06": {
+      "section": "StationExpert",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "ExpertEdge_X03_01_08": {
+      "section": "StationExpert",
+      "role": "Kill",
+      "attrs": {}
+    },
+    "StationCrumble_Row01_Lane1": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row01_Lane2": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row01_Lane3": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row02_Lane1": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row02_Lane2": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row02_Lane3": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row03_Lane1": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row03_Lane2": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row03_Lane3": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row04_Lane1": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row04_Lane2": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row04_Lane3": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row05_Lane1": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row05_Lane2": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row05_Lane3": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row06_Lane1": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row06_Lane2": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row06_Lane3": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row07_Lane1": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row07_Lane2": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row07_Lane3": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row08_Lane1": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row08_Lane2": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row08_Lane3": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row09_Lane1": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row09_Lane2": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Row09_Lane3": {
+      "section": "Station",
+      "role": "Crumble",
+      "attrs": {
+        "CrumbleDelay": 0.75,
+        "CrumbleResetTime": 2.5
+      }
+    },
+    "StationCrumble_Scaffold": {
+      "section": "Station",
+      "role": "Scenery"
+    },
+    "RouteArrow_RoofEntry": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_RoofTurnNorth": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_RoofTurnEast": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_RoofTurnNorth2": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_RoofTurnEast2": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_WorkLoop": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_WorkReturn": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_GardenTurn": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_DepotTurn": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_DepotTransfer": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_DepotExit": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_StationTurn": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_StationHome": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "RouteArrow_StationLastTurn": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "StationCrumble_EntrySign": {
+      "section": "Wayfinding",
+      "role": "Scenery"
+    },
+    "CityC10_Roof_WestCorner": {
+      "section": "Roof",
+      "role": "Scenery",
+      "footprint": [
+        3246,
+        -183,
+        28,
+        42
+      ],
+      "height": 105
+    },
+    "CityC10_Roof_InnerCorner": {
+      "section": "Roof",
+      "role": "Scenery",
+      "footprint": [
+        3392,
+        -205,
+        29,
+        30
+      ],
+      "height": 103
+    },
+    "CityC10_Roof_EastCourt": {
+      "section": "Roof",
+      "role": "Scenery",
+      "footprint": [
+        3410,
+        -157,
+        32,
+        35
+      ],
+      "height": 111
+    },
+    "CityC10_Roof_NorthFrame": {
+      "section": "Roof",
+      "role": "Scenery",
+      "footprint": [
+        3424,
+        -370,
+        34,
+        30
+      ],
+      "height": 131
+    },
+    "CityC10_Roof_GardenFrame": {
+      "section": "Roof",
+      "role": "Scenery",
+      "footprint": [
+        3628,
+        -366,
+        36,
+        33
+      ],
+      "height": 119
+    },
+    "CityC10_Depot_WestArrival": {
+      "section": "Depot",
+      "role": "Scenery",
+      "footprint": [
+        3638,
+        -191,
+        28,
+        38
+      ],
+      "height": 110
+    },
+    "CityC10_Depot_EastWorks": {
+      "section": "Depot",
+      "role": "Scenery",
+      "footprint": [
+        3699,
+        -171,
+        30,
+        46
+      ],
+      "height": 119
+    },
+    "CityC10_Depot_WestYard": {
+      "section": "Depot",
+      "role": "Scenery",
+      "footprint": [
+        3639,
+        -94,
+        28,
+        34
+      ],
+      "height": 109
+    },
+    "CityC10_Depot_EastHotel": {
+      "section": "Depot",
+      "role": "Scenery",
+      "footprint": [
+        3750,
+        -110,
+        36,
+        44
+      ],
+      "height": 128
+    },
+    "CityC10_Depot_CrossingCorner": {
+      "section": "Depot",
+      "role": "Scenery",
+      "footprint": [
+        3675,
+        -66,
+        27,
+        22
+      ],
+      "height": 114
+    },
+    "CityC10_Depot_EastRefuge": {
+      "section": "Depot",
+      "role": "Scenery",
+      "footprint": [
+        3760,
+        -53,
+        36,
+        30
+      ],
+      "height": 106
+    },
+    "CityC10_Station_EastArrival": {
+      "section": "Station",
+      "role": "Scenery",
+      "footprint": [
+        3885,
+        58,
+        40,
+        40
+      ],
+      "height": 113
+    },
+    "CityC10_Station_EastArcade": {
+      "section": "Station",
+      "role": "Scenery",
+      "footprint": [
+        3890,
+        119,
+        44,
+        46
+      ],
+      "height": 131
+    },
+    "CityC10_Station_EastCorner": {
+      "section": "Station",
+      "role": "Scenery",
+      "footprint": [
+        3884,
+        181,
+        42,
+        48
+      ],
+      "height": 142
+    },
+    "CityC10_Station_SouthCourt": {
+      "section": "Station",
+      "role": "Scenery",
+      "footprint": [
+        3828,
+        274,
+        46,
+        34
+      ],
+      "height": 137
+    },
+    "CityC10_Station_SouthHotel": {
+      "section": "Station",
+      "role": "Scenery",
+      "footprint": [
+        3772,
+        277,
+        42,
+        29
+      ],
+      "height": 127
+    },
+    "Roof_ServiceBox1": {
+      "section": "Roof",
+      "role": "Scenery"
+    },
+    "Roof_ServiceBox2": {
+      "section": "Roof",
+      "role": "Scenery"
+    },
+    "Roof_ServiceBox3": {
+      "section": "Roof",
+      "role": "Scenery"
+    },
+    "Depot_RoofVent1": {
+      "section": "Depot",
+      "role": "Scenery"
+    },
+    "Depot_RoofVent2": {
+      "section": "Depot",
+      "role": "Scenery"
+    },
+    "Depot_RoofVent3": {
+      "section": "Depot",
+      "role": "Scenery"
+    },
+    "Station_ServicePlanter1": {
+      "section": "Station",
+      "role": "Scenery"
+    },
+    "Station_ServicePlanter2": {
+      "section": "Station",
+      "role": "Scenery"
+    },
+    "Station_ServicePlanter3": {
+      "section": "Station",
+      "role": "Scenery"
+    },
+    "MarkerOrigin": {
+      "section": "Calibration",
+      "role": "Scenery"
+    },
+    "MarkerRight": {
+      "section": "Calibration",
+      "role": "Scenery"
+    },
+    "MarkerUp": {
+      "section": "Calibration",
+      "role": "Scenery"
+    },
+    "MarkerForward": {
+      "section": "Calibration",
+      "role": "Scenery"
+    }
+  },
+  "meshes": {
+    "Hurdle_DistrictRoofs_00_01__Danger__00": {
+      "component": "Hurdle_DistrictRoofs_00_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_DistrictRoofs_00_03__Danger__00": {
+      "component": "Hurdle_DistrictRoofs_00_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Weave_DistrictRoofs_01_01__Danger__00": {
+      "component": "Weave_DistrictRoofs_01_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Weave_DistrictRoofs_01_02__Danger__00": {
+      "component": "Weave_DistrictRoofs_01_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Weave_DistrictRoofs_01_03__Danger__00": {
+      "component": "Weave_DistrictRoofs_01_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hub_DistrictRoofs_02_01__Iron__00": {
+      "component": "Hub_DistrictRoofs_02_01",
+      "material": "Iron",
+      "triangles": 44
+    },
+    "Hub_DistrictRoofs_02_01__Yellow__00": {
+      "component": "Hub_DistrictRoofs_02_01",
+      "material": "Yellow",
+      "triangles": 44
+    },
+    "Spinner_DistrictRoofs_02_01__Danger__00": {
+      "component": "Spinner_DistrictRoofs_02_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hub_DistrictRoofs_02_03__Iron__00": {
+      "component": "Hub_DistrictRoofs_02_03",
+      "material": "Iron",
+      "triangles": 44
+    },
+    "Hub_DistrictRoofs_02_03__Yellow__00": {
+      "component": "Hub_DistrictRoofs_02_03",
+      "material": "Yellow",
+      "triangles": 44
+    },
+    "Spinner_DistrictRoofs_02_03__Danger__00": {
+      "component": "Spinner_DistrictRoofs_02_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "SpinnerCross_DistrictRoofs_02_03__Danger__00": {
+      "component": "SpinnerCross_DistrictRoofs_02_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_DistrictRoofs_04_01__Danger__00": {
+      "component": "Hurdle_DistrictRoofs_04_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_RoofMainEntry_00_01__Danger__00": {
+      "component": "Hurdle_RoofMainEntry_00_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_RoofMainEntry_01_01__Danger__00": {
+      "component": "Hurdle_RoofMainEntry_01_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_RoofMainMiddle_00_02__Danger__00": {
+      "component": "Hurdle_RoofMainMiddle_00_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_RoofMainMiddle_02_01__Danger__00": {
+      "component": "Hurdle_RoofMainMiddle_02_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Weave_RoofGarden_00_01__Danger__00": {
+      "component": "Weave_RoofGarden_00_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Weave_RoofGarden_01_01__Danger__00": {
+      "component": "Weave_RoofGarden_01_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_DepotAccess_00_01__Danger__00": {
+      "component": "Hurdle_DepotAccess_00_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Weave_StationaryTrains_00_01__Danger__00": {
+      "component": "Weave_StationaryTrains_00_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Weave_StationaryTrains_00_02__Danger__00": {
+      "component": "Weave_StationaryTrains_00_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Weave_StationaryTrains_00_03__Danger__00": {
+      "component": "Weave_StationaryTrains_00_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_StationaryTrains_00_02__Danger__00": {
+      "component": "Hurdle_StationaryTrains_00_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_DepotExit_00_01__Danger__00": {
+      "component": "Hurdle_DepotExit_00_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_StationEntry_02__Danger__00": {
+      "component": "Hurdle_StationEntry_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_StationEntry_05__Danger__00": {
+      "component": "Hurdle_StationEntry_05",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_StationMain_00_01__Danger__00": {
+      "component": "Hurdle_StationMain_00_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Weave_StationMain_00_02__Danger__00": {
+      "component": "Weave_StationMain_00_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hub_StationMain_00_03__Iron__00": {
+      "component": "Hub_StationMain_00_03",
+      "material": "Iron",
+      "triangles": 44
+    },
+    "Hub_StationMain_00_03__Yellow__00": {
+      "component": "Hub_StationMain_00_03",
+      "material": "Yellow",
+      "triangles": 44
+    },
+    "Spinner_StationMain_00_03__Danger__00": {
+      "component": "Spinner_StationMain_00_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_StationMain_00_05__Danger__00": {
+      "component": "Hurdle_StationMain_00_05",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Weave_StationMain_01_08__Danger__00": {
+      "component": "Weave_StationMain_01_08",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hurdle_StationMain_02_01__Danger__00": {
+      "component": "Hurdle_StationMain_02_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "Hub_StationMain_02_03__Iron__00": {
+      "component": "Hub_StationMain_02_03",
+      "material": "Iron",
+      "triangles": 44
+    },
+    "Hub_StationMain_02_03__Yellow__00": {
+      "component": "Hub_StationMain_02_03",
+      "material": "Yellow",
+      "triangles": 44
+    },
+    "Spinner_StationMain_02_03__Danger__00": {
+      "component": "Spinner_StationMain_02_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "ExpertEdge_X03_01_02__Danger__00": {
+      "component": "ExpertEdge_X03_01_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "ExpertEdge_X03_01_04__Danger__00": {
+      "component": "ExpertEdge_X03_01_04",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "ExpertEdge_X03_01_06__Danger__00": {
+      "component": "ExpertEdge_X03_01_06",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "ExpertEdge_X03_01_08__Danger__00": {
+      "component": "ExpertEdge_X03_01_08",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "StationCrumble_Row01_Lane1__Crumble__00": {
+      "component": "StationCrumble_Row01_Lane1",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row01_Lane1__WoodDark__00": {
+      "component": "StationCrumble_Row01_Lane1",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row01_Lane2__Crumble__00": {
+      "component": "StationCrumble_Row01_Lane2",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row01_Lane2__WoodDark__00": {
+      "component": "StationCrumble_Row01_Lane2",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row01_Lane3__Crumble__00": {
+      "component": "StationCrumble_Row01_Lane3",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row01_Lane3__WoodDark__00": {
+      "component": "StationCrumble_Row01_Lane3",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row02_Lane1__Crumble__00": {
+      "component": "StationCrumble_Row02_Lane1",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row02_Lane1__WoodDark__00": {
+      "component": "StationCrumble_Row02_Lane1",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row02_Lane2__Crumble__00": {
+      "component": "StationCrumble_Row02_Lane2",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row02_Lane2__WoodDark__00": {
+      "component": "StationCrumble_Row02_Lane2",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row02_Lane3__Crumble__00": {
+      "component": "StationCrumble_Row02_Lane3",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row02_Lane3__WoodDark__00": {
+      "component": "StationCrumble_Row02_Lane3",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row03_Lane1__Crumble__00": {
+      "component": "StationCrumble_Row03_Lane1",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row03_Lane1__WoodDark__00": {
+      "component": "StationCrumble_Row03_Lane1",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row03_Lane2__Crumble__00": {
+      "component": "StationCrumble_Row03_Lane2",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row03_Lane2__WoodDark__00": {
+      "component": "StationCrumble_Row03_Lane2",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row03_Lane3__Crumble__00": {
+      "component": "StationCrumble_Row03_Lane3",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row03_Lane3__WoodDark__00": {
+      "component": "StationCrumble_Row03_Lane3",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row04_Lane1__Crumble__00": {
+      "component": "StationCrumble_Row04_Lane1",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row04_Lane1__WoodDark__00": {
+      "component": "StationCrumble_Row04_Lane1",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row04_Lane2__Crumble__00": {
+      "component": "StationCrumble_Row04_Lane2",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row04_Lane2__WoodDark__00": {
+      "component": "StationCrumble_Row04_Lane2",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row04_Lane3__Crumble__00": {
+      "component": "StationCrumble_Row04_Lane3",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row04_Lane3__WoodDark__00": {
+      "component": "StationCrumble_Row04_Lane3",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row05_Lane1__Crumble__00": {
+      "component": "StationCrumble_Row05_Lane1",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row05_Lane1__WoodDark__00": {
+      "component": "StationCrumble_Row05_Lane1",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row05_Lane2__Crumble__00": {
+      "component": "StationCrumble_Row05_Lane2",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row05_Lane2__WoodDark__00": {
+      "component": "StationCrumble_Row05_Lane2",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row05_Lane3__Crumble__00": {
+      "component": "StationCrumble_Row05_Lane3",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row05_Lane3__WoodDark__00": {
+      "component": "StationCrumble_Row05_Lane3",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row06_Lane1__Crumble__00": {
+      "component": "StationCrumble_Row06_Lane1",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row06_Lane1__WoodDark__00": {
+      "component": "StationCrumble_Row06_Lane1",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row06_Lane2__Crumble__00": {
+      "component": "StationCrumble_Row06_Lane2",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row06_Lane2__WoodDark__00": {
+      "component": "StationCrumble_Row06_Lane2",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row06_Lane3__Crumble__00": {
+      "component": "StationCrumble_Row06_Lane3",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row06_Lane3__WoodDark__00": {
+      "component": "StationCrumble_Row06_Lane3",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row07_Lane1__Crumble__00": {
+      "component": "StationCrumble_Row07_Lane1",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row07_Lane1__WoodDark__00": {
+      "component": "StationCrumble_Row07_Lane1",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row07_Lane2__Crumble__00": {
+      "component": "StationCrumble_Row07_Lane2",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row07_Lane2__WoodDark__00": {
+      "component": "StationCrumble_Row07_Lane2",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row07_Lane3__Crumble__00": {
+      "component": "StationCrumble_Row07_Lane3",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row07_Lane3__WoodDark__00": {
+      "component": "StationCrumble_Row07_Lane3",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row08_Lane1__Crumble__00": {
+      "component": "StationCrumble_Row08_Lane1",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row08_Lane1__WoodDark__00": {
+      "component": "StationCrumble_Row08_Lane1",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row08_Lane2__Crumble__00": {
+      "component": "StationCrumble_Row08_Lane2",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row08_Lane2__WoodDark__00": {
+      "component": "StationCrumble_Row08_Lane2",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row08_Lane3__Crumble__00": {
+      "component": "StationCrumble_Row08_Lane3",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row08_Lane3__WoodDark__00": {
+      "component": "StationCrumble_Row08_Lane3",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row09_Lane1__Crumble__00": {
+      "component": "StationCrumble_Row09_Lane1",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row09_Lane1__WoodDark__00": {
+      "component": "StationCrumble_Row09_Lane1",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row09_Lane2__Crumble__00": {
+      "component": "StationCrumble_Row09_Lane2",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row09_Lane2__WoodDark__00": {
+      "component": "StationCrumble_Row09_Lane2",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Row09_Lane3__Crumble__00": {
+      "component": "StationCrumble_Row09_Lane3",
+      "material": "Crumble",
+      "triangles": 12
+    },
+    "StationCrumble_Row09_Lane3__WoodDark__00": {
+      "component": "StationCrumble_Row09_Lane3",
+      "material": "WoodDark",
+      "triangles": 24
+    },
+    "StationCrumble_Scaffold__Rail__00": {
+      "component": "StationCrumble_Scaffold",
+      "material": "Rail",
+      "triangles": 404
+    },
+    "StationCrumble_Scaffold__Iron__00": {
+      "component": "StationCrumble_Scaffold",
+      "material": "Iron",
+      "triangles": 72
+    },
+    "RouteArrow_RoofEntry__Direction__00": {
+      "component": "RouteArrow_RoofEntry",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_RoofTurnNorth__Direction__00": {
+      "component": "RouteArrow_RoofTurnNorth",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_RoofTurnEast__Direction__00": {
+      "component": "RouteArrow_RoofTurnEast",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_RoofTurnNorth2__Direction__00": {
+      "component": "RouteArrow_RoofTurnNorth2",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_RoofTurnEast2__Direction__00": {
+      "component": "RouteArrow_RoofTurnEast2",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_WorkLoop__Direction__00": {
+      "component": "RouteArrow_WorkLoop",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_WorkReturn__Direction__00": {
+      "component": "RouteArrow_WorkReturn",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_GardenTurn__Direction__00": {
+      "component": "RouteArrow_GardenTurn",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_DepotTurn__Direction__00": {
+      "component": "RouteArrow_DepotTurn",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_DepotTransfer__Direction__00": {
+      "component": "RouteArrow_DepotTransfer",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_DepotExit__Direction__00": {
+      "component": "RouteArrow_DepotExit",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_StationTurn__Direction__00": {
+      "component": "RouteArrow_StationTurn",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_StationHome__Direction__00": {
+      "component": "RouteArrow_StationHome",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "RouteArrow_StationLastTurn__Direction__00": {
+      "component": "RouteArrow_StationLastTurn",
+      "material": "Direction",
+      "triangles": 24
+    },
+    "StationCrumble_EntrySign__Iron__00": {
+      "component": "StationCrumble_EntrySign",
+      "material": "Iron",
+      "triangles": 56
+    },
+    "StationCrumble_EntrySign__Teal__00": {
+      "component": "StationCrumble_EntrySign",
+      "material": "Teal",
+      "triangles": 12
+    },
+    "StationCrumble_EntrySign__Cream__00": {
+      "component": "StationCrumble_EntrySign",
+      "material": "Cream",
+      "triangles": 936
+    },
+    "CityC10_Roof_WestCorner__Brick__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Brick",
+      "triangles": 24
+    },
+    "CityC10_Roof_WestCorner__Stone__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Roof_WestCorner__Cream__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Cream",
+      "triangles": 6348
+    },
+    "CityC10_Roof_WestCorner__Roof__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Roof_WestCorner__Iron__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Iron",
+      "triangles": 6764
+    },
+    "CityC10_Roof_WestCorner__Glass__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Glass",
+      "triangles": 732
+    },
+    "CityC10_Roof_WestCorner__Teal__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Teal",
+      "triangles": 600
+    },
+    "CityC10_Roof_WestCorner__WindowGlow__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "WindowGlow",
+      "triangles": 156
+    },
+    "CityC10_Roof_WestCorner__WoodDark__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "WoodDark",
+      "triangles": 408
+    },
+    "CityC10_Roof_WestCorner__Terracotta__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Terracotta",
+      "triangles": 432
+    },
+    "CityC10_Roof_WestCorner__Soil__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Soil",
+      "triangles": 108
+    },
+    "CityC10_Roof_WestCorner__LeafLight__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "LeafLight",
+      "triangles": 2160
+    },
+    "CityC10_Roof_WestCorner__Yellow__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Yellow",
+      "triangles": 3240
+    },
+    "CityC10_Roof_WestCorner__Leaf__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Leaf",
+      "triangles": 4320
+    },
+    "CityC10_Roof_WestCorner__Coral__00": {
+      "component": "CityC10_Roof_WestCorner",
+      "material": "Coral",
+      "triangles": 4860
+    },
+    "CityC10_Roof_InnerCorner__Plaster__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Plaster",
+      "triangles": 12
+    },
+    "CityC10_Roof_InnerCorner__Stone__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Roof_InnerCorner__Cream__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Cream",
+      "triangles": 6204
+    },
+    "CityC10_Roof_InnerCorner__Roof__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Roof",
+      "triangles": 24
+    },
+    "CityC10_Roof_InnerCorner__Iron__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Iron",
+      "triangles": 4920
+    },
+    "CityC10_Roof_InnerCorner__Glass__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Glass",
+      "triangles": 720
+    },
+    "CityC10_Roof_InnerCorner__WindowGlow__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "WindowGlow",
+      "triangles": 168
+    },
+    "CityC10_Roof_InnerCorner__WoodDark__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "WoodDark",
+      "triangles": 288
+    },
+    "CityC10_Roof_InnerCorner__Wood__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Wood",
+      "triangles": 384
+    },
+    "CityC10_Roof_InnerCorner__Terracotta__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Terracotta",
+      "triangles": 420
+    },
+    "CityC10_Roof_InnerCorner__Soil__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Soil",
+      "triangles": 96
+    },
+    "CityC10_Roof_InnerCorner__LeafLight__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "LeafLight",
+      "triangles": 1920
+    },
+    "CityC10_Roof_InnerCorner__Yellow__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Yellow",
+      "triangles": 2880
+    },
+    "CityC10_Roof_InnerCorner__Leaf__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Leaf",
+      "triangles": 3840
+    },
+    "CityC10_Roof_InnerCorner__Coral__00": {
+      "component": "CityC10_Roof_InnerCorner",
+      "material": "Coral",
+      "triangles": 4320
+    },
+    "CityC10_Roof_EastCourt__Sage__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Sage",
+      "triangles": 12
+    },
+    "CityC10_Roof_EastCourt__Stone__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Roof_EastCourt__Cream__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Cream",
+      "triangles": 7452
+    },
+    "CityC10_Roof_EastCourt__Roof__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Roof_EastCourt__Terracotta__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Terracotta",
+      "triangles": 480
+    },
+    "CityC10_Roof_EastCourt__Iron__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Iron",
+      "triangles": 7688
+    },
+    "CityC10_Roof_EastCourt__Iron__01": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Iron",
+      "triangles": 396
+    },
+    "CityC10_Roof_EastCourt__Glass__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Glass",
+      "triangles": 888
+    },
+    "CityC10_Roof_EastCourt__Coral__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Coral",
+      "triangles": 5448
+    },
+    "CityC10_Roof_EastCourt__WindowGlow__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "WindowGlow",
+      "triangles": 216
+    },
+    "CityC10_Roof_EastCourt__WoodDark__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "WoodDark",
+      "triangles": 504
+    },
+    "CityC10_Roof_EastCourt__Teal__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Teal",
+      "triangles": 672
+    },
+    "CityC10_Roof_EastCourt__Soil__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Soil",
+      "triangles": 120
+    },
+    "CityC10_Roof_EastCourt__LeafLight__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "LeafLight",
+      "triangles": 2400
+    },
+    "CityC10_Roof_EastCourt__Yellow__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Yellow",
+      "triangles": 3600
+    },
+    "CityC10_Roof_EastCourt__Leaf__00": {
+      "component": "CityC10_Roof_EastCourt",
+      "material": "Leaf",
+      "triangles": 4800
+    },
+    "CityC10_Roof_NorthFrame__Brick__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Brick",
+      "triangles": 12
+    },
+    "CityC10_Roof_NorthFrame__Stone__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Roof_NorthFrame__Cream__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Cream",
+      "triangles": 2868
+    },
+    "CityC10_Roof_NorthFrame__Roof__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Roof_NorthFrame__Terracotta__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Terracotta",
+      "triangles": 204
+    },
+    "CityC10_Roof_NorthFrame__Iron__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Iron",
+      "triangles": 2776
+    },
+    "CityC10_Roof_NorthFrame__Glass__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Glass",
+      "triangles": 336
+    },
+    "CityC10_Roof_NorthFrame__Coral__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Coral",
+      "triangles": 1680
+    },
+    "CityC10_Roof_NorthFrame__WindowGlow__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "WindowGlow",
+      "triangles": 84
+    },
+    "CityC10_Roof_NorthFrame__WoodDark__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "WoodDark",
+      "triangles": 144
+    },
+    "CityC10_Roof_NorthFrame__Wood__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Wood",
+      "triangles": 192
+    },
+    "CityC10_Roof_NorthFrame__Soil__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Soil",
+      "triangles": 36
+    },
+    "CityC10_Roof_NorthFrame__LeafLight__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "LeafLight",
+      "triangles": 720
+    },
+    "CityC10_Roof_NorthFrame__Yellow__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Yellow",
+      "triangles": 1080
+    },
+    "CityC10_Roof_NorthFrame__Leaf__00": {
+      "component": "CityC10_Roof_NorthFrame",
+      "material": "Leaf",
+      "triangles": 1440
+    },
+    "CityC10_Roof_GardenFrame__Powder__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Powder",
+      "triangles": 12
+    },
+    "CityC10_Roof_GardenFrame__Stone__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Roof_GardenFrame__Cream__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Cream",
+      "triangles": 2664
+    },
+    "CityC10_Roof_GardenFrame__Roof__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Roof_GardenFrame__Brick__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Brick",
+      "triangles": 12
+    },
+    "CityC10_Roof_GardenFrame__Iron__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Iron",
+      "triangles": 2740
+    },
+    "CityC10_Roof_GardenFrame__Glass__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Glass",
+      "triangles": 312
+    },
+    "CityC10_Roof_GardenFrame__Teal__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Teal",
+      "triangles": 252
+    },
+    "CityC10_Roof_GardenFrame__WindowGlow__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "WindowGlow",
+      "triangles": 72
+    },
+    "CityC10_Roof_GardenFrame__WoodDark__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "WoodDark",
+      "triangles": 144
+    },
+    "CityC10_Roof_GardenFrame__Terracotta__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Terracotta",
+      "triangles": 156
+    },
+    "CityC10_Roof_GardenFrame__Soil__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Soil",
+      "triangles": 36
+    },
+    "CityC10_Roof_GardenFrame__LeafLight__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "LeafLight",
+      "triangles": 720
+    },
+    "CityC10_Roof_GardenFrame__Yellow__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Yellow",
+      "triangles": 1080
+    },
+    "CityC10_Roof_GardenFrame__Leaf__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Leaf",
+      "triangles": 1440
+    },
+    "CityC10_Roof_GardenFrame__Coral__00": {
+      "component": "CityC10_Roof_GardenFrame",
+      "material": "Coral",
+      "triangles": 1620
+    },
+    "CityC10_Depot_WestArrival__Ochre__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Ochre",
+      "triangles": 12
+    },
+    "CityC10_Depot_WestArrival__Stone__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Depot_WestArrival__Cream__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Cream",
+      "triangles": 7596
+    },
+    "CityC10_Depot_WestArrival__Cream__01": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Cream",
+      "triangles": 1104
+    },
+    "CityC10_Depot_WestArrival__Roof__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Depot_WestArrival__Terracotta__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Terracotta",
+      "triangles": 588
+    },
+    "CityC10_Depot_WestArrival__Iron__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Iron",
+      "triangles": 7700
+    },
+    "CityC10_Depot_WestArrival__Iron__01": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Iron",
+      "triangles": 276
+    },
+    "CityC10_Depot_WestArrival__Glass__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Glass",
+      "triangles": 984
+    },
+    "CityC10_Depot_WestArrival__Coral__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Coral",
+      "triangles": 5448
+    },
+    "CityC10_Depot_WestArrival__WindowGlow__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "WindowGlow",
+      "triangles": 240
+    },
+    "CityC10_Depot_WestArrival__WoodDark__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "WoodDark",
+      "triangles": 480
+    },
+    "CityC10_Depot_WestArrival__Wood__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Wood",
+      "triangles": 624
+    },
+    "CityC10_Depot_WestArrival__Soil__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Soil",
+      "triangles": 120
+    },
+    "CityC10_Depot_WestArrival__LeafLight__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "LeafLight",
+      "triangles": 2400
+    },
+    "CityC10_Depot_WestArrival__Yellow__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Yellow",
+      "triangles": 3600
+    },
+    "CityC10_Depot_WestArrival__Leaf__00": {
+      "component": "CityC10_Depot_WestArrival",
+      "material": "Leaf",
+      "triangles": 4800
+    },
+    "CityC10_Depot_EastWorks__Brick__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Brick",
+      "triangles": 12
+    },
+    "CityC10_Depot_EastWorks__Stone__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Depot_EastWorks__Cream__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Cream",
+      "triangles": 7596
+    },
+    "CityC10_Depot_EastWorks__Cream__01": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Cream",
+      "triangles": 576
+    },
+    "CityC10_Depot_EastWorks__Roof__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Roof",
+      "triangles": 24
+    },
+    "CityC10_Depot_EastWorks__Iron__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Iron",
+      "triangles": 7488
+    },
+    "CityC10_Depot_EastWorks__Glass__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Glass",
+      "triangles": 984
+    },
+    "CityC10_Depot_EastWorks__WindowGlow__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "WindowGlow",
+      "triangles": 240
+    },
+    "CityC10_Depot_EastWorks__WoodDark__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "WoodDark",
+      "triangles": 480
+    },
+    "CityC10_Depot_EastWorks__Terracotta__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Terracotta",
+      "triangles": 480
+    },
+    "CityC10_Depot_EastWorks__Soil__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Soil",
+      "triangles": 120
+    },
+    "CityC10_Depot_EastWorks__LeafLight__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "LeafLight",
+      "triangles": 2400
+    },
+    "CityC10_Depot_EastWorks__Yellow__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Yellow",
+      "triangles": 3600
+    },
+    "CityC10_Depot_EastWorks__Leaf__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Leaf",
+      "triangles": 4800
+    },
+    "CityC10_Depot_EastWorks__Coral__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Coral",
+      "triangles": 5400
+    },
+    "CityC10_Depot_EastWorks__Teal__00": {
+      "component": "CityC10_Depot_EastWorks",
+      "material": "Teal",
+      "triangles": 624
+    },
+    "CityC10_Depot_WestYard__Plaster__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Plaster",
+      "triangles": 12
+    },
+    "CityC10_Depot_WestYard__Stone__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Depot_WestYard__Cream__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Cream",
+      "triangles": 4080
+    },
+    "CityC10_Depot_WestYard__Roof__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Roof",
+      "triangles": 24
+    },
+    "CityC10_Depot_WestYard__Iron__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Iron",
+      "triangles": 3132
+    },
+    "CityC10_Depot_WestYard__Glass__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Glass",
+      "triangles": 468
+    },
+    "CityC10_Depot_WestYard__WindowGlow__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "WindowGlow",
+      "triangles": 96
+    },
+    "CityC10_Depot_WestYard__WoodDark__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "WoodDark",
+      "triangles": 180
+    },
+    "CityC10_Depot_WestYard__Wood__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Wood",
+      "triangles": 240
+    },
+    "CityC10_Depot_WestYard__Terracotta__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Terracotta",
+      "triangles": 276
+    },
+    "CityC10_Depot_WestYard__Soil__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Soil",
+      "triangles": 60
+    },
+    "CityC10_Depot_WestYard__LeafLight__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "LeafLight",
+      "triangles": 1200
+    },
+    "CityC10_Depot_WestYard__Yellow__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Yellow",
+      "triangles": 1800
+    },
+    "CityC10_Depot_WestYard__Leaf__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Leaf",
+      "triangles": 2400
+    },
+    "CityC10_Depot_WestYard__Coral__00": {
+      "component": "CityC10_Depot_WestYard",
+      "material": "Coral",
+      "triangles": 2700
+    },
+    "CityC10_Depot_EastHotel__Sage__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Sage",
+      "triangles": 12
+    },
+    "CityC10_Depot_EastHotel__Stone__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Depot_EastHotel__Cream__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Cream",
+      "triangles": 6216
+    },
+    "CityC10_Depot_EastHotel__Roof__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Depot_EastHotel__Teal__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Teal",
+      "triangles": 464
+    },
+    "CityC10_Depot_EastHotel__Iron__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Iron",
+      "triangles": 5508
+    },
+    "CityC10_Depot_EastHotel__Glass__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Glass",
+      "triangles": 780
+    },
+    "CityC10_Depot_EastHotel__WindowGlow__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "WindowGlow",
+      "triangles": 168
+    },
+    "CityC10_Depot_EastHotel__WoodDark__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "WoodDark",
+      "triangles": 336
+    },
+    "CityC10_Depot_EastHotel__Terracotta__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Terracotta",
+      "triangles": 348
+    },
+    "CityC10_Depot_EastHotel__Soil__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Soil",
+      "triangles": 84
+    },
+    "CityC10_Depot_EastHotel__LeafLight__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "LeafLight",
+      "triangles": 1680
+    },
+    "CityC10_Depot_EastHotel__Yellow__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Yellow",
+      "triangles": 2520
+    },
+    "CityC10_Depot_EastHotel__Leaf__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Leaf",
+      "triangles": 3360
+    },
+    "CityC10_Depot_EastHotel__Coral__00": {
+      "component": "CityC10_Depot_EastHotel",
+      "material": "Coral",
+      "triangles": 3780
+    },
+    "CityC10_Depot_CrossingCorner__Powder__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Powder",
+      "triangles": 12
+    },
+    "CityC10_Depot_CrossingCorner__Stone__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Depot_CrossingCorner__Cream__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Cream",
+      "triangles": 5676
+    },
+    "CityC10_Depot_CrossingCorner__Roof__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Depot_CrossingCorner__Teal__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Teal",
+      "triangles": 440
+    },
+    "CityC10_Depot_CrossingCorner__Iron__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Iron",
+      "triangles": 5244
+    },
+    "CityC10_Depot_CrossingCorner__Glass__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Glass",
+      "triangles": 600
+    },
+    "CityC10_Depot_CrossingCorner__WindowGlow__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "WindowGlow",
+      "triangles": 144
+    },
+    "CityC10_Depot_CrossingCorner__WoodDark__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "WoodDark",
+      "triangles": 288
+    },
+    "CityC10_Depot_CrossingCorner__Terracotta__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Terracotta",
+      "triangles": 432
+    },
+    "CityC10_Depot_CrossingCorner__Soil__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Soil",
+      "triangles": 72
+    },
+    "CityC10_Depot_CrossingCorner__LeafLight__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "LeafLight",
+      "triangles": 1440
+    },
+    "CityC10_Depot_CrossingCorner__Yellow__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Yellow",
+      "triangles": 2160
+    },
+    "CityC10_Depot_CrossingCorner__Leaf__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Leaf",
+      "triangles": 2880
+    },
+    "CityC10_Depot_CrossingCorner__Coral__00": {
+      "component": "CityC10_Depot_CrossingCorner",
+      "material": "Coral",
+      "triangles": 3240
+    },
+    "CityC10_Depot_EastRefuge__Plaster__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Plaster",
+      "triangles": 12
+    },
+    "CityC10_Depot_EastRefuge__Stone__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Depot_EastRefuge__Cream__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Cream",
+      "triangles": 2328
+    },
+    "CityC10_Depot_EastRefuge__Roof__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Roof",
+      "triangles": 24
+    },
+    "CityC10_Depot_EastRefuge__Iron__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Iron",
+      "triangles": 1836
+    },
+    "CityC10_Depot_EastRefuge__Glass__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Glass",
+      "triangles": 288
+    },
+    "CityC10_Depot_EastRefuge__WindowGlow__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "WindowGlow",
+      "triangles": 60
+    },
+    "CityC10_Depot_EastRefuge__WoodDark__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "WoodDark",
+      "triangles": 108
+    },
+    "CityC10_Depot_EastRefuge__Terracotta__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Terracotta",
+      "triangles": 144
+    },
+    "CityC10_Depot_EastRefuge__Soil__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Soil",
+      "triangles": 36
+    },
+    "CityC10_Depot_EastRefuge__LeafLight__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "LeafLight",
+      "triangles": 720
+    },
+    "CityC10_Depot_EastRefuge__Yellow__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Yellow",
+      "triangles": 1080
+    },
+    "CityC10_Depot_EastRefuge__Leaf__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Leaf",
+      "triangles": 1440
+    },
+    "CityC10_Depot_EastRefuge__Coral__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Coral",
+      "triangles": 1620
+    },
+    "CityC10_Depot_EastRefuge__Teal__00": {
+      "component": "CityC10_Depot_EastRefuge",
+      "material": "Teal",
+      "triangles": 144
+    },
+    "CityC10_Station_EastArrival__Brick__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Brick",
+      "triangles": 12
+    },
+    "CityC10_Station_EastArrival__Stone__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Station_EastArrival__Cream__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Cream",
+      "triangles": 3180
+    },
+    "CityC10_Station_EastArrival__Roof__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Station_EastArrival__Terracotta__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Terracotta",
+      "triangles": 192
+    },
+    "CityC10_Station_EastArrival__Iron__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Iron",
+      "triangles": 2756
+    },
+    "CityC10_Station_EastArrival__Glass__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Glass",
+      "triangles": 408
+    },
+    "CityC10_Station_EastArrival__Coral__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Coral",
+      "triangles": 1668
+    },
+    "CityC10_Station_EastArrival__WindowGlow__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "WindowGlow",
+      "triangles": 96
+    },
+    "CityC10_Station_EastArrival__WoodDark__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "WoodDark",
+      "triangles": 144
+    },
+    "CityC10_Station_EastArrival__Teal__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Teal",
+      "triangles": 192
+    },
+    "CityC10_Station_EastArrival__Soil__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Soil",
+      "triangles": 36
+    },
+    "CityC10_Station_EastArrival__LeafLight__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "LeafLight",
+      "triangles": 720
+    },
+    "CityC10_Station_EastArrival__Yellow__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Yellow",
+      "triangles": 1080
+    },
+    "CityC10_Station_EastArrival__Leaf__00": {
+      "component": "CityC10_Station_EastArrival",
+      "material": "Leaf",
+      "triangles": 1440
+    },
+    "CityC10_Station_EastArcade__Ochre__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Ochre",
+      "triangles": 12
+    },
+    "CityC10_Station_EastArcade__Stone__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Station_EastArcade__Cream__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Cream",
+      "triangles": 3492
+    },
+    "CityC10_Station_EastArcade__Roof__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Roof",
+      "triangles": 24
+    },
+    "CityC10_Station_EastArcade__Iron__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Iron",
+      "triangles": 2940
+    },
+    "CityC10_Station_EastArcade__Glass__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Glass",
+      "triangles": 444
+    },
+    "CityC10_Station_EastArcade__WindowGlow__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "WindowGlow",
+      "triangles": 108
+    },
+    "CityC10_Station_EastArcade__WoodDark__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "WoodDark",
+      "triangles": 192
+    },
+    "CityC10_Station_EastArcade__Wood__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Wood",
+      "triangles": 240
+    },
+    "CityC10_Station_EastArcade__Terracotta__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Terracotta",
+      "triangles": 180
+    },
+    "CityC10_Station_EastArcade__Soil__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Soil",
+      "triangles": 48
+    },
+    "CityC10_Station_EastArcade__LeafLight__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "LeafLight",
+      "triangles": 960
+    },
+    "CityC10_Station_EastArcade__Yellow__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Yellow",
+      "triangles": 1440
+    },
+    "CityC10_Station_EastArcade__Leaf__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Leaf",
+      "triangles": 1920
+    },
+    "CityC10_Station_EastArcade__Coral__00": {
+      "component": "CityC10_Station_EastArcade",
+      "material": "Coral",
+      "triangles": 2160
+    },
+    "CityC10_Station_EastCorner__Sage__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Sage",
+      "triangles": 12
+    },
+    "CityC10_Station_EastCorner__Stone__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Station_EastCorner__Cream__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Cream",
+      "triangles": 3852
+    },
+    "CityC10_Station_EastCorner__Roof__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Station_EastCorner__Terracotta__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Terracotta",
+      "triangles": 240
+    },
+    "CityC10_Station_EastCorner__Iron__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Iron",
+      "triangles": 4140
+    },
+    "CityC10_Station_EastCorner__Glass__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Glass",
+      "triangles": 492
+    },
+    "CityC10_Station_EastCorner__Coral__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Coral",
+      "triangles": 2772
+    },
+    "CityC10_Station_EastCorner__WindowGlow__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "WindowGlow",
+      "triangles": 108
+    },
+    "CityC10_Station_EastCorner__WoodDark__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "WoodDark",
+      "triangles": 240
+    },
+    "CityC10_Station_EastCorner__Teal__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Teal",
+      "triangles": 312
+    },
+    "CityC10_Station_EastCorner__Soil__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Soil",
+      "triangles": 60
+    },
+    "CityC10_Station_EastCorner__LeafLight__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "LeafLight",
+      "triangles": 1200
+    },
+    "CityC10_Station_EastCorner__Yellow__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Yellow",
+      "triangles": 1800
+    },
+    "CityC10_Station_EastCorner__Leaf__00": {
+      "component": "CityC10_Station_EastCorner",
+      "material": "Leaf",
+      "triangles": 2400
+    },
+    "CityC10_Station_SouthCourt__Brick__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Brick",
+      "triangles": 24
+    },
+    "CityC10_Station_SouthCourt__Stone__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Station_SouthCourt__Cream__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Cream",
+      "triangles": 3876
+    },
+    "CityC10_Station_SouthCourt__Roof__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Station_SouthCourt__Iron__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Iron",
+      "triangles": 3492
+    },
+    "CityC10_Station_SouthCourt__Glass__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Glass",
+      "triangles": 480
+    },
+    "CityC10_Station_SouthCourt__Teal__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Teal",
+      "triangles": 312
+    },
+    "CityC10_Station_SouthCourt__WindowGlow__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "WindowGlow",
+      "triangles": 120
+    },
+    "CityC10_Station_SouthCourt__WoodDark__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "WoodDark",
+      "triangles": 192
+    },
+    "CityC10_Station_SouthCourt__Terracotta__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Terracotta",
+      "triangles": 192
+    },
+    "CityC10_Station_SouthCourt__Soil__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Soil",
+      "triangles": 48
+    },
+    "CityC10_Station_SouthCourt__LeafLight__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "LeafLight",
+      "triangles": 960
+    },
+    "CityC10_Station_SouthCourt__Yellow__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Yellow",
+      "triangles": 1440
+    },
+    "CityC10_Station_SouthCourt__Leaf__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Leaf",
+      "triangles": 1920
+    },
+    "CityC10_Station_SouthCourt__Coral__00": {
+      "component": "CityC10_Station_SouthCourt",
+      "material": "Coral",
+      "triangles": 2160
+    },
+    "CityC10_Station_SouthHotel__Powder__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Powder",
+      "triangles": 12
+    },
+    "CityC10_Station_SouthHotel__Stone__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "CityC10_Station_SouthHotel__Cream__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Cream",
+      "triangles": 5508
+    },
+    "CityC10_Station_SouthHotel__Roof__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "CityC10_Station_SouthHotel__Teal__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Teal",
+      "triangles": 8
+    },
+    "CityC10_Station_SouthHotel__Iron__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Iron",
+      "triangles": 3216
+    },
+    "CityC10_Station_SouthHotel__Glass__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Glass",
+      "triangles": 648
+    },
+    "CityC10_Station_SouthHotel__WindowGlow__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "WindowGlow",
+      "triangles": 168
+    },
+    "CityC10_Station_SouthHotel__WoodDark__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "WoodDark",
+      "triangles": 168
+    },
+    "CityC10_Station_SouthHotel__Wood__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Wood",
+      "triangles": 216
+    },
+    "CityC10_Station_SouthHotel__Terracotta__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Terracotta",
+      "triangles": 300
+    },
+    "CityC10_Station_SouthHotel__Soil__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Soil",
+      "triangles": 36
+    },
+    "CityC10_Station_SouthHotel__LeafLight__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "LeafLight",
+      "triangles": 720
+    },
+    "CityC10_Station_SouthHotel__Yellow__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Yellow",
+      "triangles": 1080
+    },
+    "CityC10_Station_SouthHotel__Leaf__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Leaf",
+      "triangles": 1440
+    },
+    "CityC10_Station_SouthHotel__Coral__00": {
+      "component": "CityC10_Station_SouthHotel",
+      "material": "Coral",
+      "triangles": 1620
+    },
+    "Roof_ServiceBox1__Rail__00": {
+      "component": "Roof_ServiceBox1",
+      "material": "Rail",
+      "triangles": 12
+    },
+    "Roof_ServiceBox1__Iron__00": {
+      "component": "Roof_ServiceBox1",
+      "material": "Iron",
+      "triangles": 60
+    },
+    "Roof_ServiceBox1__Cream__00": {
+      "component": "Roof_ServiceBox1",
+      "material": "Cream",
+      "triangles": 12
+    },
+    "Roof_ServiceBox2__Rail__00": {
+      "component": "Roof_ServiceBox2",
+      "material": "Rail",
+      "triangles": 12
+    },
+    "Roof_ServiceBox2__Iron__00": {
+      "component": "Roof_ServiceBox2",
+      "material": "Iron",
+      "triangles": 60
+    },
+    "Roof_ServiceBox2__Cream__00": {
+      "component": "Roof_ServiceBox2",
+      "material": "Cream",
+      "triangles": 12
+    },
+    "Roof_ServiceBox3__Rail__00": {
+      "component": "Roof_ServiceBox3",
+      "material": "Rail",
+      "triangles": 12
+    },
+    "Roof_ServiceBox3__Iron__00": {
+      "component": "Roof_ServiceBox3",
+      "material": "Iron",
+      "triangles": 60
+    },
+    "Roof_ServiceBox3__Cream__00": {
+      "component": "Roof_ServiceBox3",
+      "material": "Cream",
+      "triangles": 12
+    },
+    "Depot_RoofVent1__Rail__00": {
+      "component": "Depot_RoofVent1",
+      "material": "Rail",
+      "triangles": 12
+    },
+    "Depot_RoofVent1__Iron__00": {
+      "component": "Depot_RoofVent1",
+      "material": "Iron",
+      "triangles": 48
+    },
+    "Depot_RoofVent2__Rail__00": {
+      "component": "Depot_RoofVent2",
+      "material": "Rail",
+      "triangles": 12
+    },
+    "Depot_RoofVent2__Iron__00": {
+      "component": "Depot_RoofVent2",
+      "material": "Iron",
+      "triangles": 48
+    },
+    "Depot_RoofVent3__Rail__00": {
+      "component": "Depot_RoofVent3",
+      "material": "Rail",
+      "triangles": 12
+    },
+    "Depot_RoofVent3__Iron__00": {
+      "component": "Depot_RoofVent3",
+      "material": "Iron",
+      "triangles": 48
+    },
+    "Station_ServicePlanter1__Terracotta__00": {
+      "component": "Station_ServicePlanter1",
+      "material": "Terracotta",
+      "triangles": 12
+    },
+    "Station_ServicePlanter1__Soil__00": {
+      "component": "Station_ServicePlanter1",
+      "material": "Soil",
+      "triangles": 12
+    },
+    "Station_ServicePlanter1__LeafLight__00": {
+      "component": "Station_ServicePlanter1",
+      "material": "LeafLight",
+      "triangles": 112
+    },
+    "Station_ServicePlanter1__Leaf__00": {
+      "component": "Station_ServicePlanter1",
+      "material": "Leaf",
+      "triangles": 56
+    },
+    "Station_ServicePlanter2__Terracotta__00": {
+      "component": "Station_ServicePlanter2",
+      "material": "Terracotta",
+      "triangles": 12
+    },
+    "Station_ServicePlanter2__Soil__00": {
+      "component": "Station_ServicePlanter2",
+      "material": "Soil",
+      "triangles": 12
+    },
+    "Station_ServicePlanter2__LeafLight__00": {
+      "component": "Station_ServicePlanter2",
+      "material": "LeafLight",
+      "triangles": 112
+    },
+    "Station_ServicePlanter2__Leaf__00": {
+      "component": "Station_ServicePlanter2",
+      "material": "Leaf",
+      "triangles": 56
+    },
+    "Station_ServicePlanter3__Terracotta__00": {
+      "component": "Station_ServicePlanter3",
+      "material": "Terracotta",
+      "triangles": 12
+    },
+    "Station_ServicePlanter3__Soil__00": {
+      "component": "Station_ServicePlanter3",
+      "material": "Soil",
+      "triangles": 12
+    },
+    "Station_ServicePlanter3__LeafLight__00": {
+      "component": "Station_ServicePlanter3",
+      "material": "LeafLight",
+      "triangles": 112
+    },
+    "Station_ServicePlanter3__Leaf__00": {
+      "component": "Station_ServicePlanter3",
+      "material": "Leaf",
+      "triangles": 56
+    },
+    "MarkerOrigin__Iron__00": {
+      "component": "MarkerOrigin",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerRight__Iron__00": {
+      "component": "MarkerRight",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerUp__Iron__00": {
+      "component": "MarkerUp",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerForward__Iron__00": {
+      "component": "MarkerForward",
+      "material": "Iron",
+      "triangles": 12
+    }
+  },
+  "colors": {
+    "Brick": [
+      0.66,
+      0.26,
+      0.16
+    ],
+    "Terracotta": [
+      0.79,
+      0.37,
+      0.23
+    ],
+    "Plaster": [
+      0.93,
+      0.76,
+      0.48
+    ],
+    "Cream": [
+      0.93,
+      0.87,
+      0.72
+    ],
+    "Stone": [
+      0.64,
+      0.65,
+      0.61
+    ],
+    "Roof": [
+      0.24,
+      0.3,
+      0.32
+    ],
+    "Teal": [
+      0.035,
+      0.49,
+      0.48
+    ],
+    "Coral": [
+      0.89,
+      0.24,
+      0.2
+    ],
+    "Yellow": [
+      0.99,
+      0.66,
+      0.1
+    ],
+    "Blue": [
+      0.08,
+      0.3,
+      0.58
+    ],
+    "Iron": [
+      0.095,
+      0.14,
+      0.18
+    ],
+    "Glass": [
+      0.16,
+      0.27,
+      0.31
+    ],
+    "Wood": [
+      0.43,
+      0.26,
+      0.13
+    ],
+    "Leaf": [
+      0.22,
+      0.42,
+      0.14
+    ],
+    "LeafLight": [
+      0.45,
+      0.6,
+      0.19
+    ],
+    "Soil": [
+      0.22,
+      0.17,
+      0.12
+    ],
+    "Red": [
+      0.96,
+      0.055,
+      0.035
+    ],
+    "White": [
+      0.96,
+      0.95,
+      0.85
+    ],
+    "Rail": [
+      0.37,
+      0.43,
+      0.46
+    ],
+    "Skyline": [
+      0.4,
+      0.52,
+      0.57
+    ],
+    "Light": [
+      1,
+      0.86,
+      0.48
+    ],
+    "WoodLight": [
+      0.59,
+      0.4,
+      0.23
+    ],
+    "WoodDark": [
+      0.3,
+      0.18,
+      0.1
+    ],
+    "WindowGlow": [
+      0.96,
+      0.72,
+      0.34
+    ],
+    "Danger": [
+      1,
+      0.02,
+      0.015
+    ],
+    "Direction": [
+      0.02,
+      0.85,
+      0.87
+    ],
+    "Crumble": [
+      0.91,
+      0.69,
+      0.16
+    ],
+    "Sage": [
+      0.4,
+      0.54,
+      0.39
+    ],
+    "Ochre": [
+      0.78,
+      0.54,
+      0.28
+    ],
+    "Powder": [
+      0.4,
+      0.58,
+      0.64
+    ]
+  },
+  "replacements": [
+    "StationMain_01_02",
+    "StationMain_01_03",
+    "StationMain_01_04",
+    "StationMain_01_05"
+  ],
+  "expectedOwnerBuild": "C09_05_Park"
+}

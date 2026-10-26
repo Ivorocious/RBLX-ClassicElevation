@@ -1,0 +1,159 @@
+{
+  "build": "V3_STAGE2_02",
+  "scope": "V3 scenery assembly; gameplay inherited unchanged from preserved V2",
+  "studioSource": "ServerStorage.CityRunInspectionSources.Rebuilt",
+  "editorPreview": "Workspace.CityRunV3Stage2Preview (8000 studs east)",
+  "instances": 350,
+  "visualTriangles": 137672,
+  "uniqueVisualMeshes": 31,
+  "files": [
+    {
+      "path": "CityRun_V3_Stage2.blend",
+      "bytes": 1040094,
+      "sha256": "f104d2e3280e07b7363222f2b743449332adaebe69cdb1f552dc61958e6fe935"
+    },
+    {
+      "path": "CityRun_V3_Stage2.rbxm",
+      "bytes": 1013060,
+      "sha256": "9930d5308e96daef9f73df4af9e11f92d69e9a0725a4d3b6911fb0fa30155559"
+    },
+    {
+      "path": "stage2-layout.json",
+      "bytes": 118687,
+      "sha256": "17c7dbde3244c5bf7d90a56aff9c178cc3f6b6e39b57898e299aac96981ffe56"
+    },
+    {
+      "path": "assemble_stage2.luau",
+      "bytes": 71099,
+      "sha256": "3303fed0ba9d53a23cbc0b13e39a1b71786adbacc38ef1ee2089b037530194fb"
+    },
+    {
+      "path": "plan_stage2.py",
+      "bytes": 5824,
+      "sha256": "ba24612cdec00cd0ad5ca7a953da364c981ec892978422119c6cbc1df7c07ada"
+    },
+    {
+      "path": "assemble_stage2_blender.py",
+      "bytes": 2278,
+      "sha256": "9dbc64b64707459e51de9ddca1e3f3e742f00eaf1994ae785b48c7a45dfdee82"
+    },
+    {
+      "path": "audit_stage2.luau",
+      "bytes": 3216,
+      "sha256": "dbac70bee8e8fd52664ccd85dba55b3a1bd38c60abe4fe42c69858bd60f18e2f"
+    }
+  ],
+  "metrics": {
+    "original": {
+      "meshes": 3857,
+      "uniqueMeshes": 2807,
+      "query": 3461,
+      "touch": 502,
+      "colliders": 617,
+      "parts": 5411,
+      "instances": 7150
+    },
+    "optimized": {
+      "meshes": 3857,
+      "uniqueMeshes": 2406,
+      "query": 1044,
+      "touch": 361,
+      "colliders": 498,
+      "parts": 5209,
+      "instances": 6853
+    },
+    "rebuilt": {
+      "meshes": 1945,
+      "uniqueMeshes": 1166,
+      "query": 1044,
+      "touch": 361,
+      "colliders": 498,
+      "parts": 3297,
+      "instances": 4298
+    }
+  },
+  "nativeRoundTrip": {
+    "bytes": 1013060,
+    "descendants": 4298,
+    "pivotSame": true,
+    "visualParts": 350
+  },
+  "reviews": {
+    "LunaMaxGrounding": 8.2,
+    "LunaMaxReadability": 8.2,
+    "TerraHigh": 8.2,
+    "SolLow": 8.6
+  },
+  "runtime": "Inspection starts and UI loads; manual variant-switch test pending",
+  "performance": "No measured mobile FPS, memory, or20player claim",
+  "evidence": [
+    {
+      "file": "construction_forward.jpg",
+      "sha256": "f7a91309b5c071d77fa7313d4db6faa54537fa4464ce1c40a631274b0218ce5b"
+    },
+    {
+      "file": "construction_ledge.jpg",
+      "sha256": "89b4c41ee09521638b1fb880f39e1beaa398975d602deb9dbd0246a73e862b0a"
+    },
+    {
+      "file": "construction_reverse.jpg",
+      "sha256": "fd3fb322c829c75888ce629062c9d088f087ff4ca46f0a863009fe3363fc556a"
+    },
+    {
+      "file": "court_expert.jpg",
+      "sha256": "35fd2d6a3016229341304b502322f7f30665cf54251cab3bda8acb2f72299367"
+    },
+    {
+      "file": "court_fall.jpg",
+      "sha256": "394c1e57c394d12a43a0a1093e675f45d244e332725544124a442cd5d1def45c"
+    },
+    {
+      "file": "court_main.jpg",
+      "sha256": "0a19191f3fe1aa3913bf1c0c7931927b571a456cb4f6f1c0742e2731b8d0799e"
+    },
+    {
+      "file": "depot_entry.jpg",
+      "sha256": "8dfdd44354b7da1decd69f1c1dc987c00fcef67c039926155ef9da739bf3f81a"
+    },
+    {
+      "file": "depot_exit.jpg",
+      "sha256": "0f3d43be95022056d29035907f5ea4faf3a6ccba23f02137f5af4c1a9ea54f04"
+    },
+    {
+      "file": "finish.jpg",
+      "sha256": "bdd7d1b7a617e3e70a60bdb6bae2aefff8e01def9d8e31b0bcfd0edb9b592c9a"
+    },
+    {
+      "file": "market_forward.jpg",
+      "sha256": "e1ebf6daf6cf0bda3c507b451b993ddb7016f28f2b128392875b419abf0ba55d"
+    },
+    {
+      "file": "market_reverse.jpg",
+      "sha256": "d1a12ac2fdb938c0d9b531150a06511dca28b297bababd1b8448f46ea1dab746"
+    },
+    {
+      "file": "overview.jpg",
+      "sha256": "22ddfc4e58738097ef390358dca69c62f568dccb76c969b3bdaf5c0e43ed7f0c"
+    },
+    {
+      "file": "terminal_crumble.jpg",
+      "sha256": "c6e5e45ae4f4b1b1b6d6f594e39066d6d0f108e5d401d10e8f0587817c56da81"
+    },
+    {
+      "file": "terminal_entry.jpg",
+      "sha256": "a42c461bb6144ce03cc8da3b711700a55a6e71de6fcaa19adde0897fdd1f3568"
+    },
+    {
+      "file": "terminal_expert.jpg",
+      "sha256": "22e547d1968b21667aa98711031d1b7ca900650694b1aaee885c4f920fa5e0e1"
+    },
+    {
+      "file": "terminal_fall.jpg",
+      "sha256": "3ba23afc554749892105cc280c3ba9aeae304ab6df1262c449e884adaf598632"
+    },
+    {
+      "file": "terminal_main.jpg",
+      "sha256": "215fd41d20805183e80789ae9abdcee44f836e831671863c4157d048c3150ece"
+    }
+  ]
+}

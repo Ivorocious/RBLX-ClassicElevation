@@ -1,0 +1,11 @@
+# Wall garden DG01
+
+One new closed composite, `MC_DG_WallGarden24`, supplies supported earth and planting at the gate, west climb, and machinery wall seats. It has three material meshes: Stone, Earth, and Foliage; 1,662 triangles total. Six placements cost 18 meshes and 9,972 triangles.
+
+The intended Roblox origin is the base `(0,0,0)`, up is `+Y`, and the exposed front is `+Z`. Actual bounds are `(-12,0,-0.10)` to `(12,9.6279964,4.27)`. Back mount penetrates the wall by 0.10 stud. The connecting mount plate spans local X ±11.3, Y 2.65–6.05, and Z -0.10–0.26. Three sloped corbels have centres X -8.65/0/8.65, width 2.32, and Y 0–5.22. Their exposed depth increases with height. The earth pocket and stone lip are sloped; this is noncolliding decoration, not a landing.
+
+Asset outputs are under `assets/moonlit_citadel/phase3/detail-pass-20261014/correction54/dg01`. Upload only `MC_WALL_GARDEN_DG01.fbx`. The editable blend includes the three original kit previews. The preview support wall, cameras, and lights are excluded from the FBX.
+
+`combined-manifest.json` contains the old R01 eight assets and all 26 exact old export-part records, plus this garden and its three new records. `combined-occupied-geometry.json` preserves all eight old asset records and adds `assets.MC_DG_WallGarden24.occupied` low/high boxes in intended Roblox XYZ. Both files bind the two source kits by hash. Keep logical `library="DT01"`; the new combined native library is `MoonlitCitadel_Detail_DT02Library`. Copy the old eight verified native templates unchanged. Import and verify only the three new garden meshes.
+
+`BuildGardenKit.py` is the reusable isolated background Blender builder; its recipe is `GardenRecipe.py`. `VerifyGardenKit.py` checks saved closed topology, the corbel/leaf contours, and the actual FBX vertex roundtrip within 0.00001 Blender unit. `garden-final-freeze.json` binds all actual output hashes, three original previews, the roundtrip result, and unchanged Source52/Source53/R01 inputs. Root must still prove actual Roblox vertices, material identity, native basis, final placement clearances, and native appearance. These checks do not establish gameplay, multiplayer, or frame-rate results.

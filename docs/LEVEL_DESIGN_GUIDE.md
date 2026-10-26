@@ -1,5 +1,7 @@
 # Level design guide — lessons from Classic Ascent
 
+For new Course Ideation and Course Creator runs, [V3](COURSE_WORKFLOW_V3.md) is the default and defines the current Phase 0 planning, sequential references and three production phases. Follow its Blender priority, rough whole-route study, finished representative section, phase permissions and owner-selected reviews. These canonical rules supersede older workflow details here. Current decisions persist across follow-ups; the course-specific values and acceptance notes below remain historical.
+
 Owner preferences and reusable working rules, recorded September 6, 2026.
 
 Use this guide for future courses in Project Classic Elevation. It captures the owner's repeated feedback and the implementation lessons from Classic Ascent. It is a design brief, not permission to publish, upload assets, alter progression, or overwrite manual work. See the shorter [chat starter](LEVEL_DESIGN_CHAT_STARTER.md) for a ready-to-paste instruction.
@@ -29,6 +31,8 @@ Think at three distances:
 
 Do not solve only the overhead screenshot. Review from avatar height, during traversal, and looking off both sides.
 
+September 8 owner amendment: use a "smoke and mirrors" approach to the geometry budget. Concentrate detail and immersion on the playable route and the façades, supports, landmarks and scenery visible from it. Simplify distant buildings, hidden faces and areas outside normal player views aggressively. A low total polygon count must not make the course itself look crude. Full-map overhead beauty is not an acceptance goal; judge a coherent environment through the player's actual journey. Keep collision, route clarity and hazard sightlines sound even where scenery uses visual shortcuts.
+
 ## Owner preferences to carry forward
 
 1. Integrate course and environment. Avoid parallel strips of gameplay and decoration.
@@ -42,7 +46,7 @@ Do not solve only the overhead screenshot. Review from avatar height, during tra
 9. Give exposed areas depth. Hidden bottoms, long cliff faces, distant ranges and atmospheric separation should make the player feel high up.
 10. Hazards should move convincingly, communicate danger, and allow a response. The owner disliked stiff linear-looking rocks and snowballs, even when they technically moved.
 11. The ending needs a clear reveal and satisfying arrival. Do not bury the finish beneath roofs, props or hazard clutter.
-12. Spend most effort on design quality. Use Blender where it improves shape and variety. Minimize Computer Use and repetitive automated playtesting; the owner wants to play the course.
+12. Spend most effort on design quality. Blender is the main authoring tool for custom visible course geometry. Minimize Computer Use and repetitive automated playtesting; the owner wants to play the course.
 
 These are defaults grounded in repeated feedback. A new explicit brief can override them. Do not turn a one-course value into a rule for every level.
 
@@ -81,7 +85,7 @@ These are defaults grounded in repeated feedback. A new explicit brief can overr
 - Reuse a coherent kit with variations, not one shape stretched into every object.
 - Distinguish geological rock, ruins, tree roots and ice. A ruined causeway should have broken spans, grounded remnants and believable fractures.
 - Avoid unsupported giant caps balanced on thin identical stems. Do not recreate rejected oval arches with a different mesh name.
-- Use Blender when primitives cannot provide the required silhouette. Moderate detail is welcome; very low polygon counts are not an artistic requirement.
+- Use Blender for custom visible shapes, with suitable existing assets and intentional native contacts. Moderate detail is welcome; very low polygon counts are not an artistic requirement.
 - Spend mesh detail where players see it. Hidden undersides and distant forms do not need the same detail as foreground assets.
 - Preview assets at game scale after import. A good Blender gallery does not prove a good Roblox composition.
 
@@ -132,7 +136,7 @@ These are defaults grounded in repeated feedback. A new explicit brief can overr
 2. **Write a compact section plan.** For each section state theme, core action, hazard, safe point, landmark and transition. Ask only about missing choices that materially affect the design.
 3. **Establish the overall form.** Build the route, terrain mass, altitude and major silhouettes. Prevent shortcuts and reserve the finish reveal.
 4. **Build representative sections.** Solve one forest, one exposed jump area and one moving hazard where relevant. Reuse the successful patterns with variation; do not duplicate their exact layout.
-5. **Add mechanics and asset kits.** Use existing services and approved assets first. Use Blender for missing shapes. Keep colors, dimensions, names and asset IDs reproducible.
+5. **Add mechanics and asset kits.** Reuse existing services and suitable approved assets; author custom visible geometry in Blender. Keep colors, dimensions, names and asset IDs reproducible.
 6. **Review from the player's view.** Check path clarity, scale, grounding, both side views, underside depth, hazard origins and the destination. Inspect the moving river or equivalent problematic mechanic directly.
 7. **Run proportional checks.** Build/compile, inspect checkpoint order and route boundaries, then one focused live check for changed gameplay. Only repeat when a failure or new change justifies it.
 8. **Deliver a concrete result.** Explain changes, evidence and limits. Preserve before-update copies. Request any required upload/replacement approval only after preparing the reviewable asset/candidate.
@@ -167,7 +171,7 @@ Use repository tools, Rojo and Studio MCP before Computer Use. Headless Blender 
 - Never equate a lower part count with a measured FPS improvement. Consider mesh complexity, particles, transparency overlap, collision and replication as well.
 - A build, screenshot or automated movement sample is not proof of final difficulty, 20-player fairness or human fun.
 
-For manual tuning, the durable authored course is `ServerStorage.CourseLibrary.Course_ClassicAscentPointToPoint`; `Workspace.RaceCourse` is the loaded runtime copy. The manual preview is hidden in `ServerStorage.CoursePreviews` while the default scene is the lobby. Capture accepted manual geometry into the library and save the Studio place. Rojo/Git do not automatically save all hand-authored place geometry. Preserve the current version/revision markers so an already-applied pass does not scale props again.
+After the September 7 V7 restoration, edit `Workspace.Course_ClassicAscentPointToPoint` while stopped. Play takes that editing model into its own CourseLibrary and loads a separate `Workspace.RaceCourse`; no manual copy-back is needed. The Edit-mode library copy is a backup. Save the Studio place for geometry; Rojo/Git do not automatically save hand-authored map edits. Existing V7 models are returned unchanged by the builder. Follow the [current editing guide](CLASSIC_ASCENT_EDITING.md).
 
 ## Classic Ascent reference values — not universal defaults
 

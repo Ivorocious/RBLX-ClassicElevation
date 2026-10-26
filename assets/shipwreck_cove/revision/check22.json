@@ -1,0 +1,2034 @@
+{
+  "build": "SC_MAP_22",
+  "assets": [
+    "ConnectedHeadland",
+    "HeadlandArch",
+    "GroundedHullUnderbody",
+    "R_HullBow_176",
+    "R_HullMid_177",
+    "R_HullStern_178",
+    "CaveApproach",
+    "TideChamber",
+    "ConnectedShoreBank"
+  ],
+  "ship": {
+    "hitSamples": 0,
+    "clusters": []
+  },
+  "cave": {
+    "hitSamples": 0,
+    "clusters": []
+  },
+  "headlandArch": {
+    "hitSamples": 0,
+    "clusters": []
+  },
+  "shoreCrest": {
+    "samples": [
+      {
+        "surface": "S04_Shore_00",
+        "point": [
+          21.6,
+          9,
+          67.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_00",
+        "point": [
+          21.6,
+          9,
+          72.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_00",
+        "point": [
+          21.6,
+          9,
+          76.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_00",
+        "point": [
+          27.0,
+          9,
+          67.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_00",
+        "point": [
+          27.0,
+          9,
+          72.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_00",
+        "point": [
+          27.0,
+          9,
+          76.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_00",
+        "point": [
+          32.4,
+          9,
+          67.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_00",
+        "point": [
+          32.4,
+          9,
+          72.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_00",
+        "point": [
+          32.4,
+          9,
+          76.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_01",
+        "point": [
+          4.6,
+          9,
+          81.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_01",
+        "point": [
+          4.6,
+          9,
+          86.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_01",
+        "point": [
+          4.6,
+          9,
+          90.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_01",
+        "point": [
+          10.0,
+          9,
+          81.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_01",
+        "point": [
+          10.0,
+          9,
+          86.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_01",
+        "point": [
+          10.0,
+          9,
+          90.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_01",
+        "point": [
+          15.4,
+          9,
+          81.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_01",
+        "point": [
+          15.4,
+          9,
+          86.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_01",
+        "point": [
+          15.4,
+          9,
+          90.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_02",
+        "point": [
+          -13.4,
+          9,
+          90.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_02",
+        "point": [
+          -13.4,
+          9,
+          95.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_02",
+        "point": [
+          -13.4,
+          9,
+          99.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_02",
+        "point": [
+          -8.0,
+          9,
+          90.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_02",
+        "point": [
+          -8.0,
+          9,
+          95.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_02",
+        "point": [
+          -8.0,
+          9,
+          99.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_02",
+        "point": [
+          -2.5999999999999996,
+          9,
+          90.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_02",
+        "point": [
+          -2.5999999999999996,
+          9,
+          95.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_02",
+        "point": [
+          -2.5999999999999996,
+          9,
+          99.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_03",
+        "point": [
+          -32.4,
+          9,
+          98.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_03",
+        "point": [
+          -32.4,
+          9,
+          103.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_03",
+        "point": [
+          -32.4,
+          9,
+          107.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_03",
+        "point": [
+          -27.0,
+          9,
+          98.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_03",
+        "point": [
+          -27.0,
+          9,
+          103.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_03",
+        "point": [
+          -27.0,
+          9,
+          107.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_03",
+        "point": [
+          -21.6,
+          9,
+          98.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_03",
+        "point": [
+          -21.6,
+          9,
+          103.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_03",
+        "point": [
+          -21.6,
+          9,
+          107.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_04",
+        "point": [
+          -51.4,
+          9,
+          107.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_04",
+        "point": [
+          -51.4,
+          9,
+          112.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_04",
+        "point": [
+          -51.4,
+          9,
+          116.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_04",
+        "point": [
+          -46.0,
+          9,
+          107.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_04",
+        "point": [
+          -46.0,
+          9,
+          112.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_04",
+        "point": [
+          -46.0,
+          9,
+          116.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_04",
+        "point": [
+          -40.6,
+          9,
+          107.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_04",
+        "point": [
+          -40.6,
+          9,
+          112.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_04",
+        "point": [
+          -40.6,
+          9,
+          116.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_05",
+        "point": [
+          -71.4,
+          9,
+          116.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_05",
+        "point": [
+          -71.4,
+          9,
+          121.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_05",
+        "point": [
+          -71.4,
+          9,
+          125.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_05",
+        "point": [
+          -66.0,
+          9,
+          116.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_05",
+        "point": [
+          -66.0,
+          9,
+          121.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_05",
+        "point": [
+          -66.0,
+          9,
+          125.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_05",
+        "point": [
+          -60.6,
+          9,
+          116.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_05",
+        "point": [
+          -60.6,
+          9,
+          121.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_05",
+        "point": [
+          -60.6,
+          9,
+          125.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_06",
+        "point": [
+          -90.4,
+          9,
+          124.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_06",
+        "point": [
+          -90.4,
+          9,
+          129.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_06",
+        "point": [
+          -90.4,
+          9,
+          133.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_06",
+        "point": [
+          -85.0,
+          9,
+          124.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_06",
+        "point": [
+          -85.0,
+          9,
+          129.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_06",
+        "point": [
+          -85.0,
+          9,
+          133.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_06",
+        "point": [
+          -79.6,
+          9,
+          124.05
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_06",
+        "point": [
+          -79.6,
+          9,
+          129.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "S04_Shore_06",
+        "point": [
+          -79.6,
+          9,
+          133.95
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk0",
+        "point": [
+          29.93018777147761,
+          9,
+          76.58235500854457
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk0",
+        "point": [
+          26.49736860602767,
+          9,
+          72.4139317362125
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk0",
+        "point": [
+          23.064549440577732,
+          9,
+          68.24550846388044
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk0",
+        "point": [
+          21.93281916544994,
+          9,
+          83.16842327233206
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk0",
+        "point": [
+          18.5,
+          9,
+          79.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk0",
+        "point": [
+          15.067180834550062,
+          9,
+          74.83157672766794
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk0",
+        "point": [
+          13.935450559422266,
+          9,
+          89.75449153611956
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk0",
+        "point": [
+          10.502631393972328,
+          9,
+          85.5860682637875
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk0",
+        "point": [
+          7.069812228522389,
+          9,
+          81.41764499145543
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk1",
+        "point": [
+          11.917445651649736,
+          9,
+          91.07866071342455
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk1",
+        "point": [
+          9.502492235949962,
+          9,
+          86.24875388202501
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk1",
+        "point": [
+          7.087538820250188,
+          9,
+          81.41884705062547
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk1",
+        "point": [
+          3.414953415699774,
+          9,
+          95.32990683139954
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk1",
+        "point": [
+          1.0,
+          9,
+          90.5
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk1",
+        "point": [
+          -1.4149534156997738,
+          9,
+          85.67009316860046
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk1",
+        "point": [
+          -5.087538820250188,
+          9,
+          99.58115294937453
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk1",
+        "point": [
+          -7.502492235949962,
+          9,
+          94.75124611797499
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk1",
+        "point": [
+          -9.917445651649736,
+          9,
+          89.92133928657545
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk2",
+        "point": [
+          -6.439756280873952,
+          9,
+          100.20220537571939
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk2",
+        "point": [
+          -8.535264081187869,
+          9,
+          95.22537434997383
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk2",
+        "point": [
+          -10.630771881501786,
+          9,
+          90.24854332422828
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk2",
+        "point": [
+          -15.404492199686082,
+          9,
+          103.97683102574555
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk2",
+        "point": [
+          -17.5,
+          9,
+          99.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk2",
+        "point": [
+          -19.595507800313918,
+          9,
+          94.02316897425445
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk2",
+        "point": [
+          -24.369228118498214,
+          9,
+          107.75145667577172
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk2",
+        "point": [
+          -26.46473591881213,
+          9,
+          102.77462565002617
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk2",
+        "point": [
+          -28.56024371912605,
+          9,
+          97.79779462428061
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk3",
+        "point": [
+          -25.23165171090707,
+          9,
+          108.13754547489253
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk3",
+        "point": [
+          -27.54331797249791,
+          9,
+          103.25736114486743
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk3",
+        "point": [
+          -29.85498423408875,
+          9,
+          98.37717681484233
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk3",
+        "point": [
+          -34.188333738409156,
+          9,
+          112.38018433002512
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk3",
+        "point": [
+          -36.5,
+          9,
+          107.5
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk3",
+        "point": [
+          -38.811666261590844,
+          9,
+          102.61981566997488
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk3",
+        "point": [
+          -43.145015765911246,
+          9,
+          116.62282318515767
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk3",
+        "point": [
+          -45.45668202750209,
+          9,
+          111.74263885513257
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk3",
+        "point": [
+          -47.768348289092934,
+          9,
+          106.86245452510747
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk4",
+        "point": [
+          -44.37366606509569,
+          9,
+          117.18971202314762
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk4",
+        "point": [
+          -46.5896353226712,
+          9,
+          112.26533589520204
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk4",
+        "point": [
+          -48.80560458024671,
+          9,
+          107.34095976725646
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk4",
+        "point": [
+          -53.78403074242449,
+          9,
+          121.42437612794558
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk4",
+        "point": [
+          -56.0,
+          9,
+          116.5
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk4",
+        "point": [
+          -58.21596925757551,
+          9,
+          111.57562387205442
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk4",
+        "point": [
+          -63.19439541975329,
+          9,
+          125.65904023274354
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk4",
+        "point": [
+          -65.4103646773288,
+          9,
+          120.73466410479796
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk4",
+        "point": [
+          -67.62633393490431,
+          9,
+          115.81028797685238
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk5",
+        "point": [
+          -64.43975628087397,
+          9,
+          126.20220537571939
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk5",
+        "point": [
+          -66.53526408118788,
+          9,
+          121.22537434997383
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk5",
+        "point": [
+          -68.63077188150179,
+          9,
+          116.24854332422828
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk5",
+        "point": [
+          -73.40449219968609,
+          9,
+          129.97683102574555
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk5",
+        "point": [
+          -75.5,
+          9,
+          125.0
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk5",
+        "point": [
+          -77.59550780031391,
+          9,
+          120.02316897425445
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk5",
+        "point": [
+          -82.36922811849821,
+          9,
+          133.75145667577172
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk5",
+        "point": [
+          -84.46473591881212,
+          9,
+          128.77462565002617
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      },
+      {
+        "surface": "ShoreWalk5",
+        "point": [
+          -86.56024371912603,
+          9,
+          123.79779462428061
+        ],
+        "meshTop": 8.0,
+        "error": 0.0
+      }
+    ],
+    "unsupported": []
+  },
+  "caveRoof": {
+    "sampleCount": 213,
+    "uncovered": [],
+    "minimum": {
+      "segment": 3,
+      "route": [
+        117.9,
+        10.0,
+        45.4
+      ],
+      "offset": 0,
+      "roof": 25.83,
+      "roofAsset": "TideChamber",
+      "headroom": 15.83
+    },
+    "below8": []
+  },
+  "ridgeSupport": [
+    {
+      "node": 0,
+      "route": [
+        20,
+        45,
+        -106
+      ],
+      "ridgeTop": 42.1,
+      "gap": 2.9
+    },
+    {
+      "node": 1,
+      "route": [
+        34,
+        48,
+        -120
+      ],
+      "ridgeTop": 45.1,
+      "gap": 2.9
+    },
+    {
+      "node": 2,
+      "route": [
+        50,
+        51,
+        -130
+      ],
+      "ridgeTop": 48.1,
+      "gap": 2.9
+    },
+    {
+      "node": 3,
+      "route": [
+        67,
+        54,
+        -137
+      ],
+      "ridgeTop": 40.1,
+      "gap": 13.9
+    },
+    {
+      "node": 4,
+      "route": [
+        84,
+        55,
+        -130
+      ],
+      "ridgeTop": 52.1,
+      "gap": 2.9
+    },
+    {
+      "node": 5,
+      "route": [
+        101,
+        53,
+        -116
+      ],
+      "ridgeTop": 50.1,
+      "gap": 2.9
+    },
+    {
+      "node": 6,
+      "route": [
+        116,
+        49,
+        -101
+      ],
+      "ridgeTop": 46.1,
+      "gap": 2.9
+    },
+    {
+      "node": 7,
+      "route": [
+        129,
+        44,
+        -85
+      ],
+      "ridgeTop": 30.1,
+      "gap": 13.9
+    },
+    {
+      "node": 8,
+      "route": [
+        134,
+        39,
+        -66
+      ],
+      "ridgeTop": 36.1,
+      "gap": 2.9
+    },
+    {
+      "node": 9,
+      "route": [
+        127,
+        33,
+        -48
+      ],
+      "ridgeTop": 30.1,
+      "gap": 2.9
+    },
+    {
+      "node": 10,
+      "route": [
+        119,
+        26,
+        -33
+      ],
+      "ridgeTop": 23.1,
+      "gap": 2.9
+    }
+  ],
+  "ridgeLedgeFootprint": [
+    {
+      "name": "S03_00",
+      "ledgeBottom": 42,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 42.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 41.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_01",
+      "ledgeBottom": 45,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 45.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 44.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_02",
+      "ledgeBottom": 48,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 48.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 47.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_04",
+      "ledgeBottom": 52,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 52.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 51.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_05",
+      "ledgeBottom": 50,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 50.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 50.02,
+          "gapBelowLedge": -0.02
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 49.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_06",
+      "ledgeBottom": 46,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 46.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 46.28,
+          "gapBelowLedge": -0.28
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 45.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_08",
+      "ledgeBottom": 36,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 36.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 35.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_09",
+      "ledgeBottom": 30,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 30.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 29.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    },
+    {
+      "name": "S03_10",
+      "ledgeBottom": 23,
+      "samples": [
+        {
+          "offset": [
+            -3.5,
+            -3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            0
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            -3.5,
+            3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            -3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "ridgeTop": 23.1,
+          "gapBelowLedge": -0.1
+        },
+        {
+          "offset": [
+            0,
+            3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            -3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            0
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        },
+        {
+          "offset": [
+            3.5,
+            3.5
+          ],
+          "ridgeTop": 22.9,
+          "gapBelowLedge": 0.1
+        }
+      ]
+    }
+  ]
+}

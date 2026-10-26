@@ -1,0 +1,31 @@
+local State=require('../src/ReplicatedStorage/Shared/TournamentStageState')
+local checks=0
+local function check(value,message) checks+=1;assert(value,message) end
+local function row(rank,id,status,official,time)
+ return {placement=rank,userId=id,name='Player'..id,displayName='Player'..id,status=status or 'Finished',official=official~=false,finishTime=time or 12}
+end
+local state=State.New('tournament-A')
+State.Bind(state,1,'city','race-1')
+check(not State.Capture(state,{raceId='stale',courseId='city',placements={row(1,1)}}),'stale race')
+check(not State.Capture(state,{raceId='race-1',courseId='wrong',placements={row(1,1)}}),'wrong course')
+check(State.Capture(state,{raceId='race-1',courseId='city',placements={row(1,1),row(2,2,'DNF'),row(3,3,nil,false),row(4,4)}}),'capture valid race')
+check(#state.results[1].finishers==1,'DNF and unofficial excluded')
+check(not State.Capture(state,{raceId='race-1',courseId='city',placements={}}),'one capture only')
+State.Bind(state,2,'cove','race-2')
+check(State.Capture(state,{raceId='race-2',courseId='cove',placements={row(1,8),row(2,9),row(3,10)}}),'second map')
+check(state.results[1].courseId=='city' and state.results[2].courseId=='cove','distinct results retained')
+local copy=State.CopyResults(state)
+copy[1].finishers[1].displayName='mutated'
+check(state.results[1].finishers[1].displayName=='Player1','deep result copy')
+State.Bind(state,3,'other','race-3')
+check(State.Capture(state,{raceId='race-3',courseId='other',placements={row(1,1),row(2,1),row(3,2,nil,true,math.huge)}}),'invalid rows ignored')
+check(#state.results[3].finishers==1,'duplicates and infinite times excluded')
+check(next(State.New('new').results)==nil,'new tournament resets')
+local invalid=State.New('malformed')
+State.Bind(invalid,1,'city','bad-rows')
+check(State.Capture(invalid,{raceId='bad-rows',courseId='city',placements={'bad',row(1,0/0),row(2,math.huge),row(3,-math.huge),row(2,1.5),row(3,11)}}),'malformed rows do not abort capture')
+check(#invalid.results[1].finishers==1 and invalid.results[1].finishers[1].userId==11,'invalid user identifiers excluded without promoting third place')
+State.Bind(invalid,2,'city','bad-placements')
+check(State.Capture(invalid,{raceId='bad-placements',courseId='city',placements='bad'}),'invalid placements collection treated as empty')
+check(#invalid.results[2].finishers==0,'empty malformed result has no fabricated finisher')
+print(checks..' tournament podium checks passed')

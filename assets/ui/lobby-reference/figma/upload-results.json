@@ -1,0 +1,62 @@
+[
+  {
+    "name": "coin",
+    "result": {
+      "success": true,
+      "imageHash": "7831159c98cbe6e981fe4451dd6f65aa5453fff7",
+      "sizeBytes": 231617,
+      "contentType": "image/png",
+      "placedOnNodeId": "2:5"
+    }
+  },
+  {
+    "name": "racer",
+    "result": {
+      "success": true,
+      "imageHash": "a47f4d99359bc8d1767447125b78851057780b77",
+      "sizeBytes": 169953,
+      "contentType": "image/png",
+      "placedOnNodeId": "2:2"
+    }
+  },
+  {
+    "name": "trophy",
+    "result": {
+      "success": true,
+      "imageHash": "bdbf0e396d4faee83a4c842d8bde428bf58f858e",
+      "sizeBytes": 185888,
+      "contentType": "image/png",
+      "placedOnNodeId": "2:6"
+    }
+  },
+  {
+    "name": "shop-bag",
+    "result": {
+      "success": true,
+      "imageHash": "f744ffbb108d9e82e1e61ffd5b37c3262790d9c7",
+      "sizeBytes": 177038,
+      "contentType": "image/png",
+      "placedOnNodeId": "2:7"
+    }
+  },
+  {
+    "name": "key",
+    "result": {
+      "success": true,
+      "imageHash": "d0c2bae5b322b9ff57464bdc9bea64783c1ed8d4",
+      "sizeBytes": 155608,
+      "contentType": "image/png",
+      "placedOnNodeId": "2:4"
+    }
+  },
+  {
+    "name": "settings-gear",
+    "result": {
+      "success": true,
+      "imageHash": "4bec06aee253b1eb6d5711fd69da4cc1c92a2b8b",
+      "sizeBytes": 150517,
+      "contentType": "image/png",
+      "placedOnNodeId": "2:3"
+    }
+  }
+]

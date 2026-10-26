@@ -1,0 +1,58 @@
+{
+  "revision": "R2",
+  "folder": "assets/ui/lobby-reference",
+  "files": [
+    "shop-bag-r2.png",
+    "racer-r2.png",
+    "key-r2.png",
+    "panel-ticket-r2.png",
+    "shop-bag-r2.blend",
+    "racer-r2.blend",
+    "key-r2.blend",
+    "panel-ticket-r2.svg",
+    "generate_icons_r2.py",
+    "contact-sheet-r2.png"
+  ],
+  "transparent": true,
+  "iconSize": [
+    512,
+    512
+  ],
+  "ticketSize": [
+    426,
+    122
+  ],
+  "ticketNotchDepth": 9,
+  "ticketOutline": 4,
+  "ticketSliceCenter": [
+    32,
+    32,
+    394,
+    90
+  ],
+  "figma": {
+    "fileKey": "xmfVLaBWKD9yY1Jm79ImSc",
+    "screenId": "3:143",
+    "ticketSourceId": "8:69",
+    "ticketSourceChildIds": [
+      "8:70",
+      "8:71"
+    ],
+    "ticketBackgroundId": "10:69",
+    "ticketBackgroundChildIds": [
+      "10:70",
+      "10:71"
+    ],
+    "updatedIconComponentIds": [
+      "3:58",
+      "3:56",
+      "3:59"
+    ],
+    "imageHashes": {
+      "bag": "48017fd61f730af3102e504a6bf308a958b1e6ee",
+      "racer": "575a017b2e035bf033e29f0853186d353aafe6c6",
+      "key": "f68d87a048a191cbe088c350727f028b25d7947f"
+    },
+    "verification": "Local PNG thumbnails and alpha verified; Figma uploads/mutation confirmed. R2 full-screen screenshot unavailable because Starter-plan MCP tool-call limit was reached."
+  }
+}

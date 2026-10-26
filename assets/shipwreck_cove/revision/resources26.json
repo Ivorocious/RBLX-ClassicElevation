@@ -1,0 +1,11 @@
+{
+  "lights": 5,
+  "meshes": 428,
+  "changed": [],
+  "unique": 45,
+  "collidable": 141,
+  "unchangedOutside": true,
+  "triangles": 25749,
+  "parts": 778,
+  "build": "SC_CAVE_26"
+}

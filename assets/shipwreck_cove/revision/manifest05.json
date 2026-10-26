@@ -1,0 +1,633 @@
+{
+  "build": "SC_REV_05",
+  "units": "1 Blender unit = 1 intended Roblox stud",
+  "coordinates": "Blender is Z-up; local (x,y,z) corresponds to Roblox (x,z,-y) under the existing -Z forward / Y up FBX export. Library object positions are only display spacing; use local mesh vertices.",
+  "shipAssembly": "Place SC_R_HullBow, SC_R_HullMid, SC_R_HullStern origins 20 studs apart along Blender Y, in that order; bow at -20, mid at 0, stern at +20. Add HullDeck at each bay origin +Z9.5. Ship length approximately 60 studs plus bowsprit.",
+  "atlas": "palette.png",
+  "materialCount": 1,
+  "uniqueMeshes": 20,
+  "libraryTriangles": 4243,
+  "estimatedPlacedTriangles": 6771,
+  "assets": [
+    {
+      "id": "SC_R_HullBow",
+      "family": "hull",
+      "triangles": 576,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        26.649999618530273,
+        12.372422575950623,
+        27.169330596923828
+      ],
+      "boundsBlender": {
+        "min": [
+          -13.324999809265137,
+          -16.8193302154541,
+          0.6275774240493774
+        ],
+        "max": [
+          13.324999809265137,
+          10.350000381469727,
+          13.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "bow open-top split-galleon bay; mount pivot remains local origin. Open central bilge reveals sea, upper planks and rails have broken bays. Stern high deck is side galleries with central route opening."
+    },
+    {
+      "id": "SC_R_HullMid",
+      "family": "hull",
+      "triangles": 552,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        26.649999618530273,
+        10.399999976158142,
+        20.700000762939453
+      ],
+      "boundsBlender": {
+        "min": [
+          -13.324999809265137,
+          -10.350000381469727,
+          1.600000023841858
+        ],
+        "max": [
+          13.324999809265137,
+          10.350000381469727,
+          12.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "mid open-top split-galleon bay; mount pivot remains local origin. Open central bilge reveals sea, upper planks and rails have broken bays. Stern high deck is side galleries with central route opening."
+    },
+    {
+      "id": "SC_R_HullStern",
+      "family": "hull",
+      "triangles": 660,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        26.75074863433838,
+        21.149999976158142,
+        20.975000381469727
+      ],
+      "boundsBlender": {
+        "min": [
+          -13.324999809265137,
+          -10.350000381469727,
+          1.600000023841858
+        ],
+        "max": [
+          13.425748825073242,
+          10.625,
+          22.75
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "stern open-top split-galleon bay; mount pivot remains local origin. Open central bilge reveals sea, upper planks and rails have broken bays. Stern high deck is side galleries with central route opening."
+    },
+    {
+      "id": "SC_R_HullDeck",
+      "family": "deck",
+      "triangles": 72,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 3,
+      "dimensionsRobloxXYZ": [
+        22.0,
+        0.9549999833106995,
+        19.0
+      ],
+      "boundsBlender": {
+        "min": [
+          -11.0,
+          -9.5,
+          0.0
+        ],
+        "max": [
+          11.0,
+          9.5,
+          0.9549999833106995
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "hull deck",
+      "notes": "Deck top Z0.95; mount local origin at hull Z9.5, one per bay."
+    },
+    {
+      "id": "SC_R_CannonFourWheel",
+      "family": "cannon",
+      "triangles": 320,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 2,
+      "dimensionsRobloxXYZ": [
+        8.379999876022339,
+        4.622246742248535,
+        4.370000123977661
+      ],
+      "boundsBlender": {
+        "min": [
+          -5.179999828338623,
+          -2.190000057220459,
+          0.0
+        ],
+        "max": [
+          3.200000047683716,
+          2.180000066757202,
+          4.622246742248535
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Local muzzle faces negative X, bore center Z3.5, ground bottom near Z0. Four separate wheels."
+    },
+    {
+      "id": "SC_R_SandIsland",
+      "family": "shore",
+      "triangles": 84,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 2,
+      "dimensionsRobloxXYZ": [
+        36.0,
+        4.0,
+        19.0
+      ],
+      "boundsBlender": {
+        "min": [
+          -18.0,
+          -9.5,
+          0.0
+        ],
+        "max": [
+          18.0,
+          9.5,
+          4.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Irregular rounded golden shoreline with layered edge; pivot at waterline Z0."
+    },
+    {
+      "id": "SC_R_SandWedge",
+      "family": "shore",
+      "triangles": 77,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 3,
+      "dimensionsRobloxXYZ": [
+        26.0,
+        3.0,
+        12.0
+      ],
+      "boundsBlender": {
+        "min": [
+          -13.0,
+          -6.0,
+          0.0
+        ],
+        "max": [
+          13.0,
+          6.0,
+          3.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Irregular rounded golden shoreline with layered edge; pivot at waterline Z0."
+    },
+    {
+      "id": "SC_R_ShoreStep",
+      "family": "shore",
+      "triangles": 58,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 7,
+      "dimensionsRobloxXYZ": [
+        18.0,
+        5.0,
+        17.0
+      ],
+      "boundsBlender": {
+        "min": [
+          -9.0,
+          -8.5,
+          0.0
+        ],
+        "max": [
+          9.0,
+          8.5,
+          5.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Flat 12x11 crown exactly Z5; irregular 18x17 base at Z0. Match a 12x11 box collider at top."
+    },
+    {
+      "id": "SC_R_SeaRockTall",
+      "family": "rock",
+      "triangles": 38,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 6,
+      "dimensionsRobloxXYZ": [
+        11.4463210105896,
+        14.0,
+        9.762908935546875
+      ],
+      "boundsBlender": {
+        "min": [
+          -5.446207523345947,
+          -4.4059929847717285,
+          0.0
+        ],
+        "max": [
+          6.000113487243652,
+          5.3569159507751465,
+          14.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Faceted limestone sea rock; local bottom Z0. Sink lower ring below water or sand."
+    },
+    {
+      "id": "SC_R_SeaRockFlat",
+      "family": "rock",
+      "triangles": 38,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 6,
+      "dimensionsRobloxXYZ": [
+        13.973582744598389,
+        6.0,
+        11.468577861785889
+      ],
+      "boundsBlender": {
+        "min": [
+          -7.041184425354004,
+          -5.937239170074463,
+          0.0
+        ],
+        "max": [
+          6.932398319244385,
+          5.531338691711426,
+          6.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Faceted limestone sea rock; local bottom Z0. Sink lower ring below water or sand."
+    },
+    {
+      "id": "SC_R_SeaRockSpire",
+      "family": "rock",
+      "triangles": 38,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 6,
+      "dimensionsRobloxXYZ": [
+        7.7264649868011475,
+        18.0,
+        7.916446924209595
+      ],
+      "boundsBlender": {
+        "min": [
+          -3.838231086730957,
+          -4.225983142852783,
+          0.0
+        ],
+        "max": [
+          3.8882339000701904,
+          3.6904637813568115,
+          18.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Faceted limestone sea rock; local bottom Z0. Sink lower ring below water or sand."
+    },
+    {
+      "id": "SC_R_CheckpointBeacon",
+      "family": "checkpoint",
+      "triangles": 108,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 2,
+      "dimensionsRobloxXYZ": [
+        20.399999618530273,
+        17.755682907998562,
+        2.4000000953674316
+      ],
+      "boundsBlender": {
+        "min": [
+          -10.199999809265137,
+          -1.2000000476837158,
+          -0.05343528836965561
+        ],
+        "max": [
+          10.199999809265137,
+          1.2000000476837158,
+          17.702247619628906
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Pirate timber frame: opening ~16 studs wide, banner near Z12, top Z17. Separate gameplay trigger required."
+    },
+    {
+      "id": "SC_R_PirateSignboard",
+      "family": "sign",
+      "triangles": 48,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 3,
+      "dimensionsRobloxXYZ": [
+        10.0,
+        11.0,
+        1.600000023841858
+      ],
+      "boundsBlender": {
+        "min": [
+          -5.0,
+          -1.100000023841858,
+          0.0
+        ],
+        "max": [
+          5.0,
+          0.5,
+          11.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Local pole base Z0; front reads toward negative Y. Add text in Roblox if needed."
+    },
+    {
+      "id": "SC_R_GrassClump",
+      "family": "vegetation",
+      "triangles": 5,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 8,
+      "dimensionsRobloxXYZ": [
+        4.200000047683716,
+        4.199999809265137,
+        0.6000000089406967
+      ],
+      "boundsBlender": {
+        "min": [
+          -2.049999952316284,
+          -0.20000000298023224,
+          0.0
+        ],
+        "max": [
+          2.1500000953674316,
+          0.4000000059604645,
+          4.199999809265137
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Local base Z0; visual foliage, keep clear of jumps and camera."
+    },
+    {
+      "id": "SC_R_Shrub",
+      "family": "vegetation",
+      "triangles": 15,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 8,
+      "dimensionsRobloxXYZ": [
+        6.199999809265137,
+        5.0,
+        2.700000047683716
+      ],
+      "boundsBlender": {
+        "min": [
+          -3.0999999046325684,
+          -1.0,
+          0.0
+        ],
+        "max": [
+          3.0999999046325684,
+          1.7000000476837158,
+          5.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Local base Z0; visual foliage, keep clear of jumps and camera."
+    },
+    {
+      "id": "SC_R_FanPalm",
+      "family": "vegetation",
+      "triangles": 64,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 8,
+      "dimensionsRobloxXYZ": [
+        19.00968837738037,
+        19.739912174642086,
+        19.498558044433594
+      ],
+      "boundsBlender": {
+        "min": [
+          -7.209688186645508,
+          -9.749279022216797,
+          -0.039911411702632904
+        ],
+        "max": [
+          11.800000190734863,
+          9.749279022216797,
+          19.700000762939453
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Local base Z0; visual foliage, keep clear of jumps and camera."
+    },
+    {
+      "id": "SC_R_CurlingWave",
+      "family": "wave",
+      "triangles": 92,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 2,
+      "dimensionsRobloxXYZ": [
+        17.994999885559082,
+        12.050000190734863,
+        16.149999618530273
+      ],
+      "boundsBlender": {
+        "min": [
+          -12.199999809265137,
+          -8.074999809265137,
+          0.0
+        ],
+        "max": [
+          5.795000076293945,
+          8.074999809265137,
+          12.050000190734863
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Broad opaque breaking wave; X cross-section and Y length16. Crest Z11.7 curls back toward negative X."
+    },
+    {
+      "id": "SC_R_WaveFoamLip",
+      "family": "foam",
+      "triangles": 24,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 2,
+      "dimensionsRobloxXYZ": [
+        13.0,
+        1.7000000476837158,
+        16.0
+      ],
+      "boundsBlender": {
+        "min": [
+          -5.0,
+          -8.0,
+          0.0
+        ],
+        "max": [
+          8.0,
+          8.0,
+          1.7000000476837158
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Opaque scalloped foam band; align around the base or crest of CurlingWave."
+    },
+    {
+      "id": "SC_R_CaveChamber",
+      "family": "cave",
+      "triangles": 732,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        37.0,
+        25.7947940826416,
+        38.64468002319336
+      ],
+      "boundsBlender": {
+        "min": [
+          -18.5,
+          -19.344858169555664,
+          0.0
+        ],
+        "max": [
+          18.5,
+          19.299821853637695,
+          25.7947940826416
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "36-stud Y tunnel, open at both ends; ceiling center Z24 and full-height +X sea opening at Y -6..6."
+    },
+    {
+      "id": "SC_R_CaveTideBend",
+      "family": "cave",
+      "triangles": 642,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        37.0,
+        25.7947940826416,
+        38.64468002319336
+      ],
+      "boundsBlender": {
+        "min": [
+          -18.5,
+          -19.344858169555664,
+          0.0
+        ],
+        "max": [
+          18.5,
+          19.299821853637695,
+          25.7947940826416
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "36-stud Y tunnel, open at both ends; ceiling center Z24 and full-height +X sea opening at Y -6..6. Extra full-height -X connector at Y 6..18 joins a perpendicular approach chamber."
+    }
+  ]
+}

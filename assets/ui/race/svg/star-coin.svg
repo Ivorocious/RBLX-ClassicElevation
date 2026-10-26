@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 64 64"><defs><linearGradient id="cRim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE066"/><stop offset=".55" stop-color="#FFBE1A"/><stop offset="1" stop-color="#E39100"/></linearGradient>
+<linearGradient id="eGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF6C4"/><stop offset="1" stop-color="#FFD54A"/></linearGradient>
+<radialGradient id="cFace" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#FFF6B8"/><stop offset=".55" stop-color="#FFD84A"/><stop offset="1" stop-color="#F4AE00"/></radialGradient></defs>
+<circle cx="32" cy="32" r="28" fill="url(#cRim)" stroke="#10215C" stroke-width="3.2"/>
+<circle cx="32" cy="32" r="25.3" fill="none" stroke="#FFF3B0" stroke-width="1.4" stroke-dasharray="2.2 3.1" opacity=".9"/>
+<circle cx="32" cy="32" r="22.4" fill="url(#cFace)" stroke="#C98400" stroke-width="2.2"/>
+<path d="M32.00 16.50 L35.82 28.18 L47.50 32.00 L35.82 35.82 L32.00 47.50 L28.18 35.82 L16.50 32.00 L28.18 28.18 Z" fill="url(#eGold)" stroke="#10215C" stroke-width="2" stroke-linejoin="round"/>
+<path d="M13.6 22.2 A20.8 20.8 0 0 1 22.2 13.6" fill="none" stroke="#FFFFFF" stroke-opacity=".8" stroke-width="3.2" stroke-linecap="round"/></svg>

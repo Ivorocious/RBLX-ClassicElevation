@@ -1,0 +1,326 @@
+{
+  "hazardMode": "Production Runtime active in cloned fixture, actual test player temporarily assigned to R15 clone; waits at east refuge for dry phase",
+  "jumpHeight": 7.2,
+  "scenarios": [
+    {
+      "finalPosition": [
+        -843.86,
+        93.62,
+        58
+      ],
+      "name": "cave26Primary",
+      "hazardHits": [],
+      "initialPosition": [
+        -792,
+        98.12,
+        -18
+      ],
+      "passed": true,
+      "links": [
+        {
+          "landingPosition": [
+            -789.95,
+            95.65,
+            -2.65
+          ],
+          "stagingPosition": [
+            -791.03,
+            98,
+            -10.73
+          ],
+          "to": "Cave26Stone00",
+          "startPosition": [
+            -792,
+            97.98,
+            -18
+          ],
+          "groundedTakeoff": true,
+          "gap": 1.62,
+          "arrivedFromPriorLink": false,
+          "from": "R4_CaveEntry",
+          "passed": true,
+          "takeoffPosition": [
+            -790.69,
+            98,
+            -8.17
+          ],
+          "landingSurface": "Cave26Stone00",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -784.65,
+            98.38,
+            6.43
+          ],
+          "stagingPosition": [
+            -789.95,
+            95.7,
+            -2.65
+          ],
+          "to": "Cave26Stone01",
+          "startPosition": [
+            -789.95,
+            95.65,
+            -2.65
+          ],
+          "groundedTakeoff": true,
+          "gap": 8.28,
+          "arrivedFromPriorLink": true,
+          "from": "Cave26Stone00",
+          "passed": true,
+          "takeoffPosition": [
+            -789.46,
+            95.99,
+            -1.81
+          ],
+          "landingSurface": "Cave26Stone01",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -774.96,
+            94.7,
+            17.74
+          ],
+          "stagingPosition": [
+            -783.19,
+            99,
+            8.65
+          ],
+          "to": "Cave26Stone02",
+          "startPosition": [
+            -784.65,
+            98.38,
+            6.43
+          ],
+          "groundedTakeoff": true,
+          "gap": 8.29,
+          "arrivedFromPriorLink": true,
+          "from": "Cave26Stone01",
+          "passed": true,
+          "takeoffPosition": [
+            -781.6,
+            99,
+            10.44
+          ],
+          "landingSurface": "Cave26Stone02",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -779.24,
+            97.84,
+            29.08
+          ],
+          "stagingPosition": [
+            -773.9,
+            95,
+            20.52
+          ],
+          "to": "Cave26Stone03",
+          "startPosition": [
+            -774.96,
+            94.7,
+            17.74
+          ],
+          "groundedTakeoff": true,
+          "gap": 6.24,
+          "arrivedFromPriorLink": true,
+          "from": "Cave26Stone02",
+          "passed": true,
+          "takeoffPosition": [
+            -775,
+            95,
+            22.4
+          ],
+          "landingSurface": "Cave26Stone03",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -773.22,
+            93.7,
+            40.74
+          ],
+          "stagingPosition": [
+            -779.67,
+            97.99,
+            30.46
+          ],
+          "to": "Cave26Stone04",
+          "startPosition": [
+            -779.24,
+            97.84,
+            29.08
+          ],
+          "groundedTakeoff": true,
+          "gap": 7.14,
+          "arrivedFromPriorLink": true,
+          "from": "Cave26Stone03",
+          "passed": true,
+          "takeoffPosition": [
+            -778.52,
+            98,
+            32.42
+          ],
+          "landingSurface": "Cave26Stone04",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -783.1,
+            95.93,
+            46.84
+          ],
+          "stagingPosition": [
+            -773,
+            93.88,
+            41.29
+          ],
+          "to": "Cave26Stone05",
+          "startPosition": [
+            -773.22,
+            93.7,
+            40.74
+          ],
+          "groundedTakeoff": true,
+          "gap": 7.92,
+          "arrivedFromPriorLink": true,
+          "from": "Cave26Stone04",
+          "passed": true,
+          "takeoffPosition": [
+            -774.6,
+            94,
+            42.27
+          ],
+          "landingSurface": "Cave26Stone05",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -795.99,
+            92.59,
+            55.98
+          ],
+          "stagingPosition": [
+            -786.18,
+            96,
+            49.11
+          ],
+          "to": "Cave26Stone06",
+          "startPosition": [
+            -783.1,
+            95.93,
+            46.84
+          ],
+          "groundedTakeoff": true,
+          "gap": 5.79,
+          "arrivedFromPriorLink": true,
+          "from": "Cave26Stone05",
+          "passed": true,
+          "takeoffPosition": [
+            -788.24,
+            96,
+            50.55
+          ],
+          "landingSurface": "Cave26Stone06",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -798.07,
+            93,
+            56.3
+          ],
+          "stagingPosition": [
+            -795.99,
+            92.66,
+            55.98
+          ],
+          "to": "SurgeEastRefuge",
+          "startPosition": [
+            -795.99,
+            92.59,
+            55.98
+          ],
+          "groundedTakeoff": true,
+          "gap": -0.52,
+          "arrivedFromPriorLink": true,
+          "from": "Cave26Stone06",
+          "passed": true,
+          "takeoffPosition": [
+            -797.51,
+            93,
+            56.21
+          ],
+          "landingSurface": "SurgeEastRefuge",
+          "jumpRequired": false
+        },
+        {
+          "landingPosition": [
+            -827.73,
+            87.57,
+            57.96
+          ],
+          "stagingPosition": [
+            -816.42,
+            93,
+            57.95
+          ],
+          "to": "SurgePassage",
+          "startPosition": [
+            -798.46,
+            93,
+            56.36
+          ],
+          "groundedTakeoff": true,
+          "gap": 2,
+          "arrivedFromPriorLink": true,
+          "from": "SurgeEastRefuge",
+          "passed": true,
+          "takeoffPosition": [
+            -818.91,
+            93,
+            57.96
+          ],
+          "landingSurface": "SurgePassage",
+          "jumpRequired": true
+        },
+        {
+          "landingPosition": [
+            -843.86,
+            93.62,
+            58
+          ],
+          "stagingPosition": [
+            -836.18,
+            88,
+            58
+          ],
+          "to": "SurgeWestRefuge",
+          "startPosition": [
+            -827.73,
+            87.57,
+            57.96
+          ],
+          "groundedTakeoff": true,
+          "gap": 2,
+          "arrivedFromPriorLink": true,
+          "from": "SurgePassage",
+          "passed": true,
+          "takeoffPosition": [
+            -838.96,
+            88,
+            58
+          ],
+          "landingSurface": "SurgeWestRefuge",
+          "jumpRequired": true
+        }
+      ]
+    }
+  ],
+  "method": "Actual server-owned R15 physics. One initial placement per scenario; no teleports or velocity resets between cave links. Dock, battery and cave each get one initial placement.",
+  "walkSpeed": 16,
+  "build": "SC_CAVE_26"
+}

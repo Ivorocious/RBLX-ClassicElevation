@@ -1,0 +1,16 @@
+{
+  "sha256": "42e90075440abc683275ec834c95f7c30391ea3cf41f7677edb456c060caea6c",
+  "request": {
+    "assetType": "Model",
+    "displayName": "ER_P1_C04_Shells",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/e37b7a24-a4ad-45ff-b34a-3d09e6e8a114",
+  "assetId": "82439486923945"
+}

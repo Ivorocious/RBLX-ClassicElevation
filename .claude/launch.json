@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ui-concepts",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8765", "--bind", "127.0.0.1", "--directory", "docs/artifacts/ui-overhaul-concepts-2026-10-13"],
+      "port": 8765
+    },
+    {
+      "name": "ui-race-art",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8766", "--bind", "127.0.0.1", "--directory", "assets/ui/race/png"],
+      "port": 8766
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "hazardMode": "Production Runtime active in cloned fixture, actual test player temporarily assigned to R15 clone; waits at east refuge for dry phase",
+  "jumpHeight": 7.2,
+  "scenarios": [
+    {
+      "finalPosition": [
+        -782.98,
+        -304.53,
+        9.44
+      ],
+      "name": "cave26Primary",
+      "error": "ServerScriptService.Cave26WallRegression:188: missed target; floor=nil",
+      "hazardHits": [],
+      "initialPosition": [
+        -792,
+        98.12,
+        -18
+      ],
+      "passed": false,
+      "links": [
+        {
+          "landingPosition": [
+            -789.93,
+            95.65,
+            -2.48
+          ],
+          "stagingPosition": [
+            -791.01,
+            98,
+            -10.6
+          ],
+          "to": "Cave26Stone00",
+          "startPosition": [
+            -792,
+            97.98,
+            -18
+          ],
+          "groundedTakeoff": true,
+          "gap": 1.62,
+          "arrivedFromPriorLink": false,
+          "from": "R4_CaveEntry",
+          "passed": true,
+          "takeoffPosition": [
+            -790.68,
+            98,
+            -8.1
+          ],
+          "landingSurface": "Cave26Stone00",
+          "jumpRequired": true
+        },
+        {
+          "stagingPosition": [
+            -789.93,
+            95.7,
+            -2.48
+          ],
+          "to": "Cave26Stone01",
+          "startPosition": [
+            -789.93,
+            95.65,
+            -2.48
+          ],
+          "groundedTakeoff": true,
+          "gap": 8.28,
+          "arrivedFromPriorLink": true,
+          "from": "Cave26Stone00",
+          "takeoffPosition": [
+            -789.49,
+            95.99,
+            -1.72
+          ],
+          "jumpRequired": true
+        }
+      ]
+    }
+  ],
+  "method": "Actual server-owned R15 physics. One initial placement per scenario; no teleports or velocity resets between cave links. Dock, battery and cave each get one initial placement.",
+  "walkSpeed": 16,
+  "build": "SC_CAVE_26"
+}

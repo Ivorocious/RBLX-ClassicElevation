@@ -373,8 +373,8 @@ function RespawnService.BindActiveCourse()
 	bindFallZones()
 end
 
-function RespawnService.RecoverPlayer(player: Player, source: string): boolean
-	return recoverPlayer(player, source, false)
+function RespawnService.RecoverPlayer(player: Player, source: string, ignoreCooldown: boolean?): boolean
+	return recoverPlayer(player, source, ignoreCooldown == true)
 end
 
 function RespawnService.Start(_context: ServiceContext?)

@@ -1,0 +1,11 @@
+--- src/ServerStorage/CourseBuilders/MoonlitCitadelCourse/Layout.luau
++++ src/ServerStorage/CourseBuilders/MoonlitCitadelCourse/Layout.luau
+@@ -212,7 +212,7 @@
+ local crown = steppedRoute("CrownApproach", {v(112, 140, -162), v(48, 144, -162),
+ 	v(48, 146, -56), v(-8, 150, -30)}, 12, 14, {[1] = upperExit, [4] = finish})
+ Layout.StartPoint, Layout.FinishPoint = contacts[gate.path].position, contacts[finish.path].position
+-Layout.FinishGate = {point = v(-5, 150, -30), size = v(22, 6, 24), yaw = math.pi / 2}
++Layout.FinishGate = {point = v(-5, 150, -30), size = v(28, 12, 24), yaw = math.pi / 2}
+ 
+ -- Recovery descends to a local shelf, then returns outside the race line on a continuous ramp.
+ local function recoveryRamp(group, points, endpoints)

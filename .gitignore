@@ -8,8 +8,36 @@ sourcemap.json
 out/
 build/
 .tools/
+/backups/
+__pycache__/
+*.pyc
+
+# Local-only review evidence, caches and native model backups (gigabytes; keep on disk)
+/docs/artifacts/
+/archives/
+/output/
+/.review-cache-*/
+/*.jpg
+
+# Heavy art and generated data stay local; the scripts that make them are committed
+*.blend
+*.blend1
+*.fbx
+*.npz
+*.b64
+*.base64
+/assets/**/*.png
+/assets/**/*.jpg
+/assets/**/*.wav
+/assets/**/*.rbxm
+/assets/**/*.zip
+/assets/**/*.log
+/tools/**/*.json
+/tools/**/*.png
+/tools/**/*.rbxm
 
 # OS/editor noise
 .DS_Store
 Thumbs.db
 .vscode/settings.json
+.claude/settings.local.json

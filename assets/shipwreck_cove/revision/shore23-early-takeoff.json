@@ -1,0 +1,244 @@
+{
+  "method": "Server-owned R15 clone on course template translated 1600 studs. One initial teleport, continuous shore movement, no Runtime.Create; timed hazards inactive. Both static timber bars are noncolliding.",
+  "initialPosition": [
+    127,
+    91.12,
+    72
+  ],
+  "movementPassed": true,
+  "barClearanceVerified": false,
+  "records": [
+    {
+      "passed": true,
+      "landingSupport": "S04_Shore_01",
+      "to": "S04_Shore_01",
+      "from": "S04_Shore_00",
+      "actualLanding": [
+        110.48,
+        91,
+        85.61
+      ],
+      "startSupport": "S04_Shore_00",
+      "movementPassed": true,
+      "actualStart": [
+        127,
+        90.98,
+        72
+      ]
+    },
+    {
+      "firstGroundedSupport": "S04_Shore_02",
+      "jumpPerformed": true,
+      "minimumFootMargin": -1.262,
+      "barProjectedHalfExtent": 2.68,
+      "launchPosition": [
+        98.83,
+        91,
+        91.58
+      ],
+      "to": "S04_Shore_02",
+      "groundedTakeoff": true,
+      "centerlineHalfChord": 0.56,
+      "lastOverlapSignedDistance": 1.22,
+      "overlapFrames": 18,
+      "signedDistance": 3.955400228500366,
+      "firstOverlapSignedDistance": -1.24,
+      "from": "S04_Shore_01",
+      "launchDistance": 7.64,
+      "bar": "ShoreTimber2",
+      "afterBarPosition": [
+        88.46,
+        91,
+        96.77
+      ],
+      "exitSignedDistance": 3.96,
+      "feetClearanceVerified": false,
+      "passed": false,
+      "actualStart": [
+        110.48,
+        91,
+        85.61
+      ],
+      "firstGroundedSignedDistance": 0.42,
+      "minimumMarginObservation": {
+        "foot": "RightFoot",
+        "signedDistance": 0.69,
+        "position": [
+          91.38,
+          90.62,
+          95.31
+        ],
+        "grounded": true,
+        "footBottom": 87.588,
+        "barTop": 88.85
+      },
+      "movementPassed": true,
+      "afterBarSupport": "S04_Shore_02",
+      "landingSupport": "S04_Shore_02",
+      "actualLanding": [
+        91.62,
+        91.23,
+        95.19
+      ],
+      "airborneTravel": 8.06,
+      "startSupport": "S04_Shore_01",
+      "crossedBarPlane": true,
+      "firstGroundedPosition": [
+        91.62,
+        91.23,
+        95.19
+      ],
+      "lastAirborneSignedDistance": 0.16,
+      "takeoffSignedDistance": -7.64,
+      "exitDistanceIncludingFeet": 3.88
+    },
+    {
+      "passed": true,
+      "landingSupport": "S04_Shore_03",
+      "to": "S04_Shore_03",
+      "from": "S04_Shore_02",
+      "actualLanding": [
+        73.56,
+        91,
+        102.77
+      ],
+      "startSupport": "S04_Shore_02",
+      "movementPassed": true,
+      "actualStart": [
+        88.46,
+        91,
+        96.77
+      ]
+    },
+    {
+      "passed": true,
+      "landingSupport": "S04_Shore_04",
+      "to": "S04_Shore_04",
+      "from": "S04_Shore_03",
+      "actualLanding": [
+        54.48,
+        91,
+        111.77
+      ],
+      "startSupport": "S04_Shore_03",
+      "movementPassed": true,
+      "actualStart": [
+        73.56,
+        91,
+        102.77
+      ]
+    },
+    {
+      "firstGroundedSupport": "S04_Shore_05",
+      "jumpPerformed": true,
+      "minimumFootMargin": -1.262,
+      "barProjectedHalfExtent": 2.51,
+      "launchPosition": [
+        41.05,
+        91,
+        117.83
+      ],
+      "to": "S04_Shore_05",
+      "groundedTakeoff": true,
+      "centerlineHalfChord": 0.55,
+      "lastOverlapSignedDistance": 1.22,
+      "overlapFrames": 18,
+      "signedDistance": 3.815216541290283,
+      "firstOverlapSignedDistance": -1.25,
+      "from": "S04_Shore_04",
+      "launchDistance": 7.73,
+      "bar": "ShoreTimber5",
+      "afterBarPosition": [
+        30.52,
+        91,
+        122.57
+      ],
+      "exitSignedDistance": 3.82,
+      "feetClearanceVerified": false,
+      "passed": false,
+      "actualStart": [
+        54.48,
+        91,
+        111.77
+      ],
+      "firstGroundedSignedDistance": 0.35,
+      "minimumMarginObservation": {
+        "foot": "RightFoot",
+        "signedDistance": 0.35,
+        "position": [
+          33.68,
+          90.62,
+          121.14
+        ],
+        "grounded": true,
+        "footBottom": 87.588,
+        "barTop": 88.85
+      },
+      "movementPassed": true,
+      "afterBarSupport": "S04_Shore_05",
+      "landingSupport": "S04_Shore_05",
+      "actualLanding": [
+        33.68,
+        90.62,
+        121.14
+      ],
+      "airborneTravel": 8.08,
+      "startSupport": "S04_Shore_04",
+      "crossedBarPlane": true,
+      "firstGroundedPosition": [
+        33.68,
+        90.62,
+        121.14
+      ],
+      "lastAirborneSignedDistance": 0.08,
+      "takeoffSignedDistance": -7.73,
+      "exitDistanceIncludingFeet": 3.71
+    },
+    {
+      "passed": true,
+      "landingSupport": "S04_Shore_06",
+      "to": "S04_Shore_06",
+      "from": "S04_Shore_05",
+      "actualLanding": [
+        15.62,
+        91,
+        128.74
+      ],
+      "startSupport": "S04_Shore_05",
+      "movementPassed": true,
+      "actualStart": [
+        30.52,
+        91,
+        122.57
+      ]
+    },
+    {
+      "passed": true,
+      "landingSupport": "HarborAssembly",
+      "to": "HarborAssembly",
+      "from": "S04_Shore_06",
+      "actualLanding": [
+        -7.19,
+        91,
+        128.03
+      ],
+      "startSupport": "S04_Shore_06",
+      "movementPassed": true,
+      "actualStart": [
+        15.62,
+        91,
+        128.74
+      ]
+    }
+  ],
+  "finalPosition": [
+    -7.19,
+    91,
+    128.03
+  ],
+  "passed": false,
+  "jumpHeight": 7.2,
+  "requestedLaunchDistance": 7,
+  "walkSpeed": 16,
+  "build": "SC_MAP_23"
+}

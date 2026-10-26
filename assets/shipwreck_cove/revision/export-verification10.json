@@ -1,0 +1,150 @@
+{
+  "build": "SC_REV_10",
+  "method": "Blender 5.2 FBX re-import, evaluated triangle and face-normal checks",
+  "meshes": [
+    {
+      "id": "SC_R_CannonFourWheel",
+      "triangles": 320,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_CaveChamber",
+      "triangles": 1188,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_CaveRefuge",
+      "triangles": 82,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_CaveTideBend",
+      "triangles": 962,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_CheckpointBeacon",
+      "triangles": 96,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_CurlingWave",
+      "triangles": 182,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_FanPalm",
+      "triangles": 72,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_GrassClump",
+      "triangles": 5,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_GroundedHullUnderbody",
+      "triangles": 1468,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_HeadlandRidge",
+      "triangles": 728,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_HullBow",
+      "triangles": 572,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_HullDeck",
+      "triangles": 72,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_HullMid",
+      "triangles": 544,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_HullStern",
+      "triangles": 652,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_PirateSignboard",
+      "triangles": 48,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_SandIsland",
+      "triangles": 84,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_SandWedge",
+      "triangles": 77,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_SeaRockFlat",
+      "triangles": 38,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_SeaRockSpire",
+      "triangles": 38,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_SeaRockTall",
+      "triangles": 38,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_ShoreBank",
+      "triangles": 72,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_ShoreStep",
+      "triangles": 82,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_Shrub",
+      "triangles": 15,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_WaveFoamLip",
+      "triangles": 24,
+      "materials": 1
+    }
+  ],
+  "uniqueTriangles": 7459,
+  "normals": "Changed hull, cave, beacon and shore faces have nonzero area and unit normals; all shore faces point upward.",
+  "files": {
+    "build_revision.py": {
+      "bytes": 42797,
+      "sha256": "750e5b20ba9f024bc801c9ea44883bffb4e3f37cbf7789281be07e34dee010fb"
+    },
+    "ShipwreckCove_Revision10.blend": {
+      "bytes": 169761,
+      "sha256": "6c7252114f84308a451b97aaf6ecc4d56ed8c26dc686946baae2524189bf31cf"
+    },
+    "ShipwreckCove_Revision10.fbx": {
+      "bytes": 208092,
+      "sha256": "f9c1bc2192e6e9fc126f159db1f64d0b3f168b157235bfbda39e022d1a606fc5"
+    },
+    "manifest10.json": {
+      "bytes": 18528,
+      "sha256": "8e0592fe14d6c0af690f08181399d728411306bb4a04fb93ae5d6b2fde9f68ae"
+    },
+    "palette.png": {
+      "bytes": 545,
+      "sha256": "7ada08dfd92d972bd66e2b973f4c11bbb3a55625ea7efa4dcbed70e308483766"
+    }
+  }
+}

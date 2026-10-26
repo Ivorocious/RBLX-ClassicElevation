@@ -1,0 +1,90 @@
+{
+  "status": "installed_and_verified_in_studio",
+  "method": "Roblox Studio upload_image",
+  "studioId": "16219618-79cb-4014-9bde-1dcdb7c67e20",
+  "placeId": 85558151074819,
+  "faces": {
+    "ft": {
+      "file": "cloud-sea-ft.png",
+      "sha256": "5160301f53ddf25f89faef4d0d89a5d0017f38c0af91d923f327259faed8da72"
+    },
+    "bk": {
+      "file": "cloud-sea-bk.png",
+      "sha256": "56386c1da36b4b48ba561113b2c5680f7ff1211afdc36ec03ddd8e7d07087e29"
+    },
+    "rt": {
+      "file": "cloud-sea-rt.png",
+      "sha256": "38044ea37b42dede16aaf9530444357eb7a4e7681a00e87d61aca349fbcdf285"
+    },
+    "lf": {
+      "file": "cloud-sea-lf.png",
+      "sha256": "8b9b39cdd0e47e370785ade4f853354d60b0126fa35b1feb0f2160110f420619"
+    },
+    "up": {
+      "file": "cloud-sea-up.png",
+      "sha256": "d7b041d6c7068e5d6c8f2108a92ae4b8d2e1b4307e62e44c241069d5223f9a50"
+    },
+    "dn": {
+      "file": "cloud-sea-dn.png",
+      "sha256": "b31545cad69628252170b5bd82f30841971d60ad7987262c0939387194b870ad"
+    }
+  },
+  "notes": [
+    "Studio exited during the first batch; the cause was not established.",
+    "Five completed uploads were recovered by pixel matching against creator inventory.",
+    "The missing down face was uploaded after Studio reopened.",
+    "Original up/down and the first downward orientation trial are retained as upload history; only installedFaces are active.",
+    "All six final installed assets preload successfully; live Lighting properties match default.project.json.",
+    "The temporary local HTTP upload server was stopped after verifying its command line."
+  ],
+  "assetIds": {
+    "ft": "94560555738002",
+    "bk": "127241254235216",
+    "lf": "106027538090518",
+    "rt": "77937123693721",
+    "up": "125341701241372",
+    "dn": "100368371427585"
+  },
+  "reconciliation": "Creator inventory contains five new Assistant images; each was read through EditableImage and matched its local face at all 64 sampled RGB pixels with zero error. No sixth new image was present.",
+  "downFaceUpload": {
+    "assetId": "100368371427585",
+    "result": "native upload_image success after Studio reopened"
+  },
+  "finalStudioId": "f6cb7bb3-8b1e-468f-9153-f38e5b6ee313",
+  "installedFaces": {
+    "SkyboxFt": {
+      "file": "cloud-sea-bk.png",
+      "sha256": "56386c1da36b4b48ba561113b2c5680f7ff1211afdc36ec03ddd8e7d07087e29",
+      "assetId": "rbxassetid://127241254235216"
+    },
+    "SkyboxBk": {
+      "file": "cloud-sea-ft.png",
+      "sha256": "5160301f53ddf25f89faef4d0d89a5d0017f38c0af91d923f327259faed8da72",
+      "assetId": "rbxassetid://94560555738002"
+    },
+    "SkyboxRt": {
+      "file": "cloud-sea-rt.png",
+      "sha256": "38044ea37b42dede16aaf9530444357eb7a4e7681a00e87d61aca349fbcdf285",
+      "assetId": "rbxassetid://77937123693721"
+    },
+    "SkyboxLf": {
+      "file": "cloud-sea-lf.png",
+      "sha256": "8b9b39cdd0e47e370785ade4f853354d60b0126fa35b1feb0f2160110f420619",
+      "assetId": "rbxassetid://106027538090518"
+    },
+    "SkyboxUp": {
+      "file": "cloud-sea-up-roblox.png",
+      "sha256": "ae9bf963dec6456f6ff0b62125e3805d2452f97afdf62091e98891746cf57abe",
+      "assetId": "rbxassetid://110937313651057"
+    },
+    "SkyboxDn": {
+      "file": "cloud-sea-dn-roblox-final.png",
+      "sha256": "f2cd43360803acf5ac3b625075a07c3cd6f1db4fb48a9668eb06f8692b14e4ba",
+      "assetId": "rbxassetid://96562086675523"
+    }
+  },
+  "unusedOrientationTrial": {
+    "file": "cloud-sea-dn-roblox.png",
+    "assetId": "118114044090185"
+  }
+}

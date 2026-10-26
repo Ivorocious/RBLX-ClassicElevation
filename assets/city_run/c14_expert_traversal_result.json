@@ -1,0 +1,938 @@
+{
+  "records": {
+    "1": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 0.9967772960662842,
+      "passed": true,
+      "landingPosition": {
+        "1": 7917.7578125,
+        "2": 184.9998321533203,
+        "3": -232.70440673828125
+      },
+      "centerDistance": 9.59748649597168,
+      "name": "ExpertFullPreSimulation:1->2",
+      "rise": 0,
+      "launchEdgeMargin": 0.17792963981628418,
+      "actualTravel": 6.736291408538818,
+      "flightSeconds": 0.4878035999718122,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_01.Collider"
+    },
+    "2": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.2981078624725342,
+      "passed": true,
+      "landingPosition": {
+        "1": 7926.90869140625,
+        "2": 184.99819946289062,
+        "3": -229.34811401367188
+      },
+      "centerDistance": 10.013949394226074,
+      "name": "ExpertFullPreSimulation:2->3",
+      "rise": 0,
+      "launchEdgeMargin": 0.12128901481628418,
+      "actualTravel": 8.814497947692871,
+      "flightSeconds": 0.500298400002066,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_02.Collider"
+    },
+    "3": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.1984374523162842,
+      "passed": true,
+      "landingPosition": {
+        "1": 7936.46484375,
+        "2": 184.99993896484375,
+        "3": -232.684814453125
+      },
+      "centerDistance": 10.01348876953125,
+      "name": "ExpertFullPreSimulation:3->4",
+      "rise": 0,
+      "launchEdgeMargin": 0.10273432731628418,
+      "actualTravel": 8.853325843811035,
+      "flightSeconds": 0.49918569999863394,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_03.Collider"
+    },
+    "4": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.0895507335662842,
+      "passed": true,
+      "landingPosition": {
+        "1": 7946.02880859375,
+        "2": 184.99986267089844,
+        "3": -229.27835083007812
+      },
+      "centerDistance": 10.014410972595215,
+      "name": "ExpertFullPreSimulation:4->5",
+      "rise": 0,
+      "launchEdgeMargin": 0.3156249523162842,
+      "actualTravel": 9.215246200561523,
+      "flightSeconds": 0.5164462999964599,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_04.Collider"
+    },
+    "5": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.1911132335662842,
+      "passed": true,
+      "landingPosition": {
+        "1": 7955.38134765625,
+        "2": 184.99993896484375,
+        "3": -232.6920166015625
+      },
+      "centerDistance": 10.01348876953125,
+      "name": "ExpertFullPreSimulation:5->6",
+      "rise": 0,
+      "launchEdgeMargin": 0.3678710460662842,
+      "actualTravel": 9.187829971313477,
+      "flightSeconds": 0.48419219997595064,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_05.Collider"
+    },
+    "6": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 0.9513671398162842,
+      "passed": true,
+      "landingPosition": {
+        "1": 7965.076171875,
+        "2": 184.9999542236328,
+        "3": -229.22647094726562
+      },
+      "centerDistance": 10.014410972595215,
+      "name": "ExpertFullPreSimulation:6->7",
+      "rise": 0,
+      "launchEdgeMargin": 0.3668944835662842,
+      "actualTravel": 9.420273780822754,
+      "flightSeconds": 0.5163242999988142,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_06.Collider"
+    },
+    "7": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.2619140148162842,
+      "passed": true,
+      "landingPosition": {
+        "1": 7974.2197265625,
+        "2": 184.99989318847656,
+        "3": -232.66094970703125
+      },
+      "centerDistance": 10.01348876953125,
+      "name": "ExpertFullPreSimulation:7->8",
+      "rise": 0,
+      "launchEdgeMargin": 0.17207026481628418,
+      "actualTravel": 8.934789657592773,
+      "flightSeconds": 0.4839434000023175,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_07.Collider"
+    },
+    "8": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.0485351085662842,
+      "passed": true,
+      "landingPosition": {
+        "1": 7983.88818359375,
+        "2": 184.9988555908203,
+        "3": -229.2635040283203
+      },
+      "centerDistance": 10.014410972595215,
+      "name": "ExpertFullPreSimulation:8->9",
+      "rise": 0,
+      "launchEdgeMargin": 0.2506835460662842,
+      "actualTravel": 9.17623233795166,
+      "flightSeconds": 0.48381390000577085,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_08.Collider"
+    },
+    "9": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.2184569835662842,
+      "passed": true,
+      "landingPosition": {
+        "1": 7993.17236328125,
+        "2": 184.9999542236328,
+        "3": -232.6811981201172
+      },
+      "centerDistance": 10.01348876953125,
+      "name": "ExpertFullPreSimulation:9->10",
+      "rise": 0,
+      "launchEdgeMargin": 0.17207026481628418,
+      "actualTravel": 8.959259033203125,
+      "flightSeconds": 0.49999290000414476,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_09.Collider"
+    },
+    "10": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.0680663585662842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8002.77734375,
+        "2": 184.9986114501953,
+        "3": -229.26976013183594
+      },
+      "centerDistance": 10.013949394226074,
+      "name": "ExpertFullPreSimulation:10->11",
+      "rise": 0,
+      "launchEdgeMargin": 0.3087890148162842,
+      "actualTravel": 9.227396011352539,
+      "flightSeconds": 0.4998104000114836,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_10.Collider"
+    },
+    "11": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.2101562023162842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8012.08984375,
+        "2": 184.99783325195312,
+        "3": -232.6845245361328
+      },
+      "centerDistance": 10.013949394226074,
+      "name": "ExpertFullPreSimulation:11->12",
+      "rise": 0,
+      "launchEdgeMargin": 0.3234374523162842,
+      "actualTravel": 9.125687599182129,
+      "flightSeconds": 0.4837610000104178,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_11.Collider"
+    },
+    "12": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.0065429210662842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8021.748046875,
+        "2": 184.99986267089844,
+        "3": -229.24859619140625
+      },
+      "centerDistance": 10.013949394226074,
+      "name": "ExpertFullPreSimulation:12->13",
+      "rise": 0,
+      "launchEdgeMargin": 0.3283202648162842,
+      "actualTravel": 9.315268516540527,
+      "flightSeconds": 0.5000381999998353,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_12.Collider"
+    },
+    "13": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.2921874523162842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8030.9013671875,
+        "2": 184.99989318847656,
+        "3": -232.64820861816406
+      },
+      "centerDistance": 10.013949394226074,
+      "name": "ExpertFullPreSimulation:13->14",
+      "rise": 0,
+      "launchEdgeMargin": 0.3800780773162842,
+      "actualTravel": 9.096036911010742,
+      "flightSeconds": 0.48246300002210774,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_13.Collider"
+    },
+    "14": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.1276366710662842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8040.53564453125,
+        "2": 184.9998779296875,
+        "3": -229.29080200195312
+      },
+      "centerDistance": 10.01348876953125,
+      "name": "ExpertFullPreSimulation:14->15",
+      "rise": 0,
+      "launchEdgeMargin": 0.3302733898162842,
+      "actualTravel": 9.167319297790527,
+      "flightSeconds": 0.5166375999979209,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_14.Collider"
+    },
+    "15": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.0304687023162842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8050.087890625,
+        "2": 184.9998779296875,
+        "3": -232.74935913085938
+      },
+      "centerDistance": 10.014410972595215,
+      "name": "ExpertFullPreSimulation:15->16",
+      "rise": 0,
+      "launchEdgeMargin": 0.24824213981628418,
+      "actualTravel": 9.223953247070312,
+      "flightSeconds": 0.5177510000066832,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_15.Collider"
+    },
+    "16": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.1901366710662842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8059.38232421875,
+        "2": 184.99989318847656,
+        "3": -229.3105010986328
+      },
+      "centerDistance": 10.01348876953125,
+      "name": "ExpertFullPreSimulation:16->17",
+      "rise": 0,
+      "launchEdgeMargin": 0.3092772960662842,
+      "actualTravel": 9.141260147094727,
+      "flightSeconds": 0.4844477000006009,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_16.Collider"
+    },
+    "17": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.0685546398162842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8068.958984375,
+        "2": 184.9998779296875,
+        "3": -232.72975158691406
+      },
+      "centerDistance": 10.014410972595215,
+      "name": "ExpertFullPreSimulation:17->18",
+      "rise": 0,
+      "launchEdgeMargin": 0.3097655773162842,
+      "actualTravel": 9.23386001586914,
+      "flightSeconds": 0.49819230000139214,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_17.Collider"
+    },
+    "18": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.2702147960662842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8078.15185546875,
+        "2": 184.99977111816406,
+        "3": -229.35977172851562
+      },
+      "centerDistance": 10.01348876953125,
+      "name": "ExpertFullPreSimulation:18->19",
+      "rise": 0,
+      "launchEdgeMargin": 0.3473632335662842,
+      "actualTravel": 9.02297306060791,
+      "flightSeconds": 0.482978699990781,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_18.Collider"
+    },
+    "19": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.1681640148162842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8087.7685546875,
+        "2": 184.9999542236328,
+        "3": -232.6947784423828
+      },
+      "centerDistance": 10.014410972595215,
+      "name": "ExpertFullPreSimulation:19->20",
+      "rise": 0,
+      "launchEdgeMargin": 0.3151366710662842,
+      "actualTravel": 9.104716300964355,
+      "flightSeconds": 0.4999528000189457,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_19.Collider"
+    },
+    "20": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 1.0675780773162842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8097.3232421875,
+        "2": 184.99993896484375,
+        "3": -229.26641845703125
+      },
+      "centerDistance": 10.01348876953125,
+      "name": "ExpertFullPreSimulation:20->21",
+      "rise": 0,
+      "launchEdgeMargin": 0.2594726085662842,
+      "actualTravel": 9.185722351074219,
+      "flightSeconds": 0.4995956000057049,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_20.Collider"
+    },
+    "21": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 0.8966796398162842,
+      "passed": true,
+      "landingPosition": {
+        "1": 8106.94873046875,
+        "2": 184.99990844726562,
+        "3": -232.79986572265625
+      },
+      "centerDistance": 10.013949394226074,
+      "name": "ExpertFullPreSimulation:21->22",
+      "rise": 0,
+      "launchEdgeMargin": 0.18818354606628418,
+      "actualTravel": 9.316749572753906,
+      "flightSeconds": 0.4995513000176288,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_21.Collider"
+    },
+    "22": {
+      "recoveryCount": 0,
+      "landingEdgeMargin": 3.048535108566284,
+      "passed": true,
+      "landingPosition": {
+        "1": 8116.25146484375,
+        "2": 184.9998321533203,
+        "3": -230.95152282714844
+      },
+      "centerDistance": 9.59748649597168,
+      "name": "ExpertFullPreSimulation:22->23",
+      "rise": 0,
+      "launchEdgeMargin": 0.24091792106628418,
+      "actualTravel": 8.81598949432373,
+      "flightSeconds": 0.4836566000012681,
+      "landing": "Workspace.__C14TraversalFixture.Obstacles.C14Routes.ExpertOffsets.C14_Expert_End.Collider"
+    }
+  },
+  "method": "Actual avatar, normal movement physics, sequential walk-to-edge jumps and supported settled landings; teleport only at route start",
+  "physics": {
+    "gravity": 196.1999969482422,
+    "walkSpeed": 16,
+    "jumpHeight": 7.199999809265137
+  },
+  "limitation": "Scripted server-owned avatar proves selected geometry reachability; human input difficulty, client latency and full-course flow still need playtesting",
+  "passed": true,
+  "attempts": {
+    "1": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 7911.1220703125,
+        "2": 184.99998474121094,
+        "3": -231.54486083984375
+      },
+      "firstContact": {
+        "1": 7917.75634765625,
+        "2": 184.77719116210938,
+        "3": -232.70413208007812
+      },
+      "remaining": -0.3080626130104065,
+      "name": "ExpertFullPreSimulation:1->2",
+      "position": {
+        "1": 7917.7578125,
+        "2": 184.96604919433594,
+        "3": -232.70440673828125
+      },
+      "launchEdgeMargin": 0.17792963981628418,
+      "firstContactSeconds": 0.4878035000001546,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "2": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 7918.63330078125,
+        "2": 184.99998474121094,
+        "3": -232.38345336914062
+      },
+      "firstContact": {
+        "1": 7926.7861328125,
+        "2": 185.00534057617188,
+        "3": -229.39317321777344
+      },
+      "remaining": 0.004542523995041847,
+      "name": "ExpertFullPreSimulation:2->3",
+      "position": {
+        "1": 7926.904296875,
+        "2": 184.61827087402344,
+        "3": -229.34988403320312
+      },
+      "launchEdgeMargin": 0.12128901481628418,
+      "firstContactSeconds": 0.5002982000005431,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "3": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 7928.1064453125,
+        "2": 184.9999542236328,
+        "3": -229.7661590576172
+      },
+      "firstContact": {
+        "1": 7935.31591796875,
+        "2": 184.66519165039062,
+        "3": -232.283447265625
+      },
+      "remaining": 0.02407262660562992,
+      "name": "ExpertFullPreSimulation:3->4",
+      "position": {
+        "1": 7936.3408203125,
+        "2": 184.9658966064453,
+        "3": -232.64129638671875
+      },
+      "launchEdgeMargin": 0.10273432731628418,
+      "firstContactSeconds": 0.4991855999978725,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "4": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 7937.34765625,
+        "2": 184.99998474121094,
+        "3": -232.37001037597656
+      },
+      "firstContact": {
+        "1": 7945.9052734375,
+        "2": 184.6652069091797,
+        "3": -229.322265625
+      },
+      "remaining": -0.22229087352752686,
+      "name": "ExpertFullPreSimulation:4->5",
+      "position": {
+        "1": 7946.02880859375,
+        "2": 184.9658966064453,
+        "3": -229.27835083007812
+      },
+      "launchEdgeMargin": 0.3156249523162842,
+      "firstContactSeconds": 0.5164461999956984,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "5": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 7946.75048828125,
+        "2": 184.99998474121094,
+        "3": -229.5417022705078
+      },
+      "firstContact": {
+        "1": 7954.2802734375,
+        "2": 185.00534057617188,
+        "3": -232.28985595703125
+      },
+      "remaining": -0.11458218097686768,
+      "name": "ExpertFullPreSimulation:5->6",
+      "position": {
+        "1": 7955.37939453125,
+        "2": 184.97474670410156,
+        "3": -232.6912078857422
+      },
+      "launchEdgeMargin": 0.3678710460662842,
+      "firstContactSeconds": 0.4841920999751892,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "6": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 7956.20556640625,
+        "2": 184.99998474121094,
+        "3": -232.3972625732422
+      },
+      "firstContact": {
+        "1": 7963.33544921875,
+        "2": 184.6219940185547,
+        "3": -229.84930419921875
+      },
+      "remaining": 0.09123875945806503,
+      "name": "ExpertFullPreSimulation:6->7",
+      "position": {
+        "1": 7964.64208984375,
+        "2": 184.99127197265625,
+        "3": -229.38201904296875
+      },
+      "launchEdgeMargin": 0.3668944835662842,
+      "firstContactSeconds": 0.499965399998473,
+      "inset": 0.42,
+      "firstContactSupported": false
+    },
+    "7": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 7965.85546875,
+        "2": 184.99998474121094,
+        "3": -229.51934814453125
+      },
+      "firstContact": {
+        "1": 7973.59619140625,
+        "2": 185.23008728027344,
+        "3": -232.42681884765625
+      },
+      "remaining": -0.03950510919094086,
+      "name": "ExpertFullPreSimulation:7->8",
+      "position": {
+        "1": 7974.2197265625,
+        "2": 184.97117614746094,
+        "3": -232.66094970703125
+      },
+      "launchEdgeMargin": 0.17207026481628418,
+      "firstContactSeconds": 0.4839432000007946,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "8": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 7975.23095703125,
+        "2": 184.99998474121094,
+        "3": -232.30581665039062
+      },
+      "firstContact": {
+        "1": 7983.40966796875,
+        "2": 185.00534057617188,
+        "3": -229.43191528320312
+      },
+      "remaining": 0.11559300124645233,
+      "name": "ExpertFullPreSimulation:8->9",
+      "position": {
+        "1": 7983.5283203125,
+        "2": 184.61827087402344,
+        "3": -229.39019775390625
+      },
+      "launchEdgeMargin": 0.2506835460662842,
+      "firstContactSeconds": 0.48381370000424795,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "9": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 7984.7646484375,
+        "2": 184.9999542236328,
+        "3": -229.5862579345703
+      },
+      "firstContact": {
+        "1": 7991.76708984375,
+        "2": 184.78384399414062,
+        "3": -232.1638641357422
+      },
+      "remaining": 0.04437255859375,
+      "name": "ExpertFullPreSimulation:9->10",
+      "position": {
+        "1": 7993.048828125,
+        "2": 184.97889709472656,
+        "3": -232.6356201171875
+      },
+      "launchEdgeMargin": 0.17207026481628418,
+      "firstContactSeconds": 0.4834557000140194,
+      "inset": 0.42,
+      "firstContactSupported": false
+    },
+    "10": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 7994.08203125,
+        "2": 184.99998474121094,
+        "3": -232.3578643798828
+      },
+      "firstContact": {
+        "1": 8002.2392578125,
+        "2": 185.23008728027344,
+        "3": -229.4613494873047
+      },
+      "remaining": 0.08473358303308487,
+      "name": "ExpertFullPreSimulation:10->11",
+      "position": {
+        "1": 8002.46630859375,
+        "2": 184.61827087402344,
+        "3": -229.38046264648438
+      },
+      "launchEdgeMargin": 0.3087890148162842,
+      "firstContactSeconds": 0.4998102000099607,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "11": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8003.52197265625,
+        "2": 184.99993896484375,
+        "3": -229.54290771484375
+      },
+      "firstContact": {
+        "1": 8011.7294921875,
+        "2": 185.00860595703125,
+        "3": -232.5521697998047
+      },
+      "remaining": 0.021334636956453323,
+      "name": "ExpertFullPreSimulation:11->12",
+      "position": {
+        "1": 8011.9794921875,
+        "2": 184.62660217285156,
+        "3": -232.64395141601562
+      },
+      "launchEdgeMargin": 0.3234374523162842,
+      "firstContactSeconds": 0.4837608000088949,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "12": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8012.9716796875,
+        "2": 184.99989318847656,
+        "3": -232.37103271484375
+      },
+      "firstContact": {
+        "1": 8021.2099609375,
+        "2": 185.2300567626953,
+        "3": -229.44041442871094
+      },
+      "remaining": -0.3104715347290039,
+      "name": "ExpertFullPreSimulation:12->13",
+      "position": {
+        "1": 8021.748046875,
+        "2": 184.95574951171875,
+        "3": -229.24859619140625
+      },
+      "launchEdgeMargin": 0.3283202648162842,
+      "firstContactSeconds": 0.5000379999983124,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "13": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8022.37451171875,
+        "2": 184.99996948242188,
+        "3": -229.48109436035156
+      },
+      "firstContact": {
+        "1": 8030.61962890625,
+        "2": 185.0086212158203,
+        "3": -232.54356384277344
+      },
+      "remaining": 0.007945376448333263,
+      "name": "ExpertFullPreSimulation:13->14",
+      "position": {
+        "1": 8030.9013671875,
+        "2": 184.95518493652344,
+        "3": -232.64820861816406
+      },
+      "launchEdgeMargin": 0.3800780773162842,
+      "firstContactSeconds": 0.4824629000213463,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "14": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8031.87890625,
+        "2": 184.99998474121094,
+        "3": -232.30752563476562
+      },
+      "firstContact": {
+        "1": 8040.41162109375,
+        "2": 184.6652069091797,
+        "3": -229.3341064453125
+      },
+      "remaining": -0.18224583566188812,
+      "name": "ExpertFullPreSimulation:14->15",
+      "position": {
+        "1": 8040.53564453125,
+        "2": 184.9658966064453,
+        "3": -229.29080200195312
+      },
+      "launchEdgeMargin": 0.3302733898162842,
+      "firstContactSeconds": 0.5166374999971595,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "15": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8041.4150390625,
+        "2": 184.99998474121094,
+        "3": -229.60882568359375
+      },
+      "firstContact": {
+        "1": 8049.96484375,
+        "2": 184.6652069091797,
+        "3": -232.70484924316406
+      },
+      "remaining": -0.28725874423980713,
+      "name": "ExpertFullPreSimulation:15->16",
+      "position": {
+        "1": 8050.087890625,
+        "2": 184.9658966064453,
+        "3": -232.74935913085938
+      },
+      "launchEdgeMargin": 0.24824213981628418,
+      "firstContactSeconds": 0.5177509000059217,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "16": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8050.80908203125,
+        "2": 184.99998474121094,
+        "3": -232.4825897216797
+      },
+      "firstContact": {
+        "1": 8058.85693359375,
+        "2": 185.23008728027344,
+        "3": -229.50469970703125
+      },
+      "remaining": -0.11672387272119522,
+      "name": "ExpertFullPreSimulation:16->17",
+      "position": {
+        "1": 8059.38232421875,
+        "2": 184.94970703125,
+        "3": -229.31056213378906
+      },
+      "launchEdgeMargin": 0.3092772960662842,
+      "firstContactSeconds": 0.48444759999983944,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "17": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8060.2626953125,
+        "2": 184.99998474121094,
+        "3": -229.6251220703125
+      },
+      "firstContact": {
+        "1": 8068.4208984375,
+        "2": 185.23008728027344,
+        "3": -232.53721618652344
+      },
+      "remaining": -0.24478664994239807,
+      "name": "ExpertFullPreSimulation:17->18",
+      "position": {
+        "1": 8068.958984375,
+        "2": 184.95458984375,
+        "3": -232.72975158691406
+      },
+      "launchEdgeMargin": 0.3097655773162842,
+      "firstContactSeconds": 0.4981922000006307,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "18": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8069.68017578125,
+        "2": 184.99998474121094,
+        "3": -232.46536254882812
+      },
+      "firstContact": {
+        "1": 8077.79150390625,
+        "2": 185.23008728027344,
+        "3": -229.49208068847656
+      },
+      "remaining": 0.03132663667201996,
+      "name": "ExpertFullPreSimulation:18->19",
+      "position": {
+        "1": 8078.15185546875,
+        "2": 184.95458984375,
+        "3": -229.35977172851562
+      },
+      "launchEdgeMargin": 0.3473632335662842,
+      "firstContactSeconds": 0.4829785999900196,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "19": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8079.16650390625,
+        "2": 184.99998474121094,
+        "3": -229.71139526367188
+      },
+      "firstContact": {
+        "1": 8086.1005859375,
+        "2": 185.23008728027344,
+        "3": -232.11619567871094
+      },
+      "remaining": 0.14864465594291687,
+      "name": "ExpertFullPreSimulation:19->20",
+      "position": {
+        "1": 8087.49658203125,
+        "2": 184.98397827148438,
+        "3": -232.6004180908203
+      },
+      "launchEdgeMargin": 0.3151366710662842,
+      "firstContactSeconds": 0.48253800001111813,
+      "inset": 0.42,
+      "firstContactSupported": false
+    },
+    "20": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8088.67724609375,
+        "2": 184.99998474121094,
+        "3": -232.36871337890625
+      },
+      "firstContact": {
+        "1": 8095.6533203125,
+        "2": 185.00534057617188,
+        "3": -229.86605834960938
+      },
+      "remaining": 0.11676037311553955,
+      "name": "ExpertFullPreSimulation:20->21",
+      "position": {
+        "1": 8096.98095703125,
+        "2": 184.98397827148438,
+        "3": -229.38954162597656
+      },
+      "launchEdgeMargin": 0.2594726085662842,
+      "firstContactSeconds": 0.48396700000739656,
+      "inset": 0.42,
+      "firstContactSupported": false
+    },
+    "21": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8098.20263671875,
+        "2": 184.99998474121094,
+        "3": -229.5893096923828
+      },
+      "firstContact": {
+        "1": 8106.28662109375,
+        "2": 185.23008728027344,
+        "3": -232.55674743652344
+      },
+      "remaining": -0.43026235699653625,
+      "name": "ExpertFullPreSimulation:21->22",
+      "position": {
+        "1": 8106.94873046875,
+        "2": 184.96197509765625,
+        "3": -232.79986572265625
+      },
+      "launchEdgeMargin": 0.18818354606628418,
+      "firstContactSeconds": 0.49955120001686737,
+      "inset": 0.42,
+      "firstContactSupported": true
+    },
+    "22": {
+      "phase": "Passed",
+      "supported": true,
+      "launchPosition": {
+        "1": 8107.6044921875,
+        "2": 184.99998474121094,
+        "3": -232.66952514648438
+      },
+      "firstContact": {
+        "1": 8114.78173828125,
+        "2": 184.78387451171875,
+        "3": -231.24371337890625
+      },
+      "remaining": 0.14267462491989136,
+      "name": "ExpertFullPreSimulation:22->23",
+      "position": {
+        "1": 8115.8603515625,
+        "2": 184.96127319335938,
+        "3": -231.02926635742188
+      },
+      "launchEdgeMargin": 0.24091792106628418,
+      "firstContactSeconds": 0.48365650000050664,
+      "inset": 0.42,
+      "firstContactSupported": true
+    }
+  }
+}

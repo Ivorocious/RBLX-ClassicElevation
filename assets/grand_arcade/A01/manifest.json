@@ -1,0 +1,2859 @@
+{
+  "revision": "A01",
+  "colors": {
+    "Ivory": [
+      0.94,
+      0.88,
+      0.75
+    ],
+    "Pale": [
+      0.99,
+      0.96,
+      0.88
+    ],
+    "Stone": [
+      0.76,
+      0.7,
+      0.59
+    ],
+    "Floor": [
+      0.91,
+      0.87,
+      0.78
+    ],
+    "Navy": [
+      0.025,
+      0.055,
+      0.12
+    ],
+    "Gold": [
+      0.88,
+      0.59,
+      0.14
+    ],
+    "Silver": [
+      0.6,
+      0.69,
+      0.73
+    ],
+    "Bronze": [
+      0.65,
+      0.36,
+      0.17
+    ],
+    "Leaf": [
+      0.16,
+      0.39,
+      0.15
+    ],
+    "LeafLight": [
+      0.37,
+      0.58,
+      0.17
+    ],
+    "Wood": [
+      0.25,
+      0.14,
+      0.055
+    ],
+    "Lamp": [
+      1.0,
+      0.79,
+      0.24
+    ]
+  },
+  "meshes": {
+    "Platform__Stone": {
+      "section": "Platform",
+      "material": "Stone",
+      "triangles": 380
+    },
+    "Platform__Ivory": {
+      "section": "Platform",
+      "material": "Ivory",
+      "triangles": 380
+    },
+    "Platform__Gold": {
+      "section": "Platform",
+      "material": "Gold",
+      "triangles": 380
+    },
+    "Platform__Floor": {
+      "section": "Platform",
+      "material": "Floor",
+      "triangles": 380
+    },
+    "Platform__Pale": {
+      "section": "Platform",
+      "material": "Pale",
+      "triangles": 924
+    },
+    "Approach__Ivory": {
+      "section": "Approach",
+      "material": "Ivory",
+      "triangles": 36
+    },
+    "Approach__Pale": {
+      "section": "Approach",
+      "material": "Pale",
+      "triangles": 60
+    },
+    "Approach__Gold": {
+      "section": "Approach",
+      "material": "Gold",
+      "triangles": 60
+    },
+    "PresenterDais__Pale": {
+      "section": "PresenterDais",
+      "material": "Pale",
+      "triangles": 632
+    },
+    "PresenterDais__Navy": {
+      "section": "PresenterDais",
+      "material": "Navy",
+      "triangles": 252
+    },
+    "PresenterDais__Gold": {
+      "section": "PresenterDais",
+      "material": "Gold",
+      "triangles": 188
+    },
+    "Bay1__Navy": {
+      "section": "Bay1",
+      "material": "Navy",
+      "triangles": 212
+    },
+    "Bay1__Ivory": {
+      "section": "Bay1",
+      "material": "Ivory",
+      "triangles": 316
+    },
+    "Bay1__Gold": {
+      "section": "Bay1",
+      "material": "Gold",
+      "triangles": 352
+    },
+    "Bay1__Pale": {
+      "section": "Bay1",
+      "material": "Pale",
+      "triangles": 432
+    },
+    "Bay1__Stone": {
+      "section": "Bay1",
+      "material": "Stone",
+      "triangles": 24
+    },
+    "Bay1__Silver": {
+      "section": "Bay1",
+      "material": "Silver",
+      "triangles": 12
+    },
+    "Bay1__Bronze": {
+      "section": "Bay1",
+      "material": "Bronze",
+      "triangles": 12
+    },
+    "Bay2__Navy": {
+      "section": "Bay2",
+      "material": "Navy",
+      "triangles": 212
+    },
+    "Bay2__Ivory": {
+      "section": "Bay2",
+      "material": "Ivory",
+      "triangles": 316
+    },
+    "Bay2__Gold": {
+      "section": "Bay2",
+      "material": "Gold",
+      "triangles": 352
+    },
+    "Bay2__Pale": {
+      "section": "Bay2",
+      "material": "Pale",
+      "triangles": 432
+    },
+    "Bay2__Stone": {
+      "section": "Bay2",
+      "material": "Stone",
+      "triangles": 24
+    },
+    "Bay2__Silver": {
+      "section": "Bay2",
+      "material": "Silver",
+      "triangles": 12
+    },
+    "Bay2__Bronze": {
+      "section": "Bay2",
+      "material": "Bronze",
+      "triangles": 12
+    },
+    "Bay3__Navy": {
+      "section": "Bay3",
+      "material": "Navy",
+      "triangles": 212
+    },
+    "Bay3__Ivory": {
+      "section": "Bay3",
+      "material": "Ivory",
+      "triangles": 316
+    },
+    "Bay3__Gold": {
+      "section": "Bay3",
+      "material": "Gold",
+      "triangles": 352
+    },
+    "Bay3__Pale": {
+      "section": "Bay3",
+      "material": "Pale",
+      "triangles": 432
+    },
+    "Bay3__Stone": {
+      "section": "Bay3",
+      "material": "Stone",
+      "triangles": 24
+    },
+    "Bay3__Silver": {
+      "section": "Bay3",
+      "material": "Silver",
+      "triangles": 12
+    },
+    "Bay3__Bronze": {
+      "section": "Bay3",
+      "material": "Bronze",
+      "triangles": 12
+    },
+    "Bay4__Navy": {
+      "section": "Bay4",
+      "material": "Navy",
+      "triangles": 212
+    },
+    "Bay4__Ivory": {
+      "section": "Bay4",
+      "material": "Ivory",
+      "triangles": 316
+    },
+    "Bay4__Gold": {
+      "section": "Bay4",
+      "material": "Gold",
+      "triangles": 352
+    },
+    "Bay4__Pale": {
+      "section": "Bay4",
+      "material": "Pale",
+      "triangles": 432
+    },
+    "Bay4__Stone": {
+      "section": "Bay4",
+      "material": "Stone",
+      "triangles": 24
+    },
+    "Bay4__Silver": {
+      "section": "Bay4",
+      "material": "Silver",
+      "triangles": 12
+    },
+    "Bay4__Bronze": {
+      "section": "Bay4",
+      "material": "Bronze",
+      "triangles": 12
+    },
+    "Bay5__Navy": {
+      "section": "Bay5",
+      "material": "Navy",
+      "triangles": 212
+    },
+    "Bay5__Ivory": {
+      "section": "Bay5",
+      "material": "Ivory",
+      "triangles": 316
+    },
+    "Bay5__Gold": {
+      "section": "Bay5",
+      "material": "Gold",
+      "triangles": 352
+    },
+    "Bay5__Pale": {
+      "section": "Bay5",
+      "material": "Pale",
+      "triangles": 432
+    },
+    "Bay5__Stone": {
+      "section": "Bay5",
+      "material": "Stone",
+      "triangles": 24
+    },
+    "Bay5__Silver": {
+      "section": "Bay5",
+      "material": "Silver",
+      "triangles": 12
+    },
+    "Bay5__Bronze": {
+      "section": "Bay5",
+      "material": "Bronze",
+      "triangles": 12
+    },
+    "FrontWing-1__Ivory": {
+      "section": "FrontWing-1",
+      "material": "Ivory",
+      "triangles": 324
+    },
+    "FrontWing-1__Pale": {
+      "section": "FrontWing-1",
+      "material": "Pale",
+      "triangles": 324
+    },
+    "FrontWing-1__Gold": {
+      "section": "FrontWing-1",
+      "material": "Gold",
+      "triangles": 324
+    },
+    "FrontWing-1__Navy": {
+      "section": "FrontWing-1",
+      "material": "Navy",
+      "triangles": 2660
+    },
+    "OuterPlanter-1__Stone": {
+      "section": "OuterPlanter-1",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "OuterPlanter-1__Pale": {
+      "section": "OuterPlanter-1",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "OuterPlanter-1__Navy": {
+      "section": "OuterPlanter-1",
+      "material": "Navy",
+      "triangles": 12
+    },
+    "OuterPlanter-1__Wood": {
+      "section": "OuterPlanter-1",
+      "material": "Wood",
+      "triangles": 44
+    },
+    "OuterPlanter-1__Leaf": {
+      "section": "OuterPlanter-1",
+      "material": "Leaf",
+      "triangles": 40
+    },
+    "OuterPlanter-1__LeafLight": {
+      "section": "OuterPlanter-1",
+      "material": "LeafLight",
+      "triangles": 40
+    },
+    "FrontWing1__Ivory": {
+      "section": "FrontWing1",
+      "material": "Ivory",
+      "triangles": 324
+    },
+    "FrontWing1__Pale": {
+      "section": "FrontWing1",
+      "material": "Pale",
+      "triangles": 324
+    },
+    "FrontWing1__Gold": {
+      "section": "FrontWing1",
+      "material": "Gold",
+      "triangles": 324
+    },
+    "FrontWing1__Navy": {
+      "section": "FrontWing1",
+      "material": "Navy",
+      "triangles": 2660
+    },
+    "OuterPlanter1__Stone": {
+      "section": "OuterPlanter1",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "OuterPlanter1__Pale": {
+      "section": "OuterPlanter1",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "OuterPlanter1__Navy": {
+      "section": "OuterPlanter1",
+      "material": "Navy",
+      "triangles": 12
+    },
+    "OuterPlanter1__Wood": {
+      "section": "OuterPlanter1",
+      "material": "Wood",
+      "triangles": 44
+    },
+    "OuterPlanter1__Leaf": {
+      "section": "OuterPlanter1",
+      "material": "Leaf",
+      "triangles": 40
+    },
+    "OuterPlanter1__LeafLight": {
+      "section": "OuterPlanter1",
+      "material": "LeafLight",
+      "triangles": 40
+    },
+    "Lamp1__Ivory": {
+      "section": "Lamp1",
+      "material": "Ivory",
+      "triangles": 12
+    },
+    "Lamp1__Gold": {
+      "section": "Lamp1",
+      "material": "Gold",
+      "triangles": 64
+    },
+    "Lamp1__Lamp": {
+      "section": "Lamp1",
+      "material": "Lamp",
+      "triangles": 12
+    },
+    "Lamp1__Navy": {
+      "section": "Lamp1",
+      "material": "Navy",
+      "triangles": 48
+    },
+    "Lamp2__Ivory": {
+      "section": "Lamp2",
+      "material": "Ivory",
+      "triangles": 12
+    },
+    "Lamp2__Gold": {
+      "section": "Lamp2",
+      "material": "Gold",
+      "triangles": 64
+    },
+    "Lamp2__Lamp": {
+      "section": "Lamp2",
+      "material": "Lamp",
+      "triangles": 12
+    },
+    "Lamp2__Navy": {
+      "section": "Lamp2",
+      "material": "Navy",
+      "triangles": 48
+    },
+    "Lamp3__Ivory": {
+      "section": "Lamp3",
+      "material": "Ivory",
+      "triangles": 12
+    },
+    "Lamp3__Gold": {
+      "section": "Lamp3",
+      "material": "Gold",
+      "triangles": 64
+    },
+    "Lamp3__Lamp": {
+      "section": "Lamp3",
+      "material": "Lamp",
+      "triangles": 12
+    },
+    "Lamp3__Navy": {
+      "section": "Lamp3",
+      "material": "Navy",
+      "triangles": 48
+    },
+    "Lamp4__Ivory": {
+      "section": "Lamp4",
+      "material": "Ivory",
+      "triangles": 12
+    },
+    "Lamp4__Gold": {
+      "section": "Lamp4",
+      "material": "Gold",
+      "triangles": 64
+    },
+    "Lamp4__Lamp": {
+      "section": "Lamp4",
+      "material": "Lamp",
+      "triangles": 12
+    },
+    "Lamp4__Navy": {
+      "section": "Lamp4",
+      "material": "Navy",
+      "triangles": 48
+    },
+    "Lamp5__Ivory": {
+      "section": "Lamp5",
+      "material": "Ivory",
+      "triangles": 12
+    },
+    "Lamp5__Gold": {
+      "section": "Lamp5",
+      "material": "Gold",
+      "triangles": 64
+    },
+    "Lamp5__Lamp": {
+      "section": "Lamp5",
+      "material": "Lamp",
+      "triangles": 12
+    },
+    "Lamp5__Navy": {
+      "section": "Lamp5",
+      "material": "Navy",
+      "triangles": 48
+    },
+    "Lamp6__Ivory": {
+      "section": "Lamp6",
+      "material": "Ivory",
+      "triangles": 12
+    },
+    "Lamp6__Gold": {
+      "section": "Lamp6",
+      "material": "Gold",
+      "triangles": 64
+    },
+    "Lamp6__Lamp": {
+      "section": "Lamp6",
+      "material": "Lamp",
+      "triangles": 12
+    },
+    "Lamp6__Navy": {
+      "section": "Lamp6",
+      "material": "Navy",
+      "triangles": 48
+    },
+    "MarkerOrigin__Navy": {
+      "section": "Calibration",
+      "material": "Navy",
+      "triangles": 12
+    },
+    "MarkerRight__Navy": {
+      "section": "Calibration",
+      "material": "Navy",
+      "triangles": 12
+    },
+    "MarkerUp__Navy": {
+      "section": "Calibration",
+      "material": "Navy",
+      "triangles": 12
+    },
+    "MarkerForward__Navy": {
+      "section": "Calibration",
+      "material": "Navy",
+      "triangles": 12
+    }
+  },
+  "bays": [
+    {
+      "index": 1,
+      "p": [
+        -36.60629787682202,
+        6.219091187834081,
+        0
+      ],
+      "angle": 0.4188790204786391,
+      "screen": [
+        -36.27277382949986,
+        5.469983912567149,
+        15.4
+      ],
+      "plaque": [
+        -36.24836963091531,
+        5.415171185108592,
+        7.43
+      ],
+      "slots": [
+        {
+          "rank": 2,
+          "p": [
+            -38.67485159510798,
+            2.014202899833398,
+            2.4499999999999997
+          ],
+          "panel": [
+            -37.99966876760215,
+            0.4977174401466806,
+            1.15
+          ],
+          "height": 1.9999999999999998
+        },
+        {
+          "rank": 1,
+          "p": [
+            -35.38608794759462,
+            3.4784548149062786,
+            3.55
+          ],
+          "panel": [
+            -34.71090512008879,
+            1.9619693552195612,
+            1.7
+          ],
+          "height": 3.1
+        },
+        {
+          "rank": 3,
+          "p": [
+            -32.097324300081254,
+            4.942706729979159,
+            2.1
+          ],
+          "panel": [
+            -31.422141472575426,
+            3.4262212702924417,
+            0.975
+          ],
+          "height": 1.65
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "p": [
+        -18.71205217359834,
+        12.033284066042512,
+        0
+      ],
+      "angle": 0.20943951023931956,
+      "screen": [
+        -18.541564587127777,
+        11.231203033440792,
+        15.4
+      ],
+      "plaque": [
+        -18.52908988567871,
+        11.172514177396764,
+        7.43
+      ],
+      "slots": [
+        {
+          "rank": 2,
+          "p": [
+            -21.609648463786762,
+            8.350359176897161,
+            2.4499999999999997
+          ],
+          "panel": [
+            -21.264515057029282,
+            6.726634159679043,
+            1.15
+          ],
+          "height": 1.9999999999999998
+        },
+        {
+          "rank": 1,
+          "p": [
+            -18.088317101145062,
+            9.098841263841095,
+            3.55
+          ],
+          "panel": [
+            -17.743183694387582,
+            7.475116246622977,
+            1.7
+          ],
+          "height": 3.1
+        },
+        {
+          "rank": 3,
+          "p": [
+            -14.566985738503362,
+            9.847323350785029,
+            2.1
+          ],
+          "panel": [
+            -14.221852331745882,
+            8.223598333566912,
+            0.975
+          ],
+          "height": 1.65
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "p": [
+        0.0,
+        14.0,
+        0
+      ],
+      "angle": -0.0,
+      "screen": [
+        0.0,
+        13.18,
+        15.4
+      ],
+      "plaque": [
+        0.0,
+        13.12,
+        7.43
+      ],
+      "slots": [
+        {
+          "rank": 2,
+          "p": [
+            -3.6,
+            11.0,
+            2.4499999999999997
+          ],
+          "panel": [
+            -3.6,
+            9.34,
+            1.15
+          ],
+          "height": 1.9999999999999998
+        },
+        {
+          "rank": 1,
+          "p": [
+            0.0,
+            11.0,
+            3.55
+          ],
+          "panel": [
+            0.0,
+            9.34,
+            1.7
+          ],
+          "height": 3.1
+        },
+        {
+          "rank": 3,
+          "p": [
+            3.6,
+            11.0,
+            2.1
+          ],
+          "panel": [
+            3.6,
+            9.34,
+            0.975
+          ],
+          "height": 1.65
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "p": [
+        18.71205217359834,
+        12.033284066042512,
+        0
+      ],
+      "angle": -0.20943951023931956,
+      "screen": [
+        18.541564587127777,
+        11.231203033440792,
+        15.4
+      ],
+      "plaque": [
+        18.52908988567871,
+        11.172514177396764,
+        7.43
+      ],
+      "slots": [
+        {
+          "rank": 2,
+          "p": [
+            14.566985738503362,
+            9.847323350785029,
+            2.4499999999999997
+          ],
+          "panel": [
+            14.221852331745882,
+            8.223598333566912,
+            1.15
+          ],
+          "height": 1.9999999999999998
+        },
+        {
+          "rank": 1,
+          "p": [
+            18.088317101145062,
+            9.098841263841095,
+            3.55
+          ],
+          "panel": [
+            17.743183694387582,
+            7.475116246622977,
+            1.7
+          ],
+          "height": 3.1
+        },
+        {
+          "rank": 3,
+          "p": [
+            21.609648463786762,
+            8.350359176897161,
+            2.1
+          ],
+          "panel": [
+            21.264515057029282,
+            6.726634159679043,
+            0.975
+          ],
+          "height": 1.65
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "p": [
+        36.60629787682202,
+        6.219091187834081,
+        0
+      ],
+      "angle": -0.4188790204786391,
+      "screen": [
+        36.27277382949986,
+        5.469983912567149,
+        15.4
+      ],
+      "plaque": [
+        36.24836963091531,
+        5.415171185108592,
+        7.43
+      ],
+      "slots": [
+        {
+          "rank": 2,
+          "p": [
+            32.097324300081254,
+            4.942706729979159,
+            2.4499999999999997
+          ],
+          "panel": [
+            31.422141472575426,
+            3.4262212702924417,
+            1.15
+          ],
+          "height": 1.9999999999999998
+        },
+        {
+          "rank": 1,
+          "p": [
+            35.38608794759462,
+            3.4784548149062786,
+            3.55
+          ],
+          "panel": [
+            34.71090512008879,
+            1.9619693552195612,
+            1.7
+          ],
+          "height": 3.1
+        },
+        {
+          "rank": 3,
+          "p": [
+            38.67485159510798,
+            2.014202899833398,
+            2.1
+          ],
+          "panel": [
+            37.99966876760215,
+            0.4977174401466806,
+            0.975
+          ],
+          "height": 1.65
+        }
+      ]
+    }
+  ],
+  "sections": {
+    "Bay1": {
+      "p": [
+        -36.60629787682202,
+        6.219091187834081,
+        0
+      ],
+      "angle": 0.4188790204786391
+    },
+    "Bay2": {
+      "p": [
+        -18.71205217359834,
+        12.033284066042512,
+        0
+      ],
+      "angle": 0.20943951023931956
+    },
+    "Bay3": {
+      "p": [
+        0.0,
+        14.0,
+        0
+      ],
+      "angle": -0.0
+    },
+    "Bay4": {
+      "p": [
+        18.71205217359834,
+        12.033284066042512,
+        0
+      ],
+      "angle": -0.20943951023931956
+    },
+    "Bay5": {
+      "p": [
+        36.60629787682202,
+        6.219091187834081,
+        0
+      ],
+      "angle": -0.4188790204786391
+    }
+  },
+  "colliders": [
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -51,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        5.19801300778602,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -49,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        14.253985584968925,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -47,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        19.298309833248926,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -45,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        23.12499321772491,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -43,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        26.27161494380875,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -41,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        28.960698950955376,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -39,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        31.310354632871235,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -37,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        33.392310825707106,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -35,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        35.25402712969528,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -33,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        36.92882785816694,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -31,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        38.44115134372465,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -29,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        39.80951893480177,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -27,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        41.048329692518784,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -25,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        42.16900324654684,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -23,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        43.18073865284171,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -21,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        44.09103580025013,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -19,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        44.906063920244,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -17,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        45.63092818708954,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -15,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        46.26986631878015,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -13,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        46.826395789516305,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -11,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        47.30342532683289,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -9,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        47.70333996904473,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -7,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        48.02806608941741,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -5,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        48.27912086930347,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -3,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        48.45764937625805,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        -1,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        48.56445146162047,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        1,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        48.56445146162047,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        3,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        48.45764937625805,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        5,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        48.27912086930347,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        7,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        48.02806608941741,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        9,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        47.70333996904473,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        11,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        47.30342532683289,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        13,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        46.826395789516305,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        15,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        46.26986631878015,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        17,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        45.63092818708954,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        19,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        44.906063920244,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        21,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        44.09103580025013,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        23,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        43.18073865284171,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        25,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        42.16900324654684,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        27,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        41.048329692518784,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        29,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        39.80951893480177,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        31,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        38.44115134372465,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        33,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        36.92882785816694,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        35,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        35.25402712969528,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        37,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        33.392310825707106,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        39,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        31.310354632871235,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        41,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        28.960698950955376,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        43,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        26.27161494380875,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        45,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        23.12499321772491,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        47,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        19.298309833248926,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        49,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        14.253985584968925,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "FloorCollision",
+      "section": "Platform",
+      "p": [
+        51,
+        0,
+        -0.484
+      ],
+      "s": [
+        2,
+        5.19801300778602,
+        1
+      ],
+      "angle": 0
+    },
+    {
+      "name": "Causeway",
+      "section": "Approach",
+      "p": [
+        0,
+        -24.5,
+        -0.6
+      ],
+      "s": [
+        16,
+        17,
+        1.2
+      ],
+      "angle": 0
+    },
+    {
+      "name": "EntryStep1",
+      "section": "Approach",
+      "p": [
+        0,
+        -43,
+        -3.5
+      ],
+      "s": [
+        16,
+        4,
+        1.4
+      ],
+      "angle": 0
+    },
+    {
+      "name": "EntryStep2",
+      "section": "Approach",
+      "p": [
+        0,
+        -39,
+        -2.0999999999999996
+      ],
+      "s": [
+        16,
+        4,
+        1.4
+      ],
+      "angle": 0
+    },
+    {
+      "name": "EntryStep3",
+      "section": "Approach",
+      "p": [
+        0,
+        -35,
+        -0.7
+      ],
+      "s": [
+        16,
+        4,
+        1.4
+      ],
+      "angle": 0
+    },
+    {
+      "name": "SolidApproachWall",
+      "section": "Approach",
+      "p": [
+        -9,
+        -29,
+        1.3
+      ],
+      "s": [
+        1.4,
+        26,
+        2.6
+      ],
+      "angle": 0
+    },
+    {
+      "name": "SolidApproachWall",
+      "section": "Approach",
+      "p": [
+        9,
+        -29,
+        1.3
+      ],
+      "s": [
+        1.4,
+        26,
+        2.6
+      ],
+      "angle": 0
+    },
+    {
+      "name": "DaisCollision",
+      "section": "PresenterDais",
+      "p": [
+        0,
+        -5,
+        0.18
+      ],
+      "s": [
+        12,
+        12,
+        0.36
+      ],
+      "angle": 0
+    },
+    {
+      "name": "Column",
+      "section": "Bay1",
+      "p": [
+        -44.211127930410335,
+        2.942666328930716,
+        9
+      ],
+      "s": [
+        1.42,
+        2.0,
+        18
+      ],
+      "angle": 0.4188790204786391
+    },
+    {
+      "name": "Column",
+      "section": "Bay1",
+      "p": [
+        -29.082815151848866,
+        9.678225138265967,
+        9
+      ],
+      "s": [
+        1.42,
+        2.0,
+        18
+      ],
+      "angle": 0.4188790204786391
+    },
+    {
+      "name": "Podium2",
+      "section": "Bay1",
+      "p": [
+        -38.67485159510798,
+        2.014202899833398,
+        1.15
+      ],
+      "s": [
+        3.25,
+        3.15,
+        2.3
+      ],
+      "angle": 0.4188790204786391
+    },
+    {
+      "name": "Podium1",
+      "section": "Bay1",
+      "p": [
+        -35.38608794759462,
+        3.4784548149062786,
+        1.7
+      ],
+      "s": [
+        3.25,
+        3.15,
+        3.4
+      ],
+      "angle": 0.4188790204786391
+    },
+    {
+      "name": "Podium3",
+      "section": "Bay1",
+      "p": [
+        -32.097324300081254,
+        4.942706729979159,
+        0.975
+      ],
+      "s": [
+        3.25,
+        3.15,
+        1.95
+      ],
+      "angle": 0.4188790204786391
+    },
+    {
+      "name": "Column",
+      "section": "Bay2",
+      "p": [
+        -26.831905476756027,
+        10.409590026144844,
+        9
+      ],
+      "s": [
+        1.42,
+        2.0,
+        18
+      ],
+      "angle": 0.20943951023931956
+    },
+    {
+      "name": "Column",
+      "section": "Bay2",
+      "p": [
+        -10.633781208604205,
+        13.85260762608694,
+        9
+      ],
+      "s": [
+        1.42,
+        2.0,
+        18
+      ],
+      "angle": 0.20943951023931956
+    },
+    {
+      "name": "Podium2",
+      "section": "Bay2",
+      "p": [
+        -21.609648463786762,
+        8.350359176897161,
+        1.15
+      ],
+      "s": [
+        3.25,
+        3.15,
+        2.3
+      ],
+      "angle": 0.20943951023931956
+    },
+    {
+      "name": "Podium1",
+      "section": "Bay2",
+      "p": [
+        -18.088317101145062,
+        9.098841263841095,
+        1.7
+      ],
+      "s": [
+        3.25,
+        3.15,
+        3.4
+      ],
+      "angle": 0.20943951023931956
+    },
+    {
+      "name": "Podium3",
+      "section": "Bay2",
+      "p": [
+        -14.566985738503362,
+        9.847323350785029,
+        0.975
+      ],
+      "s": [
+        3.25,
+        3.15,
+        1.95
+      ],
+      "angle": 0.20943951023931956
+    },
+    {
+      "name": "Column",
+      "section": "Bay3",
+      "p": [
+        -8.28,
+        14.1,
+        9
+      ],
+      "s": [
+        1.42,
+        2.0,
+        18
+      ],
+      "angle": -0.0
+    },
+    {
+      "name": "Column",
+      "section": "Bay3",
+      "p": [
+        8.28,
+        14.1,
+        9
+      ],
+      "s": [
+        1.42,
+        2.0,
+        18
+      ],
+      "angle": -0.0
+    },
+    {
+      "name": "Podium2",
+      "section": "Bay3",
+      "p": [
+        -3.6,
+        11.0,
+        1.15
+      ],
+      "s": [
+        3.25,
+        3.15,
+        2.3
+      ],
+      "angle": -0.0
+    },
+    {
+      "name": "Podium1",
+      "section": "Bay3",
+      "p": [
+        0.0,
+        11.0,
+        1.7
+      ],
+      "s": [
+        3.25,
+        3.15,
+        3.4
+      ],
+      "angle": -0.0
+    },
+    {
+      "name": "Podium3",
+      "section": "Bay3",
+      "p": [
+        3.6,
+        11.0,
+        0.975
+      ],
+      "s": [
+        3.25,
+        3.15,
+        1.95
+      ],
+      "angle": -0.0
+    },
+    {
+      "name": "Column",
+      "section": "Bay4",
+      "p": [
+        10.633781208604205,
+        13.85260762608694,
+        9
+      ],
+      "s": [
+        1.42,
+        2.0,
+        18
+      ],
+      "angle": -0.20943951023931956
+    },
+    {
+      "name": "Column",
+      "section": "Bay4",
+      "p": [
+        26.831905476756027,
+        10.409590026144844,
+        9
+      ],
+      "s": [
+        1.42,
+        2.0,
+        18
+      ],
+      "angle": -0.20943951023931956
+    },
+    {
+      "name": "Podium2",
+      "section": "Bay4",
+      "p": [
+        14.566985738503362,
+        9.847323350785029,
+        1.15
+      ],
+      "s": [
+        3.25,
+        3.15,
+        2.3
+      ],
+      "angle": -0.20943951023931956
+    },
+    {
+      "name": "Podium1",
+      "section": "Bay4",
+      "p": [
+        18.088317101145062,
+        9.098841263841095,
+        1.7
+      ],
+      "s": [
+        3.25,
+        3.15,
+        3.4
+      ],
+      "angle": -0.20943951023931956
+    },
+    {
+      "name": "Podium3",
+      "section": "Bay4",
+      "p": [
+        21.609648463786762,
+        8.350359176897161,
+        0.975
+      ],
+      "s": [
+        3.25,
+        3.15,
+        1.95
+      ],
+      "angle": -0.20943951023931956
+    },
+    {
+      "name": "Column",
+      "section": "Bay5",
+      "p": [
+        29.082815151848866,
+        9.678225138265967,
+        9
+      ],
+      "s": [
+        1.42,
+        2.0,
+        18
+      ],
+      "angle": -0.4188790204786391
+    },
+    {
+      "name": "Column",
+      "section": "Bay5",
+      "p": [
+        44.211127930410335,
+        2.942666328930716,
+        9
+      ],
+      "s": [
+        1.42,
+        2.0,
+        18
+      ],
+      "angle": -0.4188790204786391
+    },
+    {
+      "name": "Podium2",
+      "section": "Bay5",
+      "p": [
+        32.097324300081254,
+        4.942706729979159,
+        1.15
+      ],
+      "s": [
+        3.25,
+        3.15,
+        2.3
+      ],
+      "angle": -0.4188790204786391
+    },
+    {
+      "name": "Podium1",
+      "section": "Bay5",
+      "p": [
+        35.38608794759462,
+        3.4784548149062786,
+        1.7
+      ],
+      "s": [
+        3.25,
+        3.15,
+        3.4
+      ],
+      "angle": -0.4188790204786391
+    },
+    {
+      "name": "Podium3",
+      "section": "Bay5",
+      "p": [
+        38.67485159510798,
+        2.014202899833398,
+        0.975
+      ],
+      "s": [
+        3.25,
+        3.15,
+        1.95
+      ],
+      "angle": -0.4188790204786391
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -49.0813591723832,
+        -4.197797898283984,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 1.7627825445142729
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -48.38301348082647,
+        -5.54965437312471,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 1.8258083230585127
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -47.492542034152876,
+        -6.879473536513199,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 1.8888341016027521
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -46.41348083574033,
+        -8.181974764268505,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 1.951859880146992
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -45.15011476643125,
+        -9.451985909930121,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.014885658691232
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -43.70746056955338,
+        -10.684463843010436,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.0779114372354712
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -42.091246929762875,
+        -11.874514474933283,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.140937215779711
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -40.307891724815505,
+        -13.017412193136792,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.2039629943239505
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -38.364476540597344,
+        -14.108618626169221,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.2669887728681903
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -36.268718550614395,
+        -15.143800665262582,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.3300145514124297
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -34.02893987160552,
+        -16.1188476708218,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.3930403299566696
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -31.65403451696598,
+        -17.029887795503335,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.4560661085009095
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -29.15343307920675,
+        -17.873303359065638,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.519091887045149
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -26.537065281693767,
+        -18.64574521393875,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.5821176655893883
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -23.815320548371425,
+        -19.344146044468395,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.6451434441336286
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -20.999006748045485,
+        -19.96573254702408,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.708169222677868
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -18.099307277048755,
+        -20.508036442604926,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.7711950012221074
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -15.127736650712043,
+        -20.96890427821277,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.8342207797663477
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing-1",
+      "p": [
+        -12.096094779983389,
+        -21.34650597807192,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 2.897246558310587
+    },
+    {
+      "name": "PlanterBase",
+      "section": "OuterPlanter-1",
+      "p": [
+        -46,
+        -7,
+        0.7
+      ],
+      "s": [
+        5,
+        5,
+        1.4
+      ],
+      "angle": 0
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        12.096094779983371,
+        -21.346505978071924,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 3.385938748868999
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        15.127736650712025,
+        -20.968904278212772,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 3.4489645274132386
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        18.09930727704874,
+        -20.50803644260493,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 3.511990305957479
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        20.999006748045467,
+        -19.965732547024082,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 3.5750160845017183
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        23.81532054837141,
+        -19.3441460444684,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 3.6380418630459577
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        26.537065281693756,
+        -18.645745213938756,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 3.701067641590198
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        29.15343307920673,
+        -17.87330335906564,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 3.7640934201344374
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        31.65403451696596,
+        -17.029887795503342,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 3.827119198678677
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        34.02893987160553,
+        -16.1188476708218,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 3.890144977222917
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        36.26871855061437,
+        -15.143800665262589,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 3.9531707557671565
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        38.36447654059733,
+        -14.108618626169227,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 4.016196534311396
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        40.30789172481551,
+        -13.01741219313679,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 4.079222312855636
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        42.091246929762875,
+        -11.874514474933283,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 4.142248091399876
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        43.70746056955337,
+        -10.684463843010445,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 4.205273869944115
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        45.150114766431265,
+        -9.45198590993011,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 4.268299648488355
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        46.41348083574034,
+        -8.181974764268505,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 4.331325427032595
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        47.49254203415287,
+        -6.879473536513207,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 4.394351205576834
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        48.38301348082648,
+        -5.549654373124698,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 4.457376984121074
+    },
+    {
+      "name": "WingCollision",
+      "section": "FrontWing1",
+      "p": [
+        49.0813591723832,
+        -4.197797898283983,
+        1.7
+      ],
+      "s": [
+        2.6,
+        1.1,
+        3.0
+      ],
+      "angle": 4.520402762665314
+    },
+    {
+      "name": "PlanterBase",
+      "section": "OuterPlanter1",
+      "p": [
+        46,
+        -7,
+        0.7
+      ],
+      "s": [
+        5,
+        5,
+        1.4
+      ],
+      "angle": 0
+    },
+    {
+      "name": "LampPost",
+      "section": "Lamp1",
+      "p": [
+        -46,
+        -7,
+        3.3
+      ],
+      "s": [
+        2,
+        2,
+        3.6
+      ],
+      "angle": 0
+    },
+    {
+      "name": "LampPost",
+      "section": "Lamp2",
+      "p": [
+        -9,
+        -17,
+        1.8
+      ],
+      "s": [
+        2,
+        2,
+        3.6
+      ],
+      "angle": 0
+    },
+    {
+      "name": "LampPost",
+      "section": "Lamp3",
+      "p": [
+        9,
+        -17,
+        1.8
+      ],
+      "s": [
+        2,
+        2,
+        3.6
+      ],
+      "angle": 0
+    },
+    {
+      "name": "LampPost",
+      "section": "Lamp4",
+      "p": [
+        46,
+        -7,
+        3.3
+      ],
+      "s": [
+        2,
+        2,
+        3.6
+      ],
+      "angle": 0
+    },
+    {
+      "name": "LampPost",
+      "section": "Lamp5",
+      "p": [
+        -9,
+        -42,
+        -0.9999999999999998
+      ],
+      "s": [
+        2,
+        2,
+        3.6
+      ],
+      "angle": 0
+    },
+    {
+      "name": "LampPost",
+      "section": "Lamp6",
+      "p": [
+        9,
+        -42,
+        -0.9999999999999998
+      ],
+      "s": [
+        2,
+        2,
+        3.6
+      ],
+      "angle": 0
+    }
+  ],
+  "origin": [
+    1552,
+    374.2,
+    -929
+  ],
+  "presenter": [
+    0,
+    -5,
+    0.565
+  ],
+  "units": "One Blender unit = one Roblox stud. X right; Y rear; Z up. Native transform (x,z,-y)."
+}

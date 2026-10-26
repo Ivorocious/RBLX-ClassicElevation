@@ -1,0 +1,29 @@
+{
+  "revision": "C01",
+  "status": "candidate_ready_not_installed",
+  "checksPassed": 17,
+  "checks": [
+    "Standalone Luau module compiles",
+    "Three exact floor collision profiles meet the visible near/far elevation endpoints",
+    "Lower landing, ramp and upper landing join without an elevation gap",
+    "Landing endpoints overlap the actual lower lobby and stage footprint",
+    "Parapets preserve more than sixteen studs of clear floor",
+    "The shifted lamp colliders clear a two-stud torso on X plus or minus 7.2 paths",
+    "Lamps5/6 shifted footings meet the measured ramp surface",
+    "Isolated geometry-only native recovery fixture source compiles; fixture has not been executed by this worker",
+    "Two visible cream lamp footings meet shifted lower lamp bases and overlap the walkway plinth"
+  ],
+  "meshCount": 38,
+  "triangles": 5168,
+  "archivedOriginalParts": 35,
+  "repositionedLampParts": 20,
+  "nativeNonCollidingFootingParts": 2,
+  "studioMutations": 0,
+  "previousNativeAttempt": "Lead reported whole-model copy rejected for Animate-script capabilities before any live mutation; replaced with geometry-only recursive copies.",
+  "remaining": [
+    "Native asset import and guarded Edit installation",
+    "Original-part preservation comparison",
+    "Native material, rail-end, lamp and stage-overlap inspection",
+    "Normal walking both ways on center and near-edge paths with jumping disabled"
+  ]
+}

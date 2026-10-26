@@ -1,0 +1,16 @@
+{
+  "sha256": "8580577e600bd31a15c22d483524679e02caa6e356ed8b27478b705c499a029f",
+  "request": {
+    "assetType": "Model",
+    "displayName": "SC_R_PalmCrown29",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/6cef8671-5880-46b8-a001-8052c2ad78a6",
+  "assetId": "137368535339562"
+}

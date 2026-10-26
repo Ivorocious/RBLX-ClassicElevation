@@ -1,0 +1,829 @@
+{
+  "build": "SC_REV_09",
+  "routeBuild": "SC_MAP_16",
+  "visual": "SC_R_HeadlandRidge",
+  "walkingBoxIntersections": [],
+  "corridorSamples": 1865,
+  "minimumCorridorClearance": 2.02,
+  "minimumBodyClearance": 4.07,
+  "minimumHeadClearance": 6.5,
+  "minimumRaisedVertexDistanceFromRoute": 10.99,
+  "grounding": [
+    {
+      "node": 0,
+      "routeTop": 45,
+      "ridgeTop": 42.1,
+      "gap": 2.9
+    },
+    {
+      "node": 1,
+      "routeTop": 48,
+      "ridgeTop": 45.1,
+      "gap": 2.9
+    },
+    {
+      "node": 2,
+      "routeTop": 51,
+      "ridgeTop": 48.1,
+      "gap": 2.9
+    },
+    {
+      "node": 3,
+      "routeTop": 54,
+      "ridgeTop": 40.1,
+      "gap": 13.9
+    },
+    {
+      "node": 4,
+      "routeTop": 55,
+      "ridgeTop": 52.1,
+      "gap": 2.9
+    },
+    {
+      "node": 5,
+      "routeTop": 53,
+      "ridgeTop": 50.1,
+      "gap": 2.9
+    },
+    {
+      "node": 6,
+      "routeTop": 49,
+      "ridgeTop": 46.1,
+      "gap": 2.9
+    },
+    {
+      "node": 7,
+      "routeTop": 44,
+      "ridgeTop": 30.1,
+      "gap": 13.9
+    },
+    {
+      "node": 8,
+      "routeTop": 39,
+      "ridgeTop": 36.1,
+      "gap": 2.9
+    },
+    {
+      "node": 9,
+      "routeTop": 33,
+      "ridgeTop": 30.1,
+      "gap": 2.9
+    },
+    {
+      "node": 10,
+      "routeTop": 26,
+      "ridgeTop": 23.1,
+      "gap": 2.9
+    }
+  ],
+  "ledgeUndersides": [
+    {
+      "node": 0,
+      "offset": [
+        -3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 0,
+      "offset": [
+        -3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 0,
+      "offset": [
+        -3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 0,
+      "offset": [
+        0,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 0,
+      "offset": [
+        0,
+        0
+      ],
+      "gap": -0.1
+    },
+    {
+      "node": 0,
+      "offset": [
+        0,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 0,
+      "offset": [
+        3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 0,
+      "offset": [
+        3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 0,
+      "offset": [
+        3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 1,
+      "offset": [
+        -3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 1,
+      "offset": [
+        -3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 1,
+      "offset": [
+        -3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 1,
+      "offset": [
+        0,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 1,
+      "offset": [
+        0,
+        0
+      ],
+      "gap": -0.1
+    },
+    {
+      "node": 1,
+      "offset": [
+        0,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 1,
+      "offset": [
+        3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 1,
+      "offset": [
+        3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 1,
+      "offset": [
+        3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 2,
+      "offset": [
+        -3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 2,
+      "offset": [
+        -3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 2,
+      "offset": [
+        -3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 2,
+      "offset": [
+        0,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 2,
+      "offset": [
+        0,
+        0
+      ],
+      "gap": -0.1
+    },
+    {
+      "node": 2,
+      "offset": [
+        0,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 2,
+      "offset": [
+        3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 2,
+      "offset": [
+        3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 2,
+      "offset": [
+        3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 4,
+      "offset": [
+        -3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 4,
+      "offset": [
+        -3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 4,
+      "offset": [
+        -3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 4,
+      "offset": [
+        0,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 4,
+      "offset": [
+        0,
+        0
+      ],
+      "gap": -0.1
+    },
+    {
+      "node": 4,
+      "offset": [
+        0,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 4,
+      "offset": [
+        3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 4,
+      "offset": [
+        3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 4,
+      "offset": [
+        3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 5,
+      "offset": [
+        -3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 5,
+      "offset": [
+        -3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 5,
+      "offset": [
+        -3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 5,
+      "offset": [
+        0,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 5,
+      "offset": [
+        0,
+        0
+      ],
+      "gap": -0.1
+    },
+    {
+      "node": 5,
+      "offset": [
+        0,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 5,
+      "offset": [
+        3.5,
+        -3.5
+      ],
+      "gap": -0.024
+    },
+    {
+      "node": 5,
+      "offset": [
+        3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 5,
+      "offset": [
+        3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 6,
+      "offset": [
+        -3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 6,
+      "offset": [
+        -3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 6,
+      "offset": [
+        -3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 6,
+      "offset": [
+        0,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 6,
+      "offset": [
+        0,
+        0
+      ],
+      "gap": -0.1
+    },
+    {
+      "node": 6,
+      "offset": [
+        0,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 6,
+      "offset": [
+        3.5,
+        -3.5
+      ],
+      "gap": -0.281
+    },
+    {
+      "node": 6,
+      "offset": [
+        3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 6,
+      "offset": [
+        3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 8,
+      "offset": [
+        -3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 8,
+      "offset": [
+        -3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 8,
+      "offset": [
+        -3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 8,
+      "offset": [
+        0,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 8,
+      "offset": [
+        0,
+        0
+      ],
+      "gap": -0.1
+    },
+    {
+      "node": 8,
+      "offset": [
+        0,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 8,
+      "offset": [
+        3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 8,
+      "offset": [
+        3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 8,
+      "offset": [
+        3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 9,
+      "offset": [
+        -3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 9,
+      "offset": [
+        -3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 9,
+      "offset": [
+        -3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 9,
+      "offset": [
+        0,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 9,
+      "offset": [
+        0,
+        0
+      ],
+      "gap": -0.1
+    },
+    {
+      "node": 9,
+      "offset": [
+        0,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 9,
+      "offset": [
+        3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 9,
+      "offset": [
+        3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 9,
+      "offset": [
+        3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 10,
+      "offset": [
+        -3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 10,
+      "offset": [
+        -3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 10,
+      "offset": [
+        -3.5,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 10,
+      "offset": [
+        0,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 10,
+      "offset": [
+        0,
+        0
+      ],
+      "gap": -0.1
+    },
+    {
+      "node": 10,
+      "offset": [
+        0,
+        3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 10,
+      "offset": [
+        3.5,
+        -3.5
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 10,
+      "offset": [
+        3.5,
+        0
+      ],
+      "gap": 0.1
+    },
+    {
+      "node": 10,
+      "offset": [
+        3.5,
+        3.5
+      ],
+      "gap": 0.1
+    }
+  ],
+  "shipVisualRoute": {
+    "0.5": {
+      "clearance": 5.49,
+      "nearest": {
+        "route": [
+          -27.0,
+          39.67,
+          -91.0
+        ],
+        "asset": "R_HullStern_176",
+        "meshPoint": [
+          -27.48,
+          42.0,
+          -86.05
+        ]
+      }
+    },
+    "3": {
+      "clearance": 4.95,
+      "nearest": {
+        "route": [
+          -27.0,
+          42.17,
+          -91.0
+        ],
+        "asset": "R_HullStern_176",
+        "meshPoint": [
+          -27.0,
+          42.17,
+          -86.05
+        ]
+      }
+    },
+    "6": {
+      "clearance": 5.0,
+      "nearest": {
+        "route": [
+          -22.0,
+          46.0,
+          -91.0
+        ],
+        "asset": "R_HullStern_176",
+        "meshPoint": [
+          -21.82,
+          45.33,
+          -86.05
+        ]
+      }
+    }
+  },
+  "caveVisualRoute": {
+    "0.5": {
+      "clearance": 5.8,
+      "nearest": {
+        "route": [
+          101.0,
+          10.5,
+          58.0
+        ],
+        "asset": "CaveApproach",
+        "meshPoint": [
+          101.0,
+          9.0,
+          52.4
+        ]
+      }
+    },
+    "3": {
+      "clearance": 6.88,
+      "nearest": {
+        "route": [
+          101.0,
+          13.0,
+          58.0
+        ],
+        "asset": "CaveApproach",
+        "meshPoint": [
+          101.0,
+          9.0,
+          52.4
+        ]
+      }
+    },
+    "6": {
+      "clearance": 7.03,
+      "nearest": {
+        "route": [
+          100.0,
+          16.0,
+          58.0
+        ],
+        "asset": "CaveApproach",
+        "meshPoint": [
+          100.22,
+          16.14,
+          50.97
+        ]
+      }
+    }
+  }
+}

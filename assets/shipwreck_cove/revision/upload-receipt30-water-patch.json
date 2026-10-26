@@ -1,0 +1,16 @@
+{
+  "sha256": "3669105ad287d955e21d9b41459e551659c9689e4bf21b978b587f5999a99aa4",
+  "request": {
+    "assetType": "Model",
+    "displayName": "SC_WaterPatch30",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/a7378115-03e6-4674-af61-c2f6f826bf56",
+  "assetId": "138055304084754"
+}

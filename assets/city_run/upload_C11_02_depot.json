@@ -1,0 +1,16 @@
+{
+  "sha256": "843d7963a1738534e93bd50e9a23917e2c8e8c963bedef28a1c1e558044dc23c",
+  "request": {
+    "assetType": "Model",
+    "displayName": "CityRun_C11_02_Depot",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/306c4d4a-aba9-4497-aa53-a6bae6340257",
+  "assetId": "119518060524102"
+}

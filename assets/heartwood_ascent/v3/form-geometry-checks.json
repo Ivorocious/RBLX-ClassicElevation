@@ -1,0 +1,53 @@
+{
+  "candidate": "HA_V1_04",
+  "passed": true,
+  "sourceTriangles": 93216,
+  "checks": [
+    {
+      "name": "HA_ShelfWideB",
+      "horizontalBoundDelta": 0.0,
+      "triangles": 600
+    },
+    {
+      "name": "HA_ShelfWideC",
+      "horizontalBoundDelta": 0.0,
+      "triangles": 600
+    },
+    {
+      "name": "HA_ForestNearA",
+      "horizontalBoundDelta": 0.0,
+      "triangles": 3212
+    },
+    {
+      "name": "HA_ForestNearB",
+      "horizontalBoundDelta": 0.0,
+      "triangles": 3212
+    },
+    {
+      "name": "HA_ForestMid",
+      "horizontalBoundDelta": 0.0,
+      "triangles": 1820
+    },
+    {
+      "name": "HA_ForestFar",
+      "horizontalBoundDelta": 0.0,
+      "triangles": 1076
+    },
+    {
+      "name": "HA_ForestGround",
+      "horizontalBoundDelta": 0.0,
+      "triangles": 1472
+    },
+    {
+      "name": "HA_ShelfWideB",
+      "walkingVertices": 29,
+      "maxWalkingVertexDifference": 0.0
+    },
+    {
+      "name": "HA_ShelfWideC",
+      "walkingVertices": 29,
+      "maxWalkingVertexDifference": 0.0
+    }
+  ],
+  "scope": "Exact source shelf walking vertices and horizontal normalization bounds; native collision and play checks remain separate."
+}

@@ -1,0 +1,27 @@
+{
+  "candidate": "MC_P3_WORLD_KIT_C01",
+  "source_preserved": true,
+  "elapsed_seconds": 44.885,
+  "files": {
+    "MC_P3_WORLD_KIT.blend": {
+      "bytes": 940770,
+      "sha256": "2f16be04e71b2122694b20d01384f8e0fd9ac02eab04718eea40055534fe1155"
+    },
+    "MC_P3_WORLD_KIT.fbx": {
+      "bytes": 399084,
+      "sha256": "9ec7e9add8665ecc3c6ac5aed585c14402086924072f834f75b5089c29e4ff31"
+    },
+    "manifest.json": {
+      "bytes": 112690,
+      "sha256": "03b97f6655fd1d9a2a5cad672fb1349e0045178a90bead62153adc20b57b56c3"
+    },
+    "world-specimen-daylight.png": {
+      "bytes": 1898423,
+      "sha256": "58a6906c4c5383af773fe763f5672770f99456451071ac2192c57dc9f0b56316"
+    },
+    "world-specimen-player.png": {
+      "bytes": 1826338,
+      "sha256": "14ff3bf8edb9bc4f3bccd2d01cb6989b9d761165347798dcffb7c364facf5d28"
+    }
+  }
+}

@@ -1,0 +1,658 @@
+{
+  "candidate": "ER_P1_R01_K01",
+  "phase": 1,
+  "blender": "5.2.1 LTS",
+  "units": "1 Blender unit =1 intended Roblox stud",
+  "axes": "RobloxXYZ=(BlenderX,BlenderZ,-BlenderY)",
+  "exportSettings": {
+    "axis_forward": "-Z",
+    "axis_up": "Y",
+    "apply_scale_options": "FBX_SCALE_UNITS"
+  },
+  "palette": {
+    "Shell": "FFF0CA",
+    "ShellShade": "E8D4A8",
+    "Mint": "68CDB0",
+    "Coral": "F67D60",
+    "Lilac": "B688D8",
+    "Honey": "B97B43",
+    "Straw": "D89C53",
+    "Iron": "646A78",
+    "IronLight": "949BA9",
+    "Ink": "343744",
+    "Amber": "FFC04B",
+    "GlassBlue": "8CC7DA"
+  },
+  "assets": [
+    {
+      "name": "ShellFragment",
+      "family": "R01Shells",
+      "boundsBlender": [
+        [
+          -5.0,
+          -2.25,
+          -2.4000000953674316
+        ],
+        [
+          5.0,
+          2.25,
+          0.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        2.4000000953674316,
+        4.5
+      ],
+      "pivot": "Flat top Z0; bottom center XY0; Roblox topY0.",
+      "use": "Short fixed shell landing:10 sideways by4.5 forward, squared stepped corners.",
+      "contacts": [
+        {
+          "center": [
+            0,
+            -0.3,
+            0
+          ],
+          "size": [
+            8,
+            0.6,
+            4.5
+          ]
+        }
+      ],
+      "surfaceConstruction": "Axis-aligned solid union; buried faces removed, coplanar same-role rectangles merged.",
+      "materialBoundaryNormalCorrections": 1,
+      "usableTopBlender": {
+        "x": [
+          -4,
+          4
+        ],
+        "y": [
+          -2.25,
+          2.25
+        ],
+        "z": 0
+      },
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_ShellFragment__Coral",
+          "role": "Coral",
+          "triangles": 2,
+          "nonManifoldEdges": 4
+        },
+        {
+          "name": "ER_ShellFragment__Mint",
+          "role": "Mint",
+          "triangles": 2,
+          "nonManifoldEdges": 4
+        },
+        {
+          "name": "ER_ShellFragment__Shell",
+          "role": "Shell",
+          "triangles": 76,
+          "nonManifoldEdges": 64
+        }
+      ],
+      "fbx": "ER_R01Shells.fbx"
+    },
+    {
+      "name": "ShellLeafWide",
+      "family": "R01Shells",
+      "boundsBlender": [
+        [
+          -6.0,
+          0.0,
+          -3.4000000953674316
+        ],
+        [
+          6.0,
+          8.0,
+          0.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        12.0,
+        3.4000000953674316,
+        8.0
+      ],
+      "pivot": "Hinge axis localX through0; flat rim/top Z0; extends Blender+Y /Roblox-Z.",
+      "use": "Open rear cup with floorZ-2.5; solid front landing Y4.5..8. No contact over the rear recess.",
+      "contacts": [
+        {
+          "center": [
+            0,
+            -0.3,
+            -6.25
+          ],
+          "size": [
+            10,
+            0.6,
+            3.5
+          ]
+        }
+      ],
+      "surfaceConstruction": "Axis-aligned solid union; buried faces removed, coplanar same-role rectangles merged.",
+      "materialBoundaryNormalCorrections": 9,
+      "hingeBlender": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ]
+      },
+      "usableTopBlender": {
+        "x": [
+          -5.0,
+          5.0
+        ],
+        "y": [
+          4.5,
+          8
+        ],
+        "z": 0
+      },
+      "recessBlender": {
+        "x": [
+          -4.0,
+          4.0
+        ],
+        "y": [
+          1.4,
+          4.5
+        ],
+        "floorZ": -2.5,
+        "rimZ": 0
+      },
+      "packageOffsetBlender": [
+        28.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_ShellLeafWide__Coral",
+          "role": "Coral",
+          "triangles": 4,
+          "nonManifoldEdges": 8
+        },
+        {
+          "name": "ER_ShellLeafWide__Mint",
+          "role": "Mint",
+          "triangles": 2,
+          "nonManifoldEdges": 4
+        },
+        {
+          "name": "ER_ShellLeafWide__Shell",
+          "role": "Shell",
+          "triangles": 108,
+          "nonManifoldEdges": 126
+        },
+        {
+          "name": "ER_ShellLeafWide__ShellShade",
+          "role": "ShellShade",
+          "triangles": 4,
+          "nonManifoldEdges": 8
+        }
+      ],
+      "fbx": "ER_R01Shells.fbx"
+    },
+    {
+      "name": "ShellLeafCrown",
+      "family": "R01Shells",
+      "boundsBlender": [
+        [
+          -4.0,
+          0.0,
+          -3.4000000953674316
+        ],
+        [
+          4.0,
+          8.0,
+          0.0
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        8.0,
+        3.4000000953674316,
+        8.0
+      ],
+      "pivot": "Hinge axis localX through0; flat rim/top Z0; extends Blender+Y /Roblox-Z.",
+      "use": "Open rear cup with floorZ-2.5; solid front landing Y4.5..8. No contact over the rear recess.",
+      "contacts": [
+        {
+          "center": [
+            0,
+            -0.3,
+            -6.25
+          ],
+          "size": [
+            6,
+            0.6,
+            3.5
+          ]
+        }
+      ],
+      "surfaceConstruction": "Axis-aligned solid union; buried faces removed, coplanar same-role rectangles merged.",
+      "materialBoundaryNormalCorrections": 11,
+      "hingeBlender": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ]
+      },
+      "usableTopBlender": {
+        "x": [
+          -3.0,
+          3.0
+        ],
+        "y": [
+          4.5,
+          8
+        ],
+        "z": 0
+      },
+      "recessBlender": {
+        "x": [
+          -2.0,
+          2.0
+        ],
+        "y": [
+          1.4,
+          4.5
+        ],
+        "floorZ": -2.5,
+        "rimZ": 0
+      },
+      "packageOffsetBlender": [
+        56.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        56.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_ShellLeafCrown__Lilac",
+          "role": "Lilac",
+          "triangles": 2,
+          "nonManifoldEdges": 4
+        },
+        {
+          "name": "ER_ShellLeafCrown__Mint",
+          "role": "Mint",
+          "triangles": 4,
+          "nonManifoldEdges": 8
+        },
+        {
+          "name": "ER_ShellLeafCrown__Shell",
+          "role": "Shell",
+          "triangles": 108,
+          "nonManifoldEdges": 126
+        },
+        {
+          "name": "ER_ShellLeafCrown__ShellShade",
+          "role": "ShellShade",
+          "triangles": 4,
+          "nonManifoldEdges": 8
+        }
+      ],
+      "fbx": "ER_R01Shells.fbx"
+    },
+    {
+      "name": "ShellHingeWide",
+      "family": "R01Shells",
+      "boundsBlender": [
+        [
+          -7.599999904632568,
+          -1.25,
+          -1.5499999523162842
+        ],
+        [
+          7.599999904632568,
+          0.8500000238418579,
+          0.8500000238418579
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        15.199999809265137,
+        2.399999976158142,
+        2.100000023841858
+      ],
+      "pivot": "Same origin as leaf:axle localX through BlenderY0,Z0. No placement offset.",
+      "use": "Static outboard coral housings; recessed lower bridge behind the leaf root. Front landing Y4.5..8 stays clear.",
+      "contacts": [],
+      "hingeBlender": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "leafWidth": 12
+      },
+      "packageOffsetBlender": [
+        84.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        84.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_ShellHingeWide__Coral",
+          "role": "Coral",
+          "triangles": 112,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShellHingeWide__Iron",
+          "role": "Iron",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShellHingeWide__IronLight",
+          "role": "IronLight",
+          "triangles": 88,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShellHingeWide__Mint",
+          "role": "Mint",
+          "triangles": 88,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_R01Shells.fbx"
+    },
+    {
+      "name": "ShellHingeCrown",
+      "family": "R01Shells",
+      "boundsBlender": [
+        [
+          -5.599999904632568,
+          -1.25,
+          -1.5499999523162842
+        ],
+        [
+          5.599999904632568,
+          0.8500000238418579,
+          0.8500000238418579
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        11.199999809265137,
+        2.399999976158142,
+        2.100000023841858
+      ],
+      "pivot": "Same origin as leaf:axle localX through BlenderY0,Z0. No placement offset.",
+      "use": "Static outboard coral housings; recessed lower bridge behind the leaf root. Front landing Y4.5..8 stays clear.",
+      "contacts": [],
+      "hingeBlender": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "leafWidth": 8
+      },
+      "packageOffsetBlender": [
+        0.0,
+        30.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -30.0
+      ],
+      "parts": [
+        {
+          "name": "ER_ShellHingeCrown__Coral",
+          "role": "Coral",
+          "triangles": 112,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShellHingeCrown__Iron",
+          "role": "Iron",
+          "triangles": 12,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShellHingeCrown__IronLight",
+          "role": "IronLight",
+          "triangles": 88,
+          "nonManifoldEdges": 0
+        },
+        {
+          "name": "ER_ShellHingeCrown__Mint",
+          "role": "Mint",
+          "triangles": 88,
+          "nonManifoldEdges": 0
+        }
+      ],
+      "fbx": "ER_R01Shells.fbx"
+    },
+    {
+      "name": "GuardianBody",
+      "family": "R01Guardian",
+      "boundsBlender": [
+        [
+          -5.175000190734863,
+          -7.699999809265137,
+          0.0
+        ],
+        [
+          5.175000190734863,
+          4.550000190734863,
+          11.800000190734863
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        10.350000381469727,
+        11.800000190734863,
+        12.25
+      ],
+      "pivot": "Feet bottom0; faces Blender-Y /Roblox+Z. Tail socket Blender(0,4.1,4.5).",
+      "use": "D02-inspired sleepy block chicken:distinct head/chest, broad stepped violet wings and coral feet. Art only.",
+      "contacts": [],
+      "surfaceConstruction": "Axis-aligned solid union; buried faces removed, coplanar same-role rectangles merged.",
+      "materialBoundaryNormalCorrections": 15,
+      "attachmentBlender": {
+        "GuardianTail": [
+          0,
+          4.1,
+          4.5
+        ]
+      },
+      "packageOffsetBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_GuardianBody__Coral",
+          "role": "Coral",
+          "triangles": 152,
+          "nonManifoldEdges": 140
+        },
+        {
+          "name": "ER_GuardianBody__Ink",
+          "role": "Ink",
+          "triangles": 12,
+          "nonManifoldEdges": 24
+        },
+        {
+          "name": "ER_GuardianBody__Lilac",
+          "role": "Lilac",
+          "triangles": 8,
+          "nonManifoldEdges": 16
+        },
+        {
+          "name": "ER_GuardianBody__Shell",
+          "role": "Shell",
+          "triangles": 270,
+          "nonManifoldEdges": 390
+        }
+      ],
+      "fbx": "ER_R01Guardian.fbx"
+    },
+    {
+      "name": "GuardianTail",
+      "family": "R01Guardian",
+      "boundsBlender": [
+        [
+          -3.200000047683716,
+          -0.44999998807907104,
+          -1.100000023841858
+        ],
+        [
+          3.4000000953674316,
+          3.799999952316284,
+          6.800000190734863
+        ]
+      ],
+      "dimensionsRobloxXYZ": [
+        6.6000001430511475,
+        7.900000214576721,
+        4.249999940395355
+      ],
+      "pivot": "Root0; extends Blender+Y; mate to GuardianBody socket(0,4.1,4.5); localZ would be sweep axis.",
+      "use": "Upright few-piece D02 tail pose; no course sweep envelope or contacts are implied.",
+      "contacts": [],
+      "surfaceConstruction": "Axis-aligned solid union; buried faces removed, coplanar same-role rectangles merged.",
+      "materialBoundaryNormalCorrections": 8,
+      "packageOffsetBlender": [
+        28.0,
+        0.0,
+        0.0
+      ],
+      "packageOffsetRoblox": [
+        28.0,
+        0.0,
+        -0.0
+      ],
+      "parts": [
+        {
+          "name": "ER_GuardianTail__Coral",
+          "role": "Coral",
+          "triangles": 28,
+          "nonManifoldEdges": 36
+        },
+        {
+          "name": "ER_GuardianTail__Lilac",
+          "role": "Lilac",
+          "triangles": 8,
+          "nonManifoldEdges": 6
+        },
+        {
+          "name": "ER_GuardianTail__Mint",
+          "role": "Mint",
+          "triangles": 16,
+          "nonManifoldEdges": 22
+        },
+        {
+          "name": "ER_GuardianTail__Shell",
+          "role": "Shell",
+          "triangles": 50,
+          "nonManifoldEdges": 64
+        }
+      ],
+      "fbx": "ER_R01Guardian.fbx"
+    }
+  ],
+  "assetCount": 7,
+  "partCount": 27,
+  "triangles": 1460,
+  "builderSHA256": "63b3b2c6a254faf2152ac791acedca6c2acdd589aff4022e23066a5c9c51157f",
+  "helperSHA256": "2cb7246c0c82772914f09f138d98d4c67233bc1a77b61c91da705373301df060",
+  "blenderFbxRoundtrip": [
+    {
+      "file": "ER_R01Guardian.fbx",
+      "parts": 8,
+      "boundsErrorStuds": 1.2e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    },
+    {
+      "file": "ER_R01Shells.fbx",
+      "parts": 19,
+      "boundsErrorStuds": 1.4e-06,
+      "materialSlots": "one per part",
+      "result": "PASS"
+    }
+  ],
+  "collision": "Art only. Manifest contacts are native Roblox XYZ, never a bounding-box fill over the recess.",
+  "pose": "Open leaf angle0; closed pose82deg localX is a visual assembly check, not runtime tuning.",
+  "renderViews": [
+    "ER_P1_R01_kit.png",
+    "Guardian_front.png",
+    "Guardian_side.png",
+    "ShellLeafCrown_closed.png",
+    "ShellLeafCrown_open.png",
+    "ShellLeafWide_closed.png",
+    "ShellLeafWide_open.png"
+  ],
+  "buildSeconds": 75.341,
+  "caveat": "Fresh offline candidate only. Native scale, material placement, moving joins, contact/carry, player view and owner Phase1 assessment remain required.",
+  "files": {
+    "ER_P1_R01_kit.blend": "3727f2b50a307abc37e1f857f5b042bc1851747cb27d418f523b68916fd4e2fd",
+    "ER_P1_R01_kit.png": "0d623379c98f9bdb048639785516cade94869be76383ec3ed50e018ab2bf9c00",
+    "ER_R01Guardian.fbx": "efa334abe1aba23ac69b0a7f4ec6ea6299896369309b4665133d30216783f66d",
+    "ER_R01Shells.fbx": "b1b5ba3442b09211220aa71e39d8ab0b1e16af91bc98295997f44a2278eea314",
+    "Guardian_front.png": "d04c5aad7489a2b60d03ba6123638d415527259b67289d567243c9b9803e6d61",
+    "Guardian_side.png": "2219ef1c9f7c9042fd0c67cade425e4c4988b5160e8365a6385759f210f59a78",
+    "ShellLeafCrown_closed.png": "38fa94cb01f6663436d2d5e83cadd034385332962b53495abf9d1b30f18ddc4e",
+    "ShellLeafCrown_open.png": "ff60ac0d8e54a6bcc3ad17574f51fb8d2b19de8f21e2888f1112f206a24ba38e",
+    "ShellLeafWide_closed.png": "83fd5cab8381897583bbd3f29ccd9949aaf092c94406a52cd0296f2e982a0787",
+    "ShellLeafWide_open.png": "85130e9f4b905d773d271b7ea2fb958c312ede47634eda35ef9d0ee712dd7288"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "sha256": "264dd06367881ed6bf9ceab098c9c8acd11f8a2f0fca2a5fd1e40837de0c6716",
+  "request": {
+    "assetType": "Audio",
+    "displayName": "Shipwreck Cove tide_surge",
+    "description": "Original synthesized Shipwreck Cove hazard sound effect.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/067faf36-599b-4af2-ad31-598ae55377cb",
+  "assetId": "120461637148584"
+}

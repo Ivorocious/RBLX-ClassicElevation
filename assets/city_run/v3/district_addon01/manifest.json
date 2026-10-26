@@ -1,0 +1,308 @@
+{
+  "build": "V3_DISTRICT_ADDON_01",
+  "baseKit": "V3_KIT_05",
+  "assets": [
+    {
+      "id": "V3_LoadingFacade",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        24.0,
+        2.825000047683716,
+        14.0
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        14.0,
+        2.825000047683716
+      ],
+      "triangles": 324,
+      "vertices": 216,
+      "materialSlots": 1,
+      "texture": "../painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "24-stud loading shutter, vent and conduit wall overlay; mount back against a shell. Closed opaque geometry.",
+      "fbx": "exports/V3_LoadingFacade.fbx",
+      "fbxBytes": 534604,
+      "sha256": "1a2c2562428590e4916c182bed4081c31828d3b4293efa387c889db7e179d9c3",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0.0,
+          14.0,
+          0.9125000238418579
+        ],
+        "front": [
+          0.0,
+          7.0,
+          2.325000047683716
+        ],
+        "back": [
+          0.0,
+          7.0,
+          -0.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "mountingGuide": "../MOUNTING.md"
+    },
+    {
+      "id": "V3_ServiceStock",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        12.75,
+        4.550000190734863,
+        4.5
+      ],
+      "dimensionsRobloxXYZ": [
+        12.75,
+        4.5,
+        4.550000190734863
+      ],
+      "triangles": 384,
+      "vertices": 256,
+      "materialSlots": 1,
+      "texture": "../painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "One reusable dumpster and pallet cluster; no transparent faces or small physics parts.",
+      "fbx": "exports/V3_ServiceStock.fbx",
+      "fbxBytes": 535452,
+      "sha256": "d7d113b08b361a397b5d109450d8d6f87159a39911001497b59a0d321e3341f1",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          2.625,
+          4.5,
+          0.02499997615814209
+        ],
+        "front": [
+          2.625,
+          2.25,
+          2.299999952316284
+        ],
+        "back": [
+          2.625,
+          2.25,
+          -2.25
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "mountingGuide": "../MOUNTING.md"
+    },
+    {
+      "id": "V3_WorksiteHoarding",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        17.0,
+        2.5999999046325684,
+        8.0
+      ],
+      "dimensionsRobloxXYZ": [
+        17.0,
+        8.0,
+        2.5999999046325684
+      ],
+      "triangles": 144,
+      "vertices": 96,
+      "materialSlots": 1,
+      "texture": "../painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Solid teal perimeter sheet and timber braces; route boundaries stay gameplay-owned.",
+      "fbx": "exports/V3_WorksiteHoarding.fbx",
+      "fbxBytes": 532076,
+      "sha256": "3177477e321de0966eb246f741daa9b04df5b742614b4d38a8fa2812e027690b",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0.0,
+          8.0,
+          -0.0
+        ],
+        "front": [
+          0.0,
+          4.0,
+          1.2999999523162842
+        ],
+        "back": [
+          0.0,
+          4.0,
+          -1.2999999523162842
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "mountingGuide": "../MOUNTING.md"
+    },
+    {
+      "id": "V3_MaterialsStock",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        10.5,
+        8.0,
+        5.099999904632568
+      ],
+      "dimensionsRobloxXYZ": [
+        10.5,
+        5.099999904632568,
+        8.0
+      ],
+      "triangles": 312,
+      "vertices": 208,
+      "materialSlots": 1,
+      "texture": "../painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Wrapped pallet and three compact steel lengths in one mesh, placed at wall edges.",
+      "fbx": "exports/V3_MaterialsStock.fbx",
+      "fbxBytes": 534396,
+      "sha256": "87d846d24c7a8bb014a13eaac3a0bab756f95f94e011684f9aa5517caeaa9346",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          -0.25,
+          5.099999904632568,
+          -0.0
+        ],
+        "front": [
+          -0.25,
+          2.549999952316284,
+          4.0
+        ],
+        "back": [
+          -0.25,
+          2.549999952316284,
+          -4.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "mountingGuide": "../MOUNTING.md"
+    },
+    {
+      "id": "V3_ServiceCanopy",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        24.0,
+        12.440000534057617,
+        11.25
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        11.25,
+        12.440000534057617
+      ],
+      "triangles": 192,
+      "vertices": 128,
+      "materialSlots": 1,
+      "texture": "../painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Dark steel loading canopy with an opaque roof and grounded footplates.",
+      "fbx": "exports/V3_ServiceCanopy.fbx",
+      "fbxBytes": 533020,
+      "sha256": "7fcad258814afc67463edee8ae3f8656903178500a9dfb5eb01eb99dd670cb71",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0.0,
+          11.25,
+          0.06999993324279785
+        ],
+        "front": [
+          0.0,
+          5.625,
+          6.289999961853027
+        ],
+        "back": [
+          0.0,
+          5.625,
+          -6.150000095367432
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "mountingGuide": "../MOUNTING.md"
+    }
+  ],
+  "totals": {
+    "uniqueAssets": 5,
+    "triangles": 1356,
+    "materials": 1,
+    "textures": 1
+  },
+  "atlas": "../painted_atlas.png"
+}

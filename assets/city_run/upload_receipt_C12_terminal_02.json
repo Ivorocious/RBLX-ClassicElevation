@@ -1,0 +1,16 @@
+{
+  "sha256": "6ae868a4e2788a205de0cefc4ea109c193085d1333fa5aef40ccbaf11ba1a104",
+  "request": {
+    "assetType": "Model",
+    "displayName": "City Run C12 Terminal Final",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/af6bc4cf-bffc-410a-9005-f5d97b97ba6d",
+  "assetId": "119694756887895"
+}

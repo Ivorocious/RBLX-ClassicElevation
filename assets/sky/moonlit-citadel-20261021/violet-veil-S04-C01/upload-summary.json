@@ -1,0 +1,38 @@
+[
+  {
+    "property": "SkyboxBk",
+    "state": "complete",
+    "assetId": "135426015815482",
+    "operation": "operations/78d08758-dcb0-4f78-b800-550809db8cc7"
+  },
+  {
+    "property": "SkyboxDn",
+    "state": "complete",
+    "assetId": "108672079716623",
+    "operation": "operations/f8698909-808f-4198-abe8-f327d53ee216"
+  },
+  {
+    "property": "SkyboxFt",
+    "state": "complete",
+    "assetId": "115800001981482",
+    "operation": "operations/00d89816-ef12-43fa-8b7b-60bc5c3d4eef"
+  },
+  {
+    "property": "SkyboxLf",
+    "state": "complete",
+    "assetId": "114319877535550",
+    "operation": "operations/3ce04757-4fef-48ff-ba45-1559037c751a"
+  },
+  {
+    "property": "SkyboxRt",
+    "state": "complete",
+    "assetId": "113875409362906",
+    "operation": "operations/a9faa4f6-1216-462b-b24a-2eccf9ede358"
+  },
+  {
+    "property": "SkyboxUp",
+    "state": "complete",
+    "assetId": "78695454799024",
+    "operation": "operations/f69e4c1a-9fb0-416f-a5ae-9a34dc95b92f"
+  }
+]

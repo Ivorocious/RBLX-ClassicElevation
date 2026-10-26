@@ -1,0 +1,310 @@
+{
+  "placements": {
+    "BeachPalm0": [
+      -131,
+      3.32000244140625,
+      128
+    ],
+    "BeachPalm1": [
+      -140,
+      41.88,
+      64
+    ],
+    "BeachPalm2": [
+      -136,
+      3.3200177001953124,
+      33
+    ],
+    "BeachPalm3": [
+      23,
+      6.7094677734375,
+      92
+    ],
+    "BeachPalm4": [
+      60,
+      13.063517456054688,
+      88
+    ],
+    "BeachPalm5": [
+      158,
+      38.67998779296875,
+      83
+    ],
+    "DropPalm27_0": [
+      16,
+      7.88,
+      88
+    ],
+    "DropPalm27_1": [
+      -4,
+      7.88,
+      101
+    ],
+    "DropPalm27_2": [
+      -24,
+      7.88,
+      111
+    ],
+    "DropPalm27_3": [
+      -50,
+      7.88,
+      122
+    ],
+    "DropPalm27_4": [
+      -74,
+      7.88,
+      133
+    ],
+    "FixedSpike27_0": [
+      106,
+      29.90184669494629,
+      4
+    ],
+    "FixedSpike27_1": [
+      136,
+      40.097164916992185,
+      22
+    ],
+    "FixedSpike27_2": [
+      105,
+      35.19687347412109,
+      36
+    ],
+    "FixedSpike27_3": [
+      133,
+      31.931315231323243,
+      47
+    ],
+    "FixedSpike27_4": [
+      82,
+      35.70492248535156,
+      65
+    ],
+    "FixedSpike27_5": [
+      56,
+      24.456259536743165,
+      72
+    ]
+  },
+  "falling": {
+    "FallingSpike27_0": {
+      "top": [
+        115,
+        35.1138198852539,
+        8
+      ],
+      "bottom": [
+        115,
+        18.58,
+        8
+      ]
+    },
+    "FallingSpike27_1": {
+      "top": [
+        121,
+        38.1766860961914,
+        29
+      ],
+      "bottom": [
+        121,
+        17.58,
+        29
+      ]
+    },
+    "FallingSpike27_2": {
+      "top": [
+        117,
+        39.48355560302734,
+        48
+      ],
+      "bottom": [
+        117,
+        15.58,
+        48
+      ]
+    },
+    "FallingSpike27_3": {
+      "top": [
+        75,
+        33.49291305541992,
+        58
+      ],
+      "bottom": [
+        75,
+        8.58,
+        58
+      ]
+    },
+    "FallingCoconut27_0": {
+      "top": [
+        16,
+        34.88,
+        80
+      ],
+      "bottom": [
+        16,
+        8.88,
+        80
+      ]
+    },
+    "FallingCoconut27_1": {
+      "top": [
+        -4,
+        34.88,
+        93
+      ],
+      "bottom": [
+        -4,
+        8.88,
+        93
+      ]
+    },
+    "FallingCoconut27_2": {
+      "top": [
+        -24,
+        34.88,
+        103
+      ],
+      "bottom": [
+        -24,
+        8.88,
+        103
+      ]
+    },
+    "FallingCoconut27_3": {
+      "top": [
+        -50,
+        34.88,
+        114
+      ],
+      "bottom": [
+        -50,
+        8.88,
+        114
+      ]
+    },
+    "FallingCoconut27_4": {
+      "top": [
+        -74,
+        34.88,
+        125
+      ],
+      "bottom": [
+        -74,
+        8.88,
+        125
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "name": "BeachPalm0",
+      "support": "Beach0",
+      "root": 3.32000244140625
+    },
+    {
+      "name": "BeachPalm1",
+      "support": "CoastBank00",
+      "root": 41.88
+    },
+    {
+      "name": "BeachPalm2",
+      "support": "Beach2",
+      "root": 3.3200177001953124
+    },
+    {
+      "name": "BeachPalm3",
+      "support": "ConnectedShoreBank",
+      "root": 6.7094677734375
+    },
+    {
+      "name": "BeachPalm4",
+      "support": "CaveSurge26",
+      "root": 13.063517456054688
+    },
+    {
+      "name": "BeachPalm5",
+      "support": "CoastBank09",
+      "root": 38.67998779296875
+    },
+    {
+      "name": "DropPalm27_0",
+      "support": "ConnectedShoreBank",
+      "root": 7.88
+    },
+    {
+      "name": "DropPalm27_1",
+      "support": "ConnectedShoreBank",
+      "root": 7.88
+    },
+    {
+      "name": "DropPalm27_2",
+      "support": "ConnectedShoreBank",
+      "root": 7.88
+    },
+    {
+      "name": "DropPalm27_3",
+      "support": "ConnectedShoreBank",
+      "root": 7.88
+    },
+    {
+      "name": "DropPalm27_4",
+      "support": "ConnectedShoreBank",
+      "root": 7.88
+    },
+    {
+      "name": "FixedSpike27_0",
+      "support": "CaveMouth26",
+      "roof": 29.60184669494629
+    },
+    {
+      "name": "FixedSpike27_1",
+      "support": "CaveMouth26",
+      "roof": 39.79716491699219
+    },
+    {
+      "name": "FixedSpike27_2",
+      "support": "CaveVault26",
+      "roof": 34.896873474121094
+    },
+    {
+      "name": "FixedSpike27_3",
+      "support": "CaveVault26",
+      "roof": 31.631315231323242
+    },
+    {
+      "name": "FixedSpike27_4",
+      "support": "CaveSurge26",
+      "roof": 35.40492248535156
+    },
+    {
+      "name": "FixedSpike27_5",
+      "support": "CaveSurge26",
+      "roof": 24.156259536743164
+    },
+    {
+      "name": "FallingSpike27_0",
+      "support": "CaveMouth26",
+      "roof": 38.313819885253906,
+      "impactFloor": 15
+    },
+    {
+      "name": "FallingSpike27_1",
+      "support": "CaveVault26",
+      "roof": 41.376686096191406,
+      "impactFloor": 14
+    },
+    {
+      "name": "FallingSpike27_2",
+      "support": "CaveVault26",
+      "roof": 42.683555603027344,
+      "impactFloor": 12
+    },
+    {
+      "name": "FallingSpike27_3",
+      "support": "CaveSurge26",
+      "roof": 36.69291305541992,
+      "impactFloor": 5
+    }
+  ]
+}

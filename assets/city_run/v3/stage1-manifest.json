@@ -1,0 +1,4103 @@
+{
+  "build": "V3_KIT_05+V3_DISTRICT_ADDON_01",
+  "scope": "Stage1 visual assets only",
+  "editableSource": "CityRun_V3_Stage1.blend",
+  "packages": [
+    {
+      "file": "CityRun_V3_AssetKit.fbx",
+      "assetId": "113491549212344",
+      "sha256": "95740f1e2884f2cccc8145d42d77b3f9d4cc8e79a4b9521428c394de96a05408"
+    },
+    {
+      "file": "district_addon01/CityRun_DistrictAddon.fbx",
+      "assetId": "94105724616140",
+      "sha256": "b078b76a3f0eff3c6f7ad0534e23df7c8a4d6d0676d4be6770169dff202331e9"
+    }
+  ],
+  "totals": {
+    "uniqueAssets": 69,
+    "triangles": 22746,
+    "maxAssetTriangles": 1904,
+    "materials": 1,
+    "textures": 1
+  },
+  "atlas": {
+    "path": "painted_atlas.png",
+    "dimensions": [
+      2048,
+      1024
+    ],
+    "opaque": true,
+    "estimatedRGBA8FullMipBytes": 11184811,
+    "note": "Uncompressed estimate, not measured Roblox texture memory"
+  },
+  "robloxTextureId": "rbxassetid://117032649495568",
+  "assets": [
+    {
+      "id": "V3_Ochre_Narrow",
+      "family": "Architecture",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        17.100000381469727,
+        17.100000381469727,
+        48.0
+      ],
+      "dimensionsRobloxXYZ": [
+        17.100000381469727,
+        48.0,
+        17.100000381469727
+      ],
+      "triangles": 944,
+      "vertices": 608,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Closed opaque four-sided shell; facade art visible from falls. No route collision.",
+      "fbx": "exports/V3_Ochre_Narrow.fbx",
+      "fbxBytes": 549308,
+      "sha256": "bcdb1d7b6bd2cbb48ee86c29e08481c36b83423f5476e54d5c5e48d7c8b580e7",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          48.0,
+          0
+        ],
+        "front": [
+          0,
+          24.0,
+          8.550000190734863
+        ],
+        "back": [
+          0,
+          24.0,
+          -8.550000190734863
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Coral_Wide",
+      "family": "Architecture",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        25.100000381469727,
+        21.100000381469727,
+        48.0
+      ],
+      "dimensionsRobloxXYZ": [
+        25.100000381469727,
+        48.0,
+        21.100000381469727
+      ],
+      "triangles": 1224,
+      "vertices": 784,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Closed opaque four-sided shell; facade art visible from falls. No route collision.",
+      "fbx": "exports/V3_Coral_Wide.fbx",
+      "fbxBytes": 554748,
+      "sha256": "dafc63963a9102ff2243c5d31b54b36a41e05a4f6fa21832a39334a933bb8992",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          48.0,
+          0
+        ],
+        "front": [
+          0,
+          24.0,
+          10.550000190734863
+        ],
+        "back": [
+          0,
+          24.0,
+          -10.550000190734863
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Sage_Wide",
+      "family": "Architecture",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        25.100000381469727,
+        21.100000381469727,
+        60.0
+      ],
+      "dimensionsRobloxXYZ": [
+        25.100000381469727,
+        60.0,
+        21.100000381469727
+      ],
+      "triangles": 1552,
+      "vertices": 992,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Closed opaque four-sided shell; facade art visible from falls. No route collision.",
+      "fbx": "exports/V3_Sage_Wide.fbx",
+      "fbxBytes": 560124,
+      "sha256": "956ecc7dfbc6df96b95fa84190d6ed3895463af30977577e816951d6e823a361",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          60.0,
+          0
+        ],
+        "front": [
+          0,
+          30.0,
+          10.550000190734863
+        ],
+        "back": [
+          0,
+          30.0,
+          -10.550000190734863
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Cream_Tall",
+      "family": "Architecture",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        25.100000381469727,
+        25.100000381469727,
+        72.0
+      ],
+      "dimensionsRobloxXYZ": [
+        25.100000381469727,
+        72.0,
+        25.100000381469727
+      ],
+      "triangles": 1904,
+      "vertices": 1248,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Closed opaque four-sided shell; facade art visible from falls. No route collision.",
+      "fbx": "exports/V3_Cream_Tall.fbx",
+      "fbxBytes": 565900,
+      "sha256": "472ad8c80e67c0073156f2ec92565f63267c974e9336a67584f6b391b5650485",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          72.0,
+          0
+        ],
+        "front": [
+          0,
+          36.0,
+          12.550000190734863
+        ],
+        "back": [
+          0,
+          36.0,
+          -12.550000190734863
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Blue_Narrow",
+      "family": "Architecture",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        17.100000381469727,
+        21.100000381469727,
+        60.0
+      ],
+      "dimensionsRobloxXYZ": [
+        17.100000381469727,
+        60.0,
+        21.100000381469727
+      ],
+      "triangles": 1180,
+      "vertices": 760,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Closed opaque four-sided shell; facade art visible from falls. No route collision.",
+      "fbx": "exports/V3_Blue_Narrow.fbx",
+      "fbxBytes": 553228,
+      "sha256": "10ce86013ab580c55df0dc6f45b427fb11dc11556c1e9057612dbde34f62a075",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          60.0,
+          0
+        ],
+        "front": [
+          0,
+          30.0,
+          10.550000190734863
+        ],
+        "back": [
+          0,
+          30.0,
+          -10.550000190734863
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Brick_Broad",
+      "family": "Architecture",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        33.099998474121094,
+        25.100000381469727,
+        48.0
+      ],
+      "dimensionsRobloxXYZ": [
+        33.099998474121094,
+        48.0,
+        25.100000381469727
+      ],
+      "triangles": 1520,
+      "vertices": 992,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Closed opaque four-sided shell; facade art visible from falls. No route collision.",
+      "fbx": "exports/V3_Brick_Broad.fbx",
+      "fbxBytes": 559900,
+      "sha256": "410a4ce35d82d090847c297c11f23153b2a2e594bd26e43b085ec781c7f5712d",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          48.0,
+          0
+        ],
+        "front": [
+          0,
+          24.0,
+          12.550000190734863
+        ],
+        "back": [
+          0,
+          24.0,
+          -12.550000190734863
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Terminal_Wing",
+      "family": "Architecture",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        25.100000381469727,
+        21.100000381469727,
+        24.0
+      ],
+      "dimensionsRobloxXYZ": [
+        25.100000381469727,
+        24.0,
+        21.100000381469727
+      ],
+      "triangles": 568,
+      "vertices": 368,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Closed opaque four-sided shell; facade art visible from falls. No route collision.",
+      "fbx": "exports/V3_Terminal_Wing.fbx",
+      "fbxBytes": 542604,
+      "sha256": "56ba297200f9baaa79cdb3950286585c216324a4a2867bf49eb6b170471c4e4d",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          24.0,
+          0
+        ],
+        "front": [
+          0,
+          12.0,
+          10.550000190734863
+        ],
+        "back": [
+          0,
+          12.0,
+          -10.550000190734863
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_FlatRoof_Narrow",
+      "family": "Roofs",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        17.0,
+        17.0,
+        2.5
+      ],
+      "dimensionsRobloxXYZ": [
+        17.0,
+        2.5,
+        17.0
+      ],
+      "triangles": 220,
+      "vertices": 120,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Closed roof deck with parapet, no hollow roof opening.",
+      "fbx": "exports/V3_FlatRoof_Narrow.fbx",
+      "fbxBytes": 534636,
+      "sha256": "1f39d2c6c063a314cc495bdc0381aba8f3bc560d8367ae9e618a967b41f12ea1",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          2.5,
+          0
+        ],
+        "front": [
+          0,
+          1.25,
+          8.5
+        ],
+        "back": [
+          0,
+          1.25,
+          -8.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_FlatRoof_Wide",
+      "family": "Roofs",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        25.0,
+        21.0,
+        2.5
+      ],
+      "dimensionsRobloxXYZ": [
+        25.0,
+        2.5,
+        21.0
+      ],
+      "triangles": 220,
+      "vertices": 120,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Closed roof deck with parapet, no hollow roof opening.",
+      "fbx": "exports/V3_FlatRoof_Wide.fbx",
+      "fbxBytes": 534268,
+      "sha256": "6ed7859be2cdb11c9da67342d102857545ac49caf98a5d216834d76a96dc7a20",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          2.5,
+          0
+        ],
+        "front": [
+          0,
+          1.25,
+          10.5
+        ],
+        "back": [
+          0,
+          1.25,
+          -10.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_FlatRoof_Broad",
+      "family": "Roofs",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        33.0,
+        25.0,
+        2.5
+      ],
+      "dimensionsRobloxXYZ": [
+        33.0,
+        2.5,
+        25.0
+      ],
+      "triangles": 220,
+      "vertices": 120,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Closed roof deck with parapet, no hollow roof opening.",
+      "fbx": "exports/V3_FlatRoof_Broad.fbx",
+      "fbxBytes": 534348,
+      "sha256": "dfa122e91386f966d1147f5a551d81d688d5cce20c81523217f52e68c5d8bf85",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          2.5,
+          0
+        ],
+        "front": [
+          0,
+          1.25,
+          12.5
+        ],
+        "back": [
+          0,
+          1.25,
+          -12.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_GableRoof_Narrow",
+      "family": "Roofs",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        17.600000381469727,
+        17.600000381469727,
+        5.199999809265137
+      ],
+      "dimensionsRobloxXYZ": [
+        17.600000381469727,
+        5.199999809265137,
+        17.600000381469727
+      ],
+      "triangles": 120,
+      "vertices": 66,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_GableRoof_Narrow.fbx",
+      "fbxBytes": 532972,
+      "sha256": "5bf75a5270bb4f83cf8cdc245ced240010a9dcc9a045a9c55aa4c61cfc976b55",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          5.199999809265137,
+          0
+        ],
+        "front": [
+          0,
+          2.5999999046325684,
+          8.800000190734863
+        ],
+        "back": [
+          0,
+          2.5999999046325684,
+          -8.800000190734863
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_GableRoof_Wide",
+      "family": "Roofs",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        25.600000381469727,
+        21.600000381469727,
+        5.199999809265137
+      ],
+      "dimensionsRobloxXYZ": [
+        25.600000381469727,
+        5.199999809265137,
+        21.600000381469727
+      ],
+      "triangles": 120,
+      "vertices": 66,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_GableRoof_Wide.fbx",
+      "fbxBytes": 533100,
+      "sha256": "61cf0805e06f86706ff2264769d2cf1eacb13602164d2c58146bc3f2293ebd9d",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          5.199999809265137,
+          0
+        ],
+        "front": [
+          0,
+          2.5999999046325684,
+          10.800000190734863
+        ],
+        "back": [
+          0,
+          2.5999999046325684,
+          -10.800000190734863
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_SteppedRoof",
+      "family": "Roofs",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        24.0,
+        20.0,
+        3.0999999046325684
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        3.0999999046325684,
+        20.0
+      ],
+      "triangles": 132,
+      "vertices": 72,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_SteppedRoof.fbx",
+      "fbxBytes": 533100,
+      "sha256": "8bc02eec8f15f5b9a4d7c84486b41f85353c4267dbc811e723c13d64a769d3a0",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          3.0999999046325684,
+          0
+        ],
+        "front": [
+          0,
+          1.5499999523162842,
+          10.0
+        ],
+        "back": [
+          0,
+          1.5499999523162842,
+          -10.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Sign_Market",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        12.0,
+        0.5750000476837158,
+        4.0
+      ],
+      "dimensionsRobloxXYZ": [
+        12.0,
+        4.0,
+        0.5750000476837158
+      ],
+      "triangles": 14,
+      "vertices": 12,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Sign_Market.fbx",
+      "fbxBytes": 530044,
+      "sha256": "4022d23db393d84617ed69e24d01060e30dd45f13842c7f974f5f9c83270216f",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          4.0,
+          0
+        ],
+        "front": [
+          0,
+          2.0,
+          0.2875000238418579
+        ],
+        "back": [
+          0,
+          2.0,
+          -0.2875000238418579
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Sign_Depot",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        12.0,
+        0.5750000476837158,
+        4.0
+      ],
+      "dimensionsRobloxXYZ": [
+        12.0,
+        4.0,
+        0.5750000476837158
+      ],
+      "triangles": 14,
+      "vertices": 12,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Sign_Depot.fbx",
+      "fbxBytes": 530044,
+      "sha256": "072acd697ab7af0433dc7cd16ac583430c9040d16b4ddf5811d546a7a00cca3e",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          4.0,
+          0
+        ],
+        "front": [
+          0,
+          2.0,
+          0.2875000238418579
+        ],
+        "back": [
+          0,
+          2.0,
+          -0.2875000238418579
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Sign_Terminal",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        12.0,
+        0.5750000476837158,
+        4.0
+      ],
+      "dimensionsRobloxXYZ": [
+        12.0,
+        4.0,
+        0.5750000476837158
+      ],
+      "triangles": 14,
+      "vertices": 12,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Sign_Terminal.fbx",
+      "fbxBytes": 530060,
+      "sha256": "ca9f2c5acf539165c2c8d141c28173e3dcdacd0c968ff7ec6130d97bbe4b5524",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          4.0,
+          0
+        ],
+        "front": [
+          0,
+          2.0,
+          0.2875000238418579
+        ],
+        "back": [
+          0,
+          2.0,
+          -0.2875000238418579
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Sign_Courtyard",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        12.0,
+        0.5750000476837158,
+        4.0
+      ],
+      "dimensionsRobloxXYZ": [
+        12.0,
+        4.0,
+        0.5750000476837158
+      ],
+      "triangles": 14,
+      "vertices": 12,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Sign_Courtyard.fbx",
+      "fbxBytes": 530076,
+      "sha256": "a9e2474374f6446557c9ff64d59982ba205ddef653a0f13f669fab53c19b2ee3",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          4.0,
+          0
+        ],
+        "front": [
+          0,
+          2.0,
+          0.2875000238418579
+        ],
+        "back": [
+          0,
+          2.0,
+          -0.2875000238418579
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Awning_12",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        12.0,
+        8.0,
+        2.9821219444274902
+      ],
+      "dimensionsRobloxXYZ": [
+        12.0,
+        2.9821219444274902,
+        8.0
+      ],
+      "triangles": 72,
+      "vertices": 48,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Visual skin only; fit below existing platform surface in Pass2.",
+      "fbx": "exports/V3_Awning_12.fbx",
+      "fbxBytes": 531068,
+      "sha256": "f1e485be25a6ebf145aa7bcdd3a10ca03d2f7d6eeedf549496cc0eb6d846936c",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          2.9821219444274902,
+          0
+        ],
+        "front": [
+          0,
+          1.4910609722137451,
+          4.0
+        ],
+        "back": [
+          0,
+          1.4910609722137451,
+          -4.0
+        ],
+        "wallMount": [
+          0,
+          1.4,
+          -3.7
+        ],
+        "walkingSkinTop": [
+          0,
+          2.775,
+          0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Awning_24",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        24.0,
+        8.0,
+        2.9821219444274902
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        2.9821219444274902,
+        8.0
+      ],
+      "triangles": 72,
+      "vertices": 48,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Visual skin only; fit below existing platform surface in Pass2.",
+      "fbx": "exports/V3_Awning_24.fbx",
+      "fbxBytes": 531068,
+      "sha256": "d325d3830cf10a6b86a2b8b56ba9366359e11483ec13eb4236c57d0c0c53c36d",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          2.9821219444274902,
+          0
+        ],
+        "front": [
+          0,
+          1.4910609722137451,
+          4.0
+        ],
+        "back": [
+          0,
+          1.4910609722137451,
+          -4.0
+        ],
+        "wallMount": [
+          0,
+          1.4,
+          -3.7
+        ],
+        "walkingSkinTop": [
+          0,
+          2.775,
+          0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_MarketStall",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        9.0,
+        6.0,
+        9.300000190734863
+      ],
+      "dimensionsRobloxXYZ": [
+        9.0,
+        9.300000190734863,
+        6.0
+      ],
+      "triangles": 60,
+      "vertices": 40,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_MarketStall.fbx",
+      "fbxBytes": 530716,
+      "sha256": "16c898ccd778f27838e3cdac807609e322adb1630ef3b2606aab506ff308924b",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          9.300000190734863,
+          0
+        ],
+        "front": [
+          0,
+          4.650000095367432,
+          3.0
+        ],
+        "back": [
+          0,
+          4.650000095367432,
+          -3.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Crate",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        4.0,
+        4.190000057220459,
+        4.0
+      ],
+      "dimensionsRobloxXYZ": [
+        4.0,
+        4.0,
+        4.190000057220459
+      ],
+      "triangles": 24,
+      "vertices": 16,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Crate.fbx",
+      "fbxBytes": 530300,
+      "sha256": "f9f11a6b746a1612ce035ef5f856b87a3b33cb00ebfc58c5d7d0a5ac9bfb9a8f",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          4.0,
+          0
+        ],
+        "front": [
+          0,
+          2.0,
+          2.0950000286102295
+        ],
+        "back": [
+          0,
+          2.0,
+          -2.0950000286102295
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Bench",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        10.0,
+        3.049999952316284,
+        4.099999904632568
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        4.099999904632568,
+        3.049999952316284
+      ],
+      "triangles": 48,
+      "vertices": 32,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Bench.fbx",
+      "fbxBytes": 530476,
+      "sha256": "a36e9110565ca19c0f341d9a93ab88bc878a71987f70c56db4ebb854a7ccf4be",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          4.099999904632568,
+          0
+        ],
+        "front": [
+          0,
+          2.049999952316284,
+          1.524999976158142
+        ],
+        "back": [
+          0,
+          2.049999952316284,
+          -1.524999976158142
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Planter",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        8.0,
+        3.0,
+        5.0
+      ],
+      "dimensionsRobloxXYZ": [
+        8.0,
+        5.0,
+        3.0
+      ],
+      "triangles": 120,
+      "vertices": 68,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Planter.fbx",
+      "fbxBytes": 532604,
+      "sha256": "b12c6afb10ec6c025ef5497624743f02bb01fdab5b5233a86eeb8cfe60b55c79",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          5.0,
+          0
+        ],
+        "front": [
+          0,
+          2.5,
+          1.5
+        ],
+        "back": [
+          0,
+          2.5,
+          -1.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Tree",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        9.899999618530273,
+        6.400000095367432,
+        15.25
+      ],
+      "dimensionsRobloxXYZ": [
+        9.899999618530273,
+        15.25,
+        6.400000095367432
+      ],
+      "triangles": 168,
+      "vertices": 92,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Solid foliage volumes, no alpha cards or individual leaves.",
+      "fbx": "exports/V3_Tree.fbx",
+      "fbxBytes": 534028,
+      "sha256": "3613d0a2085926d19f633488c0cdb62d5cddf359b5dc953d0c8f75b8810e8e1b",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          15.25,
+          0
+        ],
+        "front": [
+          0,
+          7.625,
+          3.200000047683716
+        ],
+        "back": [
+          0,
+          7.625,
+          -3.200000047683716
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Lamp",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        3.1500000953674316,
+        1.7000000476837158,
+        11.5
+      ],
+      "dimensionsRobloxXYZ": [
+        3.1500000953674316,
+        11.5,
+        1.7000000476837158
+      ],
+      "triangles": 92,
+      "vertices": 56,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Painted warm lamp; no real light emitter required.",
+      "fbx": "exports/V3_Lamp.fbx",
+      "fbxBytes": 531660,
+      "sha256": "67e650b01b37c1ed27901b830729042098d3e00f30de66ac44d553f4686a854a",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          11.5,
+          0
+        ],
+        "front": [
+          0,
+          5.75,
+          0.8500000238418579
+        ],
+        "back": [
+          0,
+          5.75,
+          -0.8500000238418579
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Ledge_Short",
+      "family": "Openings",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        8.0,
+        3.0,
+        2.259904623031616
+      ],
+      "dimensionsRobloxXYZ": [
+        8.0,
+        2.259904623031616,
+        3.0
+      ],
+      "triangles": 36,
+      "vertices": 24,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Bracketed scenery module. Never substitute for fixed gameplay collider.",
+      "fbx": "exports/V3_Ledge_Short.fbx",
+      "fbxBytes": 530460,
+      "sha256": "f6ed02f7b1bd4209e8fb28606f95ce435bc05438ee53613b840154e6c53d3979",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          2.259904623031616,
+          0
+        ],
+        "front": [
+          0,
+          1.129952311515808,
+          1.5
+        ],
+        "back": [
+          0,
+          1.129952311515808,
+          -1.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Ledge_Long",
+      "family": "Openings",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        16.0,
+        3.0,
+        2.259904623031616
+      ],
+      "dimensionsRobloxXYZ": [
+        16.0,
+        2.259904623031616,
+        3.0
+      ],
+      "triangles": 36,
+      "vertices": 24,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Bracketed scenery module. Never substitute for fixed gameplay collider.",
+      "fbx": "exports/V3_Ledge_Long.fbx",
+      "fbxBytes": 530428,
+      "sha256": "e637dc92fe5408978b6cd8b11ad677fd696f8886ab7f18c9b9ae0eff8a293570",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          2.259904623031616,
+          0
+        ],
+        "front": [
+          0,
+          1.129952311515808,
+          1.5
+        ],
+        "back": [
+          0,
+          1.129952311515808,
+          -1.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Balcony",
+      "family": "Openings",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        12.0,
+        5.0,
+        4.343201637268066
+      ],
+      "dimensionsRobloxXYZ": [
+        12.0,
+        4.343201637268066,
+        5.0
+      ],
+      "triangles": 84,
+      "vertices": 56,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Balcony.fbx",
+      "fbxBytes": 531180,
+      "sha256": "c333d456a183343e6ed409f280a847a7a977b027a2e66bea42db5755c85b8d18",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          4.343201637268066,
+          0
+        ],
+        "front": [
+          0,
+          2.171600818634033,
+          2.5
+        ],
+        "back": [
+          0,
+          2.171600818634033,
+          -2.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_FacadeStrip",
+      "family": "Openings",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        24.0,
+        1.059999942779541,
+        12.0
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        12.0,
+        1.059999942779541
+      ],
+      "triangles": 18,
+      "vertices": 20,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_FacadeStrip.fbx",
+      "fbxBytes": 530124,
+      "sha256": "510f2e251a8db6e383d60f0f20af25871f531a592106372313a313a0a6d8a8f3",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          12.0,
+          0
+        ],
+        "front": [
+          0,
+          6.0,
+          0.5299999713897705
+        ],
+        "back": [
+          0,
+          6.0,
+          -0.5299999713897705
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_MuralPanel",
+      "family": "Openings",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        24.0,
+        1.059999942779541,
+        12.0
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        12.0,
+        1.059999942779541
+      ],
+      "triangles": 14,
+      "vertices": 12,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_MuralPanel.fbx",
+      "fbxBytes": 530028,
+      "sha256": "ba0e18c83d081a4325ff59c3c840cf77eb71527dba6aa7268cbeaa9c8aa31258",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          12.0,
+          0
+        ],
+        "front": [
+          0,
+          6.0,
+          0.5299999713897705
+        ],
+        "back": [
+          0,
+          6.0,
+          -0.5299999713897705
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Shopfront",
+      "family": "Openings",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        16.0,
+        2.5,
+        12.0
+      ],
+      "dimensionsRobloxXYZ": [
+        16.0,
+        12.0,
+        2.5
+      ],
+      "triangles": 26,
+      "vertices": 20,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Shopfront.fbx",
+      "fbxBytes": 530252,
+      "sha256": "6ff877a6072e165e4b4295177a968f196761cb12a142acd00f6c1af5837cddc4",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          12.0,
+          0
+        ],
+        "front": [
+          0,
+          6.0,
+          1.25
+        ],
+        "back": [
+          0,
+          6.0,
+          -1.25
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_ArchPortal",
+      "family": "Landmarks",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        18.0,
+        3.5,
+        20.75
+      ],
+      "dimensionsRobloxXYZ": [
+        18.0,
+        20.75,
+        3.5
+      ],
+      "triangles": 660,
+      "vertices": 360,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Clear opening 12 studs wide; visual opening, not collision authority.",
+      "fbx": "exports/V3_ArchPortal.fbx",
+      "fbxBytes": 548140,
+      "sha256": "f2c147a65f3db5859bae0e3620cbb2a609c2b122e09495df96eafff1220956f2",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          20.75,
+          0
+        ],
+        "front": [
+          0,
+          10.375,
+          1.75
+        ],
+        "back": [
+          0,
+          10.375,
+          -1.75
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Arcade",
+      "family": "Landmarks",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        28.0,
+        4.0,
+        13.0
+      ],
+      "dimensionsRobloxXYZ": [
+        28.0,
+        13.0,
+        4.0
+      ],
+      "triangles": 1892,
+      "vertices": 1032,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Arcade.fbx",
+      "fbxBytes": 578972,
+      "sha256": "1693562dc98556139104a765530908b56d7d571b1878e2f12da3c76e8614b250",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          13.0,
+          0
+        ],
+        "front": [
+          0,
+          6.5,
+          2.0
+        ],
+        "back": [
+          0,
+          6.5,
+          -2.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_ClockTower",
+      "family": "Landmarks",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        13.0,
+        13.0,
+        40.0
+      ],
+      "dimensionsRobloxXYZ": [
+        13.0,
+        40.0,
+        13.0
+      ],
+      "triangles": 228,
+      "vertices": 136,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Tower body with opaque faces; add closed roof module separately.",
+      "fbx": "exports/V3_ClockTower.fbx",
+      "fbxBytes": 534748,
+      "sha256": "47740429b08f2ade6aadf0267931cfc7c54b97cf35cba809467bad5fb7f40875",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          40.0,
+          0
+        ],
+        "front": [
+          0,
+          20.0,
+          6.5
+        ],
+        "back": [
+          0,
+          20.0,
+          -6.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "recommendedRoof": "V3_GableRoof_Narrow scaled (0.8,1,0.8) in Roblox local XYZ; bottom at tower top"
+    },
+    {
+      "id": "V3_DepotCanopy",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        26.0,
+        14.0,
+        11.350000381469727
+      ],
+      "dimensionsRobloxXYZ": [
+        26.0,
+        11.350000381469727,
+        14.0
+      ],
+      "triangles": 120,
+      "vertices": 80,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_DepotCanopy.fbx",
+      "fbxBytes": 531980,
+      "sha256": "546b2df7b2151d46c3d9ff42fad95a2a1b6b853ce246d6eded2b0a921481105c",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          11.350000381469727,
+          0
+        ],
+        "front": [
+          0,
+          5.675000190734863,
+          7.0
+        ],
+        "back": [
+          0,
+          5.675000190734863,
+          -7.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_ScaffoldBay",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        10.300000190734863,
+        10.300000190734863,
+        12.0
+      ],
+      "dimensionsRobloxXYZ": [
+        10.300000190734863,
+        12.0,
+        10.300000190734863
+      ],
+      "triangles": 216,
+      "vertices": 144,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_ScaffoldBay.fbx",
+      "fbxBytes": 533244,
+      "sha256": "c9b852496a8956339aa606767614c679beab204ee30280292bf7c79c5ae35e45",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          12.0,
+          0
+        ],
+        "front": [
+          0,
+          6.0,
+          5.150000095367432
+        ],
+        "back": [
+          0,
+          6.0,
+          -5.150000095367432
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_CraneTruss",
+      "family": "Industrial",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        24.169706344604492,
+        4.300000190734863,
+        4.300000190734863
+      ],
+      "dimensionsRobloxXYZ": [
+        24.169706344604492,
+        4.300000190734863,
+        4.300000190734863
+      ],
+      "triangles": 336,
+      "vertices": 224,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_CraneTruss.fbx",
+      "fbxBytes": 535756,
+      "sha256": "3ac778287f81bde6bb3a4b3e5edc88f2d7ddc73d87042604f6e3090108ef1aca",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          4.300000190734863,
+          0
+        ],
+        "front": [
+          0,
+          2.1500000953674316,
+          2.1500000953674316
+        ],
+        "back": [
+          0,
+          2.1500000953674316,
+          -2.1500000953674316
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_IBeam",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        16.0,
+        2.0,
+        2.0
+      ],
+      "dimensionsRobloxXYZ": [
+        16.0,
+        2.0,
+        2.0
+      ],
+      "triangles": 36,
+      "vertices": 24,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_IBeam.fbx",
+      "fbxBytes": 530188,
+      "sha256": "59dea49b1f5ee83cc39692aad32e9c0f992c43f1622ded749dcec4123374f4c0",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          2.0,
+          0
+        ],
+        "front": [
+          0,
+          1.0,
+          1.0
+        ],
+        "back": [
+          0,
+          1.0,
+          -1.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_SignalGantry",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        25.0,
+        1.5199999809265137,
+        16.0
+      ],
+      "dimensionsRobloxXYZ": [
+        25.0,
+        16.0,
+        1.5199999809265137
+      ],
+      "triangles": 50,
+      "vertices": 36,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_SignalGantry.fbx",
+      "fbxBytes": 530588,
+      "sha256": "9f17705b2b8b87aaab637e45c10738b95417cb3a3e3f3e68e3fc2aa60c7499d1",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          16.0,
+          0
+        ],
+        "front": [
+          0,
+          8.0,
+          0.7599999904632568
+        ],
+        "back": [
+          0,
+          8.0,
+          -0.7599999904632568
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_WaterTank",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        8.399999618530273,
+        8.399999618530273,
+        13.0
+      ],
+      "dimensionsRobloxXYZ": [
+        8.399999618530273,
+        13.0,
+        8.399999618530273
+      ],
+      "triangles": 224,
+      "vertices": 128,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_WaterTank.fbx",
+      "fbxBytes": 534540,
+      "sha256": "7847f6e8b1e198de3649ebb8cbc530fc97581227219b60bd6010150796e189fc",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          13.0,
+          0
+        ],
+        "front": [
+          0,
+          6.5,
+          4.199999809265137
+        ],
+        "back": [
+          0,
+          6.5,
+          -4.199999809265137
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Chimney",
+      "family": "Roofs",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        4.800000190734863,
+        4.800000190734863,
+        6.300000190734863
+      ],
+      "dimensionsRobloxXYZ": [
+        4.800000190734863,
+        6.300000190734863,
+        4.800000190734863
+      ],
+      "triangles": 88,
+      "vertices": 48,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Chimney.fbx",
+      "fbxBytes": 531756,
+      "sha256": "a2e22f832dff99baf45b76509d1fd33a7e61903841a331ce014186d1e13ed975",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          6.300000190734863,
+          0
+        ],
+        "front": [
+          0,
+          3.1500000953674316,
+          2.4000000953674316
+        ],
+        "back": [
+          0,
+          3.1500000953674316,
+          -2.4000000953674316
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Fence",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        12.149999618530273,
+        0.20000000298023224,
+        4.0
+      ],
+      "dimensionsRobloxXYZ": [
+        12.149999618530273,
+        4.0,
+        0.20000000298023224
+      ],
+      "triangles": 72,
+      "vertices": 48,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_Fence.fbx",
+      "fbxBytes": 530780,
+      "sha256": "e71ae94edcbb4dd3c23df6f952341037b7b79790525f852db7053b3595c2468e",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          4.0,
+          0
+        ],
+        "front": [
+          0,
+          2.0,
+          0.10000000149011612
+        ],
+        "back": [
+          0,
+          2.0,
+          -0.10000000149011612
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_RailBed",
+      "family": "Industrial",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        10.0,
+        24.0,
+        1.2599999904632568
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        1.2599999904632568,
+        24.0
+      ],
+      "triangles": 132,
+      "vertices": 88,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Decorative rail segment; train path and contact envelope unchanged.",
+      "fbx": "exports/V3_RailBed.fbx",
+      "fbxBytes": 531772,
+      "sha256": "58d59b5c293e6a23b1fde7cb688f3bb70b0ede77fc43f00d14e26a5cad347dbe",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          1.2599999904632568,
+          0
+        ],
+        "front": [
+          0,
+          0.6299999952316284,
+          12.0
+        ],
+        "back": [
+          0,
+          0.6299999952316284,
+          -12.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_WreckingBallSkin",
+      "family": "Vehicles",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        10.0,
+        10.0,
+        12.02500057220459
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        12.02500057220459,
+        10.0
+      ],
+      "triangles": 260,
+      "vertices": 138,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Visual shell only. Runtime hitbox/cable/pivot retained in Pass2.",
+      "fbx": "exports/V3_WreckingBallSkin.fbx",
+      "fbxBytes": 535852,
+      "sha256": "12613a617603150a407b3e6a0b9fcdb2ea87ad5ebacdd597b6bddbddec63d06e",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          12.02500057220459,
+          0
+        ],
+        "front": [
+          0,
+          6.012500286102295,
+          5.0
+        ],
+        "back": [
+          0,
+          6.012500286102295,
+          -5.0
+        ],
+        "cable": [
+          0,
+          11.8,
+          0
+        ],
+        "ballCenter": [
+          0,
+          5,
+          0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "forwardAxisRoblox": [
+        0,
+        0,
+        1
+      ],
+      "yawDegreesForPositiveXTraffic": 90,
+      "runtimeNote": "Attach as visual only after comparing native actor pivot. Do not derive or replace runtime collider from this mesh."
+    },
+    {
+      "id": "V3_MarketCar",
+      "family": "Vehicles",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        6.739999771118164,
+        12.274999618530273,
+        5.0
+      ],
+      "dimensionsRobloxXYZ": [
+        6.739999771118164,
+        5.0,
+        12.274999618530273
+      ],
+      "triangles": 132,
+      "vertices": 104,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Visual skin only; moving actors remain runtime-owned.",
+      "fbx": "exports/V3_MarketCar.fbx",
+      "fbxBytes": 532188,
+      "sha256": "e0a8f039fe2f9b3ecf59e06a4e59de5710db3195856ae56557c0c0f1bfcec946",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          5.0,
+          0
+        ],
+        "front": [
+          0,
+          2.5,
+          6.137499809265137
+        ],
+        "back": [
+          0,
+          2.5,
+          -6.137499809265137
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "forwardAxisRoblox": [
+        0,
+        0,
+        1
+      ],
+      "yawDegreesForPositiveXTraffic": 90,
+      "runtimeNote": "Attach as visual only after comparing native actor pivot. Do not derive or replace runtime collider from this mesh."
+    },
+    {
+      "id": "V3_DeliveryVan",
+      "family": "Vehicles",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        6.739999771118164,
+        14.274999618530273,
+        7.0
+      ],
+      "dimensionsRobloxXYZ": [
+        6.739999771118164,
+        7.0,
+        14.274999618530273
+      ],
+      "triangles": 132,
+      "vertices": 104,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Visual skin only; moving actors remain runtime-owned.",
+      "fbx": "exports/V3_DeliveryVan.fbx",
+      "fbxBytes": 532236,
+      "sha256": "99e800c3934c0c5c5472c9bacd1b85fd63c3068ab8936b457359b43ade3112d2",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          7.0,
+          0
+        ],
+        "front": [
+          0,
+          3.5,
+          7.137499809265137
+        ],
+        "back": [
+          0,
+          3.5,
+          -7.137499809265137
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "forwardAxisRoblox": [
+        0,
+        0,
+        1
+      ],
+      "yawDegreesForPositiveXTraffic": 90,
+      "runtimeNote": "Attach as visual only after comparing native actor pivot. Do not derive or replace runtime collider from this mesh."
+    },
+    {
+      "id": "V3_TrainCar",
+      "family": "Vehicles",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        8.619999885559082,
+        29.600000381469727,
+        9.0
+      ],
+      "dimensionsRobloxXYZ": [
+        8.619999885559082,
+        9.0,
+        29.600000381469727
+      ],
+      "triangles": 164,
+      "vertices": 136,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Visual skin only; moving actors remain runtime-owned.",
+      "fbx": "exports/V3_TrainCar.fbx",
+      "fbxBytes": 532780,
+      "sha256": "923573589e3f1e0f01d5d347603ab0a9596a012d05d296c010c2b24925d463c8",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          9.0,
+          0
+        ],
+        "front": [
+          0,
+          4.5,
+          14.800000190734863
+        ],
+        "back": [
+          0,
+          4.5,
+          -14.800000190734863
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "forwardAxisRoblox": [
+        0,
+        0,
+        1
+      ],
+      "yawDegreesForPositiveXTraffic": 90,
+      "runtimeNote": "Attach as visual only after comparing native actor pivot. Do not derive or replace runtime collider from this mesh."
+    },
+    {
+      "id": "V3_Skyline_1",
+      "family": "Skyline",
+      "tier": "Distant",
+      "dimensionsBlenderXYZ": [
+        21.0,
+        17.0,
+        52.0
+      ],
+      "dimensionsRobloxXYZ": [
+        21.0,
+        52.0,
+        17.0
+      ],
+      "triangles": 60,
+      "vertices": 56,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Rear and sides opaque; detailed face must point toward route.",
+      "fbx": "exports/V3_Skyline_1.fbx",
+      "fbxBytes": 530780,
+      "sha256": "0e55aac6a3c6c56773fd46242b5512413438bb01c09b2590e2778004215ad88b",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          52.0,
+          0
+        ],
+        "front": [
+          0,
+          26.0,
+          8.5
+        ],
+        "back": [
+          0,
+          26.0,
+          -8.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Skyline_2",
+      "family": "Skyline",
+      "tier": "Distant",
+      "dimensionsBlenderXYZ": [
+        29.0,
+        19.0,
+        70.0
+      ],
+      "dimensionsRobloxXYZ": [
+        29.0,
+        70.0,
+        19.0
+      ],
+      "triangles": 88,
+      "vertices": 88,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Rear and sides opaque; detailed face must point toward route.",
+      "fbx": "exports/V3_Skyline_2.fbx",
+      "fbxBytes": 531564,
+      "sha256": "d45f1fc784d1dc5827b0198879a43e0f48673455767d9ed6a06f51e91585ede7",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          70.0,
+          0
+        ],
+        "front": [
+          0,
+          35.0,
+          9.5
+        ],
+        "back": [
+          0,
+          35.0,
+          -9.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Skyline_3",
+      "family": "Skyline",
+      "tier": "Distant",
+      "dimensionsBlenderXYZ": [
+        17.0,
+        17.0,
+        84.5
+      ],
+      "dimensionsRobloxXYZ": [
+        17.0,
+        84.5,
+        17.0
+      ],
+      "triangles": 80,
+      "vertices": 80,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Rear and sides opaque; detailed face must point toward route.",
+      "fbx": "exports/V3_Skyline_3.fbx",
+      "fbxBytes": 531180,
+      "sha256": "891c992f22c2e0711e00c855d69052019b75d471f3a3939f79c42c5db33dba1c",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          84.5,
+          0
+        ],
+        "front": [
+          0,
+          42.25,
+          8.5
+        ],
+        "back": [
+          0,
+          42.25,
+          -8.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_Skyline_4",
+      "family": "Skyline",
+      "tier": "Distant",
+      "dimensionsBlenderXYZ": [
+        37.0,
+        21.0,
+        60.0
+      ],
+      "dimensionsRobloxXYZ": [
+        37.0,
+        60.0,
+        21.0
+      ],
+      "triangles": 92,
+      "vertices": 104,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Rear and sides opaque; detailed face must point toward route.",
+      "fbx": "exports/V3_Skyline_4.fbx",
+      "fbxBytes": 531420,
+      "sha256": "275beaa35ee1b01ad46575d34c241373954c60d5dd783cb35a5a97a30ec48a05",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          60.0,
+          0
+        ],
+        "front": [
+          0,
+          30.0,
+          10.5
+        ],
+        "back": [
+          0,
+          30.0,
+          -10.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_LoggiaResidence",
+      "family": "Architecture",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        31.0,
+        21.299999237060547,
+        48.0
+      ],
+      "dimensionsRobloxXYZ": [
+        31.0,
+        48.0,
+        21.299999237060547
+      ],
+      "triangles": 916,
+      "vertices": 616,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Alternative vertical-pier facade grammar.",
+      "fbx": "exports/V3_LoggiaResidence.fbx",
+      "fbxBytes": 549548,
+      "sha256": "df96d1f88eeae4db43d8cc4b5e2a5c72af8f3040573ce0d38af55ea3da6fee04",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          48.0,
+          0
+        ],
+        "front": [
+          0,
+          24.0,
+          10.649999618530273
+        ],
+        "back": [
+          0,
+          24.0,
+          -10.649999618530273
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_CourtyardGallery",
+      "family": "Architecture",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        25.0,
+        21.299999237060547,
+        48.0
+      ],
+      "dimensionsRobloxXYZ": [
+        25.0,
+        48.0,
+        21.299999237060547
+      ],
+      "triangles": 916,
+      "vertices": 616,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Alternative vertical-pier facade grammar.",
+      "fbx": "exports/V3_CourtyardGallery.fbx",
+      "fbxBytes": 549500,
+      "sha256": "ed5e37cbaa74062b654734f7d923d7cb1ec7742e5ee62f55d34cb280bf826324",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          48.0,
+          0
+        ],
+        "front": [
+          0,
+          24.0,
+          10.649999618530273
+        ],
+        "back": [
+          0,
+          24.0,
+          -10.649999618530273
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_ShopBase",
+      "family": "Openings",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        25.0,
+        21.0,
+        10.5
+      ],
+      "dimensionsRobloxXYZ": [
+        25.0,
+        10.5,
+        21.0
+      ],
+      "triangles": 30,
+      "vertices": 28,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Independent grounded shop level.",
+      "fbx": "exports/V3_ShopBase.fbx",
+      "fbxBytes": 530348,
+      "sha256": "75731a65c23954e03c20435b3bb599097680db190bb8f8aaa226e267b7e47f11",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          10.5,
+          0
+        ],
+        "front": [
+          0,
+          5.25,
+          10.5
+        ],
+        "back": [
+          0,
+          5.25,
+          -10.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_GardenPortal",
+      "family": "Landmarks",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        20.0,
+        4.0,
+        13.350000381469727
+      ],
+      "dimensionsRobloxXYZ": [
+        20.0,
+        13.350000381469727,
+        4.0
+      ],
+      "triangles": 662,
+      "vertices": 364,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_GardenPortal.fbx",
+      "fbxBytes": 547916,
+      "sha256": "865666bfac321ec1474600737e1e935c9676d2e0d68418528b78a079ac227d56",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          13.350000381469727,
+          0
+        ],
+        "front": [
+          0,
+          6.675000190734863,
+          2.0
+        ],
+        "back": [
+          0,
+          6.675000190734863,
+          -2.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_CourtyardFountain",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        10.0,
+        10.0,
+        5.400000095367432
+      ],
+      "dimensionsRobloxXYZ": [
+        10.0,
+        5.400000095367432,
+        10.0
+      ],
+      "triangles": 168,
+      "vertices": 92,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Dry sculptural fountain; no transparent water or particles.",
+      "fbx": "exports/V3_CourtyardFountain.fbx",
+      "fbxBytes": 533500,
+      "sha256": "d7b7dc739a07df815d97059dfe6496a46e36b66f0b34d4f22efb48b81b03b31f",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          5.400000095367432,
+          0
+        ],
+        "front": [
+          0,
+          2.700000047683716,
+          5.0
+        ],
+        "back": [
+          0,
+          2.700000047683716,
+          -5.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_TerminalColonnade",
+      "family": "Landmarks",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        24.0,
+        3.0,
+        13.25
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        13.25,
+        3.0
+      ],
+      "triangles": 572,
+      "vertices": 312,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_TerminalColonnade.fbx",
+      "fbxBytes": 542076,
+      "sha256": "d927a68f8523c60d8dfc3f9628a84ea418c727f9dec6c113b8bd783d1c24c37c",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          13.25,
+          0
+        ],
+        "front": [
+          0,
+          6.625,
+          1.5
+        ],
+        "back": [
+          0,
+          6.625,
+          -1.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_MansardRoof",
+      "family": "Roofs",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        24.926414489746094,
+        20.926414489746094,
+        5.0
+      ],
+      "dimensionsRobloxXYZ": [
+        24.926414489746094,
+        5.0,
+        20.926414489746094
+      ],
+      "triangles": 44,
+      "vertices": 24,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_MansardRoof.fbx",
+      "fbxBytes": 531100,
+      "sha256": "f177ce1aa3dbc807cb3d7a101a273fa1d5c6a56d20f8ff655400c74a1ece7fbb",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          5.0,
+          0
+        ],
+        "front": [
+          0,
+          2.5,
+          10.463207244873047
+        ],
+        "back": [
+          0,
+          2.5,
+          -10.463207244873047
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_BarrelRoof",
+      "family": "Roofs",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        23.952791213989258,
+        20.0,
+        4.0
+      ],
+      "dimensionsRobloxXYZ": [
+        23.952791213989258,
+        4.0,
+        20.0
+      ],
+      "triangles": 100,
+      "vertices": 52,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "",
+      "fbx": "exports/V3_BarrelRoof.fbx",
+      "fbxBytes": 532812,
+      "sha256": "f824f8d08c15437d59a0e7701c2c79c111572f4b2c4160bcc40eea8e038a00b3",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          4.0,
+          0
+        ],
+        "front": [
+          0,
+          2.0,
+          10.0
+        ],
+        "back": [
+          0,
+          2.0,
+          -10.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_CornerCafe",
+      "family": "Architecture",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        24.649999618530273,
+        24.474998474121094,
+        36.0
+      ],
+      "dimensionsRobloxXYZ": [
+        24.649999618530273,
+        36.0,
+        24.474998474121094
+      ],
+      "triangles": 836,
+      "vertices": 502,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Chamfered corner, diagonal entrance and sparse upper shop floors. Closed shell.",
+      "fbx": "exports/V3_CornerCafe.fbx",
+      "fbxBytes": 548988,
+      "sha256": "3bf52dc0be01049e029208104c203d49848bfa312a6f0fe11f4480fcd18c758e",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          36.0,
+          0
+        ],
+        "front": [
+          0,
+          18.0,
+          12.237499237060547
+        ],
+        "back": [
+          0,
+          18.0,
+          -12.237499237060547
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_ServiceRear",
+      "family": "Openings",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        24.0,
+        3.2899999618530273,
+        48.0
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        48.0,
+        3.2899999618530273
+      ],
+      "triangles": 176,
+      "vertices": 128,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Sparse rear-wall panel with broad paint repairs, two vents and a drainpipe.",
+      "fbx": "exports/V3_ServiceRear.fbx",
+      "fbxBytes": 532812,
+      "sha256": "4936ba416dbf32dce89834be4d9180ac97781ec6d5e06e0ed5da7ed020d32bdc",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          48.0,
+          0
+        ],
+        "front": [
+          0,
+          24.0,
+          1.6449999809265137
+        ],
+        "back": [
+          0,
+          24.0,
+          -1.6449999809265137
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_UnevenShopRow",
+      "family": "Street",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        30.200000762939453,
+        11.199999809265137,
+        15.350000381469727
+      ],
+      "dimensionsRobloxXYZ": [
+        30.200000762939453,
+        15.350000381469727,
+        11.199999809265137
+      ],
+      "triangles": 228,
+      "vertices": 168,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Three compact shop bays with stepped roofline, built-in awnings and opaque glazing.",
+      "fbx": "exports/V3_UnevenShopRow.fbx",
+      "fbxBytes": 533708,
+      "sha256": "6087fb9f2fce0aea835ea0260ca3c81d284c9b43fce8e849845cff5875071246",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          15.350000381469727,
+          0
+        ],
+        "front": [
+          0,
+          7.675000190734863,
+          5.599999904632568
+        ],
+        "back": [
+          0,
+          7.675000190734863,
+          -5.599999904632568
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_SkylineCluster",
+      "family": "Skyline",
+      "tier": "Distant",
+      "dimensionsBlenderXYZ": [
+        37.70000076293945,
+        19.700000762939453,
+        68.0
+      ],
+      "dimensionsRobloxXYZ": [
+        37.70000076293945,
+        68.0,
+        19.700000762939453
+      ],
+      "triangles": 102,
+      "vertices": 92,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Asymmetric depth-stepped distant cluster; opaque backing, no tiny trim.",
+      "fbx": "exports/V3_SkylineCluster.fbx",
+      "fbxBytes": 531628,
+      "sha256": "1120cb0077bf6021f6a942294339a31cf7f4f0d410c96efd5b9d751524ffa933",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          68.0,
+          0
+        ],
+        "front": [
+          0,
+          34.0,
+          9.850000381469727
+        ],
+        "back": [
+          0,
+          34.0,
+          -9.850000381469727
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": false
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_AtelierHall",
+      "family": "Architecture",
+      "tier": "Mid",
+      "dimensionsBlenderXYZ": [
+        29.0,
+        23.299999237060547,
+        53.849998474121094
+      ],
+      "dimensionsRobloxXYZ": [
+        29.0,
+        53.849998474121094,
+        23.299999237060547
+      ],
+      "triangles": 728,
+      "vertices": 432,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Three oversized workshop bays and stepped roof monitor; integrated roof, no residential grid.",
+      "fbx": "exports/V3_AtelierHall.fbx",
+      "fbxBytes": 546476,
+      "sha256": "bafbf06699ec7ae3d6606aab0b2c41c1fc3e15fb47e68513103386034a38d8ec",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0,
+          53.849998474121094,
+          0
+        ],
+        "front": [
+          0,
+          26.924999237060547,
+          11.649999618530273
+        ],
+        "back": [
+          0,
+          26.924999237060547,
+          -11.649999618530273
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas"
+    },
+    {
+      "id": "V3_LoadingFacade",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        24.0,
+        2.825000047683716,
+        14.0
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        14.0,
+        2.825000047683716
+      ],
+      "triangles": 324,
+      "vertices": 216,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "24-stud loading shutter, vent and conduit wall overlay; mount back against a shell. Closed opaque geometry.",
+      "fbx": "district_addon01/exports/V3_LoadingFacade.fbx",
+      "fbxBytes": 534604,
+      "sha256": "1a2c2562428590e4916c182bed4081c31828d3b4293efa387c889db7e179d9c3",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0.0,
+          14.0,
+          0.9125000238418579
+        ],
+        "front": [
+          0.0,
+          7.0,
+          2.325000047683716
+        ],
+        "back": [
+          0.0,
+          7.0,
+          -0.5
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "mountingGuide": "../MOUNTING.md"
+    },
+    {
+      "id": "V3_ServiceStock",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        12.75,
+        4.550000190734863,
+        4.5
+      ],
+      "dimensionsRobloxXYZ": [
+        12.75,
+        4.5,
+        4.550000190734863
+      ],
+      "triangles": 384,
+      "vertices": 256,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "One reusable dumpster and pallet cluster; no transparent faces or small physics parts.",
+      "fbx": "district_addon01/exports/V3_ServiceStock.fbx",
+      "fbxBytes": 535452,
+      "sha256": "d7d113b08b361a397b5d109450d8d6f87159a39911001497b59a0d321e3341f1",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          2.625,
+          4.5,
+          0.02499997615814209
+        ],
+        "front": [
+          2.625,
+          2.25,
+          2.299999952316284
+        ],
+        "back": [
+          2.625,
+          2.25,
+          -2.25
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "mountingGuide": "../MOUNTING.md"
+    },
+    {
+      "id": "V3_WorksiteHoarding",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        17.0,
+        2.5999999046325684,
+        8.0
+      ],
+      "dimensionsRobloxXYZ": [
+        17.0,
+        8.0,
+        2.5999999046325684
+      ],
+      "triangles": 144,
+      "vertices": 96,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Solid teal perimeter sheet and timber braces; route boundaries stay gameplay-owned.",
+      "fbx": "district_addon01/exports/V3_WorksiteHoarding.fbx",
+      "fbxBytes": 532076,
+      "sha256": "3177477e321de0966eb246f741daa9b04df5b742614b4d38a8fa2812e027690b",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0.0,
+          8.0,
+          -0.0
+        ],
+        "front": [
+          0.0,
+          4.0,
+          1.2999999523162842
+        ],
+        "back": [
+          0.0,
+          4.0,
+          -1.2999999523162842
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "mountingGuide": "../MOUNTING.md"
+    },
+    {
+      "id": "V3_MaterialsStock",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        10.5,
+        8.0,
+        5.099999904632568
+      ],
+      "dimensionsRobloxXYZ": [
+        10.5,
+        5.099999904632568,
+        8.0
+      ],
+      "triangles": 312,
+      "vertices": 208,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Wrapped pallet and three compact steel lengths in one mesh, placed at wall edges.",
+      "fbx": "district_addon01/exports/V3_MaterialsStock.fbx",
+      "fbxBytes": 534396,
+      "sha256": "87d846d24c7a8bb014a13eaac3a0bab756f95f94e011684f9aa5517caeaa9346",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          -0.25,
+          5.099999904632568,
+          -0.0
+        ],
+        "front": [
+          -0.25,
+          2.549999952316284,
+          4.0
+        ],
+        "back": [
+          -0.25,
+          2.549999952316284,
+          -4.0
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "mountingGuide": "../MOUNTING.md"
+    },
+    {
+      "id": "V3_ServiceCanopy",
+      "family": "Industrial",
+      "tier": "Close",
+      "dimensionsBlenderXYZ": [
+        24.0,
+        12.440000534057617,
+        11.25
+      ],
+      "dimensionsRobloxXYZ": [
+        24.0,
+        11.25,
+        12.440000534057617
+      ],
+      "triangles": 192,
+      "vertices": 128,
+      "materialSlots": 1,
+      "texture": "painted_atlas.png",
+      "pivot": "bottom-center; Blender Z-up maps to Roblox Y-up",
+      "collision": "none; preserve existing course collision separately",
+      "notes": "Dark steel loading canopy with an opaque roof and grounded footplates.",
+      "fbx": "district_addon01/exports/V3_ServiceCanopy.fbx",
+      "fbxBytes": 533020,
+      "sha256": "7fcad258814afc67463edee8ae3f8656903178500a9dfb5eb01eb99dd670cb71",
+      "snapGridStuds": 1,
+      "attachmentsRobloxLocal": {
+        "base": [
+          0,
+          0,
+          0
+        ],
+        "top": [
+          0.0,
+          11.25,
+          0.06999993324279785
+        ],
+        "front": [
+          0.0,
+          5.625,
+          6.289999961853027
+        ],
+        "back": [
+          0.0,
+          5.625,
+          -6.150000095367432
+        ]
+      },
+      "renderRecommendation": {
+        "anchored": true,
+        "canCollide": false,
+        "canTouch": false,
+        "canQuery": false,
+        "doubleSided": false,
+        "collisionFidelity": "Box",
+        "castShadow": true
+      },
+      "reusesSharedMaterial": "V3_Shared_Painted_Atlas",
+      "mountingGuide": "../MOUNTING.md"
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "revision": "SGV2_M01",
+  "units": "authored studs; verify Calibration10 on import",
+  "axes": "Blender Z up; exported Y up",
+  "assets": [
+    {
+      "name": "Pot24",
+      "mount": "Ground center; top rim 6.4; outer diameter 24; opening 12",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "min": [
+        -12.0,
+        -12.0,
+        0.0
+      ],
+      "max": [
+        12.0,
+        12.0,
+        6.639999866485596
+      ],
+      "size": [
+        24.0,
+        24.0,
+        6.639999866485596
+      ],
+      "parts": [
+        "Pot24__rim",
+        "Pot24__terra"
+      ],
+      "triangles": 1272,
+      "safeUniformScale": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "BerryTuft",
+      "mount": "Soil center; fruit bases at soil; no player support",
+      "origin": [
+        34,
+        0,
+        0
+      ],
+      "min": [
+        31.474231719970703,
+        -2.0893030166625977,
+        -0.09375
+      ],
+      "max": [
+        36.428123474121094,
+        1.9903523921966553,
+        2.910651445388794
+      ],
+      "size": [
+        4.953891754150391,
+        4.079655408859253,
+        3.004401445388794
+      ],
+      "parts": [
+        "BerryTuft__leaf",
+        "BerryTuft__red",
+        "BerryTuft__seed"
+      ],
+      "triangles": 1596,
+      "safeUniformScale": [
+        0.85,
+        1.4
+      ]
+    },
+    {
+      "name": "CarrotPair",
+      "mount": "Soil center; roots fully visible or bury bottom 0.4",
+      "origin": [
+        68,
+        0,
+        0
+      ],
+      "min": [
+        65.97370910644531,
+        -1.3209809064865112,
+        0.0
+      ],
+      "max": [
+        70.34298706054688,
+        1.9709059000015259,
+        6.154804229736328
+      ],
+      "size": [
+        4.3692779541015625,
+        3.291886806488037,
+        6.154804229736328
+      ],
+      "parts": [
+        "CarrotPair__leaf",
+        "CarrotPair__lime",
+        "CarrotPair__orange"
+      ],
+      "triangles": 320,
+      "safeUniformScale": [
+        0.8,
+        1.4
+      ]
+    },
+    {
+      "name": "SunflowerClump",
+      "mount": "Ground/soil center; flowers face -Y in Blender, -Z in Roblox",
+      "origin": [
+        102,
+        0,
+        0
+      ],
+      "min": [
+        98.81770324707031,
+        -2.2144618034362793,
+        0.0
+      ],
+      "max": [
+        105.9469985961914,
+        2.360159397125244,
+        8.96700668334961
+      ],
+      "size": [
+        7.129295349121094,
+        4.574621200561523,
+        8.96700668334961
+      ],
+      "parts": [
+        "SunflowerClump__brown",
+        "SunflowerClump__gold",
+        "SunflowerClump__leaf"
+      ],
+      "triangles": 3960,
+      "safeUniformScale": [
+        0.9,
+        1.3
+      ]
+    },
+    {
+      "name": "BambooClump",
+      "mount": "Ground center; culms are scenery blockers; foliage is overhead",
+      "origin": [
+        136,
+        0,
+        0
+      ],
+      "min": [
+        131.80853271484375,
+        -4.944860935211182,
+        0.0
+      ],
+      "max": [
+        140.929931640625,
+        4.822307109832764,
+        16.0
+      ],
+      "size": [
+        9.12139892578125,
+        9.767168045043945,
+        16.0
+      ],
+      "parts": [
+        "BambooClump__bamboo",
+        "BambooClump__leaf",
+        "BambooClump__lime"
+      ],
+      "triangles": 720,
+      "safeUniformScale": [
+        0.85,
+        1.2
+      ]
+    },
+    {
+      "name": "BroadLeaf",
+      "mount": "Source leaf surface varies in height; contact requires inspection",
+      "origin": [
+        170,
+        0,
+        0
+      ],
+      "min": [
+        166.0,
+        -6.5,
+        -0.8300001621246338
+      ],
+      "max": [
+        174.0,
+        6.5,
+        1.3010001182556152
+      ],
+      "size": [
+        8.0,
+        13.0,
+        2.131000280380249
+      ],
+      "parts": [
+        "BroadLeaf__leaf",
+        "BroadLeaf__lime"
+      ],
+      "triangles": 284,
+      "safeUniformScale": [
+        1,
+        1.4
+      ]
+    },
+    {
+      "name": "Calibration10",
+      "mount": "10x10x10 import scale witness",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "min": [
+        199.0,
+        -5.0,
+        0.0
+      ],
+      "max": [
+        209.0,
+        5.0,
+        10.0
+      ],
+      "size": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "parts": [
+        "Calibration10__seed"
+      ],
+      "triangles": 12,
+      "safeUniformScale": [
+        1,
+        1
+      ]
+    }
+  ],
+  "materials": {
+    "terra": [
+      0.73,
+      0.29,
+      0.15,
+      1
+    ],
+    "rim": [
+      0.9,
+      0.48,
+      0.27,
+      1
+    ],
+    "leaf": [
+      0.14,
+      0.37,
+      0.18,
+      1
+    ],
+    "lime": [
+      0.42,
+      0.65,
+      0.2,
+      1
+    ],
+    "red": [
+      0.8,
+      0.1,
+      0.16,
+      1
+    ],
+    "seed": [
+      1,
+      0.84,
+      0.48,
+      1
+    ],
+    "orange": [
+      0.94,
+      0.39,
+      0.065,
+      1
+    ],
+    "gold": [
+      1,
+      0.68,
+      0.07,
+      1
+    ],
+    "brown": [
+      0.22,
+      0.105,
+      0.04,
+      1
+    ],
+    "bamboo": [
+      0.32,
+      0.57,
+      0.12,
+      1
+    ]
+  },
+  "meshObjects": 17,
+  "triangles": 8164,
+  "provenance": "Original procedural geometry; no third-party asset or texture",
+  "textures": 0
+}

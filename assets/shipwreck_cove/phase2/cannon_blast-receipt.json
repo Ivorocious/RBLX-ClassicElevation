@@ -1,0 +1,16 @@
+{
+  "sha256": "8df2a123c00e60b8d208aa6eddd4dd506937e65310218a8043ad3922c3e86dd3",
+  "request": {
+    "assetType": "Audio",
+    "displayName": "Shipwreck Cove cannon_blast",
+    "description": "Original synthesized Shipwreck Cove hazard sound effect.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/c699f172-03bf-44d8-8558-a03ba6229739",
+  "assetId": "88893898468893"
+}

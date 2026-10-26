@@ -1,0 +1,103 @@
+{
+  "build": "SC_MAP_28",
+  "resource": {
+    "visuals": 619,
+    "visualTriangles": 108320,
+    "colliders": 174,
+    "timberBraces": 25
+  },
+  "checkpointCount": 5,
+  "falling": 25,
+  "shots": [
+    {
+      "shot": "Ball0",
+      "elevation": 35,
+      "platforms": [
+        {
+          "platform": "BatteryCluster0_0",
+          "heightAboveLanding": 3.545
+        },
+        {
+          "platform": "BatteryDeck0",
+          "heightAboveLanding": 4.263
+        },
+        {
+          "platform": "BatteryCluster0_2",
+          "heightAboveLanding": 3.777
+        }
+      ]
+    },
+    {
+      "shot": "Ball1",
+      "elevation": 35,
+      "platforms": [
+        {
+          "platform": "BatteryCluster1_0",
+          "heightAboveLanding": 3.852
+        },
+        {
+          "platform": "BatteryCluster1_1",
+          "heightAboveLanding": 4.412
+        },
+        {
+          "platform": "BatteryDeck1",
+          "heightAboveLanding": 4.307
+        },
+        {
+          "platform": "BatteryCluster1_3",
+          "heightAboveLanding": 2.185
+        }
+      ]
+    },
+    {
+      "shot": "Ball2",
+      "elevation": 35,
+      "platforms": [
+        {
+          "platform": "BatteryCluster2_0",
+          "heightAboveLanding": 2.296
+        },
+        {
+          "platform": "BatteryCluster2_1",
+          "heightAboveLanding": 3.64
+        },
+        {
+          "platform": "BatteryDeck2",
+          "heightAboveLanding": 4.613
+        },
+        {
+          "platform": "BatteryCluster2_3",
+          "heightAboveLanding": 3.815
+        },
+        {
+          "platform": "BatteryCluster2_4",
+          "heightAboveLanding": 2.645
+        }
+      ]
+    },
+    {
+      "shot": "Ball3",
+      "elevation": 35,
+      "platforms": [
+        {
+          "platform": "BatteryCluster3_0",
+          "heightAboveLanding": 3.852
+        },
+        {
+          "platform": "BatteryCluster3_1",
+          "heightAboveLanding": 4.412
+        },
+        {
+          "platform": "BatteryDeck3",
+          "heightAboveLanding": 4.307
+        },
+        {
+          "platform": "BatteryCluster3_3",
+          "heightAboveLanding": 2.185
+        }
+      ]
+    }
+  ],
+  "caveArrowPolicy": "No arrows on S04_Entry/Cave surfaces",
+  "claims": "Analytic layout checks only; real contact and jump tests still required"
+}

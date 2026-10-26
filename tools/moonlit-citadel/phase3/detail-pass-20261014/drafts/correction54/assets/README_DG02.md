@@ -1,0 +1,11 @@
+# Garden and wall hoist DG02
+
+The new upload payload is `assets/moonlit_citadel/phase3/detail-pass-20261014/correction54/dg02/MC_GARDEN_HOIST_DG02.fbx`. It contains two assets and six closed material meshes, 3,258 triangles total. Frozen garden DG01 files stay unchanged and unused; the garden's actual vertices, three export-part rows, and occupied record match DG01 exactly.
+
+`MC_DG_WallGarden24` retains its base origin and front +Z. Its intended Roblox bounds are (-12,0,-0.10) to (12,9.6279964,4.27), with three Stone/Earth/Foliage parts and 1,662 triangles.
+
+`MC_DG_WallHoist` has a wall-mount-centre origin, up +Y, front +Z. Actual whole bounds are (-4.4000001,-3.1259973,-0.10) to (3.8499999,2.4449999,5.3768539). Its two timber mounting rails span X ±3.85, Y -2.445–-1.795 and 1.795–2.445, Z -0.10–0.32. It reuses the existing winch timbers, flanged drum, coils, handwheel, and crank as wall-mounted geometry. The floor crate and loose tools are omitted; one short closed hanging rope is added. Three Wood/Iron/Brass meshes cost 1,596 triangles. Two copies replace the two existing Source53 winch slots without adding meshes, reducing their triangle cost by 120 total.
+
+`combined-manifest.json` contains ten assets and 32 unique material-part rows: all 26 exact old R01 rows and these six new rows. `combined-occupied-geometry.json` preserves the old eight asset records exactly and adds both measured new assets using `assets[name].occupied` low/high boxes in intended Roblox XYZ. Both bind original R01, DG01, and DG02 provenance. Keep logical `library="DT01"`; native library is `MoonlitCitadel_Detail_DT02Library`. Copy eight old verified native templates exactly, and import/prove only these six new material meshes.
+
+`BuildGardenHoistKit.py` uses `GardenHoistRecipe.py` in isolated background Blender. `VerifyGardenHoistKit.py` checks saved closed/nonzero/outward meshes, garden contours, and the FBX vertex roundtrip at tolerance 0.00001. `garden-hoist-final-freeze.json` binds actual hashes and three original previews. The root still owns actual native mesh and material proof, final support and clearance checks, camera composition, and acceptance. No gameplay or frame-rate result is implied.

@@ -1,0 +1,2266 @@
+{
+  "revision": "R01_bays_center_review",
+  "state": "Blender_candidate_only",
+  "base": "A01 + Q01",
+  "bayIndices": [
+    3
+  ],
+  "colors": {
+    "Ivory": [
+      0.94,
+      0.88,
+      0.75
+    ],
+    "Pale": [
+      0.99,
+      0.96,
+      0.88
+    ],
+    "Stone": [
+      0.76,
+      0.7,
+      0.59
+    ],
+    "Floor": [
+      0.91,
+      0.87,
+      0.78
+    ],
+    "Navy": [
+      0.025,
+      0.055,
+      0.12
+    ],
+    "Gold": [
+      0.88,
+      0.59,
+      0.14
+    ],
+    "Silver": [
+      0.6,
+      0.69,
+      0.73
+    ],
+    "Bronze": [
+      0.65,
+      0.36,
+      0.17
+    ],
+    "Leaf": [
+      0.16,
+      0.39,
+      0.15
+    ],
+    "LeafLight": [
+      0.37,
+      0.58,
+      0.17
+    ],
+    "Wood": [
+      0.25,
+      0.14,
+      0.055
+    ],
+    "Lamp": [
+      1.0,
+      0.79,
+      0.24
+    ]
+  },
+  "units": "One Blender unit = one Roblox stud. X right; Y rear; Z up. Native transform (x,z,-y).",
+  "sourceHashes": {
+    "A01\\GrandArcade_A01.blend": "67e53de45de842e7743bbb5fe4593042e8a1103a851521a22ff0fc287e02d952",
+    "quality_candidate\\Q01\\GrandArcade_Q01_Trim.blend": "7de1f7eead732c6816a6f87caf9e031b525a0741beaeca275bea4df9e1b42fe3"
+  },
+  "meshes": {
+    "R01_Bay3__Navy": {
+      "replaces": "Workspace.GrandArcade.Bay3__Navy",
+      "material": "Navy",
+      "triangles": 260,
+      "components": [
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.5700022284688622
+        },
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.8835033390222825
+        },
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.47025180217627105
+        },
+        {
+          "vertices": 102,
+          "faces": 53,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 142.66597543962789
+        },
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 36.673299624123956
+        },
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 6.610554319457495
+        }
+      ],
+      "bounds": [
+        [
+          -7.599999904632568,
+          9.359999656677246,
+          0.0
+        ],
+        [
+          7.599999904632568,
+          15.300000190734863,
+          25.100000381469727
+        ]
+      ]
+    },
+    "R01_Bay3__Ivory": {
+      "replaces": "Workspace.GrandArcade.Bay3__Ivory",
+      "material": "Ivory",
+      "triangles": 368,
+      "components": [
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 51.119985580444336
+        },
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 51.119985580444336
+        },
+        {
+          "vertices": 88,
+          "faces": 86,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 28.937352982794685
+        },
+        {
+          "vertices": 88,
+          "faces": 86,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 28.937352982794664
+        }
+      ],
+      "bounds": [
+        [
+          -9.0,
+          13.100000381469727,
+          0.0
+        ],
+        [
+          9.0,
+          15.199999809265137,
+          26.45069694519043
+        ]
+      ]
+    },
+    "R01_Bay3__Gold": {
+      "replaces": "Workspace.GrandArcade.Bay3__Gold",
+      "material": "Gold",
+      "triangles": 356,
+      "components": [
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 34.807496761083485
+        },
+        {
+          "vertices": 88,
+          "faces": 86,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.40553885151409325
+        },
+        {
+          "vertices": 88,
+          "faces": 86,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.4055388515140963
+        }
+      ],
+      "bounds": [
+        [
+          -7.78000020980835,
+          9.425000190734863,
+          0.0
+        ],
+        [
+          7.78000020980835,
+          13.5,
+          25.237380981445312
+        ]
+      ]
+    },
+    "R01_Bay3__Pale": {
+      "replaces": "Workspace.GrandArcade.Bay3__Pale",
+      "material": "Pale",
+      "triangles": 456,
+      "components": [
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 8.554000762224133
+        },
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 4.19999246597399
+        },
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 8.554000762224135
+        },
+        {
+          "vertices": 8,
+          "faces": 6,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 4.199992465973989
+        },
+        {
+          "vertices": 64,
+          "faces": 34,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.9177054752076463
+        },
+        {
+          "vertices": 64,
+          "faces": 34,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.9177040260945546
+        },
+        {
+          "vertices": 64,
+          "faces": 34,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.9177040165550019
+        },
+        {
+          "vertices": 20,
+          "faces": 18,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 5.107535397063776
+        }
+      ],
+      "bounds": [
+        [
+          -9.479999542236328,
+          9.600000381469727,
+          0.0
+        ],
+        [
+          9.479999542236328,
+          15.300000190734863,
+          26.6200008392334
+        ]
+      ]
+    },
+    "R01_Bay3Trim__Pale": {
+      "replaces": "Workspace.GrandArcade.QualityTrimQ01.Bay3Trim__Pale",
+      "material": "Pale",
+      "triangles": 596,
+      "components": [
+        {
+          "vertices": 24,
+          "faces": 44,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 2.5557793841839533
+        },
+        {
+          "vertices": 24,
+          "faces": 44,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 2.5557793841839533
+        },
+        {
+          "vertices": 24,
+          "faces": 44,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 1.6188700140715007
+        },
+        {
+          "vertices": 24,
+          "faces": 44,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 1.6188727797919906
+        },
+        {
+          "vertices": 24,
+          "faces": 44,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 1.618871488088176
+        },
+        {
+          "vertices": 88,
+          "faces": 86,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.6505631675982312
+        },
+        {
+          "vertices": 88,
+          "faces": 86,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.65056316759824
+        },
+        {
+          "vertices": 16,
+          "faces": 16,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 5.297142362873639
+        }
+      ],
+      "bounds": [
+        [
+          -9.119999885559082,
+          9.3100004196167,
+          1.25
+        ],
+        [
+          9.119999885559082,
+          13.5,
+          26.570039749145508
+        ]
+      ]
+    },
+    "R01_Bay3Trim__Gold": {
+      "replaces": "Workspace.GrandArcade.QualityTrimQ01.Bay3Trim__Gold",
+      "material": "Gold",
+      "triangles": 240,
+      "components": [
+        {
+          "vertices": 24,
+          "faces": 44,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.048989027430513844
+        },
+        {
+          "vertices": 24,
+          "faces": 44,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.048989027430513844
+        },
+        {
+          "vertices": 24,
+          "faces": 44,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.03757743321217345
+        },
+        {
+          "vertices": 24,
+          "faces": 44,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.037577383334461395
+        },
+        {
+          "vertices": 16,
+          "faces": 16,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.1334030334059172
+        },
+        {
+          "vertices": 16,
+          "faces": 16,
+          "boundaryEdges": 0,
+          "nonManifoldEdges": 0,
+          "signedVolume": 0.4374761755445427
+        }
+      ],
+      "bounds": [
+        [
+          -6.380000114440918,
+          9.220000267028809,
+          0.10000000149011612
+        ],
+        [
+          6.380000114440918,
+          13.140000343322754,
+          20.1522216796875
+        ]
+      ]
+    },
+    "R01MarkerOrigin__Navy": {
+      "material": "Navy",
+      "section": "Calibration",
+      "triangles": 12
+    },
+    "R01MarkerRight__Navy": {
+      "material": "Navy",
+      "section": "Calibration",
+      "triangles": 12
+    },
+    "R01MarkerUp__Navy": {
+      "material": "Navy",
+      "section": "Calibration",
+      "triangles": 12
+    },
+    "R01MarkerForward__Navy": {
+      "material": "Navy",
+      "section": "Calibration",
+      "triangles": 12
+    }
+  },
+  "meshCount": 10,
+  "calibration": {
+    "origin": "R01MarkerOrigin__Navy",
+    "right": "R01MarkerRight__Navy",
+    "up": "R01MarkerUp__Navy",
+    "forward": "R01MarkerForward__Navy"
+  },
+  "preservation": [
+    {
+      "mesh": "Bay3__Navy",
+      "sourceComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -7.599999904632568,
+              13.779999732971191,
+              0.0
+            ],
+            [
+              7.599999904632568,
+              14.779999732971191,
+              25.100000381469727
+            ]
+          ],
+          "vertices": 78,
+          "faces": 41,
+          "sha256": "d524ffebff40e74ce2bfa8dfd524161fb66e7da590edc88b22e60bd8968425d6"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              -6.800000190734863,
+              13.239999771118164,
+              8.75
+            ],
+            [
+              6.800000190734863,
+              13.479999542236328,
+              22.049999237060547
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "abae97f496b491a957176cadf1da5bc972aab08e86f6102e5bfea599e2e2278a"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              -6.75,
+              13.140000343322754,
+              6.630000114440918
+            ],
+            [
+              6.75,
+              13.460000038146973,
+              8.229999542236328
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "b117e6ddb946b0d01bd3f11d11bd0d393221a4d3c811cfe450814110528ff262"
+        },
+        {
+          "ordinal": 3,
+          "bounds": [
+            [
+              -5.025000095367432,
+              9.359999656677246,
+              0.15000000596046448
+            ],
+            [
+              -2.174999952316284,
+              9.460000038146973,
+              2.1500000953674316
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "4e68467f7e25adf5fea06762ea874741e674ee00a21246135274322e2b00e144"
+        },
+        {
+          "ordinal": 4,
+          "bounds": [
+            [
+              -1.4249999523162842,
+              9.359999656677246,
+              0.15000000596046448
+            ],
+            [
+              1.4249999523162842,
+              9.460000038146973,
+              3.25
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "2d7054350d2f1bc00decc8ceb6cedc3302d7bac951dd85448be3278236dea2e7"
+        },
+        {
+          "ordinal": 5,
+          "bounds": [
+            [
+              2.174999952316284,
+              9.359999656677246,
+              0.15000000596046448
+            ],
+            [
+              5.025000095367432,
+              9.460000038146973,
+              1.7999999523162842
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "70fc813dc9b6311f6ca17a7ec6e9be26678edd310b90bd2863b5e2e56c634f97"
+        }
+      ],
+      "preservedComponents": [
+        {
+          "ordinal": 3,
+          "bounds": [
+            [
+              -5.025000095367432,
+              9.359999656677246,
+              0.15000000596046448
+            ],
+            [
+              -2.174999952316284,
+              9.460000038146973,
+              2.1500000953674316
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "4e68467f7e25adf5fea06762ea874741e674ee00a21246135274322e2b00e144"
+        },
+        {
+          "ordinal": 4,
+          "bounds": [
+            [
+              -1.4249999523162842,
+              9.359999656677246,
+              0.15000000596046448
+            ],
+            [
+              1.4249999523162842,
+              9.460000038146973,
+              3.25
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "2d7054350d2f1bc00decc8ceb6cedc3302d7bac951dd85448be3278236dea2e7"
+        },
+        {
+          "ordinal": 5,
+          "bounds": [
+            [
+              2.174999952316284,
+              9.359999656677246,
+              0.15000000596046448
+            ],
+            [
+              5.025000095367432,
+              9.460000038146973,
+              1.7999999523162842
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "70fc813dc9b6311f6ca17a7ec6e9be26678edd310b90bd2863b5e2e56c634f97"
+        }
+      ],
+      "removedComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -7.599999904632568,
+              13.779999732971191,
+              0.0
+            ],
+            [
+              7.599999904632568,
+              14.779999732971191,
+              25.100000381469727
+            ]
+          ],
+          "vertices": 78,
+          "faces": 41,
+          "sha256": "d524ffebff40e74ce2bfa8dfd524161fb66e7da590edc88b22e60bd8968425d6"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              -6.800000190734863,
+              13.239999771118164,
+              8.75
+            ],
+            [
+              6.800000190734863,
+              13.479999542236328,
+              22.049999237060547
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "abae97f496b491a957176cadf1da5bc972aab08e86f6102e5bfea599e2e2278a"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              -6.75,
+              13.140000343322754,
+              6.630000114440918
+            ],
+            [
+              6.75,
+              13.460000038146973,
+              8.229999542236328
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "b117e6ddb946b0d01bd3f11d11bd0d393221a4d3c811cfe450814110528ff262"
+        }
+      ],
+      "verifiedAfterMerge": true
+    },
+    {
+      "mesh": "Bay3__Ivory",
+      "sourceComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -9.0,
+              13.5,
+              17.5
+            ],
+            [
+              9.0,
+              15.199999809265137,
+              26.5
+            ]
+          ],
+          "vertices": 148,
+          "faces": 76,
+          "sha256": "ae99cc09e7a8751c48d8400b91724f56ee0ba40bf4e52ea79b8b4fbae0d642a9"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              -8.989999771118164,
+              13.100000381469727,
+              0.0
+            ],
+            [
+              -7.570000171661377,
+              15.100000381469727,
+              18.0
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "70dec5d6e8d13a14c9f885e5ad8ba93a5efd58383ff2afda366813b3e39b1ffa"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              7.570000171661377,
+              13.100000381469727,
+              0.0
+            ],
+            [
+              8.989999771118164,
+              15.100000381469727,
+              18.0
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "087e7fce3016b0e3ddefcd63770e6b41ca37ef9735670e936d72f7cb4b80a9bd"
+        }
+      ],
+      "preservedComponents": [
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              -8.989999771118164,
+              13.100000381469727,
+              0.0
+            ],
+            [
+              -7.570000171661377,
+              15.100000381469727,
+              18.0
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "70dec5d6e8d13a14c9f885e5ad8ba93a5efd58383ff2afda366813b3e39b1ffa"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              7.570000171661377,
+              13.100000381469727,
+              0.0
+            ],
+            [
+              8.989999771118164,
+              15.100000381469727,
+              18.0
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "087e7fce3016b0e3ddefcd63770e6b41ca37ef9735670e936d72f7cb4b80a9bd"
+        }
+      ],
+      "removedComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -9.0,
+              13.5,
+              17.5
+            ],
+            [
+              9.0,
+              15.199999809265137,
+              26.5
+            ]
+          ],
+          "vertices": 148,
+          "faces": 76,
+          "sha256": "ae99cc09e7a8751c48d8400b91724f56ee0ba40bf4e52ea79b8b4fbae0d642a9"
+        }
+      ],
+      "verifiedAfterMerge": true
+    },
+    {
+      "mesh": "Bay3__Gold",
+      "sourceComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -7.630000114440918,
+              13.270000457763672,
+              17.5
+            ],
+            [
+              7.630000114440918,
+              13.489999771118164,
+              25.1299991607666
+            ]
+          ],
+          "vertices": 148,
+          "faces": 76,
+          "sha256": "28895a10ad0f29d70d72945f1d69f542a70b3d6de1262cde5e471ad4bd361e22"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              -6.940000057220459,
+              13.095000267028809,
+              8.699999809265137
+            ],
+            [
+              -6.78000020980835,
+              13.244999885559082,
+              22.100000381469727
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "92e6acafdb540ebe87ecb345f7fe45fb8a9244400b809eaf9910de3293d3036a"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              6.78000020980835,
+              13.095000267028809,
+              8.699999809265137
+            ],
+            [
+              6.940000057220459,
+              13.244999885559082,
+              22.100000381469727
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "10649c9c29f4a3a91731d1120c5b72a95eb2f082eedf9b4ec1882dd2b648577a"
+        },
+        {
+          "ordinal": 3,
+          "bounds": [
+            [
+              -6.925000190734863,
+              13.095000267028809,
+              8.619999885559082
+            ],
+            [
+              6.925000190734863,
+              13.244999885559082,
+              8.779999732971191
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "afedbecea95573df9030a2033f7f32105d9a99e1a50c5895fcb8cbe104697f82"
+        },
+        {
+          "ordinal": 4,
+          "bounds": [
+            [
+              -6.925000190734863,
+              13.095000267028809,
+              22.020000457763672
+            ],
+            [
+              6.925000190734863,
+              13.244999885559082,
+              22.18000030517578
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "7934e71e86834c9c7f05b163c820f846c21bcf4c0fc6b732299c8ba3e25b83de"
+        },
+        {
+          "ordinal": 5,
+          "bounds": [
+            [
+              -1.625,
+              9.425000190734863,
+              0.0
+            ],
+            [
+              1.625,
+              12.574999809265137,
+              3.4000000953674316
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "6e53dab8e403ed642fe6ca083bf18a447abdebdfe6b25781ff217e1d7b3804c4"
+        }
+      ],
+      "preservedComponents": [
+        {
+          "ordinal": 5,
+          "bounds": [
+            [
+              -1.625,
+              9.425000190734863,
+              0.0
+            ],
+            [
+              1.625,
+              12.574999809265137,
+              3.4000000953674316
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "6e53dab8e403ed642fe6ca083bf18a447abdebdfe6b25781ff217e1d7b3804c4"
+        }
+      ],
+      "removedComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -7.630000114440918,
+              13.270000457763672,
+              17.5
+            ],
+            [
+              7.630000114440918,
+              13.489999771118164,
+              25.1299991607666
+            ]
+          ],
+          "vertices": 148,
+          "faces": 76,
+          "sha256": "28895a10ad0f29d70d72945f1d69f542a70b3d6de1262cde5e471ad4bd361e22"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              -6.940000057220459,
+              13.095000267028809,
+              8.699999809265137
+            ],
+            [
+              -6.78000020980835,
+              13.244999885559082,
+              22.100000381469727
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "92e6acafdb540ebe87ecb345f7fe45fb8a9244400b809eaf9910de3293d3036a"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              6.78000020980835,
+              13.095000267028809,
+              8.699999809265137
+            ],
+            [
+              6.940000057220459,
+              13.244999885559082,
+              22.100000381469727
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "10649c9c29f4a3a91731d1120c5b72a95eb2f082eedf9b4ec1882dd2b648577a"
+        },
+        {
+          "ordinal": 3,
+          "bounds": [
+            [
+              -6.925000190734863,
+              13.095000267028809,
+              8.619999885559082
+            ],
+            [
+              6.925000190734863,
+              13.244999885559082,
+              8.779999732971191
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "afedbecea95573df9030a2033f7f32105d9a99e1a50c5895fcb8cbe104697f82"
+        },
+        {
+          "ordinal": 4,
+          "bounds": [
+            [
+              -6.925000190734863,
+              13.095000267028809,
+              22.020000457763672
+            ],
+            [
+              6.925000190734863,
+              13.244999885559082,
+              22.18000030517578
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "7934e71e86834c9c7f05b163c820f846c21bcf4c0fc6b732299c8ba3e25b83de"
+        }
+      ],
+      "verifiedAfterMerge": true
+    },
+    {
+      "mesh": "Bay3__Pale",
+      "sourceComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -9.454999923706055,
+              12.699999809265137,
+              0.0
+            ],
+            [
+              -7.105000019073486,
+              15.300000190734863,
+              1.399999976158142
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "0ca759a99974cb9ddd2b26bec4c0b7639075b77c47bbdd1f4c5ba4ab731d8592"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              -9.479999542236328,
+              12.75,
+              17.100000381469727
+            ],
+            [
+              -7.079999923706055,
+              15.25,
+              17.799999237060547
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "25ff9cf2fc86bcc120128d22214755c4d007366166d38a700ae16a545fa63608"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              7.105000019073486,
+              12.699999809265137,
+              0.0
+            ],
+            [
+              9.454999923706055,
+              15.300000190734863,
+              1.399999976158142
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "997329892962f93348e6f1691d10ba6581fe42fb510900f36301eef370d71db8"
+        },
+        {
+          "ordinal": 3,
+          "bounds": [
+            [
+              7.079999923706055,
+              12.75,
+              17.100000381469727
+            ],
+            [
+              9.479999542236328,
+              15.25,
+              17.799999237060547
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "7c31f1ce80a684815146d4a782a37d27c808d2d51dcbfc4cbbd16264bdd347b8"
+        },
+        {
+          "ordinal": 4,
+          "bounds": [
+            [
+              -1.0,
+              13.359999656677246,
+              24.200000762939453
+            ],
+            [
+              1.0,
+              15.40999984741211,
+              26.350000381469727
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "6f8a9de0c6b2c0dfa84ec849784841845a5e885b59d14bdd021de7a6f7b94cd3"
+        },
+        {
+          "ordinal": 5,
+          "bounds": [
+            [
+              -5.0,
+              9.600000381469727,
+              2.299999952316284
+            ],
+            [
+              -2.200000047683716,
+              12.399999618530273,
+              2.450000047683716
+            ]
+          ],
+          "vertices": 64,
+          "faces": 34,
+          "sha256": "801fca85a9376048a2d347677e929782801b2a66469e28221c111e54386b3f9a"
+        },
+        {
+          "ordinal": 6,
+          "bounds": [
+            [
+              -1.399999976158142,
+              9.600000381469727,
+              3.4000000953674316
+            ],
+            [
+              1.399999976158142,
+              12.399999618530273,
+              3.549999952316284
+            ]
+          ],
+          "vertices": 64,
+          "faces": 34,
+          "sha256": "fa69fbe6d31203a2880db089780da67f00c066778bf7a044f7187a007a903ea3"
+        },
+        {
+          "ordinal": 7,
+          "bounds": [
+            [
+              2.200000047683716,
+              9.600000381469727,
+              1.9500000476837158
+            ],
+            [
+              5.0,
+              12.399999618530273,
+              2.0999999046325684
+            ]
+          ],
+          "vertices": 64,
+          "faces": 34,
+          "sha256": "efee4499c4d67d888b7e9ea43efdac693354bdf07f8f0f16303940eabdfdd594"
+        }
+      ],
+      "preservedComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -9.454999923706055,
+              12.699999809265137,
+              0.0
+            ],
+            [
+              -7.105000019073486,
+              15.300000190734863,
+              1.399999976158142
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "0ca759a99974cb9ddd2b26bec4c0b7639075b77c47bbdd1f4c5ba4ab731d8592"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              -9.479999542236328,
+              12.75,
+              17.100000381469727
+            ],
+            [
+              -7.079999923706055,
+              15.25,
+              17.799999237060547
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "25ff9cf2fc86bcc120128d22214755c4d007366166d38a700ae16a545fa63608"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              7.105000019073486,
+              12.699999809265137,
+              0.0
+            ],
+            [
+              9.454999923706055,
+              15.300000190734863,
+              1.399999976158142
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "997329892962f93348e6f1691d10ba6581fe42fb510900f36301eef370d71db8"
+        },
+        {
+          "ordinal": 3,
+          "bounds": [
+            [
+              7.079999923706055,
+              12.75,
+              17.100000381469727
+            ],
+            [
+              9.479999542236328,
+              15.25,
+              17.799999237060547
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "7c31f1ce80a684815146d4a782a37d27c808d2d51dcbfc4cbbd16264bdd347b8"
+        },
+        {
+          "ordinal": 5,
+          "bounds": [
+            [
+              -5.0,
+              9.600000381469727,
+              2.299999952316284
+            ],
+            [
+              -2.200000047683716,
+              12.399999618530273,
+              2.450000047683716
+            ]
+          ],
+          "vertices": 64,
+          "faces": 34,
+          "sha256": "801fca85a9376048a2d347677e929782801b2a66469e28221c111e54386b3f9a"
+        },
+        {
+          "ordinal": 6,
+          "bounds": [
+            [
+              -1.399999976158142,
+              9.600000381469727,
+              3.4000000953674316
+            ],
+            [
+              1.399999976158142,
+              12.399999618530273,
+              3.549999952316284
+            ]
+          ],
+          "vertices": 64,
+          "faces": 34,
+          "sha256": "fa69fbe6d31203a2880db089780da67f00c066778bf7a044f7187a007a903ea3"
+        },
+        {
+          "ordinal": 7,
+          "bounds": [
+            [
+              2.200000047683716,
+              9.600000381469727,
+              1.9500000476837158
+            ],
+            [
+              5.0,
+              12.399999618530273,
+              2.0999999046325684
+            ]
+          ],
+          "vertices": 64,
+          "faces": 34,
+          "sha256": "efee4499c4d67d888b7e9ea43efdac693354bdf07f8f0f16303940eabdfdd594"
+        }
+      ],
+      "removedComponents": [
+        {
+          "ordinal": 4,
+          "bounds": [
+            [
+              -1.0,
+              13.359999656677246,
+              24.200000762939453
+            ],
+            [
+              1.0,
+              15.40999984741211,
+              26.350000381469727
+            ]
+          ],
+          "vertices": 8,
+          "faces": 6,
+          "sha256": "6f8a9de0c6b2c0dfa84ec849784841845a5e885b59d14bdd021de7a6f7b94cd3"
+        }
+      ],
+      "verifiedAfterMerge": true
+    },
+    {
+      "mesh": "Bay3Trim__Pale",
+      "sourceComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -9.170000076293945,
+              13.220000267028809,
+              17.5
+            ],
+            [
+              9.170000076293945,
+              13.470000267028809,
+              26.670000076293945
+            ]
+          ],
+          "vertices": 164,
+          "faces": 324,
+          "sha256": "98b712469dc236f9757d4e5c0bf5e553d2a4284e69cfa5c52a1f3f393d7a6a2c"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              -7.880000114440918,
+              13.170000076293945,
+              17.5
+            ],
+            [
+              7.880000114440918,
+              13.390000343322754,
+              25.3799991607666
+            ]
+          ],
+          "vertices": 164,
+          "faces": 324,
+          "sha256": "acbf6081a3d266019b90f10bcac96d4800b18a7e1a533911c717d99c2cb5a40f"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              -8.75,
+              12.899999618530273,
+              1.25
+            ],
+            [
+              -7.809999942779541,
+              13.079999923706055,
+              16.75
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "bbb73393110c3eee979348c8ae0a5dff222409a87c8285ae5d767fef03d7f76f"
+        },
+        {
+          "ordinal": 3,
+          "bounds": [
+            [
+              7.809999942779541,
+              12.899999618530273,
+              1.25
+            ],
+            [
+              8.75,
+              13.079999923706055,
+              16.75
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "05c11a6e7d700cf4ea6b40c3cf73e9f58ba166fcbe607b08a845a34bad566014"
+        },
+        {
+          "ordinal": 4,
+          "bounds": [
+            [
+              -7.150000095367432,
+              12.920000076293945,
+              8.579999923706055
+            ],
+            [
+              -6.809999942779541,
+              13.199999809265137,
+              22.219999313354492
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "8c5bc2a923e943b6fec102981dc0c17c90a4b9b80375bb97901d869b6326498a"
+        },
+        {
+          "ordinal": 5,
+          "bounds": [
+            [
+              6.809999942779541,
+              12.920000076293945,
+              8.579999923706055
+            ],
+            [
+              7.150000095367432,
+              13.199999809265137,
+              22.219999313354492
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "b6772826fb3f43c47af4395525e8f9e0d1cfbabfbfe0d959a67d8c973ca544d5"
+        },
+        {
+          "ordinal": 6,
+          "bounds": [
+            [
+              -7.144999980926514,
+              12.920000076293945,
+              8.5
+            ],
+            [
+              7.144999980926514,
+              13.199999809265137,
+              8.699999809265137
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "23a80e21012b591aa4a6e50e7649504136a63500075f1560c414b0a346ef4b40"
+        },
+        {
+          "ordinal": 7,
+          "bounds": [
+            [
+              -7.144999980926514,
+              12.920000076293945,
+              22.100000381469727
+            ],
+            [
+              7.144999980926514,
+              13.199999809265137,
+              22.299999237060547
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "19a4c86a534be12b92878cc00c9795b3646fb09a45e1fa52f96aefa75f6875a8"
+        },
+        {
+          "ordinal": 8,
+          "bounds": [
+            [
+              -5.340000152587891,
+              9.3100004196167,
+              2.190000057220459
+            ],
+            [
+              -1.8600000143051147,
+              12.6899995803833,
+              2.3299999237060547
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "24fef45c693e3519ad3f78d1658098448085ecb3bb88620b4586ba14c39159a9"
+        },
+        {
+          "ordinal": 9,
+          "bounds": [
+            [
+              -1.7400000095367432,
+              9.3100004196167,
+              3.2899999618530273
+            ],
+            [
+              1.7400000095367432,
+              12.6899995803833,
+              3.430000066757202
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "84a656f2ecaff16cc64ea2d240e86d1b7f3a3a3b3ae3a930d7b865db5401ad1c"
+        },
+        {
+          "ordinal": 10,
+          "bounds": [
+            [
+              1.8600000143051147,
+              9.3100004196167,
+              1.840000033378601
+            ],
+            [
+              5.340000152587891,
+              12.6899995803833,
+              1.9800000190734863
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "5e0dee3713e440c88d25f8b219ff2f6d115d1fcd833d7dbb99c17e44e7749068"
+        }
+      ],
+      "preservedComponents": [
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              -8.75,
+              12.899999618530273,
+              1.25
+            ],
+            [
+              -7.809999942779541,
+              13.079999923706055,
+              16.75
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "bbb73393110c3eee979348c8ae0a5dff222409a87c8285ae5d767fef03d7f76f"
+        },
+        {
+          "ordinal": 3,
+          "bounds": [
+            [
+              7.809999942779541,
+              12.899999618530273,
+              1.25
+            ],
+            [
+              8.75,
+              13.079999923706055,
+              16.75
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "05c11a6e7d700cf4ea6b40c3cf73e9f58ba166fcbe607b08a845a34bad566014"
+        },
+        {
+          "ordinal": 8,
+          "bounds": [
+            [
+              -5.340000152587891,
+              9.3100004196167,
+              2.190000057220459
+            ],
+            [
+              -1.8600000143051147,
+              12.6899995803833,
+              2.3299999237060547
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "24fef45c693e3519ad3f78d1658098448085ecb3bb88620b4586ba14c39159a9"
+        },
+        {
+          "ordinal": 9,
+          "bounds": [
+            [
+              -1.7400000095367432,
+              9.3100004196167,
+              3.2899999618530273
+            ],
+            [
+              1.7400000095367432,
+              12.6899995803833,
+              3.430000066757202
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "84a656f2ecaff16cc64ea2d240e86d1b7f3a3a3b3ae3a930d7b865db5401ad1c"
+        },
+        {
+          "ordinal": 10,
+          "bounds": [
+            [
+              1.8600000143051147,
+              9.3100004196167,
+              1.840000033378601
+            ],
+            [
+              5.340000152587891,
+              12.6899995803833,
+              1.9800000190734863
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "5e0dee3713e440c88d25f8b219ff2f6d115d1fcd833d7dbb99c17e44e7749068"
+        }
+      ],
+      "removedComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -9.170000076293945,
+              13.220000267028809,
+              17.5
+            ],
+            [
+              9.170000076293945,
+              13.470000267028809,
+              26.670000076293945
+            ]
+          ],
+          "vertices": 164,
+          "faces": 324,
+          "sha256": "98b712469dc236f9757d4e5c0bf5e553d2a4284e69cfa5c52a1f3f393d7a6a2c"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              -7.880000114440918,
+              13.170000076293945,
+              17.5
+            ],
+            [
+              7.880000114440918,
+              13.390000343322754,
+              25.3799991607666
+            ]
+          ],
+          "vertices": 164,
+          "faces": 324,
+          "sha256": "acbf6081a3d266019b90f10bcac96d4800b18a7e1a533911c717d99c2cb5a40f"
+        },
+        {
+          "ordinal": 4,
+          "bounds": [
+            [
+              -7.150000095367432,
+              12.920000076293945,
+              8.579999923706055
+            ],
+            [
+              -6.809999942779541,
+              13.199999809265137,
+              22.219999313354492
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "8c5bc2a923e943b6fec102981dc0c17c90a4b9b80375bb97901d869b6326498a"
+        },
+        {
+          "ordinal": 5,
+          "bounds": [
+            [
+              6.809999942779541,
+              12.920000076293945,
+              8.579999923706055
+            ],
+            [
+              7.150000095367432,
+              13.199999809265137,
+              22.219999313354492
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "b6772826fb3f43c47af4395525e8f9e0d1cfbabfbfe0d959a67d8c973ca544d5"
+        },
+        {
+          "ordinal": 6,
+          "bounds": [
+            [
+              -7.144999980926514,
+              12.920000076293945,
+              8.5
+            ],
+            [
+              7.144999980926514,
+              13.199999809265137,
+              8.699999809265137
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "23a80e21012b591aa4a6e50e7649504136a63500075f1560c414b0a346ef4b40"
+        },
+        {
+          "ordinal": 7,
+          "bounds": [
+            [
+              -7.144999980926514,
+              12.920000076293945,
+              22.100000381469727
+            ],
+            [
+              7.144999980926514,
+              13.199999809265137,
+              22.299999237060547
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "19a4c86a534be12b92878cc00c9795b3646fb09a45e1fa52f96aefa75f6875a8"
+        }
+      ],
+      "verifiedAfterMerge": true
+    },
+    {
+      "mesh": "Bay3Trim__Gold",
+      "sourceComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -7.260000228881836,
+              12.960000038146973,
+              8.579999923706055
+            ],
+            [
+              -7.159999847412109,
+              13.119999885559082,
+              22.219999313354492
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "d4cd05dd162578d18f8815879f177a840228a734e0ff1b58d713b70be22777c9"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              7.159999847412109,
+              12.960000038146973,
+              8.579999923706055
+            ],
+            [
+              7.260000228881836,
+              13.119999885559082,
+              22.219999313354492
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "5a3315bb78fe10c0f5d91014aa47e135ab446e40d5bb7909766e4446c18df3cc"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              -7.239999771118164,
+              12.960000038146973,
+              8.40999984741211
+            ],
+            [
+              7.239999771118164,
+              13.119999885559082,
+              8.510000228881836
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "3a8951495add43f433ea1b0149e2f6ca97bb57ba5a69e048165d1bfbc63890bb"
+        },
+        {
+          "ordinal": 3,
+          "bounds": [
+            [
+              -7.239999771118164,
+              12.960000038146973,
+              22.290000915527344
+            ],
+            [
+              7.239999771118164,
+              13.119999885559082,
+              22.389999389648438
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "9f4fc67f490b51a54d96dbb95dbba005dffcb3eae6fa33dabc6c26549875c9c6"
+        },
+        {
+          "ordinal": 4,
+          "bounds": [
+            [
+              -6.875,
+              12.920000076293945,
+              6.570000171661377
+            ],
+            [
+              -6.784999847412109,
+              13.100000381469727,
+              8.289999961853027
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "33dee8497bb73506bdae736017d9fbbc2dc64d8c0bfce56ddbc2051218673a1f"
+        },
+        {
+          "ordinal": 5,
+          "bounds": [
+            [
+              6.784999847412109,
+              12.920000076293945,
+              6.570000171661377
+            ],
+            [
+              6.875,
+              13.100000381469727,
+              8.289999961853027
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "aef7ee1a54c22a1a5c181d88aa92c44449434be9183bbd8a161d7b59a27be1f5"
+        },
+        {
+          "ordinal": 6,
+          "bounds": [
+            [
+              -6.875,
+              12.920000076293945,
+              6.545000076293945
+            ],
+            [
+              6.875,
+              13.100000381469727,
+              6.635000228881836
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "c70d62a8a786339c643f3eae22c2e9718f19f2d9f89e020f9e5d1c282a264b53"
+        },
+        {
+          "ordinal": 7,
+          "bounds": [
+            [
+              -6.875,
+              12.920000076293945,
+              8.225000381469727
+            ],
+            [
+              6.875,
+              13.100000381469727,
+              8.3149995803833
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "0c83093f3215acc9d20932d71f18be6ce402f811f6199202445ee1d9700f2212"
+        },
+        {
+          "ordinal": 8,
+          "bounds": [
+            [
+              -1.5299999713897705,
+              9.220000267028809,
+              0.10000000149011612
+            ],
+            [
+              -1.4299999475479126,
+              9.380000114440918,
+              3.299999952316284
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "71ba4fcb9c5f3cd60c9a02d001b6ba5b3948cdbede89040fba020f4a298bb2c3"
+        },
+        {
+          "ordinal": 9,
+          "bounds": [
+            [
+              1.4299999475479126,
+              9.220000267028809,
+              0.10000000149011612
+            ],
+            [
+              1.5299999713897705,
+              9.380000114440918,
+              3.299999952316284
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "64b99fd74ed51bd8b1e3132529becdbb0270d52464e5aafc86de7f0e13dfce1e"
+        },
+        {
+          "ordinal": 10,
+          "bounds": [
+            [
+              -1.524999976158142,
+              9.220000267028809,
+              0.10000000149011612
+            ],
+            [
+              1.524999976158142,
+              9.380000114440918,
+              0.18000000715255737
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "f21473871f464eeaf3080fbc3e4da51f4dd14be63089bd378c595afbaa44a061"
+        },
+        {
+          "ordinal": 11,
+          "bounds": [
+            [
+              -1.524999976158142,
+              9.220000267028809,
+              3.2200000286102295
+            ],
+            [
+              1.524999976158142,
+              9.380000114440918,
+              3.299999952316284
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "a7b46727c33597add161dd42b716f80d842457ad3dc7f5be82dc4669d4f34190"
+        }
+      ],
+      "preservedComponents": [
+        {
+          "ordinal": 8,
+          "bounds": [
+            [
+              -1.5299999713897705,
+              9.220000267028809,
+              0.10000000149011612
+            ],
+            [
+              -1.4299999475479126,
+              9.380000114440918,
+              3.299999952316284
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "71ba4fcb9c5f3cd60c9a02d001b6ba5b3948cdbede89040fba020f4a298bb2c3"
+        },
+        {
+          "ordinal": 9,
+          "bounds": [
+            [
+              1.4299999475479126,
+              9.220000267028809,
+              0.10000000149011612
+            ],
+            [
+              1.5299999713897705,
+              9.380000114440918,
+              3.299999952316284
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "64b99fd74ed51bd8b1e3132529becdbb0270d52464e5aafc86de7f0e13dfce1e"
+        },
+        {
+          "ordinal": 10,
+          "bounds": [
+            [
+              -1.524999976158142,
+              9.220000267028809,
+              0.10000000149011612
+            ],
+            [
+              1.524999976158142,
+              9.380000114440918,
+              0.18000000715255737
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "f21473871f464eeaf3080fbc3e4da51f4dd14be63089bd378c595afbaa44a061"
+        },
+        {
+          "ordinal": 11,
+          "bounds": [
+            [
+              -1.524999976158142,
+              9.220000267028809,
+              3.2200000286102295
+            ],
+            [
+              1.524999976158142,
+              9.380000114440918,
+              3.299999952316284
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "a7b46727c33597add161dd42b716f80d842457ad3dc7f5be82dc4669d4f34190"
+        }
+      ],
+      "removedComponents": [
+        {
+          "ordinal": 0,
+          "bounds": [
+            [
+              -7.260000228881836,
+              12.960000038146973,
+              8.579999923706055
+            ],
+            [
+              -7.159999847412109,
+              13.119999885559082,
+              22.219999313354492
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "d4cd05dd162578d18f8815879f177a840228a734e0ff1b58d713b70be22777c9"
+        },
+        {
+          "ordinal": 1,
+          "bounds": [
+            [
+              7.159999847412109,
+              12.960000038146973,
+              8.579999923706055
+            ],
+            [
+              7.260000228881836,
+              13.119999885559082,
+              22.219999313354492
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "5a3315bb78fe10c0f5d91014aa47e135ab446e40d5bb7909766e4446c18df3cc"
+        },
+        {
+          "ordinal": 2,
+          "bounds": [
+            [
+              -7.239999771118164,
+              12.960000038146973,
+              8.40999984741211
+            ],
+            [
+              7.239999771118164,
+              13.119999885559082,
+              8.510000228881836
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "3a8951495add43f433ea1b0149e2f6ca97bb57ba5a69e048165d1bfbc63890bb"
+        },
+        {
+          "ordinal": 3,
+          "bounds": [
+            [
+              -7.239999771118164,
+              12.960000038146973,
+              22.290000915527344
+            ],
+            [
+              7.239999771118164,
+              13.119999885559082,
+              22.389999389648438
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "9f4fc67f490b51a54d96dbb95dbba005dffcb3eae6fa33dabc6c26549875c9c6"
+        },
+        {
+          "ordinal": 4,
+          "bounds": [
+            [
+              -6.875,
+              12.920000076293945,
+              6.570000171661377
+            ],
+            [
+              -6.784999847412109,
+              13.100000381469727,
+              8.289999961853027
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "33dee8497bb73506bdae736017d9fbbc2dc64d8c0bfce56ddbc2051218673a1f"
+        },
+        {
+          "ordinal": 5,
+          "bounds": [
+            [
+              6.784999847412109,
+              12.920000076293945,
+              6.570000171661377
+            ],
+            [
+              6.875,
+              13.100000381469727,
+              8.289999961853027
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "aef7ee1a54c22a1a5c181d88aa92c44449434be9183bbd8a161d7b59a27be1f5"
+        },
+        {
+          "ordinal": 6,
+          "bounds": [
+            [
+              -6.875,
+              12.920000076293945,
+              6.545000076293945
+            ],
+            [
+              6.875,
+              13.100000381469727,
+              6.635000228881836
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "c70d62a8a786339c643f3eae22c2e9718f19f2d9f89e020f9e5d1c282a264b53"
+        },
+        {
+          "ordinal": 7,
+          "bounds": [
+            [
+              -6.875,
+              12.920000076293945,
+              8.225000381469727
+            ],
+            [
+              6.875,
+              13.100000381469727,
+              8.3149995803833
+            ]
+          ],
+          "vertices": 24,
+          "faces": 44,
+          "sha256": "0c83093f3215acc9d20932d71f18be6ce402f811f6199202445ee1d9700f2212"
+        }
+      ],
+      "verifiedAfterMerge": true
+    }
+  ],
+  "dimensions": {
+    "springHeight": 17.5,
+    "innerRadius": 7.6,
+    "outerRadius": 9.0,
+    "ringDepth": 1.7,
+    "keystoneSectorDegrees": 12,
+    "keystoneRadialRange": [
+      7.6,
+      9.12
+    ],
+    "casingOuterSize": [
+      13.1,
+      0.3,
+      12.824444444444444
+    ],
+    "upperCornerRadialClearance": 0.4317688184877193,
+    "upperCornerPolygonClearanceLowerBound": 0.4271391038328467,
+    "plaqueCasingGap": 0.10277777777777874
+  },
+  "displayChanges": [
+    {
+      "path": "Workspace.GrandArcade.Displays.Bay3.MapPanel",
+      "sourceP": [
+        0,
+        13.18,
+        14.0
+      ],
+      "sourceAngle": -0.0,
+      "nativeSize": [
+        12.4,
+        12.124444444444444,
+        0.035
+      ],
+      "sourceSize": [
+        12.4,
+        0.035,
+        12.124444444444444
+      ],
+      "unchangedCanvasSize": [
+        600,
+        590
+      ],
+      "aspectRatio": "13.5:13.2",
+      "uniformArtworkScale": 0.9185185185185185
+    },
+    {
+      "path": "Workspace.GrandArcade.Displays.Bay3.Plaque",
+      "sourceP": [
+        0,
+        13.12,
+        6.6
+      ],
+      "sourceAngle": -0.0,
+      "nativeSize": [
+        12.4,
+        1.55,
+        0.035
+      ],
+      "sourceSize": [
+        12.4,
+        0.035,
+        1.55
+      ],
+      "unchangedCanvasSize": [
+        650,
+        90
+      ]
+    }
+  ],
+  "preserveNative": [
+    "MapPanel.Display.Artwork",
+    "MapPanel.Display.Fallback",
+    "Plaque.Display.Title",
+    "Slot1",
+    "Slot2",
+    "Slot3",
+    "Rank1",
+    "Rank2",
+    "Rank3",
+    "HostSpot",
+    "collision"
+  ],
+  "colliderChanges": 0,
+  "slotChanges": 0,
+  "previewLimit": "Proxy artwork and text only. Blender geometry and renders do not verify Roblox imported appearance or native UI readability."
+}

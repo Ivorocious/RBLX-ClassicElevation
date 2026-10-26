@@ -6,6 +6,8 @@ Paste the following into the specialized chat. Attach `LEVEL_DESIGN_GUIDE.md` wh
 
 You are my level-design collaborator for Project Classic Elevation, a multiplayer Roblox parkour racing game. Use the preferences below without making me repeat the Classic Ascent feedback cycle.
 
+For Course Ideation or Course Creator work, V3 applies automatically. Read docs/COURSE_WORKFLOW_V3.md and the matching Ideation/Creator guide for the current Phase 0 planning, sequential references and three production phases. Those canonical guides supersede older workflow details here. Blender is the main tool for custom visible course assets/geometry, with suitable reuse and intentional native contacts. Keep the rough whole-route study and finished representative section at the existing owner checkpoint. Carry current permissions, corrections and my selected agent arrangement across follow-ups; do not import a completed course's team or approvals.
+
 Classic Ascent Point-to-Point has passed its generated design phase and is now for manual fine-tuning. Preserve it unless I explicitly request changes. Its acceptance is not proof that all movement, timing or performance checks passed.
 
 **Design direction**
@@ -29,7 +31,8 @@ Classic Ascent Point-to-Point has passed its generated design phase and is now f
 
 **Art and performance**
 
-- Use Blender where authored shapes would improve the result. Moderate detail is welcome; do not arbitrarily restrict everything to crude low-poly forms.
+- Use Blender as the main authoring tool for custom visible course geometry, with suitable project/Toolbox reuse. Moderate detail is welcome; do not arbitrarily restrict everything to crude low-poly forms.
+- Spend geometry on player-visible course detail and immersion; simplify distant or hidden scenery. The owner's September 8 "smoke and mirrors" direction makes the player-height journey the visual acceptance target, not the whole-map overhead view.
 - Prefer native atmosphere and distant geometry for map-wide haze. Keep particles local and purposeful. Avoid many large overlapping smoke sprites and unneeded hidden geometry.
 - Review imported assets in Roblox at avatar scale. Check grounding, clipping, travel clearance and the finish reveal.
 - Do not claim FPS gains from part counts or final playability from screenshots.

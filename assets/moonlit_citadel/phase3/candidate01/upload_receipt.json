@@ -1,0 +1,16 @@
+{
+  "sha256": "9ec7e9add8665ecc3c6ac5aed585c14402086924072f834f75b5089c29e4ff31",
+  "request": {
+    "assetType": "Model",
+    "displayName": "MoonlitCitadel_P3World_C01",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/ad7f3a4a-1959-4703-ad33-112a27e6c0eb",
+  "assetId": "73456811793403"
+}

@@ -1,0 +1,5803 @@
+{
+  "revision": "C14_05",
+  "components": {
+    "C14_DistrictRoofs_00_01": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3326.666748046875,
+        69.83333587646484,
+        -125
+      ],
+      "size": [
+        18.83333396911621,
+        1,
+        11
+      ],
+      "top": [
+        3326.666748046875,
+        70.33333587646484,
+        -125
+      ]
+    },
+    "C14_Gate_DistrictRoofs_00_01": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3326.666748046875,
+        74.83333587646484,
+        -128.15
+      ],
+      "size": [
+        0.65,
+        9,
+        4.7
+      ]
+    },
+    "C14_Gate_DistrictRoofs_00_01_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_00_02": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3303.333251953125,
+        71.16666412353516,
+        -125
+      ],
+      "size": [
+        18.83333396911621,
+        1,
+        11
+      ],
+      "top": [
+        3303.333251953125,
+        71.66666412353516,
+        -125
+      ]
+    },
+    "C14_Gate_DistrictRoofs_00_02": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3303.333251953125,
+        76.16666412353516,
+        -121.85
+      ],
+      "size": [
+        0.65,
+        9,
+        4.7
+      ]
+    },
+    "C14_Gate_DistrictRoofs_00_02_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_00_03": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3280,
+        72.5,
+        -125
+      ],
+      "size": [
+        18.83333396911621,
+        1,
+        14.75
+      ],
+      "top": [
+        3280,
+        73.0,
+        -125
+      ]
+    },
+    "C14_Gate_DistrictRoofs_00_03": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3280,
+        77.5,
+        -128.15
+      ],
+      "size": [
+        0.65,
+        9,
+        8.45
+      ]
+    },
+    "C14_Gate_DistrictRoofs_00_03_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_01_01": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3280,
+        73.75,
+        -144.25
+      ],
+      "size": [
+        11,
+        1,
+        14.75
+      ],
+      "top": [
+        3280,
+        74.25,
+        -144.25
+      ]
+    },
+    "C14_Gate_DistrictRoofs_01_01": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3276.85,
+        78.75,
+        -144.25
+      ],
+      "size": [
+        4.7,
+        9,
+        0.65
+      ]
+    },
+    "C14_Gate_DistrictRoofs_01_01_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_01_02": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3280,
+        75.0,
+        -163.5
+      ],
+      "size": [
+        11,
+        1,
+        14.75
+      ],
+      "top": [
+        3280,
+        75.5,
+        -163.5
+      ]
+    },
+    "C14_Gate_DistrictRoofs_01_02": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3283.15,
+        80.0,
+        -163.5
+      ],
+      "size": [
+        4.7,
+        9,
+        0.65
+      ]
+    },
+    "C14_Gate_DistrictRoofs_01_02_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_01_03": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3280,
+        76.25,
+        -182.75
+      ],
+      "size": [
+        11,
+        1,
+        14.75
+      ],
+      "top": [
+        3280,
+        76.75,
+        -182.75
+      ]
+    },
+    "C14_Gate_DistrictRoofs_01_03": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3276.85,
+        81.25,
+        -182.75
+      ],
+      "size": [
+        4.7,
+        9,
+        0.65
+      ]
+    },
+    "C14_Gate_DistrictRoofs_01_03_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_01_04": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3280,
+        77.5,
+        -202
+      ],
+      "size": [
+        17.16666603088379,
+        1,
+        14.75
+      ],
+      "top": [
+        3280,
+        78.0,
+        -202
+      ]
+    },
+    "C14_Gate_DistrictRoofs_01_04": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3283.15,
+        82.5,
+        -202
+      ],
+      "size": [
+        10.866666030883788,
+        9,
+        0.65
+      ]
+    },
+    "C14_Gate_DistrictRoofs_01_04_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_02_01": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3301.666748046875,
+        78.83333587646484,
+        -202
+      ],
+      "size": [
+        17.16666603088379,
+        1,
+        11
+      ],
+      "top": [
+        3301.666748046875,
+        79.33333587646484,
+        -202
+      ]
+    },
+    "C14_Gate_DistrictRoofs_02_01": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "Z",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 3.1,
+        "MotionPhase": 180
+      },
+      "position": [
+        3301.666748046875,
+        83.83333587646484,
+        -202
+      ],
+      "size": [
+        0.65,
+        9,
+        4.2
+      ]
+    },
+    "C14_Gate_DistrictRoofs_02_01_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_02_02": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3323.333251953125,
+        80.16666412353516,
+        -202
+      ],
+      "size": [
+        17.16666603088379,
+        1,
+        11
+      ],
+      "top": [
+        3323.333251953125,
+        80.66666412353516,
+        -202
+      ]
+    },
+    "C14_Gate_DistrictRoofs_02_02": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "Z",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 3.1,
+        "MotionPhase": 0
+      },
+      "position": [
+        3323.333251953125,
+        85.16666412353516,
+        -202
+      ],
+      "size": [
+        0.65,
+        9,
+        4.2
+      ]
+    },
+    "C14_Gate_DistrictRoofs_02_02_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_02_03": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3345,
+        81.5,
+        -202
+      ],
+      "size": [
+        17.16666603088379,
+        1,
+        16.5
+      ],
+      "top": [
+        3345,
+        82.0,
+        -202
+      ]
+    },
+    "C14_Gate_DistrictRoofs_02_03": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "Z",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 3.1,
+        "MotionPhase": 180
+      },
+      "position": [
+        3345,
+        86.5,
+        -202
+      ],
+      "size": [
+        0.65,
+        9,
+        9.7
+      ]
+    },
+    "C14_Gate_DistrictRoofs_02_03_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_03_01": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3345,
+        81.5,
+        -223
+      ],
+      "size": [
+        11,
+        1,
+        16.5
+      ],
+      "top": [
+        3345,
+        82.0,
+        -223
+      ]
+    },
+    "C14_Gate_DistrictRoofs_03_01": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "X",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 3.1,
+        "MotionPhase": 180
+      },
+      "position": [
+        3345,
+        86.5,
+        -223
+      ],
+      "size": [
+        4.2,
+        9,
+        0.65
+      ]
+    },
+    "C14_Gate_DistrictRoofs_03_01_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_03_02": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3345,
+        81.5,
+        -244
+      ],
+      "size": [
+        16.5,
+        1,
+        16.5
+      ],
+      "top": [
+        3345,
+        82.0,
+        -244
+      ]
+    },
+    "C14_Gate_DistrictRoofs_03_02": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "X",
+        "MotionPeriod": 6.5,
+        "MotionDistance": 3.1,
+        "MotionPhase": 0
+      },
+      "position": [
+        3345,
+        86.5,
+        -244
+      ],
+      "size": [
+        9.7,
+        9,
+        0.65
+      ]
+    },
+    "C14_Gate_DistrictRoofs_03_02_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_DistrictRoofs_04_01": {
+      "section": "DistrictWeaves",
+      "role": "Surface",
+      "position": [
+        3366,
+        81.5,
+        -244
+      ],
+      "size": [
+        16.5,
+        1,
+        11
+      ],
+      "top": [
+        3366,
+        82.0,
+        -244
+      ]
+    },
+    "C14_Gate_DistrictRoofs_04_01": {
+      "section": "DistrictWeaves",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3366,
+        86.5,
+        -247.15
+      ],
+      "size": [
+        0.65,
+        9,
+        4.7
+      ]
+    },
+    "C14_Gate_DistrictRoofs_04_01_Rail": {
+      "section": "DistrictWeaves",
+      "role": "Scenery"
+    },
+    "C14_RoofMainEntry_00_01": {
+      "section": "LowSweeps",
+      "role": "Surface",
+      "position": [
+        3408,
+        81.5,
+        -261.6666564941406
+      ],
+      "size": [
+        11,
+        1,
+        13.366666793823242
+      ],
+      "top": [
+        3408,
+        82.0,
+        -261.6666564941406
+      ]
+    },
+    "C14_Sweep_RoofMainEntry_00_01": {
+      "section": "LowSweeps",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Spin",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.8,
+        "MotionDistance": 0,
+        "MotionPhase": 0
+      },
+      "position": [
+        3408,
+        82.65,
+        -261.6666564941406
+      ],
+      "size": [
+        9.2,
+        0.55,
+        0.65
+      ]
+    },
+    "C14_Hub_RoofMainEntry_00_01": {
+      "section": "LowSweeps",
+      "role": "Scenery"
+    },
+    "C14_RoofMainEntry_00_02": {
+      "section": "LowSweeps",
+      "role": "Surface",
+      "position": [
+        3408,
+        81.5,
+        -279.3333435058594
+      ],
+      "size": [
+        11,
+        1,
+        13.366666793823242
+      ],
+      "top": [
+        3408,
+        82.0,
+        -279.3333435058594
+      ]
+    },
+    "C14_RoofMainEntry_00_03": {
+      "section": "LowSweeps",
+      "role": "Surface",
+      "position": [
+        3408,
+        81.5,
+        -297
+      ],
+      "size": [
+        22.700000762939453,
+        1,
+        13.366666793823242
+      ],
+      "top": [
+        3408,
+        82.0,
+        -297
+      ]
+    },
+    "C14_Sweep_RoofMainEntry_00_03": {
+      "section": "LowSweeps",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Spin",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.8,
+        "MotionDistance": 0,
+        "MotionPhase": 0
+      },
+      "position": [
+        3408,
+        82.65,
+        -297
+      ],
+      "size": [
+        9.2,
+        0.55,
+        0.65
+      ]
+    },
+    "C14_Hub_RoofMainEntry_00_03": {
+      "section": "LowSweeps",
+      "role": "Scenery"
+    },
+    "C14_RoofMainEntry_01_01": {
+      "section": "LowSweeps",
+      "role": "Surface",
+      "position": [
+        3435,
+        81.5,
+        -297
+      ],
+      "size": [
+        22.700000762939453,
+        1,
+        15.699999809265137
+      ],
+      "top": [
+        3435,
+        82.0,
+        -297
+      ]
+    },
+    "C14_RoofMainEntry_02_01": {
+      "section": "LowSweeps",
+      "role": "Surface",
+      "position": [
+        3435,
+        81.5,
+        -277
+      ],
+      "size": [
+        11,
+        1,
+        15.699999809265137
+      ],
+      "top": [
+        3435,
+        82.0,
+        -277
+      ]
+    },
+    "C14_Sweep_RoofMainEntry_02_01": {
+      "section": "LowSweeps",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Spin",
+        "WorldMotionAxis": "Y",
+        "MotionPeriod": 6.8,
+        "MotionDistance": 0,
+        "MotionPhase": 0
+      },
+      "position": [
+        3435,
+        82.65,
+        -277
+      ],
+      "size": [
+        9.2,
+        0.55,
+        0.65
+      ]
+    },
+    "C14_Hub_RoofMainEntry_02_01": {
+      "section": "LowSweeps",
+      "role": "Scenery"
+    },
+    "C14_RoofMainEntry_02_02": {
+      "section": "LowSweeps",
+      "role": "Surface",
+      "position": [
+        3435,
+        81.5,
+        -257
+      ],
+      "size": [
+        11,
+        1,
+        15.699999809265137
+      ],
+      "top": [
+        3435,
+        82.0,
+        -257
+      ]
+    },
+    "C14_CornerBuilding_Body": {
+      "section": "CornerLedges",
+      "role": "Solid",
+      "position": [
+        3499.5,
+        50,
+        -282
+      ],
+      "size": [
+        34,
+        100,
+        38
+      ]
+    },
+    "C14_CornerBuilding_Roof": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_18_-291": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_18_-282": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_18_-273": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_38_-291": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_38_-282": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_38_-273": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_58_-291": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_58_-282": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_58_-273": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_94_-291": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_94_-282": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_-1_94_-273": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_18_-291": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_18_-282": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_18_-273": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_38_-291": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_38_-282": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_38_-273": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_58_-291": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_58_-282": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_58_-273": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_94_-291": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_94_-282": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_CornerWindow_1_94_-273": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_W1": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        81.5,
+        -270
+      ],
+      "size": [
+        4.8,
+        1,
+        8.5
+      ],
+      "top": [
+        3480.5,
+        82,
+        -270
+      ]
+    },
+    "C14_Corner_W1_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_W2": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        81.5,
+        -283
+      ],
+      "size": [
+        4.8,
+        1,
+        8.5
+      ],
+      "top": [
+        3480.5,
+        82,
+        -283
+      ]
+    },
+    "C14_Corner_W2_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_W3": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        81.5,
+        -296
+      ],
+      "size": [
+        4.8,
+        1,
+        8.5
+      ],
+      "top": [
+        3480.5,
+        82,
+        -296
+      ]
+    },
+    "C14_Corner_W3_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_W4": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3480.5,
+        81.5,
+        -303
+      ],
+      "size": [
+        4.8,
+        1,
+        5.5
+      ],
+      "top": [
+        3480.5,
+        82,
+        -303
+      ]
+    },
+    "C14_Corner_W4_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_N0": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3491,
+        81.5,
+        -303
+      ],
+      "size": [
+        6.5,
+        1,
+        4.8
+      ],
+      "top": [
+        3491,
+        82,
+        -303
+      ]
+    },
+    "C14_Corner_N0_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_N1": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3501.5,
+        81.5,
+        -303
+      ],
+      "size": [
+        6.5,
+        1,
+        4.8
+      ],
+      "top": [
+        3501.5,
+        82,
+        -303
+      ]
+    },
+    "C14_Corner_N1_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_N2": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3512,
+        81.5,
+        -303
+      ],
+      "size": [
+        6.5,
+        1,
+        4.8
+      ],
+      "top": [
+        3512,
+        82,
+        -303
+      ]
+    },
+    "C14_Corner_N2_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_N3": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        81.5,
+        -303
+      ],
+      "size": [
+        4.8,
+        1,
+        4.8
+      ],
+      "top": [
+        3518.5,
+        82,
+        -303
+      ]
+    },
+    "C14_Corner_N3_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_E0": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        81.5,
+        -293
+      ],
+      "size": [
+        4.8,
+        1,
+        8.5
+      ],
+      "top": [
+        3518.5,
+        82,
+        -293
+      ]
+    },
+    "C14_Corner_E0_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_E1": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        81.5,
+        -280
+      ],
+      "size": [
+        4.8,
+        1,
+        8.5
+      ],
+      "top": [
+        3518.5,
+        82,
+        -280
+      ]
+    },
+    "C14_Corner_E1_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Corner_E2": {
+      "section": "CornerLedges",
+      "role": "Surface",
+      "position": [
+        3518.5,
+        81.5,
+        -267
+      ],
+      "size": [
+        4.8,
+        1,
+        8.5
+      ],
+      "top": [
+        3518.5,
+        82,
+        -267
+      ]
+    },
+    "C14_Corner_E2_Brackets": {
+      "section": "CornerLedges",
+      "role": "Scenery"
+    },
+    "C14_Expert_Start": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3408,
+        81.5,
+        -231
+      ],
+      "size": [
+        6.6,
+        1,
+        6.6
+      ],
+      "top": [
+        3408,
+        82,
+        -231
+      ]
+    },
+    "C14_Expert_Start_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_01": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3417.4545454545455,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3417.4545454545455,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_01_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_02": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3426.909090909091,
+        81.5,
+        -229.35
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3426.909090909091,
+        82,
+        -229.35
+      ]
+    },
+    "C14_Expert_02_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_03": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3436.3636363636365,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3436.3636363636365,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_03_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_04": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3445.818181818182,
+        81.5,
+        -229.35
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3445.818181818182,
+        82,
+        -229.35
+      ]
+    },
+    "C14_Expert_04_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_05": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3455.2727272727275,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3455.2727272727275,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_05_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_06": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3464.7272727272725,
+        81.5,
+        -229.35
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3464.7272727272725,
+        82,
+        -229.35
+      ]
+    },
+    "C14_Expert_06_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_07": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3474.181818181818,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3474.181818181818,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_07_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_08": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3483.6363636363635,
+        81.5,
+        -229.35
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3483.6363636363635,
+        82,
+        -229.35
+      ]
+    },
+    "C14_Expert_08_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_09": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3493.090909090909,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3493.090909090909,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_09_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_10": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3502.5454545454545,
+        81.5,
+        -229.35
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3502.5454545454545,
+        82,
+        -229.35
+      ]
+    },
+    "C14_Expert_10_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_11": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3512.0,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3512.0,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_11_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_12": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3521.4545454545455,
+        81.5,
+        -229.35
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3521.4545454545455,
+        82,
+        -229.35
+      ]
+    },
+    "C14_Expert_12_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_13": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3530.909090909091,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3530.909090909091,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_13_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_14": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3540.3636363636365,
+        81.5,
+        -229.35
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3540.3636363636365,
+        82,
+        -229.35
+      ]
+    },
+    "C14_Expert_14_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_15": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3549.818181818182,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3549.818181818182,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_15_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_16": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3559.2727272727275,
+        81.5,
+        -229.35
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3559.2727272727275,
+        82,
+        -229.35
+      ]
+    },
+    "C14_Expert_16_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_17": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3568.7272727272725,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3568.7272727272725,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_17_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_18": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3578.181818181818,
+        81.5,
+        -229.35
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3578.181818181818,
+        82,
+        -229.35
+      ]
+    },
+    "C14_Expert_18_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_19": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3587.6363636363635,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3587.6363636363635,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_19_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_20": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3597.090909090909,
+        81.5,
+        -229.35
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3597.090909090909,
+        82,
+        -229.35
+      ]
+    },
+    "C14_Expert_20_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_21": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3606.5454545454545,
+        81.5,
+        -232.65
+      ],
+      "size": [
+        2.6,
+        1,
+        2.6
+      ],
+      "top": [
+        3606.5454545454545,
+        82,
+        -232.65
+      ]
+    },
+    "C14_Expert_21_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_Expert_End": {
+      "section": "ExpertOffsets",
+      "role": "Surface",
+      "position": [
+        3616,
+        81.5,
+        -231
+      ],
+      "size": [
+        6.6,
+        1,
+        6.6
+      ],
+      "top": [
+        3616,
+        82,
+        -231
+      ]
+    },
+    "C14_Expert_End_Brackets": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_ExpertLowGirder": {
+      "section": "ExpertOffsets",
+      "role": "Scenery"
+    },
+    "C14_RoofGarden_00_00": {
+      "section": "TravellingHurdles",
+      "role": "Surface",
+      "position": [
+        3566,
+        81.5,
+        -257
+      ],
+      "size": [
+        11,
+        1,
+        12.033333778381348
+      ],
+      "top": [
+        3566,
+        82.0,
+        -257
+      ]
+    },
+    "C14_RoofGarden_00_01": {
+      "section": "TravellingHurdles",
+      "role": "Surface",
+      "position": [
+        3566,
+        82.16666412353516,
+        -273.3333435058594
+      ],
+      "size": [
+        11,
+        1,
+        12.033333778381348
+      ],
+      "top": [
+        3566,
+        82.66666412353516,
+        -273.3333435058594
+      ]
+    },
+    "C14_Travel_RoofGarden_00_01": {
+      "section": "TravellingHurdles",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "Z",
+        "MotionPeriod": 5.8,
+        "MotionDistance": 2.4,
+        "MotionPhase": 0
+      },
+      "position": [
+        3566,
+        83.31666412353516,
+        -273.3333435058594
+      ],
+      "size": [
+        10.4,
+        0.65,
+        0.7
+      ]
+    },
+    "C14_RoofGarden_00_02": {
+      "section": "TravellingHurdles",
+      "role": "Surface",
+      "position": [
+        3566,
+        82.83333587646484,
+        -289.6666564941406
+      ],
+      "size": [
+        11,
+        1,
+        12.033333778381348
+      ],
+      "top": [
+        3566,
+        83.33333587646484,
+        -289.6666564941406
+      ]
+    },
+    "C14_RoofGarden_00_03": {
+      "section": "TravellingHurdles",
+      "role": "Surface",
+      "position": [
+        3566,
+        83.5,
+        -306
+      ],
+      "size": [
+        12.366666793823242,
+        1,
+        12.033333778381348
+      ],
+      "top": [
+        3566,
+        84.0,
+        -306
+      ]
+    },
+    "C14_RoofGarden_01_01": {
+      "section": "TravellingHurdles",
+      "role": "Surface",
+      "position": [
+        3582.666748046875,
+        83.5,
+        -306
+      ],
+      "size": [
+        12.366666793823242,
+        1,
+        11
+      ],
+      "top": [
+        3582.666748046875,
+        84.0,
+        -306
+      ]
+    },
+    "C14_Travel_RoofGarden_01_01": {
+      "section": "TravellingHurdles",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "X",
+        "MotionPeriod": 5.8,
+        "MotionDistance": 2.4,
+        "MotionPhase": 0
+      },
+      "position": [
+        3582.666748046875,
+        84.65,
+        -306
+      ],
+      "size": [
+        0.7,
+        0.65,
+        10.4
+      ]
+    },
+    "C14_RoofGarden_01_02": {
+      "section": "TravellingHurdles",
+      "role": "Surface",
+      "position": [
+        3599.333251953125,
+        83.5,
+        -306
+      ],
+      "size": [
+        12.366666793823242,
+        1,
+        11
+      ],
+      "top": [
+        3599.333251953125,
+        84.0,
+        -306
+      ]
+    },
+    "C14_RoofGarden_01_03": {
+      "section": "TravellingHurdles",
+      "role": "Surface",
+      "position": [
+        3616,
+        83.5,
+        -306
+      ],
+      "size": [
+        12.366666793823242,
+        1,
+        16.366666793823242
+      ],
+      "top": [
+        3616,
+        84.0,
+        -306
+      ]
+    },
+    "C14_Travel_RoofGarden_01_03": {
+      "section": "TravellingHurdles",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "X",
+        "MotionPeriod": 5.8,
+        "MotionDistance": 2.4,
+        "MotionPhase": 180
+      },
+      "position": [
+        3616,
+        84.65,
+        -306
+      ],
+      "size": [
+        0.7,
+        0.65,
+        15.766666793823243
+      ]
+    },
+    "C14_RoofGarden_02_01": {
+      "section": "TravellingHurdles",
+      "role": "Surface",
+      "position": [
+        3616,
+        82.83333587646484,
+        -285.3333435058594
+      ],
+      "size": [
+        11,
+        1,
+        16.366666793823242
+      ],
+      "top": [
+        3616,
+        83.33333587646484,
+        -285.3333435058594
+      ]
+    },
+    "C14_RoofGarden_02_02": {
+      "section": "TravellingHurdles",
+      "role": "Surface",
+      "position": [
+        3616,
+        82.16666412353516,
+        -264.6666564941406
+      ],
+      "size": [
+        11,
+        1,
+        16.366666793823242
+      ],
+      "top": [
+        3616,
+        82.66666412353516,
+        -264.6666564941406
+      ]
+    },
+    "C14_Travel_RoofGarden_02_02": {
+      "section": "TravellingHurdles",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "Z",
+        "MotionPeriod": 5.8,
+        "MotionDistance": 2.4,
+        "MotionPhase": 0
+      },
+      "position": [
+        3616,
+        83.31666412353516,
+        -264.6666564941406
+      ],
+      "size": [
+        10.4,
+        0.65,
+        0.7
+      ]
+    },
+    "C14_RoofGarden_02_03": {
+      "section": "TravellingHurdles",
+      "role": "Surface",
+      "position": [
+        3616,
+        81.5,
+        -244
+      ],
+      "size": [
+        11,
+        1,
+        16.366666793823242
+      ],
+      "top": [
+        3616,
+        82.0,
+        -244
+      ]
+    },
+    "C14_Strip_0": {
+      "section": "DepotEntry",
+      "role": "Surface",
+      "position": [
+        3632.3,
+        81.5,
+        -244
+      ],
+      "size": [
+        10,
+        1,
+        9
+      ],
+      "top": [
+        3632.3,
+        82,
+        -244
+      ]
+    },
+    "C14_Strip_0_Brackets": {
+      "section": "DepotEntry",
+      "role": "Scenery"
+    },
+    "C14_KillStrip_0": {
+      "section": "DepotEntry",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3632.3,
+        82.24,
+        -244
+      ],
+      "size": [
+        0.65,
+        0.38,
+        8.6
+      ]
+    },
+    "C14_Strip_1": {
+      "section": "DepotEntry",
+      "role": "Surface",
+      "position": [
+        3648.7,
+        81.5,
+        -244
+      ],
+      "size": [
+        10,
+        1,
+        9
+      ],
+      "top": [
+        3648.7,
+        82,
+        -244
+      ]
+    },
+    "C14_Strip_1_Brackets": {
+      "section": "DepotEntry",
+      "role": "Scenery"
+    },
+    "C14_KillStrip_1": {
+      "section": "DepotEntry",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3648.7,
+        82.24,
+        -244
+      ],
+      "size": [
+        0.65,
+        0.38,
+        8.6
+      ]
+    },
+    "C14_Strip_2": {
+      "section": "DepotEntry",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -244
+      ],
+      "size": [
+        10,
+        1,
+        9
+      ],
+      "top": [
+        3665,
+        82,
+        -244
+      ]
+    },
+    "C14_Strip_2_Brackets": {
+      "section": "DepotEntry",
+      "role": "Scenery"
+    },
+    "C14_KillStrip_2": {
+      "section": "DepotEntry",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3665,
+        82.24,
+        -244
+      ],
+      "size": [
+        0.65,
+        0.38,
+        8.6
+      ]
+    },
+    "C14_Strip_3": {
+      "section": "DepotEntry",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -227
+      ],
+      "size": [
+        10,
+        1,
+        11
+      ],
+      "top": [
+        3665,
+        82,
+        -227
+      ]
+    },
+    "C14_Strip_3_Brackets": {
+      "section": "DepotEntry",
+      "role": "Scenery"
+    },
+    "C14_KillStrip_3": {
+      "section": "DepotEntry",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3665,
+        82.24,
+        -227
+      ],
+      "size": [
+        9.6,
+        0.38,
+        0.65
+      ]
+    },
+    "C14_DepotDeck_0": {
+      "section": "DepotSlalom",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -210
+      ],
+      "size": [
+        12,
+        1,
+        22
+      ],
+      "top": [
+        3665,
+        82,
+        -210
+      ]
+    },
+    "C14_DeckJoint_0": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotDeck_1": {
+      "section": "DepotSlalom",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -188
+      ],
+      "size": [
+        12,
+        1,
+        22
+      ],
+      "top": [
+        3665,
+        82,
+        -188
+      ]
+    },
+    "C14_DeckJoint_1": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotDeck_2": {
+      "section": "DepotSlalom",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -166
+      ],
+      "size": [
+        12,
+        1,
+        22
+      ],
+      "top": [
+        3665,
+        82,
+        -166
+      ]
+    },
+    "C14_DeckJoint_2": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotDeck_3": {
+      "section": "DepotSlalom",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -144
+      ],
+      "size": [
+        12,
+        1,
+        22
+      ],
+      "top": [
+        3665,
+        82,
+        -144
+      ]
+    },
+    "C14_DeckJoint_3": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotDeck_4": {
+      "section": "DepotSlalom",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -122
+      ],
+      "size": [
+        12,
+        1,
+        22
+      ],
+      "top": [
+        3665,
+        82,
+        -122
+      ]
+    },
+    "C14_DeckJoint_4": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotDeck_5": {
+      "section": "DepotSlalom",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -103.5
+      ],
+      "size": [
+        12,
+        1,
+        15
+      ],
+      "top": [
+        3665,
+        82,
+        -103.5
+      ]
+    },
+    "C14_DeckJoint_5": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotSlalom_0": {
+      "section": "DepotSlalom",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "X",
+        "MotionPeriod": 4.8,
+        "MotionDistance": 3.5,
+        "MotionPhase": 0
+      },
+      "position": [
+        3665,
+        86.5,
+        -198
+      ],
+      "size": [
+        5.0,
+        9,
+        0.65
+      ]
+    },
+    "C14_DepotSlalom_0_Rail": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotSlalom_1": {
+      "section": "DepotSlalom",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "X",
+        "MotionPeriod": 5.3999999999999995,
+        "MotionDistance": 3.5,
+        "MotionPhase": 180
+      },
+      "position": [
+        3665,
+        86.5,
+        -177
+      ],
+      "size": [
+        5.0,
+        9,
+        0.65
+      ]
+    },
+    "C14_DepotSlalom_1_Rail": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotSlalom_2": {
+      "section": "DepotSlalom",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "X",
+        "MotionPeriod": 4.8,
+        "MotionDistance": 3.5,
+        "MotionPhase": 0
+      },
+      "position": [
+        3665,
+        86.5,
+        -156
+      ],
+      "size": [
+        5.0,
+        9,
+        0.65
+      ]
+    },
+    "C14_DepotSlalom_2_Rail": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotSlalom_3": {
+      "section": "DepotSlalom",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "X",
+        "MotionPeriod": 5.3999999999999995,
+        "MotionDistance": 3.5,
+        "MotionPhase": 180
+      },
+      "position": [
+        3665,
+        86.5,
+        -135
+      ],
+      "size": [
+        5.0,
+        9,
+        0.65
+      ]
+    },
+    "C14_DepotSlalom_3_Rail": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotSlalom_4": {
+      "section": "DepotSlalom",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill",
+        "KitMotion": "Slide",
+        "WorldMotionAxis": "X",
+        "MotionPeriod": 4.8,
+        "MotionDistance": 3.5,
+        "MotionPhase": 0
+      },
+      "position": [
+        3665,
+        86.5,
+        -114
+      ],
+      "size": [
+        5.0,
+        9,
+        0.65
+      ]
+    },
+    "C14_DepotSlalom_4_Rail": {
+      "section": "DepotSlalom",
+      "role": "Scenery"
+    },
+    "C14_DepotFrame_0": {
+      "section": "DepotShelter",
+      "role": "Scenery"
+    },
+    "C14_DepotFrame_1": {
+      "section": "DepotShelter",
+      "role": "Scenery"
+    },
+    "C14_DepotFrame_2": {
+      "section": "DepotShelter",
+      "role": "Scenery"
+    },
+    "C14_DepotFrame_3": {
+      "section": "DepotShelter",
+      "role": "Scenery"
+    },
+    "C14_DepotCeiling": {
+      "section": "DepotShelter",
+      "role": "Scenery"
+    },
+    "C14_DepotSign_0": {
+      "section": "DepotShelter",
+      "role": "Scenery"
+    },
+    "C14_DepotSign_1": {
+      "section": "DepotShelter",
+      "role": "Scenery"
+    },
+    "C14_DepotCheckpoint": {
+      "section": "DepotExit",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -90
+      ],
+      "size": [
+        12,
+        1,
+        12
+      ],
+      "top": [
+        3665,
+        82,
+        -90
+      ]
+    },
+    "C14_CheckerDeck_0": {
+      "section": "CheckerExit",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -74
+      ],
+      "size": [
+        10,
+        1,
+        12
+      ],
+      "top": [
+        3665,
+        82,
+        -74
+      ]
+    },
+    "C14_CheckerDeck_0_Brackets": {
+      "section": "CheckerExit",
+      "role": "Scenery"
+    },
+    "C14_Checker_0_0": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3662.5,
+        82.08,
+        -78.0
+      ],
+      "size": [
+        4.72,
+        0.16,
+        3.7199999999999998
+      ]
+    },
+    "C14_Checker_0_1": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3667.5,
+        82.08,
+        -74.0
+      ],
+      "size": [
+        4.72,
+        0.16,
+        3.7199999999999998
+      ]
+    },
+    "C14_Checker_0_2": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3662.5,
+        82.08,
+        -70.0
+      ],
+      "size": [
+        4.72,
+        0.16,
+        3.7199999999999998
+      ]
+    },
+    "C14_CheckerDeck_1": {
+      "section": "CheckerExit",
+      "role": "Surface",
+      "position": [
+        3665,
+        81.5,
+        -58
+      ],
+      "size": [
+        10,
+        1,
+        12
+      ],
+      "top": [
+        3665,
+        82,
+        -58
+      ]
+    },
+    "C14_CheckerDeck_1_Brackets": {
+      "section": "CheckerExit",
+      "role": "Scenery"
+    },
+    "C14_Checker_1_0": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3662.5,
+        82.08,
+        -62.0
+      ],
+      "size": [
+        4.72,
+        0.16,
+        3.7199999999999998
+      ]
+    },
+    "C14_Checker_1_1": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3667.5,
+        82.08,
+        -58.0
+      ],
+      "size": [
+        4.72,
+        0.16,
+        3.7199999999999998
+      ]
+    },
+    "C14_Checker_1_2": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3662.5,
+        82.08,
+        -54.0
+      ],
+      "size": [
+        4.72,
+        0.16,
+        3.7199999999999998
+      ]
+    },
+    "C14_CheckerDeck_2": {
+      "section": "CheckerExit",
+      "role": "Surface",
+      "position": [
+        3680,
+        81.5,
+        -58
+      ],
+      "size": [
+        11,
+        1,
+        10
+      ],
+      "top": [
+        3680,
+        82,
+        -58
+      ]
+    },
+    "C14_CheckerDeck_2_Brackets": {
+      "section": "CheckerExit",
+      "role": "Scenery"
+    },
+    "C14_Checker_2_0": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3676.3333333333335,
+        82.08,
+        -60.5
+      ],
+      "size": [
+        3.3866666666666667,
+        0.16,
+        4.72
+      ]
+    },
+    "C14_Checker_2_1": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3680.0,
+        82.08,
+        -55.5
+      ],
+      "size": [
+        3.3866666666666667,
+        0.16,
+        4.72
+      ]
+    },
+    "C14_Checker_2_2": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3683.6666666666665,
+        82.08,
+        -60.5
+      ],
+      "size": [
+        3.3866666666666667,
+        0.16,
+        4.72
+      ]
+    },
+    "C14_CheckerDeck_3": {
+      "section": "CheckerExit",
+      "role": "Surface",
+      "position": [
+        3694,
+        81.5,
+        -58
+      ],
+      "size": [
+        11,
+        1,
+        10
+      ],
+      "top": [
+        3694,
+        82,
+        -58
+      ]
+    },
+    "C14_CheckerDeck_3_Brackets": {
+      "section": "CheckerExit",
+      "role": "Scenery"
+    },
+    "C14_Checker_3_0": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3690.3333333333335,
+        82.08,
+        -60.5
+      ],
+      "size": [
+        3.3866666666666667,
+        0.16,
+        4.72
+      ]
+    },
+    "C14_Checker_3_1": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3694.0,
+        82.08,
+        -55.5
+      ],
+      "size": [
+        3.3866666666666667,
+        0.16,
+        4.72
+      ]
+    },
+    "C14_Checker_3_2": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3697.6666666666665,
+        82.08,
+        -60.5
+      ],
+      "size": [
+        3.3866666666666667,
+        0.16,
+        4.72
+      ]
+    },
+    "C14_CheckerDeck_4": {
+      "section": "CheckerExit",
+      "role": "Surface",
+      "position": [
+        3705,
+        81.5,
+        -53
+      ],
+      "size": [
+        10,
+        1,
+        8
+      ],
+      "top": [
+        3705,
+        82,
+        -53
+      ]
+    },
+    "C14_CheckerDeck_4_Brackets": {
+      "section": "CheckerExit",
+      "role": "Scenery"
+    },
+    "C14_Checker_4_0": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3707.5,
+        82.08,
+        -55.666666666666664
+      ],
+      "size": [
+        4.72,
+        0.16,
+        2.3866666666666667
+      ]
+    },
+    "C14_Checker_4_1": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3702.5,
+        82.08,
+        -53.0
+      ],
+      "size": [
+        4.72,
+        0.16,
+        2.3866666666666667
+      ]
+    },
+    "C14_Checker_4_2": {
+      "section": "CheckerExit",
+      "role": "Hazard",
+      "attrs": {
+        "HazardType": "Kill"
+      },
+      "position": [
+        3707.5,
+        82.08,
+        -50.333333333333336
+      ],
+      "size": [
+        4.72,
+        0.16,
+        2.3866666666666667
+      ]
+    },
+    "MarkerOrigin": {
+      "section": "Calibration",
+      "role": "Scenery"
+    },
+    "MarkerRight": {
+      "section": "Calibration",
+      "role": "Scenery"
+    },
+    "MarkerUp": {
+      "section": "Calibration",
+      "role": "Scenery"
+    },
+    "MarkerForward": {
+      "section": "Calibration",
+      "role": "Scenery"
+    }
+  },
+  "meshes": {
+    "C14_DistrictRoofs_00_01__Deck__00": {
+      "component": "C14_DistrictRoofs_00_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_00_01__Ink__00": {
+      "component": "C14_DistrictRoofs_00_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_00_01__Edge__00": {
+      "component": "C14_DistrictRoofs_00_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_00_01__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_00_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_00_01_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_00_01_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_00_01_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_00_01_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_00_02__Deck__00": {
+      "component": "C14_DistrictRoofs_00_02",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_00_02__Ink__00": {
+      "component": "C14_DistrictRoofs_00_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_00_02__Edge__00": {
+      "component": "C14_DistrictRoofs_00_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_00_02__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_00_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_00_02_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_00_02_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_00_02_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_00_02_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_00_03__Deck__00": {
+      "component": "C14_DistrictRoofs_00_03",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_00_03__Ink__00": {
+      "component": "C14_DistrictRoofs_00_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_00_03__Edge__00": {
+      "component": "C14_DistrictRoofs_00_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_00_03__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_00_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_00_03_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_00_03_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_00_03_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_00_03_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_01_01__Deck__00": {
+      "component": "C14_DistrictRoofs_01_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_01_01__Ink__00": {
+      "component": "C14_DistrictRoofs_01_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_01_01__Edge__00": {
+      "component": "C14_DistrictRoofs_01_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_01_01__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_01_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_01_01_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_01_01_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_01_01_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_01_01_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_01_02__Deck__00": {
+      "component": "C14_DistrictRoofs_01_02",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_01_02__Ink__00": {
+      "component": "C14_DistrictRoofs_01_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_01_02__Edge__00": {
+      "component": "C14_DistrictRoofs_01_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_01_02__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_01_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_01_02_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_01_02_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_01_02_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_01_02_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_01_03__Deck__00": {
+      "component": "C14_DistrictRoofs_01_03",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_01_03__Ink__00": {
+      "component": "C14_DistrictRoofs_01_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_01_03__Edge__00": {
+      "component": "C14_DistrictRoofs_01_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_01_03__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_01_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_01_03_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_01_03_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_01_03_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_01_03_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_01_04__Deck__00": {
+      "component": "C14_DistrictRoofs_01_04",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_01_04__Ink__00": {
+      "component": "C14_DistrictRoofs_01_04",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_01_04__Edge__00": {
+      "component": "C14_DistrictRoofs_01_04",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_01_04__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_01_04",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_01_04_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_01_04_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_01_04_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_01_04_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_02_01__Deck__00": {
+      "component": "C14_DistrictRoofs_02_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_02_01__Ink__00": {
+      "component": "C14_DistrictRoofs_02_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_02_01__Edge__00": {
+      "component": "C14_DistrictRoofs_02_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_02_01__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_02_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_02_01_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_02_01_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_02_01_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_02_01_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_02_02__Deck__00": {
+      "component": "C14_DistrictRoofs_02_02",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_02_02__Ink__00": {
+      "component": "C14_DistrictRoofs_02_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_02_02__Edge__00": {
+      "component": "C14_DistrictRoofs_02_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_02_02__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_02_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_02_02_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_02_02_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_02_02_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_02_02_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_02_03__Deck__00": {
+      "component": "C14_DistrictRoofs_02_03",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_02_03__Ink__00": {
+      "component": "C14_DistrictRoofs_02_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_02_03__Edge__00": {
+      "component": "C14_DistrictRoofs_02_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_02_03__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_02_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_02_03_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_02_03_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_02_03_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_02_03_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_03_01__Deck__00": {
+      "component": "C14_DistrictRoofs_03_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_03_01__Ink__00": {
+      "component": "C14_DistrictRoofs_03_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_03_01__Edge__00": {
+      "component": "C14_DistrictRoofs_03_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_03_01__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_03_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_03_01_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_03_01_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_03_01_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_03_01_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_03_02__Deck__00": {
+      "component": "C14_DistrictRoofs_03_02",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_03_02__Ink__00": {
+      "component": "C14_DistrictRoofs_03_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_03_02__Edge__00": {
+      "component": "C14_DistrictRoofs_03_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_03_02__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_03_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_03_02_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_03_02_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_03_02_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_03_02_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DistrictRoofs_04_01__Deck__00": {
+      "component": "C14_DistrictRoofs_04_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_04_01__Ink__00": {
+      "component": "C14_DistrictRoofs_04_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DistrictRoofs_04_01__Edge__00": {
+      "component": "C14_DistrictRoofs_04_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Gate_DistrictRoofs_04_01__Danger__00": {
+      "component": "C14_Gate_DistrictRoofs_04_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_04_01_Rail__Ink__00": {
+      "component": "C14_Gate_DistrictRoofs_04_01_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Gate_DistrictRoofs_04_01_Rail__Copper__00": {
+      "component": "C14_Gate_DistrictRoofs_04_01_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_RoofMainEntry_00_01__Deck__00": {
+      "component": "C14_RoofMainEntry_00_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_00_01__Ink__00": {
+      "component": "C14_RoofMainEntry_00_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_00_01__Edge__00": {
+      "component": "C14_RoofMainEntry_00_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Sweep_RoofMainEntry_00_01__Danger__00": {
+      "component": "C14_Sweep_RoofMainEntry_00_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Hub_RoofMainEntry_00_01__Copper__00": {
+      "component": "C14_Hub_RoofMainEntry_00_01",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_00_02__Deck__00": {
+      "component": "C14_RoofMainEntry_00_02",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_00_02__Ink__00": {
+      "component": "C14_RoofMainEntry_00_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_00_02__Edge__00": {
+      "component": "C14_RoofMainEntry_00_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_RoofMainEntry_00_03__Deck__00": {
+      "component": "C14_RoofMainEntry_00_03",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_00_03__Ink__00": {
+      "component": "C14_RoofMainEntry_00_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_00_03__Edge__00": {
+      "component": "C14_RoofMainEntry_00_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Sweep_RoofMainEntry_00_03__Danger__00": {
+      "component": "C14_Sweep_RoofMainEntry_00_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Hub_RoofMainEntry_00_03__Copper__00": {
+      "component": "C14_Hub_RoofMainEntry_00_03",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_01_01__Deck__00": {
+      "component": "C14_RoofMainEntry_01_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_01_01__Ink__00": {
+      "component": "C14_RoofMainEntry_01_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_01_01__Edge__00": {
+      "component": "C14_RoofMainEntry_01_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_RoofMainEntry_02_01__Deck__00": {
+      "component": "C14_RoofMainEntry_02_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_02_01__Ink__00": {
+      "component": "C14_RoofMainEntry_02_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_02_01__Edge__00": {
+      "component": "C14_RoofMainEntry_02_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Sweep_RoofMainEntry_02_01__Danger__00": {
+      "component": "C14_Sweep_RoofMainEntry_02_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Hub_RoofMainEntry_02_01__Copper__00": {
+      "component": "C14_Hub_RoofMainEntry_02_01",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_02_02__Deck__00": {
+      "component": "C14_RoofMainEntry_02_02",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_02_02__Ink__00": {
+      "component": "C14_RoofMainEntry_02_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofMainEntry_02_02__Edge__00": {
+      "component": "C14_RoofMainEntry_02_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_CornerBuilding_Body__Plaster__00": {
+      "component": "C14_CornerBuilding_Body",
+      "material": "Plaster",
+      "triangles": 12
+    },
+    "C14_CornerBuilding_Body__Pale__00": {
+      "component": "C14_CornerBuilding_Body",
+      "material": "Pale",
+      "triangles": 60
+    },
+    "C14_CornerBuilding_Roof__Ink__00": {
+      "component": "C14_CornerBuilding_Roof",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_CornerBuilding_Roof__Copper__00": {
+      "component": "C14_CornerBuilding_Roof",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_18_-291__Glass__00": {
+      "component": "C14_CornerWindow_-1_18_-291",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_18_-291__Pale__00": {
+      "component": "C14_CornerWindow_-1_18_-291",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_18_-282__Glass__00": {
+      "component": "C14_CornerWindow_-1_18_-282",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_18_-282__Pale__00": {
+      "component": "C14_CornerWindow_-1_18_-282",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_18_-273__Glass__00": {
+      "component": "C14_CornerWindow_-1_18_-273",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_18_-273__Pale__00": {
+      "component": "C14_CornerWindow_-1_18_-273",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_38_-291__Glass__00": {
+      "component": "C14_CornerWindow_-1_38_-291",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_38_-291__Pale__00": {
+      "component": "C14_CornerWindow_-1_38_-291",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_38_-282__Glass__00": {
+      "component": "C14_CornerWindow_-1_38_-282",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_38_-282__Pale__00": {
+      "component": "C14_CornerWindow_-1_38_-282",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_38_-273__Glass__00": {
+      "component": "C14_CornerWindow_-1_38_-273",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_38_-273__Pale__00": {
+      "component": "C14_CornerWindow_-1_38_-273",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_58_-291__Glass__00": {
+      "component": "C14_CornerWindow_-1_58_-291",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_58_-291__Pale__00": {
+      "component": "C14_CornerWindow_-1_58_-291",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_58_-282__Glass__00": {
+      "component": "C14_CornerWindow_-1_58_-282",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_58_-282__Pale__00": {
+      "component": "C14_CornerWindow_-1_58_-282",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_58_-273__Glass__00": {
+      "component": "C14_CornerWindow_-1_58_-273",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_58_-273__Pale__00": {
+      "component": "C14_CornerWindow_-1_58_-273",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_94_-291__Glass__00": {
+      "component": "C14_CornerWindow_-1_94_-291",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_94_-291__Pale__00": {
+      "component": "C14_CornerWindow_-1_94_-291",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_94_-282__Glass__00": {
+      "component": "C14_CornerWindow_-1_94_-282",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_94_-282__Pale__00": {
+      "component": "C14_CornerWindow_-1_94_-282",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_94_-273__Glass__00": {
+      "component": "C14_CornerWindow_-1_94_-273",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_-1_94_-273__Pale__00": {
+      "component": "C14_CornerWindow_-1_94_-273",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_18_-291__Glass__00": {
+      "component": "C14_CornerWindow_1_18_-291",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_18_-291__Pale__00": {
+      "component": "C14_CornerWindow_1_18_-291",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_18_-282__Glass__00": {
+      "component": "C14_CornerWindow_1_18_-282",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_18_-282__Pale__00": {
+      "component": "C14_CornerWindow_1_18_-282",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_18_-273__Glass__00": {
+      "component": "C14_CornerWindow_1_18_-273",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_18_-273__Pale__00": {
+      "component": "C14_CornerWindow_1_18_-273",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_38_-291__Glass__00": {
+      "component": "C14_CornerWindow_1_38_-291",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_38_-291__Pale__00": {
+      "component": "C14_CornerWindow_1_38_-291",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_38_-282__Glass__00": {
+      "component": "C14_CornerWindow_1_38_-282",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_38_-282__Pale__00": {
+      "component": "C14_CornerWindow_1_38_-282",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_38_-273__Glass__00": {
+      "component": "C14_CornerWindow_1_38_-273",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_38_-273__Pale__00": {
+      "component": "C14_CornerWindow_1_38_-273",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_58_-291__Glass__00": {
+      "component": "C14_CornerWindow_1_58_-291",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_58_-291__Pale__00": {
+      "component": "C14_CornerWindow_1_58_-291",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_58_-282__Glass__00": {
+      "component": "C14_CornerWindow_1_58_-282",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_58_-282__Pale__00": {
+      "component": "C14_CornerWindow_1_58_-282",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_58_-273__Glass__00": {
+      "component": "C14_CornerWindow_1_58_-273",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_58_-273__Pale__00": {
+      "component": "C14_CornerWindow_1_58_-273",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_94_-291__Glass__00": {
+      "component": "C14_CornerWindow_1_94_-291",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_94_-291__Pale__00": {
+      "component": "C14_CornerWindow_1_94_-291",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_94_-282__Glass__00": {
+      "component": "C14_CornerWindow_1_94_-282",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_94_-282__Pale__00": {
+      "component": "C14_CornerWindow_1_94_-282",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_94_-273__Glass__00": {
+      "component": "C14_CornerWindow_1_94_-273",
+      "material": "Glass",
+      "triangles": 12
+    },
+    "C14_CornerWindow_1_94_-273__Pale__00": {
+      "component": "C14_CornerWindow_1_94_-273",
+      "material": "Pale",
+      "triangles": 12
+    },
+    "C14_Corner_W1__Stone__00": {
+      "component": "C14_Corner_W1",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_W1__Ink__00": {
+      "component": "C14_Corner_W1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_W1__Edge__00": {
+      "component": "C14_Corner_W1",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_W1_Brackets__Ink__00": {
+      "component": "C14_Corner_W1_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Corner_W2__Stone__00": {
+      "component": "C14_Corner_W2",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_W2__Ink__00": {
+      "component": "C14_Corner_W2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_W2__Edge__00": {
+      "component": "C14_Corner_W2",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_W2_Brackets__Ink__00": {
+      "component": "C14_Corner_W2_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Corner_W3__Stone__00": {
+      "component": "C14_Corner_W3",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_W3__Ink__00": {
+      "component": "C14_Corner_W3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_W3__Edge__00": {
+      "component": "C14_Corner_W3",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_W3_Brackets__Ink__00": {
+      "component": "C14_Corner_W3_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Corner_W4__Stone__00": {
+      "component": "C14_Corner_W4",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_W4__Ink__00": {
+      "component": "C14_Corner_W4",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_W4__Edge__00": {
+      "component": "C14_Corner_W4",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_W4_Brackets__Ink__00": {
+      "component": "C14_Corner_W4_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Corner_N0__Stone__00": {
+      "component": "C14_Corner_N0",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_N0__Ink__00": {
+      "component": "C14_Corner_N0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_N0__Edge__00": {
+      "component": "C14_Corner_N0",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_N0_Brackets__Ink__00": {
+      "component": "C14_Corner_N0_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Corner_N1__Stone__00": {
+      "component": "C14_Corner_N1",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_N1__Ink__00": {
+      "component": "C14_Corner_N1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_N1__Edge__00": {
+      "component": "C14_Corner_N1",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_N1_Brackets__Ink__00": {
+      "component": "C14_Corner_N1_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Corner_N2__Stone__00": {
+      "component": "C14_Corner_N2",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_N2__Ink__00": {
+      "component": "C14_Corner_N2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_N2__Edge__00": {
+      "component": "C14_Corner_N2",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_N2_Brackets__Ink__00": {
+      "component": "C14_Corner_N2_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Corner_N3__Stone__00": {
+      "component": "C14_Corner_N3",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_N3__Ink__00": {
+      "component": "C14_Corner_N3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_N3__Edge__00": {
+      "component": "C14_Corner_N3",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_N3_Brackets__Ink__00": {
+      "component": "C14_Corner_N3_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Corner_E0__Stone__00": {
+      "component": "C14_Corner_E0",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_E0__Ink__00": {
+      "component": "C14_Corner_E0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_E0__Edge__00": {
+      "component": "C14_Corner_E0",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_E0_Brackets__Ink__00": {
+      "component": "C14_Corner_E0_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Corner_E1__Stone__00": {
+      "component": "C14_Corner_E1",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_E1__Ink__00": {
+      "component": "C14_Corner_E1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_E1__Edge__00": {
+      "component": "C14_Corner_E1",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_E1_Brackets__Ink__00": {
+      "component": "C14_Corner_E1_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Corner_E2__Stone__00": {
+      "component": "C14_Corner_E2",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Corner_E2__Ink__00": {
+      "component": "C14_Corner_E2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Corner_E2__Edge__00": {
+      "component": "C14_Corner_E2",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Corner_E2_Brackets__Ink__00": {
+      "component": "C14_Corner_E2_Brackets",
+      "material": "Ink",
+      "triangles": 40
+    },
+    "C14_Expert_Start__Stone__00": {
+      "component": "C14_Expert_Start",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_Start__Ink__00": {
+      "component": "C14_Expert_Start",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_Start__Edge__00": {
+      "component": "C14_Expert_Start",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_Start_Brackets__Stone__00": {
+      "component": "C14_Expert_Start_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_01__Stone__00": {
+      "component": "C14_Expert_01",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_01__Ink__00": {
+      "component": "C14_Expert_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_01__Edge__00": {
+      "component": "C14_Expert_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_01_Brackets__Stone__00": {
+      "component": "C14_Expert_01_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_02__Stone__00": {
+      "component": "C14_Expert_02",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_02__Ink__00": {
+      "component": "C14_Expert_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_02__Edge__00": {
+      "component": "C14_Expert_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_02_Brackets__Stone__00": {
+      "component": "C14_Expert_02_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_03__Stone__00": {
+      "component": "C14_Expert_03",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_03__Ink__00": {
+      "component": "C14_Expert_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_03__Edge__00": {
+      "component": "C14_Expert_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_03_Brackets__Stone__00": {
+      "component": "C14_Expert_03_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_04__Stone__00": {
+      "component": "C14_Expert_04",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_04__Ink__00": {
+      "component": "C14_Expert_04",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_04__Edge__00": {
+      "component": "C14_Expert_04",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_04_Brackets__Stone__00": {
+      "component": "C14_Expert_04_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_05__Stone__00": {
+      "component": "C14_Expert_05",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_05__Ink__00": {
+      "component": "C14_Expert_05",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_05__Edge__00": {
+      "component": "C14_Expert_05",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_05_Brackets__Stone__00": {
+      "component": "C14_Expert_05_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_06__Stone__00": {
+      "component": "C14_Expert_06",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_06__Ink__00": {
+      "component": "C14_Expert_06",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_06__Edge__00": {
+      "component": "C14_Expert_06",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_06_Brackets__Stone__00": {
+      "component": "C14_Expert_06_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_07__Stone__00": {
+      "component": "C14_Expert_07",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_07__Ink__00": {
+      "component": "C14_Expert_07",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_07__Edge__00": {
+      "component": "C14_Expert_07",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_07_Brackets__Stone__00": {
+      "component": "C14_Expert_07_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_08__Stone__00": {
+      "component": "C14_Expert_08",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_08__Ink__00": {
+      "component": "C14_Expert_08",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_08__Edge__00": {
+      "component": "C14_Expert_08",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_08_Brackets__Stone__00": {
+      "component": "C14_Expert_08_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_09__Stone__00": {
+      "component": "C14_Expert_09",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_09__Ink__00": {
+      "component": "C14_Expert_09",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_09__Edge__00": {
+      "component": "C14_Expert_09",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_09_Brackets__Stone__00": {
+      "component": "C14_Expert_09_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_10__Stone__00": {
+      "component": "C14_Expert_10",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_10__Ink__00": {
+      "component": "C14_Expert_10",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_10__Edge__00": {
+      "component": "C14_Expert_10",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_10_Brackets__Stone__00": {
+      "component": "C14_Expert_10_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_11__Stone__00": {
+      "component": "C14_Expert_11",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_11__Ink__00": {
+      "component": "C14_Expert_11",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_11__Edge__00": {
+      "component": "C14_Expert_11",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_11_Brackets__Stone__00": {
+      "component": "C14_Expert_11_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_12__Stone__00": {
+      "component": "C14_Expert_12",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_12__Ink__00": {
+      "component": "C14_Expert_12",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_12__Edge__00": {
+      "component": "C14_Expert_12",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_12_Brackets__Stone__00": {
+      "component": "C14_Expert_12_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_13__Stone__00": {
+      "component": "C14_Expert_13",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_13__Ink__00": {
+      "component": "C14_Expert_13",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_13__Edge__00": {
+      "component": "C14_Expert_13",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_13_Brackets__Stone__00": {
+      "component": "C14_Expert_13_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_14__Stone__00": {
+      "component": "C14_Expert_14",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_14__Ink__00": {
+      "component": "C14_Expert_14",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_14__Edge__00": {
+      "component": "C14_Expert_14",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_14_Brackets__Stone__00": {
+      "component": "C14_Expert_14_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_15__Stone__00": {
+      "component": "C14_Expert_15",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_15__Ink__00": {
+      "component": "C14_Expert_15",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_15__Edge__00": {
+      "component": "C14_Expert_15",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_15_Brackets__Stone__00": {
+      "component": "C14_Expert_15_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_16__Stone__00": {
+      "component": "C14_Expert_16",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_16__Ink__00": {
+      "component": "C14_Expert_16",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_16__Edge__00": {
+      "component": "C14_Expert_16",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_16_Brackets__Stone__00": {
+      "component": "C14_Expert_16_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_17__Stone__00": {
+      "component": "C14_Expert_17",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_17__Ink__00": {
+      "component": "C14_Expert_17",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_17__Edge__00": {
+      "component": "C14_Expert_17",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_17_Brackets__Stone__00": {
+      "component": "C14_Expert_17_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_18__Stone__00": {
+      "component": "C14_Expert_18",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_18__Ink__00": {
+      "component": "C14_Expert_18",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_18__Edge__00": {
+      "component": "C14_Expert_18",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_18_Brackets__Stone__00": {
+      "component": "C14_Expert_18_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_19__Stone__00": {
+      "component": "C14_Expert_19",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_19__Ink__00": {
+      "component": "C14_Expert_19",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_19__Edge__00": {
+      "component": "C14_Expert_19",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_19_Brackets__Stone__00": {
+      "component": "C14_Expert_19_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_20__Stone__00": {
+      "component": "C14_Expert_20",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_20__Ink__00": {
+      "component": "C14_Expert_20",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_20__Edge__00": {
+      "component": "C14_Expert_20",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_20_Brackets__Stone__00": {
+      "component": "C14_Expert_20_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_21__Stone__00": {
+      "component": "C14_Expert_21",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_21__Ink__00": {
+      "component": "C14_Expert_21",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_21__Edge__00": {
+      "component": "C14_Expert_21",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_21_Brackets__Stone__00": {
+      "component": "C14_Expert_21_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_End__Stone__00": {
+      "component": "C14_Expert_End",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_Expert_End__Ink__00": {
+      "component": "C14_Expert_End",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Expert_End__Edge__00": {
+      "component": "C14_Expert_End",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Expert_End_Brackets__Stone__00": {
+      "component": "C14_Expert_End_Brackets",
+      "material": "Stone",
+      "triangles": 12
+    },
+    "C14_ExpertLowGirder__Ink__00": {
+      "component": "C14_ExpertLowGirder",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_00_00__Deck__00": {
+      "component": "C14_RoofGarden_00_00",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofGarden_00_00__Ink__00": {
+      "component": "C14_RoofGarden_00_00",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_00_00__Edge__00": {
+      "component": "C14_RoofGarden_00_00",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_RoofGarden_00_01__Deck__00": {
+      "component": "C14_RoofGarden_00_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofGarden_00_01__Ink__00": {
+      "component": "C14_RoofGarden_00_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_00_01__Edge__00": {
+      "component": "C14_RoofGarden_00_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Travel_RoofGarden_00_01__Danger__00": {
+      "component": "C14_Travel_RoofGarden_00_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_RoofGarden_00_02__Deck__00": {
+      "component": "C14_RoofGarden_00_02",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofGarden_00_02__Ink__00": {
+      "component": "C14_RoofGarden_00_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_00_02__Edge__00": {
+      "component": "C14_RoofGarden_00_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_RoofGarden_00_03__Deck__00": {
+      "component": "C14_RoofGarden_00_03",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofGarden_00_03__Ink__00": {
+      "component": "C14_RoofGarden_00_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_00_03__Edge__00": {
+      "component": "C14_RoofGarden_00_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_RoofGarden_01_01__Deck__00": {
+      "component": "C14_RoofGarden_01_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofGarden_01_01__Ink__00": {
+      "component": "C14_RoofGarden_01_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_01_01__Edge__00": {
+      "component": "C14_RoofGarden_01_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Travel_RoofGarden_01_01__Danger__00": {
+      "component": "C14_Travel_RoofGarden_01_01",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_RoofGarden_01_02__Deck__00": {
+      "component": "C14_RoofGarden_01_02",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofGarden_01_02__Ink__00": {
+      "component": "C14_RoofGarden_01_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_01_02__Edge__00": {
+      "component": "C14_RoofGarden_01_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_RoofGarden_01_03__Deck__00": {
+      "component": "C14_RoofGarden_01_03",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofGarden_01_03__Ink__00": {
+      "component": "C14_RoofGarden_01_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_01_03__Edge__00": {
+      "component": "C14_RoofGarden_01_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Travel_RoofGarden_01_03__Danger__00": {
+      "component": "C14_Travel_RoofGarden_01_03",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_RoofGarden_02_01__Deck__00": {
+      "component": "C14_RoofGarden_02_01",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofGarden_02_01__Ink__00": {
+      "component": "C14_RoofGarden_02_01",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_02_01__Edge__00": {
+      "component": "C14_RoofGarden_02_01",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_RoofGarden_02_02__Deck__00": {
+      "component": "C14_RoofGarden_02_02",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofGarden_02_02__Ink__00": {
+      "component": "C14_RoofGarden_02_02",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_02_02__Edge__00": {
+      "component": "C14_RoofGarden_02_02",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Travel_RoofGarden_02_02__Danger__00": {
+      "component": "C14_Travel_RoofGarden_02_02",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_RoofGarden_02_03__Deck__00": {
+      "component": "C14_RoofGarden_02_03",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_RoofGarden_02_03__Ink__00": {
+      "component": "C14_RoofGarden_02_03",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_RoofGarden_02_03__Edge__00": {
+      "component": "C14_RoofGarden_02_03",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Strip_0__Deck__00": {
+      "component": "C14_Strip_0",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_Strip_0__Ink__00": {
+      "component": "C14_Strip_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Strip_0__Edge__00": {
+      "component": "C14_Strip_0",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Strip_0_Brackets__Ink__00": {
+      "component": "C14_Strip_0_Brackets",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_KillStrip_0__Danger__00": {
+      "component": "C14_KillStrip_0",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Strip_1__Deck__00": {
+      "component": "C14_Strip_1",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_Strip_1__Ink__00": {
+      "component": "C14_Strip_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Strip_1__Edge__00": {
+      "component": "C14_Strip_1",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Strip_1_Brackets__Ink__00": {
+      "component": "C14_Strip_1_Brackets",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_KillStrip_1__Danger__00": {
+      "component": "C14_KillStrip_1",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Strip_2__Deck__00": {
+      "component": "C14_Strip_2",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_Strip_2__Ink__00": {
+      "component": "C14_Strip_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Strip_2__Edge__00": {
+      "component": "C14_Strip_2",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Strip_2_Brackets__Ink__00": {
+      "component": "C14_Strip_2_Brackets",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_KillStrip_2__Danger__00": {
+      "component": "C14_KillStrip_2",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Strip_3__Deck__00": {
+      "component": "C14_Strip_3",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_Strip_3__Ink__00": {
+      "component": "C14_Strip_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Strip_3__Edge__00": {
+      "component": "C14_Strip_3",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_Strip_3_Brackets__Ink__00": {
+      "component": "C14_Strip_3_Brackets",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_KillStrip_3__Danger__00": {
+      "component": "C14_KillStrip_3",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_DepotDeck_0__Deck__00": {
+      "component": "C14_DepotDeck_0",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DepotDeck_0__Ink__00": {
+      "component": "C14_DepotDeck_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotDeck_0__Edge__00": {
+      "component": "C14_DepotDeck_0",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_DeckJoint_0__Copper__00": {
+      "component": "C14_DeckJoint_0",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C14_DepotDeck_1__Deck__00": {
+      "component": "C14_DepotDeck_1",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DepotDeck_1__Ink__00": {
+      "component": "C14_DepotDeck_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotDeck_1__Edge__00": {
+      "component": "C14_DepotDeck_1",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_DeckJoint_1__Copper__00": {
+      "component": "C14_DeckJoint_1",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C14_DepotDeck_2__Deck__00": {
+      "component": "C14_DepotDeck_2",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DepotDeck_2__Ink__00": {
+      "component": "C14_DepotDeck_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotDeck_2__Edge__00": {
+      "component": "C14_DepotDeck_2",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_DeckJoint_2__Copper__00": {
+      "component": "C14_DeckJoint_2",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C14_DepotDeck_3__Deck__00": {
+      "component": "C14_DepotDeck_3",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DepotDeck_3__Ink__00": {
+      "component": "C14_DepotDeck_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotDeck_3__Edge__00": {
+      "component": "C14_DepotDeck_3",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_DeckJoint_3__Copper__00": {
+      "component": "C14_DeckJoint_3",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C14_DepotDeck_4__Deck__00": {
+      "component": "C14_DepotDeck_4",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DepotDeck_4__Ink__00": {
+      "component": "C14_DepotDeck_4",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotDeck_4__Edge__00": {
+      "component": "C14_DepotDeck_4",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_DeckJoint_4__Copper__00": {
+      "component": "C14_DeckJoint_4",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C14_DepotDeck_5__Deck__00": {
+      "component": "C14_DepotDeck_5",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DepotDeck_5__Ink__00": {
+      "component": "C14_DepotDeck_5",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotDeck_5__Edge__00": {
+      "component": "C14_DepotDeck_5",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_DeckJoint_5__Copper__00": {
+      "component": "C14_DeckJoint_5",
+      "material": "Copper",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_0__Danger__00": {
+      "component": "C14_DepotSlalom_0",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_0_Rail__Ink__00": {
+      "component": "C14_DepotSlalom_0_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_0_Rail__Copper__00": {
+      "component": "C14_DepotSlalom_0_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DepotSlalom_1__Danger__00": {
+      "component": "C14_DepotSlalom_1",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_1_Rail__Ink__00": {
+      "component": "C14_DepotSlalom_1_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_1_Rail__Copper__00": {
+      "component": "C14_DepotSlalom_1_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DepotSlalom_2__Danger__00": {
+      "component": "C14_DepotSlalom_2",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_2_Rail__Ink__00": {
+      "component": "C14_DepotSlalom_2_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_2_Rail__Copper__00": {
+      "component": "C14_DepotSlalom_2_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DepotSlalom_3__Danger__00": {
+      "component": "C14_DepotSlalom_3",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_3_Rail__Ink__00": {
+      "component": "C14_DepotSlalom_3_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_3_Rail__Copper__00": {
+      "component": "C14_DepotSlalom_3_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DepotSlalom_4__Danger__00": {
+      "component": "C14_DepotSlalom_4",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_4_Rail__Ink__00": {
+      "component": "C14_DepotSlalom_4_Rail",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotSlalom_4_Rail__Copper__00": {
+      "component": "C14_DepotSlalom_4_Rail",
+      "material": "Copper",
+      "triangles": 24
+    },
+    "C14_DepotFrame_0__Pale__00": {
+      "component": "C14_DepotFrame_0",
+      "material": "Pale",
+      "triangles": 24
+    },
+    "C14_DepotFrame_0__Ink__00": {
+      "component": "C14_DepotFrame_0",
+      "material": "Ink",
+      "triangles": 36
+    },
+    "C14_DepotFrame_1__Pale__00": {
+      "component": "C14_DepotFrame_1",
+      "material": "Pale",
+      "triangles": 24
+    },
+    "C14_DepotFrame_1__Ink__00": {
+      "component": "C14_DepotFrame_1",
+      "material": "Ink",
+      "triangles": 36
+    },
+    "C14_DepotFrame_2__Pale__00": {
+      "component": "C14_DepotFrame_2",
+      "material": "Pale",
+      "triangles": 24
+    },
+    "C14_DepotFrame_2__Ink__00": {
+      "component": "C14_DepotFrame_2",
+      "material": "Ink",
+      "triangles": 36
+    },
+    "C14_DepotFrame_3__Pale__00": {
+      "component": "C14_DepotFrame_3",
+      "material": "Pale",
+      "triangles": 24
+    },
+    "C14_DepotFrame_3__Ink__00": {
+      "component": "C14_DepotFrame_3",
+      "material": "Ink",
+      "triangles": 36
+    },
+    "C14_DepotCeiling__Roof__00": {
+      "component": "C14_DepotCeiling",
+      "material": "Roof",
+      "triangles": 12
+    },
+    "C14_DepotCeiling__Ink__00": {
+      "component": "C14_DepotCeiling",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotSign_0__Ink__00": {
+      "component": "C14_DepotSign_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotSign_0__Pale__00": {
+      "component": "C14_DepotSign_0",
+      "material": "Pale",
+      "triangles": 256
+    },
+    "C14_DepotSign_1__Ink__00": {
+      "component": "C14_DepotSign_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotSign_1__Pale__00": {
+      "component": "C14_DepotSign_1",
+      "material": "Pale",
+      "triangles": 464
+    },
+    "C14_DepotCheckpoint__Deck__00": {
+      "component": "C14_DepotCheckpoint",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_DepotCheckpoint__Ink__00": {
+      "component": "C14_DepotCheckpoint",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_DepotCheckpoint__Edge__00": {
+      "component": "C14_DepotCheckpoint",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_CheckerDeck_0__Deck__00": {
+      "component": "C14_CheckerDeck_0",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_0__Ink__00": {
+      "component": "C14_CheckerDeck_0",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_0__Edge__00": {
+      "component": "C14_CheckerDeck_0",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_CheckerDeck_0_Brackets__Ink__00": {
+      "component": "C14_CheckerDeck_0_Brackets",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Checker_0_0__Danger__00": {
+      "component": "C14_Checker_0_0",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Checker_0_1__Danger__00": {
+      "component": "C14_Checker_0_1",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Checker_0_2__Danger__00": {
+      "component": "C14_Checker_0_2",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_1__Deck__00": {
+      "component": "C14_CheckerDeck_1",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_1__Ink__00": {
+      "component": "C14_CheckerDeck_1",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_1__Edge__00": {
+      "component": "C14_CheckerDeck_1",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_CheckerDeck_1_Brackets__Ink__00": {
+      "component": "C14_CheckerDeck_1_Brackets",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Checker_1_0__Danger__00": {
+      "component": "C14_Checker_1_0",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Checker_1_1__Danger__00": {
+      "component": "C14_Checker_1_1",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Checker_1_2__Danger__00": {
+      "component": "C14_Checker_1_2",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_2__Deck__00": {
+      "component": "C14_CheckerDeck_2",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_2__Ink__00": {
+      "component": "C14_CheckerDeck_2",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_2__Edge__00": {
+      "component": "C14_CheckerDeck_2",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_CheckerDeck_2_Brackets__Ink__00": {
+      "component": "C14_CheckerDeck_2_Brackets",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Checker_2_0__Danger__00": {
+      "component": "C14_Checker_2_0",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Checker_2_1__Danger__00": {
+      "component": "C14_Checker_2_1",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Checker_2_2__Danger__00": {
+      "component": "C14_Checker_2_2",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_3__Deck__00": {
+      "component": "C14_CheckerDeck_3",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_3__Ink__00": {
+      "component": "C14_CheckerDeck_3",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_3__Edge__00": {
+      "component": "C14_CheckerDeck_3",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_CheckerDeck_3_Brackets__Ink__00": {
+      "component": "C14_CheckerDeck_3_Brackets",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Checker_3_0__Danger__00": {
+      "component": "C14_Checker_3_0",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Checker_3_1__Danger__00": {
+      "component": "C14_Checker_3_1",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Checker_3_2__Danger__00": {
+      "component": "C14_Checker_3_2",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_4__Deck__00": {
+      "component": "C14_CheckerDeck_4",
+      "material": "Deck",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_4__Ink__00": {
+      "component": "C14_CheckerDeck_4",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_CheckerDeck_4__Edge__00": {
+      "component": "C14_CheckerDeck_4",
+      "material": "Edge",
+      "triangles": 24
+    },
+    "C14_CheckerDeck_4_Brackets__Ink__00": {
+      "component": "C14_CheckerDeck_4_Brackets",
+      "material": "Ink",
+      "triangles": 12
+    },
+    "C14_Checker_4_0__Danger__00": {
+      "component": "C14_Checker_4_0",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Checker_4_1__Danger__00": {
+      "component": "C14_Checker_4_1",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "C14_Checker_4_2__Danger__00": {
+      "component": "C14_Checker_4_2",
+      "material": "Danger",
+      "triangles": 12
+    },
+    "MarkerOrigin__Iron__00": {
+      "component": "MarkerOrigin",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerRight__Iron__00": {
+      "component": "MarkerRight",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerUp__Iron__00": {
+      "component": "MarkerUp",
+      "material": "Iron",
+      "triangles": 12
+    },
+    "MarkerForward__Iron__00": {
+      "component": "MarkerForward",
+      "material": "Iron",
+      "triangles": 12
+    }
+  },
+  "colors": {
+    "Brick": [
+      0.66,
+      0.26,
+      0.16
+    ],
+    "Terracotta": [
+      0.79,
+      0.37,
+      0.23
+    ],
+    "Plaster": [
+      0.93,
+      0.76,
+      0.48
+    ],
+    "Cream": [
+      0.93,
+      0.87,
+      0.72
+    ],
+    "Stone": [
+      0.78,
+      0.78,
+      0.7
+    ],
+    "Roof": [
+      0.24,
+      0.3,
+      0.32
+    ],
+    "Teal": [
+      0.035,
+      0.49,
+      0.48
+    ],
+    "Coral": [
+      0.89,
+      0.24,
+      0.2
+    ],
+    "Yellow": [
+      0.99,
+      0.66,
+      0.1
+    ],
+    "Blue": [
+      0.08,
+      0.3,
+      0.58
+    ],
+    "Iron": [
+      0.095,
+      0.14,
+      0.18
+    ],
+    "Glass": [
+      0.1,
+      0.26,
+      0.33
+    ],
+    "Wood": [
+      0.43,
+      0.26,
+      0.13
+    ],
+    "Leaf": [
+      0.22,
+      0.42,
+      0.14
+    ],
+    "LeafLight": [
+      0.45,
+      0.6,
+      0.19
+    ],
+    "Soil": [
+      0.22,
+      0.17,
+      0.12
+    ],
+    "Red": [
+      0.96,
+      0.055,
+      0.035
+    ],
+    "White": [
+      0.96,
+      0.95,
+      0.85
+    ],
+    "Rail": [
+      0.37,
+      0.43,
+      0.46
+    ],
+    "Skyline": [
+      0.4,
+      0.52,
+      0.57
+    ],
+    "Light": [
+      1,
+      0.86,
+      0.48
+    ],
+    "WoodLight": [
+      0.59,
+      0.4,
+      0.23
+    ],
+    "WoodDark": [
+      0.3,
+      0.18,
+      0.1
+    ],
+    "WindowGlow": [
+      0.96,
+      0.72,
+      0.34
+    ],
+    "Deck": [
+      0.24,
+      0.31,
+      0.34
+    ],
+    "Ink": [
+      0.065,
+      0.12,
+      0.17
+    ],
+    "Danger": [
+      1,
+      0.025,
+      0.015
+    ],
+    "Edge": [
+      0.98,
+      0.72,
+      0.16
+    ],
+    "Copper": [
+      0.58,
+      0.36,
+      0.2
+    ],
+    "Pale": [
+      0.87,
+      0.83,
+      0.7
+    ]
+  },
+  "replacements": [
+    "DepotAccess_00_01",
+    "DepotAccess_00_02",
+    "DepotAccess_00_03",
+    "DepotAccess_01_01",
+    "DepotAccess_01_02",
+    "DepotExit_00_00",
+    "DepotExit_00_01",
+    "DepotExit_00_02",
+    "DepotExit_00_03",
+    "DepotTransfer",
+    "DistrictRoofs_00_01",
+    "DistrictRoofs_00_02",
+    "DistrictRoofs_00_03",
+    "DistrictRoofs_01_01",
+    "DistrictRoofs_01_02",
+    "DistrictRoofs_01_03",
+    "DistrictRoofs_01_04",
+    "DistrictRoofs_02_01",
+    "DistrictRoofs_02_02",
+    "DistrictRoofs_02_03",
+    "DistrictRoofs_03_01",
+    "DistrictRoofs_03_02",
+    "DistrictRoofs_04_01",
+    "RoofGarden_00_00",
+    "RoofGarden_00_01",
+    "RoofGarden_00_02",
+    "RoofGarden_00_03",
+    "RoofGarden_01_01",
+    "RoofGarden_01_02",
+    "RoofGarden_01_03",
+    "RoofGarden_02_01",
+    "RoofGarden_02_02",
+    "RoofGarden_02_03",
+    "RoofMainEntry_00_01",
+    "RoofMainEntry_00_02",
+    "RoofMainEntry_00_03",
+    "RoofMainEntry_01_01",
+    "RoofMainEntry_02_01",
+    "RoofMainEntry_02_02",
+    "RoofMainMiddle_00_00",
+    "RoofMainMiddle_00_01",
+    "RoofMainMiddle_00_02",
+    "RoofMainMiddle_00_03",
+    "RoofMainMiddle_01_01",
+    "RoofMainMiddle_01_02",
+    "RoofMainMiddle_02_01",
+    "RoofMainMiddle_02_02",
+    "RoofMainMiddle_02_03",
+    "StationaryTrains_00_00",
+    "StationaryTrains_00_01",
+    "StationaryTrains_00_02",
+    "StationaryTrains_00_03",
+    "StationaryTrains_00_04",
+    "X02_00_01",
+    "X02_01_01",
+    "X02_01_02",
+    "X02_01_03",
+    "X02_01_04",
+    "X02_01_05",
+    "X02_01_06",
+    "X02_01_07",
+    "X02_01_08",
+    "X02_01_09",
+    "X02_01_10",
+    "X02_01_11",
+    "X02_01_12",
+    "X02_01_13",
+    "X02_01_14",
+    "X02_01_15",
+    "X02_01_16",
+    "X02_02_01"
+  ],
+  "routes": {
+    "CornerLedges": [
+      {
+        "center": [
+          3480.5,
+          82,
+          -257
+        ],
+        "size": [
+          56,
+          1,
+          11
+        ],
+        "part": "Obstacles/WalkingSurfaces/BallA_Main/BallA_Main"
+      },
+      {
+        "center": [
+          3480.5,
+          82,
+          -270
+        ],
+        "size": [
+          4.8,
+          1,
+          8.5
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_W1/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          82,
+          -283
+        ],
+        "size": [
+          4.8,
+          1,
+          8.5
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_W2/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          82,
+          -296
+        ],
+        "size": [
+          4.8,
+          1,
+          8.5
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_W3/Collider"
+      },
+      {
+        "center": [
+          3480.5,
+          82,
+          -303
+        ],
+        "size": [
+          4.8,
+          1,
+          5.5
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_W4/Collider"
+      },
+      {
+        "center": [
+          3491,
+          82,
+          -303
+        ],
+        "size": [
+          6.5,
+          1,
+          4.8
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_N0/Collider"
+      },
+      {
+        "center": [
+          3501.5,
+          82,
+          -303
+        ],
+        "size": [
+          6.5,
+          1,
+          4.8
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_N1/Collider"
+      },
+      {
+        "center": [
+          3512,
+          82,
+          -303
+        ],
+        "size": [
+          6.5,
+          1,
+          4.8
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_N2/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          82,
+          -303
+        ],
+        "size": [
+          4.8,
+          1,
+          4.8
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_N3/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          82,
+          -293
+        ],
+        "size": [
+          4.8,
+          1,
+          8.5
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_E0/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          82,
+          -280
+        ],
+        "size": [
+          4.8,
+          1,
+          8.5
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_E1/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          82,
+          -267
+        ],
+        "size": [
+          4.8,
+          1,
+          8.5
+        ],
+        "part": "Obstacles/C14Routes/CornerLedges/C14_Corner_E2/Collider"
+      },
+      {
+        "center": [
+          3518.5,
+          82,
+          -257
+        ],
+        "size": [
+          58,
+          1,
+          11
+        ],
+        "part": "Obstacles/WalkingSurfaces/BallB_Main/BallB_Main"
+      }
+    ],
+    "ExpertOffsets": [
+      {
+        "center": [
+          3408,
+          82,
+          -231
+        ],
+        "size": [
+          6.6,
+          1,
+          6.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_Start/Collider"
+      },
+      {
+        "center": [
+          3417.4545454545455,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_01/Collider"
+      },
+      {
+        "center": [
+          3426.909090909091,
+          82,
+          -229.35
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_02/Collider"
+      },
+      {
+        "center": [
+          3436.3636363636365,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_03/Collider"
+      },
+      {
+        "center": [
+          3445.818181818182,
+          82,
+          -229.35
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_04/Collider"
+      },
+      {
+        "center": [
+          3455.2727272727275,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_05/Collider"
+      },
+      {
+        "center": [
+          3464.7272727272725,
+          82,
+          -229.35
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_06/Collider"
+      },
+      {
+        "center": [
+          3474.181818181818,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_07/Collider"
+      },
+      {
+        "center": [
+          3483.6363636363635,
+          82,
+          -229.35
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_08/Collider"
+      },
+      {
+        "center": [
+          3493.090909090909,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_09/Collider"
+      },
+      {
+        "center": [
+          3502.5454545454545,
+          82,
+          -229.35
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_10/Collider"
+      },
+      {
+        "center": [
+          3512.0,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_11/Collider"
+      },
+      {
+        "center": [
+          3521.4545454545455,
+          82,
+          -229.35
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_12/Collider"
+      },
+      {
+        "center": [
+          3530.909090909091,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_13/Collider"
+      },
+      {
+        "center": [
+          3540.3636363636365,
+          82,
+          -229.35
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_14/Collider"
+      },
+      {
+        "center": [
+          3549.818181818182,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_15/Collider"
+      },
+      {
+        "center": [
+          3559.2727272727275,
+          82,
+          -229.35
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_16/Collider"
+      },
+      {
+        "center": [
+          3568.7272727272725,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_17/Collider"
+      },
+      {
+        "center": [
+          3578.181818181818,
+          82,
+          -229.35
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_18/Collider"
+      },
+      {
+        "center": [
+          3587.6363636363635,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_19/Collider"
+      },
+      {
+        "center": [
+          3597.090909090909,
+          82,
+          -229.35
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_20/Collider"
+      },
+      {
+        "center": [
+          3606.5454545454545,
+          82,
+          -232.65
+        ],
+        "size": [
+          2.6,
+          1,
+          2.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_21/Collider"
+      },
+      {
+        "center": [
+          3616,
+          82,
+          -231
+        ],
+        "size": [
+          6.6,
+          1,
+          6.6
+        ],
+        "part": "Obstacles/C14Routes/ExpertOffsets/C14_Expert_End/Collider"
+      }
+    ],
+    "DepotEntry": [
+      {
+        "center": [
+          3632.3,
+          82,
+          -244
+        ],
+        "size": [
+          10,
+          1,
+          9
+        ],
+        "part": "Obstacles/C14Routes/DepotEntry/C14_Strip_0/Collider"
+      },
+      {
+        "center": [
+          3648.7,
+          82,
+          -244
+        ],
+        "size": [
+          10,
+          1,
+          9
+        ],
+        "part": "Obstacles/C14Routes/DepotEntry/C14_Strip_1/Collider"
+      },
+      {
+        "center": [
+          3665,
+          82,
+          -244
+        ],
+        "size": [
+          10,
+          1,
+          9
+        ],
+        "part": "Obstacles/C14Routes/DepotEntry/C14_Strip_2/Collider"
+      },
+      {
+        "center": [
+          3665,
+          82,
+          -227
+        ],
+        "size": [
+          10,
+          1,
+          11
+        ],
+        "part": "Obstacles/C14Routes/DepotEntry/C14_Strip_3/Collider"
+      }
+    ],
+    "CheckerExit": [
+      {
+        "center": [
+          3665,
+          82,
+          -74
+        ],
+        "size": [
+          10,
+          1,
+          12
+        ],
+        "part": "Obstacles/C14Routes/CheckerExit/C14_CheckerDeck_0/Collider"
+      },
+      {
+        "center": [
+          3665,
+          82,
+          -58
+        ],
+        "size": [
+          10,
+          1,
+          12
+        ],
+        "part": "Obstacles/C14Routes/CheckerExit/C14_CheckerDeck_1/Collider"
+      },
+      {
+        "center": [
+          3680,
+          82,
+          -58
+        ],
+        "size": [
+          11,
+          1,
+          10
+        ],
+        "part": "Obstacles/C14Routes/CheckerExit/C14_CheckerDeck_2/Collider"
+      },
+      {
+        "center": [
+          3694,
+          82,
+          -58
+        ],
+        "size": [
+          11,
+          1,
+          10
+        ],
+        "part": "Obstacles/C14Routes/CheckerExit/C14_CheckerDeck_3/Collider"
+      },
+      {
+        "center": [
+          3705,
+          82,
+          -53
+        ],
+        "size": [
+          10,
+          1,
+          8
+        ],
+        "part": "Obstacles/C14Routes/CheckerExit/C14_CheckerDeck_4/Collider"
+      }
+    ]
+  }
+}

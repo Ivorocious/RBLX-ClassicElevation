@@ -1,0 +1,83 @@
+{
+  "build": "SC_WAVE_28B",
+  "method": "Blender 5.2 FBX re-import; evaluated mesh, per-face atlas tile padding, object scale, and loop triangles",
+  "fbxReimportPassed": true,
+  "uniqueTriangles": 1736,
+  "triangleCeiling": 1800,
+  "assets": {
+    "SC_R_Wave28B": {
+      "vertices": 870,
+      "triangles": 1736,
+      "materials": 1,
+      "uvLayers": 1,
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensionsBlender": [
+        18.0,
+        9.0,
+        14.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "atlasUVAudit": {
+        "facesChecked": 842,
+        "allFaceUVsStayWithinOneAtlasTile": true,
+        "minimumTileEdgePaddingPixels": 6.0
+      }
+    }
+  },
+  "axisConvention": {
+    "unitScaleApplied": true,
+    "axisForward": "-Z",
+    "axisUp": "Y",
+    "sourceToRoblox": "Roblox XYZ = Blender XZY with Roblox Z = -Blender Y"
+  },
+  "geometryEvidence": {
+    "frontDirectionRobloxXYZ": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "rootPivotRobloxXYZ": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimensionsRobloxXYZ": [
+      18.0,
+      14.0,
+      9.0
+    ],
+    "topRobloxY": 14.0,
+    "foamBandsContinuousAcrossWidth": true,
+    "externalTextures": false
+  },
+  "files": {
+    "build_wave28b.py": {
+      "bytes": 9705,
+      "sha256": "c6bb86f458917fdedaefbb5a561f3d780e30508fbc4603ff26277d55fb292afd"
+    },
+    "ShipwreckCove_Wave28B.blend": {
+      "bytes": 113393,
+      "sha256": "bea77cafafcbe16c488e1469c06992051c9ac4da51882e4ca4083605c11d97c2"
+    },
+    "ShipwreckCove_Wave28B.fbx": {
+      "bytes": 56060,
+      "sha256": "31cb8cc42b89a6f96dcf68de0bcf71a3df6410488a05da6005e7e6080dee373f"
+    },
+    "manifest28b.json": {
+      "bytes": 2323,
+      "sha256": "ce3a3b93c5e2ed4015487a0bb5b7dcb785a218071cac4b55ea444509174d55ef"
+    },
+    "palette.png": {
+      "bytes": 545,
+      "sha256": "7ada08dfd92d972bd66e2b973f4c11bbb3a55625ea7efa4dcbed70e308483766"
+    }
+  }
+}

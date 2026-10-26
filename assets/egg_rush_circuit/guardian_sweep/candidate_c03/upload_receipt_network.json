@@ -1,0 +1,16 @@
+{
+  "sha256": "d4b3ce2df8cbdac46914fc33fb98e516e337dd7efe194d3a0a2f2d5c6a866d73",
+  "request": {
+    "assetType": "Model",
+    "displayName": "EggRushGuardianSweepTailC03",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/311fbc11-cb77-4fac-9384-6fac752bc034",
+  "assetId": "84469813238228"
+}

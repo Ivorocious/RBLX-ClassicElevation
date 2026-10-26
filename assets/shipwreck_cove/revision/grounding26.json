@@ -1,0 +1,88 @@
+{
+  "adjustments": [
+    {
+      "name": "BeachPalm4",
+      "oldY": 13.064,
+      "y": 13.064,
+      "support": "CaveSurge26"
+    },
+    {
+      "name": "BeachPalm5",
+      "oldY": 38.68,
+      "y": 38.68,
+      "support": "CoastBank09"
+    },
+    {
+      "name": "LeaningPalm3",
+      "oldY": 36.756,
+      "y": 36.756,
+      "support": "CoastBank09"
+    }
+  ],
+  "headroom": [
+    {
+      "name": "Cave26Stone00",
+      "clearance": 22.03
+    },
+    {
+      "name": "Cave26Stone01",
+      "clearance": 24.16
+    },
+    {
+      "name": "Cave26Stone02",
+      "clearance": 31.68
+    },
+    {
+      "name": "Cave26Stone03",
+      "clearance": 27.38
+    },
+    {
+      "name": "Cave26Stone04",
+      "clearance": 29.99
+    },
+    {
+      "name": "Cave26Stone05",
+      "clearance": 30.55
+    },
+    {
+      "name": "Cave26Stone06",
+      "clearance": 29.64
+    },
+    {
+      "name": "Cave26Stone07",
+      "clearance": 16.01
+    },
+    {
+      "name": "Cave26Stone08",
+      "clearance": 15.09
+    },
+    {
+      "name": "Cave26Stone09",
+      "clearance": 25.87
+    },
+    {
+      "name": "Cave26Stone10",
+      "clearance": 23.78
+    },
+    {
+      "name": "Cave26Stone11",
+      "clearance": 28.54
+    },
+    {
+      "name": "Cave26Stone12",
+      "clearance": 17.26
+    },
+    {
+      "name": "Cave26Stone13",
+      "clearance": 23.69
+    },
+    {
+      "name": "Cave26Stone14",
+      "clearance": 20.55
+    },
+    {
+      "name": "Cave26Stone15",
+      "clearance": 19.34
+    }
+  ]
+}

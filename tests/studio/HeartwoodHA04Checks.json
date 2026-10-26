@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "candidate": "HA_V1_04",
+  "scope": "Two bounded solo Studio physics checks. Initial setup is separate from the forced jump recorder; no in-run test reposition or checkpoint writes.",
+  "usage": "Submit commands[name] through the existing HeartwoodVerification bridge with a fresh JobId. Require outer ok=true and inspect result.passed. For the jump, run catch_edge_setup, capture bridge_state, run the source-loaded recorder once, then capture bridge_state again. Root owns setup, live execution, and the joined evidence report.",
+  "commands": {
+    "finish_no_jump": {
+      "action": "sequence",
+      "from": [
+        -54,
+        150,
+        37
+      ],
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "finish-walk-1",
+          "to": [
+            -64,
+            153,
+            51
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.J4.FinishWalk_1",
+            "Decoration.S04_SanctuaryBough.FinishWalk_2"
+          ],
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "finish-walk-2",
+          "to": [
+            -85,
+            157,
+            37
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.FinishWalk_2",
+            "Decoration.S04_SanctuaryBough.FinishWalk_3"
+          ],
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "finish-walk-3",
+          "to": [
+            -92,
+            162,
+            34
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.FinishWalk_3",
+            "Decoration.S04_SanctuaryBough.FinishWalk_4"
+          ],
+          "jump": false,
+          "seconds": 4,
+          "expectCheckpoint": 3
+        },
+        {
+          "id": "F0",
+          "to": [
+            -106,
+            162,
+            28
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.F0.Top",
+            "Decoration.S04_SanctuaryBough.F0.SanctuaryArtwork",
+            "Decoration.S04_SanctuaryBough.FinishWalk_4"
+          ],
+          "jump": false,
+          "seconds": 4,
+          "maximumDistance": 4,
+          "stopDistance": 0.6,
+          "expectCheckpoint": 3,
+          "expectStatus": "Finished"
+        }
+      ],
+      "finishTo": [
+        -106,
+        162,
+        28
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Finished",
+      "maximumDistance": 4
+    },
+    "catch_edge_setup": {
+      "action": "sequence",
+      "from": [
+        -31,
+        101,
+        77
+      ],
+      "checkpoint": 3,
+      "steps": [
+        {
+          "id": "confirm-catch-edge-setup",
+          "to": [
+            -31,
+            101,
+            77
+          ],
+          "supports": [
+            "Decoration.S04_SanctuaryBough.Catch.Top"
+          ],
+          "jump": false,
+          "seconds": 1,
+          "expectCheckpoint": 3
+        }
+      ],
+      "finishTo": [
+        -31,
+        101,
+        77
+      ],
+      "expectCheckpoint": 3,
+      "expectStatus": "Racing"
+    },
+    "bridge_state": {
+      "action": "state"
+    }
+  },
+  "forcedJump": {
+    "source": "tests/studio/HeartwoodUsefulEdgeJumpHA04.luau",
+    "call": "local report = loadstring(recipeSource)().Run({expectedBuild = 'HA_V1_04', bridgeBefore = beforeState}); return game:GetService('HttpService'):JSONEncode(report)",
+    "dependencies": "recipeSource is the saved file text; beforeState is the prior bridge result.result table, supplied by root. The recorder requires no ModuleScript access or require call.",
+    "initialSetup": "catch_edge_setup is a separate bridge command. It is the only reposition/progress setup. Confirm result.passed before calling the recorder. Start with a standard official racer, normal WalkSpeed16/JumpHeight7.2/Gravity196.2, and wait out recovery immunity.",
+    "takeoff": [
+      -31,
+      101,
+      77
+    ],
+    "target": [
+      -30,
+      122,
+      78
+    ],
+    "selection": "Northwest Catch edge toward J3: source top bounds leave about 5 studs in X and 4 in Z, with roughly 1.4 studs to J3 center horizontally. Actual collidable Catch.Top support is required, so the mesh bounds alone cannot authorize a jump. J3 floor is 21 studs higher than Catch; a normal jump is 7.2 studs.",
+    "durationLimitSeconds": 4,
+    "jumpCommandCount": 1,
+    "expectedEvidence": [
+      "Before: grounded Catch.Top support, close to the selected takeoff, server root ownership, no active recovery immunity, checkpoint3 and Racing in the bridge snapshot.",
+      "Actual jump: jumpCommands == 1, jumpObserved == true, sawAirborne == true, upward velocity and actualRise recorded; inspect actual Humanoid stateChanges and immediatelyAfterCommand rather than assuming the request lifted the avatar.",
+      "Trajectory: actual apex/highestFootY, attempted J3 receiver, bounded state/support samples, exact first receiver.Top spatial overlaps, and receiverLanded requiring four grounded J3 frames.",
+      "After: preserve recorder.after and bridge state. Compare checkpoint/status plus hits, acknowledgements, releases, cancels, lastRecovery. The recorder observes RecoveryUntil increases but cannot read Runtime recovery-source diagnostics without the bridge.",
+      "Any direct-receiver-bypass-observed result is a defect candidate. jump-command-without-observed-lift, setup refusal, character change, or timeout cannot establish useful skip prevention.",
+      "If the jump physically occurs and returns to Catch or recovers without J3 landing, report only prevention in this one forced attempt; do not claim every possible edge, wall route, or human input has been tested."
+    ],
+    "limits": [
+      "GetPartsInPart records spatial overlap, not an engine contact event. Underside/side overlap is explicitly separate from grounded receiver landing.",
+      "One normal jump under the nearby J3 footprint checks the real higher receiver attempt. It does not screen every scenic collider or combinations of repeated jumps.",
+      "Bridge before/after must confirm zero unintended bloom acknowledgement/release and preserve checkpoint3; those counters are not available to this source-only recorder."
+    ]
+  },
+  "finishChecks": [
+    "Require result.passed == true, completedSteps == 4, withinRunRepositions == 0, all four step.jumps == 0, final grounded allowed F0.Top/F0.SanctuaryArtwork/FinishWalk_4 support, distance <=4, checkpoint3, status Finished.",
+    "Require no hits or RecoveryUntil increase between result.before and result.after. FinishWalk_1 is a child of J4; the exact endpoint joins allow only the next listed ramp, not arbitrary course geometry.",
+    "jump=false disables the verification scanner. State.autojump should already be false in the standard setup; the recipe does not change Humanoid tuning."
+  ],
+  "finishFixtureEvidence": {
+    "source": "Root-reported representative native HA04 no-jump run; raw failed recipe evidence is retained by root.",
+    "observed": "All four steps used zero jumps with no hits or recovery. Racing became Finished at distance2.797 on exact Decoration.S04_SanctuaryBough.F0.SanctuaryArtwork support; normal race-finish movement freeze then held the character there.",
+    "correction": "Admit exact SanctuaryArtwork support and distance<=4 to unchanged F0 centre: native Finish marker26x5x3 accepts avatar contact, then PlayerRaceService anchors movement. A final-form full run froze at3.329 while Finished/grounded/CP3 with zero hits or recovery. Preserve failed fixture trace; rerun unchanged geometry with corrected assertion.",
+    "boundary": "This corrects a support assertion, not physical geometry or movement tuning. The representative observation showed no finish lip defect. Root owns the final corrected HA04 rerun."
+  },
+  "collisionSourceReview": {
+    "scope": "Read-only Art/ArtManifest source screening; current native HA04 collider properties still require root confirmation.",
+    "observations": [
+      "Original upper bough04 bound minimumY206.34, bough05 minimumY247.34, bough06 minimumY326.96, bough07 minimumY369.36. These minima are above the highest bloom takeoff140 + ideal112-speed boost rise31.97 + typical avatar body clearance~6.",
+      "Added BoughFamily08-13 are source-guarded minimumY>=191.2; BarkRib relief has minimumY>195. Current source makes BarkRib solid. Both bands are above this bounded route/flight envelope, even if all boughs become solid in HA04.",
+      "Hollow upper walls are mostly continuous sloped vertical shells. Their broad bounds do not establish a walkable top or wall-jump route; existing lower solid boughs and buttresses are unchanged in this source snapshot."
+    ],
+    "candidateProbes": [],
+    "reasonNoAdditionalProbe": "No new physically reachable ledge or short section-to-section bridge is identified from source. Do not spend a live replay on distant upper scenery based only on a bounding box. A newly observed grounded scenic ledge near the route would justify one separately selected probe."
+  }
+}

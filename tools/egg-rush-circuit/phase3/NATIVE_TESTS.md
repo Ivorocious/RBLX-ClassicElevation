@@ -1,0 +1,24 @@
+# Current-route and focused real-player checks
+
+These are bounded preparation files. Only the lead controls Studio. No test in this folder has been run in Studio by the helper.
+
+The durable helper is `src/ServerStorage/CourseBuilders/EggRush/NativeTraversal.luau`. It reads the actual ordered `RevisionNormal` / `RevisionExpert` references, resolves each receiving bank from its own preceding tray, observes all six current egg actors, and admits the two route-specific chicken targets using the existing sampler. Retired `Tail` reference metadata does not invoke a nonexistent guardian tail. Both authored tray distances come from the actual models.
+
+Egg records deliberately describe observations. The six staggered actors do not have the retired one-egg whole-band parked window. Their live contact checks remain enabled; an actual hit fails the continuous attempt. Do not label these records guarded safe windows or change gameplay timing to satisfy the driver.
+
+## Run in the lead's single Studio instance
+
+1. Verify the intended experience and current candidate. Preserve the existing native helper; the lead already retained `ServerStorage.EggRushPhase3_20261026.SourcesBefore.NativeTraversal`. Let the edited helper sync through Rojo. Verify disk/native source parity before requiring it in a fresh Play session.
+2. Install `tests/studio/EggRushPhase3Peck.luau` and `tests/studio/EggRushPhase3Normal.luau` as ModuleScripts named `EggRushPhase3Peck` and `EggRushPhase3Normal`, inside an owned `ServerStorage.EggRushPhase3Tests` folder. They are test preparation, not runtime production modules.
+3. Use one real official racer with ordinary arrival completed, the real active course, ordinary movement16/7.2, fitted collision body, no inspection or unlimited-time override, and no inspection immunity. Start a fresh race for each check. Do not skip entry/profile rules to make a check pass.
+4. Use existing `tests/studio/EggRushP2InputIsolation.client.luau` in the actual player's PlayerScripts. Its `LeaseAttribute` defaults to `ERP2AutomatedMovementLease`; set that player attribute true only while driving. Verify the client receipt is `Isolated` before starting, and restore the lease false after the runner completes or fails. The helper restores its server movement connection and original network ownership; client isolation is the lead's separately verified responsibility.
+5. Install `RunFocused.server.luau` under an owned server test folder. Set attributes `Kind="Peck"` or `Kind="Normal"`, `ExpectedCandidateId` to the inspected current candidate, and a fresh `ReportName` before enabling it. Normal defaults to one lap. Only extend to `Laps=3` when the focused result calls for a complete finish check. Set the newly created ServerStorage report's `Run` attribute true after isolation is verified.
+6. Poll the report's `State`. Read JSON from its Value, or concatenate ordered `Payload_01` etc children if the Value describes chunks. Preserve the exact result/failure on disk. Native progress appears on the corresponding ModuleScript's `Progress` attribute. Stop on a real failure and inspect it before retrying. Restore client controls and remove only these installed owned test instances when done.
+
+`Peck.Run(expectedCandidate)` allows up to100seconds. It declares setup placements and proves actual ordered CP contacts plus a physically walked forward gate, establishing a completed lap and lap2/CP3. It escapes the actual target1 warning using an ordinary supported jump, then waits on the same target for live runtime recovery. It checks completed-lap/current-lap/checkpoint retention, physical CP3 support and3.5seconds without a repeat recovery, including after immunity expires. There are no calls to RecoverPlayer or direct progress, immunity, profile, hazard, clock or geometry writes. This is focused service/contact proof, not a raced route.
+
+`Normal.Run(expectedCandidate, 1)` allows up to500seconds and starts from the actual delivered Start slot with no placements. It checks four real CPs and physical original-Start lap return, both complete supported tray rides, all six observed egg-band crossings and both Normal peck targets. Any recovery fails the continuous attempt. `Normal.Run(expectedCandidate, 3)` additionally requires the actual final third-lap finish and twelve ordered splits. Expert auto-completion stays waived.
+
+## Completed offline verification
+
+`.tools/lune-0.10.5/lune.exe run tests/EggRushNativeTraversal.luau` passes322checks against the actual preserved R05 native recovery course, including both route reference lists, both preceding-tray associations, six actors per route, current chicken targets, the original finish return and current section endpoints. Both native preparation modules compile. These are source/reference checks, not Studio physics results, human pace,20-racer capacity, FPS or owner acceptance.

@@ -1,0 +1,16 @@
+{
+  "sha256": "b1106c91bd014894f5fe290baae6dc7c6eb96b63d38cbd29ca298cd5198d3342",
+  "request": {
+    "assetType": "Model",
+    "displayName": "CityRun_C14_PlayerRoutes",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/b5a2ac73-27c8-4762-8403-4272d6c970f9",
+  "assetId": "77383148903452"
+}

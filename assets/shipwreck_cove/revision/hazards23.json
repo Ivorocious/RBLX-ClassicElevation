@@ -1,0 +1,70 @@
+{
+  "records": [
+    {
+      "name": "Four alternating cannon lanes hit standing R15",
+      "passed": true
+    },
+    {
+      "name": "Normal R15 jump clears Ball0",
+      "passed": true
+    },
+    {
+      "name": "Normal R15 jump clears Ball1",
+      "passed": true
+    },
+    {
+      "name": "Normal R15 jump clears Ball2",
+      "passed": true
+    },
+    {
+      "name": "Normal R15 jump clears Ball3",
+      "passed": true
+    },
+    {
+      "name": "Server stall does not replay cannon contact against current position",
+      "passed": true
+    },
+    {
+      "name": "Protected CoverPocket0 survives a full volley",
+      "passed": true
+    },
+    {
+      "name": "Protected CoverPocket1 survives a full volley",
+      "passed": true
+    },
+    {
+      "name": "Protected CoverPocket2 survives a full volley",
+      "passed": true
+    },
+    {
+      "name": "Static cargo band resets a standing R15",
+      "passed": true
+    },
+    {
+      "name": "Normal jump crosses static cargo band",
+      "passed": true
+    },
+    {
+      "name": "Moving dock rope contacts off-center R15",
+      "passed": true
+    },
+    {
+      "name": "Ship sweep does not hit just outside its travel envelope",
+      "passed": true
+    },
+    {
+      "name": "Cave passage is safe in dry window",
+      "passed": true
+    },
+    {
+      "name": "Cave wave advances and resets in low passage",
+      "passed": true
+    },
+    {
+      "name": "Raised refuge centers and inner edges survive warning, surge and drain",
+      "passed": true
+    }
+  ],
+  "method": "Production Runtime.Create on translated fixture with actual R15, timed normal jumps, full-cycle stationary pockets, and server contact checks; controlled clock and teleported setup, not full-race traversal or 20-player load",
+  "build": "SC_MAP_23"
+}

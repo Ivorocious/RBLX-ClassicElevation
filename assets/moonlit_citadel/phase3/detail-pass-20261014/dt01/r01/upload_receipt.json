@@ -1,0 +1,16 @@
+{
+  "sha256": "3db9fb9b88ecec399761ee9d2ac679cd5ffb8d44b03b31019195877a6e0f78ba",
+  "request": {
+    "assetType": "Model",
+    "displayName": "MC_DETAIL_KIT_DT01_R01",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/31986859-a4b8-4715-a80d-4d975dd299c6",
+  "assetId": "125215287712097"
+}

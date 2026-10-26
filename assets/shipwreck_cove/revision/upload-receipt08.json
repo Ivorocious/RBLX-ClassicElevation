@@ -1,0 +1,16 @@
+{
+  "sha256": "c354bb73df08bbf3b14dbd7827fdf7e6c0b18ea9f6095f33be00e26080f593e3",
+  "request": {
+    "assetType": "Model",
+    "displayName": "ShipwreckCove_Revision08",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/61521ef9-812b-4849-9aca-70cec80bc613",
+  "assetId": "127305922329141"
+}

@@ -1,0 +1,140 @@
+{
+  "build": "SC_REV_01",
+  "method": "Blender 5.2 FBX re-import, evaluated meshes, loop triangulation",
+  "meshes": [
+    {
+      "id": "SC_R_CannonFourWheel",
+      "triangles": 320,
+      "vertices": 244,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_CaveChamber",
+      "triangles": 600,
+      "vertices": 400,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_CheckpointBeacon",
+      "triangles": 96,
+      "vertices": 64,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_CurlingWave",
+      "triangles": 68,
+      "vertices": 36,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_FanPalm",
+      "triangles": 57,
+      "vertices": 59,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_GrassClump",
+      "triangles": 5,
+      "vertices": 15,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_HullBow",
+      "triangles": 744,
+      "vertices": 496,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_HullDeck",
+      "triangles": 72,
+      "vertices": 48,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_HullMid",
+      "triangles": 720,
+      "vertices": 480,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_HullStern",
+      "triangles": 804,
+      "vertices": 536,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_PirateSignboard",
+      "triangles": 48,
+      "vertices": 32,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_SandIsland",
+      "triangles": 44,
+      "vertices": 26,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_SandWedge",
+      "triangles": 20,
+      "vertices": 12,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_SeaRockFlat",
+      "triangles": 38,
+      "vertices": 21,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_SeaRockSpire",
+      "triangles": 38,
+      "vertices": 21,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_SeaRockTall",
+      "triangles": 38,
+      "vertices": 21,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_Shrub",
+      "triangles": 15,
+      "vertices": 20,
+      "materials": 1
+    },
+    {
+      "id": "SC_R_WaveFoamLip",
+      "triangles": 24,
+      "vertices": 14,
+      "materials": 1
+    }
+  ],
+  "uniqueTriangles": 3751,
+  "libraryTriangleCeiling": 8000,
+  "perAssetTriangleCeiling": 1500,
+  "estimatedPlacedTriangles": 5692,
+  "files": {
+    "build_revision.py": {
+      "bytes": 14552,
+      "sha256": "c75b1bc681b8f7a562b297fb0522f70242854c96dd3159313a3e06e70d5816a5"
+    },
+    "ShipwreckCove_Revision01.blend": {
+      "bytes": 124892,
+      "sha256": "3659981365bd5ec37411b2b478c6fa041919172f7c48ad9fc205872bcb85863a"
+    },
+    "ShipwreckCove_Revision01.fbx": {
+      "bytes": 115292,
+      "sha256": "6c3f9db0232a23b2073822979ab5fca54fdcae8127ac7383abd27c484bde4439"
+    },
+    "manifest.json": {
+      "bytes": 13457,
+      "sha256": "f344fec618be02860edd22a12ad1f63ae1c2863612fa9049cc2834affb45a3d1"
+    },
+    "palette.png": {
+      "bytes": 545,
+      "sha256": "7ada08dfd92d972bd66e2b973f4c11bbb3a55625ea7efa4dcbed70e308483766"
+    }
+  }
+}

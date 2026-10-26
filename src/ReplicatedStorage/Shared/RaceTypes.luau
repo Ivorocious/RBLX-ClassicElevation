@@ -62,6 +62,10 @@ export type PlayerRaceResult = {
 }
 
 export type RaceResult = {
+ variant: string?,
+ sourceRevision: string?,
+ route: string?,
+ fallsSupported: boolean?,
 	raceId: string,
 	courseId: string,
 	courseDisplayName: string?,

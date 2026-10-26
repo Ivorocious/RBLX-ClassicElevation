@@ -1,0 +1,831 @@
+{
+  "revision": "R01_entrance",
+  "issues": [
+    "R01",
+    "R06",
+    "R04 FrontWing solids"
+  ],
+  "axes": "All export geometry uses C01 axes: X right, Y stageward, Z up; native (x,z,-y).",
+  "floorOrigin": [
+    1552,
+    370,
+    -892.5
+  ],
+  "expectedStagePivot": [
+    1552,
+    374.2,
+    -942
+  ],
+  "sourceFiles": [
+    {
+      "path": "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\grand_arcade\\A01\\GrandArcade_A01.blend",
+      "sha256": "67e53de45de842e7743bbb5fe4593042e8a1103a851521a22ff0fc287e02d952"
+    },
+    {
+      "path": "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\grand_arcade\\connection_candidate\\GrandArcadeConnection_C01.blend",
+      "sha256": "91e25ea52b9070a44d419078f8cf96b622a3ce11d8846c0afca0af8c44697451"
+    }
+  ],
+  "colors": {
+    "Ivory": [
+      0.94,
+      0.88,
+      0.75
+    ],
+    "Pale": [
+      0.99,
+      0.96,
+      0.88
+    ],
+    "Gold": [
+      0.88,
+      0.59,
+      0.14
+    ],
+    "FloorA": [
+      0.85,
+      0.81,
+      0.7
+    ],
+    "FloorB": [
+      0.83,
+      0.79,
+      0.68
+    ],
+    "DeepBlue": [
+      0.045,
+      0.12,
+      0.17
+    ]
+  },
+  "replacementMapping": [
+    {
+      "mesh": "UpperLanding__FloorA",
+      "target": "Workspace.Lobby.GrandArcadeConnection.Architecture.UpperLanding__FloorA",
+      "scope": "Complete merged tile material only; other UpperLanding materials stay in place"
+    },
+    {
+      "mesh": "UpperLanding__FloorB",
+      "target": "Workspace.Lobby.GrandArcadeConnection.Architecture.UpperLanding__FloorB",
+      "scope": "Complete merged tile material only; other UpperLanding materials stay in place"
+    },
+    {
+      "mesh": "FrontWing-1__Ivory",
+      "target": "Workspace.GrandArcade.FrontWing-1__Ivory",
+      "scope": "Complete affected material beam; 41 original rings preserved, only closed terminal extension added"
+    },
+    {
+      "mesh": "FrontWing-1__Pale",
+      "target": "Workspace.GrandArcade.FrontWing-1__Pale",
+      "scope": "Complete affected material beam; 41 original rings preserved, only closed terminal extension added"
+    },
+    {
+      "mesh": "FrontWing-1__Gold",
+      "target": "Workspace.GrandArcade.FrontWing-1__Gold",
+      "scope": "Complete affected material beam; 41 original rings preserved, only closed terminal extension added"
+    },
+    {
+      "mesh": "FrontWing1__Ivory",
+      "target": "Workspace.GrandArcade.FrontWing1__Ivory",
+      "scope": "Complete affected material beam; 41 original rings preserved, only closed terminal extension added"
+    },
+    {
+      "mesh": "FrontWing1__Pale",
+      "target": "Workspace.GrandArcade.FrontWing1__Pale",
+      "scope": "Complete affected material beam; 41 original rings preserved, only closed terminal extension added"
+    },
+    {
+      "mesh": "FrontWing1__Gold",
+      "target": "Workspace.GrandArcade.FrontWing1__Gold",
+      "scope": "Complete affected material beam; 41 original rings preserved, only closed terminal extension added"
+    }
+  ],
+  "meshChecks": {
+    "UpperLanding__FloorA": {
+      "vertices": 52,
+      "triangles": 80,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.36459789797663694,
+        0.3645978594819705,
+        0.36459764589866,
+        0.3645976843933264,
+        0.13635419199514823,
+        0.11606248556442249
+      ],
+      "outward": true
+    },
+    "UpperLanding__FloorB": {
+      "vertices": 52,
+      "triangles": 80,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.3645978594819705,
+        0.3645978930095832,
+        0.364597683151563,
+        0.36459764589866,
+        0.11606248691289997,
+        0.13635419327935475
+      ],
+      "outward": true
+    },
+    "FrontWing-1__Ivory_source": {
+      "vertices": 164,
+      "triangles": 324,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        -34.14549790897096
+      ],
+      "outward": false
+    },
+    "FrontWing-1__Ivory": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        36.23727313110914
+      ],
+      "outward": true
+    },
+    "FrontWing-1__Pale_source": {
+      "vertices": 164,
+      "triangles": 324,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        -17.755650465687104
+      ],
+      "outward": false
+    },
+    "FrontWing-1__Pale": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        18.988536695018414
+      ],
+      "outward": true
+    },
+    "FrontWing-1__Gold_source": {
+      "vertices": 164,
+      "triangles": 324,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        -4.499176760216261
+      ],
+      "outward": false
+    },
+    "FrontWing-1__Gold": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        4.811567270895467
+      ],
+      "outward": true
+    },
+    "FrontWing1__Ivory_source": {
+      "vertices": 164,
+      "triangles": 324,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        -34.14549420944725
+      ],
+      "outward": false
+    },
+    "FrontWing1__Ivory": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        36.237257616206406
+      ],
+      "outward": true
+    },
+    "FrontWing1__Pale_source": {
+      "vertices": 164,
+      "triangles": 324,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        -17.755651440626632
+      ],
+      "outward": false
+    },
+    "FrontWing1__Pale": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        18.98853644200911
+      ],
+      "outward": true
+    },
+    "FrontWing1__Gold_source": {
+      "vertices": 164,
+      "triangles": 324,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        -4.499175770775763
+      ],
+      "outward": false
+    },
+    "FrontWing1__Gold": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        4.811567802913489
+      ],
+      "outward": true
+    },
+    "MarkerOrigin__DeepBlue": {
+      "vertices": 8,
+      "triangles": 12,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.0017279998864978552
+      ],
+      "outward": true
+    },
+    "MarkerRight__DeepBlue": {
+      "vertices": 8,
+      "triangles": 12,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.0017280120324964328
+      ],
+      "outward": true
+    },
+    "MarkerUp__DeepBlue": {
+      "vertices": 8,
+      "triangles": 12,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.0017280120324964325
+      ],
+      "outward": true
+    },
+    "MarkerForward__DeepBlue": {
+      "vertices": 8,
+      "triangles": 12,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.0017280120179445173
+      ],
+      "outward": true
+    }
+  },
+  "exportRoundtripChecks": {
+    "FrontWing-1__Gold": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        4.811565169094441
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 7.62939453125e-06
+    },
+    "FrontWing-1__Ivory": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        36.23727250619168
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 7.62939453125e-06
+    },
+    "FrontWing-1__Pale": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        18.988527547723304
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 7.62939453125e-06
+    },
+    "FrontWing1__Gold": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        4.811569505603983
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 7.62939453125e-06
+    },
+    "FrontWing1__Ivory": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        36.237261545883186
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 7.62939453125e-06
+    },
+    "FrontWing1__Pale": {
+      "vertices": 188,
+      "triangles": 372,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        18.988527399953465
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 7.62939453125e-06
+    },
+    "MarkerForward__DeepBlue": {
+      "vertices": 8,
+      "triangles": 12,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.001728012017944221
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 1.6391277313232422e-06
+    },
+    "MarkerOrigin__DeepBlue": {
+      "vertices": 8,
+      "triangles": 12,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.0017279999059004226
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 1.580506819158526e-08
+    },
+    "MarkerRight__DeepBlue": {
+      "vertices": 8,
+      "triangles": 12,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.0017280120324964555
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 1.580506819158526e-08
+    },
+    "MarkerUp__DeepBlue": {
+      "vertices": 8,
+      "triangles": 12,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.001728012013093879
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 1.6391277313232422e-06
+    },
+    "UpperLanding__FloorA": {
+      "vertices": 52,
+      "triangles": 80,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.36459789746760407,
+        0.36459785400588396,
+        0.3645976466323759,
+        0.36459768066869924,
+        0.13635424968923832,
+        0.11606246810358793
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 4.291534423828125e-06
+    },
+    "UpperLanding__FloorB": {
+      "vertices": 52,
+      "triangles": 80,
+      "closed": true,
+      "finite": true,
+      "degenerateTriangles": 0,
+      "componentSignedVolumes": [
+        0.36459785400588396,
+        0.3645978942510245,
+        0.36459767767646173,
+        0.3645976466323759,
+        0.11606250429028364,
+        0.13635415771815457
+      ],
+      "outward": true,
+      "maximumRoundtripPositionDifferenceStuds": 4.291534423828125e-06
+    }
+  },
+  "meshCountIncludingFourMarkers": 12,
+  "triangles": 2440,
+  "floors": [
+    {
+      "mesh": "UpperLanding__FloorA",
+      "preservedTileComponents": 4,
+      "trimmedTileComponents": 2,
+      "topHeightC01": 4.199999809265137
+    },
+    {
+      "mesh": "UpperLanding__FloorB",
+      "preservedTileComponents": 4,
+      "trimmedTileComponents": 2,
+      "topHeightC01": 4.199999809265137
+    }
+  ],
+  "stageFrontBoundaryC01": [
+    [
+      -52.29999923706055,
+      49.5
+    ],
+    [
+      -52.18802261352539,
+      47.91070556640625
+    ],
+    [
+      -51.85256576538086,
+      46.32821273803711
+    ],
+    [
+      -51.29507064819336,
+      44.75930404663086
+    ],
+    [
+      -50.517921447753906,
+      43.210697174072266
+    ],
+    [
+      -49.524444580078125,
+      41.689022064208984
+    ],
+    [
+      -48.31890106201172,
+      40.20079040527344
+    ],
+    [
+      -46.90644454956055,
+      38.752384185791016
+    ],
+    [
+      -45.293128967285156,
+      37.349998474121094
+    ],
+    [
+      -43.48585891723633,
+      35.99964141845703
+    ],
+    [
+      -41.49237823486328,
+      34.707096099853516
+    ],
+    [
+      -39.32122039794922,
+      33.47789764404297
+    ],
+    [
+      -36.981685638427734,
+      32.31730651855469
+    ],
+    [
+      -34.483787536621094,
+      31.23029327392578
+    ],
+    [
+      -31.83822250366211,
+      30.221513748168945
+    ],
+    [
+      -29.056324005126953,
+      29.2952880859375
+    ],
+    [
+      -26.149999618530273,
+      28.455583572387695
+    ],
+    [
+      -23.131698608398438,
+      27.705991744995117
+    ],
+    [
+      -20.01434326171875,
+      27.049726486206055
+    ],
+    [
+      -16.811283111572266,
+      26.48959732055664
+    ],
+    [
+      -13.536235809326172,
+      26.02800178527832
+    ],
+    [
+      -10.203224182128906,
+      25.66691780090332
+    ],
+    [
+      -6.826519966125488,
+      25.40789031982422
+    ],
+    [
+      -3.420583724975586,
+      25.25202751159668
+    ],
+    [
+      -9.60735431368518e-15,
+      25.200000762939453
+    ],
+    [
+      3.420583724975586,
+      25.25202751159668
+    ],
+    [
+      6.826519966125488,
+      25.40789031982422
+    ],
+    [
+      10.203224182128906,
+      25.66691780090332
+    ],
+    [
+      13.536235809326172,
+      26.02800178527832
+    ],
+    [
+      16.811283111572266,
+      26.48959732055664
+    ],
+    [
+      20.01434326171875,
+      27.049726486206055
+    ],
+    [
+      23.131698608398438,
+      27.705991744995117
+    ],
+    [
+      26.149999618530273,
+      28.455583572387695
+    ],
+    [
+      29.056324005126953,
+      29.2952880859375
+    ],
+    [
+      31.83822250366211,
+      30.221513748168945
+    ],
+    [
+      34.483787536621094,
+      31.23029327392578
+    ],
+    [
+      36.981685638427734,
+      32.31730651855469
+    ],
+    [
+      39.32122039794922,
+      33.47789764404297
+    ],
+    [
+      41.49237823486328,
+      34.707096099853516
+    ],
+    [
+      43.48585891723633,
+      35.99964141845703
+    ],
+    [
+      45.293128967285156,
+      37.349998474121094
+    ],
+    [
+      46.90644454956055,
+      38.752384185791016
+    ],
+    [
+      48.31890106201172,
+      40.20079040527344
+    ],
+    [
+      49.524444580078125,
+      41.689022064208984
+    ],
+    [
+      50.517921447753906,
+      43.210697174072266
+    ],
+    [
+      51.29507064819336,
+      44.75930404663086
+    ],
+    [
+      51.85256576538086,
+      46.32821273803711
+    ],
+    [
+      52.18802261352539,
+      47.91070556640625
+    ],
+    [
+      52.29999923706055,
+      49.5
+    ]
+  ],
+  "seamSetbackStuds": 0.0001,
+  "sourceFloorTriangleStageOverlapArea": 0,
+  "roundtripFloorTriangleStageOverlapArea": 0,
+  "joins": [
+    {
+      "side": -1,
+      "oldStageCenter": [
+        -12.096094779983389,
+        -21.34650597807192
+      ],
+      "newStageCenter": [
+        -9.45,
+        -22.3
+      ],
+      "newC01Center": [
+        -9.45,
+        27.2
+      ],
+      "terminalPostWorldBodyCenter": [
+        1542.55,
+        375.8,
+        -919.7
+      ],
+      "existingPostSize": [
+        1.42,
+        3.2,
+        1.42
+      ],
+      "beamTipContainedInExistingPost": true,
+      "bridgeCapStageHeights": {
+        "Pale": [
+          2.8,
+          3.03
+        ],
+        "Gold": [
+          3.03,
+          3.1
+        ]
+      },
+      "curvedCapStageHeights": {
+        "Pale": [
+          2.53,
+          2.87
+        ],
+        "Gold": [
+          2.85,
+          2.95
+        ]
+      },
+      "terminalPostHeadStageHeights": {
+        "Pale": [
+          3.13,
+          3.33
+        ],
+        "Gold": [
+          3.32,
+          3.4
+        ]
+      }
+    },
+    {
+      "side": 1,
+      "oldStageCenter": [
+        12.096094779983371,
+        -21.346505978071924
+      ],
+      "newStageCenter": [
+        9.45,
+        -22.3
+      ],
+      "newC01Center": [
+        9.45,
+        27.2
+      ],
+      "terminalPostWorldBodyCenter": [
+        1561.45,
+        375.8,
+        -919.7
+      ],
+      "existingPostSize": [
+        1.42,
+        3.2,
+        1.42
+      ],
+      "beamTipContainedInExistingPost": true,
+      "bridgeCapStageHeights": {
+        "Pale": [
+          2.8,
+          3.03
+        ],
+        "Gold": [
+          3.03,
+          3.1
+        ]
+      },
+      "curvedCapStageHeights": {
+        "Pale": [
+          2.53,
+          2.87
+        ],
+        "Gold": [
+          2.85,
+          2.95
+        ]
+      },
+      "terminalPostHeadStageHeights": {
+        "Pale": [
+          3.13,
+          3.33
+        ],
+        "Gold": [
+          3.32,
+          3.4
+        ]
+      }
+    }
+  ],
+  "preserved": {
+    "originalCurveRingsPerBeam": 41,
+    "curvedNavyBalusterMeshes": "untouched",
+    "C01OtherMaterials": "untouched, including merged UpperLanding Cream floor/guards and all PortalPosts",
+    "collisionChanges": 0,
+    "floorWidthStuds": 18,
+    "parapetClearWidthStuds": 17.8,
+    "rampRunStuds": 16,
+    "rampRiseStuds": 4.2,
+    "upperLandingTopWorldY": 374.2
+  },
+  "nativeRemaining": [
+    "Verify import single-sided solids from both sides",
+    "Inspect seam from shallow player views",
+    "Inspect both post joints and existing guard-collider agreement; candidate does not alter native collision",
+    "Walk repaired join both ways at center and both usable edges with jumping disabled"
+  ],
+  "nativeProof": "Not installed, uploaded or playtested by this worker. Blender checks are geometry evidence only.",
+  "elapsedSeconds": 3.6,
+  "outputs": [
+    {
+      "path": "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\grand_arcade\\repair_candidate\\R01_entrance\\GrandArcade_R01_Entrance.fbx",
+      "sha256": "c2548bfd1a696df38b4c7b8ffa0929ccad6fe6915f11cf1464c1b98eef2c6778",
+      "bytes": 70796
+    },
+    {
+      "path": "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\grand_arcade\\repair_candidate\\R01_entrance\\GrandArcade_R01_Entrance.blend",
+      "sha256": "18b0de7b071303e3c54a4827d4c63037af0c7f54792c5cd1609791f93c404255",
+      "bytes": 220682
+    }
+  ]
+}

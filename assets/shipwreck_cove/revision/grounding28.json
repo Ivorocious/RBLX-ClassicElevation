@@ -1,0 +1,1340 @@
+{
+  "build": "SC_MAP_28",
+  "kitBuild": "SC_KIT_28",
+  "basis": "Roblox [x,y,z]; Blender [x,-z,y]",
+  "sourceScene": "ShipwreckCove_SC_MAP_27.blend",
+  "meshLibrary": "ShipwreckCove_Kit28.blend",
+  "layoutReadOnce": "layout28.json",
+  "caveShellAssets": [
+    "SC_R_CaveMouth26",
+    "SC_R_CaveVault26",
+    "SC_R_CaveSurge26"
+  ],
+  "groundVisualAssets": [
+    "SC_R_SandIsland",
+    "SC_R_SandWedge",
+    "SC_R_ShoreBank"
+  ],
+  "stalactitePivot": {
+    "rootAtLocalRobloxY": 0.0,
+    "tipLocalRobloxY": -7.0,
+    "checkedFromMeshVertices": true
+  },
+  "fallingPositionSemantics": "top and bottom are MeshPart center CFrames; topRoot and bottomRoot document the source-mesh anchor points; center Y = anchor Y - 3.5.",
+  "walkingLaneWidth": 12.0,
+  "placements": {
+    "GrovePalm28_0": [
+      18.0,
+      7.95,
+      91.0
+    ],
+    "GrovePalm28_1": [
+      6.2222,
+      7.3792,
+      76.2472
+    ],
+    "GrovePalm28_2": [
+      6.4444,
+      7.95,
+      96.087
+    ],
+    "GrovePalm28_3": [
+      -5.3333,
+      7.95,
+      83.2525
+    ],
+    "GrovePalm28_4": [
+      -5.1111,
+      7.95,
+      102.9285
+    ],
+    "GrovePalm28_5": [
+      -16.8889,
+      7.95,
+      88.8716
+    ],
+    "GrovePalm28_6": [
+      -16.6667,
+      7.95,
+      107.8618
+    ],
+    "GrovePalm28_7": [
+      -28.4444,
+      7.1931,
+      91.7919
+    ],
+    "GrovePalm28_8": [
+      -28.2222,
+      7.95,
+      112.457
+    ],
+    "GrovePalm28_9": [
+      -40.0,
+      7.95,
+      99.6265
+    ],
+    "GrovePalm28_10": [
+      -39.7778,
+      7.95,
+      118.4805
+    ],
+    "GrovePalm28_11": [
+      -51.5556,
+      7.6812,
+      103.7355
+    ],
+    "GrovePalm28_12": [
+      -51.3333,
+      7.95,
+      122.975
+    ],
+    "GrovePalm28_13": [
+      -63.1111,
+      7.0695,
+      107.8006
+    ],
+    "GrovePalm28_14": [
+      -62.8889,
+      7.95,
+      127.9619
+    ],
+    "GrovePalm28_15": [
+      -74.6667,
+      7.95,
+      115.6487
+    ],
+    "GrovePalm28_16": [
+      -74.4444,
+      7.95,
+      133.6049
+    ],
+    "GrovePalm28_17": [
+      -86.2222,
+      7.5436,
+      118.5953
+    ],
+    "GrovePalm28_18": [
+      -86.0,
+      7.95,
+      136.5123
+    ],
+    "FixedSpike27_0": [
+      106,
+      29.9018,
+      4
+    ],
+    "FixedSpike27_1": [
+      136,
+      40.0972,
+      22
+    ],
+    "FixedSpike27_2": [
+      105,
+      35.1969,
+      36
+    ],
+    "FixedSpike27_3": [
+      133,
+      31.9313,
+      47
+    ],
+    "FixedSpike27_4": [
+      82,
+      35.7049,
+      65
+    ],
+    "FixedSpike27_5": [
+      56,
+      24.4563,
+      72
+    ]
+  },
+  "falling": {
+    "FallingSpike27_0": {
+      "top": [
+        115,
+        35.1138,
+        8
+      ],
+      "bottom": [
+        115,
+        18.4,
+        8
+      ],
+      "topRoot": [
+        115,
+        38.6138,
+        8
+      ],
+      "bottomRoot": [
+        115,
+        21.9,
+        8
+      ]
+    },
+    "FallingSpike27_1": {
+      "top": [
+        121,
+        38.1767,
+        29
+      ],
+      "bottom": [
+        121,
+        17.4,
+        29
+      ],
+      "topRoot": [
+        121,
+        41.6767,
+        29
+      ],
+      "bottomRoot": [
+        121,
+        20.9,
+        29
+      ]
+    },
+    "FallingSpike27_2": {
+      "top": [
+        117,
+        39.4836,
+        48
+      ],
+      "bottom": [
+        117,
+        15.4,
+        48
+      ],
+      "topRoot": [
+        117,
+        42.9836,
+        48
+      ],
+      "bottomRoot": [
+        117,
+        18.9,
+        48
+      ]
+    },
+    "FallingSpike28_0": {
+      "top": [
+        108.3577,
+        22.6647,
+        15.0278
+      ],
+      "bottom": [
+        108.3577,
+        17.4,
+        15.0278
+      ],
+      "topRoot": [
+        108.3577,
+        26.1647,
+        15.0278
+      ],
+      "bottomRoot": [
+        108.3577,
+        20.9,
+        15.0278
+      ]
+    },
+    "FallingSpike28_1": {
+      "top": [
+        127.0105,
+        37.4665,
+        37.6919
+      ],
+      "bottom": [
+        127.0105,
+        14.4,
+        37.6919
+      ],
+      "topRoot": [
+        127.0105,
+        40.9665,
+        37.6919
+      ],
+      "bottomRoot": [
+        127.0105,
+        17.9,
+        37.6919
+      ]
+    },
+    "FallingSpike28_2": {
+      "top": [
+        112.8659,
+        39.204,
+        46.9466
+      ],
+      "bottom": [
+        112.8659,
+        15.4,
+        46.9466
+      ],
+      "topRoot": [
+        112.8659,
+        42.704,
+        46.9466
+      ],
+      "bottomRoot": [
+        112.8659,
+        18.9,
+        46.9466
+      ]
+    }
+  },
+  "evidence": [
+    {
+      "name": "GrovePalm28_0",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        7.7917,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        18.0,
+        7.6,
+        91.0
+      ],
+      "suggestedP": [
+        18.0,
+        7.95,
+        91.0
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 7.8775,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 1.8775,
+      "originalClearanceOutside12StudLane": 1.8775,
+      "nearestRoutePointXZ": [
+        12.4509,
+        83.9816
+      ]
+    },
+    {
+      "name": "GrovePalm28_1",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        6.1847,
+        8.0
+      ],
+      "rootY": 7.3792,
+      "originalP": [
+        6.222222222222221,
+        7.6,
+        76.24716497087259
+      ],
+      "suggestedP": [
+        6.2222,
+        7.3792,
+        76.2472
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 8.7933,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 2.7933,
+      "originalClearanceOutside12StudLane": 2.7933,
+      "nearestRoutePointXZ": [
+        12.6586,
+        83.8106
+      ]
+    },
+    {
+      "name": "GrovePalm28_2",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        8.0,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        6.444444444444445,
+        7.6,
+        95.08701847926034
+      ],
+      "suggestedP": [
+        6.4444,
+        7.95,
+        96.087
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 6.3644,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 0.3644,
+      "originalClearanceOutside12StudLane": -0.53,
+      "nearestRoutePointXZ": [
+        2.9791,
+        89.5104
+      ]
+    },
+    {
+      "name": "GrovePalm28_3",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        7.4026,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -5.333333333333332,
+        7.6,
+        83.25245658063172
+      ],
+      "suggestedP": [
+        -5.3333,
+        7.95,
+        83.2525
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 8.3966,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 2.3966,
+      "originalClearanceOutside12StudLane": 2.3966,
+      "nearestRoutePointXZ": [
+        -1.226,
+        91.613
+      ]
+    },
+    {
+      "name": "GrovePalm28_4",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        7.9867,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -5.111111111111111,
+        7.6,
+        102.92848181437952
+      ],
+      "suggestedP": [
+        -5.1111,
+        7.95,
+        102.9285
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 7.3217,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 1.3217,
+      "originalClearanceOutside12StudLane": 1.3217,
+      "nearestRoutePointXZ": [
+        -8.6968,
+        95.2934
+      ]
+    },
+    {
+      "name": "GrovePalm28_5",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        7.6205,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -16.88888888888889,
+        7.6,
+        88.87158722188961
+      ],
+      "suggestedP": [
+        -16.8889,
+        7.95,
+        88.8716
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 7.9406,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 1.9406,
+      "originalClearanceOutside12StudLane": 1.9406,
+      "nearestRoutePointXZ": [
+        -12.5087,
+        96.8984
+      ]
+    },
+    {
+      "name": "GrovePalm28_6",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        8.0,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -16.666666666666664,
+        7.6,
+        105.86180728966602
+      ],
+      "suggestedP": [
+        -16.6667,
+        7.95,
+        107.8618
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 7.133,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 1.133,
+      "originalClearanceOutside12StudLane": -0.7103,
+      "nearestRoutePointXZ": [
+        -20.2608,
+        100.1625
+      ]
+    },
+    {
+      "name": "GrovePalm28_7",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        6.7207,
+        7.7636
+      ],
+      "rootY": 7.1931,
+      "originalP": [
+        -28.444444444444443,
+        7.6,
+        91.79186674423546
+      ],
+      "suggestedP": [
+        -28.4444,
+        7.1931,
+        91.7919
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 9.3315,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 3.3315,
+      "originalClearanceOutside12StudLane": 3.3315,
+      "nearestRoutePointXZ": [
+        -24.1718,
+        101.8092
+      ]
+    },
+    {
+      "name": "GrovePalm28_8",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        8.0,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -28.22222222222222,
+        7.6,
+        111.4570339138913
+      ],
+      "suggestedP": [
+        -28.2222,
+        7.95,
+        112.457
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 6.5835,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 0.5835,
+      "originalClearanceOutside12StudLane": -0.3202,
+      "nearestRoutePointXZ": [
+        -30.9647,
+        104.878
+      ]
+    },
+    {
+      "name": "GrovePalm28_9",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        7.7806,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -40.0,
+        7.6,
+        99.62648087015751
+      ],
+      "suggestedP": [
+        -40.0,
+        7.95,
+        99.6265
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 7.541,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 1.541,
+      "originalClearanceOutside12StudLane": 1.541,
+      "nearestRoutePointXZ": [
+        -36.6247,
+        107.5591
+      ]
+    },
+    {
+      "name": "GrovePalm28_10",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        8.0,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -39.77777777777778,
+        7.6,
+        118.48052898720256
+      ],
+      "suggestedP": [
+        -39.7778,
+        7.95,
+        118.4805
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 7.5833,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 1.5833,
+      "originalClearanceOutside12StudLane": 1.5833,
+      "nearestRoutePointXZ": [
+        -43.4201,
+        110.7779
+      ]
+    },
+    {
+      "name": "GrovePalm28_11",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        6.1073,
+        8.0
+      ],
+      "rootY": 7.6812,
+      "originalP": [
+        -51.55555555555556,
+        7.6,
+        103.73549918615784
+      ],
+      "suggestedP": [
+        -51.5556,
+        7.6812,
+        103.7355
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 8.7477,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 2.7477,
+      "originalClearanceOutside12StudLane": 2.7477,
+      "nearestRoutePointXZ": [
+        -47.7296,
+        112.7783
+      ]
+    },
+    {
+      "name": "GrovePalm28_12",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        8.0,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -51.33333333333333,
+        7.6,
+        120.9749657903234
+      ],
+      "suggestedP": [
+        -51.3333,
+        7.95,
+        122.975
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 6.6557,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 0.6557,
+      "originalClearanceOutside12StudLane": -1.1682,
+      "nearestRoutePointXZ": [
+        -54.6496,
+        115.8923
+      ]
+    },
+    {
+      "name": "GrovePalm28_13",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        6.2314,
+        7.8483
+      ],
+      "rootY": 7.0695,
+      "originalP": [
+        -63.111111111111114,
+        7.6,
+        107.80060676872503
+      ],
+      "suggestedP": [
+        -63.1111,
+        7.0695,
+        107.8006
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 9.7696,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 3.7696,
+      "originalClearanceOutside12StudLane": 3.7696,
+      "nearestRoutePointXZ": [
+        -58.7745,
+        117.7485
+      ]
+    },
+    {
+      "name": "GrovePalm28_14",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        8.0,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -62.888888888888886,
+        7.6,
+        127.96191423801736
+      ],
+      "suggestedP": [
+        -62.8889,
+        7.95,
+        127.9619
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 6.4431,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 0.4431,
+      "originalClearanceOutside12StudLane": 0.4431,
+      "nearestRoutePointXZ": [
+        -66.1604,
+        121.0675
+      ]
+    },
+    {
+      "name": "GrovePalm28_15",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        8.0,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -74.66666666666667,
+        7.6,
+        115.64871410280597
+      ],
+      "suggestedP": [
+        -74.6667,
+        7.95,
+        115.6487
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 6.5889,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 0.5889,
+      "originalClearanceOutside12StudLane": 0.5889,
+      "nearestRoutePointXZ": [
+        -71.2803,
+        123.2233
+      ]
+    },
+    {
+      "name": "GrovePalm28_16",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        8.0,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -74.44444444444444,
+        7.6,
+        133.6049177996403
+      ],
+      "suggestedP": [
+        -74.4444,
+        7.95,
+        133.6049
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 6.6383,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 0.6383,
+      "originalClearanceOutside12StudLane": 0.6383,
+      "nearestRoutePointXZ": [
+        -77.0899,
+        125.6695
+      ]
+    },
+    {
+      "name": "GrovePalm28_17",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        6.8502,
+        8.0
+      ],
+      "rootY": 7.5436,
+      "originalP": [
+        -86.22222222222221,
+        7.6,
+        118.59526485970885
+      ],
+      "suggestedP": [
+        -86.2222,
+        7.5436,
+        118.5953
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 9.0072,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 3.0072,
+      "originalClearanceOutside12StudLane": 3.0072,
+      "nearestRoutePointXZ": [
+        -82.7699,
+        128.061
+      ]
+    },
+    {
+      "name": "GrovePalm28_18",
+      "asset": "SC_R_Palm28",
+      "supportSurfaces": [
+        "ConnectedShoreBank"
+      ],
+      "baseRaySamples": 13,
+      "baseRaySamplesRequested": 13,
+      "visualSurfaceYRange": [
+        8.0,
+        8.0
+      ],
+      "rootY": 7.95,
+      "originalP": [
+        -86.0,
+        7.6,
+        136.51233171983532
+      ],
+      "suggestedP": [
+        -86.0,
+        7.95,
+        136.5123
+      ],
+      "routeCenterlineDistanceFromTrunkHull": 6.5875,
+      "walkingLaneHalfWidth": 6.0,
+      "clearanceOutside12StudLane": 0.5875,
+      "originalClearanceOutside12StudLane": 0.5875,
+      "nearestRoutePointXZ": [
+        -85.0,
+        129.0
+      ]
+    },
+    {
+      "name": "FixedSpike27_0",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveMouth26",
+      "roofY": 29.6018,
+      "recommendedRootOffsetIntoShell": 0.3,
+      "originalP": [
+        106,
+        29.90184669494629,
+        4
+      ],
+      "suggestedP": [
+        106,
+        29.9018,
+        4
+      ]
+    },
+    {
+      "name": "FixedSpike27_1",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveMouth26",
+      "roofY": 39.7972,
+      "recommendedRootOffsetIntoShell": 0.3,
+      "originalP": [
+        136,
+        40.097164916992185,
+        22
+      ],
+      "suggestedP": [
+        136,
+        40.0972,
+        22
+      ]
+    },
+    {
+      "name": "FixedSpike27_2",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveVault26",
+      "roofY": 34.8969,
+      "recommendedRootOffsetIntoShell": 0.3,
+      "originalP": [
+        105,
+        35.19687347412109,
+        36
+      ],
+      "suggestedP": [
+        105,
+        35.1969,
+        36
+      ]
+    },
+    {
+      "name": "FixedSpike27_3",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveVault26",
+      "roofY": 31.6313,
+      "recommendedRootOffsetIntoShell": 0.3,
+      "originalP": [
+        133,
+        31.931315231323243,
+        47
+      ],
+      "suggestedP": [
+        133,
+        31.9313,
+        47
+      ]
+    },
+    {
+      "name": "FixedSpike27_4",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveSurge26",
+      "roofY": 35.4049,
+      "recommendedRootOffsetIntoShell": 0.3,
+      "originalP": [
+        82,
+        35.70492248535156,
+        65
+      ],
+      "suggestedP": [
+        82,
+        35.7049,
+        65
+      ]
+    },
+    {
+      "name": "FixedSpike27_5",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveSurge26",
+      "roofY": 24.1563,
+      "recommendedRootOffsetIntoShell": 0.3,
+      "originalP": [
+        56,
+        24.456259536743165,
+        72
+      ],
+      "suggestedP": [
+        56,
+        24.4563,
+        72
+      ]
+    },
+    {
+      "name": "FallingSpike27_0",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveMouth26",
+      "roofY": 38.3138,
+      "topRoot": [
+        115,
+        38.6138,
+        8
+      ],
+      "bottomRoot": [
+        115,
+        21.9,
+        8
+      ],
+      "runtimeMeshPartCenterTop": [
+        115,
+        35.1138,
+        8
+      ],
+      "runtimeMeshPartCenterBottom": [
+        115,
+        18.4,
+        8
+      ],
+      "localTipY": -7.0,
+      "floorCollider": "Cave26Stone01",
+      "floorColliderTopY": 15,
+      "floorColliderGapFromSpikeXZ": 0.0,
+      "floorColliderContainsSpikeXZ": true,
+      "originalXZ": [
+        115,
+        8
+      ],
+      "suggestedXZ": [
+        115,
+        8
+      ],
+      "horizontalShiftFromOriginal": 0.0,
+      "nearestPlatformAtOriginalXZ": "Cave26Stone01",
+      "originalXZFloorColliderGap": 0.0,
+      "nearestPlatformXZAtOriginal": [
+        115.0,
+        8.0
+      ],
+      "originalTop": [
+        115,
+        35.1138198852539,
+        8
+      ],
+      "originalBottom": [
+        115,
+        18.58,
+        8
+      ]
+    },
+    {
+      "name": "FallingSpike27_1",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveVault26",
+      "roofY": 41.3767,
+      "topRoot": [
+        121,
+        41.6767,
+        29
+      ],
+      "bottomRoot": [
+        121,
+        20.9,
+        29
+      ],
+      "runtimeMeshPartCenterTop": [
+        121,
+        38.1767,
+        29
+      ],
+      "runtimeMeshPartCenterBottom": [
+        121,
+        17.4,
+        29
+      ],
+      "localTipY": -7.0,
+      "floorCollider": "Cave26Stone03",
+      "floorColliderTopY": 14,
+      "floorColliderGapFromSpikeXZ": 0.0,
+      "floorColliderContainsSpikeXZ": true,
+      "originalXZ": [
+        121,
+        29
+      ],
+      "suggestedXZ": [
+        121,
+        29
+      ],
+      "horizontalShiftFromOriginal": 0.0,
+      "nearestPlatformAtOriginalXZ": "Cave26Stone03",
+      "originalXZFloorColliderGap": 0.0,
+      "nearestPlatformXZAtOriginal": [
+        121.0,
+        29.0
+      ],
+      "originalTop": [
+        121,
+        38.1766860961914,
+        29
+      ],
+      "originalBottom": [
+        121,
+        17.58,
+        29
+      ]
+    },
+    {
+      "name": "FallingSpike27_2",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveVault26",
+      "roofY": 42.6836,
+      "topRoot": [
+        117,
+        42.9836,
+        48
+      ],
+      "bottomRoot": [
+        117,
+        18.9,
+        48
+      ],
+      "runtimeMeshPartCenterTop": [
+        117,
+        39.4836,
+        48
+      ],
+      "runtimeMeshPartCenterBottom": [
+        117,
+        15.4,
+        48
+      ],
+      "localTipY": -7.0,
+      "floorCollider": "Cave26Stone05",
+      "floorColliderTopY": 12,
+      "floorColliderGapFromSpikeXZ": 0.0,
+      "floorColliderContainsSpikeXZ": true,
+      "originalXZ": [
+        117,
+        48
+      ],
+      "suggestedXZ": [
+        117,
+        48
+      ],
+      "horizontalShiftFromOriginal": 0.0,
+      "nearestPlatformAtOriginalXZ": "Cave26Stone05",
+      "originalXZFloorColliderGap": 0.0,
+      "nearestPlatformXZAtOriginal": [
+        117.0,
+        48.0
+      ],
+      "originalTop": [
+        117,
+        39.48355560302734,
+        48
+      ],
+      "originalBottom": [
+        117,
+        15.58,
+        48
+      ]
+    },
+    {
+      "name": "FallingSpike28_0",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveMouth26",
+      "roofY": 25.8647,
+      "topRoot": [
+        108.3577,
+        26.1647,
+        15.0278
+      ],
+      "bottomRoot": [
+        108.3577,
+        20.9,
+        15.0278
+      ],
+      "runtimeMeshPartCenterTop": [
+        108.3577,
+        22.6647,
+        15.0278
+      ],
+      "runtimeMeshPartCenterBottom": [
+        108.3577,
+        17.4,
+        15.0278
+      ],
+      "localTipY": -7.0,
+      "floorCollider": "Cave26Stone08",
+      "floorColliderTopY": 14,
+      "floorColliderGapFromSpikeXZ": 0.0,
+      "floorColliderContainsSpikeXZ": true,
+      "originalXZ": [
+        108,
+        17
+      ],
+      "suggestedXZ": [
+        108.3577,
+        15.0278
+      ],
+      "horizontalShiftFromOriginal": 2.0043,
+      "nearestPlatformAtOriginalXZ": "Cave26Stone08",
+      "originalXZFloorColliderGap": 1.7072,
+      "nearestPlatformXZAtOriginal": [
+        108.2671,
+        15.3138
+      ],
+      "originalTop": [
+        108,
+        32,
+        17
+      ],
+      "originalBottom": [
+        108,
+        16.5,
+        17
+      ]
+    },
+    {
+      "name": "FallingSpike28_1",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveVault26",
+      "roofY": 40.6665,
+      "topRoot": [
+        127.0105,
+        40.9665,
+        37.6919
+      ],
+      "bottomRoot": [
+        127.0105,
+        17.9,
+        37.6919
+      ],
+      "runtimeMeshPartCenterTop": [
+        127.0105,
+        37.4665,
+        37.6919
+      ],
+      "runtimeMeshPartCenterBottom": [
+        127.0105,
+        14.4,
+        37.6919
+      ],
+      "localTipY": -7.0,
+      "floorCollider": "Cave26Stone04",
+      "floorColliderTopY": 11,
+      "floorColliderGapFromSpikeXZ": 0.0,
+      "floorColliderContainsSpikeXZ": true,
+      "originalXZ": [
+        131,
+        37
+      ],
+      "suggestedXZ": [
+        127.0105,
+        37.6919
+      ],
+      "horizontalShiftFromOriginal": 4.049,
+      "nearestPlatformAtOriginalXZ": "Cave26Stone04",
+      "originalXZFloorColliderGap": 3.8209,
+      "nearestPlatformXZAtOriginal": [
+        127.2076,
+        37.4656
+      ],
+      "originalTop": [
+        131,
+        35,
+        37
+      ],
+      "originalBottom": [
+        131,
+        15.5,
+        37
+      ]
+    },
+    {
+      "name": "FallingSpike28_2",
+      "asset": "SC_R_Stalactite28",
+      "supportCaveMesh": "CaveVault26",
+      "roofY": 42.404,
+      "topRoot": [
+        112.8659,
+        42.704,
+        46.9466
+      ],
+      "bottomRoot": [
+        112.8659,
+        18.9,
+        46.9466
+      ],
+      "runtimeMeshPartCenterTop": [
+        112.8659,
+        39.204,
+        46.9466
+      ],
+      "runtimeMeshPartCenterBottom": [
+        112.8659,
+        15.4,
+        46.9466
+      ],
+      "localTipY": -7.0,
+      "floorCollider": "Cave26Stone05",
+      "floorColliderTopY": 12,
+      "floorColliderGapFromSpikeXZ": 0.0,
+      "floorColliderContainsSpikeXZ": true,
+      "originalXZ": [
+        108,
+        45
+      ],
+      "suggestedXZ": [
+        112.8659,
+        46.9466
+      ],
+      "horizontalShiftFromOriginal": 5.2408,
+      "nearestPlatformAtOriginalXZ": "Cave26Stone05",
+      "originalXZFloorColliderGap": 4.9413,
+      "nearestPlatformXZAtOriginal": [
+        112.5815,
+        46.851
+      ],
+      "originalTop": [
+        108,
+        34,
+        45
+      ],
+      "originalBottom": [
+        108,
+        14.5,
+        45
+      ]
+    }
+  ],
+  "limits": [
+    "Palm roots were ray-tested against visible sand/beach mesh BVHs; route clearance is a geometric plan-view check against the layout path.",
+    "Cave ceiling roots were ray-tested against the approved cave shell meshes.",
+    "Added falling spikes are shifted to the nearest Cave26Stone collider interior before ceiling and landing rays are measured.",
+    "This is mesh-grounding evidence, not a collision or Studio playtest result."
+  ]
+}

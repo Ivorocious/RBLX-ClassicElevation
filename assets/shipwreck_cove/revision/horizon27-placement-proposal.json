@@ -1,0 +1,314 @@
+{
+  "build": "SC_HORIZON_KIT_27",
+  "status": "proposal_only",
+  "origin": "course_local",
+  "notes": "Twelve near silhouettes and six offset back silhouettes; review from player height before integration.",
+  "placements": [
+    {
+      "name": "HorizonRidge27_0",
+      "asset": "SC_R_HorizonTeeth27",
+      "p": [
+        349.79,
+        -8,
+        -12.21
+      ],
+      "scale": [
+        0.91,
+        0.85,
+        0.86
+      ],
+      "yaw": 92.0,
+      "section": "DistantIslandRidge27_0",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_1",
+      "asset": "SC_R_HorizonSaddle27",
+      "p": [
+        337.35,
+        -8,
+        122.79
+      ],
+      "scale": [
+        0.965,
+        0.905,
+        0.96
+      ],
+      "yaw": 70.0,
+      "section": "DistantIslandRidge27_1",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_2",
+      "asset": "SC_R_HorizonBroken27",
+      "p": [
+        314.66,
+        -8,
+        314.66
+      ],
+      "scale": [
+        1.02,
+        0.96,
+        1.06
+      ],
+      "yaw": 45.0,
+      "section": "DistantIslandRidge27_2",
+      "row": "back"
+    },
+    {
+      "name": "HorizonRidge27_3",
+      "asset": "SC_R_HorizonSaddle27",
+      "p": [
+        199.78,
+        -8,
+        319.71
+      ],
+      "scale": [
+        1.075,
+        1.015,
+        0.86
+      ],
+      "yaw": 32.0,
+      "section": "DistantIslandRidge27_3",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_4",
+      "asset": "SC_R_HorizonBroken27",
+      "p": [
+        60.78,
+        -8,
+        344.68
+      ],
+      "scale": [
+        0.91,
+        1.07,
+        0.96
+      ],
+      "yaw": 10.0,
+      "section": "DistantIslandRidge27_4",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_5",
+      "asset": "SC_R_HorizonTeeth27",
+      "p": [
+        -115.17,
+        -8,
+        429.84
+      ],
+      "scale": [
+        0.965,
+        0.85,
+        1.06
+      ],
+      "yaw": -15.0,
+      "section": "DistantIslandRidge27_5",
+      "row": "back"
+    },
+    {
+      "name": "HorizonRidge27_6",
+      "asset": "SC_R_HorizonBroken27",
+      "p": [
+        -172.77,
+        -8,
+        324.92
+      ],
+      "scale": [
+        1.02,
+        0.905,
+        0.86
+      ],
+      "yaw": -28.0,
+      "section": "DistantIslandRidge27_6",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_7",
+      "asset": "SC_R_HorizonTeeth27",
+      "p": [
+        -288.8,
+        -8,
+        242.33
+      ],
+      "scale": [
+        1.075,
+        0.96,
+        0.96
+      ],
+      "yaw": -50.0,
+      "section": "DistantIslandRidge27_7",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_8",
+      "asset": "SC_R_HorizonSaddle27",
+      "p": [
+        -429.84,
+        -8,
+        115.17
+      ],
+      "scale": [
+        0.91,
+        1.015,
+        1.06
+      ],
+      "yaw": -75.0,
+      "section": "DistantIslandRidge27_8",
+      "row": "back"
+    },
+    {
+      "name": "HorizonRidge27_9",
+      "asset": "SC_R_HorizonTeeth27",
+      "p": [
+        -358.78,
+        -8,
+        12.53
+      ],
+      "scale": [
+        0.965,
+        1.07,
+        0.86
+      ],
+      "yaw": -88.0,
+      "section": "DistantIslandRidge27_9",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_10",
+      "asset": "SC_R_HorizonSaddle27",
+      "p": [
+        -345.81,
+        -8,
+        -125.86
+      ],
+      "scale": [
+        1.02,
+        0.85,
+        0.96
+      ],
+      "yaw": -110.0,
+      "section": "DistantIslandRidge27_10",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_11",
+      "asset": "SC_R_HorizonBroken27",
+      "p": [
+        -314.66,
+        -8,
+        -314.66
+      ],
+      "scale": [
+        1.075,
+        0.905,
+        1.06
+      ],
+      "yaw": -135.0,
+      "section": "DistantIslandRidge27_11",
+      "row": "back"
+    },
+    {
+      "name": "HorizonRidge27_12",
+      "asset": "SC_R_HorizonSaddle27",
+      "p": [
+        -185.47,
+        -8,
+        -296.82
+      ],
+      "scale": [
+        0.91,
+        0.96,
+        0.86
+      ],
+      "yaw": -148.0,
+      "section": "DistantIslandRidge27_12",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_13",
+      "asset": "SC_R_HorizonBroken27",
+      "p": [
+        -62.34,
+        -8,
+        -353.55
+      ],
+      "scale": [
+        0.965,
+        1.015,
+        0.96
+      ],
+      "yaw": -170.0,
+      "section": "DistantIslandRidge27_13",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_14",
+      "asset": "SC_R_HorizonTeeth27",
+      "p": [
+        115.17,
+        -8,
+        -429.84
+      ],
+      "scale": [
+        1.02,
+        1.07,
+        1.06
+      ],
+      "yaw": -195.0,
+      "section": "DistantIslandRidge27_14",
+      "row": "back"
+    },
+    {
+      "name": "HorizonRidge27_15",
+      "asset": "SC_R_HorizonBroken27",
+      "p": [
+        176.99,
+        -8,
+        -332.87
+      ],
+      "scale": [
+        1.075,
+        0.85,
+        0.86
+      ],
+      "yaw": -208.0,
+      "section": "DistantIslandRidge27_15",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_16",
+      "asset": "SC_R_HorizonTeeth27",
+      "p": [
+        268.12,
+        -8,
+        -224.98
+      ],
+      "scale": [
+        0.91,
+        0.905,
+        0.96
+      ],
+      "yaw": -230.0,
+      "section": "DistantIslandRidge27_16",
+      "row": "front"
+    },
+    {
+      "name": "HorizonRidge27_17",
+      "asset": "SC_R_HorizonSaddle27",
+      "p": [
+        429.84,
+        -8,
+        -115.17
+      ],
+      "scale": [
+        0.965,
+        0.96,
+        1.06
+      ],
+      "yaw": -255.0,
+      "section": "DistantIslandRidge27_17",
+      "row": "back"
+    }
+  ]
+}

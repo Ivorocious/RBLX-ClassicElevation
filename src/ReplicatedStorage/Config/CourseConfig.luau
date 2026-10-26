@@ -5,15 +5,14 @@ local CourseConfig = {}
 CourseConfig.CourseLibraryName = "CourseLibrary"
 CourseConfig.CourseArchiveName = "CourseArchive"
 CourseConfig.ActiveCourseModelName = "RaceCourse"
-CourseConfig.ActiveCourseId = "classic_ascent_point_to_point"
+CourseConfig.ManualEditingAttribute = "ManualEditing"
+CourseConfig.ActiveCourseId = "city_run"
 CourseConfig.SelectionMode = "Fixed"
 CourseConfig.RuntimeActiveCourseAttribute = "RuntimeActiveCourse"
 CourseConfig.SourceCourseIdAttribute = "SourceCourseId"
 CourseConfig.CourseInfoName = "CourseInfo"
 CourseConfig.TemplateCourseName = "CourseTemplate"
-CourseConfig.ClassicPointToPointCourseName = "Course_ClassicPointToPoint"
-CourseConfig.ClassicCircuitCourseName = "Course_ClassicCircuit"
-CourseConfig.ClassicCircuitCourseId = "classic_circuit"
+CourseConfig.RetiredCourseIds = {classic_circuit = true, classic_point_to_point = true, classic_ascent_point_to_point = true}
 
 CourseConfig.RequiredChildNames = {
 	CourseInfo = "CourseInfo",
@@ -41,14 +40,14 @@ CourseConfig.CourseInfoAttributes = {
 }
 
 CourseConfig.DefaultCourseInfo = {
-	CourseId = "classic_point_to_point",
-	DisplayName = "Classic Point-to-Point",
+	CourseId = "unavailable",
+	DisplayName = "Course preparing",
 	RaceFormat = "PointToPoint",
 	LapCount = 1,
-	Enabled = true,
-	Difficulty = "MVP",
-	TargetNewPlayerTime = 180,
-	TargetPracticedTime = 90,
+	Enabled = false,
+	Difficulty = "Unknown",
+	TargetNewPlayerTime = nil,
+	TargetPracticedTime = nil,
 	CheckpointCount = nil,
 }
 

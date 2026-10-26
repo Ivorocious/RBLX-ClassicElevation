@@ -1,0 +1,275 @@
+{
+  "build": "SC_KIT_04",
+  "method": "Blender FBX re-import, evaluated meshes, loop triangulation",
+  "meshes": [
+    {
+      "id": "SC_BoardingRamp",
+      "triangles": 12,
+      "materials": 1,
+      "vertices": 8,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_BrokenDeck",
+      "triangles": 24,
+      "materials": 1,
+      "vertices": 16,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_BrokenSpar",
+      "triangles": 24,
+      "materials": 1,
+      "vertices": 16,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_Cannon",
+      "triangles": 244,
+      "materials": 1,
+      "vertices": 168,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_CannonCover",
+      "triangles": 36,
+      "materials": 1,
+      "vertices": 24,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_Cannonball",
+      "triangles": 76,
+      "materials": 1,
+      "vertices": 40,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_CargoBarrel",
+      "triangles": 92,
+      "materials": 1,
+      "vertices": 64,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_CargoCrate",
+      "triangles": 72,
+      "materials": 1,
+      "vertices": 48,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_CavePortal",
+      "triangles": 44,
+      "materials": 1,
+      "vertices": 24,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_CaveRoof",
+      "triangles": 36,
+      "materials": 1,
+      "vertices": 20,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_CaveWall",
+      "triangles": 20,
+      "materials": 1,
+      "vertices": 12,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_CliffMass",
+      "triangles": 32,
+      "materials": 1,
+      "vertices": 18,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_CliffShoulder",
+      "triangles": 32,
+      "materials": 1,
+      "vertices": 18,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_CoveWater",
+      "triangles": 12,
+      "materials": 1,
+      "vertices": 8,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_DangerStripe",
+      "triangles": 12,
+      "materials": 1,
+      "vertices": 8,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_DockDeck",
+      "triangles": 48,
+      "materials": 1,
+      "vertices": 32,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_DockPost",
+      "triangles": 12,
+      "materials": 1,
+      "vertices": 8,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_DockRefuge",
+      "triangles": 48,
+      "materials": 1,
+      "vertices": 32,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_FoamRibbon",
+      "triangles": 28,
+      "materials": 1,
+      "vertices": 16,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_GroundingRock",
+      "triangles": 32,
+      "materials": 1,
+      "vertices": 18,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_HarborGate",
+      "triangles": 48,
+      "materials": 1,
+      "vertices": 32,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_HullBow",
+      "triangles": 84,
+      "materials": 1,
+      "vertices": 56,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_HullSide",
+      "triangles": 36,
+      "materials": 1,
+      "vertices": 24,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_LocalSurge",
+      "triangles": 12,
+      "materials": 1,
+      "vertices": 8,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_MastYard",
+      "triangles": 24,
+      "materials": 1,
+      "vertices": 16,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_MuzzleCue",
+      "triangles": 12,
+      "materials": 1,
+      "vertices": 8,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_Palm",
+      "triangles": 66,
+      "materials": 1,
+      "vertices": 49,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_PlayableRib",
+      "triangles": 48,
+      "materials": 1,
+      "vertices": 32,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_RefugeShelf",
+      "triangles": 32,
+      "materials": 1,
+      "vertices": 18,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_RockLedge",
+      "triangles": 32,
+      "materials": 1,
+      "vertices": 18,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_ShipDeck",
+      "triangles": 48,
+      "materials": 1,
+      "vertices": 32,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_SternTransom",
+      "triangles": 36,
+      "materials": 1,
+      "vertices": 22,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_SurgeCrossing",
+      "triangles": 12,
+      "materials": 1,
+      "vertices": 8,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_TimberBeam",
+      "triangles": 12,
+      "materials": 1,
+      "vertices": 8,
+      "modifiers": 0
+    },
+    {
+      "id": "SC_TornSail",
+      "triangles": 40,
+      "materials": 1,
+      "vertices": 22,
+      "modifiers": 0
+    }
+  ],
+  "uniqueTriangles": 1478,
+  "estimatedPlacedTriangles": 10176,
+  "files": {
+    "ShipwreckCove_Kit04.fbx": {
+      "bytes": 123500,
+      "sha256": "7de612fc6d45713226825aa8c2813440e3295fae4b0ea8aa01d5975944aa014c"
+    },
+    "ShipwreckCove_Kit04.blend": {
+      "bytes": 117056,
+      "sha256": "c0e3a47898381e25034e55436c2e976d35a1d91664068331dfd9c15d824068cc"
+    },
+    "manifest.json": {
+      "bytes": 21839,
+      "sha256": "7ca943ed62b99344a07f3d3add15f372c33149dc8edfb4a04c7bbffd252a1013"
+    },
+    "studies.json": {
+      "bytes": 23604,
+      "sha256": "2225a26e09b57bca39302b17490b84c7d4dac1240daf1116d984450ae54e0320"
+    },
+    "palette.png": {
+      "bytes": 548,
+      "sha256": "26043f93c5a4a00dc45859b5dc03e0b957f582601ed266e5705c669b774f83f4"
+    }
+  }
+}

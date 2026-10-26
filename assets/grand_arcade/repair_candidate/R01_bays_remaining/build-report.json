@@ -1,0 +1,36 @@
+{
+  "state": "remaining_bays_ready_for_native_import",
+  "bayIndices": [
+    1,
+    2,
+    4,
+    5
+  ],
+  "meshes": 28,
+  "triangles": 9152,
+  "closedOutwardComponents": 140,
+  "preservedComponents": 88,
+  "elapsedSeconds": 0.81,
+  "files": {
+    "bay-manifest.json": {
+      "bytes": 226821,
+      "sha256": "1a5d68c01251dce729f7fce9b5658be28e22ee375c25744f7a1177e45d095b14"
+    },
+    "fbx-validation.json": {
+      "bytes": 25874,
+      "sha256": "b9156299e733b6ee59adae43166763b9852b0a18cbaf3461cb80ba9d9a6cf3e7"
+    },
+    "future-source-validation.json": {
+      "bytes": 4086,
+      "sha256": "657f0fdf86b5e4a0130b0e835f4e4e5a5baefcd26ca760345d3cf8fa2e912d0c"
+    },
+    "GrandArcade_R01_BaysRemaining.blend": {
+      "bytes": 333151,
+      "sha256": "97caece8c004d7f7c95263c07fb63d5c101018173f73940802d2c3037be64ce1"
+    },
+    "GrandArcade_R01_BaysRemaining.fbx": {
+      "bytes": 217260,
+      "sha256": "670cfa85b8fd8c86e1a3f99c48c3ee9e5ef901a5bfc8fbb98d138c41758e70dd"
+    }
+  }
+}

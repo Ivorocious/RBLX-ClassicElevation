@@ -1,0 +1,104 @@
+--- src/ServerStorage/CourseBuilders/MoonlitCitadelCourse/EnvironmentPlan.luau
++++ src/ServerStorage/CourseBuilders/MoonlitCitadelCourse/EnvironmentPlan.luau
+@@ -1,6 +1,7 @@
+ --!nonstrict
+ local Geometry=require(script.Parent.EnclosureGeometry)
+ local Woods=require(script.Parent.WoodlandPlacements)
++local Depth=require(script.Parent.DepthPlan)
+ local Environment={
+ 	LibraryName="MoonlitCitadel_Enclosure_ER01Library",Limits={units=90,meshParts=230,triangles=90000}}
+ local v=Vector3.new
+@@ -57,15 +58,15 @@
+ function Environment.Get(layout,architectureMounts,architectureBodies,options)
+ 	options=options or {}
+ 	local plan,names={},{}
+-	local counts={units=0,meshParts=0,triangles=0,lamps={},maxNewLights=0,groundBaseY=-130,
++	local counts={units=0,meshParts=0,triangles=0,lamps={},maxNewLights=0,groundBaseY=-700,
+ 		groundedPockets={},omittedPlanting={},plantingMountsMissing=architectureMounts==nil,
+ 		proposalRows={},terrainSolids={},groves={},mounds={},artCanCollide=false,artCanQuery=false,artCanTouch=false,
+-		site={low=v(-390,-130,-355),high=v(390,327.263136,350)},profilePreserved=true,retirePreviousLandscape=true}
++		site={low=v(-390,-700,-355),high=v(390,327.263136,350)},profilePreserved=true,retirePreviousLandscape=true}
+ 	local function add(district,name,asset,cf,scale,role)
+ 		assert(not names[name],"Duplicate enclosure edit unit");names[name]=true
+ 		scale=scale or Vector3.one
+-		local meta=assert(Geometry[asset] or Existing[asset],"Missing measured landscape geometry")
+-		local library=if Geometry[asset] then "ER01" elseif asset=="MC_P3_PlantPocket" or asset=="MC_P3_Rework_FernCluster" then "P3" else "TL01"
++		local meta=assert(Geometry[asset] or Existing[asset] or Depth.AssetGeometry[asset],"Missing measured landscape geometry")
++		local library=if Depth.AssetGeometry[asset] then "DP01" elseif Geometry[asset] then "ER01" elseif asset=="MC_P3_PlantPocket" or asset=="MC_P3_Rework_FernCluster" then "P3" else "TL01"
+ 		table.insert(plan,{district=district,name=name,asset=asset,localCF=cf,scale=scale,library=library,materialRole=role or "WoodedFortressLandscape"})
+ 		counts.units+=1;counts.meshParts+=meta.parts;counts.triangles+=meta.triangles
+ 		for index,solid in meta.occupied or {{low=meta.center-meta.size/2,high=meta.center+meta.size/2}} do
+@@ -77,7 +78,8 @@
+ 		if meta.xs then table.insert(counts.terrainSolids,{name=name,asset=asset,baseY=-130,trianglePrisms=meta.occupied}) end
+ 	end
+ 	for _,asset in {"MC_EC_InnerRavine","MC_EC_WestWoodedCliff","MC_EC_EastPanoramaSlope","MC_EC_NorthHighRidge","MC_EC_SouthValleyRidge"} do
+-		add("JoinedRavineRidges",asset,asset,CFrame.identity,Vector3.one,"RidgeRockSoilGrass")
++		local visual=if asset==Depth.OriginalAsset then Depth.Asset else asset
++		add("JoinedRavineRidges",asset,visual,CFrame.identity,Vector3.one,"RidgeRockSoilGrass")
+ 	end
+ 	for _,wood in Woods do
+ 		local cf=frame(wood.point,wood.yaw)
+@@ -100,6 +102,7 @@
+ 		table.insert(counts.groundedPockets,{name=mount.name,frame=mount.frame,supportName=mount.supportName})
+ 	end
+ 	counts.foundationBeds=Geometry.MC_EC_InnerRavine
++	counts.depthChasm={asset=Depth.Asset,retainedSupportTopTriangles=Depth.RetainedOriginalTopTriangles,removedBedTriangles=Depth.RemovedUnsupportedBedTriangles,fallYLocalUnchanged=-23}
+ 	counts.terrainPalette={Rock={100,112,116},RockA={100,112,116},RockB={100,112,116},Earth={100,86,68},Grass={91,119,75}}
+ 	counts.clearance="Per-triangle column boxes plus exact top triangles; nearby banks must pass accepted route, camera and mechanism screens"
+ 	if options.clearance and options.config then counts.clearanceReport=options.clearance.CheckParts(counts.proposalRows,options.clearance.Prepare(layout,options.config)) end
+@@ -107,7 +110,8 @@
+ 	return plan,counts
+ end
+ 
+-Environment.AssetGeometry=Geometry
++Environment.AssetGeometry=table.clone(Geometry)
++for asset,meta in Depth.AssetGeometry do Environment.AssetGeometry[asset]=meta end
+ local function placeTemplate(folder, library, asset, name, cf, scale)
+ 	local source = assert(library:FindFirstChild(asset), "Import verified new art " .. asset)
+ 	local model = source:Clone()
+--- src/ServerStorage/CourseBuilders/MoonlitCitadelCourse/WorldAssembly.luau
++++ src/ServerStorage/CourseBuilders/MoonlitCitadelCourse/WorldAssembly.luau
+@@ -1,6 +1,7 @@
+ --!nonstrict
+ local WorldPlan = require(script.Parent.WorldPlan)
+ local Environment = require(script.Parent.EnvironmentPlan)
++local Depth = require(script.Parent.DepthPlan)
+ local MeshKit = require(script.Parent.Parent.MoonlitCitadel.MeshKit)
+ local Assembly = {}
+ 
+@@ -29,7 +30,8 @@
+ 			StoneDark = Color3.fromRGB(80,96,116), Slate = Color3.fromRGB(43,60,86)}
+ 		if grand[source] then part.Color = grand[source] end
+ 	end
+-	if source == "Rock" or source == "RockA" or source == "RockB" then part.Color, part.Material = Color3.fromRGB(100,112,116), Enum.Material.Rock
++	if data.library == "DP01" then part.Color,part.Material = assert(Depth.MaterialColors[source]),Enum.Material.Rock
++	elseif source == "Rock" or source == "RockA" or source == "RockB" then part.Color, part.Material = Color3.fromRGB(100,112,116), Enum.Material.Rock
+     elseif source == "Grass" then part.Color, part.Material = Color3.fromRGB(91,119,75), Enum.Material.Grass
+ 	elseif source == "Earth" then part.Material = Enum.Material.Ground
+ 	elseif source == "Rock" then part.Material = Enum.Material.Rock
+@@ -86,7 +88,7 @@
+ 	assert(not overrides or adjusted == 1, "The proved keep material part was not found exactly once")
+ 	model.WorldPivot = frame
+ 	model:SetAttribute("MCEditUnit", data.asset)
+-	model:SetAttribute("VisualSource", if data.library == "DT01" then "MC_P3_DETAIL_KIT_DT01" elseif data.library == "ER01" then "MC_P3_ENCLOSURE_REPAIR_ER01" elseif data.library == "TL01" then "MC_P3_TOWER_LANDSCAPE_TL01" elseif data.library == "AR01" then "MC_P3_ART_REPAIR_AR01" else "MC_P3_REWORK_KIT_RW01")
++	model:SetAttribute("VisualSource", if data.library == "DP01" then "MC_DEPTH_DP01" elseif data.library == "DT01" then "MC_P3_DETAIL_KIT_DT01" elseif data.library == "ER01" then "MC_P3_ENCLOSURE_REPAIR_ER01" elseif data.library == "TL01" then "MC_P3_TOWER_LANDSCAPE_TL01" elseif data.library == "AR01" then "MC_P3_ART_REPAIR_AR01" else "MC_P3_REWORK_KIT_RW01")
+ 	model.Parent = parent
+ 	return model
+ end
+@@ -97,7 +99,7 @@
+ 	local origin = course:GetAttribute("Origin")
+ 	assert(typeof(origin) == "Vector3", "Course Origin is missing")
+ 	local kits = game.ServerStorage.CourseAssetKits
+-	local libraries = {DT01 = kits.MoonlitCitadel_Detail_DT02Library, P3 = kits.MoonlitCitadel_P3Rework_RW01Library,
++	local libraries = {DP01 = kits.MoonlitCitadel_Depth_DP01Library, DT01 = kits.MoonlitCitadel_Detail_DT02Library, P3 = kits.MoonlitCitadel_P3Rework_RW01Library,
+ 		AR01 = kits.MoonlitCitadel_P3ArtRepair_AR01Library,
+ 		TL01 = kits.MoonlitCitadel_TowerLandscape_TL01Library,
+         ER01 = kits.MoonlitCitadel_Enclosure_ER01Library}
+@@ -106,6 +108,7 @@
+ 	assert(libraries.TL01:GetAttribute("TowerLandscapeImportVerified") == true)
+     assert(libraries.ER01:GetAttribute("EnclosureImportVerified") == true)
+     assert(libraries.ER01:GetAttribute("AxisVerified") == true, "Verify native vertices before assembly")
++    assert(libraries.DP01:GetAttribute("AxisVerified") == true, "Verify native chasm triangle surfaces before assembly")
+     assert(libraries.DT01:GetAttribute("AxisVerified") == true, "Verify the combined detail library before fresh assembly")
+ 	local plan, planned = WorldPlan.Get(layout, options)
+ 	local outer, outerPlanned = Environment.Get(layout, planned.plantingMounts, planned.assemblies)

@@ -1,0 +1,262 @@
+{
+  "build": "SC_KIT_25",
+  "assets": [
+    {
+      "id": "SC_R_CaveMouth25",
+      "family": "cave",
+      "triangles": 168,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        69.06974792480469,
+        53.0,
+        70.2629508972168
+      ],
+      "boundsBlender": {
+        "min": [
+          84.75970458984375,
+          -35.628814697265625,
+          -5.0
+        ],
+        "max": [
+          153.82945251464844,
+          34.63413619995117,
+          48.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Course-local curved shell, open ends; clear center corridor and high irregular roof.",
+      "centerBlender": [
+        119.2945785522461,
+        -0.49733924865722656,
+        21.5
+      ]
+    },
+    {
+      "id": "SC_R_CaveVault25",
+      "family": "cave",
+      "triangles": 112,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        68.60397338867188,
+        54.0,
+        61.31137275695801
+      ],
+      "boundsBlender": {
+        "min": [
+          86.00515747070312,
+          -81.14566040039062,
+          -5.0
+        ],
+        "max": [
+          154.609130859375,
+          -19.834287643432617,
+          49.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Course-local curved shell, open ends; clear center corridor and high irregular roof.",
+      "centerBlender": [
+        120.30714416503906,
+        -50.48997402191162,
+        22.0
+      ]
+    },
+    {
+      "id": "SC_R_CaveSurge25",
+      "family": "cave",
+      "triangles": 152,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 1,
+      "dimensionsRobloxXYZ": [
+        73.58219528198242,
+        51.0,
+        63.47731590270996
+      ],
+      "boundsBlender": {
+        "min": [
+          40.51838302612305,
+          -88.06979370117188,
+          -5.0
+        ],
+        "max": [
+          114.10057830810547,
+          -24.592477798461914,
+          46.0
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Course-local curved shell, open ends; clear center corridor and high irregular roof.",
+      "centerBlender": [
+        77.30948066711426,
+        -56.331135749816895,
+        20.5
+      ]
+    },
+    {
+      "id": "SC_R_NavalCannon25",
+      "family": "cannon",
+      "triangles": 544,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 4,
+      "dimensionsRobloxXYZ": [
+        8.650000095367432,
+        4.4341555424034595,
+        4.7099997997283936
+      ],
+      "boundsBlender": {
+        "min": [
+          -5.150000095367432,
+          -2.359999895095825,
+          0.05355970188975334
+        ],
+        "max": [
+          3.5,
+          2.3499999046325684,
+          4.487715244293213
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Local -X muzzle, center Z3.1; simple separate barrel carriage and wheels.",
+      "centerBlender": [
+        -0.8250000476837158,
+        -0.004999995231628418,
+        2.270637473091483
+      ]
+    },
+    {
+      "id": "SC_R_DockBrace25",
+      "family": "dock",
+      "triangles": 36,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 18,
+      "dimensionsRobloxXYZ": [
+        12.0,
+        8.753782391548157,
+        1.0
+      ],
+      "boundsBlender": {
+        "min": [
+          -6.0,
+          -0.5,
+          0.7462176084518433
+        ],
+        "max": [
+          6.0,
+          0.5,
+          9.5
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Top at Z9.5; scale height to meet deck underside.",
+      "centerBlender": [
+        0.0,
+        0.0,
+        5.123108804225922
+      ]
+    },
+    {
+      "id": "SC_R_Lantern25",
+      "family": "lamp",
+      "triangles": 96,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 6,
+      "dimensionsRobloxXYZ": [
+        1.399999976158142,
+        2.799999952316284,
+        1.399999976158142
+      ],
+      "boundsBlender": {
+        "min": [
+          -0.699999988079071,
+          -0.699999988079071,
+          0.0
+        ],
+        "max": [
+          0.699999988079071,
+          0.699999988079071,
+          2.799999952316284
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Bottom pivot, opaque amber center; one bounded warm light only on selected placements.",
+      "centerBlender": [
+        0.0,
+        0.0,
+        1.399999976158142
+      ]
+    },
+    {
+      "id": "SC_R_HangingVine25",
+      "family": "vegetation",
+      "triangles": 70,
+      "triangleCeiling": 1500,
+      "estimatedPlacements": 9,
+      "dimensionsRobloxXYZ": [
+        4.987177848815918,
+        4.73384952545166,
+        0.2796411067247391
+      ],
+      "boundsBlender": {
+        "min": [
+          -2.799999952316284,
+          -0.08982054889202118,
+          -4.199999809265137
+        ],
+        "max": [
+          2.187177896499634,
+          0.1898205578327179,
+          0.5338497161865234
+        ]
+      },
+      "localPivotBlender": [
+        0,
+        0,
+        0
+      ],
+      "mount": "ground",
+      "notes": "Root at origin, short five-leaf trail below root.",
+      "centerBlender": [
+        -0.3064110279083252,
+        0.05000000447034836,
+        -1.8330750465393066
+      ]
+    }
+  ],
+  "libraryTriangles": 1178,
+  "assetCeiling": 1500,
+  "kitCeiling": 5000,
+  "materialCount": 1,
+  "atlas": "palette.png"
+}

@@ -1,0 +1,428 @@
+{
+  "build": "SC_WATER_30",
+  "sourceBuild": "Shipwreck Cove revision 13 geometry with water presentation refresh",
+  "assetOrder": [
+    "SC_WaterPatch30",
+    "SC_WaterRipple30",
+    "SC_WaterFoam30",
+    "SC_Headland30"
+  ],
+  "modelRoot": "SC_R_Water30ModelRoot",
+  "localRootBlenderXYZ": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "assets": [
+    {
+      "id": "SC_WaterPatch30",
+      "family": "water",
+      "role": "shallow_water_patch",
+      "sourceFile": "SC_WaterPatch30.fbx",
+      "triangles": 270,
+      "vertices": 151,
+      "faces": 150,
+      "smoothFaceCount": 150,
+      "dimensionsRobloxXYZ": [
+        101.06306838989258,
+        0.039284431375563145,
+        100.44761657714844
+      ],
+      "boundsBlender": {
+        "min": [
+          -49.26969528198242,
+          -51.34703063964844,
+          0.004644243977963924
+        ],
+        "max": [
+          51.793373107910156,
+          49.1005859375,
+          0.04392867535352707
+        ]
+      },
+      "centerBlender": [
+        1.2618389129638672,
+        -1.1232223510742188,
+        0.024286459665745497
+      ],
+      "centerRobloxXYZ": [
+        1.2618389129638672,
+        0.024286459665745497,
+        1.1232223510742188
+      ],
+      "localPivotBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objectLocationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "studioTint": "#287F84",
+      "material": "SC_WaterPatch30Material",
+      "usesAtlasTexture": false,
+      "notes": "Broad, softly irregular, shallow water surface with gentle fixed undulation.",
+      "assetId": "138055304084754",
+      "uploadState": "complete",
+      "uploadReceipt": "upload-receipt30-water-patch.json"
+    },
+    {
+      "id": "SC_WaterRipple30",
+      "family": "foam",
+      "role": "ocean_ripple_ribbon",
+      "sourceFile": "SC_WaterRipple30.fbx",
+      "triangles": 192,
+      "vertices": 125,
+      "faces": 96,
+      "smoothFaceCount": 96,
+      "dimensionsRobloxXYZ": [
+        16.004796028137207,
+        0.03494690218940377,
+        1.1921766102313995
+      ],
+      "boundsBlender": {
+        "min": [
+          -8.003080368041992,
+          -0.09869101643562317,
+          0.006154851522296667
+        ],
+        "max": [
+          8.001715660095215,
+          1.0934855937957764,
+          0.04110175371170044
+        ]
+      },
+      "centerBlender": [
+        -0.0006823539733886719,
+        0.4973972886800766,
+        0.023628302616998553
+      ],
+      "centerRobloxXYZ": [
+        -0.0006823539733886719,
+        0.023628302616998553,
+        -0.4973972886800766
+      ],
+      "localPivotBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objectLocationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "studioTint": "#55B9B0",
+      "material": "SC_WaterRipple30Material",
+      "usesAtlasTexture": false,
+      "notes": "Long, low, curved and tapered aqua ripple ribbon.",
+      "assetId": "70457218272501",
+      "uploadState": "complete",
+      "uploadReceipt": "upload-receipt30-water-ripple.json"
+    },
+    {
+      "id": "SC_WaterFoam30",
+      "family": "foam",
+      "role": "broken_curl_foam",
+      "sourceFile": "SC_WaterFoam30.fbx",
+      "triangles": 216,
+      "vertices": 150,
+      "faces": 108,
+      "smoothFaceCount": 108,
+      "dimensionsRobloxXYZ": [
+        7.77108359336853,
+        0.016863267868757248,
+        1.5638979077339172
+      ],
+      "boundsBlender": {
+        "min": [
+          -3.906250238418579,
+          -0.2776886820793152,
+          0.03700000047683716
+        ],
+        "max": [
+          3.864833354949951,
+          1.286209225654602,
+          0.053863268345594406
+        ]
+      },
+      "centerBlender": [
+        -0.020708441734313965,
+        0.5042602717876434,
+        0.04543163441121578
+      ],
+      "centerRobloxXYZ": [
+        -0.020708441734313965,
+        0.04543163441121578,
+        -0.5042602717876434
+      ],
+      "localPivotBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objectLocationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "studioTint": "#D9EEE5",
+      "material": "SC_WaterFoam30Material",
+      "usesAtlasTexture": false,
+      "notes": "Three small, separated foam curls that sit near one edge of the ripple.",
+      "assetId": "100869318192143",
+      "uploadState": "complete",
+      "uploadReceipt": "upload-receipt30-water-foam.json"
+    },
+    {
+      "id": "SC_Headland30",
+      "family": "cliff",
+      "role": "continuous_headland_wall",
+      "sourceFile": "SC_Headland30.fbx",
+      "triangles": 332,
+      "vertices": 168,
+      "faces": 162,
+      "smoothFaceCount": 0,
+      "dimensionsRobloxXYZ": [
+        138.60719299316406,
+        71.75252532958984,
+        129.00818252563477
+      ],
+      "boundsBlender": {
+        "min": [
+          19.165664672851562,
+          31.797481536865234,
+          -6.0
+        ],
+        "max": [
+          157.77285766601562,
+          160.8056640625,
+          65.75252532958984
+        ]
+      },
+      "centerBlender": [
+        88.4692611694336,
+        96.30157279968262,
+        29.876262664794922
+      ],
+      "centerRobloxXYZ": [
+        88.4692611694336,
+        29.876262664794922,
+        -96.30157279968262
+      ],
+      "localPivotBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objectLocationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "studioTint": null,
+      "material": "SC_RevisionOpaquePalette",
+      "usesAtlasTexture": true,
+      "notes": "SC revision 13 headland wall with its detached low support shelves removed and the front edge set back.",
+      "headlandCleanup": {
+        "source": "SC_R_HeadlandRidge from ShipwreckCove_Revision13.blend",
+        "sourceConnectedComponents": 10,
+        "keptMainComponentVertices": 168,
+        "keptMainComponentFaces": 162,
+        "removedDetachedSupportComponents": 9,
+        "frontProfileBandsShiftedOutwardStuds": 7.0,
+        "frontProfileBandsPerStation": [
+          0,
+          1
+        ],
+        "atlasImage": "palette.png",
+        "uvLayer": "UVMap"
+      },
+      "atlasUVAudit": {
+        "facesChecked": 162,
+        "allFacesStayWithinOnePaletteTile": true
+      },
+      "assetId": "116611667229959",
+      "uploadState": "complete",
+      "uploadReceipt": "upload-receipt30-headland.json"
+    }
+  ],
+  "libraryTriangles": 1010,
+  "triangleRangePerWaterAsset": [
+    100,
+    300
+  ],
+  "materialCount": 4,
+  "waterMaterialsUseTextures": false,
+  "export": {
+    "unitScaleApplied": true,
+    "axisForward": "-Z",
+    "axisUp": "Y",
+    "sourceToRoblox": "Roblox XYZ = Blender XZY with Roblox Z = -Blender Y",
+    "oneEditableMeshPerFBX": true,
+    "surfaceOnly": true,
+    "waterFacesSmoothShaded": true,
+    "recommendation": "Set imported MeshParts CanCollide, CanTouch, and CanQuery to false."
+  },
+  "runtime": {
+    "bob": "Animate the placed model with a small eased Roblox Y translation; no animation is baked into the meshes.",
+    "meshRelief": "The shallow patch stays within a 0.04-stud vertical envelope; the user controller can add its own eased Y bob.",
+    "foam": "The three foam fragments are islands in their own editable mesh and may be shown or hidden independently.",
+    "headland": "The continuous original cliff wall remains one editable connected component without support shelves."
+  },
+  "fbxReimportVerification": {
+    "SC_WaterPatch30": {
+      "fbxReimportPassed": true,
+      "triangles": 270,
+      "materials": 1,
+      "uvLayers": 1,
+      "smoothFaceCount": 150,
+      "usesAtlasTexture": false,
+      "atlasUVAudit": null,
+      "dimensionsBlender": [
+        101.06306,
+        100.44762,
+        0.03928
+      ],
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "SC_WaterRipple30": {
+      "fbxReimportPassed": true,
+      "triangles": 192,
+      "materials": 1,
+      "uvLayers": 1,
+      "smoothFaceCount": 96,
+      "usesAtlasTexture": false,
+      "atlasUVAudit": null,
+      "dimensionsBlender": [
+        16.0048,
+        1.19218,
+        0.03495
+      ],
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "SC_WaterFoam30": {
+      "fbxReimportPassed": true,
+      "triangles": 216,
+      "materials": 1,
+      "uvLayers": 1,
+      "smoothFaceCount": 108,
+      "usesAtlasTexture": false,
+      "atlasUVAudit": null,
+      "dimensionsBlender": [
+        7.77108,
+        1.5639,
+        0.01686
+      ],
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "SC_Headland30": {
+      "fbxReimportPassed": true,
+      "triangles": 332,
+      "materials": 1,
+      "uvLayers": 1,
+      "smoothFaceCount": 0,
+      "usesAtlasTexture": true,
+      "atlasUVAudit": {
+        "facesChecked": 162,
+        "allFacesStayWithinOnePaletteTile": true
+      },
+      "dimensionsBlender": [
+        138.60719,
+        129.00818,
+        71.75253
+      ],
+      "locationBlender": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "files": {
+    "build_water30.py": {
+      "bytes": 22879,
+      "sha256": "454d8e6b43abccb5954342cd19f6057a66581858493f1522404cee8400097eb4"
+    },
+    "ShipwreckCove_Water30.blend": {
+      "bytes": 114389,
+      "sha256": "70bb114cdadc66dae710044333fc443e07becfb902128490cf5268bebdd928d6"
+    },
+    "SC_WaterPatch30.fbx": {
+      "bytes": 22780,
+      "sha256": "3669105ad287d955e21d9b41459e551659c9689e4bf21b978b587f5999a99aa4"
+    },
+    "SC_WaterRipple30.fbx": {
+      "bytes": 21404,
+      "sha256": "1766826e00ea04ab76e9faecae538578750c1a054718651c4f0acf4ef9b37b25"
+    },
+    "SC_WaterFoam30.fbx": {
+      "bytes": 22172,
+      "sha256": "d7b58811c5b0174d6bfa044a37c5bcbb69eb6a440c02c9acb136710dc16ae9d2"
+    },
+    "SC_Headland30.fbx": {
+      "bytes": 27052,
+      "sha256": "7f91eef49c1ae764b4461ff36922932b92f316e4bf9f10baf94973235019c24f"
+    },
+    "upload-receipt30-water-patch.json": {
+      "bytes": 490,
+      "sha256": "de2472d60ab1c71aa8dbe0f1ae8dfa38866379ec63b62a1407bff0bdd95b6dd8"
+    },
+    "upload-receipt30-water-ripple.json": {
+      "bytes": 490,
+      "sha256": "0a5948dec318c8a52b87470e6ef1d38356b353db85f79e2998f3680be6eebf34"
+    },
+    "upload-receipt30-water-foam.json": {
+      "bytes": 489,
+      "sha256": "2de1b90861abf7ee3fe5d6ed771db807dd84289943ea8962e5d037ca6e004bde"
+    },
+    "upload-receipt30-headland.json": {
+      "bytes": 488,
+      "sha256": "8542e0e10af0336bda5840723f3cfa28fa91cfd10a565c8aecb2a51417eb0802"
+    }
+  },
+  "uploads": [
+    {
+      "id": "SC_WaterPatch30",
+      "family": "water",
+      "assetId": "138055304084754",
+      "state": "complete",
+      "receipt": "upload-receipt30-water-patch.json"
+    },
+    {
+      "id": "SC_WaterRipple30",
+      "family": "foam",
+      "assetId": "70457218272501",
+      "state": "complete",
+      "receipt": "upload-receipt30-water-ripple.json"
+    },
+    {
+      "id": "SC_WaterFoam30",
+      "family": "foam",
+      "assetId": "100869318192143",
+      "state": "complete",
+      "receipt": "upload-receipt30-water-foam.json"
+    },
+    {
+      "id": "SC_Headland30",
+      "family": "cliff",
+      "assetId": "116611667229959",
+      "state": "complete",
+      "receipt": "upload-receipt30-headland.json"
+    }
+  ]
+}

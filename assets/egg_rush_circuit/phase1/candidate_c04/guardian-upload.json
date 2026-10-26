@@ -1,0 +1,16 @@
+{
+  "sha256": "af1a4485a2d3be983eae8d1da9e51ea22a1dcefccc9a824448950fc6cc558617",
+  "request": {
+    "assetType": "Model",
+    "displayName": "ER_P1_C04_Guardian",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/502c3dde-43f6-4f56-8481-9b1e9ce36029",
+  "assetId": "130515492086337"
+}

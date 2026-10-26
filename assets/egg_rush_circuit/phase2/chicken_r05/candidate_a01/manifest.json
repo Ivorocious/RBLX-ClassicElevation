@@ -1,0 +1,4720 @@
+{
+  "build": "ER_CHICKEN_R05_A01",
+  "templates": {
+    "Body": {
+      "partCount": 25,
+      "lethalPartCount": 0,
+      "boundsRoblox": [
+        [
+          -29.00259,
+          2.0,
+          -17.8
+        ],
+        [
+          15.0,
+          35.5835,
+          17.8
+        ]
+      ],
+      "parts": [
+        {
+          "name": "PearCore",
+          "primitive": "Block",
+          "size": [
+            25.0,
+            18.0,
+            28.0
+          ],
+          "position": [
+            -5.0,
+            16.0,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 12600.0,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -12.5,
+              -9.0,
+              14.0
+            ],
+            [
+              12.5,
+              -9.0,
+              14.0
+            ],
+            [
+              12.5,
+              -9.0,
+              -14.0
+            ],
+            [
+              -12.5,
+              -9.0,
+              -14.0
+            ],
+            [
+              -12.5,
+              9.0,
+              14.0
+            ],
+            [
+              12.5,
+              9.0,
+              14.0
+            ],
+            [
+              12.5,
+              9.0,
+              -14.0
+            ],
+            [
+              -12.5,
+              9.0,
+              -14.0
+            ]
+          ]
+        },
+        {
+          "name": "PearMiddle",
+          "primitive": "Block",
+          "size": [
+            31.0,
+            14.0,
+            30.0
+          ],
+          "position": [
+            -5.0,
+            16.0,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 13020.0,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -15.5,
+              -7.0,
+              15.0
+            ],
+            [
+              15.5,
+              -7.0,
+              15.0
+            ],
+            [
+              15.5,
+              -7.0,
+              -15.0
+            ],
+            [
+              -15.5,
+              -7.0,
+              -15.0
+            ],
+            [
+              -15.5,
+              7.0,
+              15.0
+            ],
+            [
+              15.5,
+              7.0,
+              15.0
+            ],
+            [
+              15.5,
+              7.0,
+              -15.0
+            ],
+            [
+              -15.5,
+              7.0,
+              -15.0
+            ]
+          ]
+        },
+        {
+          "name": "ShoulderRound",
+          "primitive": "Block",
+          "size": [
+            25.0,
+            11.0,
+            26.0
+          ],
+          "position": [
+            -5.0,
+            25.0,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 7150.0,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -12.5,
+              -5.5,
+              13.0
+            ],
+            [
+              12.5,
+              -5.5,
+              13.0
+            ],
+            [
+              12.5,
+              -5.5,
+              -13.0
+            ],
+            [
+              -12.5,
+              -5.5,
+              -13.0
+            ],
+            [
+              -12.5,
+              5.5,
+              13.0
+            ],
+            [
+              12.5,
+              5.5,
+              13.0
+            ],
+            [
+              12.5,
+              5.5,
+              -13.0
+            ],
+            [
+              -12.5,
+              5.5,
+              -13.0
+            ]
+          ]
+        },
+        {
+          "name": "RoundRump",
+          "primitive": "Block",
+          "size": [
+            13.0,
+            16.0,
+            23.0
+          ],
+          "position": [
+            -19.0,
+            16.0,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 4784.0,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -6.5,
+              -8.0,
+              11.5
+            ],
+            [
+              6.5,
+              -8.0,
+              11.5
+            ],
+            [
+              6.5,
+              -8.0,
+              -11.5
+            ],
+            [
+              -6.5,
+              -8.0,
+              -11.5
+            ],
+            [
+              -6.5,
+              8.0,
+              11.5
+            ],
+            [
+              6.5,
+              8.0,
+              11.5
+            ],
+            [
+              6.5,
+              8.0,
+              -11.5
+            ],
+            [
+              -6.5,
+              8.0,
+              -11.5
+            ]
+          ]
+        },
+        {
+          "name": "TuckedBelly",
+          "primitive": "Block",
+          "size": [
+            20.0,
+            10.0,
+            22.0
+          ],
+          "position": [
+            -4.0,
+            7.0,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 4400.0,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -10.0,
+              -5.0,
+              11.0
+            ],
+            [
+              10.0,
+              -5.0,
+              11.0
+            ],
+            [
+              10.0,
+              -5.0,
+              -11.0
+            ],
+            [
+              -10.0,
+              -5.0,
+              -11.0
+            ],
+            [
+              -10.0,
+              5.0,
+              11.0
+            ],
+            [
+              10.0,
+              5.0,
+              11.0
+            ],
+            [
+              10.0,
+              5.0,
+              -11.0
+            ],
+            [
+              -10.0,
+              5.0,
+              -11.0
+            ]
+          ]
+        },
+        {
+          "name": "LowerBreast",
+          "primitive": "Block",
+          "size": [
+            9.0,
+            14.0,
+            22.0
+          ],
+          "position": [
+            7.5,
+            17.0,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 2772.0,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -4.5,
+              -7.0,
+              11.0
+            ],
+            [
+              4.5,
+              -7.0,
+              11.0
+            ],
+            [
+              4.5,
+              -7.0,
+              -11.0
+            ],
+            [
+              -4.5,
+              -7.0,
+              -11.0
+            ],
+            [
+              -4.5,
+              7.0,
+              11.0
+            ],
+            [
+              4.5,
+              7.0,
+              11.0
+            ],
+            [
+              4.5,
+              7.0,
+              -11.0
+            ],
+            [
+              -4.5,
+              7.0,
+              -11.0
+            ]
+          ]
+        },
+        {
+          "name": "UpperBreast",
+          "primitive": "Block",
+          "size": [
+            10.0,
+            9.0,
+            23.0
+          ],
+          "position": [
+            10.0,
+            29.5,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 2070.0,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -5.0,
+              -4.5,
+              11.5
+            ],
+            [
+              5.0,
+              -4.5,
+              11.5
+            ],
+            [
+              5.0,
+              -4.5,
+              -11.5
+            ],
+            [
+              -5.0,
+              -4.5,
+              -11.5
+            ],
+            [
+              -5.0,
+              4.5,
+              11.5
+            ],
+            [
+              5.0,
+              4.5,
+              11.5
+            ],
+            [
+              5.0,
+              4.5,
+              -11.5
+            ],
+            [
+              -5.0,
+              4.5,
+              -11.5
+            ]
+          ]
+        },
+        {
+          "name": "BreastBib",
+          "primitive": "Block",
+          "size": [
+            8.0,
+            9.0,
+            24.0
+          ],
+          "position": [
+            8.0,
+            24.5,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 1728.0,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -4.0,
+              -4.5,
+              12.0
+            ],
+            [
+              4.0,
+              -4.5,
+              12.0
+            ],
+            [
+              4.0,
+              -4.5,
+              -12.0
+            ],
+            [
+              -4.0,
+              -4.5,
+              -12.0
+            ],
+            [
+              -4.0,
+              4.5,
+              12.0
+            ],
+            [
+              4.0,
+              4.5,
+              12.0
+            ],
+            [
+              4.0,
+              4.5,
+              -12.0
+            ],
+            [
+              -4.0,
+              4.5,
+              -12.0
+            ]
+          ]
+        },
+        {
+          "name": "ShoulderFeather-1",
+          "primitive": "Block",
+          "size": [
+            5.8,
+            6.0,
+            9.0
+          ],
+          "position": [
+            11.5,
+            30.0,
+            -6.5
+          ],
+          "rotationMatrix": [
+            0.99619,
+            0.08716,
+            0,
+            -0.08716,
+            0.99619,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            -5.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 313.20001,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -2.9,
+              -3.0,
+              4.5
+            ],
+            [
+              2.9,
+              -3.0,
+              4.5
+            ],
+            [
+              2.9,
+              -3.0,
+              -4.5
+            ],
+            [
+              -2.9,
+              -3.0,
+              -4.5
+            ],
+            [
+              -2.9,
+              3.0,
+              4.5
+            ],
+            [
+              2.9,
+              3.0,
+              4.5
+            ],
+            [
+              2.9,
+              3.0,
+              -4.5
+            ],
+            [
+              -2.9,
+              3.0,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "name": "WingCape-1",
+          "primitive": "Block",
+          "size": [
+            18.0,
+            7.0,
+            2.4
+          ],
+          "position": [
+            -3.5,
+            22.0,
+            -14.7
+          ],
+          "rotationMatrix": [
+            0.99027,
+            -0.13917,
+            0,
+            0.13917,
+            0.99027,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            8.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 302.400012,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -9.0,
+              -3.5,
+              1.2
+            ],
+            [
+              9.0,
+              -3.5,
+              1.2
+            ],
+            [
+              9.0,
+              -3.5,
+              -1.2
+            ],
+            [
+              -9.0,
+              -3.5,
+              -1.2
+            ],
+            [
+              -9.0,
+              3.5,
+              1.2
+            ],
+            [
+              9.0,
+              3.5,
+              1.2
+            ],
+            [
+              9.0,
+              3.5,
+              -1.2
+            ],
+            [
+              -9.0,
+              3.5,
+              -1.2
+            ]
+          ]
+        },
+        {
+          "name": "WingFrontFeather-1",
+          "primitive": "Wedge",
+          "size": [
+            2.6,
+            10.0,
+            11.0
+          ],
+          "position": [
+            -0.5,
+            17.0,
+            -15.7
+          ],
+          "rotationMatrix": [
+            0,
+            0,
+            1.0,
+            0,
+            1.0,
+            0,
+            -1.0,
+            0,
+            0
+          ],
+          "rotationDegrees": [
+            0,
+            90.0,
+            0
+          ],
+          "paletteRole": "Feather",
+          "color": [
+            248,
+            228,
+            181
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 142.999995,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -1.3,
+              -5.0,
+              -5.5
+            ],
+            [
+              1.3,
+              -5.0,
+              -5.5
+            ],
+            [
+              -1.3,
+              -5.0,
+              5.5
+            ],
+            [
+              1.3,
+              -5.0,
+              5.5
+            ],
+            [
+              -1.3,
+              5.0,
+              5.5
+            ],
+            [
+              1.3,
+              5.0,
+              5.5
+            ]
+          ]
+        },
+        {
+          "name": "WingMiddleFeather-1",
+          "primitive": "Wedge",
+          "size": [
+            2.6,
+            12.0,
+            13.0
+          ],
+          "position": [
+            -6.6,
+            16.5,
+            -16.5
+          ],
+          "rotationMatrix": [
+            0,
+            0,
+            1.0,
+            0,
+            1.0,
+            0,
+            -1.0,
+            0,
+            0
+          ],
+          "rotationDegrees": [
+            0,
+            90.0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 202.799993,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -1.3,
+              -6.0,
+              -6.5
+            ],
+            [
+              1.3,
+              -6.0,
+              -6.5
+            ],
+            [
+              -1.3,
+              -6.0,
+              6.5
+            ],
+            [
+              1.3,
+              -6.0,
+              6.5
+            ],
+            [
+              -1.3,
+              6.0,
+              6.5
+            ],
+            [
+              1.3,
+              6.0,
+              6.5
+            ]
+          ]
+        },
+        {
+          "name": "WingRearFeather-1",
+          "primitive": "Wedge",
+          "size": [
+            2.6,
+            10.0,
+            12.0
+          ],
+          "position": [
+            -12.8,
+            17.5,
+            -15.8
+          ],
+          "rotationMatrix": [
+            0,
+            0,
+            1.0,
+            0,
+            1.0,
+            0,
+            -1.0,
+            0,
+            0
+          ],
+          "rotationDegrees": [
+            0,
+            90.0,
+            0
+          ],
+          "paletteRole": "Feather",
+          "color": [
+            248,
+            228,
+            181
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 155.999994,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -1.3,
+              -5.0,
+              -6.0
+            ],
+            [
+              1.3,
+              -5.0,
+              -6.0
+            ],
+            [
+              -1.3,
+              -5.0,
+              6.0
+            ],
+            [
+              1.3,
+              -5.0,
+              6.0
+            ],
+            [
+              -1.3,
+              5.0,
+              6.0
+            ],
+            [
+              1.3,
+              5.0,
+              6.0
+            ]
+          ]
+        },
+        {
+          "name": "WingTipFeather-1",
+          "primitive": "Wedge",
+          "size": [
+            2.4,
+            8.0,
+            10.0
+          ],
+          "position": [
+            -17.0,
+            19.0,
+            -14.8
+          ],
+          "rotationMatrix": [
+            0,
+            0,
+            1.0,
+            0,
+            1.0,
+            0,
+            -1.0,
+            0,
+            0
+          ],
+          "rotationDegrees": [
+            0,
+            90.0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 96.000004,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -1.2,
+              -4.0,
+              -5.0
+            ],
+            [
+              1.2,
+              -4.0,
+              -5.0
+            ],
+            [
+              -1.2,
+              -4.0,
+              5.0
+            ],
+            [
+              1.2,
+              -4.0,
+              5.0
+            ],
+            [
+              -1.2,
+              4.0,
+              5.0
+            ],
+            [
+              1.2,
+              4.0,
+              5.0
+            ]
+          ]
+        },
+        {
+          "name": "ShoulderFeather1",
+          "primitive": "Block",
+          "size": [
+            5.8,
+            6.0,
+            9.0
+          ],
+          "position": [
+            11.5,
+            30.0,
+            6.5
+          ],
+          "rotationMatrix": [
+            0.99619,
+            0.08716,
+            0,
+            -0.08716,
+            0.99619,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            -5.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 313.20001,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -2.9,
+              -3.0,
+              4.5
+            ],
+            [
+              2.9,
+              -3.0,
+              4.5
+            ],
+            [
+              2.9,
+              -3.0,
+              -4.5
+            ],
+            [
+              -2.9,
+              -3.0,
+              -4.5
+            ],
+            [
+              -2.9,
+              3.0,
+              4.5
+            ],
+            [
+              2.9,
+              3.0,
+              4.5
+            ],
+            [
+              2.9,
+              3.0,
+              -4.5
+            ],
+            [
+              -2.9,
+              3.0,
+              -4.5
+            ]
+          ]
+        },
+        {
+          "name": "WingCape1",
+          "primitive": "Block",
+          "size": [
+            18.0,
+            7.0,
+            2.4
+          ],
+          "position": [
+            -3.5,
+            22.0,
+            14.7
+          ],
+          "rotationMatrix": [
+            0.99027,
+            -0.13917,
+            0,
+            0.13917,
+            0.99027,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            8.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 302.400012,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -9.0,
+              -3.5,
+              1.2
+            ],
+            [
+              9.0,
+              -3.5,
+              1.2
+            ],
+            [
+              9.0,
+              -3.5,
+              -1.2
+            ],
+            [
+              -9.0,
+              -3.5,
+              -1.2
+            ],
+            [
+              -9.0,
+              3.5,
+              1.2
+            ],
+            [
+              9.0,
+              3.5,
+              1.2
+            ],
+            [
+              9.0,
+              3.5,
+              -1.2
+            ],
+            [
+              -9.0,
+              3.5,
+              -1.2
+            ]
+          ]
+        },
+        {
+          "name": "WingFrontFeather1",
+          "primitive": "Wedge",
+          "size": [
+            2.6,
+            10.0,
+            11.0
+          ],
+          "position": [
+            -0.5,
+            17.0,
+            15.7
+          ],
+          "rotationMatrix": [
+            0,
+            0,
+            1.0,
+            0,
+            1.0,
+            0,
+            -1.0,
+            0,
+            0
+          ],
+          "rotationDegrees": [
+            0,
+            90.0,
+            0
+          ],
+          "paletteRole": "Feather",
+          "color": [
+            248,
+            228,
+            181
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 142.999995,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -1.3,
+              -5.0,
+              -5.5
+            ],
+            [
+              1.3,
+              -5.0,
+              -5.5
+            ],
+            [
+              -1.3,
+              -5.0,
+              5.5
+            ],
+            [
+              1.3,
+              -5.0,
+              5.5
+            ],
+            [
+              -1.3,
+              5.0,
+              5.5
+            ],
+            [
+              1.3,
+              5.0,
+              5.5
+            ]
+          ]
+        },
+        {
+          "name": "WingMiddleFeather1",
+          "primitive": "Wedge",
+          "size": [
+            2.6,
+            12.0,
+            13.0
+          ],
+          "position": [
+            -6.6,
+            16.5,
+            16.5
+          ],
+          "rotationMatrix": [
+            0,
+            0,
+            1.0,
+            0,
+            1.0,
+            0,
+            -1.0,
+            0,
+            0
+          ],
+          "rotationDegrees": [
+            0,
+            90.0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 202.799993,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -1.3,
+              -6.0,
+              -6.5
+            ],
+            [
+              1.3,
+              -6.0,
+              -6.5
+            ],
+            [
+              -1.3,
+              -6.0,
+              6.5
+            ],
+            [
+              1.3,
+              -6.0,
+              6.5
+            ],
+            [
+              -1.3,
+              6.0,
+              6.5
+            ],
+            [
+              1.3,
+              6.0,
+              6.5
+            ]
+          ]
+        },
+        {
+          "name": "WingRearFeather1",
+          "primitive": "Wedge",
+          "size": [
+            2.6,
+            10.0,
+            12.0
+          ],
+          "position": [
+            -12.8,
+            17.5,
+            15.8
+          ],
+          "rotationMatrix": [
+            0,
+            0,
+            1.0,
+            0,
+            1.0,
+            0,
+            -1.0,
+            0,
+            0
+          ],
+          "rotationDegrees": [
+            0,
+            90.0,
+            0
+          ],
+          "paletteRole": "Feather",
+          "color": [
+            248,
+            228,
+            181
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 155.999994,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -1.3,
+              -5.0,
+              -6.0
+            ],
+            [
+              1.3,
+              -5.0,
+              -6.0
+            ],
+            [
+              -1.3,
+              -5.0,
+              6.0
+            ],
+            [
+              1.3,
+              -5.0,
+              6.0
+            ],
+            [
+              -1.3,
+              5.0,
+              6.0
+            ],
+            [
+              1.3,
+              5.0,
+              6.0
+            ]
+          ]
+        },
+        {
+          "name": "WingTipFeather1",
+          "primitive": "Wedge",
+          "size": [
+            2.4,
+            8.0,
+            10.0
+          ],
+          "position": [
+            -17.0,
+            19.0,
+            14.8
+          ],
+          "rotationMatrix": [
+            0,
+            0,
+            1.0,
+            0,
+            1.0,
+            0,
+            -1.0,
+            0,
+            0
+          ],
+          "rotationDegrees": [
+            0,
+            90.0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 96.000004,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -1.2,
+              -4.0,
+              -5.0
+            ],
+            [
+              1.2,
+              -4.0,
+              -5.0
+            ],
+            [
+              -1.2,
+              -4.0,
+              5.0
+            ],
+            [
+              1.2,
+              -4.0,
+              5.0
+            ],
+            [
+              -1.2,
+              4.0,
+              5.0
+            ],
+            [
+              1.2,
+              4.0,
+              5.0
+            ]
+          ]
+        },
+        {
+          "name": "FanTail1",
+          "primitive": "Wedge",
+          "size": [
+            4.5,
+            17.0,
+            5.2
+          ],
+          "position": [
+            -23.0,
+            22.04,
+            -10.0
+          ],
+          "rotationMatrix": [
+            -0.95106,
+            -0.29038,
+            -0.10569,
+            -0.30902,
+            0.8937,
+            0.32528,
+            0,
+            0.34202,
+            -0.93969
+          ],
+          "rotationDegrees": [
+            -20.0,
+            -179.99999,
+            18.0
+          ],
+          "paletteRole": "Feather",
+          "color": [
+            248,
+            228,
+            181
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 198.899993,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -2.25,
+              -8.5,
+              -2.6
+            ],
+            [
+              2.25,
+              -8.5,
+              -2.6
+            ],
+            [
+              -2.25,
+              -8.5,
+              2.6
+            ],
+            [
+              2.25,
+              -8.5,
+              2.6
+            ],
+            [
+              -2.25,
+              8.5,
+              2.6
+            ],
+            [
+              2.25,
+              8.5,
+              2.6
+            ]
+          ]
+        },
+        {
+          "name": "FanTail2",
+          "primitive": "Wedge",
+          "size": [
+            4.5,
+            22.0,
+            5.2
+          ],
+          "position": [
+            -23.0,
+            22.64,
+            -5.2
+          ],
+          "rotationMatrix": [
+            -0.95106,
+            -0.30432,
+            -0.05366,
+            -0.30902,
+            0.93661,
+            0.16515,
+            0,
+            0.17365,
+            -0.98481
+          ],
+          "rotationDegrees": [
+            -10.0,
+            -179.99999,
+            18.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 257.399991,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -2.25,
+              -11.0,
+              -2.6
+            ],
+            [
+              2.25,
+              -11.0,
+              -2.6
+            ],
+            [
+              -2.25,
+              -11.0,
+              2.6
+            ],
+            [
+              2.25,
+              -11.0,
+              2.6
+            ],
+            [
+              -2.25,
+              11.0,
+              2.6
+            ],
+            [
+              2.25,
+              11.0,
+              2.6
+            ]
+          ]
+        },
+        {
+          "name": "FanTail3",
+          "primitive": "Block",
+          "size": [
+            4.5,
+            25.0,
+            5.2
+          ],
+          "position": [
+            -23.0,
+            23.0,
+            0
+          ],
+          "rotationMatrix": [
+            0.95106,
+            -0.30902,
+            0,
+            0.30902,
+            0.95106,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            18.0
+          ],
+          "paletteRole": "Feather",
+          "color": [
+            248,
+            228,
+            181
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 584.999979,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -2.25,
+              -12.5,
+              2.6
+            ],
+            [
+              2.25,
+              -12.5,
+              2.6
+            ],
+            [
+              2.25,
+              -12.5,
+              -2.6
+            ],
+            [
+              -2.25,
+              -12.5,
+              -2.6
+            ],
+            [
+              -2.25,
+              12.5,
+              2.6
+            ],
+            [
+              2.25,
+              12.5,
+              2.6
+            ],
+            [
+              2.25,
+              12.5,
+              -2.6
+            ],
+            [
+              -2.25,
+              12.5,
+              -2.6
+            ]
+          ]
+        },
+        {
+          "name": "FanTail4",
+          "primitive": "Wedge",
+          "size": [
+            4.5,
+            22.0,
+            5.2
+          ],
+          "position": [
+            -23.0,
+            22.64,
+            5.2
+          ],
+          "rotationMatrix": [
+            0.95106,
+            -0.30432,
+            0.05366,
+            0.30902,
+            0.93661,
+            -0.16515,
+            0,
+            0.17365,
+            0.98481
+          ],
+          "rotationDegrees": [
+            10.0,
+            0,
+            18.0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 257.399991,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -2.25,
+              -11.0,
+              -2.6
+            ],
+            [
+              2.25,
+              -11.0,
+              -2.6
+            ],
+            [
+              -2.25,
+              -11.0,
+              2.6
+            ],
+            [
+              2.25,
+              -11.0,
+              2.6
+            ],
+            [
+              -2.25,
+              11.0,
+              2.6
+            ],
+            [
+              2.25,
+              11.0,
+              2.6
+            ]
+          ]
+        },
+        {
+          "name": "FanTail5",
+          "primitive": "Wedge",
+          "size": [
+            4.5,
+            17.0,
+            5.2
+          ],
+          "position": [
+            -23.0,
+            22.04,
+            10.0
+          ],
+          "rotationMatrix": [
+            0.95106,
+            -0.29038,
+            0.10569,
+            0.30902,
+            0.8937,
+            -0.32528,
+            0,
+            0.34202,
+            0.93969
+          ],
+          "rotationDegrees": [
+            20.0,
+            0,
+            18.0
+          ],
+          "paletteRole": "Feather",
+          "color": [
+            248,
+            228,
+            181
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 198.899993,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -2.25,
+              -8.5,
+              -2.6
+            ],
+            [
+              2.25,
+              -8.5,
+              -2.6
+            ],
+            [
+              -2.25,
+              -8.5,
+              2.6
+            ],
+            [
+              2.25,
+              -8.5,
+              2.6
+            ],
+            [
+              -2.25,
+              8.5,
+              2.6
+            ],
+            [
+              2.25,
+              8.5,
+              2.6
+            ]
+          ]
+        }
+      ]
+    },
+    "Head": {
+      "partCount": 22,
+      "lethalPartCount": 1,
+      "boundsRoblox": [
+        [
+          -9.5617,
+          -7.21,
+          -10.0
+        ],
+        [
+          9.5617,
+          17.15,
+          7.0
+        ]
+      ],
+      "parts": [
+        {
+          "name": "BroadHead",
+          "primitive": "Block",
+          "size": [
+            13.8,
+            10.0,
+            14.0
+          ],
+          "position": [
+            0,
+            2.0,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 1932.000027,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -6.9,
+              -5.0,
+              7.0
+            ],
+            [
+              6.9,
+              -5.0,
+              7.0
+            ],
+            [
+              6.9,
+              -5.0,
+              -7.0
+            ],
+            [
+              -6.9,
+              -5.0,
+              -7.0
+            ],
+            [
+              -6.9,
+              5.0,
+              7.0
+            ],
+            [
+              6.9,
+              5.0,
+              7.0
+            ],
+            [
+              6.9,
+              5.0,
+              -7.0
+            ],
+            [
+              -6.9,
+              5.0,
+              -7.0
+            ]
+          ]
+        },
+        {
+          "name": "Face",
+          "primitive": "Block",
+          "size": [
+            16.0,
+            7.0,
+            10.0
+          ],
+          "position": [
+            0,
+            2.0,
+            -1.0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 1120.0,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -8.0,
+              -3.5,
+              5.0
+            ],
+            [
+              8.0,
+              -3.5,
+              5.0
+            ],
+            [
+              8.0,
+              -3.5,
+              -5.0
+            ],
+            [
+              -8.0,
+              -3.5,
+              -5.0
+            ],
+            [
+              -8.0,
+              3.5,
+              5.0
+            ],
+            [
+              8.0,
+              3.5,
+              5.0
+            ],
+            [
+              8.0,
+              3.5,
+              -5.0
+            ],
+            [
+              -8.0,
+              3.5,
+              -5.0
+            ]
+          ]
+        },
+        {
+          "name": "CheekPuff",
+          "primitive": "Block",
+          "size": [
+            10.8,
+            4.0,
+            8.0
+          ],
+          "position": [
+            0,
+            -4.0,
+            3.0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 345.600006,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -5.4,
+              -2.0,
+              4.0
+            ],
+            [
+              5.4,
+              -2.0,
+              4.0
+            ],
+            [
+              5.4,
+              -2.0,
+              -4.0
+            ],
+            [
+              -5.4,
+              -2.0,
+              -4.0
+            ],
+            [
+              -5.4,
+              2.0,
+              4.0
+            ],
+            [
+              5.4,
+              2.0,
+              4.0
+            ],
+            [
+              5.4,
+              2.0,
+              -4.0
+            ],
+            [
+              -5.4,
+              2.0,
+              -4.0
+            ]
+          ]
+        },
+        {
+          "name": "CombRoot",
+          "primitive": "Block",
+          "size": [
+            3.5,
+            1.6,
+            13.0
+          ],
+          "position": [
+            0,
+            7.5,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            112,
+            86
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 72.800001,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.75,
+              -0.8,
+              6.5
+            ],
+            [
+              1.75,
+              -0.8,
+              6.5
+            ],
+            [
+              1.75,
+              -0.8,
+              -6.5
+            ],
+            [
+              -1.75,
+              -0.8,
+              -6.5
+            ],
+            [
+              -1.75,
+              0.8,
+              6.5
+            ],
+            [
+              1.75,
+              0.8,
+              6.5
+            ],
+            [
+              1.75,
+              0.8,
+              -6.5
+            ],
+            [
+              -1.75,
+              0.8,
+              -6.5
+            ]
+          ]
+        },
+        {
+          "name": "CombFront",
+          "primitive": "Block",
+          "size": [
+            3.3,
+            5.5,
+            2.8
+          ],
+          "position": [
+            0,
+            10.6,
+            -4.8
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            112,
+            86
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 50.819998,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.65,
+              -2.75,
+              1.4
+            ],
+            [
+              1.65,
+              -2.75,
+              1.4
+            ],
+            [
+              1.65,
+              -2.75,
+              -1.4
+            ],
+            [
+              -1.65,
+              -2.75,
+              -1.4
+            ],
+            [
+              -1.65,
+              2.75,
+              1.4
+            ],
+            [
+              1.65,
+              2.75,
+              1.4
+            ],
+            [
+              1.65,
+              2.75,
+              -1.4
+            ],
+            [
+              -1.65,
+              2.75,
+              -1.4
+            ]
+          ]
+        },
+        {
+          "name": "CombFrontHigh",
+          "primitive": "Block",
+          "size": [
+            3.3,
+            7.8,
+            2.8
+          ],
+          "position": [
+            0,
+            11.75,
+            -2.4
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            112,
+            86
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 72.071999,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.65,
+              -3.9,
+              1.4
+            ],
+            [
+              1.65,
+              -3.9,
+              1.4
+            ],
+            [
+              1.65,
+              -3.9,
+              -1.4
+            ],
+            [
+              -1.65,
+              -3.9,
+              -1.4
+            ],
+            [
+              -1.65,
+              3.9,
+              1.4
+            ],
+            [
+              1.65,
+              3.9,
+              1.4
+            ],
+            [
+              1.65,
+              3.9,
+              -1.4
+            ],
+            [
+              -1.65,
+              3.9,
+              -1.4
+            ]
+          ]
+        },
+        {
+          "name": "CombCrown",
+          "primitive": "Block",
+          "size": [
+            3.3,
+            9.3,
+            2.8
+          ],
+          "position": [
+            0,
+            12.5,
+            0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            112,
+            86
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 85.931999,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.65,
+              -4.65,
+              1.4
+            ],
+            [
+              1.65,
+              -4.65,
+              1.4
+            ],
+            [
+              1.65,
+              -4.65,
+              -1.4
+            ],
+            [
+              -1.65,
+              -4.65,
+              -1.4
+            ],
+            [
+              -1.65,
+              4.65,
+              1.4
+            ],
+            [
+              1.65,
+              4.65,
+              1.4
+            ],
+            [
+              1.65,
+              4.65,
+              -1.4
+            ],
+            [
+              -1.65,
+              4.65,
+              -1.4
+            ]
+          ]
+        },
+        {
+          "name": "CombBackHigh",
+          "primitive": "Block",
+          "size": [
+            3.3,
+            7.3,
+            2.8
+          ],
+          "position": [
+            0,
+            11.5,
+            2.4
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            112,
+            86
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 67.452,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.65,
+              -3.65,
+              1.4
+            ],
+            [
+              1.65,
+              -3.65,
+              1.4
+            ],
+            [
+              1.65,
+              -3.65,
+              -1.4
+            ],
+            [
+              -1.65,
+              -3.65,
+              -1.4
+            ],
+            [
+              -1.65,
+              3.65,
+              1.4
+            ],
+            [
+              1.65,
+              3.65,
+              1.4
+            ],
+            [
+              1.65,
+              3.65,
+              -1.4
+            ],
+            [
+              -1.65,
+              3.65,
+              -1.4
+            ]
+          ]
+        },
+        {
+          "name": "CombBack",
+          "primitive": "Block",
+          "size": [
+            3.3,
+            5.2,
+            2.8
+          ],
+          "position": [
+            0,
+            10.45,
+            4.8
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            112,
+            86
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 48.047997,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.65,
+              -2.6,
+              1.4
+            ],
+            [
+              1.65,
+              -2.6,
+              1.4
+            ],
+            [
+              1.65,
+              -2.6,
+              -1.4
+            ],
+            [
+              -1.65,
+              -2.6,
+              -1.4
+            ],
+            [
+              -1.65,
+              2.6,
+              1.4
+            ],
+            [
+              1.65,
+              2.6,
+              1.4
+            ],
+            [
+              1.65,
+              2.6,
+              -1.4
+            ],
+            [
+              -1.65,
+              2.6,
+              -1.4
+            ]
+          ]
+        },
+        {
+          "name": "Beak",
+          "primitive": "Wedge",
+          "size": [
+            6.0,
+            3.0,
+            3.0
+          ],
+          "position": [
+            0,
+            -0.5,
+            -8.5
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Hot",
+          "color": [
+            255,
+            20,
+            35
+          ],
+          "material": "Neon",
+          "lethal": true,
+          "volume": 27.0,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -3.0,
+              -1.5,
+              -1.5
+            ],
+            [
+              3.0,
+              -1.5,
+              -1.5
+            ],
+            [
+              -3.0,
+              -1.5,
+              1.5
+            ],
+            [
+              3.0,
+              -1.5,
+              1.5
+            ],
+            [
+              -3.0,
+              1.5,
+              1.5
+            ],
+            [
+              3.0,
+              1.5,
+              1.5
+            ]
+          ]
+        },
+        {
+          "name": "WattleLeft",
+          "primitive": "Block",
+          "size": [
+            2.6,
+            4.3,
+            2.0
+          ],
+          "position": [
+            -2.0,
+            -4.9,
+            -5.2
+          ],
+          "rotationMatrix": [
+            0.99027,
+            0.13917,
+            0,
+            -0.13917,
+            0.99027,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            -8.0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            112,
+            86
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 22.36,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.3,
+              -2.15,
+              1.0
+            ],
+            [
+              1.3,
+              -2.15,
+              1.0
+            ],
+            [
+              1.3,
+              -2.15,
+              -1.0
+            ],
+            [
+              -1.3,
+              -2.15,
+              -1.0
+            ],
+            [
+              -1.3,
+              2.15,
+              1.0
+            ],
+            [
+              1.3,
+              2.15,
+              1.0
+            ],
+            [
+              1.3,
+              2.15,
+              -1.0
+            ],
+            [
+              -1.3,
+              2.15,
+              -1.0
+            ]
+          ]
+        },
+        {
+          "name": "WattleRight",
+          "primitive": "Block",
+          "size": [
+            2.6,
+            4.3,
+            2.0
+          ],
+          "position": [
+            2.0,
+            -4.9,
+            -5.2
+          ],
+          "rotationMatrix": [
+            0.99027,
+            -0.13917,
+            0,
+            0.13917,
+            0.99027,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            8.0
+          ],
+          "paletteRole": "Coral",
+          "color": [
+            246,
+            112,
+            86
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 22.36,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.3,
+              -2.15,
+              1.0
+            ],
+            [
+              1.3,
+              -2.15,
+              1.0
+            ],
+            [
+              1.3,
+              -2.15,
+              -1.0
+            ],
+            [
+              -1.3,
+              -2.15,
+              -1.0
+            ],
+            [
+              -1.3,
+              2.15,
+              1.0
+            ],
+            [
+              1.3,
+              2.15,
+              1.0
+            ],
+            [
+              1.3,
+              2.15,
+              -1.0
+            ],
+            [
+              -1.3,
+              2.15,
+              -1.0
+            ]
+          ]
+        },
+        {
+          "name": "CheekFeather-1",
+          "primitive": "Wedge",
+          "size": [
+            3.0,
+            4.0,
+            8.0
+          ],
+          "position": [
+            -5.4,
+            -4.0,
+            3.0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 48.0,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -1.5,
+              -2.0,
+              -4.0
+            ],
+            [
+              1.5,
+              -2.0,
+              -4.0
+            ],
+            [
+              -1.5,
+              -2.0,
+              4.0
+            ],
+            [
+              1.5,
+              -2.0,
+              4.0
+            ],
+            [
+              -1.5,
+              2.0,
+              4.0
+            ],
+            [
+              1.5,
+              2.0,
+              4.0
+            ]
+          ]
+        },
+        {
+          "name": "EyeWhite-1",
+          "primitive": "Block",
+          "size": [
+            4.3,
+            4.7,
+            0.4
+          ],
+          "position": [
+            -7.9,
+            2.0,
+            -7.1
+          ],
+          "rotationMatrix": [
+            0.70711,
+            0,
+            0.70711,
+            0,
+            1.0,
+            0,
+            -0.70711,
+            0,
+            0.70711
+          ],
+          "rotationDegrees": [
+            0,
+            45.0,
+            0
+          ],
+          "paletteRole": "Ivory",
+          "color": [
+            255,
+            253,
+            238
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 8.084,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -2.15,
+              -2.35,
+              0.2
+            ],
+            [
+              2.15,
+              -2.35,
+              0.2
+            ],
+            [
+              2.15,
+              -2.35,
+              -0.2
+            ],
+            [
+              -2.15,
+              -2.35,
+              -0.2
+            ],
+            [
+              -2.15,
+              2.35,
+              0.2
+            ],
+            [
+              2.15,
+              2.35,
+              0.2
+            ],
+            [
+              2.15,
+              2.35,
+              -0.2
+            ],
+            [
+              -2.15,
+              2.35,
+              -0.2
+            ]
+          ]
+        },
+        {
+          "name": "Pupil-1",
+          "primitive": "Block",
+          "size": [
+            2.2,
+            2.75,
+            0.45
+          ],
+          "position": [
+            -8.15,
+            1.8,
+            -7.35
+          ],
+          "rotationMatrix": [
+            0.70711,
+            0,
+            0.70711,
+            0,
+            1.0,
+            0,
+            -0.70711,
+            0,
+            0.70711
+          ],
+          "rotationDegrees": [
+            0,
+            45.0,
+            0
+          ],
+          "paletteRole": "Ink",
+          "color": [
+            27,
+            30,
+            38
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 2.7225,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.1,
+              -1.375,
+              0.225
+            ],
+            [
+              1.1,
+              -1.375,
+              0.225
+            ],
+            [
+              1.1,
+              -1.375,
+              -0.225
+            ],
+            [
+              -1.1,
+              -1.375,
+              -0.225
+            ],
+            [
+              -1.1,
+              1.375,
+              0.225
+            ],
+            [
+              1.1,
+              1.375,
+              0.225
+            ],
+            [
+              1.1,
+              1.375,
+              -0.225
+            ],
+            [
+              -1.1,
+              1.375,
+              -0.225
+            ]
+          ]
+        },
+        {
+          "name": "Brow-1",
+          "primitive": "Block",
+          "size": [
+            3.7,
+            0.65,
+            0.2
+          ],
+          "position": [
+            -7.95,
+            3.85,
+            -7.15
+          ],
+          "rotationMatrix": [
+            0.70711,
+            0,
+            0.70711,
+            0,
+            1.0,
+            0,
+            -0.70711,
+            0,
+            0.70711
+          ],
+          "rotationDegrees": [
+            0,
+            45.0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 0.481,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.85,
+              -0.325,
+              0.1
+            ],
+            [
+              1.85,
+              -0.325,
+              0.1
+            ],
+            [
+              1.85,
+              -0.325,
+              -0.1
+            ],
+            [
+              -1.85,
+              -0.325,
+              -0.1
+            ],
+            [
+              -1.85,
+              0.325,
+              0.1
+            ],
+            [
+              1.85,
+              0.325,
+              0.1
+            ],
+            [
+              1.85,
+              0.325,
+              -0.1
+            ],
+            [
+              -1.85,
+              0.325,
+              -0.1
+            ]
+          ]
+        },
+        {
+          "name": "EyeGlint-1",
+          "primitive": "Block",
+          "size": [
+            0.65,
+            0.65,
+            0.2
+          ],
+          "position": [
+            -8.0,
+            2.55,
+            -7.67
+          ],
+          "rotationMatrix": [
+            0.70711,
+            0,
+            0.70711,
+            0,
+            1.0,
+            0,
+            -0.70711,
+            0,
+            0.70711
+          ],
+          "rotationDegrees": [
+            0,
+            45.0,
+            0
+          ],
+          "paletteRole": "Ivory",
+          "color": [
+            255,
+            253,
+            238
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 0.0845,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -0.325,
+              -0.325,
+              0.1
+            ],
+            [
+              0.325,
+              -0.325,
+              0.1
+            ],
+            [
+              0.325,
+              -0.325,
+              -0.1
+            ],
+            [
+              -0.325,
+              -0.325,
+              -0.1
+            ],
+            [
+              -0.325,
+              0.325,
+              0.1
+            ],
+            [
+              0.325,
+              0.325,
+              0.1
+            ],
+            [
+              0.325,
+              0.325,
+              -0.1
+            ],
+            [
+              -0.325,
+              0.325,
+              -0.1
+            ]
+          ]
+        },
+        {
+          "name": "CheekFeather1",
+          "primitive": "Wedge",
+          "size": [
+            3.0,
+            4.0,
+            8.0
+          ],
+          "position": [
+            5.4,
+            -4.0,
+            3.0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 48.0,
+          "vertices": 6,
+          "triangles": 8,
+          "localVertices": [
+            [
+              -1.5,
+              -2.0,
+              -4.0
+            ],
+            [
+              1.5,
+              -2.0,
+              -4.0
+            ],
+            [
+              -1.5,
+              -2.0,
+              4.0
+            ],
+            [
+              1.5,
+              -2.0,
+              4.0
+            ],
+            [
+              -1.5,
+              2.0,
+              4.0
+            ],
+            [
+              1.5,
+              2.0,
+              4.0
+            ]
+          ]
+        },
+        {
+          "name": "EyeWhite1",
+          "primitive": "Block",
+          "size": [
+            4.3,
+            4.7,
+            0.4
+          ],
+          "position": [
+            7.9,
+            2.0,
+            -7.1
+          ],
+          "rotationMatrix": [
+            0.70711,
+            0,
+            -0.70711,
+            0,
+            1.0,
+            0,
+            0.70711,
+            0,
+            0.70711
+          ],
+          "rotationDegrees": [
+            0,
+            -45.0,
+            0
+          ],
+          "paletteRole": "Ivory",
+          "color": [
+            255,
+            253,
+            238
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 8.084,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -2.15,
+              -2.35,
+              0.2
+            ],
+            [
+              2.15,
+              -2.35,
+              0.2
+            ],
+            [
+              2.15,
+              -2.35,
+              -0.2
+            ],
+            [
+              -2.15,
+              -2.35,
+              -0.2
+            ],
+            [
+              -2.15,
+              2.35,
+              0.2
+            ],
+            [
+              2.15,
+              2.35,
+              0.2
+            ],
+            [
+              2.15,
+              2.35,
+              -0.2
+            ],
+            [
+              -2.15,
+              2.35,
+              -0.2
+            ]
+          ]
+        },
+        {
+          "name": "Pupil1",
+          "primitive": "Block",
+          "size": [
+            2.2,
+            2.75,
+            0.45
+          ],
+          "position": [
+            8.15,
+            1.8,
+            -7.35
+          ],
+          "rotationMatrix": [
+            0.70711,
+            0,
+            -0.70711,
+            0,
+            1.0,
+            0,
+            0.70711,
+            0,
+            0.70711
+          ],
+          "rotationDegrees": [
+            0,
+            -45.0,
+            0
+          ],
+          "paletteRole": "Ink",
+          "color": [
+            27,
+            30,
+            38
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 2.7225,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.1,
+              -1.375,
+              0.225
+            ],
+            [
+              1.1,
+              -1.375,
+              0.225
+            ],
+            [
+              1.1,
+              -1.375,
+              -0.225
+            ],
+            [
+              -1.1,
+              -1.375,
+              -0.225
+            ],
+            [
+              -1.1,
+              1.375,
+              0.225
+            ],
+            [
+              1.1,
+              1.375,
+              0.225
+            ],
+            [
+              1.1,
+              1.375,
+              -0.225
+            ],
+            [
+              -1.1,
+              1.375,
+              -0.225
+            ]
+          ]
+        },
+        {
+          "name": "Brow1",
+          "primitive": "Block",
+          "size": [
+            3.7,
+            0.65,
+            0.2
+          ],
+          "position": [
+            7.95,
+            3.85,
+            -7.15
+          ],
+          "rotationMatrix": [
+            0.70711,
+            0,
+            -0.70711,
+            0,
+            1.0,
+            0,
+            0.70711,
+            0,
+            0.70711
+          ],
+          "rotationDegrees": [
+            0,
+            -45.0,
+            0
+          ],
+          "paletteRole": "Cream",
+          "color": [
+            255,
+            242,
+            210
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 0.481,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -1.85,
+              -0.325,
+              0.1
+            ],
+            [
+              1.85,
+              -0.325,
+              0.1
+            ],
+            [
+              1.85,
+              -0.325,
+              -0.1
+            ],
+            [
+              -1.85,
+              -0.325,
+              -0.1
+            ],
+            [
+              -1.85,
+              0.325,
+              0.1
+            ],
+            [
+              1.85,
+              0.325,
+              0.1
+            ],
+            [
+              1.85,
+              0.325,
+              -0.1
+            ],
+            [
+              -1.85,
+              0.325,
+              -0.1
+            ]
+          ]
+        },
+        {
+          "name": "EyeGlint1",
+          "primitive": "Block",
+          "size": [
+            0.65,
+            0.65,
+            0.2
+          ],
+          "position": [
+            8.0,
+            2.55,
+            -7.67
+          ],
+          "rotationMatrix": [
+            0.70711,
+            0,
+            -0.70711,
+            0,
+            1.0,
+            0,
+            0.70711,
+            0,
+            0.70711
+          ],
+          "rotationDegrees": [
+            0,
+            -45.0,
+            0
+          ],
+          "paletteRole": "Ivory",
+          "color": [
+            255,
+            253,
+            238
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 0.0845,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -0.325,
+              -0.325,
+              0.1
+            ],
+            [
+              0.325,
+              -0.325,
+              0.1
+            ],
+            [
+              0.325,
+              -0.325,
+              -0.1
+            ],
+            [
+              -0.325,
+              -0.325,
+              -0.1
+            ],
+            [
+              -0.325,
+              0.325,
+              0.1
+            ],
+            [
+              0.325,
+              0.325,
+              0.1
+            ],
+            [
+              0.325,
+              0.325,
+              -0.1
+            ],
+            [
+              -0.325,
+              0.325,
+              -0.1
+            ]
+          ]
+        }
+      ]
+    },
+    "Feet": {
+      "partCount": 10,
+      "lethalPartCount": 0,
+      "boundsRoblox": [
+        [
+          -2.5,
+          -2.0,
+          -12.27928
+        ],
+        [
+          18.5,
+          7.15,
+          12.27928
+        ]
+      ],
+      "parts": [
+        {
+          "name": "Leg-1",
+          "primitive": "Block",
+          "size": [
+            5.0,
+            7.5,
+            5.0
+          ],
+          "position": [
+            0,
+            3.4,
+            -8.0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Foot",
+          "color": [
+            239,
+            155,
+            68
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 187.5,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -2.5,
+              -3.75,
+              2.5
+            ],
+            [
+              2.5,
+              -3.75,
+              2.5
+            ],
+            [
+              2.5,
+              -3.75,
+              -2.5
+            ],
+            [
+              -2.5,
+              -3.75,
+              -2.5
+            ],
+            [
+              -2.5,
+              3.75,
+              2.5
+            ],
+            [
+              2.5,
+              3.75,
+              2.5
+            ],
+            [
+              2.5,
+              3.75,
+              -2.5
+            ],
+            [
+              -2.5,
+              3.75,
+              -2.5
+            ]
+          ]
+        },
+        {
+          "name": "Foot-1",
+          "primitive": "Block",
+          "size": [
+            12.0,
+            3.2,
+            7.0
+          ],
+          "position": [
+            5.5,
+            -0.4,
+            -8.0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Foot",
+          "color": [
+            239,
+            155,
+            68
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 268.800004,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -6.0,
+              -1.6,
+              3.5
+            ],
+            [
+              6.0,
+              -1.6,
+              3.5
+            ],
+            [
+              6.0,
+              -1.6,
+              -3.5
+            ],
+            [
+              -6.0,
+              -1.6,
+              -3.5
+            ],
+            [
+              -6.0,
+              1.6,
+              3.5
+            ],
+            [
+              6.0,
+              1.6,
+              3.5
+            ],
+            [
+              6.0,
+              1.6,
+              -3.5
+            ],
+            [
+              -6.0,
+              1.6,
+              -3.5
+            ]
+          ]
+        },
+        {
+          "name": "OuterToe-1",
+          "primitive": "Block",
+          "size": [
+            8.0,
+            2.5,
+            2.2
+          ],
+          "position": [
+            13.0,
+            0,
+            -10.7
+          ],
+          "rotationMatrix": [
+            0.99255,
+            0,
+            -0.12187,
+            0,
+            1.0,
+            0,
+            0.12187,
+            0,
+            0.99255
+          ],
+          "rotationDegrees": [
+            0,
+            -7.0,
+            0
+          ],
+          "paletteRole": "Foot",
+          "color": [
+            239,
+            155,
+            68
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 44.000001,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -4.0,
+              -1.25,
+              1.1
+            ],
+            [
+              4.0,
+              -1.25,
+              1.1
+            ],
+            [
+              4.0,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              1.25,
+              1.1
+            ],
+            [
+              4.0,
+              1.25,
+              1.1
+            ],
+            [
+              4.0,
+              1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              1.25,
+              -1.1
+            ]
+          ]
+        },
+        {
+          "name": "MiddleToe-1",
+          "primitive": "Block",
+          "size": [
+            9.4,
+            2.5,
+            2.2
+          ],
+          "position": [
+            13.8,
+            0,
+            -8.0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Foot",
+          "color": [
+            239,
+            155,
+            68
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 51.699999,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -4.7,
+              -1.25,
+              1.1
+            ],
+            [
+              4.7,
+              -1.25,
+              1.1
+            ],
+            [
+              4.7,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.7,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.7,
+              1.25,
+              1.1
+            ],
+            [
+              4.7,
+              1.25,
+              1.1
+            ],
+            [
+              4.7,
+              1.25,
+              -1.1
+            ],
+            [
+              -4.7,
+              1.25,
+              -1.1
+            ]
+          ]
+        },
+        {
+          "name": "InnerToe-1",
+          "primitive": "Block",
+          "size": [
+            8.0,
+            2.5,
+            2.2
+          ],
+          "position": [
+            13.0,
+            0,
+            -5.3
+          ],
+          "rotationMatrix": [
+            0.99255,
+            0,
+            0.12187,
+            0,
+            1.0,
+            0,
+            -0.12187,
+            0,
+            0.99255
+          ],
+          "rotationDegrees": [
+            0,
+            7.0,
+            0
+          ],
+          "paletteRole": "Foot",
+          "color": [
+            239,
+            155,
+            68
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 44.000001,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -4.0,
+              -1.25,
+              1.1
+            ],
+            [
+              4.0,
+              -1.25,
+              1.1
+            ],
+            [
+              4.0,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              1.25,
+              1.1
+            ],
+            [
+              4.0,
+              1.25,
+              1.1
+            ],
+            [
+              4.0,
+              1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              1.25,
+              -1.1
+            ]
+          ]
+        },
+        {
+          "name": "Leg1",
+          "primitive": "Block",
+          "size": [
+            5.0,
+            7.5,
+            5.0
+          ],
+          "position": [
+            0,
+            3.4,
+            8.0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Foot",
+          "color": [
+            239,
+            155,
+            68
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 187.5,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -2.5,
+              -3.75,
+              2.5
+            ],
+            [
+              2.5,
+              -3.75,
+              2.5
+            ],
+            [
+              2.5,
+              -3.75,
+              -2.5
+            ],
+            [
+              -2.5,
+              -3.75,
+              -2.5
+            ],
+            [
+              -2.5,
+              3.75,
+              2.5
+            ],
+            [
+              2.5,
+              3.75,
+              2.5
+            ],
+            [
+              2.5,
+              3.75,
+              -2.5
+            ],
+            [
+              -2.5,
+              3.75,
+              -2.5
+            ]
+          ]
+        },
+        {
+          "name": "Foot1",
+          "primitive": "Block",
+          "size": [
+            12.0,
+            3.2,
+            7.0
+          ],
+          "position": [
+            5.5,
+            -0.4,
+            8.0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Foot",
+          "color": [
+            239,
+            155,
+            68
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 268.800004,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -6.0,
+              -1.6,
+              3.5
+            ],
+            [
+              6.0,
+              -1.6,
+              3.5
+            ],
+            [
+              6.0,
+              -1.6,
+              -3.5
+            ],
+            [
+              -6.0,
+              -1.6,
+              -3.5
+            ],
+            [
+              -6.0,
+              1.6,
+              3.5
+            ],
+            [
+              6.0,
+              1.6,
+              3.5
+            ],
+            [
+              6.0,
+              1.6,
+              -3.5
+            ],
+            [
+              -6.0,
+              1.6,
+              -3.5
+            ]
+          ]
+        },
+        {
+          "name": "OuterToe1",
+          "primitive": "Block",
+          "size": [
+            8.0,
+            2.5,
+            2.2
+          ],
+          "position": [
+            13.0,
+            0,
+            10.7
+          ],
+          "rotationMatrix": [
+            0.99255,
+            0,
+            0.12187,
+            0,
+            1.0,
+            0,
+            -0.12187,
+            0,
+            0.99255
+          ],
+          "rotationDegrees": [
+            0,
+            7.0,
+            0
+          ],
+          "paletteRole": "Foot",
+          "color": [
+            239,
+            155,
+            68
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 44.000001,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -4.0,
+              -1.25,
+              1.1
+            ],
+            [
+              4.0,
+              -1.25,
+              1.1
+            ],
+            [
+              4.0,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              1.25,
+              1.1
+            ],
+            [
+              4.0,
+              1.25,
+              1.1
+            ],
+            [
+              4.0,
+              1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              1.25,
+              -1.1
+            ]
+          ]
+        },
+        {
+          "name": "MiddleToe1",
+          "primitive": "Block",
+          "size": [
+            9.4,
+            2.5,
+            2.2
+          ],
+          "position": [
+            13.8,
+            0,
+            8.0
+          ],
+          "rotationMatrix": [
+            1.0,
+            0,
+            0,
+            0,
+            1.0,
+            0,
+            0,
+            0,
+            1.0
+          ],
+          "rotationDegrees": [
+            0,
+            0,
+            0
+          ],
+          "paletteRole": "Foot",
+          "color": [
+            239,
+            155,
+            68
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 51.699999,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -4.7,
+              -1.25,
+              1.1
+            ],
+            [
+              4.7,
+              -1.25,
+              1.1
+            ],
+            [
+              4.7,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.7,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.7,
+              1.25,
+              1.1
+            ],
+            [
+              4.7,
+              1.25,
+              1.1
+            ],
+            [
+              4.7,
+              1.25,
+              -1.1
+            ],
+            [
+              -4.7,
+              1.25,
+              -1.1
+            ]
+          ]
+        },
+        {
+          "name": "InnerToe1",
+          "primitive": "Block",
+          "size": [
+            8.0,
+            2.5,
+            2.2
+          ],
+          "position": [
+            13.0,
+            0,
+            5.3
+          ],
+          "rotationMatrix": [
+            0.99255,
+            0,
+            -0.12187,
+            0,
+            1.0,
+            0,
+            0.12187,
+            0,
+            0.99255
+          ],
+          "rotationDegrees": [
+            0,
+            -7.0,
+            0
+          ],
+          "paletteRole": "Foot",
+          "color": [
+            239,
+            155,
+            68
+          ],
+          "material": "SmoothPlastic",
+          "lethal": false,
+          "volume": 44.000001,
+          "vertices": 8,
+          "triangles": 12,
+          "localVertices": [
+            [
+              -4.0,
+              -1.25,
+              1.1
+            ],
+            [
+              4.0,
+              -1.25,
+              1.1
+            ],
+            [
+              4.0,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              -1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              1.25,
+              1.1
+            ],
+            [
+              4.0,
+              1.25,
+              1.1
+            ],
+            [
+              4.0,
+              1.25,
+              -1.1
+            ],
+            [
+              -4.0,
+              1.25,
+              -1.1
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "attachments": {
+    "bodyFront": "+X",
+    "headFront": "-Z",
+    "shoulder": [
+      18,
+      25,
+      0
+    ],
+    "beakTip": [
+      0,
+      -2,
+      -10
+    ],
+    "headNeck": [
+      0,
+      -5,
+      3
+    ],
+    "headHome": [
+      27,
+      31,
+      0
+    ],
+    "neckLinkLength": 6,
+    "neckWidth": 9,
+    "hipCourse": [
+      91,
+      18,
+      40
+    ]
+  },
+  "palette": {
+    "Cream": [
+      255,
+      242,
+      210
+    ],
+    "Feather": [
+      248,
+      228,
+      181
+    ],
+    "Coral": [
+      246,
+      112,
+      86
+    ],
+    "Hot": [
+      255,
+      20,
+      35
+    ],
+    "Ink": [
+      27,
+      30,
+      38
+    ],
+    "Ivory": [
+      255,
+      253,
+      238
+    ],
+    "Foot": [
+      239,
+      155,
+      68
+    ]
+  },
+  "axes": "Roblox X,Y,Z -> Blender X,-Z,Y",
+  "primitives": "Native Blocks and WedgeParts",
+  "checks": {
+    "finite": true,
+    "closedManifold": true,
+    "positiveVolume": true,
+    "orthonormalFrames": true,
+    "exactPrimitiveTopology": true,
+    "withinR04A02Envelope": true
+  },
+  "baseline": "assets/egg_rush_circuit/phase2/chicken_r04/candidate_a02",
+  "proofBoundary": "Blender-authored native primitive kit; no native Studio motion/contact proof."
+}

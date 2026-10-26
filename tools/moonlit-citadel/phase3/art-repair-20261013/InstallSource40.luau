@@ -1,0 +1,53 @@
+--!nonstrict
+assert(game.PlaceId==85558151074819 and game.GameId==10191126818 and not game.RunService:IsRunning())
+local H,E=game.HttpService,game.EncodingService;local httpBefore=H.HttpEnabled
+local ok,raw=pcall(function()H.HttpEnabled=true;return H:GetAsync("http://127.0.0.1:56113/artrepair_source40_packet.json")end);H.HttpEnabled=httpBefore;assert(ok,raw)
+local function hash(text)
+ local d=E:ComputeBufferHash(buffer.fromstring(text),Enum.HashAlgorithm.Sha256);local out={};for i=0,buffer.len(d)-1 do table.insert(out,string.format("%02x",buffer.readu8(d,i)))end;return table.concat(out)
+end
+assert(hash(raw)=="0a5a0b8ec9816da146b17f503f434e4a94ae53833e3f47a2ccc377a88000bc35")
+local packet=H:JSONDecode(raw);assert(packet.sourceRevision==40 and #packet.records==18)
+local archive=game.ServerStorage.MoonlitP3ReworkRecovery.ArtRepair20261013
+assert(not archive:FindFirstChild("FullModules40"))
+local fresh=Instance.new("Folder");fresh.Name,fresh.Parent="FullModules40",archive
+local before=Instance.new("Folder");before.Name,before.Parent="BeforeArtSource40",archive
+local sources={}
+for _,r in packet.records do
+ assert(hash(r.source)==r.sha256)
+ local parent=if r.name=="MoonlitCitadelAmbienceConfig" then game.ReplicatedStorage.Config else game.ServerStorage.CourseBuilders.MoonlitCitadelCourse
+ local module=parent:FindFirstChild(r.name)
+ if not module then module=Instance.new("ModuleScript");module.Name,module.Parent=r.name,parent end
+ if hash(module.Source:gsub("\r\n","\n"))~=r.sha256 then local old=module:Clone();old.Parent=before;module.Source=r.source end
+ assert(hash(module.Source:gsub("\r\n","\n"))==r.sha256)
+ table.insert(sources,{name=r.name,sha256=r.sha256})
+ if r.name~="MoonlitCitadelAmbienceConfig" then
+  local copy=Instance.new("ModuleScript");copy.Name=r.name
+  copy.Source=if r.name=="WorldAssembly" then r.source:gsub("require%(script.Parent.Parent.MoonlitCitadel.MeshKit%)","require(game.ServerStorage.CourseBuilders.MoonlitCitadel.MeshKit)") else r.source
+  copy.Parent=fresh
+ end
+end
+local storedPacket=Instance.new("StringValue");storedPacket.Name,storedPacket.Value,storedPacket.Parent="Source40Packet",raw,archive
+local assembly,layout=require(fresh.WorldAssembly),require(fresh.Layout)
+local plan,planned=require(fresh.WorldPlan).Get(layout);assert(not planned.fullMapPending and #planned.plantingMounts==6)
+local reports={}
+for _,course in {workspace.Course_MoonlitCitadel,game.ServerStorage.CourseLibrary.Course_MoonlitCitadel} do
+ local pivot=course:GetPivot()
+ local older=course.Decoration.Phase3World
+ local preserved=Instance.new("Folder");preserved.Name=if course.Parent==workspace then "SampleBeforeFull39" else "BeforeStoredArt";preserved.Parent=archive
+ older.Parent=preserved
+ local built,w,counts=xpcall(function()return assembly.Apply(course,layout)end,debug.traceback)
+ course.WorldPivot=pivot
+ if not built then local partial=course.Decoration:FindFirstChild("Phase3World");if partial then partial.Name,partial.Parent=preserved.Name.."_Partial",archive end;older.Parent=course.Decoration;error(w)end
+ course:SetAttribute("SourceRevision",40);course:SetAttribute("BuildRevision",34)
+ course:SetAttribute("CandidateId",packet.candidate);course:SetAttribute("SourcePacketHash","0a5a0b8ec9816da146b17f503f434e4a94ae53833e3f47a2ccc377a88000bc35")
+ w:SetAttribute("ArtRepairStage","FinishedCandidate40")
+ local total={parts=0,meshes=0,colliders=0,floors=0,red=0,lights=0}
+ for _,p in course:GetDescendants() do
+  if p:IsA("BasePart") then total.parts+=1;if p:IsA("MeshPart")then total.meshes+=1 end;if p.CanCollide then total.colliders+=1 end
+   if p:GetAttribute("MCWalkable")==true then total.floors+=1 end;if p:GetAttribute("MoonlitHazard")==true then total.red+=1 end
+  elseif p:IsA("Light") then total.lights+=1 end
+ end
+ table.insert(reports,{path=course:GetFullName(),descendants=#course:GetDescendants(),total=total,world={units=counts.units,meshParts=counts.meshParts,triangles=counts.triangles,mounts=#counts.plantingMounts}})
+ task.wait()
+end
+return H:JSONEncode({ok=true,sourceRevision=40,buildRevision=34,sourcePacketHash="0a5a0b8ec9816da146b17f503f434e4a94ae53833e3f47a2ccc377a88000bc35",sources=sources,models=reports,httpRestored=H.HttpEnabled==httpBefore})

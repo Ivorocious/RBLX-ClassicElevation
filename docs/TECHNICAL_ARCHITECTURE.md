@@ -2,9 +2,9 @@
 
 ## Source of Truth
 
-Current course milestone: see [Classic Ascent](CLASSIC_ASCENT.md). Earlier phase
-sections below describe the implementation history; the September course and
-round-ending behavior supersede the earlier fixed course and timer-only behavior.
+Classic Ascent was shelved on October 27, 2026; its builders, `CourseMotionService` and
+`AscentMotionConfig` were removed (see `docs/DECISIONS.md`). Earlier phase sections below
+describe the implementation history and still name it where it was the active course.
 
 `ServerStorage.CourseBuilders.ClassicAscentPointToPoint` is synced through Rojo.
 CourseService explicitly creates the course when missing before discovery. All
@@ -310,7 +310,7 @@ broadcasts course id, display name, race format, and lap count in race state/tim
 Phase 8E adds fixed, config-driven active course spawning. Playable course models live in
 `ServerStorage/CourseLibrary`; the disabled manual-building template lives separately at
 `ServerStorage/CourseTemplates/CourseTemplate`. The current selected course id is
-`classic_ascent_point_to_point` through `CourseConfig.ActiveCourseId`, and selection mode is `Fixed`.
+`city_run` through `CourseConfig.ActiveCourseId`, and selection mode is `Fixed`.
 
 At startup, `CourseService` prepares and discovers the library while leaving the lobby without a loaded map.
 At round start it selects the configured course, clones it into Workspace as `Workspace/RaceCourse`, and marks the
@@ -343,7 +343,7 @@ PointToPoint races.
 Studio now also contains `ServerStorage/CourseLibrary/Course_ClassicCircuit`, a simple technical
 graybox course for validating the LapBased framework. It uses CourseId `classic_circuit`, DisplayName
 `Classic Circuit`, RaceFormat `LapBased`, LapCount `3`, Enabled `true`, and four checkpoints.
-`CourseConfig.ActiveCourseId` is currently fixed to `classic_ascent_point_to_point`; testing the circuit is a
+`CourseConfig.ActiveCourseId` is currently fixed to `city_run`; testing the circuit is a
 manual config switch until course rotation/selection is implemented.
 
 Phase 8F does not add DataStore persistence, public course selection, course voting, final creative
@@ -380,7 +380,7 @@ and `End Race`; they are development shortcuts and are not part of live gameplay
 - Use focused tests for pure logic modules when practical.
 - Record manual verification steps in implementation summaries.
 
-## Classic Ascent hazards and course sky
+## Course hazards and course sky
 
 `CourseHazardService` binds after CourseService selects the active clone. It discovers
 `HazardType` attributes on the whole course, including collapsing route parts.
@@ -389,7 +389,8 @@ overlap scans; collapsing parts restore their collision, colour, material and ch
 visuals. Race state and official racer status gate all damage. RespawnService owns
 checkpoint death recovery. No client hazard requests or new remotes are introduced.
 
-The client ambience script uses `ClassicAscentAmbienceConfig` for the selected
-course and bundled sky textures. It saves and restores existing Sky and Lighting
+The client ambience script (`ClassicAscentAmbience.client.luau`, named for its first
+course) applies the City Run, Shipwreck, Stud Garden or Moonlit ambience config for the
+selected course. It saves and restores existing Sky and Lighting
 values locally when entering/leaving the course. Rojo maps configuration and scripts;
 the course builder owns generated geometry, and authored legacy models are archived.

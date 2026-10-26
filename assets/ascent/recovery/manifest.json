@@ -1,0 +1,84 @@
+{
+  "props": [
+    {
+      "name": "RockSpurA",
+      "height": 36,
+      "parts": [
+        "RockSpurA__ColdRock"
+      ],
+      "triangles": 96
+    },
+    {
+      "name": "RockSpurB",
+      "height": 36,
+      "parts": [
+        "RockSpurB__ColdRock"
+      ],
+      "triangles": 96
+    },
+    {
+      "name": "FaultWallA",
+      "height": 72,
+      "parts": [
+        "FaultWallA__WarmRock"
+      ],
+      "triangles": 206
+    },
+    {
+      "name": "FaultWallB",
+      "height": 72,
+      "parts": [
+        "FaultWallB__WarmRock"
+      ],
+      "triangles": 206
+    },
+    {
+      "name": "TalusFan",
+      "height": 9,
+      "parts": [
+        "TalusFan__ColdRock"
+      ],
+      "triangles": 1040
+    },
+    {
+      "name": "BasaltFan",
+      "height": 31,
+      "parts": [
+        "BasaltFan__Basalt"
+      ],
+      "triangles": 240
+    }
+  ],
+  "colors": {
+    "RockSpurA__ColdRock": [
+      0.25,
+      0.3199999928474426,
+      0.3499999940395355
+    ],
+    "RockSpurB__ColdRock": [
+      0.25,
+      0.3199999928474426,
+      0.3499999940395355
+    ],
+    "FaultWallA__WarmRock": [
+      0.3400000035762787,
+      0.36000001430511475,
+      0.3199999928474426
+    ],
+    "FaultWallB__WarmRock": [
+      0.3400000035762787,
+      0.36000001430511475,
+      0.3199999928474426
+    ],
+    "TalusFan__ColdRock": [
+      0.25,
+      0.3199999928474426,
+      0.3499999940395355
+    ],
+    "BasaltFan__Basalt": [
+      0.10000000149011612,
+      0.14000000059604645,
+      0.1599999964237213
+    ]
+  }
+}

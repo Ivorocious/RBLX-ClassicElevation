@@ -1,0 +1,14 @@
+{
+  "build": "ER_P2_R02_H02",
+  "templates": 4,
+  "parts": 32,
+  "lethalParts": 12,
+  "generationSeconds": 0.114,
+  "renderSeconds": 7.351,
+  "hashes": {
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\egg_rush_circuit\\phase2\\revision_r02\\hazards\\candidate_h02\\hazard_manifest.json": "aeebcdd6ab4657050cee2e0d943d5db60faf2010474e8debc8009af3349c529f",
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\egg_rush_circuit\\phase2\\revision_r02\\hazards\\candidate_h02\\hazard_kit.blend": "e330aab7a0ee35815c826dfabbc95f52837d661ed40d3241eec2ee3753514a63",
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\src\\ServerStorage\\CourseBuilders\\EggRush\\RestartP2\\HazardKit.luau": "6236ce6eedefe061264e46bae1ea6d3238c68cc0b3a595fd13be2dd881fadd99",
+    "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\egg_rush_circuit\\phase2\\revision_r02\\hazards\\candidate_h02\\hazard_board.png": "3844b7a2f9a9c9914e595ad77b280f8c90e4e7847834551fa778e7a6a3760f70"
+  }
+}

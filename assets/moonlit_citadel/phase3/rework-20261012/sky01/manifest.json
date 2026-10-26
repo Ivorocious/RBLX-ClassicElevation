@@ -1,0 +1,45 @@
+{
+  "name": "Moonlit Citadel quiet night sky RW01",
+  "resolution": 512,
+  "faces": [
+    {
+      "property": "SkyboxBk",
+      "file": "assets/moonlit_citadel/phase3/rework-20261012/sky01/bk.png",
+      "sha256": "c15b6e03e0bec4362d5bb6c71c75783e7e060ae106556750a407cb48f9de74a5",
+      "bytes": 8929
+    },
+    {
+      "property": "SkyboxDn",
+      "file": "assets/moonlit_citadel/phase3/rework-20261012/sky01/dn.png",
+      "sha256": "af45ad170e348be1d4bb10dbf6519a46904f09614ebd016a427cc3b45e8fbf35",
+      "bytes": 1493
+    },
+    {
+      "property": "SkyboxFt",
+      "file": "assets/moonlit_citadel/phase3/rework-20261012/sky01/ft.png",
+      "sha256": "4e6c4d932cfa301eddf2e9bc55bd49c462f3cbde2c2464529917ccb415dc7f55",
+      "bytes": 9307
+    },
+    {
+      "property": "SkyboxLf",
+      "file": "assets/moonlit_citadel/phase3/rework-20261012/sky01/lf.png",
+      "sha256": "9893641981889af6d680feefc6a71392039bf4096f69e4e48e3b600a964e7b8f",
+      "bytes": 9030
+    },
+    {
+      "property": "SkyboxRt",
+      "file": "assets/moonlit_citadel/phase3/rework-20261012/sky01/rt.png",
+      "sha256": "b83da179649b9654d3de6ade428976adae430bf40a5cbd4518321666a6db8360",
+      "bytes": 9404
+    },
+    {
+      "property": "SkyboxUp",
+      "file": "assets/moonlit_citadel/phase3/rework-20261012/sky01/up.png",
+      "sha256": "72fb8ff288e1c98c412066117bfd02c9e46b1ce3e522f301f5e4f4fb935bcd6b",
+      "bytes": 6709
+    }
+  ],
+  "engineMoon": true,
+  "source": "Seeded original procedural texture",
+  "boundary": "No scene geometry, scripts, gameplay, or publishing changes."
+}

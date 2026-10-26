@@ -1,0 +1,16 @@
+{
+  "sha256": "a71c9499e6be5b6600da42db3bc4218f1f8a75e350b7ecef6b67649043d17372",
+  "request": {
+    "assetType": "Model",
+    "displayName": "Moonlit Citadel Art Repair AR01",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/e110bd20-d77e-4a86-9187-ab3d97c86277",
+  "assetId": "105076110554589"
+}

@@ -1,0 +1,14 @@
+{
+  "MC_ART_REPAIR_KIT.fbx": {
+    "bytes": 93820,
+    "sha256": "a71c9499e6be5b6600da42db3bc4218f1f8a75e350b7ecef6b67649043d17372"
+  },
+  "MC_ART_REPAIR_KIT.blend": {
+    "bytes": 170959,
+    "sha256": "3342460046d1a43b90632a6c92f978a3625b4739f6559621a07e5261efac95ad"
+  },
+  "manifest.json": {
+    "bytes": 25987,
+    "sha256": "d8703f02ebe05f86d2b5d3919838a84bb83f4904aeecd95d4f9c22c9c9cf1f1e"
+  }
+}

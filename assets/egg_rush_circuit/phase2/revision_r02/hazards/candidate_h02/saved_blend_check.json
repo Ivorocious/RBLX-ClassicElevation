@@ -1,0 +1,13 @@
+{
+  "build": "ER_P2_R02_H02",
+  "status": "passed",
+  "savedBlendReloaded": true,
+  "templates": 4,
+  "solidsChecked": 32,
+  "checks": [
+    "finite vertices",
+    "closed manifold",
+    "positive solid volume",
+    "saved transforms match manifest"
+  ]
+}

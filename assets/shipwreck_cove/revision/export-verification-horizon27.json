@@ -1,0 +1,11 @@
+{
+  "build": "SC_HORIZON_KIT_27",
+  "triangles": 276,
+  "assets": {
+    "SC_R_HorizonBroken27": 92,
+    "SC_R_HorizonSaddle27": 92,
+    "SC_R_HorizonTeeth27": 92
+  },
+  "modifiersApplied": true,
+  "fbxReimportPassed": true
+}

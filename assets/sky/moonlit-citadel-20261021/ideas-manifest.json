@@ -1,0 +1,135 @@
+{
+  "taskId": "moonlit-citadel-skybox-20261021",
+  "ownerInstruction": "More ideas and motion feasibility; earlier before-implementation hold remains active.",
+  "selected": {
+    "label": "D",
+    "revision": "S04",
+    "ownerInstruction": "Go with D and add the slow rotation. Implement it for Moonlit Citadel.",
+    "date": "2026-10-21"
+  },
+  "count": 6,
+  "ideas": [
+    {
+      "label": "A",
+      "revision": "S01",
+      "name": "Indigo cirrus",
+      "file": "assets/sky/moonlit-citadel-20261021/source-panorama-S01.png",
+      "resolution": [
+        1774,
+        887
+      ],
+      "sha256": "9c99c20aecbd3e633663f0eb9908e09c73c656e85e2c082692038388ba3bdc19",
+      "bytes": 1650730,
+      "prompt": "assets/sky/moonlit-citadel-20261021/generation-prompt.txt",
+      "generator": "Built-in ImageGen",
+      "generatedSource": "C:\\Users\\ivorr\\.codex\\generated_images\\01a15a50-028f-7771-846f-0176aa51b031\\exec-d63af5fc-a9b6-4dc7-8a7d-85e740ea220c.png",
+      "bakedMoon": false,
+      "bakedStars": false,
+      "status": "idea preview, unselected; not projected, uploaded or installed"
+    },
+    {
+      "label": "B",
+      "revision": "S02",
+      "name": "Still starlight",
+      "file": "assets/sky/moonlit-citadel-20261021/source-panorama-S02.png",
+      "resolution": [
+        1774,
+        887
+      ],
+      "sha256": "69444274fd6236260356402500458e327b809ccc8f9bd08a5539b7be066c49f0",
+      "bytes": 1485281,
+      "prompt": "assets/sky/moonlit-citadel-20261021/generation-prompt-S02.txt",
+      "generator": "Built-in ImageGen",
+      "generatedSource": "C:\\Users\\ivorr\\.codex\\generated_images\\01a15a50-028f-7771-846f-0176aa51b031\\exec-821551e7-c231-48a6-afbf-44fa944b6f41.png",
+      "bakedMoon": false,
+      "bakedStars": true,
+      "status": "idea preview, unselected; not projected, uploaded or installed"
+    },
+    {
+      "label": "C",
+      "revision": "S03",
+      "name": "Silver cloudbreak",
+      "file": "assets/sky/moonlit-citadel-20261021/source-panorama-S03.png",
+      "resolution": [
+        1774,
+        887
+      ],
+      "sha256": "781f4b5ffed87976c348ff3c5161aab39f46dc010c6a248ce75f90eef5c3d209",
+      "bytes": 1600559,
+      "prompt": "assets/sky/moonlit-citadel-20261021/generation-prompt-S03.txt",
+      "generator": "Built-in ImageGen",
+      "generatedSource": "C:\\Users\\ivorr\\.codex\\generated_images\\01a15a50-028f-7771-846f-0176aa51b031\\exec-40d12e2b-97de-42eb-8fa2-aa3a87964048.png",
+      "bakedMoon": false,
+      "bakedStars": false,
+      "status": "idea preview, unselected; not projected, uploaded or installed"
+    },
+    {
+      "label": "D",
+      "revision": "S04",
+      "name": "Violet veil",
+      "file": "assets/sky/moonlit-citadel-20261021/source-panorama-S04.png",
+      "resolution": [
+        1774,
+        887
+      ],
+      "sha256": "4027ef3ae74f31cf91c7af2d7109a0fbdf262b290ccf88668ae36fa6a11b961f",
+      "bytes": 1621003,
+      "prompt": "assets/sky/moonlit-citadel-20261021/generation-prompt-S04.txt",
+      "generator": "Built-in ImageGen",
+      "generatedSource": "C:\\Users\\ivorr\\.codex\\generated_images\\01a15a50-028f-7771-846f-0176aa51b031\\exec-db270ea1-b4cc-4614-a777-70aaf3fe64df.png",
+      "bakedMoon": false,
+      "bakedStars": true,
+      "status": "owner selected; six projected C01 faces uploaded and configured; native appearance pending"
+    },
+    {
+      "label": "E",
+      "revision": "S05",
+      "name": "Pearl moonhaze",
+      "file": "assets/sky/moonlit-citadel-20261021/source-panorama-S05.png",
+      "resolution": [
+        1774,
+        887
+      ],
+      "sha256": "3c0929e1b0f43d52dec1fbe80d95dd63fe98275aed13553086846f4d3e9863e5",
+      "bytes": 1581848,
+      "prompt": "assets/sky/moonlit-citadel-20261021/generation-prompt-S05.txt",
+      "generator": "Built-in ImageGen",
+      "generatedSource": "C:\\Users\\ivorr\\.codex\\generated_images\\01a15a50-028f-7771-846f-0176aa51b031\\exec-992e8c1a-b409-4cce-9a87-b7d31a2fc8f4.png",
+      "bakedMoon": false,
+      "bakedStars": false,
+      "status": "idea preview, unselected; not projected, uploaded or installed"
+    },
+    {
+      "label": "F",
+      "revision": "S06",
+      "name": "Painted midnight",
+      "file": "assets/sky/moonlit-citadel-20261021/source-panorama-S06.png",
+      "resolution": [
+        1774,
+        887
+      ],
+      "sha256": "6334ebf77f60b115806a468e5814329910edc72c20d1f35721765e4355dc7764",
+      "bytes": 1542249,
+      "prompt": "assets/sky/moonlit-citadel-20261021/generation-prompt-S06.txt",
+      "generator": "Built-in ImageGen",
+      "generatedSource": "C:\\Users\\ivorr\\.codex\\generated_images\\01a15a50-028f-7771-846f-0176aa51b031\\exec-7b8055b5-96fb-4df6-87db-c862509e9022.png",
+      "bakedMoon": false,
+      "bakedStars": true,
+      "status": "idea preview, unselected; not projected, uploaded or installed"
+    }
+  ],
+  "verification": "PNG decode and exact 2:1 aspect passed; seams, pole convergence, face orientation and native appearance remain unchecked",
+  "implementation": "D/S04-C01 uploaded and integrated in source with slow rotation; source and offline checks pass; native appearance/delivery/lifecycle pending because the owner is using the device.",
+  "motionResearch": {
+    "status": "Implemented in source and observed synced; offline execution passes; native motion check pending",
+    "options": [
+      "Scripted SkyboxOrientation horizontal rotation; celestial bodies unaffected.",
+      "Independent dynamic Clouds under Terrain, driven by GlobalWind."
+    ],
+    "sources": [
+      "https://create.roblox.com/docs/environment/skybox",
+      "https://create.roblox.com/docs/environment/clouds"
+    ],
+    "suggestedStartingPoint": "Slow horizontal artwork rotation with fixed engine moon and accepted night lighting; subject to owner direction and native appearance check."
+  }
+}

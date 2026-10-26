@@ -1,0 +1,16 @@
+{
+  "sha256": "bb34d0da3386fe334d74661110fc7c12d4f264c4e8943950d3a709de25528aac",
+  "request": {
+    "assetType": "Audio",
+    "displayName": "Shipwreck Cove Cannon Fuse",
+    "description": "Original synthesized Shipwreck Cove hazard sound effect.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/4249217e-9aad-4ba2-9e81-ee5d7f864fca",
+  "assetId": "87684423785818"
+}

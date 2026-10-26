@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "executed": "AST-extracted helpers only in an isolated background Blender process",
+  "productionBuilderExecutions": 0,
+  "productionOutputWrites": 0,
+  "sourceFiles": [
+    {
+      "path": "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\grand_arcade\\build_stage.py",
+      "sha256": "8dc50aac3499b08c2d87f0a6374181594581ecce618a5acb9c4733490b5e1a58"
+    },
+    {
+      "path": "C:\\Users\\ivorr\\RobloxDevelopment\\ProjectClassicElevation\\assets\\grand_arcade\\connection_candidate\\build_connection.py",
+      "sha256": "2d50eeaa955aeac329faf65a4e951354750a47c2a10927dea33ac695d2dc4236"
+    }
+  ],
+  "meshes": [
+    {
+      "mesh": "FrontWing-1__Ivory",
+      "closedOutward": true,
+      "originalCurveRingsPreserved": 41,
+      "maximumCandidateDifferenceStuds": 0.0,
+      "triangles": 372
+    },
+    {
+      "mesh": "FrontWing-1__Pale",
+      "closedOutward": true,
+      "originalCurveRingsPreserved": 41,
+      "maximumCandidateDifferenceStuds": 0.0,
+      "triangles": 372
+    },
+    {
+      "mesh": "FrontWing-1__Gold",
+      "closedOutward": true,
+      "originalCurveRingsPreserved": 41,
+      "maximumCandidateDifferenceStuds": 0.0,
+      "triangles": 372
+    },
+    {
+      "mesh": "FrontWing1__Ivory",
+      "closedOutward": true,
+      "originalCurveRingsPreserved": 41,
+      "maximumCandidateDifferenceStuds": 0.0,
+      "triangles": 372
+    },
+    {
+      "mesh": "FrontWing1__Pale",
+      "closedOutward": true,
+      "originalCurveRingsPreserved": 41,
+      "maximumCandidateDifferenceStuds": 0.0,
+      "triangles": 372
+    },
+    {
+      "mesh": "FrontWing1__Gold",
+      "closedOutward": true,
+      "originalCurveRingsPreserved": 41,
+      "maximumCandidateDifferenceStuds": 0.0,
+      "triangles": 372
+    },
+    {
+      "mesh": "UpperLanding__FloorA",
+      "closedOutward": true,
+      "originalTileComponentsPreserved": 4,
+      "maximumCandidateDifferenceStuds": 0.0,
+      "triangles": 80
+    },
+    {
+      "mesh": "UpperLanding__FloorB",
+      "closedOutward": true,
+      "originalTileComponentsPreserved": 4,
+      "maximumCandidateDifferenceStuds": 0.0,
+      "triangles": 80
+    }
+  ],
+  "floorTriangleStageOverlapArea": 0,
+  "actualStageFrontBoundaryPoints": 49,
+  "collisionChanges": 0,
+  "nativeProof": "None; candidate installation and walking belong to the main operator"
+}

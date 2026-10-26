@@ -1,0 +1,1356 @@
+{
+  "build": "SC_MAP_28",
+  "kitBuild": "SC_KIT_28",
+  "sourceScene": "ShipwreckCove_SC_MAP_27.blend",
+  "layoutReadOnce": "layout28.json",
+  "coordinates": "Roblox XYZ; Blender mesh world point is (x,-z,y).",
+  "supportAssets": [
+    "SC_CliffMass",
+    "SC_PlayableRib",
+    "SC_R_GroundedHullUnderbody",
+    "SC_R_HullBow",
+    "SC_R_HullMid",
+    "SC_R_HullStern",
+    "SC_R_SeaRockFlat",
+    "SC_R_SeaRockSpire",
+    "SC_R_SeaRockTall"
+  ],
+  "supportObjectsInSourceScene": 109,
+  "cargo": {
+    "WreckObstacle27_0": {
+      "asset": "SC_CargoBarrel",
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "currentP": [
+        -112.19271058595103,
+        19,
+        -109.9465655106998
+      ],
+      "suggestedP": [
+        -112.1927,
+        5.2031,
+        -109.9466
+      ],
+      "support": {
+        "object": "R_HullBow_179",
+        "asset": "SC_R_HullBow",
+        "surfaceTopY": 5.2531,
+        "embedRootBelowTop": 0.05,
+        "normalBlender": [
+          -0.03203429654240608,
+          -0.6930999159812927,
+          0.7201293706893921
+        ],
+        "rayAtOriginalXZ": true,
+        "fallbackHorizontalGap": 0.0
+      },
+      "verticalCorrection": -13.7969,
+      "nearestS02WalkSurface": {
+        "surface": "WreckPlank28_04",
+        "gap": 4.4,
+        "closestXZ": [
+          -108.97276197368775,
+          -106.94791065653872
+        ]
+      },
+      "offRouteClearanceBeyondCargoFootprint": 2.5559
+    },
+    "WreckObstacle27_1": {
+      "asset": "SC_CargoCrate",
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "currentP": [
+        -69.61502331969832,
+        27,
+        -85.38772054883712
+      ],
+      "suggestedP": [
+        -69.615,
+        16.3255,
+        -85.3877
+      ],
+      "support": {
+        "object": "R_HullMid_180",
+        "asset": "SC_R_HullMid",
+        "surfaceTopY": 16.3755,
+        "embedRootBelowTop": 0.05,
+        "normalBlender": [
+          -0.2138550579547882,
+          0.5632703900337219,
+          0.7981180548667908
+        ],
+        "rayAtOriginalXZ": true,
+        "fallbackHorizontalGap": 0.0
+      },
+      "verticalCorrection": -10.6745,
+      "nearestS02WalkSurface": {
+        "surface": "WreckPlank28_12",
+        "gap": 4.399999999999989,
+        "closestXZ": [
+          -68.87373557510837,
+          -89.72482701279678
+        ]
+      },
+      "offRouteClearanceBeyondCargoFootprint": 2.0684
+    },
+    "WreckObstacle27_2": {
+      "asset": "SC_CargoBarrel",
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "currentP": [
+        -63.12417632599473,
+        32,
+        -112.26370398082207
+      ],
+      "suggestedP": [
+        -63.1242,
+        16.0223,
+        -112.2637
+      ],
+      "support": {
+        "object": "R_HullMid_180",
+        "asset": "SC_R_HullMid",
+        "surfaceTopY": 16.0723,
+        "embedRootBelowTop": 0.05,
+        "normalBlender": [
+          -0.25869449973106384,
+          0.031003039330244064,
+          0.9654614925384521
+        ],
+        "rayAtOriginalXZ": true,
+        "fallbackHorizontalGap": 0.0
+      },
+      "verticalCorrection": -15.9777,
+      "nearestS02WalkSurface": {
+        "surface": "WreckPlank28_16",
+        "gap": 4.400000000000006,
+        "closestXZ": [
+          -59.38598939716545,
+          -109.94293719263977
+        ]
+      },
+      "offRouteClearanceBeyondCargoFootprint": 2.5559
+    },
+    "WreckObstacle27_3": {
+      "asset": "SC_CargoCrate",
+      "scale": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "currentP": [
+        -18.48030725303567,
+        40,
+        -85.60253658107418
+      ],
+      "suggestedP": [
+        -18.4803,
+        46.1751,
+        -85.6025
+      ],
+      "support": {
+        "object": "R_HullStern_181",
+        "asset": "SC_R_HullStern",
+        "surfaceTopY": 46.2251,
+        "embedRootBelowTop": 0.05,
+        "normalBlender": [
+          -0.25881925225257874,
+          0.0,
+          0.9659258127212524
+        ],
+        "rayAtOriginalXZ": true,
+        "fallbackHorizontalGap": 0.0
+      },
+      "verticalCorrection": 6.1751,
+      "nearestS02WalkSurface": {
+        "surface": "WreckPlank28_24",
+        "gap": 4.399999999999998,
+        "closestXZ": [
+          -19.172378763203575,
+          -89.94776810825589
+        ]
+      },
+      "offRouteClearanceBeyondCargoFootprint": 2.0684
+    }
+  },
+  "planks": {
+    "WreckPlank28_00": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -108.0,
+        12.929999980926514,
+        -76.8
+      ],
+      "currentBottomY": 12.93,
+      "currentTopY": 14.16,
+      "walkSurfaceTopY": 14.16,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 0,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": -2.5378,
+      "verticalGapFromSupportToUnderside": 15.4678,
+      "supportObject": "Rib00",
+      "supportAsset": "SC_PlayableRib",
+      "supportRayNormalBlender": [
+        0.0,
+        0.6862183809280396,
+        0.7273955941200256
+      ],
+      "supportSelection": "nearestBraceRay",
+      "supportAnchorXZToBoardFootprintGap": 5.8843,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -100.196,
+          -2.6178,
+          -73.5377
+        ],
+        "bottomY": -2.6178,
+        "topAtPlankUnderside": [
+          -105.9275,
+          12.98,
+          -74.8701
+        ],
+        "topY": 12.98,
+        "length": 16.6708,
+        "horizontalOffset": 5.8843,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_01": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -107.89557904622396,
+        14.600731829578251,
+        -84.07576037572021
+      ],
+      "currentBottomY": 14.6007,
+      "currentTopY": 15.8307,
+      "walkSurfaceTopY": 15.830731848651737,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 0,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 12.4811,
+      "verticalGapFromSupportToUnderside": 2.1196,
+      "supportObject": "GroundedHullUnderbody",
+      "supportAsset": "SC_R_GroundedHullUnderbody",
+      "supportRayNormalBlender": [
+        -0.24253077805042267,
+        0.0,
+        0.9701436758041382
+      ],
+      "supportSelection": "nearestBraceRay",
+      "supportAnchorXZToBoardFootprintGap": 0.2,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -106.0756,
+          12.4011,
+          -86.2019
+        ],
+        "bottomY": 12.4011,
+        "topAtPlankUnderside": [
+          -106.0728,
+          14.6507,
+          -86.0019
+        ],
+        "topY": 14.6507,
+        "length": 2.2585,
+        "horizontalOffset": 0.2,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_02": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -108.20704990521321,
+        15.700971593037924,
+        -91.35003497212217
+      ],
+      "currentBottomY": 15.701,
+      "currentTopY": 16.931,
+      "walkSurfaceTopY": 16.93097161211141,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 4.5298,
+      "verticalGapFromSupportToUnderside": 11.1711,
+      "supportObject": "R_HullBow_179",
+      "supportAsset": "SC_R_HullBow",
+      "supportRayNormalBlender": [
+        0.26552197337150574,
+        0.04475683346390724,
+        -0.9630653858184814
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -106.5062,
+          4.4498,
+          -92.8467
+        ],
+        "bottomY": 4.4498,
+        "topAtPlankUnderside": [
+          -106.5062,
+          15.751,
+          -92.8467
+        ],
+        "topY": 15.751,
+        "length": 11.3012,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_03": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -107.69476140213145,
+        16.58250465646427,
+        -98.60371784233983
+      ],
+      "currentBottomY": 16.5825,
+      "currentTopY": 17.8125,
+      "walkSurfaceTopY": 17.812504675537756,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 5.0,
+      "verticalGapFromSupportToUnderside": 11.5825,
+      "supportObject": "KeelReef0",
+      "supportAsset": "SC_R_SeaRockFlat",
+      "supportRayNormalBlender": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -107.6948,
+          4.92,
+          -98.6037
+        ],
+        "bottomY": 4.92,
+        "topAtPlankUnderside": [
+          -107.6948,
+          16.6325,
+          -98.6037
+        ],
+        "topY": 16.6325,
+        "length": 11.7125,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_04": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -107.43596831783483,
+        17.76457895367382,
+        -105.51673447614365
+      ],
+      "currentBottomY": 17.7646,
+      "currentTopY": 18.9946,
+      "walkSurfaceTopY": 18.994578972747306,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 5.0,
+      "verticalGapFromSupportToUnderside": 12.7646,
+      "supportObject": "KeelReef0",
+      "supportAsset": "SC_R_SeaRockFlat",
+      "supportRayNormalBlender": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -108.4719,
+          4.92,
+          -104.4044
+        ],
+        "bottomY": 4.92,
+        "topAtPlankUnderside": [
+          -108.4719,
+          17.8146,
+          -104.4044
+        ],
+        "topY": 17.8146,
+        "length": 12.8946,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_05": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -100.02680391464217,
+        19.272797929909103,
+        -106.83755276884801
+      ],
+      "currentBottomY": 19.2728,
+      "currentTopY": 20.5028,
+      "walkSurfaceTopY": 20.50279794898259,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 6.6975,
+      "verticalGapFromSupportToUnderside": 12.5753,
+      "supportObject": "R_HullBow_179",
+      "supportAsset": "SC_R_HullBow",
+      "supportRayNormalBlender": [
+        0.2643452286720276,
+        -0.03663160651922226,
+        -0.9637322425842285
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -98.5753,
+          6.6175,
+          -107.2888
+        ],
+        "bottomY": 6.6175,
+        "topAtPlankUnderside": [
+          -98.5753,
+          19.3228,
+          -107.2888
+        ],
+        "topY": 19.3228,
+        "length": 12.7053,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_06": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -93.29775454288794,
+        20.591881342846637,
+        -109.91261066572305
+      ],
+      "currentBottomY": 20.5919,
+      "currentTopY": 21.8219,
+      "walkSurfaceTopY": 21.821881361920124,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 10.6344,
+      "verticalGapFromSupportToUnderside": 9.9575,
+      "supportObject": "R_HullBow_179",
+      "supportAsset": "SC_R_HullBow",
+      "supportRayNormalBlender": [
+        -0.17237074673175812,
+        -0.7459603548049927,
+        0.6432973742485046
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -95.0914,
+          10.5544,
+          -111.2967
+        ],
+        "bottomY": 10.5544,
+        "topAtPlankUnderside": [
+          -95.0914,
+          20.6419,
+          -111.2967
+        ],
+        "topY": 20.6419,
+        "length": 10.0875,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_07": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -85.98591942488552,
+        21.323260693622263,
+        -109.36532872215138
+      ],
+      "currentBottomY": 21.3233,
+      "currentTopY": 22.5533,
+      "walkSurfaceTopY": 22.55326071269575,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 11.7327,
+      "verticalGapFromSupportToUnderside": 9.5906,
+      "supportObject": "R_HullBow_179",
+      "supportAsset": "SC_R_HullBow",
+      "supportRayNormalBlender": [
+        -0.17993640899658203,
+        -0.7187973856925964,
+        0.6715304851531982
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -86.074,
+          11.6527,
+          -111.043
+        ],
+        "bottomY": 11.6527,
+        "topAtPlankUnderside": [
+          -86.074,
+          21.3733,
+          -111.043
+        ],
+        "topY": 21.3733,
+        "length": 9.7206,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_08": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -78.6039811975045,
+        21.995555393255785,
+        -110.68403522722748
+      ],
+      "currentBottomY": 21.9956,
+      "currentTopY": 23.2256,
+      "walkSurfaceTopY": 23.22555541232927,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 15.2835,
+      "verticalGapFromSupportToUnderside": 6.712,
+      "supportObject": "R_HullMid_180",
+      "supportAsset": "SC_R_HullMid",
+      "supportRayNormalBlender": [
+        -0.17993558943271637,
+        -0.7187976241111755,
+        0.6715303659439087
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -76.7884,
+          15.2035,
+          -112.0392
+        ],
+        "bottomY": 15.2035,
+        "topAtPlankUnderside": [
+          -76.7884,
+          22.0456,
+          -112.0392
+        ],
+        "topY": 22.0456,
+        "length": 6.8421,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_09": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -74.67711668193965,
+        23.12297578318298,
+        -107.14191276941013
+      ],
+      "currentBottomY": 23.123,
+      "currentTopY": 24.353,
+      "walkSurfaceTopY": 24.352975802256466,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 15.0,
+      "verticalGapFromSupportToUnderside": 8.123,
+      "supportObject": "KeelReef1",
+      "supportAsset": "SC_R_SeaRockFlat",
+      "supportRayNormalBlender": [
+        4.9799705692521457e-08,
+        0.0,
+        1.0
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -76.8656,
+          14.92,
+          -107.728
+        ],
+        "bottomY": 14.92,
+        "topAtPlankUnderside": [
+          -76.8656,
+          23.173,
+          -107.728
+        ],
+        "topY": 23.173,
+        "length": 8.253,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_10": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -73.22812959711621,
+        24.522608752213234,
+        -100.19910486397585
+      ],
+      "currentBottomY": 24.5226,
+      "currentTopY": 25.7526,
+      "walkSurfaceTopY": 25.75260877128672,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 15.0,
+      "verticalGapFromSupportToUnderside": 9.5226,
+      "supportObject": "KeelReef1",
+      "supportAsset": "SC_R_SeaRockFlat",
+      "supportRayNormalBlender": [
+        4.9799705692521457e-08,
+        0.0,
+        1.0
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -74.9048,
+          14.92,
+          -101.7228
+        ],
+        "bottomY": 14.92,
+        "topAtPlankUnderside": [
+          -74.9048,
+          24.5726,
+          -101.7228
+        ],
+        "topY": 24.5726,
+        "length": 9.6526,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_11": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -74.70887512014951,
+        25.6031262996873,
+        -92.53088285685816
+      ],
+      "currentBottomY": 25.6031,
+      "currentTopY": 26.8331,
+      "walkSurfaceTopY": 26.833126318760787,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 13.7827,
+      "verticalGapFromSupportToUnderside": 11.8205,
+      "supportObject": "KeelReef1",
+      "supportAsset": "SC_R_SeaRockFlat",
+      "supportRayNormalBlender": [
+        -0.4264727234840393,
+        -0.5338039398193359,
+        0.7301878333091736
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -73.9861,
+          13.7027,
+          -94.6781
+        ],
+        "bottomY": 13.7027,
+        "topAtPlankUnderside": [
+          -73.9861,
+          25.6531,
+          -94.6781
+        ],
+        "topY": 25.6531,
+        "length": 11.9504,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_12": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -68.51993915155407,
+        26.256964403929256,
+        -91.79480964332299
+      ],
+      "currentBottomY": 26.257,
+      "currentTopY": 27.487,
+      "walkSurfaceTopY": 27.486964423002743,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 15.1501,
+      "verticalGapFromSupportToUnderside": 11.1069,
+      "supportObject": "R_HullMid_180",
+      "supportAsset": "SC_R_HullMid",
+      "supportRayNormalBlender": [
+        -0.2586945593357086,
+        -0.031002555042505264,
+        0.9654615521430969
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -67.0217,
+          15.0701,
+          -91.5387
+        ],
+        "bottomY": 15.0701,
+        "topAtPlankUnderside": [
+          -67.0217,
+          26.307,
+          -91.5387
+        ],
+        "topY": 26.307,
+        "length": 11.2369,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_13": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -61.189919211765705,
+        27.07030167158299,
+        -90.2202556177501
+      ],
+      "currentBottomY": 27.0703,
+      "currentTopY": 28.3003,
+      "walkSurfaceTopY": 28.300301690656475,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 17.1243,
+      "verticalGapFromSupportToUnderside": 9.946,
+      "supportObject": "R_HullMid_180",
+      "supportAsset": "SC_R_HullMid",
+      "supportRayNormalBlender": [
+        -0.25869444012641907,
+        -0.031002938747406006,
+        0.9654615521430969
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -59.3392,
+          17.0443,
+          -88.9135
+        ],
+        "bottomY": 17.0443,
+        "topAtPlankUnderside": [
+          -59.3392,
+          27.1203,
+          -88.9135
+        ],
+        "topY": 27.1203,
+        "length": 10.076,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_14": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -57.72209641933517,
+        28.305687146952515,
+        -94.21574533033434
+      ],
+      "currentBottomY": 28.3057,
+      "currentTopY": 29.5357,
+      "walkSurfaceTopY": 29.535687166026,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 17.9047,
+      "verticalGapFromSupportToUnderside": 10.401,
+      "supportObject": "R_HullMid_180",
+      "supportAsset": "SC_R_HullMid",
+      "supportRayNormalBlender": [
+        -0.25869444012641907,
+        -0.031002938747406006,
+        0.9654615521430969
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -56.8133,
+          17.8247,
+          -92.1404
+        ],
+        "bottomY": 17.8247,
+        "topAtPlankUnderside": [
+          -56.8133,
+          28.3557,
+          -92.1404
+        ],
+        "topY": 28.3557,
+        "length": 10.531,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_15": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -56.2618399947174,
+        29.60126318087628,
+        -101.17902449335381
+      ],
+      "currentBottomY": 29.6013,
+      "currentTopY": 30.8313,
+      "walkSurfaceTopY": 30.831263199949767,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 13.7923,
+      "verticalGapFromSupportToUnderside": 15.809,
+      "supportObject": "KeelReef1",
+      "supportAsset": "SC_R_SeaRockFlat",
+      "supportRayNormalBlender": [
+        0.5636465549468994,
+        -0.25848937034606934,
+        0.7845289707183838
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -57.9293,
+          13.7123,
+          -102.7128
+        ],
+        "bottomY": 13.7123,
+        "topAtPlankUnderside": [
+          -57.9293,
+          29.6513,
+          -102.7128
+        ],
+        "topY": 29.6513,
+        "length": 15.939,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_16": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -57.601854726587845,
+        30.54755328560108,
+        -108.83529849828005
+      ],
+      "currentBottomY": 30.5476,
+      "currentTopY": 31.7776,
+      "walkSurfaceTopY": 31.777553304674566,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 18.5922,
+      "verticalGapFromSupportToUnderside": 11.9554,
+      "supportObject": "R_HullMid_180",
+      "supportAsset": "SC_R_HullMid",
+      "supportRayNormalBlender": [
+        -0.1799362599849701,
+        -0.7187966108322144,
+        0.6715313196182251
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -56.8001,
+          18.5122,
+          -110.1267
+        ],
+        "bottomY": 18.5122,
+        "topAtPlankUnderside": [
+          -56.8001,
+          30.5976,
+          -110.1267
+        ],
+        "topY": 30.5976,
+        "length": 12.0854,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_17": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -51.178142140103276,
+        31.23665917689364,
+        -109.36761671511707
+      ],
+      "currentBottomY": 31.2367,
+      "currentTopY": 32.4667,
+      "walkSurfaceTopY": 32.466659195967125,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 19.8735,
+      "verticalGapFromSupportToUnderside": 11.3632,
+      "supportObject": "R_HullMid_180",
+      "supportAsset": "SC_R_HullMid",
+      "supportRayNormalBlender": [
+        -0.2586946487426758,
+        0.031002165749669075,
+        0.9654614925384521
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -49.4623,
+          19.7935,
+          -107.8882
+        ],
+        "bottomY": 19.7935,
+        "topAtPlankUnderside": [
+          -49.4623,
+          31.2867,
+          -107.8882
+        ],
+        "topY": 31.2867,
+        "length": 11.4932,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_18": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -43.82414430465791,
+        32.204373767295706,
+        -110.55001766999032
+      ],
+      "currentBottomY": 32.2044,
+      "currentTopY": 33.4344,
+      "walkSurfaceTopY": 33.43437378636919,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 22.0173,
+      "verticalGapFromSupportToUnderside": 10.1871,
+      "supportObject": "R_HullStern_181",
+      "supportAsset": "SC_R_HullStern",
+      "supportRayNormalBlender": [
+        0.3065844774246216,
+        -0.030963920056819916,
+        -0.9513397216796875
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -41.924,
+          21.9373,
+          -111.7838
+        ],
+        "bottomY": 21.9373,
+        "topAtPlankUnderside": [
+          -41.924,
+          32.2544,
+          -111.7838
+        ],
+        "topY": 32.2544,
+        "length": 10.3171,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_19": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -40.460647035504664,
+        33.46607248351563,
+        -106.52254037847014
+      ],
+      "currentBottomY": 33.4661,
+      "currentTopY": 34.6961,
+      "walkSurfaceTopY": 34.69607250258912,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 23.9574,
+      "verticalGapFromSupportToUnderside": 9.5086,
+      "supportObject": "KeelReef2",
+      "supportAsset": "SC_R_SeaRockFlat",
+      "supportRayNormalBlender": [
+        -0.753657877445221,
+        0.0881761834025383,
+        0.6513253450393677
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -38.3507,
+          23.8774,
+          -105.6974
+        ],
+        "bottomY": 23.8774,
+        "topAtPlankUnderside": [
+          -38.3507,
+          33.5161,
+          -105.6974
+        ],
+        "topY": 33.5161,
+        "length": 9.6387,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_20": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -39.60020469276616,
+        34.61168595235921,
+        -99.41763264355085
+      ],
+      "currentBottomY": 34.6117,
+      "currentTopY": 35.8417,
+      "walkSurfaceTopY": 35.841685971432696,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 23.7631,
+      "verticalGapFromSupportToUnderside": 10.8486,
+      "supportObject": "KeelReef2",
+      "supportAsset": "SC_R_SeaRockFlat",
+      "supportRayNormalBlender": [
+        -0.5728676319122314,
+        -0.5108140110969543,
+        0.6410083174705505
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -37.9421,
+          23.6831,
+          -100.9614
+        ],
+        "bottomY": 23.6831,
+        "topAtPlankUnderside": [
+          -37.9421,
+          34.6617,
+          -100.9614
+        ],
+        "topY": 34.6617,
+        "length": 10.9786,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_21": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -40.2528406124701,
+        35.48708872874572,
+        -91.95645786393196
+      ],
+      "currentBottomY": 35.4871,
+      "currentTopY": 36.7171,
+      "walkSurfaceTopY": 36.717088747819204,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 23.393,
+      "verticalGapFromSupportToUnderside": 12.0941,
+      "supportObject": "R_HullStern_181",
+      "supportAsset": "SC_R_HullStern",
+      "supportRayNormalBlender": [
+        0.30658474564552307,
+        0.030963819473981857,
+        -0.9513396620750427
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -38.0046,
+          23.313,
+          -91.6771
+        ],
+        "bottomY": 23.313,
+        "topAtPlankUnderside": [
+          -38.0046,
+          35.5371,
+          -91.6771
+        ],
+        "topY": 35.5371,
+        "length": 12.2241,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_22": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -33.83887059927927,
+        36.58394236939504,
+        -91.2065506614332
+      ],
+      "currentBottomY": 36.5839,
+      "currentTopY": 37.8139,
+      "walkSurfaceTopY": 37.813942388468526,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 25.3262,
+      "verticalGapFromSupportToUnderside": 11.2577,
+      "supportObject": "R_HullStern_181",
+      "supportAsset": "SC_R_HullStern",
+      "supportRayNormalBlender": [
+        0.3277239203453064,
+        0.03215700015425682,
+        -0.9442262053489685
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -32.3234,
+          25.2462,
+          -91.0891
+        ],
+        "bottomY": 25.2462,
+        "topAtPlankUnderside": [
+          -32.3234,
+          36.6339,
+          -91.0891
+        ],
+        "topY": 36.6339,
+        "length": 11.3877,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_23": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -26.57162926638326,
+        38.02773954614296,
+        -90.89574740565031
+      ],
+      "currentBottomY": 38.0277,
+      "currentTopY": 39.2577,
+      "walkSurfaceTopY": 39.25773956521645,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 29.4028,
+      "verticalGapFromSupportToUnderside": 8.6249,
+      "supportObject": "R_HullStern_181",
+      "supportAsset": "SC_R_HullStern",
+      "supportRayNormalBlender": [
+        -0.1723719984292984,
+        0.7459594011306763,
+        0.6432981491088867
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -27.9938,
+          29.3228,
+          -89.1322
+        ],
+        "bottomY": 29.3228,
+        "topAtPlankUnderside": [
+          -27.9938,
+          38.0777,
+          -89.1322
+        ],
+        "topY": 38.0777,
+        "length": 8.7549,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    },
+    "WreckPlank28_24": {
+      "asset": "SC_ShipDeck",
+      "currentRootP": [
+        -19.502685620329167,
+        39.94125681740075,
+        -92.02162860986535
+      ],
+      "currentBottomY": 39.9413,
+      "currentTopY": 41.1713,
+      "walkSurfaceTopY": 41.171256836474235,
+      "routeSurfacePreserved": true,
+      "footprintRobloxXZ": [
+        4.2,
+        3.8
+      ],
+      "hullRockRaySamples": 9,
+      "hullRockRaySamplesRequested": 9,
+      "highestExistingSupportY": 31.9028,
+      "verticalGapFromSupportToUnderside": 8.0385,
+      "supportObject": "R_HullStern_181",
+      "supportAsset": "SC_R_HullStern",
+      "supportRayNormalBlender": [
+        -0.1639207899570465,
+        0.7738751173019409,
+        0.6117576360702515
+      ],
+      "supportSelection": "inFootprintRay",
+      "supportAnchorXZToBoardFootprintGap": 0.0,
+      "suggestedTimberBrace": {
+        "startAtHullOrRock": [
+          -19.2384,
+          31.8228,
+          -90.3625
+        ],
+        "bottomY": 31.8228,
+        "topAtPlankUnderside": [
+          -19.2384,
+          39.9913,
+          -90.3625
+        ],
+        "topY": 39.9913,
+        "length": 8.1685,
+        "horizontalOffset": 0.0,
+        "note": "Brace endpoints overlap the measured support and unchanged plank underside by 0.05-0.08 studs."
+      }
+    }
+  },
+  "summary": {
+    "cargoRaySupported": 4,
+    "cargoCount": 4,
+    "cargoOffS02WalkSurface": [
+      "WreckObstacle27_0",
+      "WreckObstacle27_1",
+      "WreckObstacle27_2",
+      "WreckObstacle27_3"
+    ],
+    "planksWithDirectHullOrRockSupportUnderFootprint": 23,
+    "plankCount": 25,
+    "mainS02WalkingGeometryChanged": false,
+    "plankNotes": "SC_ShipDeck local bottom is zero. Suggested braces run from an existing hull/rock surface to the current underside; the tested board and route heights remain unchanged."
+  },
+  "limits": [
+    "These are BVH ray measurements on the approved Blender scene meshes, not Roblox collision or Studio playtest results.",
+    "Cargo positions retain authored XZ where existing hull/rock support is directly below.",
+    "Brace suggestions are visual support anchors; integrate only where they fit the intended wreck silhouette."
+  ]
+}

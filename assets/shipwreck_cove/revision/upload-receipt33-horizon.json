@@ -1,0 +1,16 @@
+{
+  "sha256": "7db342fe022cf8a671e6eea9f8f6c67ff6a5ceb1ff1459e45292e89ec5995b63",
+  "request": {
+    "assetType": "Model",
+    "displayName": "ShipwreckHorizonNormals33",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/ddbe8788-0b85-4b2c-aeb4-5f069c6661ab",
+  "assetId": "124749649922892"
+}

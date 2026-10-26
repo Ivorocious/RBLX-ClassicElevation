@@ -1,0 +1,16 @@
+{
+  "sha256": "90ecad046871be9976a1444ee893ee193f2bc5f87c907fd23e37a933455eaca3",
+  "request": {
+    "assetType": "Model",
+    "displayName": "ER_W_C03_Buildings",
+    "description": "Blender model uploaded through the Project Classic Elevation asset workflow.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/0220ecd4-aba2-4726-827e-bd38a15d2d25",
+  "assetId": "101276738458697"
+}

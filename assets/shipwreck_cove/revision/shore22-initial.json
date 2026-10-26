@@ -1,0 +1,166 @@
+{
+  "method": "Server-owned R15 clone on course template translated 600 studs. One initial teleport, continuous shore movement, no Runtime.Create; timed hazards inactive. Both static timber bars are noncolliding.",
+  "initialPosition": [
+    -873,
+    91.12,
+    72
+  ],
+  "movementPassed": true,
+  "barClearanceVerified": false,
+  "records": [
+    {
+      "landingSupport": "S04_Shore_01",
+      "to": "S04_Shore_01",
+      "from": "S04_Shore_00",
+      "actualLanding": [
+        -889.47,
+        91,
+        85.56
+      ],
+      "startSupport": "ShoreWalk0",
+      "passed": true,
+      "actualStart": [
+        -873,
+        90.99,
+        72
+      ]
+    },
+    {
+      "feetClearanceVerified": false,
+      "landingSupport": "S04_Shore_02",
+      "to": "S04_Shore_02",
+      "actualLanding": [
+        -908.59,
+        91,
+        95.29
+      ],
+      "groundedTakeoff": true,
+      "jumpPerformed": true,
+      "passed": true,
+      "actualStart": [
+        -889.47,
+        91,
+        85.56
+      ],
+      "overlapFrames": 35,
+      "minimumFootMargin": -1.271,
+      "crossedBarPlane": true,
+      "from": "S04_Shore_01",
+      "launchPosition": [
+        -901.11,
+        91,
+        91.55
+      ],
+      "startSupport": "S04_Shore_01",
+      "launchDistance": 7.7,
+      "bar": "ShoreTimber2"
+    },
+    {
+      "landingSupport": "S04_Shore_03",
+      "to": "S04_Shore_03",
+      "from": "S04_Shore_02",
+      "actualLanding": [
+        -926.3,
+        91,
+        102.7
+      ],
+      "startSupport": "S04_Shore_02",
+      "passed": true,
+      "actualStart": [
+        -908.59,
+        91,
+        95.29
+      ]
+    },
+    {
+      "landingSupport": "S04_Shore_04",
+      "to": "S04_Shore_04",
+      "from": "S04_Shore_03",
+      "actualLanding": [
+        -945.38,
+        91,
+        111.71
+      ],
+      "startSupport": "S04_Shore_03",
+      "passed": true,
+      "actualStart": [
+        -926.3,
+        91,
+        102.7
+      ]
+    },
+    {
+      "feetClearanceVerified": false,
+      "landingSupport": "ShoreWalk5",
+      "to": "S04_Shore_05",
+      "actualLanding": [
+        -966.64,
+        91,
+        121.29
+      ],
+      "groundedTakeoff": true,
+      "jumpPerformed": true,
+      "passed": true,
+      "actualStart": [
+        -945.38,
+        91,
+        111.71
+      ],
+      "overlapFrames": 38,
+      "minimumFootMargin": -1.271,
+      "crossedBarPlane": true,
+      "from": "S04_Shore_04",
+      "launchPosition": [
+        -959.02,
+        91,
+        117.86
+      ],
+      "startSupport": "S04_Shore_04",
+      "launchDistance": 7.66,
+      "bar": "ShoreTimber5"
+    },
+    {
+      "landingSupport": "S04_Shore_06",
+      "to": "S04_Shore_06",
+      "from": "S04_Shore_05",
+      "actualLanding": [
+        -984.34,
+        91,
+        128.72
+      ],
+      "startSupport": "ShoreWalk5",
+      "passed": true,
+      "actualStart": [
+        -966.64,
+        91,
+        121.29
+      ]
+    },
+    {
+      "landingSupport": "HarborAssembly",
+      "to": "HarborAssembly",
+      "from": "S04_Shore_06",
+      "actualLanding": [
+        -1007.27,
+        91,
+        128.02
+      ],
+      "startSupport": "S04_Shore_06",
+      "passed": true,
+      "actualStart": [
+        -984.34,
+        91,
+        128.72
+      ]
+    }
+  ],
+  "finalPosition": [
+    -1007.27,
+    91,
+    128.02
+  ],
+  "passed": false,
+  "jumpHeight": 7.2,
+  "walkSpeed": 16,
+  "build": "SC_MAP_22"
+}

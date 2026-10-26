@@ -1,0 +1,16 @@
+{
+  "sha256": "50025f848c46d625a5b3c23fc8b5b123be72be886e6d33b01eab0803730ce511",
+  "request": {
+    "assetType": "Image",
+    "displayName": "Moonlit Violet Veil S04 C01 SkyboxLf",
+    "description": "Owner-selected Moonlit Citadel night sky; original ImageGen art and spherical projection.",
+    "creationContext": {
+      "creator": {
+        "userId": "86069177"
+      }
+    }
+  },
+  "state": "complete",
+  "operation": "operations/3ce04757-4fef-48ff-ba45-1559037c751a",
+  "assetId": "114319877535550"
+}

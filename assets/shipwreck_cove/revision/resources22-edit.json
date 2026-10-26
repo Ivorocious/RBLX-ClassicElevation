@@ -1,0 +1,19 @@
+{
+  "build": "SC_MAP_22",
+  "measurementMode": "Edit",
+  "baseParts": 582,
+  "meshParts": 309,
+  "descendants": 659,
+  "collidable": 84,
+  "walkingColliders": 83,
+  "otherCollidable": "StartGate",
+  "query": 85,
+  "touch": 8,
+  "meshIDs": 42,
+  "textureIDs": 1,
+  "partialTransparency": 0,
+  "lights": 0,
+  "sounds": 0,
+  "runtimeSourceIdentical21": true,
+  "limitations": "Edit inventory excludes runtime-generated sounds and effects; this is not frame-time, memory, loading, device or multiplayer evidence."
+}
